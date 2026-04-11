@@ -1,0 +1,81 @@
+---
+export interface Props {
+  stat: string;
+  text: string;
+  source?: string;
+}
+
+const { stat, text, source } = Astro.props;
+---
+
+<section class="speed-banner section--alt" id="speed-banner">
+  <div class="container">
+    <div class="speed-banner__inner">
+      <div class="speed-banner__icon" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+        </svg>
+      </div>
+      <div class="speed-banner__content">
+        <p class="speed-banner__stat">{stat}</p>
+        <p class="speed-banner__text">{text}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .speed-banner {
+    padding-block: var(--space-10);
+    border-top: 1px solid var(--color-border-subtle);
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .speed-banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-6);
+    text-align: left;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .speed-banner__icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    background: var(--color-speed-subtle);
+    color: var(--color-speed);
+    flex-shrink: 0;
+  }
+
+  .speed-banner__stat {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-extrabold);
+    color: var(--color-speed);
+    margin-bottom: var(--space-1);
+    line-height: var(--leading-tight);
+  }
+
+  .speed-banner__text {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-normal);
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    .speed-banner__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .speed-banner__stat {
+      font-size: var(--text-xl);
+    }
+  }
+</style>

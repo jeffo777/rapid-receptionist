@@ -1,0 +1,90 @@
+[
+  {
+    "name": "AI Phone Answering",
+    "slug": "ai-phone-answering",
+    "pageUrl": "/ai-phone-answering-for-tradesmen/",
+    "tier": 1,
+    "tierLabel": "Conversational",
+    "icon": "📞",
+    "shortDescription": "Answers calls 24/7 with your business name and has a real conversation with callers.",
+    "description": "The flagship channel. Your AI receptionist answers every call with your business name, captures lead details, understands the nature of the work, assesses urgency, and escalates emergencies — all while you're on a job.",
+    "capabilities": ["Full back-and-forth conversation", "Answers with your business name", "Captures lead details and job requirements", "Assesses urgency during the call", "Escalates emergencies to you or our human team"]
+  },
+  {
+    "name": "AI Website Chat",
+    "slug": "ai-website-chat",
+    "pageUrl": "/ai-website-chat-for-tradesmen/",
+    "tier": 1,
+    "tierLabel": "Conversational",
+    "icon": "💬",
+    "shortDescription": "Converts website visitors into leads without you lifting a finger.",
+    "description": "A live chat widget on your website that engages visitors in real conversation, captures their details and requirements, and turns browsers into booked leads — without you needing to monitor it.",
+    "capabilities": ["Full back-and-forth conversation", "Engages website visitors automatically", "Captures lead details and requirements", "Assesses urgency from the conversation", "Escalates urgent enquiries"]
+  },
+  {
+    "name": "AI WhatsApp",
+    "slug": "ai-whatsapp",
+    "pageUrl": "/ai-whatsapp-for-tradesmen/",
+    "tier": 2,
+    "tierLabel": "One Reply",
+    "icon": "📱",
+    "shortDescription": "Responds to WhatsApp messages instantly with a professional reply.",
+    "description": "When customers message your business on WhatsApp — often with photos of their problem — the AI sends one professional reply acknowledging the enquiry, captures their details, and lets them know you'll be in touch.",
+    "capabilities": ["Instant professional reply", "Captures lead details from message", "Assesses urgency from content", "Escalates emergencies"]
+  },
+  {
+    "name": "AI SMS",
+    "slug": "ai-sms",
+    "pageUrl": "/ai-sms-for-tradesmen/",
+    "tier": 2,
+    "tierLabel": "One Reply",
+    "icon": "✉️",
+    "shortDescription": "Sends professional text message responses to enquiries.",
+    "description": "When a potential customer texts your business number, the AI responds with one professional message, captures their details and the nature of the work, and confirms you'll be in touch.",
+    "capabilities": ["Instant professional reply", "Captures lead details", "Assesses urgency", "Escalates emergencies"]
+  },
+  {
+    "name": "AI Email",
+    "slug": "ai-email",
+    "pageUrl": "/ai-email-response-for-tradesmen/",
+    "tier": 2,
+    "tierLabel": "One Reply",
+    "icon": "📧",
+    "shortDescription": "Acknowledges email enquiries with a professional first response.",
+    "description": "Email enquiries receive an instant, professional acknowledgement. The AI captures the details from their message, assesses urgency, and lets the customer know you'll follow up personally.",
+    "capabilities": ["Instant professional reply", "Captures details from email content", "Assesses urgency", "Escalates emergencies"]
+  },
+  {
+    "name": "AI Facebook Messenger",
+    "slug": "ai-facebook-messenger",
+    "pageUrl": "/ai-facebook-messenger-for-tradesmen/",
+    "tier": 2,
+    "tierLabel": "One Reply",
+    "icon": "📘",
+    "shortDescription": "Handles Facebook business page messages and captures leads.",
+    "description": "When potential customers message your Facebook business page, the AI responds instantly with a professional message, captures their details, and ensures you never lose a lead from social media.",
+    "capabilities": ["Instant professional reply", "Captures lead details", "Assesses urgency", "Escalates emergencies"]
+  },
+  {
+    "name": "AI Instagram DMs",
+    "slug": "ai-instagram-dm",
+    "pageUrl": "/ai-instagram-dms-for-tradesmen/",
+    "tier": 2,
+    "tierLabel": "One Reply",
+    "icon": "📸",
+    "shortDescription": "Responds to Instagram direct messages and captures leads.",
+    "description": "Tradesmen who showcase their work on Instagram attract enquiries via DMs. The AI responds instantly, captures the potential customer's details, and makes sure no lead slips through the cracks.",
+    "capabilities": ["Instant professional reply", "Captures lead details", "Assesses urgency", "Escalates emergencies"]
+  },
+  {
+    "name": "Missed Call Text-Back",
+    "slug": "missed-call-text-back",
+    "pageUrl": "/ai-missed-call-text-back-for-tradesmen/",
+    "tier": 3,
+    "tierLabel": "Fallback",
+    "icon": "🔔",
+    "shortDescription": "Automatic safety net text when a call is missed.",
+    "description": "The ultimate safety net. If a caller hangs up before the AI answers or the call disconnects, an automatic text is sent letting them know you're on a job and will be in touch — so they don't call a competitor.",
+    "capabilities": ["Automatic text when call is missed", "Lets caller know you're busy on a job", "Prevents them calling a competitor"]
+  }
+]

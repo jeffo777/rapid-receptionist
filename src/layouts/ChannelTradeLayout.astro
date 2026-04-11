@@ -1,0 +1,344 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SpeedBanner from '../components/SpeedBanner.astro';
+import ScenarioBlock from '../components/ScenarioBlock.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTASection from '../components/CTASection.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface BenefitItem {
+  icon: string;
+  title: string;
+  text: string;
+}
+
+export interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  channelName: string;
+  tradeName: string;
+  tradeNamePlural: string;
+  headline: string;
+  accentWord: string;
+  subhead: string;
+  speedStat: string;
+  speedText: string;
+  scenario: string;
+  benefits: BenefitItem[];
+  faqs: FAQItem[];
+  channelPageUrl: string;
+  tradePageUrl: string;
+  pricingNote: string;
+  ctaHeadline?: string;
+  ctaSubhead?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalUrl,
+  channelName,
+  tradeName,
+  tradeNamePlural,
+  headline,
+  accentWord,
+  subhead,
+  speedStat,
+  speedText,
+  scenario,
+  benefits,
+  faqs,
+  channelPageUrl,
+  tradePageUrl,
+  pricingNote,
+  ctaHeadline = `${channelName} for ${tradeNamePlural} — Stop Missing Leads`,
+  ctaSubhead = `Join the UK ${tradeNamePlural.toLowerCase()} who capture every enquiry. £19/month, no contracts, 30-day money-back guarantee.`,
+} = Astro.props;
+---
+
+<BaseLayout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <Header slot="header" />
+
+  <!-- Breadcrumbs -->
+  <section class="ct-breadcrumbs">
+    <div class="container">
+      <nav aria-label="Breadcrumb">
+        <ol class="ct-breadcrumb-list">
+          <li><a href="/">Home</a></li>
+          <li><a href={channelPageUrl}>{channelName}</a></li>
+          <li><a href={tradePageUrl}>AI Receptionist for {tradeNamePlural}</a></li>
+          <li aria-current="page">{channelName} for {tradeNamePlural}</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section class="section ct-hero" id="ct-hero">
+    <div class="container">
+      <span class="badge badge--accent">{channelName} × {tradeNamePlural}</span>
+      <h1 set:html={headline.replace(accentWord, `<span class="text-accent">${accentWord}</span>`)} />
+      <p class="ct-hero__sub">{subhead}</p>
+      <div class="ct-hero__actions">
+        <a href="/get-started/" class="btn btn--primary btn--lg">Get Started</a>
+        <a href="/pricing/" class="btn btn--outline btn--lg">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <SpeedBanner stat={speedStat} text={speedText} />
+
+  <ScenarioBlock text={scenario} />
+
+  <!-- Benefits -->
+  <section class="section section--alt" id="ct-benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why {tradeNamePlural} Need <span class="text-accent">{channelName}</span></h2>
+      </div>
+      <div class="ct-benefits-grid">
+        {benefits.map((b) => (
+          <div class="ct-benefit-card fade-in">
+            <span class="ct-benefit-card__icon">{b.icon}</span>
+            <h3>{b.title}</h3>
+            <p>{b.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Note -->
+  <section class="section" id="ct-pricing">
+    <div class="container">
+      <div class="ct-pricing-note">
+        <span class="ct-pricing-note__icon">💷</span>
+        <p set:html={pricingNote} />
+      </div>
+    </div>
+  </section>
+
+  <!-- Cross-links -->
+  <section class="section section--alt" id="ct-related">
+    <div class="container">
+      <div class="ct-related-grid">
+        <a href={channelPageUrl} class="ct-related-card">
+          <span class="ct-related-card__label">Learn more about</span>
+          <strong>{channelName}</strong>
+          <span class="ct-related-card__arrow">→</span>
+        </a>
+        <a href={tradePageUrl} class="ct-related-card">
+          <span class="ct-related-card__label">AI Receptionist for</span>
+          <strong>{tradeNamePlural}</strong>
+          <span class="ct-related-card__arrow">→</span>
+        </a>
+        <a href="/ai-receptionist-for-tradesmen/" class="ct-related-card">
+          <span class="ct-related-card__label">See all</span>
+          <strong>Channels & Trades</strong>
+          <span class="ct-related-card__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FAQAccordion faqs={faqs} />
+
+  <CTASection headline={ctaHeadline} subhead={ctaSubhead} />
+
+  <CookieConsent />
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  /* Breadcrumbs */
+  .ct-breadcrumbs {
+    padding: calc(var(--header-height) + var(--space-4)) 0 0;
+  }
+
+  .ct-breadcrumb-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    flex-wrap: wrap;
+  }
+
+  .ct-breadcrumb-list li:not(:last-child)::after {
+    content: '›';
+    margin-left: var(--space-2);
+    color: var(--color-text-muted);
+  }
+
+  .ct-breadcrumb-list a {
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+  }
+
+  .ct-breadcrumb-list a:hover {
+    color: var(--color-accent);
+  }
+
+  /* Hero */
+  .ct-hero {
+    padding-top: var(--space-10);
+    padding-bottom: var(--space-12);
+    text-align: center;
+  }
+
+  .ct-hero h1 {
+    font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+    font-weight: var(--font-extrabold);
+    line-height: var(--leading-tight);
+    max-width: 800px;
+    margin: var(--space-4) auto var(--space-6);
+  }
+
+  .ct-hero__sub {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 640px;
+    margin: 0 auto var(--space-8);
+    line-height: var(--leading-relaxed);
+  }
+
+  .ct-hero__actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  /* Benefits Grid */
+  .ct-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5);
+  }
+
+  .ct-benefit-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: border-color var(--transition-base), transform var(--transition-base);
+  }
+
+  .ct-benefit-card:hover {
+    border-color: var(--color-border-accent);
+    transform: translateY(-2px);
+  }
+
+  .ct-benefit-card__icon {
+    font-size: var(--text-2xl);
+    display: block;
+    margin-bottom: var(--space-3);
+  }
+
+  .ct-benefit-card h3 {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-2);
+  }
+
+  .ct-benefit-card p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+  }
+
+  /* Pricing Note */
+  .ct-pricing-note {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-accent);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .ct-pricing-note__icon {
+    font-size: var(--text-2xl);
+    flex-shrink: 0;
+  }
+
+  .ct-pricing-note p {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+  }
+
+  /* Related Links */
+  .ct-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+
+  .ct-related-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-5);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    text-decoration: none;
+    transition: border-color var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .ct-related-card:hover {
+    border-color: var(--color-border-accent);
+    transform: translateY(-2px);
+  }
+
+  .ct-related-card__label {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-1);
+  }
+
+  .ct-related-card strong {
+    font-size: var(--text-base);
+    color: var(--color-text-primary);
+  }
+
+  .ct-related-card__arrow {
+    color: var(--color-accent);
+    margin-top: var(--space-2);
+    transition: transform var(--transition-fast);
+  }
+
+  .ct-related-card:hover .ct-related-card__arrow {
+    transform: translateX(4px);
+  }
+
+  @media (max-width: 768px) {
+    .ct-benefits-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .ct-related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .ct-benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

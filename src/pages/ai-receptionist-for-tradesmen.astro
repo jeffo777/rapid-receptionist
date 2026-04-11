@@ -1,0 +1,359 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+import SpeedBanner from '../components/SpeedBanner.astro';
+import ScenarioBlock from '../components/ScenarioBlock.astro';
+import StepsGrid from '../components/StepsGrid.astro';
+import TrustSection from '../components/TrustSection.astro';
+import TestimonialSlider from '../components/TestimonialSlider.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTASection from '../components/CTASection.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+import trades from '../data/trades.json';
+
+const steps = [
+  {
+    number: 1,
+    title: 'Tell Us About Your Business',
+    description: "Share your trade, your services, your service area, and how you like things handled. We take it from there — configuring every channel, training the AI on your vocabulary, and testing the entire system before it goes live."
+  },
+  {
+    number: 2,
+    title: 'Your AI Receptionist Goes Live',
+    description: "From the second we switch it on, every incoming call, message, and enquiry is handled instantly. Your business name, your greeting, your services — the AI represents you exactly the way you'd want."
+  },
+  {
+    number: 3,
+    title: 'You Focus on the Work',
+    description: "Every lead is captured, assessed for urgency, and delivered to you in real-time. Emergencies get escalated immediately. Routine jobs wait until you're free. You never miss a lead, and you never have to stop mid-job to answer the phone."
+  }
+];
+
+/* ── Channel showcase — each description is unique to this generic page ── */
+const channelShowcase = [
+  {
+    icon: '📞',
+    name: 'AI Phone Answering',
+    tier: 'Core',
+    href: '/ai-phone-answering-for-tradesmen/',
+    description: "The backbone of the service. Your AI receptionist picks up within two rings, greets callers with your business name, and has a genuine back-and-forth conversation. It captures who they are, what they need, where they are, and how urgent it is. Emergencies get escalated to your mobile. Routine jobs get sent to you when you're free. 300 minutes of talk time included."
+  },
+  {
+    icon: '💬',
+    name: 'AI Website Chat',
+    tier: 'Core',
+    href: '/ai-website-chat-for-tradesmen/',
+    description: "A chat widget sits on your website, ready to engage any visitor who has a question. The AI starts a real conversation — asking what they need, where they're based, capturing their contact details naturally through the chat flow. Most website visitors leave without making contact. This catches them before they go. Unlimited messages, no caps."
+  },
+  {
+    icon: '📱',
+    name: 'AI WhatsApp',
+    tier: 'Add-on · £19/mo',
+    href: '/ai-whatsapp-for-tradesmen/',
+    description: "The UK's most-used messaging app is now a lead capture channel. When customers WhatsApp your number — often with photos of the problem — the AI sends an instant professional response, captures the details, and lets them know you'll be in touch. Handles image messages, text enquiries, and after-hours messages alike."
+  },
+  {
+    icon: '✉️',
+    name: 'AI SMS',
+    tier: 'Add-on · £19/mo',
+    href: '/ai-sms-for-tradesmen/',
+    description: "Not everyone wants to call. When a potential customer texts your business number, the AI reads their message, understands the context, and sends a single professional reply. It captures their name, the work they need, and their location — then sends you a structured lead you can action when ready."
+  },
+  {
+    icon: '📧',
+    name: 'AI Email Response',
+    tier: 'Add-on · £19/mo',
+    href: '/ai-email-response-for-tradesmen/',
+    description: "Email enquiries are slow killers — they sit in your inbox for hours while you're on site, and by the time you reply, the customer has moved on. AI Email sends an immediate, professional acknowledgement that references their specific enquiry and confirms you'll follow up. Keeps you in the running when you can't check your inbox."
+  },
+  {
+    icon: '📘',
+    name: 'AI Facebook Messenger',
+    tier: 'Add-on · £19/mo',
+    href: '/ai-facebook-messenger-for-tradesmen/',
+    description: "Your Facebook page brings in enquiries — especially from community group recommendations and ad clicks. The AI responds to incoming Messenger messages instantly, captures the lead, and earns you the green 'Typically replies instantly' badge. Evening and weekend messages are handled just as professionally as weekday ones."
+  },
+  {
+    icon: '📸',
+    name: 'AI Instagram DMs',
+    tier: 'Add-on · £19/mo',
+    href: '/ai-instagram-dms-for-tradesmen/',
+    description: "Your before-and-after photos and project Reels generate DMs from inspired homeowners. The AI catches every DM, responds professionally, captures the customer's details and what they're after, and forwards everything — including any photos they've sent. Turns your content marketing into actual booked work."
+  },
+  {
+    icon: '🔔',
+    name: 'Missed Call Text-Back',
+    tier: 'Add-on · £19/mo',
+    href: '/ai-missed-call-text-back-for-tradesmen/',
+    description: "The safety net. If a call slips through — the caller hangs up after one ring, your line's busy, or there's a network blip — an automatic text fires within 15 seconds. It arrives from your business number, uses your name, and stops the caller dialling your competitor. Pairs perfectly with phone answering to create a watertight system."
+  }
+];
+
+const faqs = [
+  {
+    question: "What exactly does an AI receptionist do?",
+    answer: "It does everything a human receptionist does — answers calls, captures lead details, assesses urgency, greets customers by your business name, and makes sure you never miss an enquiry. The difference is it works 24/7/365, costs a fraction of a human salary, and can cover up to 8 channels simultaneously. Calls and website chat are fully conversational. Messaging channels like WhatsApp, SMS, email, and social media use a professional one-reply model to capture the lead."
+  },
+  {
+    question: "Which channels are included in the Core plan?",
+    answer: "The Core plan at £99/month includes AI phone answering with 300 minutes of talk time and unlimited website chat. These are the two channels where tradesmen lose the most leads — missed calls and website visitors who leave without making contact. Everything else — WhatsApp, SMS, email, Facebook, Instagram, and missed call text-back — is available at £19/month per channel, or bundled in the All Channels package at £179/month."
+  },
+  {
+    question: "Do I need all 8 channels?",
+    answer: "No. Most tradesmen start with the Core plan — phone and chat — and add channels as they see where their leads are coming from. If you get a lot of WhatsApp messages, add that. If your Facebook page generates enquiries, add Messenger. The system is modular — pick what makes sense for your business and add more later if you need to."
+  },
+  {
+    question: "Is this built specifically for tradesmen?",
+    answer: "Yes — every part of it. The AI is trained with trade-specific vocabulary and scenarios. It knows the difference between a boiler service and a boiler breakdown, a full rewire and a socket addition, a flat roof repair and a complete re-roof. It understands emergency triage for each trade. It speaks the language your customers expect when they call a tradesman."
+  },
+  {
+    question: "What trades does it support?",
+    answer: `We currently support 13 UK trades: ${trades.map(t => t.name).join(', ')}. Each trade gets a bespoke AI configuration — trained on the specific services, terminology, and emergency scenarios relevant to that trade. A locksmith's AI handles lock-out urgency differently to how a plumber's AI handles a burst pipe, because the customer expectations and response requirements are completely different.`
+  },
+  {
+    question: "How does emergency escalation work across channels?",
+    answer: "On phone calls, the AI detects emergencies in real-time during the conversation — gas leaks, burst pipes, electrical faults, break-ins — and escalates immediately to your mobile. If you don't answer within 30 seconds, our human team steps in. On messaging channels, the AI assesses urgency from the message content and flags emergencies in your lead notification with a priority alert, so you know to call back immediately."
+  },
+  {
+    question: "What does the setup involve?",
+    answer: "Everything is done for you. We configure the AI with your business name, your services, your service area, and any specific instructions you have. We connect your phone number, install the chat widget, and link any messaging accounts you want covered. We test every channel before going live. The entire setup is covered by a one-time £299 fee — which is fully refundable if you're not happy within the first 30 days."
+  },
+  {
+    question: "Can I try it before committing?",
+    answer: "We don't offer a limited trial — instead, you get the full service from day one with a 30-day money-back guarantee. If you're not satisfied within those 30 days, we refund everything — the monthly fee and the setup fee. You see the real product, properly configured for your trade, with zero risk."
+  },
+  {
+    question: "How much does it cost?",
+    answer: "The Core plan is £99/month for phone answering and website chat. Each additional channel — WhatsApp, SMS, email, Facebook, Instagram, or missed call text-back — is £19/month. The All Channels bundle covers everything for £179/month. There's a one-time £299 setup fee (fully refundable). No contracts, cancel anytime."
+  }
+];
+---
+
+<BaseLayout
+  title="AI Receptionist for UK Tradesmen — 8 Channels, 24/7, From £99/mo | Rapid Receptionist"
+  description="AI receptionist covering up to 8 channels for UK tradesmen. Phone, chat, WhatsApp, SMS, email, social & more. 24/7/365. From £99/mo. 30-day money-back guarantee."
+  canonicalUrl="/ai-receptionist-for-tradesmen/"
+>
+  <Header slot="header" />
+
+  <HeroSection
+    headline="One AI Receptionist. Eight Channels. Zero Missed Leads."
+    accentWord="Eight Channels"
+    subhead="Phone, website chat, WhatsApp, SMS, email, Facebook, Instagram, and missed call text-back — all answered instantly, professionally, and with your business name. While you're on the tools, your AI receptionist handles every enquiry across every channel your customers use."
+  />
+
+  <SpeedBanner
+    stat="78% of customers hire the first business to respond."
+    text="Across every channel. Not just phone. A WhatsApp message left unanswered for two hours, an Instagram DM ignored until Monday, an email buried in your inbox — every one of those is a customer who called your competitor while you were on a job. AI receptionist coverage across all channels means you respond first, every time."
+  />
+
+  <ScenarioBlock text="It's a Tuesday in October. You're a roofer fitting ridge tiles in Swindon. At 9:12am, a homeowner in Bath calls about a leaking conservatory roof — your AI answers, captures the details, and flags it as moderate urgency. At 10:30am, someone WhatsApps you a photo of damaged flashing — the AI acknowledges the image and captures their address. At lunchtime, your Facebook page gets a Messenger enquiry from a landlord needing a quote on three properties. At 2pm, a website visitor asks your chat widget about a full re-roof. At 4:45pm, a text arrives from someone who found your number on Checkatrade. You check your dashboard at 5pm: five fully qualified leads, each with contact details, job description, location, and urgency assessment. One day, five channels, zero missed opportunities." />
+
+  <StepsGrid steps={steps} />
+
+  <!-- Channel Showcase — unique descriptions, links to channel pages -->
+  <section class="section section--alt" id="channel-showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge--accent section-header__badge">All Channels</span>
+        <h2>Every Way Your Customers <span class="text-accent">Reach You</span>. Covered.</h2>
+        <p>Your AI receptionist handles these channels around the clock. Start with phone and chat, then add whatever your business needs.</p>
+      </div>
+
+      <div class="channel-showcase-grid">
+        {channelShowcase.map((ch) => (
+          <div class="channel-showcase-card fade-in">
+            <div class="channel-showcase-card__header">
+              <span class="channel-showcase-card__icon">{ch.icon}</span>
+              <div>
+                <h3 class="channel-showcase-card__name">{ch.name}</h3>
+                <span class:list={[
+                  'badge',
+                  ch.tier === 'Core' ? 'badge--accent' : 'badge--trust'
+                ]}>
+                  {ch.tier}
+                </span>
+              </div>
+            </div>
+            <p class="channel-showcase-card__desc">{ch.description}</p>
+            <a href={ch.href} class="channel-showcase-card__link">
+              Learn more about {ch.name} →
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Trades We Serve -->
+  <section class="section" id="trades-served">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge--trust section-header__badge">13 UK Trades</span>
+        <h2>Built for <span class="text-accent">Your</span> Trade</h2>
+        <p>Every trade gets a bespoke AI configuration — trained on your terminology, your emergencies, and the way your customers talk.</p>
+      </div>
+
+      <div class="trades-grid">
+        {trades.map((trade) => (
+          <a href={`/ai-receptionist-for-${trade.slug}/`} class="trade-link-card fade-in">
+            <span class="trade-link-card__icon">{trade.icon}</span>
+            <span class="trade-link-card__name">AI Receptionist for {trade.name}</span>
+            <span class="trade-link-card__arrow">→</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <TrustSection />
+
+  <TestimonialSlider />
+
+  <FAQAccordion faqs={faqs} />
+
+  <CTASection
+    headline="Cover Every Channel. Capture Every Lead."
+    subhead="Phone, chat, WhatsApp, SMS, email, social — all handled by your AI receptionist. From £99/month, no contracts, 30-day money-back guarantee."
+  />
+
+  <CookieConsent />
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  /* Channel Showcase Grid */
+  .channel-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+  }
+
+  .channel-showcase-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: border-color var(--transition-base), transform var(--transition-base);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .channel-showcase-card:hover {
+    border-color: var(--color-border-accent);
+    transform: translateY(-2px);
+  }
+
+  .channel-showcase-card__header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+  }
+
+  .channel-showcase-card__icon {
+    font-size: var(--text-2xl);
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent-subtle);
+    border-radius: var(--radius-lg);
+  }
+
+  .channel-showcase-card__name {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-1);
+  }
+
+  .channel-showcase-card__desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+    flex: 1;
+  }
+
+  .channel-showcase-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-accent);
+    transition: gap var(--transition-fast);
+  }
+
+  .channel-showcase-card__link:hover {
+    gap: var(--space-2);
+  }
+
+  /* Trades Grid */
+  .trades-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+  }
+
+  .trade-link-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+  }
+
+  .trade-link-card:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-text-primary);
+    background: var(--color-accent-subtle);
+  }
+
+  .trade-link-card__icon {
+    font-size: var(--text-lg);
+    flex-shrink: 0;
+  }
+
+  .trade-link-card__name {
+    flex: 1;
+  }
+
+  .trade-link-card__arrow {
+    color: var(--color-accent);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+  }
+
+  .trade-link-card:hover .trade-link-card__arrow {
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .channel-showcase-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .trades-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .trades-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

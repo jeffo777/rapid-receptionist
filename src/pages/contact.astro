@@ -1,0 +1,316 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+
+const faqs = [
+  {
+    question: "How quickly will someone get back to me?",
+    answer: "We aim to respond to every enquiry within 2 working hours on weekdays. Most enquiries get a reply much faster than that. If you call and we can't pick up, we'll call you back the same day. Weekend and evening enquiries are answered the next working morning."
+  },
+  {
+    question: "I'm not sure which plan I need. Can you help?",
+    answer: "Absolutely. Tell us about your trade, how many calls you typically get, and which channels your customers use to contact you. We'll recommend the right setup — no upselling, no pressure. Most sole traders start with the Core plan and add channels as they see where leads come from."
+  },
+  {
+    question: "What happens after I submit the form?",
+    answer: "One of our team will review your enquiry and get in touch — usually by email first, then a quick call if needed. We'll ask a few questions about your business, explain exactly how the setup works, and get you live within 48 hours of signing up. The entire onboarding is done for you."
+  },
+  {
+    question: "Is there a sales pitch involved?",
+    answer: "No. We answer your questions honestly, explain what the service does, and let you decide. The pricing is on the website — there's no hidden premium tier we'll try to push you towards. If the service isn't right for your business, we'll tell you that too."
+  }
+];
+---
+
+<BaseLayout
+  title="Contact Rapid Receptionist — Get in Touch | UK"
+  description="Questions about Rapid Receptionist? Get in touch. Phone, email, or contact form. We typically respond within 2 hours on working days."
+  canonicalUrl="/contact/"
+>
+  <Header slot="header" />
+
+  <!-- Hero -->
+  <section class="section contact-hero" id="contact-hero">
+    <div class="container">
+      <span class="badge badge--accent">Contact Us</span>
+      <h1>Got a Question? <span class="text-accent">We're Here.</span></h1>
+      <p class="contact-hero__sub">Whether you want to know more about the service, need help choosing the right plan, or just want to ask something before committing — drop us a line. No sales pitch, just straight answers.</p>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="section section--alt" id="contact-main">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap">
+          <h2>Send Us a Message</h2>
+          <p class="contact-form-intro">Fill in the form and we'll get back to you within 2 working hours. If it's urgent, call us directly.</p>
+
+          <form class="contact-form" id="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" required placeholder="John Smith" autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" required placeholder="john@example.co.uk" autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number <span class="form-optional">(optional)</span></label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="07XXX XXXXXX" autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-trade">Your Trade <span class="form-optional">(optional)</span></label>
+              <select id="contact-trade" name="trade">
+                <option value="">Select your trade...</option>
+                <option value="plumber">Plumber</option>
+                <option value="electrician">Electrician</option>
+                <option value="gas-engineer">Gas Engineer</option>
+                <option value="locksmith">Locksmith</option>
+                <option value="roofer">Roofer</option>
+                <option value="builder">Builder</option>
+                <option value="drainage">Drainage Engineer</option>
+                <option value="hvac">HVAC Engineer</option>
+                <option value="glazier">Glazier</option>
+                <option value="pest-control">Pest Control</option>
+                <option value="garage-door">Garage Door Engineer</option>
+                <option value="appliance-repair">Appliance Repair</option>
+                <option value="alarm-security">Alarm & Security</option>
+                <option value="other">Other Trade</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message" name="message" required rows="5" placeholder="Tell us what you'd like to know..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg contact-submit" id="contact-submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon">📧</div>
+            <h3>Email Us</h3>
+            <p>For general enquiries, quotes, or support.</p>
+            <a href="mailto:hello@rapidreceptionist.co.uk" class="contact-info-card__link">hello@rapidreceptionist.co.uk</a>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon">📞</div>
+            <h3>Call Us</h3>
+            <p>Speak to a real person during office hours.</p>
+            <a href="tel:+44XXXXXXXXXX" class="contact-info-card__link">Coming Soon</a>
+            <span class="contact-info-card__hours">Mon–Fri, 9am–5pm</span>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon">⏱️</div>
+            <h3>Response Time</h3>
+            <p>We aim to respond to every enquiry within 2 working hours. Most get a reply much faster.</p>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon">🇬🇧</div>
+            <h3>UK-Based</h3>
+            <p>Rapid Receptionist is a UK company, supporting UK tradesmen. All communication in UK English, all pricing in GBP.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FAQAccordion faqs={faqs} />
+
+  <CookieConsent />
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  .contact-hero {
+    padding-top: calc(var(--header-height) + var(--space-16));
+    padding-bottom: var(--space-12);
+    text-align: center;
+  }
+
+  .contact-hero h1 {
+    font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+    font-weight: var(--font-extrabold);
+    line-height: var(--leading-tight);
+    max-width: 700px;
+    margin: var(--space-4) auto var(--space-6);
+  }
+
+  .contact-hero__sub {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: var(--leading-relaxed);
+  }
+
+  /* Contact Grid */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--space-10);
+    align-items: start;
+  }
+
+  /* Form */
+  .contact-form-wrap h2 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--space-2);
+  }
+
+  .contact-form-intro {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+    line-height: var(--leading-relaxed);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-5);
+  }
+
+  .form-group label {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .form-optional {
+    color: var(--color-text-muted);
+    font-weight: var(--font-normal);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    color: var(--color-text-primary);
+    font-size: var(--text-base);
+    font-family: var(--font-family);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%239CA3AF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: var(--space-10);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .contact-submit {
+    width: 100%;
+  }
+
+  /* Info Sidebar */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .contact-info-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-5);
+    transition: border-color var(--transition-base);
+  }
+
+  .contact-info-card:hover {
+    border-color: var(--color-border-accent);
+  }
+
+  .contact-info-card__icon {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-2);
+  }
+
+  .contact-info-card h3 {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-1);
+  }
+
+  .contact-info-card p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-2);
+  }
+
+  .contact-info-card__link {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-accent);
+  }
+
+  .contact-info-card__hours {
+    display: block;
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    margin-top: var(--space-1);
+  }
+
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+      order: -1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-3);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact-info {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

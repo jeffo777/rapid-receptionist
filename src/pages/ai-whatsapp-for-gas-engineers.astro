@@ -1,0 +1,85 @@
+---
+import ChannelTradeLayout from '../layouts/ChannelTradeLayout.astro';
+
+const benefits = [
+  {
+    icon: '🔥',
+    title: 'Boiler Breakdown Photo Triage',
+    text: "Homeowners WhatsApp photos of boiler error codes, flashing lights, and fault displays. The AI acknowledges the images, captures the boiler make and model if visible, and flags whether the customer has mentioned gas smells. You get a visual preview of the fault before calling back."
+  },
+  {
+    icon: '🛡️',
+    title: 'Gas Emergency Escalation',
+    text: "A WhatsApp saying 'can smell gas near the boiler' triggers immediate emergency handling. The AI advises the customer to open windows and avoid naked flames, flags the message as critical priority, and ensures your notification arrives within seconds."
+  },
+  {
+    icon: '📋',
+    title: 'Landlord Gas Safety Scheduling',
+    text: "Landlords and letting agents WhatsApp about annual gas safety certificate renewals — often for multiple properties at once. The AI captures each property address and the current certificate expiry date, building you a structured list for efficient batch scheduling."
+  },
+  {
+    icon: '❄️',
+    title: 'Winter Heating Surge Coverage',
+    text: "When temperatures drop, boiler breakdown messages flood in simultaneously. The AI handles every message instantly — no queue, no delay — capturing details for each job while you work through the emergency backlog one callout at a time."
+  },
+  {
+    icon: '📸',
+    title: 'Radiator & Heating System Queries',
+    text: "Customers photograph cold radiators, noisy pipes, and leaking valves. The AI acknowledges the images and captures whether the issue affects the whole system or just one radiator. You can prioritise jobs based on severity before returning calls."
+  },
+  {
+    icon: '⏰',
+    title: 'Round-the-Clock Boiler Coverage',
+    text: "Boilers break down at 6am on a January morning, at midnight on Christmas Eve, and at 3pm on a bank holiday. The AI handles WhatsApp messages at any hour, capturing the fault details and flagging genuine emergencies for immediate attention."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI WhatsApp handle gas engineering enquiries?",
+    answer: "When a customer WhatsApps your number about a boiler fault, heating issue, or gas safety certificate, the AI reads the message, identifies the type of work, and sends a professional response. If they've sent photos of error codes or the boiler itself, those images are included in your lead notification. The AI captures the boiler type, the nature of the fault, the customer's address, and whether the enquiry is routine or urgent."
+  },
+  {
+    question: "Will the AI give gas safety advice?",
+    answer: "No — and this is critical. The AI never diagnoses gas faults, advises on gas appliance operation, or makes safety recommendations beyond basic common sense. If someone reports a gas smell, the AI suggests opening windows and not using naked flames — standard advice from the National Grid emergency line — and flags the message as an emergency. All technical and safety conversations are for you as the qualified Gas Safe registered engineer."
+  },
+  {
+    question: "I get a lot of landlord messages about gas safety certificates. Will this handle those?",
+    answer: "Landlord gas safety work is one of the highest-volume message types for gas engineers. The AI captures property addresses, current certificate expiry dates, and whether the landlord needs a single inspection or a batch across their portfolio. You receive a structured notification that makes scheduling and quoting multiple properties efficient."
+  },
+  {
+    question: "How does the AI handle boiler breakdown messages in winter?",
+    answer: "During cold snaps, boiler breakdown messages can arrive faster than you can physically attend them. The AI responds to every message instantly — no matter how many arrive simultaneously. Each customer gets a professional acknowledgement, and your dashboard fills with structured leads that you can triage by urgency. Families with no heating in freezing temperatures are flagged higher than routine service requests."
+  },
+  {
+    question: "Can I configure the AI to mention my Gas Safe registration?",
+    answer: "Yes. During setup, we configure the AI to reference your Gas Safe registration number in responses. This builds immediate trust — especially with landlords and letting agents who require proof of Gas Safe registration before booking work. Your registration number appears in the professional response."
+  },
+  {
+    question: "How much does AI WhatsApp cost for gas engineers?",
+    answer: "AI WhatsApp is £19/month as an add-on to the Core plan or standalone. Unlimited incoming messages, no per-message charges. The £299 setup fee covers WhatsApp Business configuration. No contracts, cancel anytime, 30-day money-back guarantee."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for UK Gas Engineers — Capture Every Boiler Lead | Rapid Receptionist"
+  description="AI WhatsApp for UK gas engineers. Instant replies to boiler breakdowns, gas safety requests, heating faults. Emergency flagging. £19/month. No contracts."
+  canonicalUrl="/ai-whatsapp-for-gas-engineers/"
+  channelName="AI WhatsApp"
+  tradeName="Gas Engineer"
+  tradeNamePlural="Gas Engineers"
+  headline="Every WhatsApp About a Boiler Breakdown or Gas Job. Handled Instantly."
+  accentWord="Handled Instantly"
+  subhead="Homeowners are WhatsApping you photos of boiler error codes, radiators that won't heat, and pilot lights that keep going out. AI WhatsApp captures every message with a professional response — even when you're elbow-deep in a heat exchanger."
+  speedStat="72% of boiler breakdown customers contact multiple gas engineers simultaneously."
+  speedText="When the heating stops working in January, homeowners don't wait. They message every gas engineer they can find — and the first one to respond gets the callout. AI WhatsApp makes sure that first response comes from you, every time, regardless of what job you're currently on."
+  scenario="It's 7am on a freezing Tuesday in February. You're loading the van for a boiler installation in Solihull when your phone lights up with four WhatsApps in quick succession. A family in Edgbaston with no heating and a toddler — their Vaillant is showing an F28 error code and they've sent a photo. A landlord in Moseley needs gas safety certificates for three rental flats before the end of the month. A homeowner in Kings Heath messages about a radiator that won't heat up despite bleeding. An elderly couple in Harborne say their boiler 'smells funny' when it fires up. You're about to drive and can't reply to any of them. Without AI WhatsApp, those four messages sit unread until your mid-morning break. The Edgbaston family — with a toddler in a freezing house — calls another gas engineer who responds within ten minutes. With Rapid Receptionist, every message gets an instant response. The 'smells funny' message is flagged as a potential gas emergency. You check your dashboard in the van, call the Harborne couple first to assess the gas smell, and schedule the rest by urgency. Four leads captured, one potential emergency caught, zero lost to competitors."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/ai-whatsapp-for-tradesmen/"
+  tradePageUrl="/ai-receptionist-for-gas-engineers/"
+  pricingNote="AI WhatsApp for gas engineers is <strong>£19/month</strong> as an add-on or standalone. Unlimited messages, no per-message charges. £299 setup. No contracts. <a href='/pricing/'>See full pricing →</a>"
+  ctaHeadline="Stop Losing Boiler Jobs to Unread WhatsApps"
+  ctaSubhead="Breakdowns, gas certificates, heating faults — every message answered instantly. £19/month."
+/>

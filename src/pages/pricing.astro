@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+import PricingCard from '../components/PricingCard.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTASection from '../components/CTASection.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+
+const faqs = [
+  {
+    question: "What does the Core plan at £99/month actually include?",
+    answer: "The Core plan gives you an AI receptionist that answers your phone and handles your website chat — the two channels where you lose the most leads. You get 300 minutes of AI phone talk time every month, unlimited website chat messages, human emergency escalation, and trade-specific AI training that means your receptionist knows the difference between a boiler repair and a full system install. It answers with your business name, captures caller details, and sends you the lead instantly."
+  },
+  {
+    question: "Can I buy individual channels without the Core plan?",
+    answer: "Yes — every channel is available standalone at £19/month each. So if you already answer your own phone but want AI handling your WhatsApp messages and Facebook enquiries, you just pick those two channels for £38/month. No minimum, no bundling requirements. You only pay for what you actually use. The £299 setup fee still applies because we configure and train your AI regardless of how many channels you choose."
+  },
+  {
+    question: "What does the £299 setup fee cover?",
+    answer: "The setup fee covers the full configuration of your AI across whichever channels you choose. We train the AI on your specific trade, services, and pricing. We configure your business name, greeting style, and escalation rules. We connect each channel to your business accounts and test everything before going live. It's a genuine done-for-you service — not a template with a tooltip. The entire setup fee is fully refundable under our 30-day money-back guarantee."
+  },
+  {
+    question: "What's the All Channels bundle at £179/month?",
+    answer: "Instead of buying the Core plan plus all six add-on channels individually — which would cost £213/month — the All Channels bundle gives you everything for £179/month. That's AI phone answering with 300 minutes, unlimited website chat, plus WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back. Every channel your customers actually use, covered around the clock."
+  },
+  {
+    question: "How does the phone talk time work?",
+    answer: "Your Core plan includes 300 minutes of actual AI phone conversation time per month — that's the time the AI spends actively talking to callers, not standby time. For the majority of sole traders and small trade businesses, 300 minutes is plenty. If you consistently go over, additional talk time is charged at 20p per minute. All text-based channels — chat, WhatsApp, SMS, email, and social messages — are unlimited regardless of your plan."
+  },
+  {
+    question: "Are there any contracts or lock-in periods?",
+    answer: "None at all. Every plan is monthly with no contracts, no minimum terms, and no lock-in periods. Cancel any time — takes effect at the end of your billing cycle. We keep your business because the service works for you, not because you're stuck in a contract. If you don't want it next month, you stop paying."
+  },
+  {
+    question: "What's the 30-day money-back guarantee?",
+    answer: "If you're not happy within the first 30 days, we refund everything — your monthly fee and your £299 setup fee. No questions, no forms, no awkward phone call. We take on the risk so you don't have to. We'd rather give you your money back than have you feeling trapped. Most tradesmen who try the service keep it running because they see the leads coming in within the first week."
+  },
+  {
+    question: "How does this compare to a human virtual receptionist?",
+    answer: "A human virtual receptionist typically costs £200 to £500 per month, only works standard office hours, and covers phone calls only. Rapid Receptionist starts at £99/month for phone and chat, works 24/7/365 including weekends and bank holidays, responds to every enquiry within seconds, and can cover up to 8 channels. It never calls in sick, never puts your callers on hold, and never forgets to send you the message."
+  }
+];
+---
+
+<BaseLayout
+  title="Pricing — AI Receptionist for UK Tradesmen | From £99/mo | Rapid Receptionist"
+  description="Transparent pricing for UK tradesmen. AI phone answering + web chat from £99/month, or add individual channels at £19/month each. No contracts, 30-day money-back guarantee."
+  canonicalUrl="/pricing/"
+>
+  <Header slot="header" />
+
+  <!-- Hero -->
+  <HeroSection
+    headline="Transparent Pricing. No Surprises. Built for UK Tradesmen."
+    accentWord="Transparent Pricing"
+    subhead="Start with AI phone answering and web chat at £99/month, then add any channel you need at £19/month each. Or grab everything for £179/month."
+    showTrustRow={false}
+    showAIReceptionist={false}
+  />
+
+  <!-- Pricing Card + Add-Ons -->
+  <section class="section" id="pricing-section">
+    <div class="container">
+      <PricingCard />
+    </div>
+  </section>
+
+  <!-- Pricing FAQs -->
+  <FAQAccordion faqs={faqs} id="pricing-faqs" />
+
+  <!-- CTA -->
+  <CTASection
+    headline="Stop Losing Jobs to Missed Calls"
+    subhead="Join the UK tradesmen who never miss a lead. From £99/month, no contracts, cancel anytime."
+  />
+
+  <CookieConsent />
+  <Footer slot="footer" />
+</BaseLayout>
+

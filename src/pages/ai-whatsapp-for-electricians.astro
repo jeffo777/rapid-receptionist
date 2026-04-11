@@ -1,0 +1,85 @@
+---
+import ChannelTradeLayout from '../layouts/ChannelTradeLayout.astro';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Photo-Based Fault Diagnosis',
+    text: "Customers WhatsApp photos of tripped RCDs, sparking sockets, and flickering lights. The AI acknowledges the images, captures the property address and urgency, and forwards everything to you. You can often pre-diagnose the issue before you even pick up the phone."
+  },
+  {
+    icon: '⚡',
+    title: 'Electrical Emergency Flagging',
+    text: "Someone WhatsApps 'burning smell from socket' at midnight. The AI recognises the emergency, sends an immediate safety-conscious acknowledgement advising them not to use the socket, flags the lead as high priority, and alerts you instantly."
+  },
+  {
+    icon: '🏠',
+    title: 'EV Charger Enquiries on the Rise',
+    text: "EV charger installations are the fastest-growing segment in domestic electrical work. Homeowners WhatsApp photos of their driveway, their consumer unit, and their parking setup. The AI captures these details — giving you everything you need to quote before you visit."
+  },
+  {
+    icon: '📋',
+    title: 'Landlord EICR Requests',
+    text: "Landlords with portfolio properties message about EICR scheduling, certificate renewals, and compliance deadlines. The AI handles each enquiry individually, capturing property addresses and certificate expiry dates. You get a structured list rather than a messy thread."
+  },
+  {
+    icon: '🔌',
+    title: 'Consumer Unit Upgrade Quotes',
+    text: "A homeowner photographs their old fuse box and asks 'Does this need upgrading?' The AI captures the photo, the property details, and the customer's availability. You review the image during your tea break and have a good idea of the job before calling back."
+  },
+  {
+    icon: '🌙',
+    title: 'After-Hours Smart Coverage',
+    text: "Electrical faults don't wait for business hours. A tripped consumer unit at 11pm, a dead socket on a Sunday, outdoor lights that won't switch off — the AI handles every message and sorts emergencies from routine work for you."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI WhatsApp handle electrical enquiries?",
+    answer: "When a customer WhatsApps your number about an electrical issue — a tripped RCD, a socket that's stopped working, or a full rewire quote — the AI reads the message, identifies the type of work, and sends a professional response. If they've sent photos of the fault or their consumer unit, those images are included in your lead notification along with their contact details and urgency assessment."
+  },
+  {
+    question: "Can the AI recognise electrical emergencies from a WhatsApp message?",
+    answer: "Yes. The AI is trained to detect emergency language specific to electrical work — burning smells, sparking, exposed wiring, power outages affecting the whole property, and water near electrical installations. These messages are flagged with priority alerts to give you immediate visibility."
+  },
+  {
+    question: "I get a lot of EV charger enquiries — will this handle those?",
+    answer: "EV charger installations are one of the highest-value domestic electrical jobs right now. The AI captures enquiry details including the vehicle type, parking arrangement, and photos of the customer's consumer unit and driveway. You get everything you need to assess feasibility and provide an accurate quote."
+  },
+  {
+    question: "Will the AI give electrical safety advice?",
+    answer: "No — and deliberately. The AI never provides safety advice, diagnoses faults, or recommends solutions. Those are professional responsibilities that require a qualified electrician. If someone messages about a burning smell from a socket, the AI will suggest they stop using the socket and flag the message as urgent — but it won't attempt to troubleshoot the fault."
+  },
+  {
+    question: "I'm Part P registered. Does the AI mention that?",
+    answer: "Your qualifications and registrations can be referenced in the AI's responses during setup. If you want the AI to mention that you're Part P registered, NICEIC approved, or NAPIT certified, we configure that during onboarding. It adds professional credibility to every first response."
+  },
+  {
+    question: "How much does AI WhatsApp cost for electricians?",
+    answer: "AI WhatsApp is £19/month as an add-on to the Core plan or standalone. Unlimited incoming messages, no per-message charges. The £299 setup fee covers WhatsApp Business configuration. No contracts, cancel anytime, 30-day money-back guarantee."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for UK Electricians — Capture Every Electrical Enquiry | Rapid Receptionist"
+  description="AI WhatsApp for UK electricians. Instant responses to electrical enquiries, photo-based fault assessment, emergency flagging. £19/month. No contracts."
+  canonicalUrl="/ai-whatsapp-for-electricians/"
+  channelName="AI WhatsApp"
+  tradeName="Electrician"
+  tradeNamePlural="Electricians"
+  headline="Every WhatsApp About an Electrical Job. Answered Instantly. Leads Captured."
+  accentWord="Answered Instantly"
+  subhead="Your customers are WhatsApping you photos of tripped RCDs, sparking sockets, and consumer units that look like they were installed in 1973. AI WhatsApp makes sure every message gets a professional response — even when you're up a ladder pulling cables."
+  speedStat="EV charger enquiries via WhatsApp have tripled in the last 12 months."
+  speedText="Homeowners research EV chargers online, find a local electrician, and WhatsApp them a photo of their driveway and consumer unit. They message three electricians at once. The first to respond gets the site visit — and the £800-£1,200 installation job."
+  scenario="It's 9am on a Monday. You're starting a kitchen rewire in a Victorian terrace in Leeds. Your phone pings three times before you've finished your first coffee. A homeowner in Headingley sends a photo of a tripping consumer unit with 'Keeps tripping every time I use the oven — can you come look?' A landlord WhatsApps about EICR renewals for four flats in Roundhay. A new-build homeowner asks about installing an EV charger on their drive in Horsforth. You're about to start chasing walls and won't check your phone until lunch. Without AI WhatsApp, those three messages sit unread for four hours. The Headingley customer calls another sparks who replies within ten minutes. With Rapid Receptionist, every message gets a professional response in seconds. The tripping consumer unit is flagged as moderate urgency. You review all three leads at lunchtime and call back the same afternoon."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/ai-whatsapp-for-tradesmen/"
+  tradePageUrl="/ai-receptionist-for-electricians/"
+  pricingNote="AI WhatsApp for electricians is <strong>£19/month</strong> as an add-on or standalone. Unlimited messages, no per-message charges. £299 setup. No contracts. <a href='/pricing/'>See full pricing →</a>"
+  ctaHeadline="Stop Losing Electrical Leads to Unread WhatsApps"
+  ctaSubhead="EV chargers, rewires, consumer units — every WhatsApp answered instantly. £19/month."
+/>

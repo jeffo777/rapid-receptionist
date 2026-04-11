@@ -1,0 +1,54 @@
+---
+import TradeHubLayout from '../layouts/TradeHubLayout.astro';
+
+const faqs = [
+  {
+    question: "How does the AI handle locksmith calls — especially emergency ones?",
+    answer: "Locksmith calls are often urgent by nature — someone locked out at midnight, a break-in that's left a door insecure, a lost key with a child inside. The AI is trained to recognise these scenarios instantly. For genuine emergencies, it escalates to your mobile within seconds. For less urgent requests — duplicate keys, lock upgrades, new door furniture — it captures the details and sends them to you to follow up when convenient."
+  },
+  {
+    question: "Locksmith work is heavily local — does the AI understand that?",
+    answer: "Yes. We configure the AI with your service area so it captures the caller's location upfront. If someone calls from outside your patch, the AI still captures their details (in case you want to take the job) but notes the distance. For emergency lockouts, location is the first thing it asks — because you need to know whether it's a 10-minute drive or a 40-minute one before you commit."
+  },
+  {
+    question: "A lot of my work comes from late-night emergency callouts. Does the AI work 24/7?",
+    answer: "24/7/365 — including Christmas Day, bank holidays, and 3am on a Tuesday. Locksmith work doesn't keep office hours, and neither does Rapid Receptionist. Whether someone's locked out of their car at midnight or needs a lock change after a burglary on a Sunday morning, the AI answers instantly and gets the details to you. No voicemail, no missed calls, no customers calling the next locksmith because you didn't pick up."
+  },
+  {
+    question: "Can the AI screen out time-wasters and price shoppers?",
+    answer: "The AI doesn't quote prices — ever. It captures the enquiry details and lets you decide how to respond. This naturally filters out pure price shoppers, because they don't get an instant number to compare. The AI focuses on understanding the job: what type of lock, what type of property, is the caller locked out right now, is there a security concern. You then have the information to decide whether to call back and quote."
+  },
+  {
+    question: "I do both residential and auto locksmithing — can it handle that?",
+    answer: "Absolutely. We configure the AI to understand both residential and automotive locksmith work. It knows the difference between a UPVC door lock and an ignition barrel, a euro cylinder and a transponder key. When a call comes in, it captures the right details for the right type of job — including vehicle make and model for auto work, or door type and lock brand for residential."
+  },
+  {
+    question: "How does this compare to just using a dedicated locksmith call centre?",
+    answer: "Third-party locksmith call centres take a large cut of every job — sometimes 40-60% of the invoice. They own the customer relationship, not you. Rapid Receptionist works for you, not a middleman. It answers with your business name, sends the lead details directly to you, and you keep 100% of the revenue. At £99/month with no commission, it pays for itself on the very first job."
+  },
+  {
+    question: "What about access control and commercial security work?",
+    answer: "If you do commercial access control, master key systems, or security surveys alongside residential locksmithing, we configure the AI to handle both. It understands the difference between a homeowner who's locked out and a property manager who needs an access control system across multiple entry points. The details it captures are tailored to the complexity of the enquiry."
+  },
+  {
+    question: "I worry about scam calls and people claiming false emergencies. How does the AI handle that?",
+    answer: "The AI captures caller details — name, number, location — for every interaction. This creates a record that discourages bogus calls. It also asks qualifying questions about the situation: Are you the property owner or tenant? Is the property residential or commercial? Can you confirm the address? While no system can eliminate every bad actor, the AI's professional, structured approach naturally weeds out most time-wasters and creates an audit trail for every call."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for UK Locksmiths — Never Miss a Job | Rapid Receptionist"
+  description="AI receptionist built for UK locksmiths. Answers emergency lockout calls, WhatsApp, SMS & more 24/7. Understands lock types and urgency. Only £99/mo."
+  canonicalUrl="/ai-receptionist-for-locksmiths/"
+  tradeName="Locksmith"
+  tradeNamePlural="Locksmiths"
+  tradeSlug="locksmiths"
+  headline="The AI Receptionist Built for UK Locksmiths. Every Call Answered."
+  accentWord="UK Locksmiths"
+  subhead="Locksmith work runs on speed. When someone's locked out at 2am or a business needs emergency re-keying after a break-in, they're calling right now. Your AI receptionist makes sure you answer — even when you're already on a job."
+  speedStat="85% of callers who reach voicemail never call back."
+  speedText="For locksmiths, that stat is even more brutal — because lockout customers need help immediately. They're not leaving a voicemail and waiting. They're calling the next locksmith on Google within 30 seconds. Rapid Receptionist makes sure that doesn't happen."
+  scenario="It's 11pm on a Friday night. You're finishing a lock change on a flat in Manchester after a tenant reported a break-in attempt. Your phone buzzes — a woman in Salford is locked out of her house with her toddler asleep in the car. Two minutes later, a bar owner in the Northern Quarter needs his shutters re-keyed before opening tomorrow. Then a missed call from a letting agency that manages a portfolio of 40 properties. You're wrist-deep in a mortice lock and can't answer any of them. Without Rapid Receptionist, those three urgent calls go to the first locksmith who picks up. With it, every caller gets an instant, professional response, the lockout is escalated to you immediately, and the commercial and agency leads are captured for you to follow up."
+  faqs={faqs}
+/>

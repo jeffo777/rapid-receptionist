@@ -1,0 +1,195 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CTASection from '../components/CTASection.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+---
+
+<BaseLayout
+  title="About Rapid Receptionist — Built by Tradesmen, for Tradesmen | UK"
+  description="The story behind Rapid Receptionist. Built by people who've worked in trades and know what it costs to miss a call. AI receptionist for UK tradesmen."
+  canonicalUrl="/about/"
+>
+  <Header slot="header" />
+
+  <!-- Hero -->
+  <section class="section about-hero" id="about-hero">
+    <div class="container">
+      <span class="badge badge--accent">Our Story</span>
+      <h1>We Built This Because We <span class="text-accent">Watched Tradesmen Lose Money</span> Every Single Day.</h1>
+      <p class="about-hero__sub">Rapid Receptionist exists because of one frustrating truth: good tradesmen lose work not because they're bad at their job, but because they can't answer the phone while they're doing it.</p>
+    </div>
+  </section>
+
+  <!-- Origin Story -->
+  <section class="section section--alt" id="origin">
+    <div class="container about-content">
+      <div class="about-block">
+        <h2>The Problem We Saw</h2>
+        <p>We spent years working with UK trade businesses — plumbers, electricians, roofers, locksmiths, builders. The same problem came up in every conversation: missed calls.</p>
+        <p>Not because they were lazy or disorganised. Because they were doing their job. You can't answer a phone when you're halfway up a scaffold, elbow-deep in a boiler, or wiring a consumer unit. It's physically impossible.</p>
+        <p>And every missed call is lost money. Research consistently shows that 85% of people who reach your voicemail will never call back. They just call the next tradesman on the list. It takes less than 30 seconds for a customer to move on.</p>
+        <p>We watched good businesses — genuinely skilled tradesmen doing excellent work — lose thousands of pounds a year to calls they physically couldn't answer. Not because they didn't care, but because the phone rang at the worst possible moment.</p>
+      </div>
+
+      <div class="about-block">
+        <h2>Why We Built Something Different</h2>
+        <p>Virtual receptionist services already existed. We looked at all of them. The problem was that none of them were built for trades.</p>
+        <p>Generic answering services don't know the difference between a boiler breakdown and a boiler service. They don't understand that a lockout at 2am needs handling differently to a quote request for new windows. They can't tell whether a call is an emergency that needs escalating now or a routine enquiry that can wait.</p>
+        <p>So we built one that could. An AI receptionist trained specifically on trade vocabulary, trade scenarios, and trade urgency levels. One that knows what questions to ask a homeowner calling about a leak, how to triage a gas emergency, and when to escalate a call versus when to log it.</p>
+        <p>Then we went further. We added website chat, WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back. Because modern customers don't just call — they message, they DM, they email. And tradesmen were losing leads on every single one of those channels.</p>
+      </div>
+
+      <div class="about-block">
+        <h2>What Drives Us</h2>
+        <p>We believe tradesmen are the backbone of the UK economy. Plumbers keep the water flowing. Electricians keep the lights on. Roofers keep the rain out. These aren't glamorous tech-startup businesses — they're the people who keep the country running.</p>
+        <p>They deserve better than a voicemail that nobody checks and a missed call that costs them a job. They deserve technology that works as hard as they do.</p>
+        <p>Every decision we make at Rapid Receptionist comes back to one question: does this help a tradesman win more work? If it does, we build it. If it doesn't, we don't. No feature bloat, no unnecessary complexity, no enterprise pricing that makes no sense for a one-man band.</p>
+      </div>
+
+      <div class="about-block">
+        <h2>Our Pricing Philosophy</h2>
+        <p>We charge £99 a month for phone answering and website chat. Every additional channel is £19 a month. The whole lot is £179 a month. There are no contracts, no hidden fees, and no activation charges buried in the small print.</p>
+        <p>We chose these numbers carefully. A single missed call from a plumbing customer is worth £150-£300 to most plumbers. One boiler installation enquiry can be worth £2,500-£4,000. The maths is simple: if the service catches one lead that you would've otherwise missed, it's paid for itself for the entire month.</p>
+        <p>We offer a 30-day money-back guarantee on everything — including the setup fee. If it doesn't work for you, you get your money back. We built something we're confident in, and we're happy to prove it before you commit a penny.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section" id="values">
+    <div class="container">
+      <div class="section-header">
+        <h2>What We <span class="text-accent">Stand For</span></h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card fade-in">
+          <span class="value-card__icon">🔧</span>
+          <h3>Trade-First Design</h3>
+          <p>Every feature, every AI response, every channel integration is designed specifically for tradesmen. This isn't a generic receptionist service with a trade-themed skin on top. It's built from the ground up for the way trades operate.</p>
+        </div>
+        <div class="value-card fade-in">
+          <span class="value-card__icon">💷</span>
+          <h3>Honest Pricing</h3>
+          <p>One price on the website. One price on the invoice. No hidden fees, no per-minute charges that inflate your bill, no "enterprise" tier that locks essential features behind a paywall. What you see is what you pay.</p>
+        </div>
+        <div class="value-card fade-in">
+          <span class="value-card__icon">🤝</span>
+          <h3>No Lock-In</h3>
+          <p>No contracts. No minimum terms. Cancel any time with a phone call or an email. We keep customers by being good at what we do, not by making it difficult to leave.</p>
+        </div>
+        <div class="value-card fade-in">
+          <span class="value-card__icon">🇬🇧</span>
+          <h3>Built for the UK</h3>
+          <p>UK pricing in pounds. UK English spelling. UK-specific trade terminology and regulations. UK emergency escalation protocols. This service is designed for tradesmen working in the United Kingdom — not an American product repackaged for the UK market.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    headline="Ready to Stop Missing Calls?"
+    subhead="Join the UK tradesmen who never lose a lead. £99/month, 30-day money-back guarantee, no contracts."
+  />
+
+  <CookieConsent />
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  .about-hero {
+    padding-top: calc(var(--header-height) + var(--space-16));
+    padding-bottom: var(--space-12);
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+    font-weight: var(--font-extrabold);
+    line-height: var(--leading-tight);
+    max-width: 800px;
+    margin: var(--space-4) auto var(--space-6);
+  }
+
+  .about-hero__sub {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: var(--leading-relaxed);
+  }
+
+  .about-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .about-block {
+    margin-bottom: var(--space-12);
+  }
+
+  .about-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-block h2 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--space-4);
+  }
+
+  .about-block p {
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+
+  .about-block p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Values Grid */
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .value-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: border-color var(--transition-base);
+  }
+
+  .value-card:hover {
+    border-color: var(--color-border-accent);
+  }
+
+  .value-card__icon {
+    font-size: var(--text-2xl);
+    display: block;
+    margin-bottom: var(--space-3);
+  }
+
+  .value-card h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-2);
+  }
+
+  .value-card p {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+  }
+
+  @media (max-width: 640px) {
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

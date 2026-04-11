@@ -1,0 +1,54 @@
+---
+import TradeHubLayout from '../layouts/TradeHubLayout.astro';
+
+const faqs = [
+  {
+    question: "How does the AI handle gas-related calls safely?",
+    answer: "The AI does not provide any technical advice, safety guidance, or diagnostic information about gas appliances. That's a regulated conversation that only a Gas Safe registered engineer should have. What the AI does is capture the details of the enquiry — what appliance, what symptoms, how urgent — and sends them to you. If the caller describes a potential gas leak or carbon monoxide concern, the AI immediately escalates the call to you and advises the caller to call the National Gas Emergency line on 0800 111 999 as a precaution."
+  },
+  {
+    question: "Gas emergencies are life-threatening — can the AI handle the urgency?",
+    answer: "Gas emergencies are treated as the highest priority. The AI is trained to identify gas-related emergencies: the smell of gas, CO alarm activation, a pilot light that won't stay lit with unusual smells, or symptoms consistent with carbon monoxide exposure. When any of these are detected, the call is escalated to you instantly. If you're unreachable, our human operators take over. The AI also prompts the caller to contact the National Gas Emergency Service, because some situations genuinely can't wait."
+  },
+  {
+    question: "I mainly do boiler servicing and installations — is this still useful?",
+    answer: "Boiler work is heavily seasonal. Between October and March, your phone doesn't stop — boiler breakdowns, heating not working, radiators cold, no hot water. Outside of those months, you're chasing installation and servicing leads. Rapid Receptionist captures every single enquiry year-round. During peak season, it means you're not losing breakdown calls while you're already on another breakdown. In quieter months, it makes sure every installation and service enquiry reaches you, because one missed lead could be a £3,000 boiler install you'll never know about."
+  },
+  {
+    question: "Does the AI understand different types of gas work?",
+    answer: "We train the AI with the full range of gas engineering work — boiler installations, boiler repairs and servicing, central heating systems, radiator replacements, gas hob and cooker installations, gas fire servicing, landlord gas safety certificates (CP12s), power flushing, underfloor heating, unvented hot water cylinders, and emergency gas work. It captures the right level of detail for each enquiry type so you can prioritise and quote accurately."
+  },
+  {
+    question: "I'm a sole trader covering a wide area — how does the AI manage location?",
+    answer: "Location is one of the first things the AI captures on every call. It asks the caller's postcode or area, which means you immediately know whether the job is 10 minutes away or an hour's drive. For emergency boiler breakdowns in winter, this is critical — you need to know if the job is viable before you commit. You see every lead with location data attached, so you can prioritise the ones that make geographical sense."
+  },
+  {
+    question: "What about Landlord Gas Safety Certificates — can the AI handle those enquiries?",
+    answer: "CP12 enquiries are some of the most time-sensitive in gas engineering — landlords often need them done quickly for compliance. The AI captures the essentials: number of properties, number of appliances per property, the deadline, and the landlord or agent's contact details. It doesn't discuss pricing or availability — that's your conversation. It just makes sure the enquiry reaches you with enough detail to respond quickly and win the work."
+  },
+  {
+    question: "How does this compare to paying for leads from directories and comparison sites?",
+    answer: "Lead generation sites charge per lead — often £20-50 per enquiry — and you're competing with three or four other gas engineers who've bought the same lead. The customer goes with whoever calls first or cheapest. Rapid Receptionist is different: it captures leads that are already calling you directly. These are people who found your number, chose your business, and called you specifically. They're warmer, more likely to convert, and they're exclusively yours. At £99/month flat, there's no per-lead cost and no competition."
+  },
+  {
+    question: "I'm Gas Safe registered but also do general plumbing — can the AI handle both?",
+    answer: "Yes. We configure the AI to handle both gas and plumbing enquiries. It understands that a boiler breakdown and a blocked drain require different information, different urgency levels, and different responses. If you offer both services, the AI captures the right details for each type of work. If you want to prioritise one over the other — say, gas work over general plumbing — we can configure that too."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for UK Gas Engineers — Never Miss a Job | Rapid Receptionist"
+  description="AI receptionist built for UK gas engineers. Handles boiler breakdowns, heating emergencies & CP12 enquiries 24/7. Gas-aware escalation. Only £99/mo."
+  canonicalUrl="/ai-receptionist-for-gas-engineers/"
+  tradeName="Gas Engineer"
+  tradeNamePlural="Gas Engineers"
+  tradeSlug="gas-engineers"
+  headline="The AI Receptionist Built for UK Gas Engineers. Never Off Duty."
+  accentWord="UK Gas Engineers"
+  subhead="When a boiler dies on a freezing January night, your customers aren't waiting until morning. Your AI receptionist answers every call instantly, recognises gas emergencies, and gets the lead to you — while you're finishing the job you're already on."
+  speedStat="A missed boiler breakdown call in winter costs you £150-400."
+  speedText="During peak season, you can't afford to let calls ring out. Every unanswered call is a breakdown, a service, or an installation that goes straight to your competitor. Rapid Receptionist makes sure every enquiry reaches you — even when you're elbow-deep in a heat exchanger."
+  scenario="It's a bitter Tuesday morning in January. You're replacing a heat exchanger on a combi boiler in Leeds — the homeowner's had no heating or hot water since Sunday and you're working as fast as you can. Your phone rings six times in an hour. A landlord in Wakefield needs an emergency CP12 before his tenants' lease renewal on Friday. A woman in Harrogate says her boiler is making a banging noise and she can smell something 'like gas.' A property manager needs three boiler services across a development in Bradford. A pensioner in Huddersfield has no heating and it's minus two outside. You can't stop mid-repair to take any of those calls. Without Rapid Receptionist, four leads call the next gas engineer. The woman who smells gas waits, worried. With Rapid Receptionist, every call is answered. The potential gas leak is escalated to you immediately with emergency priority. The other three leads are captured with full details for you to call back."
+  faqs={faqs}
+/>

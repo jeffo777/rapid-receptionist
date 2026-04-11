@@ -1,0 +1,288 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import trades from '../data/trades.json';
+import HeroSection from '../components/HeroSection.astro';
+import SpeedBanner from '../components/SpeedBanner.astro';
+import ScenarioBlock from '../components/ScenarioBlock.astro';
+import StepsGrid from '../components/StepsGrid.astro';
+import TrustSection from '../components/TrustSection.astro';
+import TestimonialSlider from '../components/TestimonialSlider.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTASection from '../components/CTASection.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+
+export interface BenefitItem {
+  icon: string;
+  title: string;
+  text: string;
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface StepItem {
+  number: number;
+  title: string;
+  description: string;
+}
+
+export interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  channelName: string;
+  channelSlugPrefix?: string;
+  headline: string;
+  accentWord: string;
+  subhead: string;
+  speedStat: string;
+  speedText: string;
+  scenario: string;
+  steps: StepItem[];
+  benefits: BenefitItem[];
+  pricingNote: string;
+  faqs: FAQItem[];
+  ctaHeadline?: string;
+  ctaSubhead?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalUrl,
+  channelName,
+  channelSlugPrefix,
+  headline,
+  accentWord,
+  subhead,
+  speedStat,
+  speedText,
+  scenario,
+  steps,
+  benefits,
+  pricingNote,
+  faqs,
+  ctaHeadline = `Stop Missing Leads From ${channelName}`,
+  ctaSubhead = `Every unanswered message is a customer calling your competitor. From £19/month, no contracts.`,
+} = Astro.props;
+---
+
+<BaseLayout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <Header slot="header" />
+
+  <HeroSection
+    headline={headline}
+    accentWord={accentWord}
+    subhead={subhead}
+  />
+
+  <SpeedBanner stat={speedStat} text={speedText} />
+
+  <ScenarioBlock text={scenario} />
+
+  <StepsGrid steps={steps} />
+
+  <!-- Channel Benefits -->
+  <section class="section section--alt" id="channel-benefits">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge--accent section-header__badge">Why {channelName}</span>
+        <h2>What This <span class="text-accent">Channel</span> Does for Your Business</h2>
+      </div>
+      <div class="benefits-grid">
+        {benefits.map((benefit) => (
+          <div class="benefit-card fade-in">
+            <span class="benefit-card__icon">{benefit.icon}</span>
+            <h3 class="benefit-card__title">{benefit.title}</h3>
+            <p class="benefit-card__text">{benefit.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Note -->
+  <section class="section" id="channel-pricing">
+    <div class="container container--narrow">
+      <div class="pricing-note">
+        <span class="pricing-note__icon">💰</span>
+        <p class="pricing-note__text" set:html={pricingNote} />
+      </div>
+    </div>
+  </section>
+
+  {/* Trade-Specific Pages Grid */}
+  {channelSlugPrefix && (
+    <section class="section section--alt" id="trades-served">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge badge--trust section-header__badge">13 UK Trades</span>
+          <h2>Find <span class="text-accent">{channelName}</span> for Your Trade</h2>
+          <p>Every trade gets a bespoke configuration — built with your terminology, your emergencies, and the way your customers talk.</p>
+        </div>
+
+        <div class="trades-grid">
+          {trades.map((trade) => (
+            <a href={`/${channelSlugPrefix}-for-${trade.slug}/`} class="trade-link-card fade-in">
+              <span class="trade-link-card__icon">{trade.icon}</span>
+              <span class="trade-link-card__name">{channelName} for {trade.name}</span>
+              <span class="trade-link-card__arrow">→</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <TrustSection />
+
+  <TestimonialSlider />
+
+  <FAQAccordion faqs={faqs} />
+
+  <CTASection headline={ctaHeadline} subhead={ctaSubhead} />
+
+  <CookieConsent />
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5);
+  }
+
+  .benefit-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: border-color var(--transition-base), transform var(--transition-base);
+  }
+
+  .benefit-card:hover {
+    border-color: var(--color-border-accent);
+    transform: translateY(-2px);
+  }
+
+  .benefit-card__icon {
+    font-size: var(--text-2xl);
+    display: block;
+    margin-bottom: var(--space-3);
+  }
+
+  .benefit-card__title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-2);
+  }
+
+  .benefit-card__text {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+  }
+
+  /* Pricing Note */
+  .pricing-note {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-accent);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6) var(--space-8);
+  }
+
+  .pricing-note__icon {
+    font-size: var(--text-2xl);
+    flex-shrink: 0;
+  }
+
+  .pricing-note__text {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+  }
+
+  @media (max-width: 768px) {
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing-note {
+      padding: var(--space-5);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Trades Grid */
+  .trades-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+  }
+
+  .trade-link-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+  }
+
+  .trade-link-card:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-text-primary);
+    background: var(--color-accent-subtle);
+  }
+
+  .trade-link-card__icon {
+    font-size: var(--text-lg);
+    flex-shrink: 0;
+  }
+
+  .trade-link-card__name {
+    flex: 1;
+  }
+
+  .trade-link-card__arrow {
+    color: var(--color-accent);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+  }
+
+  .trade-link-card:hover .trade-link-card__arrow {
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .trades-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .trades-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

@@ -1,0 +1,85 @@
+---
+import ChannelTradeLayout from '../layouts/ChannelTradeLayout.astro';
+
+const benefits = [
+  {
+    icon: '🛡️',
+    title: 'Safety Net for Busy Sparks',
+    text: "Electricians often work in positions where answering a phone is impossible — up ladders, inside ceiling voids, or with the power isolated. If a call slips past the AI, text-back catches it within 15 seconds. The caller knows you exist and you're coming back to them."
+  },
+  {
+    icon: '⚡',
+    title: 'Stops Emergency Callers Dialling Elsewhere',
+    text: "A homeowner with a total power outage calls and gets no answer. Their immediate instinct is to call another electrician. A branded text arriving within 15 seconds stops that impulse cold — they know you're on a job and will call back."
+  },
+  {
+    icon: '📝',
+    title: 'Branded Professional Text',
+    text: "The text arrives from your business number with your business name. 'Hi, it's Mitchell Electrical. Sorry we missed your call...' It reads like a professional business communication, not a generic auto-reply. Builds credibility from the first touchpoint."
+  },
+  {
+    icon: '🔌',
+    title: 'Pairs With AI Phone Answering',
+    text: "AI phone answering handles 99% of calls. Text-back covers the remaining 1% — the caller who hung up after one ring, the rare simultaneous call overlap, the brief mobile signal drop in a basement. Together, the two create a watertight system."
+  },
+  {
+    icon: '💰',
+    title: 'Lowest-Cost Lead Insurance',
+    text: "At £19/month, this costs less than the materials for a single socket install. If it catches just one lead a month that you would have lost — a £300 consumer unit upgrade, a £450 EV charger quote, a £5,000 rewire — the return is enormous."
+  },
+  {
+    icon: '🔧',
+    title: 'Zero Effort, Zero Distraction',
+    text: "The text fires automatically. No app to check, no button to press, no manual intervention. You stay focused on the circuit in front of you, and the system handles the edge cases in the background."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the text get sent?",
+    answer: "Within 15 seconds of a missed call — meaning a call that rang but wasn't answered by the AI or by you. If the caller hung up after one ring, if two calls came in simultaneously, or if there was a network hiccup, the automatic text fires immediately. You don't need to do anything."
+  },
+  {
+    question: "I already have AI phone answering. Why would I need text-back too?",
+    answer: "AI phone answering is your primary defence. But no system catches 100% of calls — the one-ring hangup, the momentary network drop, the rare simultaneous call. Missed call text-back is the safety net for those edge cases. At £19/month, it's the cheapest lead protection an electrician can buy."
+  },
+  {
+    question: "What does the text say?",
+    answer: "It uses your business name and a professional message configured during setup. For example: 'Hi, it's Mitchell Electrical. Sorry we missed your call — we're currently on a job. We'll call you back shortly. If it's urgent, please reply with the details.' The wording is customised to your preferences."
+  },
+  {
+    question: "Does the text go out if the AI already answered the call?",
+    answer: "No. The text only fires on genuinely missed calls. If the AI answered and had a conversation, no text is sent. There's no risk of double-contact."
+  },
+  {
+    question: "Can the customer text back if they want?",
+    answer: "Yes — and if you have AI SMS active, their reply is handled automatically too. If not, their reply arrives as a normal text message to your phone. Either way, the lead stays alive."
+  },
+  {
+    question: "How much does text-back cost for electricians?",
+    answer: "Missed Call Text-Back is £19/month as an add-on or standalone. No per-text charges. The £299 one-time setup covers configuration. No contracts, cancel anytime, 30-day money-back guarantee."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text-Back for UK Electricians — Never Lose an Electrical Lead | Rapid Receptionist"
+  description="Missed call text-back for UK electricians. Automatic text within 15 seconds. Catches the leads your phone can't. £19/month. No contracts."
+  canonicalUrl="/ai-missed-call-text-back-for-electricians/"
+  channelName="Missed Call Text-Back"
+  tradeName="Electrician"
+  tradeNamePlural="Electricians"
+  headline="Missed a Call About Electrical Work? Your Customer Gets a Text in 15 Seconds."
+  accentWord="15 Seconds"
+  subhead="Even with AI phone answering, the rare call slips through — a one-ring hangup, a brief signal drop while you're in a loft void. Missed call text-back is the safety net that catches those edge cases and keeps the lead alive."
+  speedStat="A homeowner with a power outage will call another electrician within 90 seconds if they don't get through."
+  speedText="Electrical emergencies create panic. No lights, no heating, no power to cook. The caller wants someone now. If they can't get through, they redial a different electrician immediately. A text arriving within 15 seconds stops that redial."
+  scenario="It's 3:15pm on a Monday. You're in a loft in Cardiff, running cables between joists with the light from a head torch. Your phone rings in your tool belt — once, twice — and stops. The caller, a homeowner downstairs in Pontcanna, has a consumer unit that's tripping every time she switches on the tumble dryer. She hung up after two rings, assuming you're not available. She's already typing 'electrician near me' into Google. Without text-back, that lead is gone. She calls the next electrician, gets through, and books a diagnostic visit for Wednesday. With Rapid Receptionist, a text lands on her phone within 15 seconds: 'Hi, it's Griffiths Electrical. Sorry we missed your call — currently on a job. Will call you back within the hour. If urgent, text us the details.' She texts back: 'Consumer unit keeps tripping when tumble dryer's on.' You call at 4:30pm, diagnose a probable faulty MCB or dryer earth fault, and book a visit for Tuesday morning. A £180 diagnostic and repair, saved by a text."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/ai-missed-call-text-back-for-tradesmen/"
+  tradePageUrl="/ai-receptionist-for-electricians/"
+  pricingNote="Missed Call Text-Back for electricians is <strong>£19/month</strong> as an add-on or standalone. No per-text charges. £299 setup. No contracts. <a href='/pricing/'>See full pricing →</a>"
+  ctaHeadline="Stop Losing Electrical Leads to Missed Calls"
+  ctaSubhead="One text. 15 seconds. The lead stays alive. £19/month, no contracts."
+/>

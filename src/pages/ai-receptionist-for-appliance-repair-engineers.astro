@@ -1,0 +1,54 @@
+---
+import TradeHubLayout from '../layouts/TradeHubLayout.astro';
+
+const faqs = [
+  {
+    question: "What types of appliance repair does the AI understand?",
+    answer: "We train the AI to understand the full range of domestic and commercial appliance repairs — washing machines, tumble dryers, dishwashers, ovens, cookers, hobs, microwaves, fridge-freezers, American-style fridges, wine coolers, range cookers, and commercial kitchen equipment. It captures the appliance brand, model (if known), the fault description, and how long the issue has been happening. You receive enough information to prepare or order parts before you even visit."
+  },
+  {
+    question: "Appliance breakdowns are urgent — nobody wants to live without a washing machine. Does the AI handle that urgency?",
+    answer: "For most customers, a broken washing machine or a dead oven feels like an emergency. The AI captures the urgency appropriately — a family with young children and a broken washing machine gets the details prioritised. A restaurant whose commercial dishwasher has failed mid-service gets emergency-level treatment. The AI captures what's broken, how it's affecting the customer, and their availability for an engineer visit, so you can prioritise your schedule."
+  },
+  {
+    question: "I stock common parts and prefer to know what I'm walking into. Does the AI capture enough detail?",
+    answer: "The AI asks for the appliance brand, approximate age, and a description of the fault — 'Won't spin,' 'Leaking from underneath,' 'Error code E3 on the display,' 'Makes a grinding noise.' This gives you a decent idea of what's likely wrong before you arrive. If the customer can provide a model number (usually on a sticker inside the door), the AI captures that too. You can pre-diagnose and pre-order parts, reducing repeat visits."
+  },
+  {
+    question: "I mainly repair washing machines and dishwashers — can I focus the AI on those?",
+    answer: "Absolutely. We configure the AI to focus on the appliance types you actually repair. If you specialise in laundry appliances (washing machines, washer-dryers, tumble dryers), the AI asks questions suited to those — drum problems, drainage issues, error codes, spin cycle faults. If you also cover dishwashers and ovens, those get their own questioning sets. The AI represents your actual service range, not a generic list."
+  },
+  {
+    question: "A lot of my bookings come through manufacturer warranty schemes. Can the AI handle those?",
+    answer: "Warranty and guarantee repair calls often come through manufacturer portals, but customers also call you directly — especially for out-of-warranty work or when they want a faster response than the manufacturer offers. The AI captures whether the appliance is under warranty, when it was purchased, and the fault. For manufacturer-referred work, it captures the reference number and any deadline. You get the information to respond within the scheme's SLA."
+  },
+  {
+    question: "I cover a specific area — can the AI screen by postcode?",
+    answer: "Location is captured on every call. If a customer calls from outside your service area, the AI still takes their details but notes the location clearly in the lead. You decide whether to take the job based on distance. For your core service area, the postcode data helps you batch appointments geographically — so you're not driving across the county between jobs."
+  },
+  {
+    question: "What about commercial clients — restaurants, launderettes, care homes?",
+    answer: "Commercial appliance repairs are often more urgent and more profitable than domestic work. A launderette with three machines down is losing revenue by the hour. A care home with a broken industrial washer has a safeguarding issue. A restaurant whose oven fails on a Friday afternoon needs someone before the dinner rush. The AI captures the commercial context — business type, number of units affected, and the impact on operations — so you can prioritise these high-value, time-critical repairs."
+  },
+  {
+    question: "How does this compare to getting bookings through comparison sites?",
+    answer: "Comparison sites charge commission on every job — often 20-30% of the invoice — and the customer's loyalty is to the platform, not to you. They won't remember your name next time. Rapid Receptionist captures customers who called you directly. They chose your number, they wanted your service, and when you fix their appliance, they remember you. At £99/month with no commission, one extra repair job per month covers the cost and then some."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for UK Appliance Repair Engineers — Never Miss a Job | Rapid Receptionist"
+  description="AI receptionist built for UK appliance repair engineers. Handles washing machine, oven & fridge breakdown calls 24/7. Only £99/mo."
+  canonicalUrl="/ai-receptionist-for-appliance-repair-engineers/"
+  tradeName="Appliance Repair Engineer"
+  tradeNamePlural="Appliance Repair Engineers"
+  tradeSlug="appliance-repair-engineers"
+  headline="The AI Receptionist Built for UK Appliance Repair Engineers. Every Breakdown Answered."
+  accentWord="UK Appliance Repair Engineers"
+  subhead="When someone's washing machine floods the kitchen or their oven dies the day before Christmas, they're calling right now. Your AI receptionist captures every breakdown call with the detail you need to diagnose, prepare, and fix it first time."
+  speedStat="A customer with a broken appliance calls an average of 2.3 companies."
+  speedText="They stop calling the moment someone answers and sounds like they know what they're doing. Your AI receptionist answers instantly, captures the fault details, and makes the customer feel looked after — before your competitor even picks up."
+  scenario="It's 9am on a Saturday. You're in the back of your van in Coventry, elbow-deep in a Bosch washing machine drum replacement — bearings shot, seals replaced, reassembling. Your phone rings four times in 30 minutes. A mum in Warwick has a Hotpoint washing machine leaking water all over her utility room floor. A landlord in Leamington Spa needs a Beko oven repaired in a rental property before the weekend tenants arrive. A restaurant in Stratford-upon-Avon has a commercial dishwasher that's stopped mid-cycle during Saturday brunch prep. A regular customer in Kenilworth wants to book a Samsung fridge-freezer repair she's been putting off. You can't stop the drum repair to answer — every interruption costs you 20 minutes. Without Rapid Receptionist, the mum calls the next engineer, the landlord finds someone quicker, and the restaurant panics. With it, every call is answered, the restaurant emergency is escalated, and all four leads are captured with appliance make, model, and fault details."
+  faqs={faqs}
+/>

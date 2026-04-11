@@ -1,0 +1,101 @@
+---
+import ChannelServiceLayout from '../layouts/ChannelServiceLayout.astro';
+
+const steps = [
+  {
+    number: 1,
+    title: 'We Connect Your Business Number',
+    description: "We link your existing business mobile or landline to the AI SMS service. When a customer texts your number, the AI handles the response. No new number needed — unless you want one."
+  },
+  {
+    number: 2,
+    title: 'AI Reads and Responds to Texts',
+    description: "When a text arrives, the AI reads the message, understands the enquiry, and sends back a single professional reply. It captures the customer's details, the nature of the work, and their urgency."
+  },
+  {
+    number: 3,
+    title: 'You Receive the Lead',
+    description: "Every SMS enquiry generates a lead notification with full details — the customer's name, what they need, where they are, and how urgent it is. You follow up when you're ready."
+  }
+];
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Catches the Texters',
+    text: "Not everyone wants to call. Some customers prefer to text — especially for non-urgent jobs. Without AI SMS, those texts sit unanswered while you're on a job. With it, every text gets an immediate professional response."
+  },
+  {
+    icon: '⏰',
+    title: 'Responds Outside Hours',
+    text: "Customers text at all hours — early mornings, late evenings, weekends. The AI responds instantly, regardless of the time. That late-night text about a dripping tap gets acknowledged in seconds, not ignored until Monday."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Lead Capture',
+    text: "The AI doesn't just forward the raw text message to you. It reads the content, extracts the job type, location, and urgency, and sends you a structured lead with all the information organised and ready to action."
+  },
+  {
+    icon: '🤳',
+    title: 'Works With Every Phone',
+    text: "SMS works on every mobile phone — smartphones, older handsets, business mobiles, personal numbers. There's no app for the customer to install and no account to create. They text, the AI responds."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Acknowledgement',
+    text: "When a potential customer texts you about a job, they want to know the message was received. The AI sends an immediate, professional response — not a days-later reply that makes your business look disorganised."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Boundary',
+    text: "If your business number is also your personal mobile, AI SMS creates a professional layer between you and enquiries. Customers get a business-quality response, and you get organised lead data instead of random texts cluttering your personal messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI actually reply to text messages?",
+    answer: "The AI sends one professional text message that acknowledges the enquiry, confirms what the customer needs, and lets them know you'll be in touch. It's tailored to what they've written — if someone texts about a boiler service, the response references the boiler service specifically. It never sends a generic auto-reply. The tone is professional, friendly, and trade-aware."
+  },
+  {
+    question: "Does the AI have a full text conversation?",
+    answer: "No. SMS operates on a one-reply model — the AI sends a single, well-crafted response. This is deliberate. Text conversations can quickly become time-consuming and impractical. The AI captures the essential details in one exchange and leaves the detailed conversation for when you call the customer back."
+  },
+  {
+    question: "How is this different from an auto-reply?",
+    answer: "An auto-reply sends the same canned message to everyone regardless of what they've written. AI SMS actually reads the incoming message, understands the context, and writes a relevant response. If someone texts about an emergency leak, the response is different from someone asking about a routine service. The customer feels heard, not processed."
+  },
+  {
+    question: "Can I still send texts from my phone normally?",
+    answer: "Absolutely. The AI only responds to new incoming enquiries. If you're already texting with a customer about an existing job, you carry on as normal. The AI doesn't interfere with your ongoing conversations — it handles new leads so you don't have to drop what you're doing."
+  },
+  {
+    question: "What types of tradesmen benefit most from AI SMS?",
+    answer: "Any tradesman who gives out a mobile number benefits. Emergency trades like locksmiths and plumbers see a lot of after-hours texts. Tradesmen who advertise on classifieds and local directories get texted frequently by customers who found their number online. If customers can text you, you need something answering when you can't."
+  },
+  {
+    question: "How much does AI SMS cost?",
+    answer: "AI SMS is £19/month as either an add-on to the Core plan or a standalone channel. There's no per-message charge — unlimited incoming SMS messages are included in the price. The £299 one-time setup fee covers full configuration. No contracts, cancel anytime, 30-day money-back guarantee."
+  }
+];
+---
+
+<ChannelServiceLayout
+  title="AI SMS for UK Tradesmen — Professional Text Message Responses | Rapid Receptionist"
+  description="AI SMS responses for UK tradesmen. Instant professional text replies to customer enquiries. Captures lead details automatically. £19/month. No contracts."
+  canonicalUrl="/ai-sms-for-tradesmen/"
+  channelName="AI SMS"
+  channelSlugPrefix="ai-sms"
+  headline="Professional Text Replies to Every Customer Enquiry. Instantly."
+  accentWord="Every Customer"
+  subhead="When a potential customer texts your number about a leaking tap or a dodgy fuse board, they want to know you got the message. AI SMS responds immediately with a professional reply — even when you're elbow-deep in a job."
+  speedStat="58% of UK consumers text businesses for service enquiries."
+  speedText="Texting is quick, easy, and doesn't require the customer to stop what they're doing. They fire off a text and expect a response. If they don't hear back within the hour, they text the next tradesman on their list. AI SMS makes sure you respond first."
+  scenario="It's Saturday morning. A homeowner in Leeds has noticed a damp patch forming above the bathroom extractor fan. She's found your number on a local directory and texts: 'Hi, I've got damp coming through above the bathroom fan. Can you come and have a look? I'm in LS8.' You're three hours into a loft conversion in Harrogate and won't check your phone until lunchtime. Without AI SMS, that text sits unread. She texts another roofer who responds in five minutes and books the inspection. With Rapid Receptionist, the AI replies immediately, captures her name, address, and the problem, and you get a structured lead notification you can action during your break."
+  steps={steps}
+  benefits={benefits}
+  pricingNote="AI SMS is <strong>£19/month</strong> — available as an add-on to the Core plan or standalone. Unlimited incoming text messages. £299 one-time setup fee. No contracts, 30-day money-back guarantee. <a href='/pricing/'>See full pricing →</a>"
+  faqs={faqs}
+  ctaHeadline="Stop Leaving Texts on Read"
+  ctaSubhead="Your customers are texting you right now. Make sure they hear back. £19/month, no contracts."
+/>

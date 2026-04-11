@@ -1,0 +1,42 @@
+---
+export interface Props {
+  label: string;
+  href?: string;
+  variant?: 'primary' | 'secondary';
+  size?: 'sm' | 'md' | 'lg';
+  price?: string;
+  id?: string;
+}
+
+const {
+  label,
+  href = '/get-started/',
+  variant = 'primary',
+  size = 'md',
+  price,
+  id,
+} = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={['btn', `btn--${variant}`, size !== 'md' && `btn--${size}`]}
+  id={id}
+>
+  {label}
+  {price && <span class="cta-btn__price">{price}</span>}
+</a>
+
+<style>
+  .cta-btn__price {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-1) var(--space-2);
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    margin-left: var(--space-2);
+  }
+</style>

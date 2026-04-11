@@ -1,0 +1,145 @@
+[
+  {
+    "name": "Plumbers",
+    "slug": "plumbers",
+    "singular": "Plumber",
+    "emergencyRating": 5,
+    "icon": "🔧",
+    "keywords": ["stopcocks", "PRV", "cylinder", "unvented", "combi boiler", "immersion heater", "soil pipe", "waste trap", "ball valve", "overflow", "radiator bleed"],
+    "scenarioIntro": "You're under a sink replacing a PRV, water dripping on your face, and your phone's buzzing in your pocket.",
+    "certifications": ["Gas Safe (if dual-trade)", "CIPHE", "WaterSafe"],
+    "emergencyExamples": ["burst pipes", "boiler breakdowns", "no hot water", "overflowing cisterns", "blocked drains"]
+  },
+  {
+    "name": "Electricians",
+    "slug": "electricians",
+    "singular": "Electrician",
+    "emergencyRating": 5,
+    "icon": "⚡",
+    "keywords": ["consumer unit", "RCDs", "MCBs", "EICRs", "Part P", "BS 7671", "fuseboard", "ring main", "radial circuit", "bonding", "earthing"],
+    "scenarioIntro": "You're wrist-deep in a consumer unit upgrade, the power's off, and your phone lights up across the room.",
+    "certifications": ["NICEIC", "NAPIT", "Part P", "ELECSA"],
+    "emergencyExamples": ["power outages", "tripping RCDs", "burning smells", "sparking sockets", "no power to property"]
+  },
+  {
+    "name": "Locksmiths",
+    "slug": "locksmiths",
+    "singular": "Locksmith",
+    "emergencyRating": 5,
+    "icon": "🔑",
+    "keywords": ["euro cylinder", "anti-snap locks", "Mul-T-Lock", "Ultion", "thumbturn", "multipoint locks", "deadlock", "mortice", "Yale", "UPVC mechanism"],
+    "scenarioIntro": "You're on a lockout call at midnight, picking a mortice mechanism, and another emergency call is coming through.",
+    "certifications": ["MLA", "ALOA", "DBS checked"],
+    "emergencyExamples": ["lockouts", "break-in repairs", "lock snapping", "UPVC mechanism failures", "safe openings"]
+  },
+  {
+    "name": "Gas Engineers",
+    "slug": "gas-engineers",
+    "singular": "Gas Engineer",
+    "emergencyRating": 5,
+    "icon": "🔥",
+    "keywords": ["Gas Safe registered", "flue", "condensate", "LPG", "CP12", "landlord certificate", "boiler service", "gas leak", "carbon monoxide", "ventilation", "fault codes"],
+    "scenarioIntro": "You're diagnosing a boiler fault code in a cramped airing cupboard, and your mobile vibrates with an unknown number.",
+    "certifications": ["Gas Safe Register", "OFTEC (oil)", "LPG certified"],
+    "emergencyExamples": ["gas leaks", "boiler breakdowns", "no heating", "carbon monoxide alarms", "condemned appliances"]
+  },
+  {
+    "name": "Drainage Engineers",
+    "slug": "drainage-engineers",
+    "singular": "Drainage Engineer",
+    "emergencyRating": 4,
+    "icon": "🚿",
+    "keywords": ["CCTV survey", "jetting", "root ingress", "collapsed drain", "soakaway", "manhole", "interceptor", "back-inlet gully", "rodding", "patch lining"],
+    "scenarioIntro": "You're knee-deep in a drainage excavation, jetting a blocked lateral, and your phone is in the van twenty metres away.",
+    "certifications": ["NADC", "WRc approved"],
+    "emergencyExamples": ["blocked drains", "sewage backups", "collapsed drains", "flooding", "rat ingress"]
+  },
+  {
+    "name": "Glaziers",
+    "slug": "glaziers",
+    "singular": "Glazier",
+    "emergencyRating": 4,
+    "icon": "🪟",
+    "keywords": ["double glazing", "sealed unit", "toughened glass", "laminated", "Georgian bar", "lead came", "secondary glazing", "boarding up", "FENSA"],
+    "scenarioIntro": "You're on a ladder fitting a sealed unit three storeys up, both hands gripping glass, and your phone rings in your belt pouch.",
+    "certifications": ["FENSA", "GGF member", "Certass"],
+    "emergencyExamples": ["smashed windows", "break-in boarding", "cracked panes", "failed sealed units", "shopfront damage"]
+  },
+  {
+    "name": "Roofers",
+    "slug": "roofers",
+    "singular": "Roofer",
+    "emergencyRating": 4,
+    "icon": "🏠",
+    "keywords": ["ridge tiles", "flashing", "felt", "batten", "soffit", "fascia", "valley gutter", "hip", "verge", "slate", "concrete tile", "GRP fibreglass", "torch-on"],
+    "scenarioIntro": "You're straddling a ridge line in the wind, relaying hip tiles, and your phone's buzzing in your pocket — but you're not climbing down to answer it.",
+    "certifications": ["NFRC", "CompetentRoofer", "TrustMark"],
+    "emergencyExamples": ["storm damage", "leaking roofs", "missing tiles", "lead flashing theft", "gutter collapse"]
+  },
+  {
+    "name": "HVAC Engineers",
+    "slug": "hvac-engineers",
+    "singular": "HVAC Engineer",
+    "emergencyRating": 4,
+    "icon": "❄️",
+    "keywords": ["split system", "VRF", "ducted", "refrigerant", "R410a", "R32", "heat pump", "air handling unit", "commissioning", "F-gas", "pressure test"],
+    "scenarioIntro": "You're commissioning a VRF system on a commercial site, pressure-testing refrigerant lines, and a new enquiry lands on your phone.",
+    "certifications": ["F-Gas certified", "BESA", "HVCA", "REFCOM"],
+    "emergencyExamples": ["AC breakdowns", "refrigerant leaks", "heat pump failures", "server room cooling", "commercial system outages"]
+  },
+  {
+    "name": "Alarm & Security Installers",
+    "slug": "alarm-security-installers",
+    "singular": "Alarm Installer",
+    "emergencyRating": 3,
+    "icon": "🔒",
+    "keywords": ["intruder alarm", "CCTV", "PIR", "door contact", "bell box", "key holder", "monitoring", "Grade 2", "NSI/SSAIB", "access control", "intercom"],
+    "scenarioIntro": "You're running cable through a ceiling void, crimping RJ45 connectors, and your phone buzzes with a withheld number.",
+    "certifications": ["NSI", "SSAIB", "BSIA"],
+    "emergencyExamples": ["alarm faults", "CCTV failures", "access control lockouts", "false alarm callouts", "monitoring alerts"]
+  },
+  {
+    "name": "Pest Control",
+    "slug": "pest-control",
+    "singular": "Pest Controller",
+    "emergencyRating": 3,
+    "icon": "🐛",
+    "keywords": ["treatment", "survey", "proofing", "bait station", "fumigation", "BPCA", "COSHH", "rodenticide", "insecticide", "infestation", "exclusion"],
+    "scenarioIntro": "You're in full PPE laying bait stations in a crawl space, and a potential customer is trying to reach you about a wasp nest.",
+    "certifications": ["BPCA", "RSPH Level 2", "COSHH trained"],
+    "emergencyExamples": ["wasp nests", "rat infestations", "bed bugs", "cockroach outbreaks", "bird proofing"]
+  },
+  {
+    "name": "Garage Door Engineers",
+    "slug": "garage-door-engineers",
+    "singular": "Garage Door Engineer",
+    "emergencyRating": 3,
+    "icon": "🚗",
+    "keywords": ["roller", "sectional", "up-and-over", "canopy gear", "retractable", "torsion spring", "cable drum", "motor", "remote", "safety edge", "auto-lock"],
+    "scenarioIntro": "You're tensioning a torsion spring — one of the most dangerous jobs in the trade — and your phone starts ringing.",
+    "certifications": ["DHF member", "GGF member"],
+    "emergencyExamples": ["jammed doors", "broken springs", "motor failures", "trapped vehicles", "forced entry damage"]
+  },
+  {
+    "name": "Builders",
+    "slug": "builders",
+    "singular": "Builder",
+    "emergencyRating": 2,
+    "icon": "🧱",
+    "keywords": ["extension", "loft conversion", "structural", "RSJ", "building regs", "planning permission", "foundations", "brickwork", "blockwork", "rendering"],
+    "scenarioIntro": "You're pouring concrete for a foundation, the mixer is running, your labourer needs direction — and a potential new client is calling.",
+    "certifications": ["FMB", "NHBC", "TrustMark", "CITB"],
+    "emergencyExamples": ["structural concerns", "storm damage", "water ingress", "subsidence", "emergency shoring"]
+  },
+  {
+    "name": "Appliance Repair Engineers",
+    "slug": "appliance-repair-engineers",
+    "singular": "Appliance Repair Engineer",
+    "emergencyRating": 3,
+    "icon": "🔌",
+    "keywords": ["PCB", "element", "thermostat", "bearing", "drum", "door seal", "motor", "pump", "filter", "error code", "gas ignition", "oven element"],
+    "scenarioIntro": "You've pulled a washing machine out from the wall, you're halfway through replacing a drum bearing, and your phone vibrates on the kitchen counter.",
+    "certifications": ["Gas Safe (if gas appliances)", "D-TEC", "manufacturer accredited"],
+    "emergencyExamples": ["flooding washing machines", "oven breakdowns before events", "fridge failures", "tumble dryer faults", "dishwasher leaks"]
+  }
+]

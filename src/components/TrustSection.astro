@@ -1,0 +1,61 @@
+---
+import GuaranteeBadge from './GuaranteeBadge.astro';
+---
+
+<section class="section trust-section" id="trust-section">
+  <div class="container container--narrow">
+    <div class="trust-section__inner fade-in">
+      <span class="badge badge--accent">Our Promise</span>
+      <h2>Built by Tradesmen, <span class="text-accent">for Tradesmen</span></h2>
+      <blockquote class="trust-section__quote">
+        <p>
+          We didn't build Rapid Receptionist from a boardroom. We built it because we've seen firsthand what happens when tradesmen miss calls — they lose work they should've won. We understand the trades because we've lived them. We know you can't answer the phone when you're on a job. That's exactly why this service exists.
+        </p>
+        <p>
+          Every feature, every channel, every response has been designed by people who understand what it's like to be up a ladder when the phone rings. This isn't some generic tech product — it's a tool built specifically for your world.
+        </p>
+      </blockquote>
+      <div class="trust-section__guarantee">
+        <GuaranteeBadge />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .trust-section__inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-6);
+  }
+
+  .trust-section__quote {
+    max-width: 620px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .trust-section__quote p {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+  }
+
+  .trust-section__quote p:last-child {
+    margin-bottom: 0;
+  }
+
+  .trust-section__guarantee {
+    margin-top: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .trust-section__quote p {
+      font-size: var(--text-base);
+    }
+  }
+</style>

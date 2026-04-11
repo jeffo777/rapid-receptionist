@@ -1,0 +1,60 @@
+---
+export interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<section class="scenario section" id="trade-scenario">
+  <div class="container container--narrow">
+    <blockquote class="scenario__block">
+      <p class="scenario__text" set:html={text} />
+    </blockquote>
+  </div>
+</section>
+
+<style>
+  .scenario {
+    padding-block: var(--space-16);
+  }
+
+  .scenario__block {
+    position: relative;
+    padding: var(--space-8) var(--space-10);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-left: 4px solid var(--color-accent);
+    border-radius: var(--radius-xl);
+  }
+
+  .scenario__block::before {
+    content: '"';
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-4);
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--color-accent);
+    opacity: 0.2;
+    font-family: Georgia, serif;
+  }
+
+  .scenario__text {
+    font-size: var(--text-lg);
+    font-style: italic;
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .scenario__block {
+      padding: var(--space-6);
+    }
+
+    .scenario__text {
+      font-size: var(--text-base);
+    }
+  }
+</style>

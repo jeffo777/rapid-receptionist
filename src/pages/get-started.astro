@@ -1,0 +1,496 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+
+const faqs = [
+  {
+    question: "What happens after I submit this form?",
+    answer: "Within 2 working hours, one of our team reviews your submission and sends you a setup confirmation email. We schedule a brief onboarding call — usually fifteen minutes — where we go through your business details, configure your AI receptionist, and test every channel before switching it on. Most businesses are fully live within 48 hours of signing up."
+  },
+  {
+    question: "Do I need to prepare anything before signing up?",
+    answer: "Nothing complicated. Know which services you offer, your main service area, and how you'd like urgent calls handled. If you want messaging channels like WhatsApp or Facebook, have your login details handy. We guide you through everything during onboarding — there's no technical setup on your end."
+  },
+  {
+    question: "What does the £299 setup fee actually cover?",
+    answer: "Everything needed to get your AI receptionist live. That includes training the AI on your specific trade, your services, and your business name. It covers phone number routing, chat widget installation, and connecting any messaging accounts you want covered. It also includes a full test of every channel before going live. The setup fee is fully refundable within the first 30 days — if you're not happy, you get it back along with your monthly fee."
+  },
+  {
+    question: "Can I start with just the Core plan and add channels later?",
+    answer: "Absolutely — that's how most tradesmen start. The Core plan gives you phone answering and website chat, which covers the two biggest sources of missed leads. Once you're up and running, you can see where your other enquiries are coming from and add channels one at a time. Adding a new channel takes less than 24 hours to configure."
+  },
+  {
+    question: "Is there really no contract?",
+    answer: "No contract. No minimum term. No cancellation fees. You pay monthly and you can cancel any time with a phone call or an email. We don't believe in locking customers in — we keep you by delivering a service worth paying for, not by making it hard to leave."
+  },
+  {
+    question: "What if it doesn't work for my business?",
+    answer: "You're covered by a 30-day money-back guarantee. If you sign up, try the service for a month, and decide it isn't right for you — we refund everything. The monthly fee, the setup fee, the lot. No questions asked, no hoops to jump through. We're confident enough in the product that we're happy to take that risk."
+  }
+];
+---
+
+<BaseLayout
+  title="Get Started with Rapid Receptionist — AI Receptionist for UK Tradesmen"
+  description="Sign up for Rapid Receptionist. AI receptionist for UK tradesmen covering up to 8 channels. Live within 48 hours. £99/mo, £299 setup, 30-day money-back guarantee."
+  canonicalUrl="/get-started/"
+>
+  <Header slot="header" />
+
+  <!-- Hero -->
+  <section class="section gs-hero" id="get-started-hero">
+    <div class="container">
+      <span class="badge badge--accent">Get Started</span>
+      <h1>Stop Missing Leads. <span class="text-accent">Start Today.</span></h1>
+      <p class="gs-hero__sub">Fill in the form below and we'll have your AI receptionist configured, tested, and live within 48 hours. No technical knowledge needed — we do everything for you.</p>
+
+      <div class="gs-hero__trust">
+        <div class="gs-hero__trust-item">
+          <span class="gs-hero__trust-icon">✓</span>
+          <span>30-day money-back guarantee</span>
+        </div>
+        <div class="gs-hero__trust-item">
+          <span class="gs-hero__trust-icon">✓</span>
+          <span>No contracts, cancel anytime</span>
+        </div>
+        <div class="gs-hero__trust-item">
+          <span class="gs-hero__trust-icon">✓</span>
+          <span>Live within 48 hours</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signup Form -->
+  <section class="section section--alt" id="signup-form">
+    <div class="container">
+      <div class="gs-grid">
+
+        <!-- Form -->
+        <div class="gs-form-wrap">
+          <h2>Tell Us About Your Business</h2>
+          <p class="gs-form-intro">We need a few details to configure your AI receptionist. Everything else is handled by our team during onboarding.</p>
+
+          <form class="gs-form" id="get-started-form" action="#" method="POST">
+            <div class="gs-form-row">
+              <div class="form-group">
+                <label for="gs-first-name">First Name</label>
+                <input type="text" id="gs-first-name" name="firstName" required placeholder="John" autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="gs-last-name">Last Name</label>
+                <input type="text" id="gs-last-name" name="lastName" required placeholder="Smith" autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="gs-business-name">Business Name</label>
+              <input type="text" id="gs-business-name" name="businessName" required placeholder="Smith Plumbing Ltd" autocomplete="organization" />
+            </div>
+
+            <div class="gs-form-row">
+              <div class="form-group">
+                <label for="gs-email">Email Address</label>
+                <input type="email" id="gs-email" name="email" required placeholder="john@smithplumbing.co.uk" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="gs-phone">Phone Number</label>
+                <input type="tel" id="gs-phone" name="phone" required placeholder="07XXX XXXXXX" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="gs-trade">Your Trade</label>
+              <select id="gs-trade" name="trade" required>
+                <option value="">Select your trade...</option>
+                <option value="plumber">Plumber</option>
+                <option value="electrician">Electrician</option>
+                <option value="gas-engineer">Gas Engineer</option>
+                <option value="locksmith">Locksmith</option>
+                <option value="roofer">Roofer</option>
+                <option value="builder">Builder</option>
+                <option value="drainage">Drainage Engineer</option>
+                <option value="hvac">HVAC Engineer</option>
+                <option value="glazier">Glazier</option>
+                <option value="pest-control">Pest Control</option>
+                <option value="garage-door">Garage Door Engineer</option>
+                <option value="appliance-repair">Appliance Repair Engineer</option>
+                <option value="alarm-security">Alarm & Security Installer</option>
+                <option value="other">Other Trade</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="gs-area">Main Service Area</label>
+              <input type="text" id="gs-area" name="serviceArea" required placeholder="e.g. Greater Manchester, South London, Leeds & surrounding" />
+            </div>
+
+            <div class="form-group">
+              <label for="gs-plan">Which Plan Are You Interested In?</label>
+              <select id="gs-plan" name="plan" required>
+                <option value="">Select a plan...</option>
+                <option value="core">Core — £99/mo (Phone + Chat)</option>
+                <option value="all-channels">All Channels — £179/mo (Everything)</option>
+                <option value="standalone">Standalone Channel — £19/mo (Single channel)</option>
+                <option value="not-sure">Not sure yet — help me decide</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="gs-notes">Anything else we should know? <span class="form-optional">(optional)</span></label>
+              <textarea id="gs-notes" name="notes" rows="4" placeholder="e.g. I do emergency callouts, I only cover boilers, I want calls escalated to my mobile after hours..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg gs-submit" id="gs-submit">
+              Get Started — We'll Be in Touch Within 2 Hours
+            </button>
+
+            <p class="gs-form-disclaimer">By submitting this form you agree to be contacted by Rapid Receptionist about your enquiry. We'll never share your details with third parties. 30-day money-back guarantee on all plans.</p>
+          </form>
+        </div>
+
+        <!-- Summary Sidebar -->
+        <div class="gs-sidebar">
+          <div class="gs-pricing-summary">
+            <h3>Quick Pricing Reminder</h3>
+            <div class="gs-pricing-item">
+              <span class="gs-pricing-item__label">Core Plan</span>
+              <span class="gs-pricing-item__price">£99<span>/mo</span></span>
+              <span class="gs-pricing-item__detail">Phone answering (300 mins) + unlimited website chat</span>
+            </div>
+            <div class="gs-pricing-item">
+              <span class="gs-pricing-item__label">Additional Channels</span>
+              <span class="gs-pricing-item__price">£19<span>/mo each</span></span>
+              <span class="gs-pricing-item__detail">WhatsApp, SMS, Email, Facebook, Instagram, Missed Call Text-Back</span>
+            </div>
+            <div class="gs-pricing-item gs-pricing-item--highlight">
+              <span class="gs-pricing-item__label">All Channels Bundle</span>
+              <span class="gs-pricing-item__price">£179<span>/mo</span></span>
+              <span class="gs-pricing-item__detail">Everything — saves £34/mo vs individual pricing</span>
+            </div>
+            <div class="gs-pricing-item">
+              <span class="gs-pricing-item__label">Setup Fee</span>
+              <span class="gs-pricing-item__price">£299<span> one-time</span></span>
+              <span class="gs-pricing-item__detail">Fully refundable within 30 days</span>
+            </div>
+          </div>
+
+          <div class="gs-process-summary">
+            <h3>What Happens Next</h3>
+            <div class="gs-process-step">
+              <span class="gs-process-step__num">1</span>
+              <div>
+                <strong>We Review Your Details</strong>
+                <p>Within 2 working hours, our team reviews your submission and prepares your onboarding.</p>
+              </div>
+            </div>
+            <div class="gs-process-step">
+              <span class="gs-process-step__num">2</span>
+              <div>
+                <strong>Quick Onboarding Call</strong>
+                <p>A 15-minute call to finalise your setup — services, service area, emergency handling preferences.</p>
+              </div>
+            </div>
+            <div class="gs-process-step">
+              <span class="gs-process-step__num">3</span>
+              <div>
+                <strong>We Configure & Test Everything</strong>
+                <p>AI training, phone routing, chat widget, messaging accounts — all done for you and tested before going live.</p>
+              </div>
+            </div>
+            <div class="gs-process-step">
+              <span class="gs-process-step__num">4</span>
+              <div>
+                <strong>You Go Live</strong>
+                <p>Your AI receptionist starts handling calls and messages. Every lead captured, every enquiry answered.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FAQAccordion faqs={faqs} />
+
+  <CookieConsent />
+
+  <Footer slot="footer" />
+</BaseLayout>
+
+<style>
+  /* Hero */
+  .gs-hero {
+    padding-top: calc(var(--header-height) + var(--space-16));
+    padding-bottom: var(--space-12);
+    text-align: center;
+  }
+
+  .gs-hero h1 {
+    font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+    font-weight: var(--font-extrabold);
+    line-height: var(--leading-tight);
+    max-width: 700px;
+    margin: var(--space-4) auto var(--space-6);
+  }
+
+  .gs-hero__sub {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 620px;
+    margin: 0 auto var(--space-8);
+    line-height: var(--leading-relaxed);
+  }
+
+  .gs-hero__trust {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .gs-hero__trust-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+  }
+
+  .gs-hero__trust-icon {
+    color: var(--color-success);
+    font-weight: var(--font-bold);
+  }
+
+  /* Grid Layout */
+  .gs-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: var(--space-10);
+    align-items: start;
+  }
+
+  /* Form Styling */
+  .gs-form-wrap h2 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--space-2);
+  }
+
+  .gs-form-intro {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+    line-height: var(--leading-relaxed);
+  }
+
+  .gs-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+
+  .form-group {
+    margin-bottom: var(--space-5);
+  }
+
+  .form-group label {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-2);
+  }
+
+  .form-optional {
+    color: var(--color-text-muted);
+    font-weight: var(--font-normal);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    color: var(--color-text-primary);
+    font-size: var(--text-base);
+    font-family: var(--font-family);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .form-group select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%239CA3AF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: var(--space-10);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .gs-submit {
+    width: 100%;
+    margin-bottom: var(--space-4);
+  }
+
+  .gs-form-disclaimer {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    text-align: center;
+    line-height: var(--leading-relaxed);
+  }
+
+  /* Sidebar */
+  .gs-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-6));
+  }
+
+  .gs-pricing-summary,
+  .gs-process-summary {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+  }
+
+  .gs-pricing-summary h3,
+  .gs-process-summary h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-5);
+  }
+
+  /* Pricing Items */
+  .gs-pricing-item {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .gs-pricing-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .gs-pricing-item--highlight {
+    background: var(--color-accent-subtle);
+    margin: 0 calc(var(--space-4) * -1);
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-md);
+    border-bottom: none;
+  }
+
+  .gs-pricing-item__label {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-text-primary);
+  }
+
+  .gs-pricing-item__price {
+    display: block;
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--color-accent);
+    margin: var(--space-1) 0;
+  }
+
+  .gs-pricing-item__price span {
+    font-size: var(--text-sm);
+    font-weight: var(--font-normal);
+    color: var(--color-text-muted);
+  }
+
+  .gs-pricing-item__detail {
+    display: block;
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+  }
+
+  /* Process Steps */
+  .gs-process-step {
+    display: flex;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+
+  .gs-process-step:last-child {
+    margin-bottom: 0;
+  }
+
+  .gs-process-step__num {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent);
+    color: white;
+    border-radius: 50%;
+    font-size: var(--text-sm);
+    font-weight: var(--font-bold);
+    margin-top: 2px;
+  }
+
+  .gs-process-step strong {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-1);
+  }
+
+  .gs-process-step p {
+    font-size: var(--text-xs);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+  }
+
+  @media (max-width: 900px) {
+    .gs-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .gs-sidebar {
+      position: static;
+      order: -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-4);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .gs-form-row {
+      grid-template-columns: 1fr;
+    }
+
+    .gs-sidebar {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

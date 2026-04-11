@@ -1,0 +1,88 @@
+---
+import CTAButton from './CTAButton.astro';
+
+export interface Props {
+  headline?: string;
+  subhead?: string;
+}
+
+const {
+  headline = 'Ready to Stop Missing Jobs?',
+  subhead = 'Join the UK tradesmen who never miss a lead. Only £99/month, 30-day money-back guarantee, no contracts.',
+} = Astro.props;
+---
+
+<section class="section cta-section" id="cta-section">
+  <div class="container container--narrow">
+    <div class="cta-section__inner fade-in">
+      <h2 class="cta-section__headline">{headline}</h2>
+      <p class="cta-section__subhead">{subhead}</p>
+      <div class="cta-section__actions">
+        <CTAButton label="Get Started" size="lg" price="£99/mo" id="cta-get-started" />
+      </div>
+      <p class="cta-section__fine-print">
+        🛡 30-day money-back guarantee · No contracts · Cancel anytime
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-section {
+    background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Accent glow */
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(ellipse, var(--color-accent-glow) 0%, transparent 70%);
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  .cta-section__inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .cta-section__headline {
+    font-size: var(--text-4xl);
+  }
+
+  .cta-section__subhead {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 540px;
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-2);
+  }
+
+  .cta-section__actions {
+    margin-top: var(--space-2);
+  }
+
+  .cta-section__fine-print {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-top: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .cta-section__headline {
+      font-size: var(--text-2xl);
+    }
+  }
+</style>

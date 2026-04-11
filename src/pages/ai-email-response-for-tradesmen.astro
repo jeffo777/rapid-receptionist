@@ -1,0 +1,101 @@
+---
+import ChannelServiceLayout from '../layouts/ChannelServiceLayout.astro';
+
+const steps = [
+  {
+    number: 1,
+    title: 'We Connect Your Email Address',
+    description: "We configure the AI to monitor your business email inbox — whether it's info@, enquiries@, or your personal business email. No migration, no new email address. Your existing setup stays the same."
+  },
+  {
+    number: 2,
+    title: 'AI Reads and Responds',
+    description: "When an enquiry email arrives, the AI reads the content, identifies the job type and urgency, and sends a professional acknowledgement to the customer. It extracts their details and the nature of the work."
+  },
+  {
+    number: 3,
+    title: 'Lead Notification Sent to You',
+    description: "You receive a structured lead notification with the customer's name, email, location, the work they need, and urgency assessment. The original email is attached so you have full context when you follow up."
+  }
+];
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Instant Email Acknowledgement',
+    text: "Most trade businesses take 24-48 hours to reply to emails — if they reply at all. AI Email sends a professional acknowledgement within minutes. The customer knows their enquiry has been received, which dramatically increases the chance they'll wait for your quote."
+  },
+  {
+    icon: '📋',
+    title: 'Extracts Details From Rambling Emails',
+    text: "Customers write emails in all sorts of ways — some send two words, others write three paragraphs. The AI reads every email, pulls out the relevant details, and structures them into a clean lead: job type, location, urgency, contact details."
+  },
+  {
+    icon: '🕐',
+    title: 'Handles Overnight Enquiries',
+    text: "A lot of email enquiries arrive outside working hours — evenings, weekends, bank holidays. Without AI Email, those sit in your inbox until you check it. With it, every customer gets an immediate response and you get a notification."
+  },
+  {
+    icon: '🔄',
+    title: 'Works With Any Email Provider',
+    text: "Gmail, Outlook, Yahoo, your domain email — it doesn't matter. We connect to your existing email setup. You don't need to switch providers, learn new software, or change how you do things."
+  },
+  {
+    icon: '🎯',
+    title: 'Filters Spam From Real Enquiries',
+    text: "The AI distinguishes between genuine customer enquiries and spam. Real enquiries get a professional response and generate a lead notification. Junk mail is ignored. You only see what matters."
+  },
+  {
+    icon: '💼',
+    title: 'Professional Impression',
+    text: "When a property manager or letting agency emails you about a job, the quality and speed of your response tells them whether you're professional enough to add to their contractor list. An instant, well-written acknowledgement says more than a reply three days later ever could."
+  }
+];
+
+const faqs = [
+  {
+    question: "What kind of emails does the AI respond to?",
+    answer: "The AI responds to genuine customer enquiries — requests for quotes, availability checks, job descriptions, and general questions about your services. It doesn't respond to marketing emails, newsletters, automated notifications, or spam. It's trained to distinguish between a real enquiry and everything else, so only genuine potential customers receive a response."
+  },
+  {
+    question: "What does the AI email response actually say?",
+    answer: "The response acknowledges the specific enquiry, confirms that you've received it, and lets the customer know you'll be in touch to discuss their requirements. It references the details they've mentioned — so if they've emailed about a bathroom refit, the reply mentions the bathroom refit, not just a generic 'thanks for your email.' It's professional, concise, and sets clear expectations."
+  },
+  {
+    question: "Does the AI reply to every email or just the first one?",
+    answer: "The AI responds to new incoming enquiries. If a customer is already in an email thread with you, the AI won't jump in and interrupt. It only handles the first response to new, unaddressed enquiries — exactly the ones that would otherwise sit in your inbox waiting while you're on a job."
+  },
+  {
+    question: "Will this affect my existing email workflow?",
+    answer: "Not at all. Your email works exactly as it does now. The AI monitors for new enquiries and handles the immediate response. You still see every email in your inbox, you still reply to customers yourself when needed. The AI just makes sure that initial acknowledgement goes out fast, so the customer doesn't feel ignored."
+  },
+  {
+    question: "How does this help if I already check my emails?",
+    answer: "The problem isn't whether you check your emails — it's when. If you check your inbox at 7pm and a customer emailed at 9am, that's a ten-hour gap. In that gap, they've likely emailed two other tradesmen and booked the one who got back first. AI Email closes that gap by responding within minutes, keeping you in the running even when you're hours away from checking your inbox."
+  },
+  {
+    question: "How much does AI Email Response cost?",
+    answer: "AI Email Response is £19/month as an add-on to the Core plan or standalone. No per-email charges, no caps. The £299 one-time setup covers full configuration and connection to your email. No contracts, cancel anytime, 30-day money-back guarantee."
+  }
+];
+---
+
+<ChannelServiceLayout
+  title="AI Email Response for UK Tradesmen — Instant Professional Email Replies | Rapid Receptionist"
+  description="AI email responses for UK tradesmen. Instant professional replies to customer enquiries, automatic lead capture from emails. £19/month. No contracts."
+  canonicalUrl="/ai-email-response-for-tradesmen/"
+  channelName="AI Email Response"
+  channelSlugPrefix="ai-email-response"
+  headline="Every Email Gets a Professional Response. Within Minutes, Not Days."
+  accentWord="Within Minutes"
+  subhead="Your inbox is full of potential jobs sitting unanswered while you're on site. AI Email Response acknowledges every enquiry instantly, captures the details, and makes sure no customer gives up waiting for your reply."
+  speedStat="The average tradesman takes over 24 hours to reply to an email enquiry."
+  speedText="By then, the customer has emailed three other businesses and booked the fastest to respond. Email feels less urgent than a phone call, so it gets pushed to the bottom of the list. But to the customer sending it, the speed of your reply is a direct signal of how professional and reliable you are."
+  scenario="It's 2pm on a Friday. A letting agent in Birmingham emails you about a gas safety inspection needed for three rental properties before the end of the month. It's a solid piece of repeat work — £400 across the three inspections. You're on site at a boiler installation and won't open your emails until 6pm. By then, the letting agent has had replies from two other gas engineers. One replied within twenty minutes and has already been booked for all three. With AI Email Response, the agent receives an acknowledgement within minutes: your business name, confirmation the enquiry is received, and a note that you'll follow up today with availability. The agent feels handled. You call at 6pm and pick up the work."
+  steps={steps}
+  benefits={benefits}
+  pricingNote="AI Email Response is <strong>£19/month</strong> — available as an add-on to the Core plan or standalone. Unlimited emails, no per-message charges. £299 one-time setup. No contracts, 30-day money-back guarantee. <a href='/pricing/'>See full pricing →</a>"
+  faqs={faqs}
+  ctaHeadline="Stop Losing Jobs to Slow Email Replies"
+  ctaSubhead="Your competitors reply within the hour. Make sure you do too. £19/month, no contracts."
+/>

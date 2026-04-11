@@ -1,0 +1,100 @@
+---
+---
+
+<div class="cookie-consent" id="cookie-consent" aria-hidden="true">
+  <div class="cookie-consent__inner">
+    <p class="cookie-consent__text">
+      We use cookies to improve your experience. By continuing to browse, you agree to our
+      <a href="/privacy/">Privacy Policy</a>.
+    </p>
+    <div class="cookie-consent__actions">
+      <button class="btn btn--primary btn--sm" id="cookie-accept">Accept</button>
+      <button class="btn btn--secondary btn--sm" id="cookie-decline">Decline</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border-subtle);
+    padding: var(--space-4) var(--space-6);
+    transform: translateY(100%);
+    transition: transform var(--transition-slow);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .cookie-consent.visible {
+    transform: translateY(0);
+  }
+
+  .cookie-consent__inner {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .cookie-consent__text {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin: 0;
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .cookie-consent__text a {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+
+  .cookie-consent__actions {
+    display: flex;
+    gap: var(--space-2);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 600px) {
+    .cookie-consent__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  const consent = document.getElementById('cookie-consent');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const declineBtn = document.getElementById('cookie-decline');
+
+  // Check if user already responded
+  if (!localStorage.getItem('rr-cookie-consent')) {
+    setTimeout(() => {
+      consent?.classList.add('visible');
+      consent?.setAttribute('aria-hidden', 'false');
+    }, 2000);
+  }
+
+  function hideConsent() {
+    consent?.classList.remove('visible');
+    consent?.setAttribute('aria-hidden', 'true');
+  }
+
+  acceptBtn?.addEventListener('click', () => {
+    localStorage.setItem('rr-cookie-consent', 'accepted');
+    hideConsent();
+  });
+
+  declineBtn?.addEventListener('click', () => {
+    localStorage.setItem('rr-cookie-consent', 'declined');
+    hideConsent();
+  });
+</script>

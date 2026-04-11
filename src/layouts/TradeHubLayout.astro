@@ -1,0 +1,125 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+import SpeedBanner from '../components/SpeedBanner.astro';
+import ScenarioBlock from '../components/ScenarioBlock.astro';
+import StepsGrid from '../components/StepsGrid.astro';
+import FeatureGrid from '../components/FeatureGrid.astro';
+import TrustSection from '../components/TrustSection.astro';
+import TestimonialSlider from '../components/TestimonialSlider.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTASection from '../components/CTASection.astro';
+import CookieConsent from '../components/CookieConsent.astro';
+import channels from '../data/channels.json';
+
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  tradeName: string;
+  tradeNamePlural: string;
+  tradeSlug?: string;
+  headline: string;
+  accentWord: string;
+  subhead: string;
+  speedStat: string;
+  speedText: string;
+  scenario: string;
+  faqs: FAQItem[];
+  ctaHeadline?: string;
+  ctaSubhead?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalUrl,
+  tradeName,
+  tradeNamePlural,
+  tradeSlug,
+  headline,
+  accentWord,
+  subhead,
+  speedStat,
+  speedText,
+  scenario,
+  faqs,
+  ctaHeadline = `Stop Missing Jobs, ${tradeNamePlural}`,
+  ctaSubhead = `Join the UK ${tradeNamePlural.toLowerCase()} who never miss a lead. Only £99/month, 30-day money-back guarantee, no contracts.`,
+} = Astro.props;
+
+const steps = [
+  {
+    number: 1,
+    title: 'Tell Us About Your Business',
+    description: `Share your ${tradeName.toLowerCase()} business details — your services, your area, and how you want calls handled. We do the rest.`
+  },
+  {
+    number: 2,
+    title: 'We Configure Your AI',
+    description: `Your AI receptionist is trained with ${tradeName.toLowerCase()}-specific vocabulary and scenarios. It knows your trade inside out.`
+  },
+  {
+    number: 3,
+    title: 'Start Winning More Work',
+    description: `Every call, message, and enquiry is captured instantly and sent straight to you. No missed leads, no lost revenue.`
+  }
+];
+
+/* Build channel URL map for trade-specific links */
+const channelTradeUrlMap: Record<string, string> = {
+  'ai-phone-answering': `/ai-phone-answering-for-${tradeSlug}/`,
+  'ai-website-chat': `/ai-website-chat-for-${tradeSlug}/`,
+  'ai-whatsapp': `/ai-whatsapp-for-${tradeSlug}/`,
+  'ai-sms': `/ai-sms-for-${tradeSlug}/`,
+  'ai-email': `/ai-email-response-for-${tradeSlug}/`,
+  'ai-facebook-messenger': `/ai-facebook-messenger-for-${tradeSlug}/`,
+  'ai-instagram-dm': `/ai-instagram-dms-for-${tradeSlug}/`,
+  'missed-call-text-back': `/ai-missed-call-text-back-for-${tradeSlug}/`,
+};
+
+const features = channels.map(ch => ({
+  icon: ch.icon,
+  name: ch.name,
+  description: ch.shortDescription,
+  tier: ch.tierLabel,
+  href: tradeSlug && channelTradeUrlMap[ch.slug] ? channelTradeUrlMap[ch.slug] : ch.pageUrl,
+}));
+---
+
+<BaseLayout title={title} description={description} canonicalUrl={canonicalUrl}>
+  <Header slot="header" />
+
+  <HeroSection
+    headline={headline}
+    accentWord={accentWord}
+    subhead={subhead}
+  />
+
+  <SpeedBanner stat={speedStat} text={speedText} />
+
+  <ScenarioBlock text={scenario} />
+
+  <StepsGrid steps={steps} />
+
+  <FeatureGrid features={features} columns={3} />
+
+  <TrustSection />
+
+  <TestimonialSlider />
+
+  <FAQAccordion faqs={faqs} />
+
+  <CTASection headline={ctaHeadline} subhead={ctaSubhead} />
+
+  <CookieConsent />
+
+  <Footer slot="footer" />
+</BaseLayout>
