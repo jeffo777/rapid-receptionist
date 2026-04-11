@@ -75,73 +75,24 @@ const faqs = [
           <p class="gs-form-intro">We need a few details to configure your AI receptionist. Everything else is handled by our team during onboarding.</p>
 
           <form class="gs-form" id="get-started-form" action="#" method="POST">
-            <div class="gs-form-row">
-              <div class="form-group">
-                <label for="gs-first-name">First Name</label>
-                <input type="text" id="gs-first-name" name="firstName" required placeholder="John" autocomplete="given-name" />
-              </div>
-              <div class="form-group">
-                <label for="gs-last-name">Last Name</label>
-                <input type="text" id="gs-last-name" name="lastName" required placeholder="Smith" autocomplete="family-name" />
-              </div>
+            <div class="form-group">
+              <label for="gs-name">Your Name</label>
+              <input type="text" id="gs-name" name="name" required placeholder="John Smith" autocomplete="name" />
             </div>
 
             <div class="form-group">
-              <label for="gs-business-name">Business Name</label>
-              <input type="text" id="gs-business-name" name="businessName" required placeholder="Smith Plumbing Ltd" autocomplete="organization" />
-            </div>
-
-            <div class="gs-form-row">
-              <div class="form-group">
-                <label for="gs-email">Email Address</label>
-                <input type="email" id="gs-email" name="email" required placeholder="john@smithplumbing.co.uk" autocomplete="email" />
-              </div>
-              <div class="form-group">
-                <label for="gs-phone">Phone Number</label>
-                <input type="tel" id="gs-phone" name="phone" required placeholder="07XXX XXXXXX" autocomplete="tel" />
-              </div>
+              <label for="gs-email">Email Address</label>
+              <input type="email" id="gs-email" name="email" required placeholder="john@smithplumbing.co.uk" autocomplete="email" />
             </div>
 
             <div class="form-group">
-              <label for="gs-trade">Your Trade</label>
-              <select id="gs-trade" name="trade" required>
-                <option value="">Select your trade...</option>
-                <option value="plumber">Plumber</option>
-                <option value="electrician">Electrician</option>
-                <option value="gas-engineer">Gas Engineer</option>
-                <option value="locksmith">Locksmith</option>
-                <option value="roofer">Roofer</option>
-                <option value="builder">Builder</option>
-                <option value="drainage">Drainage Engineer</option>
-                <option value="hvac">HVAC Engineer</option>
-                <option value="glazier">Glazier</option>
-                <option value="pest-control">Pest Control</option>
-                <option value="garage-door">Garage Door Engineer</option>
-                <option value="appliance-repair">Appliance Repair Engineer</option>
-                <option value="alarm-security">Alarm & Security Installer</option>
-                <option value="other">Other Trade</option>
-              </select>
+              <label for="gs-phone">Phone Number <span class="form-optional">(optional)</span></label>
+              <input type="tel" id="gs-phone" name="phone" placeholder="07XXX XXXXXX" autocomplete="tel" />
             </div>
 
             <div class="form-group">
-              <label for="gs-area">Main Service Area</label>
-              <input type="text" id="gs-area" name="serviceArea" required placeholder="e.g. Greater Manchester, South London, Leeds & surrounding" />
-            </div>
-
-            <div class="form-group">
-              <label for="gs-plan">Which Plan Are You Interested In?</label>
-              <select id="gs-plan" name="plan" required>
-                <option value="">Select a plan...</option>
-                <option value="core">Core — £99/mo (Phone + Chat)</option>
-                <option value="all-channels">All Channels — £179/mo (Everything)</option>
-                <option value="standalone">Standalone Channel — £19/mo (Single channel)</option>
-                <option value="not-sure">Not sure yet — help me decide</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="gs-notes">Anything else we should know? <span class="form-optional">(optional)</span></label>
-              <textarea id="gs-notes" name="notes" rows="4" placeholder="e.g. I do emergency callouts, I only cover boilers, I want calls escalated to my mobile after hours..."></textarea>
+              <label for="gs-message">Your Message</label>
+              <textarea id="gs-message" name="message" rows="5" placeholder="Tell us a bit about your business and what you're looking for..."></textarea>
             </div>
 
             <button type="submit" class="btn btn--primary btn--lg gs-submit" id="gs-submit">
