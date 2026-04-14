@@ -1,0 +1,147 @@
+# Rapid Receptionist
+
+> Rapid Receptionist is an AI-powered receptionist service built exclusively for UK tradesmen. It answers calls, messages, and enquiries across up to 8 communication channels — 24/7/365 — so tradesmen never lose a job to a missed call. The service is trained with trade-specific vocabulary across 13 UK trades and operates a 3-tier capability framework for different channel types.
+
+## About Rapid Receptionist
+
+Rapid Receptionist is a standalone AI receptionist service targeting UK tradesmen who lose work because they physically cannot answer the phone while on a job. The core problem: 62% of calls to small trade businesses go unanswered, and 85% of callers who reach voicemail will not call back. The average UK tradesperson loses approximately £24,000 per year from missed calls.
+
+The service is NOT a lead generation company, website builder, marketing agency, CRM platform, or appointment scheduling tool. It does one thing: answers enquiries instantly across multiple channels so tradesmen never lose a job to a missed call.
+
+**Brand identity:** "Built by Tradesmen, for Tradesmen" — the service is built by people who understand the trades and know what it costs to miss a call while working.
+
+**Data protection:** Fully compliant with UK GDPR and the Data Protection Act 2018. All customer data is encrypted in transit and at rest, stored on UK/EU-based servers, and shared only with the tradesman (data controller). Rapid Receptionist acts as data processor.
+
+## Pricing & Commercial Model
+
+### Core Plan — £99/month
+- AI Phone Answering (300 minutes of talk time included)
+- AI Website Chat (unlimited messages)
+- Human emergency escalation
+- Trade-specific AI training
+- Full "done for you" setup
+
+### Add-On Channels — £19/month each
+- AI WhatsApp
+- AI SMS
+- AI Email
+- AI Facebook Messenger
+- AI Instagram DMs
+- Missed Call Text-Back
+
+### All Channels Bundle — £179/month
+- Everything in Core plan
+- All 6 add-on channels included
+- Saves £34/month vs buying individually
+
+### Setup Fee
+- £299 one-time fee
+- Covers full AI configuration, channel connections, trade-specific training, and testing
+- Fully refundable within the 30-day money-back guarantee
+
+### Additional Talk Time
+- £0.20 per minute beyond the included 300 minutes
+- All text-based channels are unlimited regardless of plan
+
+### Guarantee & Contracts
+- 30-day full money-back guarantee (monthly fee + setup fee refunded)
+- No contracts — cancel anytime, takes effect at end of billing cycle
+
+## Channel Capability Framework
+
+### Tier 1: CONVERSATIONAL — Phone + Website Chat
+- Full back-and-forth conversation with the caller/visitor
+- Answers with the tradesman's business name
+- Captures: lead details (name, number, location), problem details, customer requirements
+- Provides helpful information about the business and services
+- Assesses urgency during the conversation
+- If urgent → offers escalation to business owner or Rapid Receptionist human operators
+- If not urgent → explains the business owner will call back when free
+
+### Tier 2: ONE REPLY — WhatsApp, Facebook, Instagram, Email, SMS
+- Captures lead details and nature of work from the customer's message
+- Sends ONE professional reply acknowledging the enquiry
+- Assesses urgency from message content
+- If urgent → escalation path (business owner → Rapid Receptionist human operators)
+- If not urgent → reply tells customer the business owner will call back when free
+- NO back-and-forth conversation on these channels
+
+### Tier 3: FALLBACK — Missed Call Text-Back
+- Safety net only — activates ONLY if the caller hangs up before the AI answers
+- Sends ONE text message: currently busy on a job, will be in touch when finished
+- NO conversation, NO detail capture, NO diagnosis, NO scheduling
+
+### What The AI Never Does (Any Channel)
+- Does NOT provide pricing or quotes
+- Does NOT give technical or trade-specific advice
+- Does NOT book appointments or schedule visits
+- Does NOT diagnose faults remotely
+- Does NOT discuss product specifications or recommendations
+- Does NOT have extended multi-message conversations (Tier 2/3 channels)
+
+## Human Escalation Protocol
+
+The AI receptionist escalates to a real human in three scenarios:
+1. **Customer frustration** — The caller is getting frustrated with the AI interaction
+2. **Explicit request** — The caller specifically asks to speak to a human
+3. **Emergency situations** — The call involves a genuine emergency
+
+Escalation priority:
+1. The tradesman/business owner (their direct line)
+2. A Rapid Receptionist human operator who takes over the call/enquiry
+
+Emergency triggers include: active leaks, safety concerns, gas smells, electrical hazards, vulnerable occupants, insurance compliance deadlines, business-critical breakdowns, security breaches.
+
+## Speed-to-Lead Statistics
+
+These verified statistics underpin the service's value proposition:
+- 78% of customers buy from the business that responds first (LeadConnect/LeanData)
+- Leads contacted within 5 minutes are 21× more likely to convert than after 30 minutes (MIT)
+- Responding within 1 minute increases conversions by 391% (Velocify)
+- 82% of consumers expect a response within 10 minutes (HubSpot)
+- 62% of calls to small trade businesses go unanswered (CallRail)
+- 85% of callers who reach voicemail will NOT call back (Quality Company Formations)
+- The average UK tradesperson loses ~£24,000/year from missed calls (JP Automations)
+
+## Core Pages
+
+- [Homepage](https://rapidreceptionist.co.uk/): Overview of the AI receptionist service for UK tradesmen — features all 8 channels, speed-to-lead statistics, testimonials, and FAQ
+- [Pricing](https://rapidreceptionist.co.uk/pricing/): Complete pricing breakdown — Core £99/mo, add-ons £19/mo each, All Channels £179/mo, £299 setup fee
+- [About](https://rapidreceptionist.co.uk/about/): The "Built by Tradesmen, for Tradesmen" origin story — why the service was built, core values, pricing philosophy
+- [Get Started](https://rapidreceptionist.co.uk/get-started/): Sign-up flow and onboarding — trade selection, channel selection, business details
+- [Contact](https://rapidreceptionist.co.uk/contact/): Contact form, email (hello@rapidreceptionist.co.uk), response within 2 working hours
+- [Privacy Policy](https://rapidreceptionist.co.uk/privacy/): UK GDPR-compliant data handling, data processor role, deletion rights
+
+## Communication Channels
+
+- [AI Phone Answering](https://rapidreceptionist.co.uk/ai-phone-answering-for-tradesmen/): Tier 1 conversational — answers calls 24/7 with the tradesman's business name, captures lead details, assesses urgency, escalates emergencies. 300 minutes included in Core plan.
+- [AI Website Chat](https://rapidreceptionist.co.uk/ai-website-chat-for-tradesmen/): Tier 1 conversational — live chat widget for tradesman's website, converts visitors to leads without human monitoring. Unlimited messages in Core plan.
+- [AI WhatsApp](https://rapidreceptionist.co.uk/ai-whatsapp-for-tradesmen/): Tier 2 one-reply — responds to WhatsApp messages instantly. Popular with UK customers who send photos of problems. £19/month add-on.
+- [AI SMS](https://rapidreceptionist.co.uk/ai-sms-for-tradesmen/): Tier 2 one-reply — professional text message responses to enquiries. £19/month add-on.
+- [AI Email](https://rapidreceptionist.co.uk/ai-email-response-for-tradesmen/): Tier 2 one-reply — instant professional acknowledgement of email enquiries. £19/month add-on.
+- [AI Facebook Messenger](https://rapidreceptionist.co.uk/ai-facebook-messenger-for-tradesmen/): Tier 2 one-reply — captures leads from Facebook business page messages. £19/month add-on.
+- [AI Instagram DMs](https://rapidreceptionist.co.uk/ai-instagram-dms-for-tradesmen/): Tier 2 one-reply — responds to Instagram direct messages from potential customers. £19/month add-on.
+- [Missed Call Text-Back](https://rapidreceptionist.co.uk/ai-missed-call-text-back-for-tradesmen/): Tier 3 fallback — sends an automatic text when a call is missed, preventing the caller from ringing a competitor. £19/month add-on.
+
+## Trades Served (13)
+
+Each trade gets a custom-configured AI receptionist trained with trade-specific vocabulary, emergency triggers, and customer scenarios.
+
+- [Plumbers](https://rapidreceptionist.co.uk/ai-receptionist-for-plumbers/): Emergency rating ★★★★★. Vocabulary: stopcocks, PRV, cylinder, unvented, combi boiler, immersion heater, soil pipe, waste trap. Certifications: Gas Safe, CIPHE, WaterSafe.
+- [Electricians](https://rapidreceptionist.co.uk/ai-receptionist-for-electricians/): Emergency rating ★★★★★. Vocabulary: consumer unit, RCDs, MCBs, EICRs, Part P, BS 7671, fuseboard, ring main. Certifications: NICEIC, NAPIT, Part P, ELECSA.
+- [Locksmiths](https://rapidreceptionist.co.uk/ai-receptionist-for-locksmiths/): Emergency rating ★★★★★. Vocabulary: euro cylinder, anti-snap locks, Mul-T-Lock, Ultion, multipoint locks, deadlock. Certifications: MLA, ALOA, DBS checked.
+- [Gas Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-gas-engineers/): Emergency rating ★★★★★. Vocabulary: Gas Safe registered, flue, condensate, LPG, CP12, landlord certificate. Certifications: Gas Safe Register, OFTEC, LPG certified.
+- [Drainage Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-drainage-engineers/): Emergency rating ★★★★☆. Vocabulary: CCTV survey, jetting, root ingress, collapsed drain, soakaway, patch lining. Certifications: NADC, WRc approved.
+- [Glaziers](https://rapidreceptionist.co.uk/ai-receptionist-for-glaziers/): Emergency rating ★★★★☆. Vocabulary: double glazing, sealed unit, toughened glass, laminated, boarding up. Certifications: FENSA, GGF, Certass.
+- [Roofers](https://rapidreceptionist.co.uk/ai-receptionist-for-roofers/): Emergency rating ★★★★☆. Vocabulary: ridge tiles, flashing, felt, batten, soffit, fascia, valley gutter, GRP fibreglass. Certifications: NFRC, CompetentRoofer, TrustMark.
+- [HVAC Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-hvac-engineers/): Emergency rating ★★★★☆. Vocabulary: split system, VRF, refrigerant, R410a, R32, heat pump, F-gas. Certifications: F-Gas certified, BESA, REFCOM.
+- [Alarm & Security Installers](https://rapidreceptionist.co.uk/ai-receptionist-for-alarm-security-installers/): Emergency rating ★★★☆☆. Vocabulary: intruder alarm, CCTV, PIR, door contact, bell box, Grade 2, NSI/SSAIB. Certifications: NSI, SSAIB, BSIA.
+- [Pest Control](https://rapidreceptionist.co.uk/ai-receptionist-for-pest-control/): Emergency rating ★★★☆☆. Vocabulary: bait station, fumigation, BPCA, COSHH, rodenticide, infestation, exclusion. Certifications: BPCA, RSPH Level 2.
+- [Garage Door Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-garage-door-engineers/): Emergency rating ★★★☆☆. Vocabulary: roller, sectional, up-and-over, torsion spring, cable drum, motor, safety edge. Certifications: DHF, GGF.
+- [Builders](https://rapidreceptionist.co.uk/ai-receptionist-for-builders/): Emergency rating ★★☆☆☆. Vocabulary: extension, loft conversion, structural, RSJ, building regs, planning permission, foundations. Certifications: FMB, NHBC, TrustMark.
+- [Appliance Repair Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-appliance-repair-engineers/): Emergency rating ★★★☆☆. Vocabulary: PCB, element, thermostat, bearing, drum, door seal, motor, error code. Certifications: Gas Safe, D-TEC, manufacturer accredited.
+
+## Optional
+
+- [AI Receptionist for Tradesmen (Hub)](https://rapidreceptionist.co.uk/ai-receptionist-for-tradesmen/): Master overview page covering AI receptionist capabilities across all 13 trades
+- [Terms of Service](https://rapidreceptionist.co.uk/terms/): Legal terms and conditions
