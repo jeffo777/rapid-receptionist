@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Customers Share Kitchen Photos',
+    text: "Homeowners photograph their existing kitchen and message you on WhatsApp — 'This is what we have now, we want to gut it and start again.' The AI responds instantly, captures their vision, and confirms you will call back. All while you are fitting cabinets across town."
+  },
+  {
+    icon: '⚡',
+    title: 'Fastest Reply Wins the Consultation',
+    text: "A homeowner messages three kitchen fitters on WhatsApp. The one who replies first gets the design consultation. Your AI responds in seconds — building trust and engagement before competitors have even checked their phone."
+  },
+  {
+    icon: '🏗️',
+    title: 'Handles Builder and Developer Messages',
+    text: "Site managers WhatsApp about fitting kitchens in new-build plots — unit counts, specification levels, programme dates. The AI captures the scope and timeline so you can respond with a considered proposal."
+  },
+  {
+    icon: '🕐',
+    title: 'Active When You Cannot Be',
+    text: "WhatsApp messages about kitchens arrive at all hours — couples messaging at 11pm after measuring their kitchen, landlords texting on Sunday mornings about rental properties. Every message gets an immediate, professional response."
+  },
+  {
+    icon: '📋',
+    title: 'Rich Enquiry Data',
+    text: "WhatsApp conversations about kitchens are detailed — photos of existing layouts, links to Pinterest boards, measurements they have taken. The AI captures all of it and delivers a comprehensive lead summary."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional Brand Presence',
+    text: "Instant WhatsApp responses position your kitchen business as organised and responsive. First impressions matter in kitchen fitting — and a five-second reply makes a stronger impression than a two-day silence."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI WhatsApp work for kitchen fitters?",
+    answer: "When a customer messages your business WhatsApp, the AI responds immediately. It has a natural conversation about their kitchen project — style preferences, room size, worktop material, appliance requirements, timeline — and captures their contact details. Everything is sent to you as a lead summary."
+  },
+  {
+    question: "Can it handle photo messages of existing kitchens?",
+    answer: "Yes. Customers frequently send photos of their current kitchen, inspiration images from Pinterest, or screenshots of units they like. The AI acknowledges the photos, asks clarifying questions, and references the images in the lead summary."
+  },
+  {
+    question: "How much does AI WhatsApp cost?",
+    answer: `AI WhatsApp is an add-on at £${pricing.addOn.price}/month on any plan. Pair with Starter (£${pricing.tiers.starter.price}/month) or Core (£${pricing.tiers.core.price}/month), or get everything in the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can I jump into a WhatsApp conversation myself?",
+    answer: "Yes. The AI handles the initial response. Once you are free, you can continue the conversation personally at any time. The handoff is seamless."
+  },
+  {
+    question: "How is WhatsApp data protected?",
+    answer: "All WhatsApp data is managed under UK GDPR. Messages, photos, and contact details are encrypted and stored on UK and EU servers. Data is shared only with you and never sold or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Kitchen Fitters | Rapid Receptionist"
+  description={`AI WhatsApp for UK kitchen fitters and kitchen installation companies. Instant responses to WhatsApp enquiries about kitchen fitting. £${pricing.addOn.price}/month add-on.`}
+  canonicalUrl="/kitchen-fitters/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Kitchen Fitter"
+  tradeNamePlural="Kitchen Fitters"
+  tradeSlug="kitchen-fitters"
+  headline="AI WhatsApp for Kitchen Fitters"
+  accentWord="Kitchen Fitters"
+  subhead={`A homeowner photographs their dated 1990s kitchen and messages you: 'We want to rip this out and start fresh. Do you do free design visits?' You are fitting a breakfast bar in a house across town. Your AI replies in seconds, captures their vision, and you book the consultation that evening. £${pricing.addOn.price}/month add-on.`}
+  scenario="It is 8:45pm on a Wednesday. A young couple in Nottingham have just measured their kitchen — 3.8m x 2.9m with an awkward boiler in the corner. They have been browsing kitchen ideas all evening and found your Instagram page. They screenshot a handle-less kitchen you fitted last month and WhatsApp you: 'Hi, we love this style. Our kitchen is about 3.8 x 2.9 with an L-shape layout. Can you do a design visit? We are in West Bridgford.' You are watching television. Without AI WhatsApp, they wait until tomorrow and message two more fitters. With AI WhatsApp, the reply comes at 8:46pm — confirming you offer design visits, asking about their worktop preference and budget range, and suggesting a visit this Saturday. They reply with their address and stop searching."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/kitchen-fitters/ai-receptionist/"
+  ctaHeadline="Respond to Every Kitchen Enquiry on WhatsApp"
+  ctaSubhead={`Homeowners send kitchen photos and want a fast reply. Your AI delivers it. £${pricing.addOn.price}/month add-on.`}
+/>

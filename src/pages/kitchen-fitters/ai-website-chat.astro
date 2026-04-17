@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Captures Visitors Browsing Your Portfolio',
+    text: "A homeowner lands on your website at 9pm, browses your kitchen gallery, and wants to know if you fit Howdens or Wren kitchens. Without chat, they bookmark your site and forget. With AI Website Chat, they get an instant answer and you get a qualified lead by morning."
+  },
+  {
+    icon: '📐',
+    title: 'Handles Technical Kitchen Questions',
+    text: "Visitors ask about worktop materials, handle-less vs shaker-style units, integrated appliances, and whether you can work with specific suppliers. The AI draws on your training data to answer and captures the enquiry for your follow-up."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Decision-Making Hours',
+    text: "Couples plan kitchen renovations in the evening — browsing Pinterest, comparing fitters, measuring their kitchen. Your chat is live during those critical 7pm-11pm hours when decisions are being made."
+  },
+  {
+    icon: '📱',
+    title: 'Mobile-Friendly Experience',
+    text: "Most visitors browse kitchen company websites on their phone. The chat widget works seamlessly on mobile — no clunky forms. A quick conversation captures everything you need to follow up."
+  },
+  {
+    icon: '🎯',
+    title: 'Qualifies Kitchen Leads',
+    text: "The chat captures kitchen style preferences, worktop choice, appliance requirements, room dimensions, budget range, and timeline. You wake up to a lead that reads like a completed design brief."
+  },
+  {
+    icon: '🔗',
+    title: 'Works With Your Kitchen Gallery',
+    text: "Your portfolio photos attract visitors. The chat widget converts them. Side by side, your best kitchen photos and an instant chat response create a powerful first impression that competitors without chat cannot match."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does website chat work for kitchen fitters?",
+    answer: "A chat widget appears on your website. When a visitor opens a conversation, the AI responds instantly — answering questions about your services, capturing what type of kitchen work they need, their timeline, and contact details. Everything is compiled into a lead summary sent to you."
+  },
+  {
+    question: "Can the chat discuss specific kitchen brands or styles?",
+    answer: "Yes. During setup, we configure the AI with your product range — whether you fit Howdens, Wren, bespoke handmade units, or supply and fit your own range. The AI references your capabilities without quoting prices."
+  },
+  {
+    question: "Is there a limit on chat messages?",
+    answer: "No. Website chat includes unlimited messages on all plans. Whether you get three enquiries a week or thirty, there is no additional charge."
+  },
+  {
+    question: "Does the chat try to give kitchen quotes?",
+    answer: "Never. The AI explains that kitchen pricing depends on the specification, room layout, and worktop material. It steers the conversation towards booking a home visit or design consultation — which is how kitchen fitters convert leads."
+  },
+  {
+    question: "How is chat data protected?",
+    answer: "All data from website chat is managed under UK GDPR and the Data Protection Act 2018. Visitor details and conversation content are encrypted and stored on UK and EU servers. Data is shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Kitchen Fitters | Rapid Receptionist"
+  description={`AI website chat for UK kitchen fitters and kitchen installation companies. Captures visitor enquiries 24/7 with intelligent chat. Unlimited messages included. From £${pricing.tiers.starter.price}/month.`}
+  canonicalUrl="/kitchen-fitters/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Kitchen Fitter"
+  tradeNamePlural="Kitchen Fitters"
+  tradeSlug="kitchen-fitters"
+  headline="AI Website Chat for Kitchen Fitters"
+  accentWord="Kitchen Fitters"
+  subhead="A couple browses your kitchen gallery at 10pm. They love the shaker-style kitchen you fitted in a farmhouse last month. They type into the chat: 'Do you do design consultations?' The AI responds instantly, captures their vision, and you call them first thing tomorrow with a home visit booked."
+  scenario="It is 10:15pm on a Saturday. A couple in Surrey have spent the evening planning their kitchen renovation — they have been browsing Houzz, measuring the room, and arguing about whether to go handle-less or shaker. They land on your website, scroll through your gallery, and see a kitchen that looks exactly like what they want. They open the chat: 'Hi, we love the kitchen in photo three. We are renovating our kitchen in Guildford — about 4m x 3.5m. Do you do free design consultations?' Without website chat, they would have sent a contact form you might not check until Tuesday. With AI Website Chat, the reply comes in five seconds — yes, you offer consultations, asking about their preferred style, worktop material, timeline, and suggesting a home visit. By 10:20pm, they have given their phone number, described exactly what they want, and stopped browsing other kitchen companies."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/kitchen-fitters/ai-receptionist/"
+  ctaHeadline="Turn Website Visitors into Kitchen Customers"
+  ctaSubhead={`Your gallery attracted them. Your AI captures them. Included from £${pricing.tiers.starter.price}/month.`}
+/>
