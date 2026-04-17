@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Developer Tenders Fast',
+    text: "New-build developers and housing associations send landscaping package tenders by email — plot layouts, planting schedules, hard landscaping specifications, programme charts. The landscaper who acknowledges first and asks the right questions about the scope gets the most attention during the pricing period. AI Email Response sends a professional acknowledgement within sixty seconds, confirming receipt and noting key details."
+  },
+  {
+    icon: '📐',
+    title: 'Recognises Landscaping Specification Language',
+    text: "When a tender email references 'Marshalls Fairstone Sawn Versuro paving to Plot Type A, Bradstone walling to boundary treatments, and BS 3882 topsoil to all planting areas,' the AI captures the material specifications accurately. Your acknowledgement demonstrates understanding rather than a generic auto-reply."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Email Blind Spots',
+    text: "Most landscapers check email once a day — if that. When you are on a mini digger from 7am to 5pm, emails accumulate unread. A design commission from a garden designer that arrives at 10am and is not seen until 8pm has lost ten hours. The AI sends a professional response immediately, keeping the enquiry warm."
+  },
+  {
+    icon: '🗂️',
+    title: 'Sorts Enquiries by Priority',
+    text: "Your inbox receives developer tender invitations, homeowner website form submissions, designer project briefs, and maintenance contract renewal requests. The AI identifies each type and the lead summary arrives with context — so you know whether to prioritise a tender with a Friday deadline or a homeowner enquiry about a summer patio."
+  },
+  {
+    icon: '🤝',
+    title: 'Maintains Designer Relationships',
+    text: "Garden designers who send you project briefs expect a professional acknowledgement. A prompt reply reinforces the relationship and signals reliability. The AI responds as your business, confirming receipt and expressing interest. For landscapers building preferred contractor relationships with designers, this consistency matters."
+  },
+  {
+    icon: '📎',
+    title: 'Handles Attached Drawings and Specs',
+    text: "Landscaping tenders and designer briefs often include garden layout drawings, planting schedules, material specification sheets, and programme charts. The AI acknowledges the email and notes the attachments. Your lead summary confirms what was attached — giving you a head start on understanding the scope."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI write a complete reply to landscaping emails?",
+    answer: "Rather than composing a full response, the AI sends a professional acknowledgement — confirming receipt, noting project scope and any deadlines mentioned, and assuring the sender you will follow up in detail. It never commits to pricing, timelines, or material availability on your behalf. The purpose is to demonstrate responsiveness and buy you time to compose a detailed reply when you are off the tools."
+  },
+  {
+    question: "Will it reply to every email?",
+    answer: "The AI responds to genuine business enquiries — tenders, project briefs, homeowner requests, designer commissions, and maintenance contract queries. It filters out supplier newsletters, tool promotions, spam, and internal correspondence. The parameters are configured during setup and the system quickly learns to distinguish between actionable enquiries and background noise."
+  },
+  {
+    question: "How does it handle emails from garden designers with attached plans?",
+    answer: "When a designer sends a project brief with garden layout drawings, a planting schedule, or a materials specification as attachments, the AI acknowledges receipt and confirms the attachments arrived. Your lead summary notes the type and number of files attached — 'garden layout PDF, planting schedule Excel, mood board images' — so you know what to expect before opening the email yourself."
+  },
+  {
+    question: "What does AI Email Response cost for a landscaping business?",
+    answer: `Email is an add-on channel costing £${pricing.addOn.price}/month alongside your Core plan. For landscaping companies where developer tenders and designer briefs arrive by email — and where the first to acknowledge often gets the most attention during pricing — this channel directly protects your enquiry pipeline. One captured tender pays for the add-on cost many times over.`
+  },
+  {
+    question: "Can I still reply to emails myself?",
+    answer: "Your follow-up correspondence is entirely yours. The AI handles only the initial acknowledgement — after that, you review the drawings, check your programme, and compose your detailed response at your own pace. The AI does not touch any subsequent emails in the thread."
+  },
+  {
+    question: "How is email data kept secure?",
+    answer: "All email content processed by the AI — including project details, property addresses, tender documents, and designer specifications — is encrypted and stored on UK and EU servers under UK GDPR. We never access email content for any purpose beyond generating your lead summary and acknowledgement. Your client communications remain confidential."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Landscapers | Rapid Receptionist"
+  description={`AI email response for UK landscaping companies. Acknowledges developer tenders, designer briefs, and homeowner enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/landscapers/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Landscaper"
+  tradeNamePlural="Landscapers"
+  tradeSlug="landscapers"
+  headline="AI Email Response for Landscaping Companies"
+  accentWord="Landscaping Companies"
+  subhead="A garden designer emails you a complete project brief — rear garden redesign in Berkshire with natural limestone paving, a bespoke water feature, tiered planting beds, and a cedar pergola. She has attached layout drawings and a planting schedule. You are excavating drainage runs on another project, covered in clay, phone in the van. Without AI Email Response, the designer waits until tomorrow for a reply — by which time two other landscapers have already engaged. With it, your acknowledgement arrives within a minute and you are in the conversation before you leave the trench."
+  scenario="It is 10:30am on a Monday in April. You are mixing mortar for a natural stone retaining wall in a rear garden in Guildford, trowel in hand, boots caked in cement. Your email is on your phone, which is face-down on the client's garden table. A developer's QS sends you a landscaping tender for Phase 3 of a residential development in Basingstoke — forty-two plots needing front and rear landscaping to a specified palette of materials, turfing, boundary fencing, and specimen tree planting. The tender deadline is next Friday. Without AI Email Response, you see the email at 7pm, start your tender on Tuesday, and submit on Thursday night with barely any pricing time. Two other landscapers who acknowledged on Monday morning had the full week to price carefully and submit competitive tenders. With AI Email Response, your acknowledgement goes out at 10:31am: 'Thank you for the Phase 3 landscaping tender. We have received the plot layouts and specification documents and will review them today. We look forward to submitting our tender by the deadline.' The QS marks you as responsive. At lunchtime you open the lead summary, download the documents, and start pricing that evening — giving you the full week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/landscapers/ai-receptionist/"
+  ctaHeadline="Acknowledge Every Landscaping Tender the Minute It Arrives"
+  ctaSubhead={`Developer tenders and designer briefs go to whoever responds first. AI email response puts you at the front of the queue. Add-on at £${pricing.addOn.price}/month.`}
+/>

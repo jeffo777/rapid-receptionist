@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Captures Enquiries from Your Project Portfolio',
+    text: "Landscaping is a visual trade — before-and-after garden transformations, patio builds, water features, and planting schemes photograph beautifully. When someone sees your Facebook post of a completed garden and messages 'can you do something like this for us?', the AI responds immediately, captures their garden details, and delivers a qualified lead while you are on the digger."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Photo Messages from Homeowners',
+    text: "Homeowners frequently send garden photos through Messenger — shots of overgrown borders, cracked patios, bare lawns, and tired fencing. The AI acknowledges the images, asks what they would like done, their postcode, and their timeline. You see the photos alongside a structured lead summary, giving you a head start on understanding the scope before your callback."
+  },
+  {
+    icon: '⚡',
+    title: 'First Response Secures the Site Visit',
+    text: "Homeowners messaging multiple landscapers through Facebook typically book a site visit with whoever replies first. A professional Messenger response within seconds — not hours — positions you as organised and reliable. That first impression often carries through to winning the project."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Evening and Weekend Browsing',
+    text: "Facebook engagement peaks in the evening and at weekends — exactly when homeowners are in their gardens noticing what needs doing. A Saturday afternoon Messenger enquiry about a new patio deserves a fast response, not a Monday morning reply."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Leads from Casual Chats',
+    text: "Messenger conversations are informal. The AI consolidates the thread into a clean lead summary: garden project type, approximate size, material preferences, location, timeline, and contact details. You start your callback informed."
+  },
+  {
+    icon: '🔗',
+    title: 'Connects Social Content to Revenue',
+    text: "Posting completed garden transformations on Facebook drives engagement. AI Messenger converts that engagement into site visits. A like on a patio photo becomes a conversation about a similar build, which becomes a lead in your inbox. Marketing and sales merge."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my landscaping company?",
+    answer: "You need a Facebook Business page with Messenger enabled — not a personal profile. If you have one already, the AI connects to it in minutes. Many landscaping companies have a Facebook page where they post project photos but rarely check the message inbox. The AI ensures every Messenger enquiry gets an immediate, professional response whether you post weekly or twice a year."
+  },
+  {
+    question: "What garden enquiries arrive through Facebook Messenger?",
+    answer: "Messenger enquiries in landscaping tend to come from homeowners — they have seen a project you posted, been recommended by a friend, or found your page while searching Facebook for local landscapers. Common requests include patio quotes, garden makeover consultations, fence replacement, driveway enquiries, and garden maintenance services. These are typically domestic projects, but they can spark recommendations that multiply rapidly through the homeowner's neighbour network."
+  },
+  {
+    question: "How fast does the AI respond on Messenger?",
+    answer: "Within seconds. Facebook shows read receipts, so the homeowner knows their message was received and is being handled. For landscaping enquiries driven by garden inspiration — someone sees a beautiful patio project and thinks 'I want that' — the speed of your response determines whether that inspiration converts into an enquiry or fades by morning."
+  },
+  {
+    question: "What is the cost for AI Facebook Messenger?",
+    answer: `Facebook Messenger is available as an add-on at £${pricing.addOn.price}/month on top of the Core plan. For landscaping companies posting project photos on Facebook — and most do, because gardens photograph well — this channel ensures the engagement your content generates actually converts into revenue. The monthly cost is trivial compared to a single captured garden project.`
+  },
+  {
+    question: "Can I take over Messenger conversations myself?",
+    answer: "When you reply directly in a Messenger thread, the AI steps back. Many landscapers let the AI capture the initial enquiry and then follow up personally with material suggestions, rough price indications, and site visit booking. The homeowner sees one seamless conversation."
+  },
+  {
+    question: "How is Messenger data protected?",
+    answer: "All Messenger conversations, images, garden project details, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data is shared only with you and never sold or repurposed. Facebook's own platform policies apply separately to the app itself."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Landscapers | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK landscaping companies. Responds to homeowner garden enquiries through your Facebook page instantly. Captures patio, fencing, and garden makeover leads. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/landscapers/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Landscaper"
+  tradeNamePlural="Landscapers"
+  tradeSlug="landscapers"
+  headline="AI Facebook Messenger for Landscapers"
+  accentWord="Landscapers"
+  subhead="A homeowner sees your Facebook post of a completed garden — sandstone paving, cedar-clad raised beds, lush border planting — and messages: 'This is gorgeous. Our garden is a mess after building work. Can you come and look at it?' You are up to your knees in an excavation fitting a drain. Without AI Messenger, the message joins a week of unread Facebook notifications. With it, the homeowner gets an instant reply, shares her address and photos of the garden, and your lead is ready by tea break."
+  scenario="It is 6:30pm on a Friday evening. A homeowner in Solihull is scrolling through Facebook and sees that a friend has tagged your landscaping company in a post: 'Absolutely love what they did to our garden — completely transformed.' The homeowner clicks through to your page, examines your portfolio — a series of before-and-after garden builds across the West Midlands — and sends a Messenger message: 'Hi, our next-door neighbour has just had their garden done (not by you) and it has made ours look terrible by comparison. We have about 15m x 8m, very overgrown, and want it completely redone — patio, lawn, borders, new fence. Could you come and give us a quote?' Without AI Facebook Messenger, the message sits in your page's message request inbox — a tab you have not checked since last month. Monday morning you see it but the homeowner has already booked site visits with two other landscapers who responded over the weekend. With AI Messenger, the AI replies at 6:31pm: 'Thank you for your message. A full garden makeover is right up our street. Could you share your postcode and a good day for a site visit, and one of our team will be in touch?' The homeowner responds with their address, says they are flexible, and mentions the neighbour's garden as a reference point. Monday morning you open a lead summary with the garden dimensions, scope, location, and the competitive context — and call before 9am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/landscapers/ai-receptionist/"
+  ctaHeadline="Turn Garden Portfolio Engagement into Landscaping Leads"
+  ctaSubhead={`Your Facebook garden photos inspire homeowners. AI Messenger converts that inspiration into site visit bookings. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A garden designer calls on a Tuesday morning about a residential project in Surrey — a full rear garden redesign with Indian sandstone paving, a bespoke timber pergola, raised sleeper beds, and an automated irrigation system. You are operating a plate compactor on a patio sub-base in Hampshire, aggregate bouncing, ear defenders on, dust in the air. The call rings out. The designer needed your input on levels and drainage before finalising the specification by Friday. By Wednesday she has spoken to two other landscapers and moved forward without you.",
+    with: "The same garden designer calls. Your AI receptionist answers, captures the full scope — rear garden redesign, Indian sandstone paving, timber pergola, raised sleeper beds, irrigation system, Surrey location, specification deadline Friday — and confirms you will call back. At your tea break you ring the designer with the complete brief and book a site visit for Thursday morning."
+  },
+  {
+    without: "A property developer emails about landscaping a phase of twelve new-build plots on a housing development in Oxfordshire — front gardens, rear patios, turfing, boundary fencing, and bin store areas, all to a tight programme with completions starting in six weeks. You are excavating a pond in a country garden using a mini digger, covered in clay, phone in the site welfare unit. Three other landscaping companies respond to the developer by close of business. You see the email at 9pm.",
+    with: "Your AI acknowledges the developer's email within a minute, confirming receipt of the twelve-plot landscaping package and noting the six-week programme. Next morning you open a structured lead summary and call the developer before the other companies have sent their follow-up quotes."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday afternoon about a complete garden transformation — they have just moved into a new house and the rear garden is a muddy building site left by the developer. They want a patio, lawn, fencing, planting beds, and garden lighting, and they want the work done before a family barbecue in eight weeks. You are laying porcelain paving at another property with your hands covered in adhesive. The WhatsApp sits unread until Sunday evening. By then the homeowner has booked a site visit with another landscaper for Monday.",
+    with: "The WhatsApp gets an instant response. The AI captures the scope — full garden transformation, patio, lawn, fencing, planting, lighting, eight-week deadline — and the homeowner's address. Sunday morning you read the complete brief, reply with your availability, and lock in the site visit before anyone else has responded."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Hard Landscaping",
+    items: ["Natural stone and porcelain paving", "Block paving and driveway construction", "Retaining walls and raised beds", "Steps, edging, and kerb work", "Drainage systems and soakaways", "Concrete bases and foundations"]
+  },
+  {
+    category: "Soft Landscaping",
+    items: ["Turfing and lawn establishment", "Planting schemes and border design", "Hedging and screening", "Tree planting and relocation", "Wildflower meadow creation", "Irrigation and watering systems"]
+  },
+  {
+    category: "Structures & Features",
+    items: ["Timber and composite decking", "Pergolas, arbours, and garden rooms", "Fencing and boundary treatments", "Water features and pond construction", "Garden lighting installation", "Artificial grass and low-maintenance gardens"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏡",
+    title: "Homeowners & Private Clients",
+    description: "The bread and butter of most landscaping businesses. Homeowners wanting garden makeovers, patio replacements, driveway resurfacing, and outdoor living spaces. These clients research online, call for quotes, and often want to meet face-to-face before committing. Responding quickly to their initial enquiry — before they call two more landscapers — is often the deciding factor."
+  },
+  {
+    icon: "🎨",
+    title: "Garden Designers & Architects",
+    description: "Design professionals who specify landscaping work and need a contractor to build their vision. They value landscapers who respond promptly, understand specification documents, and can discuss materials, levels, and drainage knowledgeably. Being available when a designer calls about a new project often leads to preferred contractor status and a steady pipeline of high-value commissions."
+  },
+  {
+    icon: "🏗️",
+    title: "Developers & Housebuilders",
+    description: "New-build developers requiring landscaping packages for residential plots — front gardens, rear patios, turfing, boundary treatments, and communal areas. These contracts involve multiple plots, tight programmes, and formal tender processes. Speed of response when a site manager or QS calls about an upcoming phase can determine whether you make the tender list."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial & Facilities Management",
+    description: "Property management companies, hotels, schools, and commercial premises needing grounds maintenance, seasonal planting, hard landscaping repairs, and landscape upgrades. These clients offer recurring revenue and often expand the scope once they trust a contractor. A prompt response to an initial enquiry about a car park border or reception entrance planting can lead to a multi-site maintenance contract."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand landscaping terminology when clients describe their project?",
+    answer: "Your AI is configured with the full vocabulary of the landscaping trade — Indian sandstone, porcelain paving, block paving, sleeper beds, retaining walls, decking, pergola, irrigation, turfing, topsoil, MOT Type 1, pointing, drainage, soakaway, and every other term your clients and designers use. When a garden designer calls about 'a Kandla Grey sandstone patio with a soldier course edge, raised oak sleeper beds, and an automated Hunter irrigation system,' the AI captures the specification and delivers it accurately in your lead summary."
+  },
+  {
+    question: "Can the AI handle calls from both homeowners and developers?",
+    answer: "Landscaping enquiries range from a homeowner wanting a small back garden makeover to a housebuilder needing landscaping across sixty plots. The AI adapts to both — capturing room dimensions and material preferences for domestic projects, and plot counts, programme dates, and tender deadlines for commercial work. Each lead arrives as a structured summary, so you can immediately distinguish between a weekend patio quote and a six-figure development package."
+  },
+  {
+    question: "What happens when someone calls about an urgent landscaping issue?",
+    answer: "Retaining walls can fail after heavy rain, mature trees can fall across gardens, and drainage systems can back up and flood paved areas. The AI recognises urgency language and attempts to reach you on your mobile immediately. If you are operating a digger or plate compactor and cannot answer, the call escalates to our human operators who will keep trying. Standard enquiries about garden designs and patio quotes queue as normal leads."
+  },
+  {
+    question: "How much does the service cost for a landscaping business?",
+    answer: `Whether you are a sole trader with a van and a mini digger or a company running three crews across the South East, the Core plan at £${pricing.tiers.core.price}/month handles the typical enquiry volume. You get ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. Additional channels — WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, Missed Call Text Back — are £${pricing.addOn.price}/month each. Setup is a one-time £${pricing.setup.price} fee, fully refundable within 30 days if the service is not right for you.`
+  },
+  {
+    question: "Is this worthwhile for a sole trader landscaper?",
+    answer: "A sole trader landscaper is the person who benefits most. You spend entire days operating machinery, mixing mortar, laying paving, and planting — physically unable to answer the phone. Every missed call is a potential garden project going to the landscaper who picked up. The AI captures every enquiry with full project details while you keep working. A single captured garden makeover job typically pays for the service for two to three years."
+  },
+  {
+    question: "Can I still answer calls when I am between jobs?",
+    answer: "The AI is your safety net, not a barrier. When you are driving between sites, grabbing a coffee at the merchants, or at home for the evening, calls ring through to your mobile as normal. The AI only steps in when you are genuinely unavailable — operating a compactor, mixing concrete, or knee-deep in an excavation. You control the schedule through your dashboard and can adjust it any time."
+  },
+  {
+    question: "How does the service protect my clients' personal data?",
+    answer: "Landscaping enquiries involve property addresses, homeowner contact details, garden dimensions, and sometimes project budgets. Every piece of information captured by the AI is managed under UK GDPR and the Data Protection Act 2018 — encrypted during transmission and at rest, stored on UK and EU servers, and shared exclusively with you. We act as your data processor under a formal agreement and never sell, share, or repurpose client data."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Landscapers | Rapid Receptionist"
+  description={`AI receptionist for UK landscaping companies — hard landscaping, soft landscaping, garden design, and commercial grounds. Never miss a call while you are on the digger. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/landscapers/ai-receptionist/"
+  tradeName="Landscaper"
+  tradeNamePlural="Landscapers"
+  tradeSlug="landscapers"
+  headline="The AI Receptionist Built for Landscapers"
+  accentWord="Landscapers"
+  subhead={`You cannot answer the phone when you are operating a mini digger, compacting a sub-base, or laying natural stone paving with wet mortar on your hands. Your AI receptionist captures every call, every message, and every online enquiry — from homeowners dreaming of a garden transformation to developers needing sixty plots landscaped by handover. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Every Missed Call Is a Garden Project Growing in Someone Else's Order Book"
+  ctaSubhead={`A homeowner calling about a rear garden makeover will book the first landscaper who answers. The AI makes sure you are always in the conversation. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

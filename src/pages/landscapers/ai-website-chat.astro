@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Browsing Garden Inspiration',
+    text: "Homeowners researching landscapers spend time browsing portfolios, comparing patio materials, and imagining what their garden could look like. A chat widget on your website turns passive browsing into an active conversation — they ask about your coverage area, material recommendations, and typical project timelines without needing to pick up the phone. For garden projects where the decision is emotional, starting a chat conversation is the tipping point between browsing and booking."
+  },
+  {
+    icon: '📐',
+    title: 'Answers Questions About Materials and Services',
+    text: "Website visitors ask specific questions — 'do you work with Indian sandstone or only porcelain?' or 'can you build a retaining wall with railway sleepers?' or 'do you do the planting as well as the hard landscaping?' The AI responds from your service profile, keeping the visitor on your site rather than clicking back to Google. Every chat becomes a lead with contact details and project requirements."
+  },
+  {
+    icon: '🕐',
+    title: 'Captures Evening and Weekend Browsers',
+    text: "Garden dreaming happens at night. A couple sits on their sofa scrolling through landscapers' websites at 9pm, comparing before-and-after photos. They find your portfolio, love the look of a recent patio project, and see the chat widget. Without it, they bookmark the page and forget by morning. With it, they type 'how much for a patio like the one in your gallery?' and the conversation begins."
+  },
+  {
+    icon: '📊',
+    title: 'Pre-qualifies Before You Call Back',
+    text: "The chat naturally gathers what you need — garden type, approximate size, what they want done (patio, lawn, fencing, planting), any materials they like, their location, and their timeline. By the time you see the lead summary, you know whether it is a small patio relay or a £40,000 rear garden transformation — and you can plan your callback accordingly."
+  },
+  {
+    icon: '🔗',
+    title: 'Complements Your Project Gallery',
+    text: "If your website has before-and-after project photos, visitors browsing those images often have follow-up questions — 'what stone is that?', 'how long did this take?', 'do you work in my area?' The chat widget sits alongside the gallery, turning inspiration into enquiry in a single click."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat is bundled with the Core plan at £${pricing.tiers.core.price}/month — no additional charge. Adding it to your website takes minutes: a JavaScript snippet pasted into your site. It works on WordPress, Squarespace, Wix, or any custom-built landscaper website. There is no per-conversation limit.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add the chat to my landscaping website?",
+    answer: "During setup you receive a small JavaScript code snippet to paste into your website — either in the header, footer, or via a WordPress plugin. The whole process takes under five minutes. The chat bubble then appears on every page of your site, styled to complement your branding. If you are not comfortable editing code, we guide you through it or coordinate with your web developer."
+  },
+  {
+    question: "Can the AI discuss different landscaping materials with visitors?",
+    answer: "During setup, you tell us what materials you work with — natural stone, porcelain, block paving, composite decking, timber, artificial grass — and the AI uses this to respond to visitor questions. If someone asks 'do you supply and lay Indian sandstone?' the AI confirms based on your service profile. It does not provide detailed technical advice, but it engages visitors with enough knowledge to keep them on your site and convert them into leads."
+  },
+  {
+    question: "What details does the chat collect from website visitors?",
+    answer: "The AI builds a picture through natural conversation — what the visitor wants done (patio, driveway, garden makeover, planting), their property type, the approximate garden size if they know it, materials they prefer, their location, their timeline, and their contact details. For landscaping businesses, this pre-qualification is invaluable because it reveals whether you are looking at a weekend patio job or a month-long garden build before you call back."
+  },
+  {
+    question: "Will the chat slow down my website?",
+    answer: "The script loads asynchronously after your page content has rendered. Visitors see your website — including your project gallery images, which are typically the heaviest elements — at full speed. The chat widget then appears without affecting page load time. The performance impact is negligible."
+  },
+  {
+    question: "Is website chat charged separately?",
+    answer: `Chat is included in the Core plan at £${pricing.tiers.core.price}/month with no extra fee. For landscapers, phone answering and website chat cover the two primary enquiry channels — homeowners calling after finding your number and visitors browsing your portfolio online. Both channels are covered under a single plan.`
+  },
+  {
+    question: "How is visitor chat data handled?",
+    answer: "Chat conversations are recorded, summarised, and delivered as structured leads. Visitor data — including garden project details, property addresses, and contact information — is encrypted and stored on UK and EU servers under UK GDPR. Data is shared only with you and is never used for advertising or any third-party purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Landscapers | Rapid Receptionist"
+  description={`AI website chat for UK landscaping companies. Engages visitors browsing your portfolio, answers questions about materials and services, and captures garden project leads 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/landscapers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Landscaper"
+  tradeNamePlural="Landscapers"
+  tradeSlug="landscapers"
+  headline="AI Website Chat for Landscaping Businesses"
+  accentWord="Landscaping Businesses"
+  subhead="A homeowner in Cheltenham finds your website while searching for landscapers. She browses your before-and-after gallery, lingers on a sandstone patio project that looks exactly like what she wants, and notices the chat widget. She types: 'I love the patio in your Bath project — can you do something similar in GL50? About 30 square metres.' Without chat, she would have bookmarked the page and forgotten. With AI Website Chat, the AI responds instantly, captures her garden dimensions, timeline, and contact details, and your lead arrives before she closes the browser."
+  scenario="It is 8:45pm on a Sunday in March. A couple in Stratford-upon-Avon has just returned from dinner at a friend's house with a stunning rear garden — multi-level terracing, limestone paving, built-in seating, and integrated lighting. They sit on their sofa, scroll through landscaper websites, and find yours. Your portfolio shows a similar terraced garden build in the Cotswolds. They click through the project images, read the description, and the chat widget appears. The husband types: 'We have got a sloped rear garden, maybe 12m by 8m. We want to level it into terraces like the Cotswolds project you did. Is this something you could quote?' Without AI Website Chat, they send a contact form and hear nothing until Monday afternoon — by which time they have also contacted two other landscapers who had chat on their sites and responded Sunday night. With AI Website Chat, the AI replies within seconds: 'Thank you for your enquiry — a terraced garden build is definitely something we specialise in. Could you share your postcode and a good time for a site visit, and one of our team will get back to you to discuss the levels and options?' They share their address, mention they prefer weekday mornings, and by Monday 8am you have a lead summary with garden dimensions, the inspiration project referenced, their address, and their availability. You call at 9am and book a Tuesday morning site visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/landscapers/ai-receptionist/"
+  ctaHeadline="Turn Garden Inspiration into Landscaping Enquiries"
+  ctaSubhead={`Visitors browsing your portfolio are already imagining their dream garden. A chat widget turns that imagination into a lead. Included at £${pricing.tiers.core.price}/month.`}
+/>

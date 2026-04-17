@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Are on the Machinery',
+    text: "Landscaping keeps your hands occupied all day — operating a mini digger excavating for a retaining wall, running a plate compactor on a patio sub-base, or mixing mortar for natural stone paving. Ear defenders on, dust in the air, phone buried in a jacket pocket on the back of the pickup. The AI answers every call with your business name and captures the full enquiry while you stay productive."
+  },
+  {
+    icon: '🎨',
+    title: 'Captures Designer Briefs Accurately',
+    text: "When a garden designer calls describing 'a contemporary rear garden with Kandla Grey sandstone, cedar-clad raised beds, a polished concrete water feature, and integrated low-voltage LED lighting,' the AI records every material, every feature, and every preference. Your lead summary reads like a design brief you can cost from — not a vague voicemail saying 'call me about a garden job.'"
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Emergency Calls',
+    text: "A retaining wall collapses after heavy rain, flooding a client's patio and lower garden. A mature tree falls across a garden boundary during a storm. The AI detects urgency, escalates to your mobile first, then routes to our human operators if needed. Routine garden design enquiries and patio quote requests queue as standard leads — genuine emergencies cut straight through."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches the Evening Dreamer Calls',
+    text: "Most homeowners think about their garden in the evening — after walking through the kitchen and looking at a tired patio, an overgrown border, or a muddy lawn. They pick up the phone at 7pm full of enthusiasm. Without AI answering, that enthusiasm hits voicemail and cools overnight. With it, the AI captures the dream while it is fresh — and the lead is ready for your morning callback."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Summaries You Can Quote From',
+    text: "Each call summary arrives with the details you need to assess the job — garden dimensions if given, materials mentioned, features requested (patio, decking, planting, fencing, lighting), the property location, access situation, and the caller's timeline and budget indication. For experienced landscapers, this is often enough to give a ballpark range on the callback."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional First Impression',
+    text: "The AI answers with your company name in a warm, professional greeting. For a trade where first impressions matter — homeowners are inviting you into their garden, their private space — a professional phone presence sets the tone. It signals that you run a proper business, not a one-man operation that cannot be bothered to answer the phone."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI actually say when a homeowner calls about their garden?",
+    answer: "The AI greets the caller with your company name — 'Good afternoon, thank you for calling, how can I help?' — and then has a natural conversation about their project. For landscaping businesses, it asks about the type of work they are considering (patio, decking, planting, driveway, full garden makeover), their garden size if they know it, any materials or features they have in mind, their property location, and their preferred timeline. The conversation flows naturally rather than sounding like a survey."
+  },
+  {
+    question: "Can the AI tell whether a call is a small patio job or a major garden build?",
+    answer: "The AI captures exactly what the caller describes without making assumptions. A homeowner mentioning a small replacement patio for a terrace house is recorded differently from a caller describing a full rear garden redesign with retaining walls, multiple levels, water features, and outdoor living areas. The distinction is clear in your lead summary, letting you prioritise your responses — large commissions and designer projects first, smaller quote requests scheduled for when you have an opening."
+  },
+  {
+    question: "What if someone calls about garden maintenance rather than a landscaping project?",
+    answer: "Many landscaping companies offer both project work and ongoing maintenance — lawn care, hedge cutting, seasonal planting, border maintenance. The AI handles both types of enquiry, capturing the caller's needs whether they want a one-off garden clearance or a regular maintenance contract. If you only do project work and not maintenance, the AI can be configured to explain that and still capture the caller's details for a polite callback."
+  },
+  {
+    question: "How many call minutes do I get each month?",
+    answer: `The Core plan provides ${pricing.tiers.core.minutes} minutes of AI phone answering monthly. For a typical landscaping business receiving between ten and thirty enquiry calls per month — a mix of homeowner quote requests, designer briefs, and developer enquiries — this allowance covers the volume comfortably. Busy spring and summer periods may push higher, and any overage is charged at just 20p per minute with no penalty.`
+  },
+  {
+    question: "Do I keep control over when calls come to me directly?",
+    answer: "Completely. When you are driving to the builders' merchant, waiting for a concrete delivery, or at your desk in the evening planning a garden layout, calls ring through to you as normal. The AI only answers when you are genuinely out of reach — on the digger, compacting, laying pavers, or outside your set working hours. You adjust the schedule from your dashboard whenever your routine changes."
+  },
+  {
+    question: "How is my clients' information protected?",
+    answer: "Garden projects involve property addresses, homeowner names, garden layouts, and sometimes budget indications. All data captured by the AI is encrypted during transmission and at rest, stored exclusively on UK and EU servers under UK GDPR, and shared only with you. We never sell or repurpose client enquiry data. You remain the data controller and Rapid Receptionist operates as your data processor under a formal agreement."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Landscapers | Rapid Receptionist"
+  description={`AI phone answering for UK landscaping companies. Answers every call while you are on the digger, the compactor, or laying paving — captures homeowner projects, designer briefs, and developer tenders. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/landscapers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Landscaper"
+  tradeNamePlural="Landscapers"
+  tradeSlug="landscapers"
+  headline="AI Phone Answering for Landscaping Companies"
+  accentWord="Landscaping Companies"
+  subhead="A homeowner calls at 9:30am about transforming her rear garden — she wants a natural stone patio, raised sleeper beds, a new lawn, perimeter fencing, and garden lighting, all done before her daughter's wedding in ten weeks. You are on a mini digger excavating footings for a retaining wall at another property, engine running, ear defenders on. Without AI phone answering, her call goes to voicemail and she rings two more landscapers before lunch. With it, the AI captures the complete brief and the lead is in your inbox before you shut the digger down for tea."
+  scenario="It is 11:15am on a Wednesday in April — peak landscaping season. You are operating a plate compactor on a freshly laid MOT Type 1 sub-base for a large sandstone patio in a rear garden in Bath. Dust is flying, ear defenders are on, and your phone is in the glovebox of the pickup parked in the client's drive. A garden designer in Bristol calls. She has a client who wants a complete rear garden build — three levels with retaining walls, a limestone terrace, a sunken firepit area, bespoke cedar planters, and an automated irrigation system for the planting scheme she is designing. The client has approved a £45,000 budget and wants to start in June. Without AI Phone Answering, the designer hears your voicemail message — recorded two years ago in a hurry — and rings the next landscaper on her shortlist. He answers, sounds professional, and books a site meeting for Friday. With AI Phone Answering, the call is answered on the second ring: 'Good morning, thank you for calling, how can I help?' The AI captures the multi-level garden, the limestone and cedar specification, the irrigation requirement, the £45,000 budget, the June start date, and the designer's contact details. At 12:30pm you turn off the compactor, check your phone, and see a lead summary that looks like a project brief. You call the designer back, discuss buildability, and book a joint site visit with her and the homeowner for Saturday morning."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/landscapers/ai-receptionist/"
+  ctaHeadline="Stop Losing Garden Projects to Unanswered Calls"
+  ctaSubhead={`A homeowner full of garden inspiration will call the next landscaper within minutes if you do not answer. The AI makes sure you are always in the conversation. From £${pricing.tiers.core.price}/month.`}
+/>

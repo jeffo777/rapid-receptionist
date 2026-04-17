@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls You Cannot Reach on Site',
+    text: "Operating a mini digger, running a plate compactor, or mixing mortar with both hands occupied — landscaping makes you physically unreachable for hours at a time. When a call hits voicemail, Missed Call Text Back sends a branded text within seconds. The caller knows you are working and will call back. Instead of googling the next landscaper, they wait."
+  },
+  {
+    icon: '⏱️',
+    title: 'Responds Before They Call Someone Else',
+    text: "A homeowner who calls three landscapers about a garden makeover goes with the first to answer. Your voicemail tells them you are busy. A text arriving six seconds later tells them you are in demand — and that you value their call enough to acknowledge it immediately. That distinction wins work."
+  },
+  {
+    icon: '🏷️',
+    title: 'Branded and Professional',
+    text: "The text arrives from your business number with your company name and a personalised message. Not a cold 'missed call' notification but a warm, professional acknowledgement. For a trade built on trust — homeowners are inviting you into their gardens, their private outdoor space — this first impression sets the tone."
+  },
+  {
+    icon: '📊',
+    title: 'Safety Net During Peak Season',
+    text: "Spring and summer are peak landscaping season. Enquiry calls flood in while you are on site from sunrise to sunset, every day. Missed Call Text Back provides a safety net during these overwhelmed weeks, ensuring every unanswered call gets an instant acknowledgement rather than joining an ever-growing voicemail queue."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Context from Text Replies',
+    text: "Many callers reply to the text with context — 'it is about a patio quote for a rear garden in Headington' or 'I need fencing down both sides, about 30 metres.' These replies are logged in your lead summary. You get a phone number and a brief before you have even finished the mortar mix."
+  },
+  {
+    icon: '🔄',
+    title: 'Backup to AI Phone Answering',
+    text: "Missed Call Text Back catches the rare calls that slip past AI Phone Answering — a caller who hangs up after one ring, a brief connectivity gap, or a moment when the system is handling another call. Used together, they form a complete safety net where no enquiry goes unacknowledged."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the text message get sent?",
+    answer: "The instant a call goes to voicemail or is not answered within your set ring time, the text fires. The caller receives it within seconds — typically before they have scrolled to the next landscaper in their search results. For garden project enquiries where homeowners are comparing three or four companies simultaneously, this speed keeps your name in the conversation."
+  },
+  {
+    question: "What does the text say?",
+    answer: "You write the message during setup and it is fully customisable. A typical landscaping business text might read: 'Thank you for calling [your business name]. We are currently on site and will return your call as soon as possible. If you would like a quicker response, reply to this text with your garden project details.' The wording is yours — professional, warm, on-brand."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They complement each other. AI Phone Answering answers the call and has a full conversation, capturing a detailed lead. Missed Call Text Back is the fallback for the small number of calls that are not answered — the caller who hangs up too quickly, or a rare moment the system is occupied. Phone answering is the main line; text back is the safety net."
+  },
+  {
+    question: "What is the cost for Missed Call Text Back?",
+    answer: `The feature costs £${pricing.addOn.price}/month as an add-on to the Core plan. For a landscaping business where a single garden makeover can be worth £5,000 to £50,000, recovering even one missed call per season through the text back represents an exceptional return. During peak spring and summer when enquiry volume is highest, the value multiplies.`
+  },
+  {
+    question: "Can callers reply to the text with project details?",
+    answer: "Yes, and homeowners often do. Replies like 'looking for a patio and new lawn, garden about 10x6m, in Abingdon' give you project type, approximate size, and location before you have even looked at your missed calls. The reply is captured in your lead summary alongside the missed call record."
+  },
+  {
+    question: "How is missed call data protected?",
+    answer: "All missed call records, phone numbers, and text replies are encrypted and stored on UK and EU servers under UK GDPR. The data is shared only with you and is never used for marketing or sold to third parties. Your callers' contact details and project descriptions remain confidential."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Landscapers | Rapid Receptionist"
+  description={`Missed Call Text Back for UK landscaping companies. Texts callers instantly when you are on the digger or laying paving — keeps the lead warm until you can call back. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/landscapers/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Landscaper"
+  tradeNamePlural="Landscapers"
+  tradeSlug="landscapers"
+  headline="Missed Call Text Back for Landscaping Businesses"
+  accentWord="Landscaping Businesses"
+  subhead="A homeowner calls about a complete rear garden build — natural stone patio, retaining walls, planting, and garden lighting. You are operating a mini digger levelling a plot on the other side of town, engine roaring, cab vibrating. The call goes to voicemail. Without Missed Call Text Back, she hangs up and calls the next landscaper in her search results. With it, she receives a text within six seconds: 'Thank you for calling. We are on site and will call you back shortly.' She replies with 'it is about a garden makeover in Witney — roughly 20m x 8m.' You call her at lunch with the complete picture."
+  scenario="It is 9:20am on a Saturday in May — your busiest month. You are compacting a freshly laid sub-base for a large porcelain paved terrace in a garden in Henley, dust billowing, ear defenders on, the sun already warm. Your phone is on the dashboard of the pickup. A couple in Marlow calls. They have been planning a garden transformation for months — they want a limestone patio with a built-in barbecue area, raised Corten steel planters, ornamental grasses, a new lawn, and festoon lighting. Their budget is around £25,000 and they want to start in June. Without Missed Call Text Back, they leave a voicemail. At 5pm you are exhausted, covered in dust, and have four voicemails from the day. You call the Marlow couple back at 6pm but they have already booked a site visit with another landscaper who answered at 10am. With Missed Call Text Back, the couple receives a text six seconds after hanging up: 'Thank you for calling [your company]. We are on site today and will call you back as soon as possible. If your garden project is urgent, please reply with the details.' The wife replies: 'No rush — we want a full garden makeover at our house in Marlow. Around £25k budget, hoping to start June. Can you do a site visit?' At 12:30pm you check your phone, see the lead summary with the budget, the scope, the address, and the start date — and call them before you eat your sandwich. You book a Sunday morning site visit and the £25,000 project is yours."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/landscapers/ai-receptionist/"
+  ctaHeadline="Save Every Garden Enquiry with an Instant Text"
+  ctaSubhead={`Peak season means peak missed calls. A text within seconds keeps every homeowner waiting for you instead of calling your competitors. Add-on at £${pricing.addOn.price}/month.`}
+/>
