@@ -65,8 +65,8 @@ const {
 /* Auto-generate pricing note from central pricing data if not provided */
 const isCorePlan = channelName === 'AI Phone Answering' || channelName === 'AI Website Chat';
 const generatedPricingNote = isCorePlan
-  ? `${channelName} is included in the <strong>Core plan at £${pricing.tiers.core.price}/month</strong> (${pricing.tiers.core.minutes} mins) with unlimited website chat. Add extra channels at <strong>£${pricing.addOn.price}/month each</strong>. <a href='/pricing/'>Full pricing →</a>`
-  : `${channelName} is an <strong>add-on at £${pricing.addOn.price}/month</strong> on the <strong>Core plan (£${pricing.tiers.core.price}/month)</strong>. <a href='/pricing/'>Full pricing →</a>`;
+  ? `${channelName} is included in the <strong>Starter plan at £${pricing.tiers.core.price}/month</strong> (${pricing.tiers.core.minutes} mins) or the <strong>Core plan at £${pricing.tiers.core.price}/month</strong> (${pricing.tiers.core.minutes} mins), both with unlimited website chat. Add extra channels at <strong>£${pricing.addOn.price}/month each</strong>. <a href='/pricing/'>Full pricing →</a>`
+  : `${channelName} is an <strong>add-on at £${pricing.addOn.price}/month</strong>. Pair with Starter (£${pricing.tiers.core.price}/month) or Core (£${pricing.tiers.core.price}/month), or get everything for <strong>£${pricing.addOn.price}/month</strong>. <a href='/pricing/'>Full pricing →</a>`;
 const resolvedPricingNote = pricingNote || generatedPricingNote;
 
 const siteUrl = 'https://rapidreceptionist.co.uk';
@@ -116,12 +116,12 @@ const faqSchema = {
   }))
 };
 
-/* Append GDPR FAQ â€” unique version for channel pages, different wording from TradeHubLayout */
+/* Append GDPR FAQ — unique version for channel pages, different wording from TradeHubLayout */
 const allFaqs = [
   ...faqs,
   {
     question: `Is ${channelName} compliant with UK data protection law?`,
-    answer: `Yes â€” fully. Every piece of information captured through ${channelName} is protected under UK GDPR and the Data Protection Act 2018. Client names, contact details, site addresses, and project specifics are encrypted during transmission and while stored, and held exclusively on UK and EU-based servers. We never share, sell, or repurpose any data captured on your behalf. You maintain full control as the data controller, with the right to request deletion at any point. Your clients have the same right. Rapid Receptionist acts strictly as your data processor, operating under a formal data processing agreement. You can review our approach in detail in our <a href='/privacy/'>privacy policy</a>.`
+    answer: `Yes — fully. Every piece of information captured through ${channelName} is protected under UK GDPR and the Data Protection Act 2018. Client names, contact details, site addresses, and project specifics are encrypted during transmission and while stored, and held exclusively on UK and EU-based servers. We never share, sell, or repurpose any data captured on your behalf. You maintain full control as the data controller, with the right to request deletion at any point. Your clients have the same right. Rapid Receptionist acts strictly as your data processor, operating under a formal data processing agreement. You can review our approach in detail in our <a href='/privacy/'>privacy policy</a>.`
   }
 ];
 ---
@@ -181,7 +181,7 @@ const allFaqs = [
   <section class="section section--alt" id="ct-pricing">
     <div class="container">
       <div class="ct-pricing-note">
-        <span class="ct-pricing-note__icon">ðŸ’·</span>
+        <span class="ct-pricing-note__icon">💷</span>
         <p set:html={resolvedPricingNote} />
       </div>
     </div>
@@ -194,17 +194,17 @@ const allFaqs = [
         <a href={channelPageUrl} class="ct-related-card">
           <span class="ct-related-card__label">Learn more about</span>
           <strong>{channelName}</strong>
-          <span class="ct-related-card__arrow">â†’</span>
+          <span class="ct-related-card__arrow">→</span>
         </a>
         <a href={tradePageUrl} class="ct-related-card">
           <span class="ct-related-card__label">AI Receptionist for</span>
           <strong>{tradeNamePlural}</strong>
-          <span class="ct-related-card__arrow">â†’</span>
+          <span class="ct-related-card__arrow">→</span>
         </a>
         <a href="/construction-trades/" class="ct-related-card">
           <span class="ct-related-card__label">See all</span>
           <strong>Construction Trades</strong>
-          <span class="ct-related-card__arrow">â†’</span>
+          <span class="ct-related-card__arrow">→</span>
         </a>
       </div>
     </div>
@@ -242,7 +242,7 @@ const allFaqs = [
   }
 
   .ct-breadcrumb-list li:not(:last-child)::after {
-    content: 'â€º';
+    content: '›';
     margin-left: var(--space-2);
     color: var(--color-text-muted);
   }

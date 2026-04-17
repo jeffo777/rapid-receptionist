@@ -3,18 +3,18 @@ import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
 import pricing from '../../data/pricing.json';
 
 const benefits = [
-  { icon: 'ðŸ“§', title: 'Instant Acknowledgement', text: "A developer emails a window and door schedule for a twelve-house estate â€” casement counts, door types, frame colours. You are on site. Without AI Email Response, they wait two days. With it, they get immediate confirmation." },
-  { icon: 'ðŸ—ï¸', title: 'Handles Trade Specifications', text: "Architects and builders email detailed glazing schedules with unit sizes, configurations, and performance specifications. The AI acknowledges receipt and confirms you will review and quote." },
-  { icon: 'ðŸ•', title: 'Responds Outside Hours', text: "Specifications arrive at 6pm on Fridays, Sunday evenings, and bank holidays. The AI ensures every email is acknowledged instantly." },
-  { icon: 'ðŸ“‹', title: 'Extracts Key Information', text: "The AI identifies the type of glazing work, number of units, frame materials, and timeline â€” delivering a clean summary." },
-  { icon: 'ðŸŽ¯', title: 'Professional Impression', text: "An instant acknowledgement tells the sender their project matters before you have even opened the spec." },
-  { icon: 'ðŸ”„', title: 'Nothing Gets Lost', text: "Glazing specifications can be complex multi-page documents. The AI ensures every one is logged and ready for your review." }
+  { icon: '📧', title: 'Instant Acknowledgement', text: "A developer emails a window and door schedule for a twelve-house estate — casement counts, door types, frame colours. You are on site. Without AI Email Response, they wait two days. With it, they get immediate confirmation." },
+  { icon: '🏗️', title: 'Handles Trade Specifications', text: "Architects and builders email detailed glazing schedules with unit sizes, configurations, and performance specifications. The AI acknowledges receipt and confirms you will review and quote." },
+  { icon: '🕐', title: 'Responds Outside Hours', text: "Specifications arrive at 6pm on Fridays, Sunday evenings, and bank holidays. The AI ensures every email is acknowledged instantly." },
+  { icon: '📋', title: 'Extracts Key Information', text: "The AI identifies the type of glazing work, number of units, frame materials, and timeline — delivering a clean summary." },
+  { icon: '🎯', title: 'Professional Impression', text: "An instant acknowledgement tells the sender their project matters before you have even opened the spec." },
+  { icon: '🔄', title: 'Nothing Gets Lost', text: "Glazing specifications can be complex multi-page documents. The AI ensures every one is logged and ready for your review." }
 ];
 
 const faqs = [
   { question: "How does AI Email Response work for window companies?", answer: "When an email arrives, the AI sends an immediate acknowledgement confirming receipt. It summarises the key details and confirms you will review and respond." },
   { question: "Does the AI quote window jobs?", answer: "No. Window and door pricing depends on unit sizes, configurations, frame material, glass specification, and access. The AI acknowledges the enquiry and steers towards a home survey." },
-  { question: "How much does it cost?", answer: `AI Email Response is an add-on at £${pricing.addOn.price}/month on the Core plan (£${pricing.tiers.core.price}/month).` },
+  { question: "How much does it cost?", answer: `AI Email Response is an add-on at £${pricing.addOn.price}/month on any plan. Pair with Starter (£${pricing.tiers.core.price}/month) or Core (£${pricing.tiers.core.price}/month), or get everything in the All Channels bundle at £${pricing.addOn.price}/month.` },
   { question: "How is email data protected?", answer: "All data is managed under UK GDPR. Content and attachments are encrypted and stored on UK and EU servers, shared only with you." }
 ];
 ---
@@ -29,8 +29,8 @@ const faqs = [
   tradeSlug="window-door-installers"
   headline="AI Email Response for Window & Door Installers"
   accentWord="Window & Door Installers"
-  subhead={`An architect emails a glazing schedule for a luxury new build â€” fifteen windows, three sets of bi-folds, and a bespoke front door. You are on site all day. Without AI Email Response, they wait until tomorrow. With it, they know you are interested within sixty seconds. £${pricing.addOn.price}/month add-on.`}
-  scenario="It is 4:45pm on a Friday. A developer in Chelmsford emails your business with a complete window and door schedule for a twelve-plot housing development â€” 140 window units across three house types, plus composite front doors, French doors, and sliding patios for every plot. They need a supply-and-fit quotation by next Wednesday and want to arrange a site visit. You are finishing a bi-fold installation in Brentwood. Without AI Email Response, the schedule sits in your inbox all weekend. The developer sent it to five glazing companies â€” three acknowledge by 5pm and one books a Monday site visit. With AI Email Response, the acknowledgement goes out at 4:46pm: 'Thank you for the window and door schedule. We have received the specification for twelve plots and will review everything on Monday. We will be in touch to arrange a site visit.' Monday morning, you review the summary and call the developer first."
+  subhead={`An architect emails a glazing schedule for a luxury new build — fifteen windows, three sets of bi-folds, and a bespoke front door. You are on site all day. Without AI Email Response, they wait until tomorrow. With it, they know you are interested within sixty seconds. £${pricing.addOn.price}/month add-on.`}
+  scenario="It is 4:45pm on a Friday. A developer in Chelmsford emails your business with a complete window and door schedule for a twelve-plot housing development — 140 window units across three house types, plus composite front doors, French doors, and sliding patios for every plot. They need a supply-and-fit quotation by next Wednesday and want to arrange a site visit. You are finishing a bi-fold installation in Brentwood. Without AI Email Response, the schedule sits in your inbox all weekend. The developer sent it to five glazing companies — three acknowledge by 5pm and one books a Monday site visit. With AI Email Response, the acknowledgement goes out at 4:46pm: 'Thank you for the window and door schedule. We have received the specification for twelve plots and will review everything on Monday. We will be in touch to arrange a site visit.' Monday morning, you review the summary and call the developer first."
   benefits={benefits}
   faqs={faqs}
   channelPageUrl="/construction-trades/ai-email-response/"

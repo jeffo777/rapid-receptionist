@@ -3,17 +3,17 @@ import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
 import pricing from '../../data/pricing.json';
 
 const benefits = [
-  { icon: 'ðŸ“±', title: 'Instant Text Reply', text: "A letting agent texts about replacing failed sealed units in four rental flats. You are drilling fixings into a lintel. The AI replies within seconds, captures all four properties, and confirms a callback." },
-  { icon: 'ðŸ—ï¸', title: 'Handles Trade Texts', text: "Builders and property managers text about window schedules, replacement units, and door hardware. The AI captures project details for your quote." },
-  { icon: 'ðŸ•', title: 'Active Outside Hours', text: "Homeowners text at 9pm about draughty windows. Landlords message at 7am about EPC failures. Every text gets a prompt response." },
-  { icon: 'ðŸ“‹', title: 'Captures Key Details', text: "The AI asks about window type, number of units, frame material, and timeline â€” delivering a structured brief." },
-  { icon: 'âš¡', title: 'Speed Wins Surveys', text: "When a homeowner texts three window companies, the first to reply gets the home survey." },
-  { icon: 'ðŸŽ¯', title: 'Professional SMS Presence', text: "Instant, well-crafted texts position your business as organised â€” exactly what homeowners want from a FENSA-registered company." }
+  { icon: '📱', title: 'Instant Text Reply', text: "A letting agent texts about replacing failed sealed units in four rental flats. You are drilling fixings into a lintel. The AI replies within seconds, captures all four properties, and confirms a callback." },
+  { icon: '🏗️', title: 'Handles Trade Texts', text: "Builders and property managers text about window schedules, replacement units, and door hardware. The AI captures project details for your quote." },
+  { icon: '🕐', title: 'Active Outside Hours', text: "Homeowners text at 9pm about draughty windows. Landlords message at 7am about EPC failures. Every text gets a prompt response." },
+  { icon: '📋', title: 'Captures Key Details', text: "The AI asks about window type, number of units, frame material, and timeline — delivering a structured brief." },
+  { icon: '⚡', title: 'Speed Wins Surveys', text: "When a homeowner texts three window companies, the first to reply gets the home survey." },
+  { icon: '🎯', title: 'Professional SMS Presence', text: "Instant, well-crafted texts position your business as organised — exactly what homeowners want from a FENSA-registered company." }
 ];
 
 const faqs = [
   { question: "How does AI SMS work for window companies?", answer: "When a customer texts your business number, the AI responds instantly. It captures window type, number of units, frame material, and contact details." },
-  { question: "How much does AI SMS cost?", answer: `AI SMS is an add-on at £${pricing.addOn.price}/month on the Core plan (£${pricing.tiers.core.price}/month).` },
+  { question: "How much does AI SMS cost?", answer: `AI SMS is an add-on at £${pricing.addOn.price}/month on any plan. Pair with Starter (£${pricing.tiers.core.price}/month) or Core (£${pricing.tiers.core.price}/month), or get everything in the All Channels bundle at £${pricing.addOn.price}/month.` },
   { question: "Can I still text customers myself?", answer: "Yes. The AI handles initial responses. You can continue any conversation personally." },
   { question: "Does it work with my existing number?", answer: "Yes. AI SMS integrates with your existing business phone number." },
   { question: "How is data protected?", answer: "All SMS data is managed under UK GDPR. Messages and contact details are encrypted and stored on UK and EU servers, shared only with you." }
@@ -31,7 +31,7 @@ const faqs = [
   headline="AI SMS for Window & Door Installers"
   accentWord="Window & Door Installers"
   subhead={`A property manager texts about replacing windows in six flats before new EPC regulations. You are fitting a bay window. Your AI replies in seconds, captures every property, and confirms a callback. £${pricing.addOn.price}/month add-on.`}
-  scenario="It is 1:30pm on a Tuesday. You are fitting a large bay window in a Victorian terrace in York â€” the old frame is out, the new sub-frame is levelled and fixed, and you are about to offer up the first casement. Your phone buzzes. A property manager has texted: 'Hi, I manage 6 flats and need all windows upgrading to meet new EPC requirements. UPVC, white. Can you quote all 6?' Without AI SMS, the text sits until you finish at 4pm. The manager texted three other companies â€” one replied at 1:35pm and booked a survey for Thursday. With AI SMS, the reply goes out at 1:31pm: 'Thanks for the enquiry. Happy to help with all six. Can I grab the property postcodes and how many windows per flat?' By 1:45pm, you have a lead for six full-house window replacements."
+  scenario="It is 1:30pm on a Tuesday. You are fitting a large bay window in a Victorian terrace in York — the old frame is out, the new sub-frame is levelled and fixed, and you are about to offer up the first casement. Your phone buzzes. A property manager has texted: 'Hi, I manage 6 flats and need all windows upgrading to meet new EPC requirements. UPVC, white. Can you quote all 6?' Without AI SMS, the text sits until you finish at 4pm. The manager texted three other companies — one replied at 1:35pm and booked a survey for Thursday. With AI SMS, the reply goes out at 1:31pm: 'Thanks for the enquiry. Happy to help with all six. Can I grab the property postcodes and how many windows per flat?' By 1:45pm, you have a lead for six full-house window replacements."
   benefits={benefits}
   faqs={faqs}
   channelPageUrl="/construction-trades/ai-sms/"
