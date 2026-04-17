@@ -9,7 +9,7 @@ export interface Props {
 
 const {
   headline = 'Respond First. Win the Job.',
-  subhead = `Join the UK construction trades who never miss a lead. From £${pricing.tiers.starter.price}/month, 30-day money-back guarantee, no contracts.`,
+  subhead = `Join the UK construction trades who never miss a lead. From £${pricing.tiers.core.price}/month, 30-day money-back guarantee, no contracts.`,
 } = Astro.props;
 ---
 
@@ -19,7 +19,7 @@ const {
       <h2 class="cta-section__headline">{headline}</h2>
       <p class="cta-section__subhead">{subhead}</p>
       <div class="cta-section__actions">
-        <CTAButton label="Get Started" size="lg" price={`£${pricing.tiers.starter.price}/mo`} id="cta-get-started" />
+        <CTAButton label="Get Started" size="lg" price={`£${pricing.tiers.core.price}/mo`} id="cta-get-started" />
       </div>
       <p class="cta-section__fine-print">
         🛡 30-day money-back guarantee · No contracts · Cancel anytime

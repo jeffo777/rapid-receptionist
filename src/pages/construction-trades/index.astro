@@ -1,4 +1,4 @@
-ï»¿---
+---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import pricing from '../../data/pricing.json';
 import Header from '../../components/Header.astro';
@@ -27,7 +27,7 @@ const categoryOrder = [
 
 <BaseLayout
   title="AI Receptionist for 46 UK Construction Trades | Rapid Receptionist"
-  description=`Find the rapid response AI receptionist for your construction trade. 46 UK trades covered â€” plasterers, bricklayers, electricians, roofers, plumbing contractors, and more. From Â£${pricing.tiers.starter.price}/month.`
+  description=`Find the rapid response AI receptionist for your construction trade. 46 UK trades covered — plasterers, bricklayers, electricians, roofers, plumbing contractors, and more. From £${pricing.tiers.core.price}/month.`
   canonicalUrl="/construction-trades/"
 >
   <Header slot="header" />
@@ -37,7 +37,7 @@ const categoryOrder = [
     <div class="container">
       <span class="badge badge--accent">46 Construction Trades</span>
       <h1>The Rapid Response AI Receptionist for <span class="text-accent">Every Construction Trade</span></h1>
-      <p class="directory-hero__sub">From groundworkers laying foundations to plasterers finishing ceilings â€” every construction trade gets a bespoke AI receptionist configured with trade-specific vocabulary, urgency signals, and job types. Find yours below.</p>
+      <p class="directory-hero__sub">From groundworkers laying foundations to plasterers finishing ceilings — every construction trade gets a bespoke AI receptionist configured with trade-specific vocabulary, urgency signals, and job types. Find yours below.</p>
     </div>
   </section>
 
@@ -58,7 +58,7 @@ const categoryOrder = [
                     <h3 class="trade-card__name">{trade.name}</h3>
                     <p class="trade-card__context">{trade.context}</p>
                   </div>
-                  <span class="trade-card__arrow">â†’</span>
+                  <span class="trade-card__arrow">?</span>
                 </a>
               ))}
             </div>
@@ -85,7 +85,7 @@ const categoryOrder = [
           <span class="stats-bar__label">Year-Round Coverage</span>
         </div>
         <div class="stats-bar__item">
-          <span class="stats-bar__number">Â£{pricing.tiers.starter.price}</span>
+          <span class="stats-bar__number">£{pricing.tiers.core.price}</span>
           <span class="stats-bar__label">Per Month From</span>
         </div>
       </div>
@@ -94,7 +94,7 @@ const categoryOrder = [
 
   <CTASection
     headline="Respond First. Win the Job."
-    subhead={`Every construction trade. Every communication channel. From Â£${pricing.tiers.starter.price}/month with a 30-day money-back guarantee.`}
+    subhead={`Every construction trade. Every communication channel. From £${pricing.tiers.core.price}/month with a 30-day money-back guarantee.`}
   />
 
   <CookieConsent />

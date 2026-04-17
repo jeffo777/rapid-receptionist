@@ -1,23 +1,11 @@
 {
   "tiers": {
-    "starter": {
-      "name": "Starter",
+    "core": {
+      "name": "Core",
       "price": 49,
       "minutes": 120,
       "chatLimit": "unlimited",
       "description": "AI Phone Answering + Unlimited Website Chat"
-    },
-    "core": {
-      "name": "Core",
-      "price": 95,
-      "minutes": 300,
-      "chatLimit": "unlimited",
-      "description": "AI Phone Answering + Unlimited Website Chat"
-    },
-    "all": {
-      "name": "All Channels",
-      "price": 177,
-      "description": "Phone + Chat + All 6 add-on channels"
     }
   },
   "addOn": {

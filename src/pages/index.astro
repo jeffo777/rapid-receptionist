@@ -1,4 +1,4 @@
-﻿---
+---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import pricing from '../data/pricing.json';
 import Header from '../components/Header.astro';
@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     question: "How is this different from voicemail or a virtual receptionist?",
-    answer: `Voicemail is where leads go to die — 85% of callers who reach voicemail never call back, and 80% won't even leave a message. A traditional virtual receptionist costs £200-500/month, works limited hours, and only covers phone. Rapid Receptionist answers instantly across up to 8 channels, 24/7, From £${pricing.tiers.starter.price}/month. It captures more detail than most human receptionists, never takes a sick day, and never puts your caller on hold while they deal with another client.`
+    answer: `Voicemail is where leads go to die — 85% of callers who reach voicemail never call back, and 80% won't even leave a message. A traditional virtual receptionist costs £200-500/month, works limited hours, and only covers phone. Rapid Receptionist answers instantly across up to 8 channels, 24/7, From £${pricing.tiers.core.price}/month. It captures more detail than most human receptionists, never takes a sick day, and never puts your caller on hold while they deal with another client.`
   },
   {
     question: "Which construction trades does Rapid Receptionist cover?",
@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     question: "What about channels other than phone — WhatsApp, email, social media?",
-    answer: `Phone and website chat are fully conversational — the AI has a real back-and-forth exchange, just like a human receptionist. The other channels (WhatsApp, SMS, email, Facebook Messenger, and Instagram DMs) use a one-reply model: the AI reads the customer's message, captures the details, sends one professional response acknowledging the enquiry, and confirms you'll be in touch. Each messaging channel costs £${pricing.addOn.price}/month — choose only the ones your customers actually use, or grab everything for £${pricing.tiers.all.price}/month with the All Channels bundle.`
+    answer: `Phone and website chat are fully conversational â€” the AI has a real back-and-forth exchange, just like a human receptionist. The other channels (WhatsApp, SMS, email, Facebook Messenger, and Instagram) use smart auto-replies that capture leads and confirm callbacks. All channels feed into your dashboard so nothing gets lost.`,
   },
   {
     question: "What happens if a caller has a genuine emergency?",
@@ -75,7 +75,7 @@ const faqs = [
   },
   {
     question: "How much does Rapid Receptionist cost?",
-    answer: `The Core plan is £${pricing.tiers.core.price}/month and covers AI phone answering (300 minutes of talk time) plus unlimited website chat — the two channels where construction businesses lose the most leads. Need WhatsApp, SMS, email, Facebook, or Instagram too? Each extra channel is £${pricing.addOn.price}/month, or get everything for £${pricing.tiers.all.price}/month with the All Channels bundle. There's a one-time £${pricing.setup.price} setup fee that covers your full done-for-you configuration. No contracts, cancel anytime, and a 30-day money-back guarantee covers the lot.`
+    answer: `The Core plan is £${pricing.tiers.core.price}/month and covers AI phone answering (${pricing.tiers.core.minutes} minutes of talk time) plus unlimited website chat â€” the two channels where construction businesses lose the most leads. Additional channels are £${pricing.addOn.price}/month each. There is a one-time £${pricing.setup.price} setup fee (refundable within ${pricing.setup.refundDays} days). No contracts â€” cancel anytime.`,
   },
   {
     question: "Why should I trust an AI to answer my business calls?",
@@ -98,7 +98,7 @@ const faqs = [
 
 <BaseLayout
   title="Rapid Response AI Receptionist for UK Construction Trades | Rapid Receptionist"
-  description=`The rapid response AI receptionist built for 46 UK construction trades. Answers calls and website chat 24/7 From £${pricing.tiers.starter.price}/mo. Add WhatsApp, SMS, email and social channels from £${pricing.addOn.price}/mo each. 30-day money-back guarantee.`
+  description=`The rapid response AI receptionist built for 46 UK construction trades. Answers calls and website chat 24/7 From £${pricing.tiers.core.price}/mo. Add WhatsApp, SMS, email and social channels from £${pricing.addOn.price}/mo each. 30-day money-back guarantee.`
   canonicalUrl="/"
 >
   <Header slot="header" />
@@ -142,7 +142,7 @@ const faqs = [
               <a href={`/${trade.slug}/ai-receptionist/`} class="trade-link-card fade-in">
                 <span class="trade-link-card__icon">{trade.icon}</span>
                 <span class="trade-link-card__name">{trade.name}</span>
-                <span class="trade-link-card__arrow">→</span>
+                <span class="trade-link-card__arrow">?</span>
               </a>
             ))}
           </div>

@@ -14,20 +14,13 @@ The service is NOT a lead generation company, website builder, marketing agency,
 
 ## Pricing & Commercial Model
 
-### Starter Plan — £49/month
+### Core Plan — £49/month
 - AI Phone Answering (120 minutes of talk time included)
 - AI Website Chat (unlimited messages)
 - Human emergency escalation
 - Trade-specific AI training
 - Full "done for you" setup
 - Ideal for sole traders and smaller businesses
-
-### Core Plan — £95/month
-- AI Phone Answering (300 minutes of talk time included)
-- AI Website Chat (unlimited messages)
-- Human emergency escalation
-- Trade-specific AI training
-- Full "done for you" setup
 
 ### Add-On Channels — £23/month each
 - AI WhatsApp
@@ -37,18 +30,13 @@ The service is NOT a lead generation company, website builder, marketing agency,
 - AI Instagram DMs
 - Missed Call Text-Back
 
-### All Channels Bundle — £177/month
-- Everything in Core plan
-- All 6 add-on channels included
-- Saves £56/month vs buying Core + all 6 channels individually
-
 ### Setup Fee
 - £295 one-time fee
 - Covers full AI configuration, channel connections, trade-specific training, and testing
 - Fully refundable within the 30-day money-back guarantee
 
 ### Additional Talk Time
-- £0.20 per minute beyond the included 300 minutes
+- £0.20 per minute beyond the included 120 minutes
 - All text-based channels are unlimited regardless of plan
 
 ### Guarantee & Contracts
@@ -114,7 +102,7 @@ These verified statistics underpin the service's value proposition:
 ## Core Pages
 
 - [Homepage](https://rapidreceptionist.co.uk/): Overview of the AI receptionist service for UK tradesmen — features all 8 channels, speed-to-lead statistics, testimonials, and FAQ
-- [Pricing](https://rapidreceptionist.co.uk/pricing/): Complete pricing breakdown — Starter £49/mo, Core £95/mo, add-ons £23/mo each, All Channels £177/mo, £295 setup fee
+- [Pricing](https://rapidreceptionist.co.uk/pricing/): Single-plan pricing — Core £49/mo, add-on channels £23/mo each, £295 setup fee
 - [About](https://rapidreceptionist.co.uk/about/): The "Built by Tradesmen, for Tradesmen" origin story — why the service was built, core values, pricing philosophy
 - [Get Started](https://rapidreceptionist.co.uk/get-started/): Sign-up flow and onboarding — trade selection, channel selection, business details
 - [Contact](https://rapidreceptionist.co.uk/contact/): Contact form, email (hello@rapidreceptionist.co.uk), response within 2 working hours
@@ -122,7 +110,7 @@ These verified statistics underpin the service's value proposition:
 
 ## Communication Channels
 
-- [AI Phone Answering](https://rapidreceptionist.co.uk/ai-phone-answering-for-tradesmen/): Tier 1 conversational — answers calls 24/7 with the tradesman's business name, captures lead details, assesses urgency, escalates emergencies. 300 minutes included in Core plan.
+- [AI Phone Answering](https://rapidreceptionist.co.uk/ai-phone-answering-for-tradesmen/): Tier 1 conversational — answers calls 24/7 with the tradesman's business name, captures lead details, assesses urgency, escalates emergencies. 120 minutes included in Core plan.
 - [AI Website Chat](https://rapidreceptionist.co.uk/ai-website-chat-for-tradesmen/): Tier 1 conversational — live chat widget for tradesman's website, converts visitors to leads without human monitoring. Unlimited messages in Core plan.
 - [AI WhatsApp](https://rapidreceptionist.co.uk/ai-whatsapp-for-tradesmen/): Tier 2 one-reply — responds to WhatsApp messages instantly. Popular with UK customers who send photos of problems. £23/month add-on.
 - [AI SMS](https://rapidreceptionist.co.uk/ai-sms-for-tradesmen/): Tier 2 one-reply — professional text message responses to enquiries. £23/month add-on.

@@ -4,12 +4,12 @@ import pricing from '../../data/pricing.json';
 
 const withoutWithScenarios = [
   {
-    without: "A homeowner calls while you are scribing a worktop into an out-of-square wall. Your jigsaw is running, the dust extraction is on, and you are holding the template in place. Their call goes to voicemail. They found you on Instagram and were ready to book a design consultation — but they call the next kitchen fitter instead.",
+    without: "A homeowner calls while you are scribing a worktop into an out-of-square wall. Your jigsaw is running, the dust extraction is on, and you are holding the template in place. Their call goes to voicemail. They found you on Instagram and were ready to book a design consultation â€” but they call the next kitchen fitter instead.",
     with: "The same homeowner calls. Your AI receptionist answers: 'Good morning, thank you for calling, how can I help?' It captures the kitchen size, what they want (full replacement or refresh), their timeline, and books a callback for your lunch break. You finish the scribe and ring them back with every detail."
   },
   {
-    without: "An interior designer emails on Thursday evening with a brief for a high-end kitchen installation in a barn conversion — handle-less units, quartz worktops, integrated appliances. You do not see the email until Monday. By then, two other kitchen companies have already responded.",
-    with: "The email gets an immediate acknowledgement confirming you have received the specification. Monday morning, you open a complete lead summary — property type, kitchen style, appliance requirements, and the designer's direct line — and call first thing."
+    without: "An interior designer emails on Thursday evening with a brief for a high-end kitchen installation in a barn conversion â€” handle-less units, quartz worktops, integrated appliances. You do not see the email until Monday. By then, two other kitchen companies have already responded.",
+    with: "The email gets an immediate acknowledgement confirming you have received the specification. Monday morning, you open a complete lead summary â€” property type, kitchen style, appliance requirements, and the designer's direct line â€” and call first thing."
   },
   {
     without: "A builder WhatsApps you about fitting kitchens in a block of six new-build apartments. You are installing wall units in a property across town and your phone is in the van. The message sits unread for five hours. The builder needed confirmation by end of day and has moved on.",
@@ -34,31 +34,31 @@ const specialisms = [
 
 const clientTypes = [
   {
-    icon: "🏠",
+    icon: "ðŸ ",
     title: "Domestic Homeowners",
-    description: "Homeowners planning their dream kitchen — they have spent months browsing Pinterest, visiting showrooms, and comparing quotes. They want a kitchen fitter who listens to what they want, explains the process clearly, and has a portfolio that proves they deliver quality work. Responsiveness is a huge trust signal at this stage."
+    description: "Homeowners planning their dream kitchen â€” they have spent months browsing Pinterest, visiting showrooms, and comparing quotes. They want a kitchen fitter who listens to what they want, explains the process clearly, and has a portfolio that proves they deliver quality work. Responsiveness is a huge trust signal at this stage."
   },
   {
-    icon: "🏗️",
+    icon: "ðŸ—ï¸",
     title: "Builders & Developers",
     description: "Main contractors and property developers who need reliable kitchen installation subcontractors for new builds and refurbishments. They want someone who can handle multiple plots, work to tight programme schedules, and fit kitchens to a consistent standard across ten, twenty, or fifty units."
   },
   {
-    icon: "🎨",
+    icon: "ðŸŽ¨",
     title: "Interior Designers & Architects",
     description: "Designers working on high-end residential projects who need a kitchen installer capable of handling bespoke units, complex worktop templating, and integrated appliances. They expect professional communication and precise execution of their specifications."
   },
   {
-    icon: "🏘️",
+    icon: "ðŸ˜ï¸",
     title: "Landlords & Property Managers",
-    description: "Landlords replacing dated kitchens in rental properties between tenancies. They need competitive pricing, quick turnaround, and a fitter who can handle the full job — strip-out, fitting, worktop, and tiling splash-backs — without needing to coordinate multiple trades."
+    description: "Landlords replacing dated kitchens in rental properties between tenancies. They need competitive pricing, quick turnaround, and a fitter who can handle the full job â€” strip-out, fitting, worktop, and tiling splash-backs â€” without needing to coordinate multiple trades."
   }
 ];
 
 const faqs = [
   {
     question: "Does the AI understand kitchen fitting terminology?",
-    answer: "Yes. During setup, your AI receptionist is configured with kitchen-specific vocabulary — base units, wall cabinets, cornice, pelmet, plinth, soft-close hinges, integrated appliances, worktop templating, end panels, breakfast bars, and more. When a homeowner says 'I want a handle-less kitchen with quartz worktops and an island,' the AI understands exactly what they mean and records it accurately."
+    answer: "Yes. During setup, your AI receptionist is configured with kitchen-specific vocabulary â€” base units, wall cabinets, cornice, pelmet, plinth, soft-close hinges, integrated appliances, worktop templating, end panels, breakfast bars, and more. When a homeowner says 'I want a handle-less kitchen with quartz worktops and an island,' the AI understands exactly what they mean and records it accurately."
   },
   {
     question: "Can the AI handle calls about both domestic kitchens and multi-unit installations?",
@@ -66,19 +66,19 @@ const faqs = [
   },
   {
     question: "What happens if someone calls about an urgent kitchen problem?",
-    answer: "The AI recognises urgency. If a caller describes a worktop that has collapsed, a gas disconnection issue during a kitchen strip-out, or water damage behind removed units, the AI escalates immediately — trying your mobile first, then our human operators. Routine new kitchen enquiries are handled as standard leads."
+    answer: "The AI recognises urgency. If a caller describes a worktop that has collapsed, a gas disconnection issue during a kitchen strip-out, or water damage behind removed units, the AI escalates immediately â€” trying your mobile first, then our human operators. Routine new kitchen enquiries are handled as standard leads."
   },
   {
     question: "How much does it cost for a kitchen fitting business?",
-    answer: `The Starter plan is £${pricing.tiers.starter.price}/month with ${pricing.tiers.starter.minutes} minutes of AI phone answering plus unlimited website chat — ideal for sole trader kitchen fitters. The Core plan at £${pricing.tiers.core.price}/month gives you ${pricing.tiers.core.minutes} minutes for busier businesses. Additional channels like WhatsApp and Facebook are £${pricing.addOn.price}/month each, or get the All Channels bundle at £${pricing.tiers.all.price}/month. Setup is £${pricing.setup.price} one-time (refundable within 30 days).`
+    answer: `The Core plan is £${pricing.tiers.core.price}/month with ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Additional channels like WhatsApp and Facebook are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} one-time (refundable within 30 days).`
   },
   {
     question: "Is this suitable for a one-man kitchen fitting operation?",
-    answer: "It was designed for exactly this. A sole trader kitchen fitter cannot stop mid-installation to answer calls — you are cutting worktops, hanging wall units, or plumbing in sinks. The AI handles every call, captures what the customer needs, and sends you the details so you can follow up between jobs or in the evening."
+    answer: "It was designed for exactly this. A sole trader kitchen fitter cannot stop mid-installation to answer calls â€” you are cutting worktops, hanging wall units, or plumbing in sinks. The AI handles every call, captures what the customer needs, and sends you the details so you can follow up between jobs or in the evening."
   },
   {
     question: "Can I still take calls when I am available?",
-    answer: "Yes. The AI only activates when you are unavailable — on a job, driving, or after hours. When you are free, calls ring through to you as normal. You control when the AI picks up."
+    answer: "Yes. The AI only activates when you are unavailable â€” on a job, driving, or after hours. When you are free, calls ring through to you as normal. You control when the AI picks up."
   },
   {
     question: "How does Rapid Receptionist handle customer data?",
@@ -89,18 +89,18 @@ const faqs = [
 
 <TradeHubLayout
   title="Rapid Response AI Receptionist for Kitchen Fitters | Rapid Receptionist"
-  description={`AI receptionist for UK kitchen fitters, kitchen installation companies, and kitchen fitting businesses. Answers calls, captures leads from chat, WhatsApp, and social media while you are on site. From £${pricing.tiers.starter.price}/month.`}
+  description={`AI receptionist for UK kitchen fitters, kitchen installation companies, and kitchen fitting businesses. Answers calls, captures leads from chat, WhatsApp, and social media while you are on site. From £${pricing.tiers.core.price}/month.`}
   canonicalUrl="/kitchen-fitters/ai-receptionist/"
   tradeName="Kitchen Fitter"
   tradeNamePlural="Kitchen Fitters"
   tradeSlug="kitchen-fitters"
   headline="The Rapid Response AI Receptionist for Kitchen Fitters"
   accentWord="Kitchen Fitters"
-  subhead={`You cannot answer the phone while you are scribing a worktop, hanging wall units, or plumbing in a sink. Your AI receptionist picks up every call, captures every lead from chat, WhatsApp, and social media, and sends you the details between installations. From £${pricing.tiers.starter.price}/month.`}
+  subhead={`You cannot answer the phone while you are scribing a worktop, hanging wall units, or plumbing in a sink. Your AI receptionist picks up every call, captures every lead from chat, WhatsApp, and social media, and sends you the details between installations. From £${pricing.tiers.core.price}/month.`}
   withoutWithScenarios={withoutWithScenarios}
   specialisms={specialisms}
   clientTypes={clientTypes}
   faqs={faqs}
   ctaHeadline="Stop Losing Kitchen Jobs to Missed Calls"
-  ctaSubhead={`Every call your kitchen fitting business misses is a customer booking another installer. From £${pricing.tiers.starter.price}/month — respond first, win the work.`}
+  ctaSubhead={`Every call your kitchen fitting business misses is a customer booking another installer. From £${pricing.tiers.core.price}/month â€” respond first, win the work.`}
 />

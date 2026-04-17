@@ -69,7 +69,7 @@ const {
   clientTypes,
   faqs,
   ctaHeadline = `Stop Missing Jobs, ${tradeNamePlural}`,
-  ctaSubhead = `Join the UK ${tradeNamePlural.toLowerCase()} who never miss a lead. From £${pricing.tiers.starter.price}/month, 30-day money-back guarantee, no contracts.`,
+  ctaSubhead = `Join the UK ${tradeNamePlural.toLowerCase()} who never miss a lead. From £${pricing.tiers.core.price}/month, 30-day money-back guarantee, no contracts.`,
 } = Astro.props;
 
 const steps = [
@@ -131,11 +131,11 @@ const serviceSchema = {
   },
   "offers": {
     "@type": "Offer",
-    "price": "95",
+    "price": String(pricing.tiers.core.price),
     "priceCurrency": "GBP",
     "priceSpecification": {
       "@type": "UnitPriceSpecification",
-      "price": "95",
+      "price": String(pricing.tiers.core.price),
       "priceCurrency": "GBP",
       "unitText": "month"
     }

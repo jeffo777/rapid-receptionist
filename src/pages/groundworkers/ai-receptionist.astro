@@ -1,4 +1,4 @@
-﻿---
+---
 import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
 import pricing from '../../data/pricing.json';
 
@@ -34,22 +34,22 @@ const specialisms = [
 
 const clientTypes = [
   {
-    icon: "🏗️",
+    icon: "???",
     title: "Builders & Main Contractors",
     description: "Site managers needing groundwork subcontractors for house extensions, new builds, and commercial projects. They work to tight programme schedules and need fast confirmation of availability and day rates."
   },
   {
-    icon: "🏠",
+    icon: "??",
     title: "Domestic Homeowners",
     description: "Homeowners needing garden drainage, foundation work for extensions, driveway excavation, or land levelling. Whether they searched for a groundworker, a groundwork contractor, or a local groundworks company, they often do not fully understand the scope of groundwork and need clear, patient communication."
   },
   {
-    icon: "🏢",
+    icon: "??",
     title: "Property Developers",
     description: "Developers sourcing groundwork contractors for multi-plot housing schemes, commercial builds, and site infrastructure. They send detailed specifications and expect any groundwork business or civil engineering contractor they contact to respond rapidly with pricing."
   },
   {
-    icon: "🌊",
+    icon: "??",
     title: "Insurance & Emergency Work",
     description: "Insurers, loss adjusters, and homeowners dealing with flooding, collapsed drains, subsidence, and emergency excavation. These enquiries are time-critical and need immediate escalation."
   }
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     question: "How much does it cost for a groundwork business or groundwork contractor?",
-    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat. Additional channels are £${pricing.addOn.price}/month each. The All Channels bundle is £${pricing.tiers.all.price}/month. The pricing is the same whether you are a sole trader groundworker, a groundwork contractor with a gang, or a civil engineering company handling large developments. There is a one-time setup fee of £${pricing.setup.price} (refundable within 30 days).`
+    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat. Additional channels are £${pricing.addOn.price}/month each. The pricing is the same whether you are a sole trader groundworker, a groundwork contractor with a gang, or a civil engineering company handling large developments. There is a one-time setup fee of £${pricing.setup.price} (refundable within 30 days).`
   },
   {
     question: "Is this suitable for a small groundworks company or sole trader?",
@@ -89,18 +89,18 @@ const faqs = [
 
 <TradeHubLayout
   title="Rapid Response AI Receptionist for Groundworkers | Rapid Receptionist"
-  description={`AI receptionist for UK groundworkers, groundwork contractors, and groundworks businesses. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are digging foundations, laying drains, or operating plant. From £${pricing.tiers.starter.price}/month.`}
+  description={`AI receptionist for UK groundworkers, groundwork contractors, and groundworks businesses. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are digging foundations, laying drains, or operating plant. From £${pricing.tiers.core.price}/month.`}
   canonicalUrl="/groundworkers/ai-receptionist/"
   tradeName="Groundworker"
   tradeNamePlural="Groundworkers"
   tradeSlug="groundworkers"
   headline="The Rapid Response AI Receptionist for Groundworkers"
   accentWord="Groundworkers"
-  subhead={`Whether you run a one-man groundwork business or a groundwork contractor with a full gang and plant, you cannot answer the phone from two metres deep in a foundation trench. Your AI receptionist answers every call, captures every lead, and sends you the details while your groundworks company keeps digging. From £${pricing.tiers.starter.price}/month.`}
+  subhead={`Whether you run a one-man groundwork business or a groundwork contractor with a full gang and plant, you cannot answer the phone from two metres deep in a foundation trench. Your AI receptionist answers every call, captures every lead, and sends you the details while your groundworks company keeps digging. From £${pricing.tiers.core.price}/month.`}
   withoutWithScenarios={withoutWithScenarios}
   specialisms={specialisms}
   clientTypes={clientTypes}
   faqs={faqs}
   ctaHeadline="Stop Losing Groundwork Jobs to Missed Calls"
-  ctaSubhead={`Every call your groundwork business misses while you are in the trench is a builder calling the next groundwork contractor. From £${pricing.tiers.starter.price}/month — respond first, win the work.`}
+  ctaSubhead={`Every call your groundwork business misses while you are in the trench is a builder calling the next groundwork contractor. From £${pricing.tiers.core.price}/month — respond first, win the work.`}
 />

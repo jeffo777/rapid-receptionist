@@ -1,4 +1,4 @@
-﻿---
+---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -23,8 +23,8 @@ const faqs = [
     answer: "The setup fee covers the complete configuration of your AI receptionist across whichever channels you select. We train the AI on your specific construction trade — its vocabulary, its common job types, its urgency signals. We configure your business name, greeting style, escalation rules, and the details you want captured from every enquiry. We connect each channel to your business accounts and test everything before going live. This is a genuine done-for-you service, not a template with a tick-box. The full setup fee is refundable under our 30-day money-back guarantee."
   },
   {
-    question: `What's the All Channels bundle at £${pricing.tiers.all.price}/month?`,
-    answer: `Buying the Core plan plus all six add-on channels individually would cost £${pricing.tiers.core.price + (6 * pricing.addOn.price)}/month. The All Channels bundle gives you everything for £${pricing.tiers.all.price}/month — a saving of £${pricing.tiers.core.price + (6 * pricing.addOn.price) - pricing.tiers.all.price} every month. That includes AI phone answering with ${pricing.tiers.core.minutes} minutes, unlimited website chat, plus WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back. Every channel your clients use, covered around the clock, every day of the year.`
+    question: `Can I add channels later?`,
+    answer: `Yes. Start with the Core plan (£${pricing.tiers.core.price}/month for phone answering and website chat), then add any channel at £${pricing.addOn.price}/month each whenever you are ready. No commitment required.`,
   },
   {
     question: "How does the phone talk time work?",
@@ -50,8 +50,8 @@ const faqs = [
 ---
 
 <BaseLayout
-  title=`Pricing — AI Receptionist for Construction Trades | From £${pricing.tiers.starter.price}/mo | Rapid Receptionist`
-  description=`Transparent pricing for UK construction trades. AI phone answering + web chat From £${pricing.tiers.starter.price}/month, add channels at £${pricing.addOn.price}/month each, or get everything for £${pricing.tiers.all.price}/month. No contracts, 30-day money-back guarantee.`
+  title=`Pricing — AI Receptionist for Construction Trades | From £${pricing.tiers.core.price}/mo | Rapid Receptionist`
+  description=`Transparent pricing for UK construction trades. AI phone answering + web chat from £${pricing.tiers.core.price}/month, add channels at £${pricing.addOn.price}/month each. No contracts, 30-day money-back guarantee.`
   canonicalUrl="/pricing/"
 >
   <Header slot="header" />
@@ -60,7 +60,7 @@ const faqs = [
   <HeroSection
     headline="Transparent Pricing for Construction Trades. No Surprises."
     accentWord="Transparent Pricing"
-    subhead=`Start with AI phone answering and web chat at £${pricing.tiers.core.price}/month. Add any channel at £${pricing.addOn.price}/month each. Or grab everything for £${pricing.tiers.all.price}/month. 30-day money-back guarantee.`
+  subhead=`Start with AI phone answering and web chat at £${pricing.tiers.core.price}/month. Add any channel at £${pricing.addOn.price}/month each. 30-day money-back guarantee.`
     showTrustRow={false}
     showAIReceptionist={false}
   />
@@ -78,7 +78,7 @@ const faqs = [
   <!-- CTA -->
   <CTASection
     headline="Respond First. Win the Job."
-    subhead=`Join the UK construction trades who never miss a lead. From £${pricing.tiers.starter.price}/month, no contracts, cancel anytime.`
+    subhead=`Join the UK construction trades who never miss a lead. From £${pricing.tiers.core.price}/month, no contracts, cancel anytime.`
   />
 
   <CookieConsent />

@@ -1,4 +1,4 @@
-﻿---
+---
 import ChannelServiceLayout from '../../layouts/ChannelServiceLayout.astro';
 import pricing from '../../data/pricing.json';
 
@@ -22,32 +22,32 @@ const steps = [
 
 const benefits = [
   {
-    icon: '⚡',
+    icon: '?',
     title: 'Instant Answer, Every Time',
     text: 'Your AI receptionist picks up within two rings — morning, evening, weekend, bank holiday. While your competitors send callers to voicemail, yours gets answered by a knowledgeable, professional voice that sounds like a real member of your team.'
   },
   {
-    icon: '🧠',
+    icon: '??',
     title: 'Understands Construction Terminology',
     text: "The AI is trained on your specific trade's vocabulary. It knows the difference between a skim and a render, between first fix and second fix, between a patch repair and a full strip. Your callers get a receptionist who actually understands what they're describing."
   },
   {
-    icon: '🚨',
+    icon: '??',
     title: 'Emergency Escalation Built In',
     text: "If a caller describes a genuine emergency — a gas smell, a burst pipe, a collapsed ceiling, an electrical fault — the AI escalates immediately. It tries to reach you on your mobile first. If you can't be reached, our human operators step in."
   },
   {
-    icon: '📊',
+    icon: '??',
     title: 'Full Lead Capture',
     text: "Every call is logged with the caller's name, phone number, location, the work they need, and how urgent it is. You receive the summary instantly — by email, text, or app notification — so you can follow up at the right time with all the details."
   },
   {
-    icon: '🕐',
+    icon: '??',
     title: '300 Minutes of Talk Time',
     text: 'The Core plan includes 300 minutes of actual AI conversation time per month. For the majority of sole traders and small construction businesses, this covers the call volume comfortably. Additional minutes are charged at 20p each — no caps, no surprises.'
   },
   {
-    icon: '🎯',
+    icon: '??',
     title: 'Your Business Name, Your Greeting',
     text: "The AI answers as your business. 'Good afternoon, thank you for calling Preston Plastering, how can I help?' Callers hear a professional greeting that matches your brand — not a generic third-party answering service."
   }
@@ -83,7 +83,7 @@ const faqs = [
 
 <ChannelServiceLayout
   title="AI Phone Answering for UK Construction Trades | Rapid Receptionist"
-  description=`AI phone answering built for 46 UK construction trades. Answers every call with your business name, captures lead details, and escalates emergencies. 300 minutes included. From £${pricing.tiers.starter.price}/month.`
+  description=`AI phone answering built for 46 UK construction trades. Answers every call with your business name, captures lead details, and escalates emergencies. 300 minutes included. From £${pricing.tiers.core.price}/month.`
   canonicalUrl="/construction-trades/ai-phone-answering/"
   channelName="AI Phone Answering"
   channelSlugPrefix="ai-phone-answering"
@@ -95,8 +95,8 @@ const faqs = [
   scenario="It's 9:15am on a Tuesday. You're halfway through chasing a first-floor ceiling when your phone rings. It's a homeowner who found you on Google — they need their entire ground floor re-plastered after a flood. They want someone this week. Your AI receptionist answers: 'Good morning, thank you for calling Preston Plastering, how can I help?' It captures their name, address, the scope of the work, and their availability. By the time you finish the ceiling at 11am, the full lead is sitting in your inbox. Without AI Phone Answering, they'd have heard your voicemail, hung up, and called the next plasterer on the list."
   steps={steps}
   benefits={benefits}
-  pricingNote=`AI Phone Answering is included in the <strong>Core plan at £${pricing.tiers.core.price}/month</strong> alongside unlimited website chat. The Core plan includes 300 minutes of AI phone talk time. Additional channels can be added at <strong>£${pricing.addOn.price}/month each</strong>, or get everything with the <strong>All Channels bundle at £${pricing.tiers.all.price}/month</strong>. <a href='/pricing/'>See full pricing →</a>`
+  pricingNote=`AI Phone Answering is included in the <strong>Core plan at £${pricing.tiers.core.price}/month</strong> alongside unlimited website chat. The Core plan includes 300 minutes of AI phone talk time. Additional channels can be added at <strong>£${pricing.addOn.price}/month each</strong>, or get everything with the <strong>. <a href='/pricing/'>See full pricing ?</a>`
   faqs={faqs}
   ctaHeadline="Stop Sending Callers to Voicemail"
-  ctaSubhead=`85% of callers who reach voicemail never call back. AI Phone Answering makes sure they never have to. From £${pricing.tiers.starter.price}/month.`
+  ctaSubhead=`85% of callers who reach voicemail never call back. AI Phone Answering makes sure they never have to. From £${pricing.tiers.core.price}/month.`
 />

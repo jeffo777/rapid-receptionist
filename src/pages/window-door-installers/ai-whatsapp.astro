@@ -3,18 +3,18 @@ import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
 import pricing from '../../data/pricing.json';
 
 const benefits = [
-  { icon: '📸', title: 'Customers Share Window Photos', text: "Homeowners photograph their condensation-covered windows and message: 'All of these need replacing — can you quote?' The AI responds instantly, captures the number of units and frame preference, and confirms a callback." },
-  { icon: '⚡', title: 'Fastest Reply Wins the Survey', text: "A homeowner messages three window companies. The first to reply books the home survey. Your AI responds in seconds." },
-  { icon: '🏗️', title: 'Handles Builder Messages', text: "Site managers WhatsApp about window and door schedules for new builds — unit counts, frame colours, configurations. The AI captures the scope for your quotation." },
-  { icon: '🕐', title: 'Active When You Cannot Be', text: "WhatsApp messages arrive at all hours — homeowners noticing draughts on a cold evening, landlords messaging on Sunday about rental properties. Every message gets an instant response." },
-  { icon: '📋', title: 'Rich Enquiry Data', text: "WhatsApp conversations about windows are detailed — photos of existing frames, links to products they like, measurements. The AI captures everything." },
-  { icon: '🎯', title: 'Professional Presence', text: "Instant responses position your glazing business as organised and responsive — exactly the impression you need when quoting against national window companies." }
+  { icon: 'ðŸ“¸', title: 'Customers Share Window Photos', text: "Homeowners photograph their condensation-covered windows and message: 'All of these need replacing â€” can you quote?' The AI responds instantly, captures the number of units and frame preference, and confirms a callback." },
+  { icon: 'âš¡', title: 'Fastest Reply Wins the Survey', text: "A homeowner messages three window companies. The first to reply books the home survey. Your AI responds in seconds." },
+  { icon: 'ðŸ—ï¸', title: 'Handles Builder Messages', text: "Site managers WhatsApp about window and door schedules for new builds â€” unit counts, frame colours, configurations. The AI captures the scope for your quotation." },
+  { icon: 'ðŸ•', title: 'Active When You Cannot Be', text: "WhatsApp messages arrive at all hours â€” homeowners noticing draughts on a cold evening, landlords messaging on Sunday about rental properties. Every message gets an instant response." },
+  { icon: 'ðŸ“‹', title: 'Rich Enquiry Data', text: "WhatsApp conversations about windows are detailed â€” photos of existing frames, links to products they like, measurements. The AI captures everything." },
+  { icon: 'ðŸŽ¯', title: 'Professional Presence', text: "Instant responses position your glazing business as organised and responsive â€” exactly the impression you need when quoting against national window companies." }
 ];
 
 const faqs = [
-  { question: "How does AI WhatsApp work for window installers?", answer: "When a customer messages your business WhatsApp, the AI responds immediately, captures the type of glazing work, frame material, number of units, and contact details — all sent as a lead summary." },
+  { question: "How does AI WhatsApp work for window installers?", answer: "When a customer messages your business WhatsApp, the AI responds immediately, captures the type of glazing work, frame material, number of units, and contact details â€” all sent as a lead summary." },
   { question: "Can it handle photos of existing windows?", answer: "Yes. Customers send photos of blown sealed units, damaged frames, and windows they want replaced. The AI acknowledges the images and references them in the lead summary." },
-  { question: "How much does AI WhatsApp cost?", answer: `AI WhatsApp is an add-on at £${pricing.addOn.price}/month on any plan. Pair with Starter (£${pricing.tiers.starter.price}/month) or Core (£${pricing.tiers.core.price}/month), or get everything in the All Channels bundle at £${pricing.tiers.all.price}/month.` },
+  { question: "How much does AI WhatsApp cost?", answer: `AI WhatsApp is an add-on at £${pricing.addOn.price}/month on the Core plan (£${pricing.tiers.core.price}/month).` },
   { question: "How is data protected?", answer: "All data is managed under UK GDPR. Messages, photos, and contact details are encrypted and stored on UK and EU servers, shared only with you." }
 ];
 ---
@@ -29,8 +29,8 @@ const faqs = [
   tradeSlug="window-door-installers"
   headline="AI WhatsApp for Window & Door Installers"
   accentWord="Window & Door Installers"
-  subhead={`A homeowner photographs the condensation in their bay window and WhatsApps you: 'Every unit has gone — can you look at replacing the lot?' You are fitting a patio door across town. Your AI replies in seconds, captures the number of units, and you book the survey that evening. £${pricing.addOn.price}/month add-on.`}
-  scenario="It is 7:15pm on a Monday. A retired couple in Harrogate have been putting off replacing their windows for three years. Tonight, with the central heating on, every sealed unit in the front of the house is misted up. The husband photographs the worst three and WhatsApps you: 'Hi, we have 8 windows at the front, all UPVC from 2002. The sealed units are gone in at least 5 of them. Can you come and have a look? We are in HG1.' You are eating dinner. Without AI WhatsApp, the message waits until tomorrow — and they WhatsApp two more companies tonight. With AI WhatsApp, the reply comes at 7:16pm — confirming you replace sealed units and full windows, asking about their preferred frame material and whether they would like to consider upgrading to A-rated glazing, and suggesting a free survey this week. They reply with their address and preferred time."
+  subhead={`A homeowner photographs the condensation in their bay window and WhatsApps you: 'Every unit has gone â€” can you look at replacing the lot?' You are fitting a patio door across town. Your AI replies in seconds, captures the number of units, and you book the survey that evening. £${pricing.addOn.price}/month add-on.`}
+  scenario="It is 7:15pm on a Monday. A retired couple in Harrogate have been putting off replacing their windows for three years. Tonight, with the central heating on, every sealed unit in the front of the house is misted up. The husband photographs the worst three and WhatsApps you: 'Hi, we have 8 windows at the front, all UPVC from 2002. The sealed units are gone in at least 5 of them. Can you come and have a look? We are in HG1.' You are eating dinner. Without AI WhatsApp, the message waits until tomorrow â€” and they WhatsApp two more companies tonight. With AI WhatsApp, the reply comes at 7:16pm â€” confirming you replace sealed units and full windows, asking about their preferred frame material and whether they would like to consider upgrading to A-rated glazing, and suggesting a free survey this week. They reply with their address and preferred time."
   benefits={benefits}
   faqs={faqs}
   channelPageUrl="/construction-trades/ai-whatsapp/"

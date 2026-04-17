@@ -1,4 +1,4 @@
-﻿---
+---
 import ChannelServiceLayout from '../../layouts/ChannelServiceLayout.astro';
 import pricing from '../../data/pricing.json';
 
@@ -22,32 +22,32 @@ const steps = [
 
 const benefits = [
   {
-    icon: '✉️',
+    icon: '??',
     title: 'Catches the Texters',
     text: "Not every customer calls. Some prefer texting — it's quick, it's non-intrusive, and they can send it during their own lunch break. Without AI SMS, those text enquiries sit unread in your phone until you remember to check."
   },
   {
-    icon: '⚡',
+    icon: '?',
     title: 'Instant Professional Response',
     text: "A text reply that arrives in seconds signals professionalism and responsiveness. It tells the customer: this business is organised, this business cares about enquiries, this business is going to be easy to work with."
   },
   {
-    icon: '📵',
+    icon: '??',
     title: 'Works When Your Phone Is Off',
     text: "Whether your phone is on silent while you're in a client meeting, switched off on a flight, or out of signal in a basement — the AI handles SMS enquiries independently. It doesn't rely on your handset."
   },
   {
-    icon: '🔗',
+    icon: '??',
     title: 'Pairs With Missed Call Text-Back',
     text: "AI SMS and Missed Call Text-Back work hand in hand. If someone calls and hangs up, they get an automatic text. If they then reply to that text, the AI handles the response. The whole chain is covered."
   },
   {
-    icon: '🌙',
+    icon: '??',
     title: 'After-Hours Coverage',
     text: "Text messages don't respect office hours. Customers send them at 6am, at 11pm, on Sunday mornings. The AI responds to every one of them, instantly, regardless of when they arrive."
   },
   {
-    icon: '📊',
+    icon: '??',
     title: 'Full Lead Tracking',
     text: "Every SMS enquiry is logged, timestamped, and sent to you with the customer's details and the nature of the work. No more scrolling through old texts trying to find that message from last Thursday."
   }
@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     question: "How much does AI SMS cost?",
-    answer: `AI SMS is an add-on channel at £${pricing.addOn.price}/month. You can pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat) or add it standalone. The All Channels bundle at £${pricing.tiers.all.price}/month includes SMS alongside all seven other channels.`
+    answer: `AI SMS is an add-on channel at £${pricing.addOn.price}/month. You can pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat) or add it standalone.`
   },
   {
     question: "Can the AI respond to texts sent outside normal hours?",
@@ -95,7 +95,7 @@ const faqs = [
   scenario="It's 2pm on a Wednesday. You're fitting skirting boards in a new build when your phone buzzes. A text from an unknown number: 'Hi, I found you on Google. Looking for a joiner to build fitted wardrobes in two bedrooms. What's your availability like for next month?' You can't reply now — you're measuring and cutting. Three hours later, you remember — but by then, they've had a reply from someone else and booked them. With AI SMS, they'd have received a reply within ten seconds: 'Thanks for your message. We'd be happy to help with the fitted wardrobes. Could you confirm your postcode and I'll arrange for a callback today?' The lead is captured. The customer feels valued. And you call them back at 5pm with all the details in front of you."
   steps={steps}
   benefits={benefits}
-  pricingNote=`AI SMS is available as an <strong>add-on channel at £${pricing.addOn.price}/month</strong>. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat), use it standalone, or include it in the <strong>All Channels bundle at £${pricing.tiers.all.price}/month</strong>. <a href='/pricing/'>See full pricing →</a>`
+  pricingNote=`AI SMS is available as an <strong>add-on channel at £${pricing.addOn.price}/month</strong>. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat), use it standalone, or include it in the <strong>. <a href='/pricing/'>See full pricing ?</a>`
   faqs={faqs}
   ctaHeadline="Stop Missing Text Enquiries"
   ctaSubhead=`Every unanswered text is a customer who'll message your competitor next. AI SMS responds instantly — £${pricing.addOn.price}/month.`

@@ -1,4 +1,4 @@
-﻿---
+---
 import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
 import pricing from '../../data/pricing.json';
 
@@ -34,22 +34,22 @@ const specialisms = [
 
 const clientTypes = [
   {
-    icon: "🏠",
+    icon: "??",
     title: "Domestic Homeowners",
     description: "Homeowners looking for a joiner, a carpentry contractor, or a local joinery business to handle fitted furniture, new doors, staircases, or renovation work. They want someone skilled, reliable, and responsive — and they often call several carpentry companies before choosing."
   },
   {
-    icon: "🏗️",
+    icon: "???",
     title: "Builders & Main Contractors",
     description: "Site managers sourcing carpentry subcontractors for first fix, second fix, or both on new builds and extensions. They need fast availability confirmations from reliable joinery contractors and work to tight programme schedules."
   },
   {
-    icon: "🏢",
+    icon: "??",
     title: "Architects & Interior Designers",
     description: "Architects and designers specifying bespoke joinery — custom staircases, feature panelling, built-in furniture. They want a joinery business that communicates professionally and can interpret detailed drawings."
   },
   {
-    icon: "🏛️",
+    icon: "???",
     title: "Heritage & Conservation Projects",
     description: "Conservation officers, period property owners, and architects needing specialist joinery for listed buildings — sash window restoration, period door reproduction, heritage timber repairs. These enquiries require a carpentry business with proven restoration credentials."
   }
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     question: "How much does it cost for a joinery business or carpentry contractor?",
-    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat. Additional channels — WhatsApp, SMS, Facebook, Instagram, email, and missed call text-back — are £${pricing.addOn.price}/month each. The All Channels bundle is £${pricing.tiers.all.price}/month. The pricing is the same whether you are a sole trader joiner, a carpentry contractor with employees, or a joinery company handling commercial work. There is a one-time setup fee of £${pricing.setup.price} (refundable within 30 days).`
+    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat. Additional channels — WhatsApp, SMS, Facebook, Instagram, email, and missed call text-back — are £${pricing.addOn.price}/month each. The pricing is the same whether you are a sole trader joiner, a carpentry contractor with employees, or a joinery company handling commercial work. There is a one-time setup fee of £${pricing.setup.price} (refundable within 30 days).`
   },
   {
     question: "Is this suitable for a small carpentry business or sole trader joiner?",
@@ -89,18 +89,18 @@ const faqs = [
 
 <TradeHubLayout
   title="Rapid Response AI Receptionist for Joiners & Carpenters | Rapid Receptionist"
-  description={`AI receptionist for UK joiners, carpenters, joinery businesses, and carpentry contractors. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are on the tools. From £${pricing.tiers.starter.price}/month.`}
+  description={`AI receptionist for UK joiners, carpenters, joinery businesses, and carpentry contractors. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are on the tools. From £${pricing.tiers.core.price}/month.`}
   canonicalUrl="/joiners-carpenters/ai-receptionist/"
   tradeName="Joiner"
   tradeNamePlural="Joiners & Carpenters"
   tradeSlug="joiners-carpenters"
   headline="The Rapid Response AI Receptionist for Joiners & Carpenters"
   accentWord="Joiners"
-  subhead={`Whether you run a one-man joinery business or a carpentry contractor with a full team, you cannot answer the phone while the router is running. Your AI receptionist answers every call, captures every lead from chat, WhatsApp, and social media, and sends you the details while your carpentry company keeps building. From £${pricing.tiers.starter.price}/month.`}
+  subhead={`Whether you run a one-man joinery business or a carpentry contractor with a full team, you cannot answer the phone while the router is running. Your AI receptionist answers every call, captures every lead from chat, WhatsApp, and social media, and sends you the details while your carpentry company keeps building. From £${pricing.tiers.core.price}/month.`}
   withoutWithScenarios={withoutWithScenarios}
   specialisms={specialisms}
   clientTypes={clientTypes}
   faqs={faqs}
   ctaHeadline="Stop Losing Joinery Jobs to Missed Calls"
-  ctaSubhead={`Every call your carpentry business misses is a customer calling the next joinery contractor. From £${pricing.tiers.starter.price}/month — respond first, win the work.`}
+  ctaSubhead={`Every call your carpentry business misses is a customer calling the next joinery contractor. From £${pricing.tiers.core.price}/month — respond first, win the work.`}
 />

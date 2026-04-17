@@ -1,0 +1,40 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  { icon: 'ðŸ“±', title: 'Five-Second Recovery', text: "A contracts manager calls about a dry lining subcontract for a hotel refurbishment. You are up a scaffold tower boarding a ceiling. Five seconds later, they get a text: 'Sorry I missed your call â€” I am on site. How can I help?'" },
+  { icon: 'ðŸ”„', title: 'Turns Missed Calls into Conversations', text: "Contractors who reach voicemail move to the next subcontractor on their list. A text changes the dynamic â€” they reply with the project details and you call back informed." },
+  { icon: 'ðŸ•', title: 'Works After Hours', text: "A QS calls at 7am about a tender return. You are driving to site. Five seconds later, they get a text and reply with the project name and return date." },
+  { icon: 'âš¡', title: 'Fastest Response', text: "Five seconds. Faster than any competitor can reach their phone. The instant text positions your dry lining business as responsive." },
+  { icon: 'ðŸ“‹', title: 'Captures Without Interrupting', text: "You do not stop boarding. The text goes automatically. The contractor replies. You review at your next break." },
+  { icon: 'ðŸ’°', title: 'Pays for Itself', text: "One missed dry lining enquiry â€” a commercial partition package worth £20,000 to £50,000 â€” exceeds years of this service. Recovering a single lost lead pays for everything." }
+];
+
+const faqs = [
+  { question: "How does missed call text-back work?", answer: "When a call goes unanswered, the system sends a text within five seconds, personalised with your business name, inviting them to share what they need." },
+  { question: "How much does it cost?", answer: `Missed call text-back is an add-on at £${pricing.addOn.price}/month. Add it to the Core plan (£${pricing.tiers.core.price}/month).` },
+  { question: "Does it work with my existing number?", answer: "Yes. It integrates with your existing business number." },
+  { question: "How is data protected?", answer: "All data is managed under UK GDPR. Encrypted and stored on UK and EU servers, shared only with you." }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text-Back for Dry Liners | Rapid Receptionist"
+  description={`Missed call text-back for UK dry liners and dry lining contractors. Automatic text within 5 seconds of every missed call. £${pricing.addOn.price}/month add-on.`}
+  canonicalUrl="/dry-liners/missed-call-text-back/"
+  channelName="Missed Call Text-Back"
+  tradeName="Dry Liner"
+  tradeNamePlural="Dry Liners"
+  tradeSlug="dry-liners"
+  headline="Missed Call Text-Back for Dry Liners"
+  accentWord="Dry Liners"
+  subhead={`You are three metres up on a scaffold tower, pneumatic gun in hand, boarding an MF ceiling grid. A contracts manager is calling about a 30-unit residential dry lining package. Five seconds after the missed call, they get a text from your business. They reply with the project details. You call back at your next break. £${pricing.addOn.price}/month add-on.`}
+  scenario="It is 10:20am on a Wednesday. You are fixing fire-rated board to a stairwell in a new-build apartment block in Sheffield â€” the scaffolding is tight, the boards are heavy, and your mate is passing them up to you one at a time. Your phone rings in the welfare unit. A contracts manager at a fit-out company is calling â€” they have won a contract for the interior fit-out of a new GP surgery and need a dry lining subcontractor for metal stud partitions, MF ceilings, and specialist acoustic boarding to consultation rooms. Without missed call text-back, they hear voicemail, mark you as unavailable, and call the next dry liner. With missed call text-back, they receive a text at 10:21am: 'Hi, this is [Your Business]. Sorry I missed your call â€” I am boarding on site right now. Let me know what you need and I will call you back today.' They reply: 'GP surgery fit-out in S1. Metal stud and MF throughout. Need a site meeting next week. Interested?' By 10:25am, you have a healthcare fit-out lead."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/dry-liners/ai-receptionist/"
+  ctaHeadline="Never Lose a Dry Lining Contract to a Missed Call"
+  ctaSubhead={`One text. Five seconds. The difference between losing a commercial subcontract and winning it. £${pricing.addOn.price}/month add-on.`}
+/>

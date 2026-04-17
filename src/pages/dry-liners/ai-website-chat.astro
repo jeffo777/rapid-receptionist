@@ -1,0 +1,40 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  { icon: '💬', title: 'Captures Specification Enquiries', text: "A fit-out company lands on your website looking for a dry lining subcontractor. They want to know if you do acoustic partition systems and MF ceilings. The chat responds instantly with your capabilities and captures the project brief." },
+  { icon: '📐', title: 'Handles Technical Questions', text: "Visitors ask about fire ratings, acoustic performance, board types, and whether you can handle large commercial floor areas. The AI answers from your training data." },
+  { icon: '🕐', title: 'Active When You Are On Site', text: "You are on site all day. Website visitors do not wait — they browse during office hours and expect instant responses. The chat is live 24/7." },
+  { icon: '📱', title: 'Works On Mobile', text: "Quantity surveyors and project managers browse subcontractor websites on their phones between site meetings. The chat works seamlessly on mobile." },
+  { icon: '🎯', title: 'Qualifies Commercial Leads', text: "The chat captures project type, approximate floor area, board specification, programme timeline, and contact details." },
+  { icon: '🔗', title: 'Converts Portfolio Visitors', text: "Your project photos show your capability. The chat converts browsing visitors into tender invitations and site meetings." }
+];
+
+const faqs = [
+  { question: "How does website chat work for dry lining companies?", answer: "A chat widget on your site responds instantly to visitor questions about your dry lining services, captures project requirements, and collects contact details." },
+  { question: "Can the chat discuss specific board types and fire ratings?", answer: "Yes. During setup, the AI is configured with your capabilities — board types you work with, fire rating experience, acoustic systems, ceiling types." },
+  { question: "Is there a message limit?", answer: "No. Unlimited messages on all plans." },
+  { question: "How is data protected?", answer: "All data is managed under UK GDPR. Encrypted and stored on UK and EU servers, shared only with you." }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Dry Liners | Rapid Receptionist"
+  description={`AI website chat for UK dry liners, dry lining contractors, and partitioning companies. Captures visitor enquiries 24/7. Unlimited messages. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/dry-liners/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Dry Liner"
+  tradeNamePlural="Dry Liners"
+  tradeSlug="dry-liners"
+  headline="AI Website Chat for Dry Liners"
+  accentWord="Dry Liners"
+  subhead="A project manager at a fit-out company browses your website between site meetings. They need a dry lining subcontractor for a 3,000 sqm office refurbishment. They open the chat: 'Do you do MF ceilings and acoustic partitions?' The AI responds instantly and you have a qualified lead before they close their laptop."
+  scenario="It is 2:15pm on a Wednesday. A quantity surveyor at a main contractor in Manchester is preparing a subcontractor list for a hospital refurbishment. They need dry lining to twenty-four consultation rooms, two waiting areas, and a reception — all requiring specific fire-rated and acoustic board. They find your website, browse your commercial project gallery, and open the chat: 'Do you have experience with healthcare projects? We need fire-rated and acoustic dry lining for a hospital refurbishment in M13.' Without website chat, they would send an email you might not see until tomorrow. With AI Website Chat, the AI responds in seconds — confirming your commercial experience, asking about total floor area, fire rating requirements, and programme timeline. By 2:25pm, the QS has shared the project address and their direct line."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/dry-liners/ai-receptionist/"
+  ctaHeadline="Turn Website Visitors into Dry Lining Contracts"
+  ctaSubhead={`Your project photos show capability. Your AI captures the lead. Included from £${pricing.tiers.core.price}/month.`}
+/>

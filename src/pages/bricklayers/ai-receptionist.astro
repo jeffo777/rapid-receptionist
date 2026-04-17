@@ -1,4 +1,4 @@
-﻿---
+---
 import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
 import pricing from '../../data/pricing.json';
 
@@ -34,22 +34,22 @@ const specialisms = [
 
 const clientTypes = [
   {
-    icon: "🏠",
+    icon: "??",
     title: "Domestic Homeowners",
     description: "Homeowners needing extensions built, garden walls repaired, chimneys rebuilt, or repointing done. Whether they searched for a bricklayer, a bricklaying contractor, or a local brickwork company, they want someone reliable who will actually call them back."
   },
   {
-    icon: "🏗️",
+    icon: "???",
     title: "Builders & Main Contractors",
     description: "Site managers and builders sourcing bricklaying subcontractors and brickwork contractors for new builds, extensions, and commercial projects. They need fast availability confirmations from reliable bricklaying firms and work to tight programme deadlines with penalties for delays."
   },
   {
-    icon: "🏛️",
+    icon: "???",
     title: "Conservation & Heritage Projects",
     description: "Architects, conservation officers, and homeowners with listed buildings needing specialist lime mortar repointing, brick matching, or period restoration work. These enquiries require sensitivity and expertise confirmation."
   },
   {
-    icon: "🏢",
+    icon: "??",
     title: "Commercial Property Managers",
     description: "Facilities managers and property companies needing pointing repairs, boundary wall rebuilds, and structural brickwork maintenance across commercial portfolios. They expect any bricklaying business or masonry contractor they contact to respond professionally and follow through."
   }
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     question: "How much does it cost for a bricklaying business or brickwork contractor?",
-    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat. Additional channels — WhatsApp, SMS, Facebook, Instagram, email, and missed call text-back — are £${pricing.addOn.price}/month each. The All Channels bundle is £${pricing.tiers.all.price}/month. The pricing is the same whether you are a sole trader bricklayer, a bricklaying contractor with a gang, or a masonry contractor handling commercial work. There is a one-time setup fee of £${pricing.setup.price} (refundable within 30 days).`
+    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat. Additional channels — WhatsApp, SMS, Facebook, Instagram, email, and missed call text-back — are £${pricing.addOn.price}/month each. The pricing is the same whether you are a sole trader bricklayer, a bricklaying contractor with a gang, or a masonry contractor handling commercial work. There is a one-time setup fee of £${pricing.setup.price} (refundable within 30 days).`
   },
   {
     question: "Is this suitable for a small bricklaying company or sole trader?",
@@ -89,18 +89,18 @@ const faqs = [
 
 <TradeHubLayout
   title="Rapid Response AI Receptionist for Bricklayers | Rapid Receptionist"
-  description={`AI receptionist for UK bricklayers, bricklaying businesses, and brickwork contractors. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are laying brick, pointing, or on site. From £${pricing.tiers.starter.price}/month.`}
+  description={`AI receptionist for UK bricklayers, bricklaying businesses, and brickwork contractors. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are laying brick, pointing, or on site. From £${pricing.tiers.core.price}/month.`}
   canonicalUrl="/bricklayers/ai-receptionist/"
   tradeName="Bricklayer"
   tradeNamePlural="Bricklayers"
   tradeSlug="bricklayers"
   headline="The Rapid Response AI Receptionist for Bricklayers"
   accentWord="Bricklayers"
-  subhead={`Whether you run a one-man bricklaying business or a bricklaying contractor with a full gang, you cannot stop to answer the phone mid-course. Your AI receptionist answers every call, captures every lead from chat, WhatsApp, and social media, and sends you the details while your brickwork company keeps building. From £${pricing.tiers.starter.price}/month.`}
+  subhead={`Whether you run a one-man bricklaying business or a bricklaying contractor with a full gang, you cannot stop to answer the phone mid-course. Your AI receptionist answers every call, captures every lead from chat, WhatsApp, and social media, and sends you the details while your brickwork company keeps building. From £${pricing.tiers.core.price}/month.`}
   withoutWithScenarios={withoutWithScenarios}
   specialisms={specialisms}
   clientTypes={clientTypes}
   faqs={faqs}
   ctaHeadline="Stop Losing Bricklaying Jobs to Missed Calls"
-  ctaSubhead={`Every call your bricklaying business misses is a customer calling the next brickwork contractor. From £${pricing.tiers.starter.price}/month — respond first, win the work.`}
+  ctaSubhead={`Every call your bricklaying business misses is a customer calling the next brickwork contractor. From £${pricing.tiers.core.price}/month — respond first, win the work.`}
 />

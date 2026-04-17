@@ -1,4 +1,4 @@
-﻿---
+---
 import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
 import pricing from '../../data/pricing.json';
 
@@ -34,22 +34,22 @@ const specialisms = [
 
 const clientTypes = [
   {
-    icon: "🏠",
+    icon: "??",
     title: "Domestic Homeowners",
     description: "Homeowners choosing new flooring for renovations, extensions, or room refreshes. They've been browsing LVT samples on Instagram, comparing engineered wood prices online, or asking neighbours who did their kitchen floor. They want advice on what works for their space, a clear price, and someone who will turn up when they say they will."
   },
   {
-    icon: "🏗️",
+    icon: "???",
     title: "Builders & Developers",
     description: "Main contractors and developers looking for reliable flooring subcontractors for new builds and refurbishments. They need someone who can handle multiple plots, work to programme schedules, and provide consistent quality across different flooring types — LVT in bathrooms, carpet on stairs, engineered wood in living areas."
   },
   {
-    icon: "🏢",
+    icon: "??",
     title: "Commercial & Facilities Managers",
     description: "Office managers, school bursars, healthcare facility coordinators, and retail fit-out companies who need hard-wearing commercial flooring installed quickly and professionally. They often work to tight deadlines — half-term installations, weekend changeovers, or phased refurbishments that cannot disrupt daily operations."
   },
   {
-    icon: "🏘️",
+    icon: "???",
     title: "Landlords & Letting Agents",
     description: "Property managers replacing worn flooring between tenancies. They need quick turnaround, competitive pricing, and a flooring company that can handle LVT for kitchens, vinyl for bathrooms, and carpet for bedrooms — ideally from a single supplier who'll coordinate the lot."
   }
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     question: "How much does it cost for a flooring business?",
-    answer: `The Starter plan is £${pricing.tiers.starter.price}/month and includes AI phone answering (${pricing.tiers.starter.minutes} minutes) plus unlimited website chat — ideal for sole trader fitters handling domestic work. The Core plan at £${pricing.tiers.core.price}/month gives you ${pricing.tiers.core.minutes} minutes for busier flooring companies. Additional channels like WhatsApp, SMS, and Facebook are £${pricing.addOn.price}/month each, or get everything with the All Channels bundle at £${pricing.tiers.all.price}/month. Setup is £${pricing.setup.price} one-time (refundable within 30 days).`
+    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (${pricing.tiers.core.minutes} minutes) plus unlimited website chat — ideal for sole trader fitters handling domestic work. The Core plan at £${pricing.tiers.core.price}/month gives you ${pricing.tiers.core.minutes} minutes for busier flooring companies. Additional channels like WhatsApp, SMS, and Facebook are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} one-time (refundable within 30 days).`
   },
   {
     question: "Is this suitable for a one-person flooring fitting operation?",
@@ -89,18 +89,18 @@ const faqs = [
 
 <TradeHubLayout
   title="Rapid Response AI Receptionist for Flooring Specialists | Rapid Receptionist"
-  description={`AI receptionist for UK flooring specialists, LVT fitters, and carpet installers. Answers calls, captures leads from chat, WhatsApp, and social media while you're laying floors. From £${pricing.tiers.starter.price}/month.`}
+  description={`AI receptionist for UK flooring specialists, LVT fitters, and carpet installers. Answers calls, captures leads from chat, WhatsApp, and social media while you're laying floors. From £${pricing.tiers.core.price}/month.`}
   canonicalUrl="/flooring-specialists/ai-receptionist/"
   tradeName="Flooring Specialist"
   tradeNamePlural="Flooring Specialists"
   tradeSlug="flooring-specialists"
   headline="The Rapid Response AI Receptionist for Flooring Specialists"
   accentWord="Flooring Specialists"
-  subhead={`You cannot answer the phone while you're spreading adhesive, rolling out vinyl, or knee-deep in a herringbone pattern with a deadline. Your AI receptionist picks up every call, captures every lead from chat, WhatsApp, and social media, and delivers the details to you between jobs. From £${pricing.tiers.starter.price}/month.`}
+  subhead={`You cannot answer the phone while you're spreading adhesive, rolling out vinyl, or knee-deep in a herringbone pattern with a deadline. Your AI receptionist picks up every call, captures every lead from chat, WhatsApp, and social media, and delivers the details to you between jobs. From £${pricing.tiers.core.price}/month.`}
   withoutWithScenarios={withoutWithScenarios}
   specialisms={specialisms}
   clientTypes={clientTypes}
   faqs={faqs}
   ctaHeadline="Stop Losing Flooring Jobs to Missed Calls"
-  ctaSubhead={`Every call your flooring business misses is a customer who books someone else. From £${pricing.tiers.starter.price}/month — respond first, win the work.`}
+  ctaSubhead={`Every call your flooring business misses is a customer who books someone else. From £${pricing.tiers.core.price}/month — respond first, win the work.`}
 />

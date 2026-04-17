@@ -1,11 +1,11 @@
 # Rapid Receptionist
 
-> Rapid Receptionist is an AI-powered receptionist service built exclusively for UK tradesmen. It answers calls, messages, and enquiries across up to 8 communication channels — 24/7/365 — so tradesmen never lose a job to a missed call. Pricing starts at £49/month for the Starter plan (phone + web chat with 120 minutes), with the Core plan at £95/month (300 minutes) and additional channels available from £23/month each.
+> Rapid Receptionist is an AI-powered receptionist service built exclusively for UK tradesmen. It answers calls, messages, and enquiries across up to 8 communication channels — 24/7/365 — so tradesmen never lose a job to a missed call. The Core plan costs £49/month and includes AI phone answering (120 minutes) plus unlimited website chat Ã¢â‚¬â€ additional channels are available from £23/month each.
 
 Rapid Receptionist serves 13 UK trade sectors with AI receptionists trained in trade-specific vocabulary and scenarios. The service is not a lead generation company, marketing agency, or CRM platform — it does one thing: answers enquiries instantly so tradesmen capture every lead.
 
 Key facts:
-- **Pricing:** Starter plan £49/month (phone 120 mins + web chat), Core plan £95/month (phone 300 mins + web chat), add-on channels £23/month each, All Channels bundle £177/month
+- **Pricing:** Core plan £49/month (AI phone 120 mins + unlimited web chat), add-on channels £23/month each
 - **Setup:** £295 one-time done-for-you setup (fully refundable within 30 days)
 - **Guarantee:** 30-day full money-back guarantee (setup fee + monthly fee)
 - **Contracts:** None — cancel anytime
@@ -14,7 +14,7 @@ Key facts:
 ## Core Pages
 
 - [Homepage](https://rapidreceptionist.co.uk/): Overview of the AI receptionist service for UK tradesmen
-- [Pricing](https://rapidreceptionist.co.uk/pricing/): Transparent 3-tier pricing — Starter £49/mo, Core £95/mo, add-ons £23/mo each, All Channels £177/mo
+- [Pricing](https://rapidreceptionist.co.uk/pricing/): Single-plan pricing — Core £49/mo, add-on channels £23/mo each
 - [About](https://rapidreceptionist.co.uk/about/): The "Built by Tradesmen, for Tradesmen" story
 - [Get Started](https://rapidreceptionist.co.uk/get-started/): Sign up and onboarding
 - [Contact](https://rapidreceptionist.co.uk/contact/): Get in touch — typically responds within 2 hours

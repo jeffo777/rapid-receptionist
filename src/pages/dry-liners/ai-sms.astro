@@ -1,0 +1,40 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  { icon: 'ðŸ“±', title: 'Instant Text Reply', text: "A site manager texts about adding partitions to an area not on the original scope. You are boarding. The AI replies in seconds and confirms you will call back." },
+  { icon: 'ðŸ—ï¸', title: 'Handles Trade Texts', text: "Main contractors text scope changes, programme updates, and specification queries. The AI captures details for your response." },
+  { icon: 'ðŸ•', title: 'Active Outside Hours', text: "QS teams text at 7am about tender returns. Site managers message at 6pm about programme changes. Every text gets a response." },
+  { icon: 'ðŸ“‹', title: 'Captures Key Details', text: "The AI captures project type, scope, board specification, and timeline from text conversations." },
+  { icon: 'âš¡', title: 'Speed Wins Contracts', text: "When a contractor texts three dry liners, the first to respond gets the site meeting." },
+  { icon: 'ðŸŽ¯', title: 'Professional SMS Presence', text: "Instant replies position your business as responsive â€” the number one quality main contractors look for in subcontractors." }
+];
+
+const faqs = [
+  { question: "How does AI SMS work for dry liners?", answer: "When a contractor texts your business number, the AI responds instantly, capturing project scope, specification, and timeline." },
+  { question: "How much does it cost?", answer: `AI SMS is an add-on at £${pricing.addOn.price}/month. Add it to the Core plan (£${pricing.tiers.core.price}/month).` },
+  { question: "Can I still text back myself?", answer: "Yes. The AI handles initial responses. You continue the conversation when free." },
+  { question: "How is data protected?", answer: "All SMS data is managed under UK GDPR. Encrypted and stored on UK and EU servers." }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Dry Liners | Rapid Receptionist"
+  description={`AI SMS for UK dry liners and dry lining contractors. Instant text responses to every SMS enquiry. £${pricing.addOn.price}/month add-on.`}
+  canonicalUrl="/dry-liners/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Dry Liner"
+  tradeNamePlural="Dry Liners"
+  tradeSlug="dry-liners"
+  headline="AI SMS for Dry Liners"
+  accentWord="Dry Liners"
+  subhead={`A QS texts about a dry lining tender for a school refurbishment â€” nineteen classrooms, fire-rated board throughout. You are on a scaffold tower. Your AI replies in seconds and confirms a callback. £${pricing.addOn.price}/month add-on.`}
+  scenario="It is 11:00am on a Monday. You are fixing plasterboard to metal stud partitions in a dental surgery conversion â€” the walls need to be boarded and skimmed before the specialist fit-out team arrives on Wednesday. Your phone buzzes. A quantity surveyor has texted: 'Hi, we have a dry lining package for a school refurbishment â€” 19 classrooms, corridors, and 2 halls. Fire-rated board throughout. Tender return next Friday. Interested?' Without AI SMS, the text waits until lunch. The QS texted four dry liners â€” two responded within ten minutes. With AI SMS, the reply goes out at 11:01am: 'Thanks for this â€” definitely interested. Can you send the tender documents to our email? Happy to arrange a site visit this week.' By 11:10am, you are on the tender list."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/dry-liners/ai-receptionist/"
+  ctaHeadline="Reply to Every Dry Lining Text Instantly"
+  ctaSubhead={`A QS text could be a six-figure contract. Your AI replies in seconds. £${pricing.addOn.price}/month add-on.`}
+/>

@@ -188,13 +188,11 @@ These must be prominently featured across the website. Group and deploy them str
 > NEVER hardcode prices in any page file. Always import and reference the JSON.
 > Changing a price in pricing.json updates every page on the next build.
 
-## 3-Tier Pricing
+## Single-Plan Pricing
 
 | Item | Details |
 |---|---|
-| **Starter Plan** | £49/month — AI Phone (120 min) + Unlimited Website Chat |
-| **Core Plan** | £95/month — AI Phone (300 min) + Unlimited Website Chat |
-| **All Channels** | £177/month — Core + all 6 add-on channels |
+| **Core Plan** | £49/month — AI Phone (120 min) + Unlimited Website Chat |
 | **Add-on Channels** | £23/month each (WhatsApp, SMS, Email, Facebook, Instagram, Missed Call Text-Back) |
 | **Setup Fee** | £295 (one-time, "done for you") |
 | **Overage** | £0.20/minute |
@@ -210,26 +208,31 @@ import pricing from '../data/pricing.json';
 import pricing from '../../data/pricing.json';
 
 // In hand-written FAQ answers:
-answer: `The Starter plan is £${pricing.tiers.starter.price}/month with ${pricing.tiers.starter.minutes} minutes included — enough for most sole traders.`
+answer: `The Core plan is £${pricing.tiers.core.price}/month with ${pricing.tiers.core.minutes} minutes included — enough for most sole traders.`
 ```
 
 The layout files (`TradeHubLayout.astro`, `ChannelTradeLayout.astro`) already import pricing.json and:
 - Auto-generate `pricingNote` sections from the channel type and pricing data
-- Default CTA subheads reference `pricing.tiers.starter.price`
+- Default CTA subheads reference `pricing.tiers.core.price`
 
-## What's Included — Everything (All Channels Plan)
+## What's Included — Core Plan
 
-- ✅ AI Phone Answering (24/7)
-- ✅ AI Website Chat
-- ✅ AI WhatsApp
-- ✅ AI SMS
-- ✅ AI Email
-- ✅ AI Facebook Messenger
-- ✅ AI Instagram DMs
-- ✅ Missed Call Text-Back
+- ✅ AI Phone Answering (120 minutes/month)
+- ✅ AI Website Chat (unlimited)
 - ✅ Human Escalation (business owner + Rapid Receptionist operators)
 - ✅ Trade-specific AI training
 - ✅ Full "done for you" setup
+- ✅ 24/7/365 availability
+- ✅ Real-time lead notifications
+
+## Add-On Channels (£23/month each)
+
+- AI WhatsApp
+- AI SMS
+- AI Email
+- AI Facebook Messenger
+- AI Instagram DMs
+- Missed Call Text-Back
 
 ## 30-Day Money-Back Guarantee — How It Works
 
@@ -419,7 +422,7 @@ This is Rapid Receptionist's single most powerful sales argument. **Use this dat
 | Claim | Validation |
 |---|---|
 | **Rapid response adds £50,000-£70,000/year to a trade business** | Validated — differential between 100% answer rate and 62% miss rate |
-| **One captured emergency call pays for a year of service** | Validated — at £99/mo, a single emergency job (£150-500) covers months |
+| **One captured emergency call pays for a year of service** | Validated — at £49/mo, a single emergency job (£150-500) covers months |
 | **First responder wins the job 78% of the time** | Validated — multiple sources confirm 50-78% |
 
 ## Where to Use Speed-to-Lead Data
@@ -544,7 +547,7 @@ Each trade hub page must contain these sections in this order:
 ### Section 1: Hero
 - **Headline:** Trade-specific, compelling, includes the trade name
 - **Subhead:** 1-2 sentences explaining what Rapid Receptionist does for this specific trade
-- **Trust row:** `✓ 100% done for you` · `Only £99/month` · `🛡 30-day money-back guarantee · No Contracts`
+- **Trust row:** `✓ 100% done for you` · `Only £49/month` · `🛡 30-day money-back guarantee · No Contracts`
 - **AI Widget:** Interactive chat widget in hero (same concept as DTEAI's HeroJaina)
 
 ### Section 2: Speed-to-Lead Banner
@@ -728,7 +731,7 @@ Rules:
 - Must be unique per page
 
 Example:
-`AI receptionist for UK plumbers. Answers calls, WhatsApp, SMS & 6 more channels 24/7. Only £99/mo. 30-day money-back guarantee. Never miss a job again.`
+`AI receptionist for UK plumbers. Answers calls, WhatsApp, SMS & 6 more channels 24/7. Only £49/mo. 30-day money-back guarantee. Never miss a job again.`
 
 ## Schema Markup
 

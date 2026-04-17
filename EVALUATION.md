@@ -85,10 +85,10 @@ The current DTEAI website contains **~241 pages** built on Astro with 4 layout t
 
 | Item | Price |
 |---|---|
-| Setup fee | £299 (one-time) |
-| Monthly subscription | £99/month |
-| Included talk time | 5 hours |
-| Unlimited messages | ✅ All channels |
+| Setup fee | £295 (one-time) |
+| Monthly subscription | £49/month |
+| Included talk time | 120 minutes |
+| Unlimited messages | ✅ All text channels |
 | Per-minute overage | £0.20/minute |
 | Free trial | ❌ None |
 | Contract length | No contract |
@@ -96,11 +96,11 @@ The current DTEAI website contains **~241 pages** built on Astro with 4 layout t
 
 ### Strategic Rationale (User Confirmed)
 
-- **Single-tier pricing** — Simple, transparent, no confusion. Every customer gets exactly the same 9-channel service.
+- **Single-tier pricing** — Simple, transparent, no confusion. The Core plan includes phone + web chat, with add-on channels available for £23/month each.
 - **Setup fee is retained** — Filters out tyre kickers and ensures committed customers only. Combined with the 30-day full refund guarantee, it's a zero-risk proposition.
 - **No free trial by design** — The 30-day money-back guarantee (covering both setup fee AND monthly fee) provides complete risk reversal without attracting non-serious signups. If a customer doesn't see the benefit after 30 days, everything is removed and they get a full refund.
 - **Unlimited messages** across all text-based channels (SMS, WhatsApp, Email, Chat, Social) — only phone calls consume talk time.
-- **5 hours talk time** — reasonable for most sole traders. The £0.20/minute overage rate is transparent and competitive.
+- **120 minutes talk time** — reasonable for most sole traders. The £0.20/minute overage rate is transparent and competitive.
 
 ---
 
@@ -225,7 +225,7 @@ This is a significant competitive advantage — only 3 of 7 competitors offer an
 
 | Competitor | Entry Price | Mid-Tier | Top Tier | Setup Fee | Value Proposition |
 |---|---|---|---|---|---|
-| **DTEAI** | £99/mo | — | — | £299 | All-in-one, done for you |
+| **DTEAI / Rapid Receptionist** | £49/mo | — | — | £295 | Core plan + add-on channels |
 | **Trade Receptionist** | £29/mo (+VAT) | £59/mo | £119/mo | None | Mobile app, minute-capped — ⚠️ **PRE-LAUNCH** (waitlist only, not live) |
 | **Team-Connect** | **£9.99/mo** | £39.99/mo | £99.99/mo | None | Cheapest entry, minute-capped |
 | **AiRep** | Custom | — | — | Unknown | Agency-managed, premium |
@@ -234,7 +234,7 @@ This is a significant competitive advantage — only 3 of 7 competitors offer an
 | **Trades AI Solutions** | £197/mo | £297/mo | £397/mo | Unknown | Done-for-you, premium |
 
 > [!IMPORTANT]
-> **Pricing observation:** DTEAI's £99/mo is positioned in the mid-market. Team-Connect at £9.99/mo and Trade Receptionist at £29/mo create significant downward pressure on the entry price. However, their lower tiers are minute-capped (500 and 60 minutes respectively) and don't include multi-channel coverage. Trades AI Solutions at £197-£397/mo validates the premium end.
+> **Pricing observation:** Rapid Receptionist's £49/mo Core plan is competitively positioned against Team-Connect at £9.99/mo and Trade Receptionist at £29/mo. The Core plan includes phone + web chat with 120 minutes, and add-on channels are available at £23/month each. Trades AI Solutions at £197-£397/mo validates the premium end.
 
 ---
 
@@ -257,7 +257,7 @@ This is a significant competitive advantage — only 3 of 7 competitors offer an
 5. **No mobile app** — Trade Receptionist has an app; this is increasingly expected.
 6. **No call analytics or ROI reporting** — 2 competitors offer dashboards with call data and ROI metrics.
 7. **No social proof** — Zero testimonials, reviews, or case studies published.
-8. **Price perception** — £99/mo is 3-10x the entry price of key competitors (though their cheapest plans are limited).
+8. **Price perception** — £49/mo Core plan is competitively priced and comparable to key competitors.
 9. **No self-service setup** — Competitors advertise "5 minute setup"; DTEAI requires a consultation.
 
 ---
@@ -278,7 +278,7 @@ The following features were identified as competitor advantages but have been **
 | **Demo Video Content** | Several competitors | ❌ Not at launch | The AI widget in the hero IS the live demo. |
 | **ROI Calculator** | 1 competitor | ❌ Not at launch | Simplicity over tools. |
 | **Case Studies Pages** | Industry best practice | ❌ Not at launch | Testimonials handle social proof. Case studies can come later from real customers. |
-| **Tiered Pricing** | 3/6 competitors | ❌ Single tier retained | One simple price (£99/mo) is clearer and avoids confusion. |
+| **Tiered Pricing** | 3/6 competitors | ❌ Single Core plan | One simple Core plan (£49/mo) with optional add-on channels is clearer and avoids confusion. |
 
 ### ✅ DECIDED: Keeping at Launch
 
@@ -286,7 +286,7 @@ The following features were identified as competitor advantages but have been **
 |---|---|---|
 | **9-channel AI coverage** | ✅ Core offering | The primary differentiator — unmatched by any competitor. |
 | **Human escalation** | ✅ Included | AI escalates to business owner or Rapid Receptionist human operators. |
-| **Setup fee (£299)** | ✅ Retained | Filters non-serious enquiries. Zero risk with 30-day full refund. |
+| **Setup fee (£295)** | ✅ Retained | Filters non-serious enquiries. Zero risk with 30-day full refund. |
 | **30-day money-back guarantee** | ✅ Full refund | Covers both setup fee AND monthly fee. Everything removed from their system. |
 | **Live AI widget in hero** | ✅ Same as DTEAI | Visitors can speak to the AI receptionist directly on the website (once GoHighLevel is connected). |
 | **Social proof (testimonials)** | ✅ 10 prepared | Rewritten and ready for deployment. |
@@ -338,12 +338,12 @@ Based on competitive research, these high-value keywords currently have no dedic
 
 ### ✅ RESOLVED: Pricing Position
 
-The single-tier model at £99/mo with a £299 setup fee is **confirmed and strategically sound** given the following:
+The single Core plan at £49/mo with a £295 setup fee is **confirmed and strategically sound** given the following:
 
 1. **Setup fee filters tyre kickers** — Only committed tradesmen pay. Combined with the 30-day full refund, it's zero risk.
 2. **One price eliminates confusion** — Tradesmen don't want to compare feature grids. One price, everything included.
 3. **30-day money-back replaces free trials** — More powerful than a trial because the customer commits and gets the full "done for you" setup. If it doesn't work, everything is reversed.
-4. **The value proposition justifies the price** — When one captured emergency call can pay for a full year of service (see §4.5 Speed-to-Lead data), £99/mo is demonstrably excellent value.
+4. **The value proposition justifies the price** — When one captured emergency call can pay for a full year of service (see §4.5 Speed-to-Lead data), £49/mo is demonstrably excellent value.
 
 ---
 
@@ -427,27 +427,29 @@ The one potential addition worth considering for launch is **Heating Engineers**
 
 | Item | Details |
 |---|---|
-| **Monthly Price** | £99/month |
-| **Setup Fee** | £299 (one-time, "done for you") |
-| **Talk Time** | 5 hours included |
+| **Monthly Price** | £49/month (Core plan) |
+| **Setup Fee** | £295 (one-time, "done for you") |
+| **Talk Time** | 120 minutes included |
+| **Add-On Channels** | £23/month each |
 | **Messages** | Unlimited (all text-based channels) |
 | **Overage** | £0.20/minute |
 | **Guarantee** | 30-day full money-back (setup fee + monthly fee) |
 | **Contract** | None — cancel anytime |
 
-**What's included — everything:**
-- ✅ AI Phone Answering (24/7)
-- ✅ AI Website Chat
-- ✅ AI WhatsApp
-- ✅ AI SMS
-- ✅ AI Email
-- ✅ AI Facebook Messenger
-- ✅ AI Instagram DMs
-- ✅ AI GBP Messages
-- ✅ Missed Call Text-Back
+**What's included in Core plan:**
+- ✅ AI Phone Answering (120 minutes/month, 24/7)
+- ✅ AI Website Chat (unlimited)
 - ✅ Human Escalation (business owner + Rapid Receptionist operators)
 - ✅ Trade-specific AI training
 - ✅ Full "done for you" setup
+
+**Add-on channels (£23/month each):**
+- AI WhatsApp
+- AI SMS
+- AI Email
+- AI Facebook Messenger
+- AI Instagram DMs
+- Missed Call Text-Back
 
 **Why this model works:**
 - **One price = zero confusion.** Tradesmen don't want to compare feature grids.
@@ -640,7 +642,7 @@ The following statistics are sourced from peer-reviewed studies and reputable in
 | Claim | Validation |
 |---|---|
 | **Responding fast can add £50,000-£70,000/year to a trade business** | ✅ **VALIDATED.** UK research shows tradespeople lose £24,000/year from missed calls; contractors lose £50,000+. The differential between a business that answers 100% of calls instantly vs one that misses 62% is conservatively £40,000-£70,000 in captured revenue. For emergency trades (plumbers, locksmiths, electricians), the figure can exceed this significantly due to premium emergency rates. |
-| **One captured emergency call pays for a year of Rapid Receptionist** | ✅ **VALIDATED.** At £99/mo (£1,188/year + £299 setup = £1,487 total first year), a single emergency lockout (£150-300), burst pipe (£200-500), or electrical emergency (£200+) captured during off-hours pays for multiple months of service. |
+| **One captured emergency call pays for a year of Rapid Receptionist** | ✅ **VALIDATED.** At £49/mo (£588/year + £295 setup = £883 total first year), a single emergency lockout (£150-300), burst pipe (£200-500), or electrical emergency (£200+) captured during off-hours pays for multiple months of service. |
 | **First responder wins the job 78% of the time** | ✅ **VALIDATED.** Multiple sources confirm 50-78% of customers buy from the first responder. |
 
 ### How to Use This Data on the Website
@@ -665,7 +667,7 @@ The following statistics are sourced from peer-reviewed studies and reputable in
 | **3** | **Integrate testimonials** — 10 rewritten testimonials | ✅ Content ready | See [rewritten_testimonials.md](file:///C:/Users/jeffo/.gemini/antigravity/brain/c4bffdab-0f2b-4bd2-a1da-23d443728aa1/rewritten_testimonials.md) |
 | **4** | **Implement speed-to-lead messaging** — use verified data throughout | ✅ Data verified | See §4.5 above |
 | **5** | **Set up GoHighLevel** — connect AI widget for live demo in hero | 🔲 Pending | Same system as DTEAI |
-| **6** | **Build pricing page** — single tier, £99/mo, money-back badge | 🔲 Pending | Simple, clean layout |
+| **6** | **Build pricing page** — single Core plan, £49/mo, money-back badge | ✅ Complete | Simple, clean layout |
 | **7** | **Launch** — deploy to production | 🔲 Pending | After all above complete |
 
 ---

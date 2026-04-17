@@ -1,4 +1,4 @@
-﻿---
+---
 import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
 import pricing from '../../data/pricing.json';
 
@@ -34,22 +34,22 @@ const specialisms = [
 
 const clientTypes = [
   {
-    icon: "🏠",
+    icon: "??",
     title: "Domestic Homeowners",
     description: "Homeowners calling about re-skims, ceiling repairs, Artex removal, or plaster patching — often after discovering damage or during a renovation. Whether they searched for a plasterer, a plastering company, or a local plastering contractor, they want reassurance, a rough timeline, and confidence that someone will get back to them."
   },
   {
-    icon: "🏗️",
+    icon: "???",
     title: "Builders & Main Contractors",
     description: "Site managers and builders looking for plastering subcontractors and rendering contractors on new builds, extensions, and refurbishment projects. They need quick availability checks from reliable plastering contractors and often work to tight programme schedules."
   },
   {
-    icon: "🏢",
+    icon: "??",
     title: "Landlords & Property Managers",
     description: "Letting agents and landlords needing plaster repairs between tenancies, often at short notice. They want a plastering business that responds quickly, provides clear pricing, and communicates reliably across multiple properties."
   },
   {
-    icon: "🔧",
+    icon: "??",
     title: "Insurance & Restoration Work",
     description: "Loss adjusters, restoration companies, and insurers sourcing plastering firms for flood, fire, and leak damage repairs. These enquiries are time-sensitive and they expect any plastering company they contact to respond within hours, not days."
   }
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     question: "How much does it cost for a plastering business or plastering contractor?",
-    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat — covering the two channels that generate the most leads for plastering businesses. Additional channels like WhatsApp, SMS, Facebook, Instagram, email, and missed call text-back are £${pricing.addOn.price}/month each. The All Channels bundle at £${pricing.tiers.all.price}/month covers everything. The pricing is the same whether you are a sole trader plasterer, a plastering contractor with a crew, or a rendering company — there is no difference based on business size. There is a one-time setup fee of £${pricing.setup.price} (refundable if you cancel within 30 days).`
+    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat — covering the two channels that generate the most leads for plastering businesses. Additional channels like WhatsApp, SMS, Facebook, Instagram, email, and missed call text-back are £${pricing.addOn.price}/month each. The pricing is the same whether you are a sole trader plasterer, a plastering contractor with a crew, or a rendering company — there is no difference based on business size. There is a one-time setup fee of £${pricing.setup.price} (refundable if you cancel within 30 days).`
   },
   {
     question: "Is this suitable for a small plastering company or sole trader?",
@@ -89,18 +89,18 @@ const faqs = [
 
 <TradeHubLayout
   title="Rapid Response AI Receptionist for Plasterers | Rapid Receptionist"
-  description={`AI receptionist for UK plasterers, plastering businesses, and rendering contractors. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are skimming, rendering, or on site. From £${pricing.tiers.starter.price}/month.`}
+  description={`AI receptionist for UK plasterers, plastering businesses, and rendering contractors. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are skimming, rendering, or on site. From £${pricing.tiers.core.price}/month.`}
   canonicalUrl="/plasterers/ai-receptionist/"
   tradeName="Plasterer"
   tradeNamePlural="Plasterers"
   tradeSlug="plasterers"
   headline="The Rapid Response AI Receptionist for Plasterers"
   accentWord="Plasterers"
-  subhead={`Whether you run a one-man plastering business or a plastering contractor with a crew of six, the problem is the same — you cannot answer the phone while you are on the tools. Your AI receptionist answers every call, captures every lead from chat, WhatsApp, and social media, and sends you the details. From £${pricing.tiers.starter.price}/month.`}
+  subhead={`Whether you run a one-man plastering business or a plastering contractor with a crew of six, the problem is the same — you cannot answer the phone while you are on the tools. Your AI receptionist answers every call, captures every lead from chat, WhatsApp, and social media, and sends you the details. From £${pricing.tiers.core.price}/month.`}
   withoutWithScenarios={withoutWithScenarios}
   specialisms={specialisms}
   clientTypes={clientTypes}
   faqs={faqs}
   ctaHeadline="Stop Losing Plastering Jobs to Missed Calls"
-  ctaSubhead={`Every call your plastering business misses is a customer calling the next plastering contractor. From £${pricing.tiers.starter.price}/month — respond first, win the work.`}
+  ctaSubhead={`Every call your plastering business misses is a customer calling the next plastering contractor. From £${pricing.tiers.core.price}/month — respond first, win the work.`}
 />

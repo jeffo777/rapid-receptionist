@@ -1,0 +1,40 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  { icon: 'ðŸ‘¥', title: 'Captures Recommendations', text: "A fit-out company asks in a trade Facebook group: 'Anyone know a reliable dry liner for a big office job?' Someone tags your page. They message you. The AI responds instantly and captures the project." },
+  { icon: 'âš¡', title: 'Responds Before Competitors', text: "Facebook messages from contractors are time-sensitive. Your AI responds in seconds â€” before other dry liners notice the notification." },
+  { icon: 'ðŸ—ï¸', title: 'Handles Commercial Enquiries', text: "Office fit-outs, retail units, residential developments â€” the AI captures the scope regardless of project type." },
+  { icon: 'ðŸ•', title: 'Active During Peak Hours', text: "Contractors browse Facebook in the evening and at weekends. The AI catches every message." },
+  { icon: 'ðŸ“‹', title: 'Structured Leads', text: "The AI captures project type, scope, specification, and timeline â€” delivering a brief you can act on." },
+  { icon: 'ðŸ”—', title: 'Project Photos to Contracts', text: "You post a completed MF ceiling installation. A contractor messages asking about availability. The AI captures the lead." }
+];
+
+const faqs = [
+  { question: "How does AI Facebook Messenger work for dry liners?", answer: "When someone messages your Facebook page, the AI responds immediately, capturing the dry lining work needed, project scope, and contact details." },
+  { question: "How much does it cost?", answer: `AI Facebook Messenger is an add-on at £${pricing.addOn.price}/month. Add it to the Core plan (£${pricing.tiers.core.price}/month).` },
+  { question: "Can I reply personally?", answer: "Yes. The AI handles the initial response. You continue the conversation when free." },
+  { question: "How is data protected?", answer: "All data is managed under UK GDPR. Encrypted and stored on UK and EU servers, shared only with you." }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Dry Liners | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK dry liners and dry lining contractors. Instant Messenger responses to commercial and domestic enquiries. £${pricing.addOn.price}/month add-on.`}
+  canonicalUrl="/dry-liners/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Dry Liner"
+  tradeNamePlural="Dry Liners"
+  tradeSlug="dry-liners"
+  headline="AI Facebook Messenger for Dry Liners"
+  accentWord="Dry Liners"
+  subhead={`A main contractor sees your MF ceiling installation photos on Facebook. They message your page: 'We need a dry lining subbie for a 60-unit residential block. Available?' You are on site boarding. Your AI captures the lead before you put the screw gun down. £${pricing.addOn.price}/month add-on.`}
+  scenario="It is 8pm on a Wednesday. A contracts manager is scrolling Facebook after a long site day. He sees a post from a mate tagging your page â€” photos of a clean, precise MF ceiling installation in a commercial gym conversion. He messages your page: 'Nice work. We have a care home refurbishment coming up â€” 30 bedrooms, corridors, and communal areas. All dry lining. Interested?' You are at home. Without AI Messenger, the message waits until you check your page â€” maybe Thursday evening, maybe Friday. With AI Messenger, the reply comes at 8:01pm: 'Thanks for getting in touch. We would definitely be interested. Can you share the site location and approximate start date?' By 8:15pm, you have a care home dry lining lead with the contracts manager's phone number."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/dry-liners/ai-receptionist/"
+  ctaHeadline="Turn Facebook Enquiries into Dry Lining Contracts"
+  ctaSubhead={`A contractor's message could be your next major project. Your AI responds instantly. £${pricing.addOn.price}/month add-on.`}
+/>

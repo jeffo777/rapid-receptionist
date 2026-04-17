@@ -4,12 +4,12 @@ import pricing from '../../data/pricing.json';
 
 const withoutWithScenarios = [
   {
-    without: "A homeowner calls while you are lifting an aluminium bi-fold into a new extension opening. Your mate is holding the frame, the spirit level is on the threshold, and you cannot let go. Their call goes to voicemail. They wanted replacement windows for the entire house — ten units worth of work — but they call the next company on their list.",
+    without: "A homeowner calls while you are lifting an aluminium bi-fold into a new extension opening. Your mate is holding the frame, the spirit level is on the threshold, and you cannot let go. Their call goes to voicemail. They wanted replacement windows for the entire house â€” ten units worth of work â€” but they call the next company on their list.",
     with: "The same homeowner calls. Your AI receptionist answers: 'Good morning, thank you for calling, how can I help?' It captures the property type, number of windows, current frame material, and whether they want UPVC, aluminium, or timber. You finish the bi-fold installation and call them back at lunch with the full brief."
   },
   {
-    without: "A builder emails on Friday evening about supplying and fitting windows and doors for a six-plot development — a mix of casements, French doors, and sliding patios. You do not check email until Monday. By then, two competitors have acknowledged the spec and one has quoted.",
-    with: "The email gets an instant acknowledgement confirming receipt. Monday morning, you open a clean lead summary — six plots, window and door schedule, programme timeline — and call the builder first thing."
+    without: "A builder emails on Friday evening about supplying and fitting windows and doors for a six-plot development â€” a mix of casements, French doors, and sliding patios. You do not check email until Monday. By then, two competitors have acknowledged the spec and one has quoted.",
+    with: "The email gets an instant acknowledgement confirming receipt. Monday morning, you open a clean lead summary â€” six plots, window and door schedule, programme timeline â€” and call the builder first thing."
   },
   {
     without: "A property manager WhatsApps you about replacing a failed sealed unit in a rental flat. The tenant is complaining about condensation between the panes. You are fitting a composite front door across town and your phone is in the van. The message sits unread for five hours.",
@@ -34,47 +34,47 @@ const specialisms = [
 
 const clientTypes = [
   {
-    icon: "🏠",
+    icon: "ðŸ ",
     title: "Domestic Homeowners",
     description: "Homeowners replacing old windows or upgrading to energy-efficient glazing. They have been comparing quotes online, worrying about condensation in their twenty-year-old sealed units, or planning a new extension that needs bi-folds. They want a FENSA-registered installer who explains the options clearly, turns up when they say they will, and leaves the house clean."
   },
   {
-    icon: "🏗️",
+    icon: "ðŸ—ï¸",
     title: "Builders & Developers",
-    description: "Main contractors and developers needing window and door packages for new builds and conversions. They want reliable supply and installation subcontractors who can handle full window schedules — casements, French doors, bi-folds, and front doors — across multiple plots to programme."
+    description: "Main contractors and developers needing window and door packages for new builds and conversions. They want reliable supply and installation subcontractors who can handle full window schedules â€” casements, French doors, bi-folds, and front doors â€” across multiple plots to programme."
   },
   {
-    icon: "🏘️",
+    icon: "ðŸ˜ï¸",
     title: "Landlords & Property Managers",
     description: "Landlords replacing failed sealed units, upgrading single glazing to comply with EPC regulations, or fitting new doors in rental properties between tenancies. They need competitive pricing, quick turnaround, and a company that handles the FENSA certificate."
   },
   {
-    icon: "🏛️",
+    icon: "ðŸ›ï¸",
     title: "Conservation & Heritage Projects",
-    description: "Homeowners and architects working on listed buildings or properties in conservation areas who need sympathetic glazing solutions — slim-profile aluminium, timber flush casements, or secondary glazing that maintains the building's character while meeting modern performance standards."
+    description: "Homeowners and architects working on listed buildings or properties in conservation areas who need sympathetic glazing solutions â€” slim-profile aluminium, timber flush casements, or secondary glazing that maintains the building's character while meeting modern performance standards."
   }
 ];
 
 const faqs = [
   {
     question: "Does the AI understand window and door terminology?",
-    answer: "Yes. During setup, your AI receptionist is configured with glazing-specific vocabulary — UPVC, aluminium, timber, composite doors, bi-folds, sliding patios, casements, tilt-and-turn, sealed units, trickle vents, FENSA, Certass, energy ratings, and more. When a homeowner says 'the sealed units have blown in the front bay window,' the AI understands exactly what they mean."
+    answer: "Yes. During setup, your AI receptionist is configured with glazing-specific vocabulary â€” UPVC, aluminium, timber, composite doors, bi-folds, sliding patios, casements, tilt-and-turn, sealed units, trickle vents, FENSA, Certass, energy ratings, and more. When a homeowner says 'the sealed units have blown in the front bay window,' the AI understands exactly what they mean."
   },
   {
     question: "Can the AI handle calls about both windows and doors?",
-    answer: "Absolutely. Whether someone calls about replacing ten windows, fitting a single composite front door, installing bi-folds in a new extension, or fixing a dropped hinge on a French door — the AI captures the exact scope, product type, and customer details."
+    answer: "Absolutely. Whether someone calls about replacing ten windows, fitting a single composite front door, installing bi-folds in a new extension, or fixing a dropped hinge on a French door â€” the AI captures the exact scope, product type, and customer details."
   },
   {
     question: "What happens if someone calls about a security emergency?",
-    answer: "The AI recognises urgency. If a caller reports a smashed window, a break-in, a door that will not lock, or glass that needs boarding up, the AI escalates immediately — trying your mobile first, then our human operators. Routine replacement window enquiries are handled as standard leads."
+    answer: "The AI recognises urgency. If a caller reports a smashed window, a break-in, a door that will not lock, or glass that needs boarding up, the AI escalates immediately â€” trying your mobile first, then our human operators. Routine replacement window enquiries are handled as standard leads."
   },
   {
     question: "How much does it cost for a window and door company?",
-    answer: `The Starter plan is £${pricing.tiers.starter.price}/month with ${pricing.tiers.starter.minutes} minutes of AI phone answering plus unlimited website chat. The Core plan at £${pricing.tiers.core.price}/month gives you ${pricing.tiers.core.minutes} minutes for busier companies. Additional channels like WhatsApp and Facebook are £${pricing.addOn.price}/month each, or get the All Channels bundle at £${pricing.tiers.all.price}/month. Setup is £${pricing.setup.price} one-time (refundable within 30 days).`
+    answer: `The Core plan is £${pricing.tiers.core.price}/month with ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Additional channels like WhatsApp and Facebook are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} one-time (refundable within 30 days).`
   },
   {
     question: "Is this suitable for a small window fitting operation?",
-    answer: "It was built for exactly this. A two-man window fitting team cannot stop mid-installation to answer calls — you are holding frames, drilling fixings, and sealing units. The AI handles every call and sends you the details so you can follow up between installations."
+    answer: "It was built for exactly this. A two-man window fitting team cannot stop mid-installation to answer calls â€” you are holding frames, drilling fixings, and sealing units. The AI handles every call and sends you the details so you can follow up between installations."
   },
   {
     question: "Can I still take calls when I am available?",
@@ -89,18 +89,18 @@ const faqs = [
 
 <TradeHubLayout
   title="Rapid Response AI Receptionist for Window & Door Installers | Rapid Receptionist"
-  description={`AI receptionist for UK window and door installers, glazing companies, and FENSA-registered fitters. Answers calls, captures leads from chat, WhatsApp, and social media while you are on site. From £${pricing.tiers.starter.price}/month.`}
+  description={`AI receptionist for UK window and door installers, glazing companies, and FENSA-registered fitters. Answers calls, captures leads from chat, WhatsApp, and social media while you are on site. From £${pricing.tiers.core.price}/month.`}
   canonicalUrl="/window-door-installers/ai-receptionist/"
   tradeName="Window & Door Installer"
   tradeNamePlural="Window & Door Installers"
   tradeSlug="window-door-installers"
   headline="The Rapid Response AI Receptionist for Window & Door Installers"
   accentWord="Window & Door Installers"
-  subhead={`You cannot answer the phone while you are lifting a frame into an opening, drilling through masonry, or fitting a bi-fold threshold. Your AI receptionist picks up every call, captures every lead from chat, WhatsApp, and social media, and sends you the details between installations. From £${pricing.tiers.starter.price}/month.`}
+  subhead={`You cannot answer the phone while you are lifting a frame into an opening, drilling through masonry, or fitting a bi-fold threshold. Your AI receptionist picks up every call, captures every lead from chat, WhatsApp, and social media, and sends you the details between installations. From £${pricing.tiers.core.price}/month.`}
   withoutWithScenarios={withoutWithScenarios}
   specialisms={specialisms}
   clientTypes={clientTypes}
   faqs={faqs}
   ctaHeadline="Stop Losing Window & Door Jobs to Missed Calls"
-  ctaSubhead={`Every call your glazing business misses is a customer booking another installer. From £${pricing.tiers.starter.price}/month — respond first, win the work.`}
+  ctaSubhead={`Every call your glazing business misses is a customer booking another installer. From £${pricing.tiers.core.price}/month â€” respond first, win the work.`}
 />
