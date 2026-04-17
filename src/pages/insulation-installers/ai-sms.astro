@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Captures Text Enquiries from Landlords and Agents',
+    text: "Letting agents and landlords often text rather than call — a quick message checking availability for an insulation survey at a rental property before a tenancy changeover. If you are operating a cavity wall injection pump or waist-deep in loft insulation, that text goes unread for hours. The AI responds within seconds, confirms your interest, and captures the property details."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Complete Briefs from Short Texts',
+    text: "A text saying 'can you do loft insulation for 4 houses in Mansfield?' is just the start. The AI asks follow-up questions — property types, current insulation depth, access arrangements, and the sender's contact details. What arrives in your lead summary is a fully formed enquiry, not a vague three-word message you need to decode."
+  },
+  {
+    icon: '🔔',
+    title: 'Responds to ECO Scheme Referral Texts',
+    text: "Energy assessors and ECO scheme coordinators often send quick texts to check installer availability — 'got two cavity wall referrals in NG postcode, can you do this week?' A fast reply secures the referral. A slow reply means the assessor passes the job to the next company on their list. The AI responds immediately, confirms availability, and the referral stays with you."
+  },
+  {
+    icon: '🌙',
+    title: 'Handles Evening and Weekend Texts',
+    text: "Homeowners text about insulation when it is on their mind — typically when they are sitting in a cold room on a winter evening or reviewing energy bills at the weekend. The AI provides a professional response at any hour, captures the property and contact details, and you see the lead summary first thing on Monday."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Summaries from Fragmented Messages',
+    text: "People rarely send one complete text — they split it across three or four messages. The AI waits for the sender to finish, processes the full conversation, and delivers a clean lead summary: insulation type needed, property details, location, timeline, and contact information. No more scrolling through fragmented text threads."
+  },
+  {
+    icon: '📱',
+    title: 'Uses Your Business Number',
+    text: "AI SMS works through your existing business number. Landlords, homeowners, and letting agents text the same number they would call. The AI responds from that number, keeping everything consistent. Your personal phone stays private."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a text about insulation?",
+    answer: "The AI reads the incoming text, identifies it as a business enquiry, and responds professionally. If the message contains enough detail — 'Need cavity wall insulation for a 3-bed semi in Basford, 1960s build' — the AI confirms interest and logs the lead. If the message is brief, the AI asks targeted follow-up questions about the property type, which insulation they need, their location, and their contact details. The exchange feels natural and businesslike."
+  },
+  {
+    question: "Will the person know it is an AI responding?",
+    answer: "The replies are professional and natural — the kind of response a well-run insulation company would send. The AI identifies itself as your business, not as an AI service. Most people who text a tradesperson expect a text back, and the speed and quality of the reply creates a positive impression regardless of who — or what — composed it."
+  },
+  {
+    question: "What if someone texts about multiple properties?",
+    answer: "Landlord and housing association texts often reference multiple properties — 'need loft insulation for 8 rental properties in NG postcode.' The AI captures the portfolio size, general location, type of insulation, and any timeline mentioned. If the sender provides individual addresses or property types in follow-up messages, those are consolidated into a single lead summary. You see the full picture rather than a scattered thread."
+  },
+  {
+    question: "What does AI SMS cost for an insulation company?",
+    answer: `The add-on charge for AI SMS is £${pricing.addOn.price}/month on top of the Core plan. For insulation businesses receiving referral texts from ECO assessors, availability checks from letting agents, and enquiry texts from homeowners, this channel captures a communication style that many of your customers prefer. One captured landlord portfolio or housing association enquiry covers months of the add-on cost.`
+  },
+  {
+    question: "Can I reply to texts myself when I am available?",
+    answer: "When you respond directly to a text message, the AI steps back and lets you continue the conversation. During quieter periods — driving between properties, doing paperwork at home — you handle texts personally. During active work — in a loft, on a scaffold, operating equipment — the AI covers. The transition is seamless and the sender experiences a continuous, professional conversation."
+  },
+  {
+    question: "Are text messages stored securely?",
+    answer: "Every SMS conversation — including property addresses, homeowner details, landlord portfolio information, and any grant or funding references — is encrypted and stored on UK and EU servers under UK GDPR. The data is shared exclusively with you and is never accessed by third parties. For insulation enquiries where customers sometimes share financial details related to ECO eligibility, this level of protection meets the highest data handling standards."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Insulation Installers | Rapid Receptionist"
+  description={`AI SMS for UK insulation companies. Responds to texts from homeowners, landlords, and ECO assessors instantly while you are on site. Captures insulation enquiries and referrals. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/insulation-installers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Insulation Installer"
+  tradeNamePlural="Insulation Installers"
+  tradeSlug="insulation-installers"
+  headline="AI SMS for Insulation Installers"
+  accentWord="Insulation Installers"
+  subhead="An energy assessor texts you at 11am: 'Got three cavity wall referrals in the NG9 area, all eligible under ECO4. Can you do surveys this week?' You are in a loft space in Arnold, headlamp on, mineral wool fibres floating in the beam of light. Without AI SMS, that text sits unread until 4pm. The assessor, needing a quick turnaround, forwards the referrals to another installer at midday. With AI SMS, the reply goes back in seconds, confirms your availability, and three pre-qualified leads stay with you."
+  scenario="It is 3:20pm on a Monday. You are on a terraced street in Stoke-on-Trent, drilling injection points into the front elevation of a 1930s semi-detached — cavity wall injection equipment running, dust mask on, drill template in one hand. Your phone is on the dashboard of the van, fifteen metres away. A letting agent texts you: 'Hi, one of our managed properties in Hanley needs loft insulation urgently — tenant is complaining about condensation and mould in the back bedroom ceiling. The landlord wants it sorted before the weekend. Can you survey it tomorrow?' Without AI SMS, you see the text on your tea break at 4pm and reply 'yes, can do.' But the agent needed a response by 2pm for the landlord's approval and has already booked another insulator who replied within ten minutes. With AI SMS, the agent gets an immediate professional response: 'Thank you for your message. We can survey the property this week. Could you send the property address and confirm the tenant's availability, and one of our team will arrange a time?' The agent sends the address and confirms the tenant is home mornings. At 4pm you see the full lead summary — property address, insulation issue, urgency, tenant availability — and call the agent to confirm a Tuesday morning survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/insulation-installers/ai-receptionist/"
+  ctaHeadline="Never Miss an ECO Referral or Landlord Text Again"
+  ctaSubhead={`ECO assessors and letting agents text first and wait for the fastest reply. The AI makes sure that text gets answered. Add-on at £${pricing.addOn.price}/month.`}
+/>

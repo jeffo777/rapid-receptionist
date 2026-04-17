@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Visitors Searching for Insulation Installers',
+    text: "Most insulation company website traffic comes from homeowners searching 'cavity wall insulation near me' or 'loft insulation installer.' They land on your site, scan your services, and either call or leave. A chat widget gives them a third option — asking questions about your coverage area, insulation types, and pricing before committing to a phone call. For cautious homeowners comparing companies, live chat captures those who would otherwise click back to the search results."
+  },
+  {
+    icon: '📐',
+    title: 'Answers Technical Insulation Questions',
+    text: "Website visitors ask specific questions — 'do you do spray foam or just mineral wool?' or 'can you insulate a solid wall property?' or 'is my house suitable for cavity wall insulation?' The AI responds based on your service profile, keeping the visitor engaged rather than forcing them to phone or email for basic information. Every conversation is logged and delivered to you as a qualified lead."
+  },
+  {
+    icon: '🕐',
+    title: 'Engages Visitors Outside Office Hours',
+    text: "Homeowners research insulation in the evening — reading energy saving guides, checking their EPC rating, and then searching for local installers. A website visitor at 9pm who clicks on your cavity wall insulation page and sees a chat widget asking 'Can I help you with your insulation enquiry?' is far more likely to engage than one who finds only a phone number and a contact form. The AI converts evening browsers into morning leads."
+  },
+  {
+    icon: '📊',
+    title: 'Pre-qualifies Enquiries Before You Call',
+    text: "The chat naturally gathers key details — property type, age, construction method, which areas need insulating, whether they have had an energy assessment, and their postcode. By the time you see the lead summary, you know whether it is a straightforward loft top-up in a 1990s detached house or a complex solid-wall retrofit in a Victorian terrace — and you can prioritise accordingly."
+  },
+  {
+    icon: '🔗',
+    title: 'Complements Your ECO or Grant Information Pages',
+    text: "If your website has pages about ECO funding, Green Deal, or local authority insulation grants, visitors reading those pages often have follow-up questions — 'does my benefit type qualify?' or 'how long does the application take?' The chat widget is right there to continue the conversation, capture their details, and route them to you as a funded lead."
+  },
+  {
+    icon: '✅',
+    title: 'No Extra Cost — Included in Your Plan',
+    text: `AI Website Chat comes bundled with the Core plan at £${pricing.tiers.core.price}/month. Adding it to your website takes under five minutes — a small JavaScript snippet pasted into your site header or footer. It works on WordPress, Squarespace, Wix, and any custom-built site. There is no per-conversation charge and no limit on the number of chats.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add the chat widget to my insulation company website?",
+    answer: "You receive a short JavaScript code snippet during setup. You paste it into your website header, footer, or use a plugin if you are on WordPress or similar. The process takes under five minutes. The chat bubble then appears on every page, styled to match your brand colours. If you are not confident editing your website, we can guide you through it step by step or coordinate with your web developer directly."
+  },
+  {
+    question: "Can the AI explain different insulation types to website visitors?",
+    answer: "During setup, you tell us exactly what services you offer — cavity wall, loft, spray foam, EWI, floor insulation, IWI — and the AI uses this to respond accurately. If a visitor asks 'what type of insulation is best for a 1930s semi?', the AI engages with enough knowledge to keep the conversation going and captures the enquiry for your follow-up. It does not provide detailed technical recommendations — that is your expertise — but it keeps the visitor on your site rather than searching for a competitor."
+  },
+  {
+    question: "What details does the chat collect?",
+    answer: "The AI has a natural conversation that builds a picture of the visitor's needs — property type and approximate age, which areas need insulating, whether they have had an energy assessment or EPC, whether they are interested in funded schemes, their postcode, and their contact details. For insulation businesses, this pre-qualification is particularly valuable because it reveals whether the enquiry is likely to involve straightforward work (loft top-up) or a more complex assessment (solid wall, non-traditional construction)."
+  },
+  {
+    question: "Will the chat widget affect my website speed?",
+    answer: "The chat script loads asynchronously after the rest of your page content has rendered, so visitors see your website at full speed. The performance impact is negligible. Most insulation company websites include property images, energy rating graphics, and accreditation logos that are significantly heavier than the chat snippet. You will not notice any difference in page load time."
+  },
+  {
+    question: "Is AI Website Chat charged separately?",
+    answer: `No — website chat is included in the Core plan at £${pricing.tiers.core.price}/month with no additional fee. For insulation companies, phone answering and website chat combined cover the two main ways homeowners and landlords make initial contact — calling your number after finding it online, and browsing your website to compare services. Both are covered by a single monthly plan.`
+  },
+  {
+    question: "How is chat data from website visitors handled?",
+    answer: "Every chat conversation is recorded, summarised, and delivered to you as a structured lead. Visitor data — including property details, contact information, and any funding or benefit information they share — is encrypted and stored on UK and EU servers under UK GDPR. The data is shared only with you and is never used for advertising, analytics, or any third-party purpose. For insulation enquiries where visitors sometimes share sensitive financial details related to grant eligibility, this level of data protection is particularly important."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Insulation Installers | Rapid Receptionist"
+  description={`AI website chat for UK insulation companies. Engages visitors browsing your cavity wall, loft, and EWI insulation pages — answers questions and captures leads 24/7. Included in the Core plan at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/insulation-installers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Insulation Installer"
+  tradeNamePlural="Insulation Installers"
+  tradeSlug="insulation-installers"
+  headline="AI Website Chat for Insulation Companies"
+  accentWord="Insulation Companies"
+  subhead="A homeowner in Nottingham searches 'cavity wall insulation near me,' finds your website, and browses your services page. She wants to know if her 1960s semi qualifies for cavity wall insulation and whether there is any funding available. Without a chat widget, she reads your page, cannot find the answer, and clicks back to Google to try the next company. With AI Website Chat, she types her question into the chat, gets an immediate response, shares her postcode and contact details, and your lead summary arrives before she closes the browser tab."
+  scenario="It is 8:30pm on a Sunday evening. A landlord in Leicester is reviewing the EPC ratings on his rental properties — three have dropped below the legal minimum and need insulation upgrades before he can re-let them. He searches for local insulation companies, finds your website, and reads your page about landlord EPC compliance. He has specific questions: can you insulate cavity walls and top up loft insulation in the same visit, and do you handle the EPC re-assessment afterwards? Without AI Website Chat, he fills in a contact form and hears nothing until Monday afternoon, by which time he has already booked surveys with two other companies who responded faster. With AI Website Chat, the chat bubble appears as he scrolls. He types his question. The AI responds: 'We can often combine cavity wall and loft insulation work in a single visit for rental properties. Could I get the property addresses and your contact number so one of our team can discuss the EPC requirements with you?' The landlord provides three property addresses, his phone number, and mentions he has four more properties needing the same work later in the year. Monday morning, you see a lead summary with a seven-property pipeline and call him before breakfast."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/insulation-installers/ai-receptionist/"
+  ctaHeadline="Convert Insulation Website Visitors into Booked Surveys"
+  ctaSubhead={`Homeowners and landlords researching insulation on your website should leave with a conversation started, not a question unanswered. Included at £${pricing.tiers.core.price}/month.`}
+/>

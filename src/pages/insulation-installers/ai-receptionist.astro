@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A housing association calls on Monday morning about a cavity wall insulation programme — sixty terraced properties on an estate in Swansea, all needing retrospective cavity fill before next winter. You are on a scaffold tower drilling injection points into the gable end of a semi-detached in Newport, pump running, resin dust in the air. The call rings out. The housing association contacts the next NIA-registered installer on their list and books a site survey by lunchtime.",
+    with: "The same housing association calls. Your AI receptionist answers professionally, captures the full scope — sixty properties, terraced, cavity wall insulation, Swansea estate, pre-winter programme — and confirms you will call back with availability. At your tea break, you ring the housing association with the complete brief in front of you and book the survey before any other installer has responded."
+  },
+  {
+    without: "An architect emails on Thursday afternoon about external wall insulation for a 1960s council block refurbishment — six storeys, mixed substrate, EWI system required to meet Part L compliance, planning consent already granted. You are in a loft space in Coventry blowing mineral wool between joists, head torch on, phone in the van three floors below. Two other EWI companies reply to the architect by Friday morning. You see the email on Friday evening.",
+    with: "Your AI acknowledges the architect's email within a minute, confirming receipt of the EWI specification and noting the Part L compliance requirement. Friday morning, you open a structured lead summary with every detail — six storeys, mixed substrate, Part L, planning granted — and call the architect before the other companies have sent their follow-up."
+  },
+  {
+    without: "A landlord WhatsApps you late on Wednesday evening about loft insulation for a portfolio of eight buy-to-let properties — all need topping up to current Building Regulations depth before new EPC certificates are issued. You are at home with your family and do not check your business WhatsApp until Thursday morning. By then the landlord has already booked another insulation company who responded at 9pm.",
+    with: "The WhatsApp gets an instant professional reply. The AI captures the portfolio size, the EPC compliance requirement, the property locations, and the landlord's contact details. Thursday morning you wake up to a qualified lead summary and call the landlord before breakfast — securing eight properties worth of work from a single message."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Cavity & Loft Insulation",
+    items: ["Cavity wall injection insulation", "Loft roll and blown fibre insulation", "Partial fill and full fill cavity systems", "Hard-to-treat cavity solutions", "Loft boarding and insulation upgrades", "Draught-proofing and air sealing"]
+  },
+  {
+    category: "External & Internal Wall Insulation",
+    items: ["External wall insulation (EWI) systems", "Internal wall insulation (IWI) dry-lining", "Render and cladding finish systems", "Warm roof and cold roof conversions", "Thermal bridging solutions", "Heritage and conservation property insulation"]
+  },
+  {
+    category: "Specialist & Commercial Insulation",
+    items: ["Spray foam insulation (open and closed cell)", "PIR and phenolic board installation", "Floor insulation (suspended and solid)", "Commercial building fabric upgrades", "Social housing retrofit programmes", "Part L compliance consultancy and installation"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏘️",
+    title: "Housing Associations & Local Authorities",
+    description: "Social housing providers commission insulation programmes covering hundreds or thousands of properties — cavity wall, loft top-ups, and EWI retrofits to meet carbon reduction targets and fuel poverty obligations. These clients issue tenders with tight submission deadlines and prioritise installers who respond promptly and demonstrate NIA or CIGA accreditation. A missed call from a housing association procurement team can mean losing a contract worth tens of thousands."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners & Private Landlords",
+    description: "Domestic customers calling about cavity wall insulation after receiving an energy assessment, landlords needing EPC improvements across rental portfolios, and homeowners experiencing cold spots or damp caused by missing insulation. These enquiries are often urgent — a landlord facing an EPC deadline or a homeowner who has just received a heating bill that shocked them. Fast response converts these callers into bookings."
+  },
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Developers",
+    description: "New-build developers needing Part L compliance insulation packages, renovation contractors requiring insulation subcontractors for retrofit projects, and commercial builders specifying thermal performance for offices and industrial units. These clients value reliability, accreditation, and the ability to discuss U-values and thermal bridging calculations confidently at tender stage."
+  },
+  {
+    icon: "📋",
+    title: "Energy Assessors & Green Deal Providers",
+    description: "Energy assessors recommending insulation upgrades to their clients often refer directly to installers they trust. Green Deal and ECO scheme providers need accredited installers who can handle the paperwork as well as the installation. Being available when an assessor calls with a referral — rather than forcing them to try the next company — secures a steady pipeline of pre-qualified work."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand insulation terminology when callers describe their needs?",
+    answer: "Your AI receptionist is configured with the full vocabulary of the insulation trade — cavity wall, loft roll, blown fibre, spray foam, open cell, closed cell, PIR board, Kingspan, Celotex, EWI, IWI, U-value, thermal bridging, Part L, CIGA guarantee, NIA registration, EPC rating, and every other term your customers and contractors use. When a housing association calls about 'retrospective cavity fill to a non-traditional construction block,' the AI records the specification accurately and delivers it in your lead summary."
+  },
+  {
+    question: "Can the AI handle calls from both homeowners and large housing associations?",
+    answer: "Insulation businesses serve two very different customer profiles. A homeowner calling about cold walls in their bedroom is a different conversation from a housing association procurement officer discussing a two-hundred-property cavity wall programme. The AI adapts its questioning to the caller — capturing room details and property age for domestic enquiries, and project scale, property count, submission deadlines, and accreditation requirements for social housing contracts. Both arrive as structured lead summaries you can act on immediately."
+  },
+  {
+    question: "What happens if someone calls about an emergency — like spray foam removal or a failed cavity fill?",
+    answer: "Insulation problems can be urgent — a failed cavity fill causing penetrating damp, spray foam that has been applied incorrectly and is damaging roof timbers, or a loft insulation installation that has blocked ventilation and caused condensation. The AI detects urgency language and escalates to your mobile immediately. If you are unreachable, the call goes to our human operators. Routine insulation enquiries queue as standard leads while emergency calls cut to the front."
+  },
+  {
+    question: "What does the service cost for an insulation company?",
+    answer: `Most insulation businesses — from one-van cavity wall teams to larger EWI companies running multiple crews — find the Core plan at £${pricing.tiers.core.price}/month fits their enquiry volume. You get ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. WhatsApp, SMS, email, and social channels are available as add-ons at £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} one-time, fully refundable within the 30-day guarantee if the service is not right for you.`
+  },
+  {
+    question: "Is this worth it for a sole trader insulation installer?",
+    answer: "A sole trader insulation installer spends most of the working day physically unable to answer the phone — up in a loft crawling between joists, on a scaffold platform applying EWI render coats, or operating injection equipment with both hands occupied. Every missed call is a potential job lost to a competitor who answered. The AI captures every enquiry while you work. A single cavity wall job typically covers the cost of the service for an entire year."
+  },
+  {
+    question: "Can I still answer calls myself between jobs?",
+    answer: "The AI steps aside whenever you are available. When you are driving between properties, sitting in the van doing paperwork, or at home in the evening, calls ring through to your phone as normal. The AI only activates when you genuinely cannot answer — in a roof space, operating equipment, or outside your set working hours. You control the schedule and can change it any time through your dashboard."
+  },
+  {
+    question: "How does the service handle my customers' personal data?",
+    answer: "Insulation work involves collecting property addresses, homeowner contact details, landlord portfolio information, and sometimes energy assessment data. All information captured by the AI is managed under UK GDPR and the Data Protection Act 2018 — encrypted in transit and at rest, stored on UK and EU servers, and shared exclusively with you. We act as your data processor under a formal agreement and never sell, share, or repurpose customer data for any purpose."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Insulation Installers | Rapid Receptionist"
+  description={`AI receptionist for UK insulation installers — cavity wall, loft, spray foam, and EWI companies. Captures every call, chat, and message while you are on site. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/insulation-installers/ai-receptionist/"
+  tradeName="Insulation Installer"
+  tradeNamePlural="Insulation Installers"
+  tradeSlug="insulation-installers"
+  headline="The AI Receptionist Built for Insulation Installers"
+  accentWord="Insulation Installers"
+  subhead={`You cannot answer the phone when you are in a loft space blowing mineral wool between joists, drilling injection points into a cavity wall, or applying render coats to an EWI system three storeys up. Your AI receptionist captures every call, every message, and every enquiry — from homeowners needing loft top-ups to housing associations commissioning hundred-property programmes. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="One Missed Call Could Be a Hundred-Property Insulation Programme"
+  ctaSubhead={`Housing associations, landlords, and developers call once. If you do not answer, they call the next installer. The AI makes sure they reach you. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

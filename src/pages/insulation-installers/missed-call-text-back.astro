@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls You Cannot Reach in Time',
+    text: "Insulation work makes you physically unreachable for extended periods — crawling through a loft space, operating injection equipment in a cavity, or applying render to an EWI system on a scaffold. When a call goes to voicemail, Missed Call Text Back sends a branded text within seconds, letting the caller know you are working and will call back. Instead of hearing silence and dialling the next insulation company, they wait."
+  },
+  {
+    icon: '⏱️',
+    title: 'Responds in the Critical Window',
+    text: "A homeowner who calls three insulation companies typically goes with the first to reply. If your phone goes to voicemail while you are in a roof space, they call the next company before you have even climbed down. A text arriving within seconds — 'Thank you for calling, we are on site and will return your call shortly' — changes the outcome. The homeowner knows you are busy (a positive signal) and will hear from you soon."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional and Branded',
+    text: "The text arrives from your business number with your company name. Not a generic 'this number missed your call' but a personalised, professional message. For insulation companies where trust is paramount — homeowners are cautious about cavity wall and spray foam after negative press coverage — a professional first impression reassures the caller that they are dealing with a reputable business."
+  },
+  {
+    icon: '📊',
+    title: 'Protects You During Your Busiest Periods',
+    text: "Peak insulation season — autumn and early winter — generates the most enquiry calls, but it is also when you are on site from dawn to dusk with no time to check your phone. Missed Call Text Back provides a safety net during these intense periods, ensuring every missed call gets an immediate acknowledgement rather than joining a growing voicemail queue you cannot get to until the weekend."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Contact Details and Context',
+    text: "The caller's number is logged automatically. Many callers reply to the text with additional context — 'it is about loft insulation for a semi in Stockport' or 'I need a survey for ECO cavity wall.' These replies are captured in your lead summary. You end up with a phone number and a brief description of the work before you have even opened your voicemail."
+  },
+  {
+    icon: '🔄',
+    title: 'Works as a Backup to AI Phone Answering',
+    text: "Missed Call Text Back activates when a call is genuinely not answered — if the caller hangs up before the AI connects, during a brief system handover, or in a rare connectivity issue. It is a second safety net behind AI Phone Answering. Most insulation companies use both: the AI answers the majority of calls, and the text catches the tiny percentage that slip through."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the text get sent to the caller?",
+    answer: "The text triggers the moment a call goes to voicemail or is not answered within your set ring time. The caller receives it within seconds — typically before they have had time to search for another insulation company. This speed is critical because homeowners researching insulation are often comparing multiple companies simultaneously, and a fast text acknowledgement keeps you in the conversation."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You write the exact text during setup and can change it at any time. A typical message for an insulation company might read: 'Thank you for calling [your business name]. We are currently on a job and will return your call as soon as possible. If you need a quick response, please reply to this text with details of your enquiry.' The wording is entirely yours — professional, friendly, on-brand."
+  },
+  {
+    question: "Does Missed Call Text Back replace AI Phone Answering?",
+    answer: "They serve different functions and work best as a pair. AI Phone Answering answers the call, has a conversation, and captures a detailed lead with property type, insulation requirements, and contact details. Missed Call Text Back sends a text when a call is not answered — the caller who hangs up after two rings, or the rare occasion the AI cannot connect. Phone answering is the primary system; text back is the fallback that ensures nothing slips through."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `This feature is available as an add-on at £${pricing.addOn.price}/month alongside the Core plan. For an insulation business where a single cavity wall job is worth £500 to £2,000 and an EWI project can exceed £20,000, recovering even one missed call per month through a text back represents a significant return on a modest investment.`
+  },
+  {
+    question: "Can callers reply to the text?",
+    answer: "Yes, and many do. The reply is captured in your lead summary alongside the missed call record. Callers often reply with a brief description of what they need — 'I want to know about loft insulation grants' or 'need cavity wall insulation priced for three rental properties.' This means your callback starts with context, not a blank canvas. You know who called and what they want before you dial."
+  },
+  {
+    question: "How is data from missed calls and text replies protected?",
+    answer: "All missed call records, caller phone numbers, and text message replies are encrypted and stored on UK and EU servers under UK GDPR. The data is shared only with you and is never used for marketing or sold to third parties. For insulation enquiries where callers sometimes mention grant eligibility or benefit status in their text replies, this ensures sensitive personal information is handled securely."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Insulation Installers | Rapid Receptionist"
+  description={`Missed Call Text Back for UK insulation companies. Automatically texts callers when you are in a loft space or on site — captures the lead and keeps them waiting. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/insulation-installers/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Insulation Installer"
+  tradeNamePlural="Insulation Installers"
+  tradeSlug="insulation-installers"
+  headline="Missed Call Text Back for Insulation Businesses"
+  accentWord="Insulation Businesses"
+  subhead="A homeowner calls about cavity wall insulation after her energy assessor recommended it. You are in a loft space in Redditch, knee-deep in mineral wool, headlamp on, blown fibre machine running. The call goes to voicemail. Without Missed Call Text Back, she hangs up, searches for another insulation company, and books a survey within the hour. With it, she receives a text six seconds later: 'Thank you for calling. We are on a job and will call you back shortly.' She replies with 'it is about cavity wall insulation, my EPC says I need it.' You call her at lunch with the full picture."
+  scenario="It is 10:50am on a Thursday in October — peak insulation season. You are halfway through a cavity wall injection on a row of 1950s semis in Walsall, pump running, injection nozzle in the wall, safety goggles on. Your phone is in the van dashboard holder and the engine is off. A landlord calls. He has just received notice that four of his rental properties will fail their next EPC assessment unless insulation upgrades are completed, and his letting agent has told him to act quickly before the tenancies come up for renewal in January. Without Missed Call Text Back, the landlord leaves a short voicemail — 'Hi, it is about insulating some rental properties, give me a call when you can' — and immediately calls two other insulation companies. One answers, discusses the portfolio, and books a survey for Monday. By the time you check your voicemail at 3pm, the landlord has already committed. With Missed Call Text Back, the landlord receives a text within seconds of hanging up: 'Thank you for calling [your company name]. We are currently on site and will call you back as soon as possible. If your enquiry is urgent, please reply with the details.' The landlord replies: 'I need cavity wall and loft insulation for 4 rental properties in Walsall and Wolverhampton. EPC deadline is January.' At 12:15pm you check your phone, see the lead summary with four properties, the EPC deadline, and the landlord's number. You call back, discuss the portfolio, and book surveys for all four properties across Thursday and Friday next week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/insulation-installers/ai-receptionist/"
+  ctaHeadline="Recover Every Missed Call During Peak Insulation Season"
+  ctaSubhead={`Autumn is your busiest season — and the time when you miss the most calls. A text within seconds keeps the caller waiting for you. Add-on at £${pricing.addOn.price}/month.`}
+/>

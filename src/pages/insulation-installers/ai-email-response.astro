@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Housing Association Tenders Instantly',
+    text: "Housing association insulation tenders arrive by email with submission deadlines measured in days. A procurement officer sends the same tender invitation to five NIA-registered installers at 2pm. The company that acknowledges first and asks intelligent questions about the specification gets the most attention during the pricing period. AI Email Response sends a professional acknowledgement within sixty seconds, confirming receipt and noting the key details."
+  },
+  {
+    icon: '📐',
+    title: 'Recognises Insulation Specification Language',
+    text: "When a tender email references 'retrospective cavity fill to non-traditional Wimpey No-Fines construction using injected bead system with BBA Certificate validation,' the AI captures this accurately. Your acknowledgement demonstrates an understanding of the specification rather than a generic auto-reply, positioning you as a knowledgeable installer from the first interaction."
+  },
+  {
+    icon: '🕒',
+    title: 'Responds While You Are Physically Inaccessible',
+    text: "Insulation installers typically check email once or twice a day — if that. When you are in a loft space for three hours or on a scaffold applying EWI boards, emails accumulate unread. A tender from a local authority that arrives at 10am and is not seen until 7pm has lost nine hours. The AI sends an immediate professional response, keeping you in contention for work you would otherwise miss."
+  },
+  {
+    icon: '🗂️',
+    title: 'Categorises Email Enquiries by Type',
+    text: "Your inbox receives tender invitations from housing associations, homeowner enquiries from website forms, ECO referrals from energy assessors, and landlord requests about portfolio upgrades. The AI identifies each type and the lead summary arrives with context — so you know whether to treat it as a time-sensitive tender or a routine domestic enquiry before you open the email."
+  },
+  {
+    icon: '🤝',
+    title: 'Strengthens Relationships with Repeat Clients',
+    text: "When a housing association or local authority you have worked with before sends a new tender invitation, a prompt acknowledgement reinforces trust. The AI responds as your business, thanking them for the invitation and confirming you will review the documents. For insulation companies building their position on housing association approved lists, this consistent responsiveness matters."
+  },
+  {
+    icon: '📎',
+    title: 'Acknowledges Emails with Tender Attachments',
+    text: "Insulation tenders often include property schedules, structural survey reports, specification documents, and programme charts as attachments. The AI acknowledges receipt and notes the attachments in the response. Your lead summary confirms what was attached — '3 PDF files: property schedule, cavity survey report, tender programme' — so you know what to expect before opening the originals."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI write a full reply or just acknowledge the email?",
+    answer: "The AI sends a professional acknowledgement — confirming receipt of the enquiry, noting key details like the project scope and any deadlines mentioned, and letting the sender know you will respond in full. It does not commit to pricing, availability, or technical recommendations on your behalf. The purpose is to keep the sender engaged and assured that their email has been read and understood, buying you time to compose a proper response when you are off site."
+  },
+  {
+    question: "Will it reply to every email?",
+    answer: "The AI responds to incoming business enquiries — tenders, project enquiries, homeowner requests, ECO referrals, and landlord portfolio queries. It filters out spam, marketing emails, newsletters, and supply chain correspondence. You configure the parameters during setup, and the system learns to distinguish between emails that warrant an immediate acknowledgement and background noise that does not."
+  },
+  {
+    question: "How does it handle ECO scheme referral emails?",
+    answer: "ECO referral emails from energy assessors and scheme coordinators typically follow a standard format — property address, householder name, measures recommended, eligibility confirmation. The AI acknowledges the referral, confirms receipt, and the lead summary highlights it as an ECO referral with the key details extracted. You can see at a glance whether the referral is for cavity wall, loft, or EWI — and prioritise it accordingly within your schedule."
+  },
+  {
+    question: "What does AI Email Response cost for an insulation company?",
+    answer: `Email response is an add-on at £${pricing.addOn.price}/month alongside the Core plan. For insulation companies where housing association tenders and ECO referrals arrive almost exclusively by email, this channel directly protects your tender pipeline. An acknowledged tender that you win because you responded first — rather than eight hours later — pays for years of the add-on cost. For smaller domestic-focused companies, the value is in capturing homeowner emails from website contact forms that would otherwise sit unanswered until evening.`
+  },
+  {
+    question: "Can I still reply to emails myself?",
+    answer: "The AI sends an initial acknowledgement only. You follow up with a detailed response in your own time — reviewing the specification, checking your schedule, and composing your reply. The AI does not interfere with your subsequent correspondence. Think of it as a professional receptionist who confirms receipt of incoming post while you are out of the office."
+  },
+  {
+    question: "How is email data kept secure?",
+    answer: "Tender emails and ECO referrals contain commercially sensitive information — property schedules, householder details, pricing expectations, and programme dates. All email content processed by the AI is encrypted, stored on UK and EU-based servers under UK GDPR, and shared only with you. We never access email content for any purpose beyond generating your lead summary and acknowledgement. Your tender communications remain as confidential as they would in a secured inbox."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Insulation Installers | Rapid Receptionist"
+  description={`AI email response for UK insulation companies. Acknowledges housing association tenders, ECO referrals, and homeowner enquiries within sixty seconds while you are on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/insulation-installers/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Insulation Installer"
+  tradeNamePlural="Insulation Installers"
+  tradeSlug="insulation-installers"
+  headline="AI Email Response for Insulation Contractors"
+  accentWord="Insulation Contractors"
+  subhead="A local authority sends a tender invitation for a 200-property cavity wall insulation programme across three estates in Wakefield. The submission deadline is next Thursday. You are in a loft space in Huddersfield and will not check email until this evening. Three other insulation companies acknowledge the tender within the hour. Without AI Email Response, the procurement officer has already received engagement from competitors before you even know the tender exists. With it, your acknowledgement arrives within sixty seconds — and you are on the radar before you leave the loft."
+  scenario="It is 11:45am on a Wednesday. You are halfway through a cavity wall injection on a terrace of six houses in Barnsley — pump running, injection nozzle in the wall, ear defenders on. Your email is on your laptop in the van. A regional energy assessor has just sent you an ECO4 referral batch — twelve properties across South Yorkshire, all pre-approved for cavity wall and loft insulation under the scheme. The assessor has sent the same batch to two other NIA-registered installers, knowing that the first company to acknowledge typically gets the work because the scheme administrator needs confirmation quickly. Without AI Email Response, you see the email at 5:30pm, reply at 6pm, and the assessor has already allocated ten of the twelve properties to the installer who responded at noon. With AI Email Response, the acknowledgement goes out at 11:46am: 'Thank you for the ECO4 referral batch. We have received the property schedule and will review the details and confirm our availability today.' The assessor marks you as responsive. At 12:30pm you check your phone at lunch, see the lead summary with twelve properties listed, and call the assessor to confirm you can start surveys next week. You secure the full batch."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/insulation-installers/ai-receptionist/"
+  ctaHeadline="Acknowledge Every Insulation Tender Before It Passes You By"
+  ctaSubhead={`Housing association tenders and ECO referrals go to whoever responds first. AI email response ensures that is always you. Add-on at £${pricing.addOn.price}/month.`}
+/>

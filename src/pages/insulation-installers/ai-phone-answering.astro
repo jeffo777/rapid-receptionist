@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Are in the Roof Space',
+    text: "Loft insulation work puts you in a confined space with limited headroom, a head torch, and both hands full of mineral wool or blown fibre equipment. Your phone is three floors below in the van. Cavity wall injection has you operating a pump with one hand and holding an injection nozzle with the other, resin dust in the air. The AI answers every call with your business name and captures what the caller needs — so you never have to choose between finishing a job and catching a lead."
+  },
+  {
+    icon: '🏘️',
+    title: 'Handles Housing Association Tender Calls',
+    text: "When a procurement officer from a housing association calls about a cavity wall programme covering forty properties, the AI captures the scale, property types, location, submission deadline, and any accreditation requirements they mention. The lead summary reads like a tender brief — not a vague voicemail message saying 'call me back about some insulation work.' You can assess the opportunity and respond with a plan before your competitors have even checked their missed calls."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Urgent Insulation Problems',
+    text: "A homeowner discovers damp streaming down their internal walls after a failed cavity fill. A landlord has tenants complaining of condensation and mould following a spray foam installation that blocked roof ventilation. The AI recognises the urgency, escalates to your mobile immediately, and if you are unreachable, routes the call to our human team. Routine loft insulation enquiries queue as standard leads."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Calls from Worried Homeowners',
+    text: "Most homeowners notice insulation problems in the evening — they come home to a freezing house, feel cold walls behind furniture, or open a heating bill that makes them pick up the phone. Those 7pm and 8pm calls are prime domestic leads. The AI answers professionally, captures the property details and the problem they are experiencing, and delivers the lead for your morning callback."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Summaries That Save You a Site Visit',
+    text: "Each call summary includes property type, construction era, the insulation issue or requirement, which walls or areas are affected, the caller's postcode, and their availability for a survey. For experienced insulation installers, this is often enough to quote a ballpark price or identify the likely solution before you even visit — especially for standard cavity wall and loft top-up work."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional Greeting That Builds Trust',
+    text: "Homeowners calling about insulation are often cautious — cavity wall insulation has a mixed reputation and they want reassurance before committing. The AI answers with your business name in a professional tone, asks informed questions about their property, and captures details that demonstrate competence. The caller's first impression is of an organised, knowledgeable company — not an unanswered phone or a rushed voicemail greeting."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI say when a homeowner calls about insulation?",
+    answer: "The greeting uses your company name — 'Good afternoon, thank you for calling, how can I help?' — followed by a natural conversation about their property and what they need. For insulation businesses, the AI asks about the type of insulation they are interested in (cavity wall, loft, external wall, floor), the age and construction type of the property, any problems they have noticed (cold walls, damp, high bills), and their postcode and contact details. The conversation is natural, not scripted."
+  },
+  {
+    question: "Can it tell the difference between a small loft job and a large EWI contract?",
+    answer: "The AI captures what the caller describes without making assumptions. A homeowner asking about topping up loft insulation in a three-bedroom semi is recorded as a domestic loft job. A main contractor calling about an EWI package for a tower block refurbishment is recorded as a commercial project with scope, programme, and specification details. The distinction is clear in the lead summary, so you can prioritise your callbacks — commercial tenders with tight deadlines first, routine domestic enquiries scheduled into your diary."
+  },
+  {
+    question: "What if a caller asks about ECO scheme eligibility or Green Deal funding?",
+    answer: "Many insulation enquiries involve funding questions — 'am I eligible for free cavity wall insulation?' or 'does the ECO scheme cover loft insulation?' The AI does not answer eligibility questions, but it captures the caller's interest in funded work, their property details, their benefit status if volunteered, and their contact information. Your lead summary flags the funding query so you can call back prepared to discuss ECO eligibility and guide them through the process."
+  },
+  {
+    question: "How many minutes of call time does the plan include?",
+    answer: `You get ${pricing.tiers.core.minutes} minutes of AI phone answering each month with the Core plan. For a typical insulation installer handling between fifteen and thirty enquiry calls per month — a mix of homeowner enquiries, landlord requests, and occasional housing association calls — this allowance sits comfortably within the limit. If a particularly busy period pushes you over, additional minutes are 20p each with no cap or penalty.`
+  },
+  {
+    question: "Do I keep control of when the AI answers?",
+    answer: "Entirely. When you are driving between properties, filling out CIGA guarantee paperwork in the van, or at home for the evening, calls come straight to your mobile. The AI only activates when you set it to — on site, in a loft space, operating equipment, or outside your working hours. Some insulation companies keep the AI active only during site hours; others use it 24/7. The choice is yours and you can adjust the settings any time."
+  },
+  {
+    question: "How is customer data from calls protected?",
+    answer: "Insulation enquiries involve property addresses, homeowner names, sometimes financial information related to funding eligibility, and landlord portfolio details. Every piece of data captured by the AI is encrypted during transmission and at rest, stored on UK and EU servers under UK GDPR, and shared only with you. We never access, sell, or repurpose customer information. You remain the data controller and Rapid Receptionist acts as your processor under a formal agreement."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Insulation Installers | Rapid Receptionist"
+  description={`AI phone answering for UK insulation companies — cavity wall, loft, spray foam, and EWI installers. Answers every call while you are in the roof space or on the scaffold. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/insulation-installers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Insulation Installer"
+  tradeNamePlural="Insulation Installers"
+  tradeSlug="insulation-installers"
+  headline="AI Phone Answering for Insulation Companies"
+  accentWord="Insulation Companies"
+  subhead="A housing association procurement officer calls at 9:15am about a cavity wall insulation programme across four estates in South Wales. You are chest-deep in a loft space in Cardiff, headlamp on, blowing mineral wool fibre into the eaves. Your phone is in the van. Without AI phone answering, the procurement officer reaches voicemail and moves straight to the next NIA-approved installer on their framework list. With it, the AI answers on the second ring, captures the programme scope, and the lead is waiting when you climb down at tea break."
+  scenario="It is 10:40am on a Tuesday. You are operating a cavity wall injection machine on a row of 1970s terraced houses in Wolverhampton — pump running, injection nozzle in one hand, face mask and goggles on, resin bead insulation filling the cavity as you move along the wall. Your phone is in the van dashboard holder, fifty metres away on the street. A landlord calls. He owns twelve rental properties across Birmingham and Wolverhampton — all have poor EPC ratings and need loft insulation topping up and cavity walls filling before new EPC regulations take effect next year. He needs a single insulation company to handle the entire portfolio. Without AI Phone Answering, the call goes to voicemail. The landlord, who already has a list of three installers, assumes you are too busy and books surveys with the other two. With AI Phone Answering, the call is answered: 'Good morning, thank you for calling, how can I help?' The AI captures the portfolio size — twelve properties, mixed Birmingham and Wolverhampton locations, loft and cavity wall work, EPC compliance deadline — and sends a structured lead summary. At 11:30am you check your phone over a coffee, see the brief, and call the landlord back. You book a site survey for Thursday across his two nearest properties and agree a pricing structure for the remaining ten."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/insulation-installers/ai-receptionist/"
+  ctaHeadline="Stop Losing Insulation Jobs to Unanswered Phones"
+  ctaSubhead={`A single housing association programme or landlord portfolio can be worth more than a year of this service. The AI makes sure you hear about every one. From £${pricing.tiers.core.price}/month.`}
+/>
