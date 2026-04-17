@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Quick Availability Texts',
+    text: "Homeowners and builders text to check if you are available — 'hi, can you replace a sealed unit this week?' A fast reply shows capacity. A long delay suggests a company too busy to take on the work."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Glazing Briefs from Fragments',
+    text: "A text like 'need 3 sealed units replaced, uPVC windows, semi in OX4' gives the AI enough to work with. It asks about window sizes, glass type, and timeline. Your lead arrives with the detail you need for quoting."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Builder Referral Texts',
+    text: "Builders recommend glaziers by text: 'Got a mate who needs some windows doing — passing your number on.' When the referral texts, the AI captures the scope immediately while the builder's recommendation is fresh."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Installation Hours',
+    text: "Homeowners photograph misted windows in the morning and text glaziers in the evening. Property managers send damage reports after site inspections. The AI catches every off-hours text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Threads',
+    text: "Texts fragment — 'need glass replaced' then 'its a patio door' then 'toughened glass' then 'OX2 area.' The AI assembles one structured lead from the fragments."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS uses your business number. Client conversations about window replacements and structural glazing stay on a professional line."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a glazing enquiry text?",
+    answer: "Upon receiving a text, the AI responds immediately using your company name. A detailed message — 'need 4 sealed units replaced in timber sash windows, Victorian terrace in Jericho' — is acknowledged with full context captured. A brief message — 'can you replace glass?' — prompts follow-up questions about the glass type, window style, number of panels, and property postcode."
+  },
+  {
+    question: "Will the person texting know it is AI?",
+    answer: "The reply reads like a glazier responding between installations — professional, direct, and knowledgeable about glass types and window specifications. It uses your company name and asks relevant questions about the caller's specific glazing needs. Homeowners and builders care about competence and speed; the AI delivers both in seconds."
+  },
+  {
+    question: "What about texts from existing glazing clients?",
+    answer: "Clients sometimes text about measurement visit times, delivery confirmations, or warranty queries on previously installed glass. The AI captures these and flags them separately from new enquiries. Your dashboard clearly distinguishes a new £5,000 multi-window replacement from a current client confirming the Thursday measurement appointment."
+  },
+  {
+    question: "What does AI SMS cost for glazing contractors?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. Glazing work ranges from £150 single sealed unit swaps to five-figure structural glass installations. Capturing one builder's subcontract enquiry or one homeowner's multi-window order through a prompt text — while your phone sat face-down on the cutting table — pays for the channel add-on many times over.`
+  },
+  {
+    question: "Can I text back personally?",
+    answer: "Your own reply in any text thread transfers control to you. The AI recognises your message and steps aside. During workshop days, handle texts yourself. During installations on site, let the AI maintain the professional response."
+  },
+  {
+    question: "How is text data protected?",
+    answer: "Text messages containing property addresses, window specifications, glass types, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you and is never shared, sold, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Glazing Contractors | Rapid Receptionist"
+  description={`AI SMS for UK glazing contractors. Responds to sealed unit texts, builder subcontract referrals, and structural glazing enquiries while you install on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/glazing-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Glazing Contractor"
+  tradeNamePlural="Glazing Contractors"
+  tradeSlug="glazing-contractors"
+  headline="AI SMS for Glazing Contractor Businesses"
+  accentWord="Glazing Contractor"
+  subhead="You are replacing a sealed unit in a first-floor sash window in Jericho — the old unit removed, the new argon-filled low-E sealed unit bedded into the rebate, glazing beads being tapped into place. At 2:30pm a property manager texts: 'Hi — we manage a block of 12 flats in Summertown. Five units have failed seals showing condensation. All uPVC casement windows. Can you survey and quote? Need it done before winter.' Your hands are holding the glazing bead and a rubber mallet. Without AI SMS, the text waits until you pack up. She has texted three glaziers. With it, the AI replies at 2:31pm, asks about the window sizes and access arrangements, and she confirms the building address. Tomorrow morning you call and book a Wednesday survey of all twelve flats."
+  scenario="It is 8:45pm on a Monday. A homeowner in Carterton has just shattered the inner pane of his double-glazed patio door — a cricket ball through the glass. The outer pane is intact but the inner toughened safety glass is cracked across the full panel. He texts four glaziers: 'Emergency — inner pane of my patio door is smashed. Toughened glass. Rest of the unit seems okay. Need it replaced ASAP. Can anyone help tomorrow? OX18.' Without AI SMS, you see the text Tuesday morning. Two glaziers responded Monday evening — one confirmed toughened glass stock and offered a Tuesday afternoon slot. With AI SMS, the response arrives at 8:46pm: 'Thank you for your message. We carry toughened glass in stock for standard patio door sizes. Could you confirm whether the door is a sliding or hinged type, and share the approximate panel dimensions? We will check our stock and arrange a visit as soon as possible.' He replies: sliding, approximately 900mm x 2000mm, single panel. Tuesday at 7am you check stock — 900x2000 toughened panel available — call at 8am and confirm a Tuesday afternoon replacement. You arrive at 2pm with the glass cut and polished, ready to fit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/glazing-contractors/ai-receptionist/"
+  ctaHeadline="Catch the Flat Block Survey Text While You Bed the Sealed Unit"
+  ctaSubhead={`A property manager with five failed units texts while you glaze the sash window. The AI replies before you reach for your phone. Add-on at £${pricing.addOn.price}/month.`}
+/>

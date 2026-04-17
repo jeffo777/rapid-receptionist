@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Fit the Glass',
+    text: "Glaziers spend hours carrying panels, setting them into frames, applying silicone, and checking tolerances. Both hands are occupied. The AI answers every call in your company name and captures the glazing brief — sealed unit size, glass type, frame material, and urgency."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Diverse Glazing Briefs',
+    text: "When a homeowner calls about 'a misted bedroom window,' the AI captures the window type and frame. When an architect specifies a structural glass balustrade with 15mm toughened laminated panels and stainless steel fixings, the AI captures the specification with equal precision. Each lead reflects the true project scope."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Emergency Board-Ups',
+    text: "A shop manager calling at 6am about a smashed shopfront window, or a homeowner reporting a break-in with a broken patio door, generates an urgent call the AI flags separately from routine replacement enquiries. Emergency leads escalate to your mobile immediately."
+  },
+  {
+    icon: '🌙',
+    title: 'Captures Evening Sealed-Unit Calls',
+    text: "Homeowners notice misted windows in the evening — when light hits the condensation at certain angles. The 8pm call about 'three bedroom windows that are fogging up' is a genuine domestic lead from someone ready to book a measurement visit."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Quoting',
+    text: "Each lead specifies the glass type required, window or panel dimensions if described, frame material (uPVC, aluminium, timber), the number of units affected, the property type and postcode, and the caller's timeline. You can prepare a preliminary quote before the site visit."
+  },
+  {
+    icon: '🏷️',
+    title: 'Specialist Credibility',
+    text: "Glazing contractors compete with window companies producing mass-market replacement quotations. A professional AI greeting that asks specific questions about glass types, U-values, and structural requirements immediately communicates genuine glazing expertise."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their glazing needs?",
+    answer: "The questions follow the caller's description. A homeowner with a misted sealed unit is asked about the window type (casement, sash, fixed light), the frame material (uPVC, aluminium, timber), how many units are affected, and the property postcode. An architect specifying structural glazing is asked about the glass type, panel sizes, fixing method, thermal performance requirements, and tender deadline. A facilities manager is asked about the building type, number of windows, access arrangements, and programme constraints."
+  },
+  {
+    question: "Can the AI handle emergency glazing calls?",
+    answer: "Emergency board-ups — smashed shopfronts, break-in damage, storm damage to conservatory roofs — are identified from the caller's language and urgency. The AI captures the property address, the nature of the damage, access details, and whether the premises are currently unsecured. These leads are immediately escalated to your mobile, separate from standard replacement and project enquiries."
+  },
+  {
+    question: "What about calls from builders needing glazing subcontractors?",
+    answer: "Builders subcontract glazing on extensions, new builds, and refurbishments — fitting windows, bi-folds, rooflights, and Juliet balconies into their programme. The AI captures the project address, the window schedule or quantity, the required glass type, and the programme date they need the glazing installed by. Builders who receive a prompt, professional response add you to their subcontractor list."
+  },
+  {
+    question: "How many minutes does the plan include?",
+    answer: `Your Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Glazing contractors typically receive a steady mix of domestic sealed-unit calls, commercial enquiries, and the occasional architect specification. Most companies operate comfortably within the allowance. If a marketing campaign generates higher volume, overage is charged at 20p per minute with no penalties or caps.`
+  },
+  {
+    question: "Can I take calls at the workshop?",
+    answer: "When you are at the workshop — processing glass on the cutting table, edging panels, assembling sealed units — you may prefer to answer calls directly. Your dashboard lets you switch between AI and personal answering whenever you want. During installations on site, route calls to the AI. During workshop processing days, take them yourself."
+  },
+  {
+    question: "How is glazing project data kept secure?",
+    answer: "Glazing enquiries include property addresses, window schedules, structural specifications, architect contact details, and commercial building information. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No information is shared with competing glaziers, sold to lead aggregators, or used for any purpose beyond your lead delivery."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Glazing Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK glazing contractors. Captures sealed unit, structural glazing, shopfront, and balustrade enquiries while you are on the installation. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/glazing-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Glazing Contractor"
+  tradeNamePlural="Glazing Contractors"
+  tradeSlug="glazing-contractors"
+  headline="AI Phone Answering for Glazing Contractor Companies"
+  accentWord="Glazing Contractor"
+  subhead="A homeowner calls at 10:45am about five misted sealed units in her Victorian sash windows — the upstairs bedroom, two in the front reception room, and two in the back. The frames are timber and she wants the units replaced without disturbing the original sashes. You are on site at a commercial premises in Summertown — cutting and glazing an aluminium shopfront, the glass panels being carried and positioned two at a time, silicone applied to each frame. Your phone is on the passenger seat of the van, parked around the corner. Without AI Phone Answering, the homeowner hears voicemail and tries the next FENSA-registered glazier on Checkatrade. With it, the AI captures the full brief — five sealed units, Victorian timber sashes, keep original frames, upstairs and downstairs — and your lead waits for lunch."
+  scenario="It is 2:30pm on a Wednesday. You are installing a frameless glass balustrade on a first-floor terrace at a new-build in Botley — ten toughened laminated panels, each 1.2 metres wide and 1.1 metres high, being set into a base channel and silicone-bonded. Three calls come in between 2 and 4pm. Without AI Phone Answering, one leaves a voicemail — 'need some glass replaced' — two hang up. By Thursday, two have spoken to other glaziers. With AI Phone Answering, all three are answered. Lead one: architect specifying a full-height frameless glass gable for a barn conversion in Eynsham — 4 metres wide, 6 metres high, two panels of 12mm toughened laminated, structural silicone bonded. Lead two: builder on an extension project in Kidlington needing four windows, a set of bi-fold doors, and a rooflight glazed within three weeks. Lead three: homeowner with a cracked toughened glass panel in a shower screen, needs a like-for-like replacement cut to size. At 4:15pm you check three leads — a £12,000 glass gable, a builder's glazing package worth £8,000, and a £200 shower screen replacement — and prioritise by value."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/glazing-contractors/ai-receptionist/"
+  ctaHeadline="Glass Gable, Builder's Package, and Shower Screen — All Captured in Two Hours"
+  ctaSubhead={`While you bonded balustrade panels on the terrace, three glazing opportunities called. The AI captured every specification. From £${pricing.tiers.core.price}/month.`}
+/>

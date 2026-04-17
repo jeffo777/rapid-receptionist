@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Glass Installation Posts',
+    text: "Glazing contractors produce compelling content — frameless glass extensions flooding rooms with light, balustrades framing garden views, shopfronts transforming high-street units. When a follower messages after seeing an installation post, the AI captures their own glazing requirements."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Misted Window Photo Messages',
+    text: "Followers message with photos of their misted windows — condensation trapped between the panes, visibility reduced, frames looking tired. The AI acknowledges the photos, asks about the frame type and unit count, and delivers the images alongside a structured replacement lead."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Neighbourhood Referrals',
+    text: "You install a dramatic glass balustrade or a set of bi-fold doors and the homeowner posts photos on Facebook. Their neighbours message your page wanting similar work — warm referral leads with photographic proof of quality."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Weekend Home Planning',
+    text: "Homeowners plan window replacements and extension glazing on Saturday and Sunday mornings. The AI captures every weekend Messenger enquiry that would otherwise sit until Monday."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Visual Glazing Messages',
+    text: "Messenger conversations about glazing start with screenshots and references — 'love those bi-folds, can you do similar?' The AI grounds the aspiration by asking about the opening size, frame colour, and glass type required."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Your Glass Portfolio',
+    text: "Every completed installation photo posted on Facebook — balustrades, bi-folds, frameless extensions, shopfronts — can generate a Messenger enquiry. The AI converts visual inspiration into measured glazing orders."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my glazing company?",
+    answer: "You need a Business page with Messenger enabled — personal profiles do not support the integration. Most glazing contractors already run a Facebook Business page to showcase completed installations, share project progress photos, and collect customer reviews. The AI adds instant professional message handling to your existing page."
+  },
+  {
+    question: "What glazing enquiries arrive through Messenger?",
+    answer: "Mostly domestic leads from homeowners. Common messages include 'we need our sealed units replacing — can you just do the glass not the frames?', 'how much for bi-fold doors like the ones in your photos?', and 'can you fit a Juliet balcony on our first-floor bedroom?' These leads are pre-qualified because the homeowner has already seen your installations and chosen to message your page specifically."
+  },
+  {
+    question: "How fast does the AI reply on Messenger?",
+    answer: "Inside seconds. Messenger displays active status indicators, so the homeowner sees your business engaging immediately. For glazing contractors — where homeowners compare three to five companies for sealed unit replacements and window installations — the first professional response that asks informed questions about glass types and window dimensions typically secures the measurement appointment."
+  },
+  {
+    question: "What does Facebook Messenger cost for glaziers?",
+    answer: `Messenger is priced at £${pricing.addOn.price}/month as a channel add-on. Glazing work ranges from £150 sealed unit swaps to £50,000 structural glass packages. Converting one enquiry per year through a prompt Messenger response — a homeowner who messaged three companies and booked with the first to respond — covers the channel cost indefinitely.`
+  },
+  {
+    question: "Can I continue Messenger conversations?",
+    answer: "Drop in a reply to any Messenger thread and the conversation transfers to you seamlessly. The AI recognises your message and steps back. Most glaziers let the AI handle the initial capture — sealed unit count, frame material, glass type, window dimensions, and postcode — then follow up personally to discuss options, share relevant installation photos, and arrange the measurement visit."
+  },
+  {
+    question: "How is Messenger data from glazing enquiries handled?",
+    answer: "All Messenger conversations, window photos, glass specifications, property details, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you and is never shared with competing glaziers, sold to lead aggregators, or used for advertising purposes."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Glazing Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK glazing contractors. Converts glass installation posts into sealed unit, bi-fold, and balustrade enquiries from your Facebook page. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/glazing-contractors/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Glazing Contractor"
+  tradeNamePlural="Glazing Contractors"
+  tradeSlug="glazing-contractors"
+  headline="AI Facebook Messenger for Glazing Contractor Companies"
+  accentWord="Glazing Contractor"
+  subhead="You post a photo set of a completed frameless glass extension in Headington — the 'before' showing a dark kitchen with a single window and a solid brick wall; the 'after' showing the same kitchen with the entire rear wall replaced by floor-to-ceiling structural glass panels, a minimal-frame sliding door, and an uninterrupted view of the garden. Two hundred and forty likes, thirty shares. A homeowner in Marston messages: 'That extension is incredible. We are planning something similar — knock out the back wall and put in glass. Our builder says we need a glazing specialist. Can you come and have a look?' You are on another site fitting a glass balustrade. Without AI Messenger, the message waits. With it, the homeowner gets an instant reply, shares her architectural drawing, and your lead is captured."
+  scenario="It is 9pm on a Wednesday. A retired couple in Woodstock have been discussing their conservatory for weeks — the old polycarbonate roof panels are cracked and discoloured, the sealed units in the side walls are misted, and the whole structure feels cold. They want to replace the roof with proper glass panels and the side units with energy-efficient sealed units. The wife finds your Facebook page, scrolls through your conservatory glazing projects, and messages: 'Hello — we have an old conservatory with a polycarbonate roof that needs replacing with glass, and about eight misted sealed units in the sides and front. The conservatory is about 4m x 3m. We want it to be warm enough to use in winter. Can you help?' Without AI Messenger, you see the message Thursday morning while loading the van. She has messaged two other glaziers; one replied Wednesday night with an explanation of self-cleaning glass roofs and low-E sealed units and offered a Friday survey. With AI Messenger, the reply arrives at 9:01pm: 'Thank you — conservatory roof conversions from polycarbonate to glass and sealed unit replacements are work we carry out regularly. Could you share photos of the current conservatory, particularly the roof condition and the misted units? We will assess the scope and arrange a visit.' She sends six photos. Thursday morning you open the lead: conservatory 4x3m, Woodstock, polycarbonate-to-glass roof conversion, 8 misted sealed units, winter warmth priority, photos attached. You call at 9am and book a Friday morning visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/glazing-contractors/ai-receptionist/"
+  ctaHeadline="Turn Frameless Extension Photos into Structural Glazing Consultations"
+  ctaSubhead={`A floor-to-ceiling glass extension earns two hundred and forty likes. AI Messenger converts every homeowner message into a lead with glass type, dimensions, and drawings. Add-on at £${pricing.addOn.price}/month.`}
+/>

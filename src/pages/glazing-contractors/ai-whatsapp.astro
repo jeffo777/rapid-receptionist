@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Window Photos Instantly',
+    text: "Homeowners WhatsApp photos of misted windows, cracked panels, and condensation between panes. The AI responds within seconds, asks about the frame type and how many units are affected, and attaches every image to your lead. You can see the problem before the measurement visit."
+  },
+  {
+    icon: '📸',
+    title: 'Wins the Post-Condensation Discovery',
+    text: "When a homeowner notices misted sealed units — often on a cold morning when condensation appears between the panes — they WhatsApp glaziers immediately. The first professional response that demonstrates understanding of sealed unit failure wins the replacement order."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Builder Subcontract Messages',
+    text: "Builders WhatsApp glaziers with window schedules for extension and new-build projects: 'Need four windows, bi-folds, and a rooflight glazed in three weeks — can you quote?' The AI captures the schedule, project address, and deadline while you are on another installation."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Hours',
+    text: "Homeowners photograph misted windows in the morning light and send the WhatsApp later that evening. Property managers forward damage reports after building inspections. The AI catches these off-hours messages."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Informal Glazing Messages',
+    text: "A WhatsApp saying 'got some misted windows, about 6 of them, semi detached in OX3' becomes a structured lead. The AI adds frame material, window dimensions, and timeline through follow-up questions."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Line',
+    text: "AI WhatsApp uses your business number. Client photos and specifications stay on a professional channel separate from your personal conversations."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess window damage from WhatsApp photos?",
+    answer: "The AI does not diagnose glass failures technically, but it acknowledges photos effectively — confirming it can see the misted unit, cracked panel, or damaged seal — and asks the questions you need: frame material (uPVC, aluminium, timber), window type (casement, sash, tilt-and-turn), how many units are affected, and the property postcode. Every photo is attached to your lead so you can assess the scope visually before arranging the measurement visit."
+  },
+  {
+    question: "What about evolving WhatsApp conversations?",
+    answer: "Glazing conversations often evolve — a homeowner initially messages about one misted window, then notices three more, then asks whether it is worth upgrading to triple glazing while the units are being replaced. The AI maintains the thread and your lead summary consolidates every message, photo, and question into one complete brief."
+  },
+  {
+    question: "How much does AI WhatsApp cost for glazing contractors?",
+    answer: `Add WhatsApp for £${pricing.addOn.price}/month alongside the Core plan. Glazing projects range from £150 single sealed unit replacements to £50,000 structural glass packages. Capturing one builder's subcontract or one homeowner's multi-window replacement through a rapid WhatsApp response — while competitors' phones sat on the workbench — generates returns far exceeding the annual channel investment.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Your own message in any thread transfers the conversation to you. The AI steps aside. Most glaziers let the AI handle the initial capture — glass type, frame material, quantity, postcode — then follow up personally to discuss specifications, arrange the measurement visit, and confirm the quotation."
+  },
+  {
+    question: "How is WhatsApp data from glazing enquiries protected?",
+    answer: "All WhatsApp messages — window photos, glass specifications, property addresses, and contact information — are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. No client information is shared with competing glaziers, sold to lead platforms, or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Glazing Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK glazing contractors. Responds to misted window photos, structural glazing queries, and builder subcontract messages while you install on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/glazing-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Glazing Contractor"
+  tradeNamePlural="Glazing Contractors"
+  tradeSlug="glazing-contractors"
+  headline="AI WhatsApp for Glazing Contractor Companies"
+  accentWord="Glazing Contractor"
+  subhead="A homeowner WhatsApps at 8:15am with three photos — a close-up of condensation trapped between the panes of her bedroom window, the full window showing the extent of the misting, and a similar problem visible in the adjacent bathroom window. Her message: 'Morning — got two windows that have gone misty. Both upstairs. Frames are white uPVC and seem fine — is it just the glass that needs replacing? How much roughly?' You are on site at a commercial unit in Headington — cutting and glazing an aluminium shopfront, the first panel already in the frame. Without AI WhatsApp, her message sits for six hours. She messages two more glaziers; one replies in ten minutes with a helpful explanation of sealed unit failure and offers a Thursday measurement visit. With it, the AI responds instantly, confirms that sealed unit replacement without frame removal is your standard service, asks about the window sizes, and your lead — complete with misted window photos — is waiting at coffee break."
+  scenario="It is 7am on a Saturday. A builder in Witney is pricing an extension project and needs a glazing quote by Monday — four casement windows, a set of bi-fold doors (4-panel, 3.6m wide), and a flat rooflight (1.2m x 2.4m), all in anthracite grey aluminium with low-E toughened sealed units. He WhatsApps five glazing contractors from his contacts: 'Morning mate — pricing a rear extension in OX28. Need 4x casement windows, 4-panel bi-fold 3.6m wide, and a flat rooflight 1.2x2.4m. All anthracite grey aluminium, low-E toughened DGUs. Need a supply-and-fit quote by Monday morning. Can you help?' Without AI WhatsApp, you see the message Saturday afternoon. Three glaziers replied by 9am — one has already confirmed the specification and offered a Monday delivery. With AI WhatsApp, the response arrives at 7:01am: 'Thank you — supply-and-fit glazing packages for extensions are a regular service. Could you confirm the window sizes and whether the builder will have the openings ready for installation? We will prepare the quote today.' He sends the window schedule. Saturday at 9am you open the lead: rear extension, OX28, 4x casements, 4-panel bi-fold 3.6m, flat rooflight 1.2x2.4m, anthracite grey aluminium, low-E toughened DGUs, supply and fit, Monday quote deadline. You price it Saturday morning and send the quote by lunchtime — first to arrive."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/glazing-contractors/ai-receptionist/"
+  ctaHeadline="Respond to Builder Window Schedules Before the Other Five Glaziers"
+  ctaSubhead={`A builder sends a window schedule to five glaziers at 7am Saturday. The first quote by Monday wins the subcontract. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Researching Replacements',
+    text: "Homeowners visit glazing websites with specific questions — 'can you replace just the sealed unit without the frame?', 'what is the difference between toughened and laminated?', 'do you supply and fit Juliet balconies?' The chat answers from your profile and captures their glazing requirements."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Glass Type and Scale',
+    text: "Through conversation, the AI identifies whether the visitor needs a single sealed unit replacement, a full window supply-and-fit programme, structural glazing, or a commercial shopfront. You receive a pre-qualified lead specifying the glass type, quantity, and project scale."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Window Research',
+    text: "Homeowners notice misted windows in the evening light and search for glaziers online. At 9pm she types: 'three bedroom windows are fogging between the panes — can you replace just the glass?' The chat captures the sealed unit count, frame material, and postcode before she closes the laptop."
+  },
+  {
+    icon: '📊',
+    title: 'Handles Glass Specification Questions',
+    text: "Visitors ask about glass types — toughened versus laminated, low-E coatings, argon versus krypton fills, acoustic ratings. The AI responds from your profile with general guidance and captures the visitor's specific requirements for your detailed recommendation."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Your Project Gallery',
+    text: "Glazing portfolios showcase dramatic installations — frameless glass extensions, floor-to-ceiling sliding panels, glass balustrades with panoramic views. The chat converts visual impact into qualified leads while visitors admire your work."
+  },
+  {
+    icon: '✅',
+    title: 'Included Free',
+    text: `Website chat comes bundled with AI phone answering at £${pricing.tiers.core.price}/month. One JavaScript snippet activates the chat on every page. Unlimited conversations across all website platforms.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add chat to my glazing website?",
+    answer: "We provide a small JavaScript snippet during onboarding. Paste it into your website header — directly in the code, through WordPress, or via your Squarespace or Wix dashboard. The branded chat bubble appears on every page within minutes. If you need help, we walk your developer through the process or handle the installation remotely for you."
+  },
+  {
+    question: "Can the AI discuss glass types with visitors?",
+    answer: "Your service profile informs the AI about the glass types you work with — toughened, laminated, low-E, acoustic, fire-rated, decorative, and structural. When a visitor asks 'do you supply laminated glass for a balustrade?' the AI confirms from your profile and captures the panel dimensions, fixing type, and location. It does not provide structural engineering advice but keeps the conversation technically credible."
+  },
+  {
+    question: "What project details does the chat gather?",
+    answer: "The AI captures the glass type required, window or panel dimensions if described, the number of units or panels, frame material for window work, the property type and postcode, whether an architect or builder is involved, and the visitor's contact details and timeline. For glazing contractors, this tells you whether it is a £150 sealed unit swap or a £30,000 structural glazing package."
+  },
+  {
+    question: "Does the chat slow down image-heavy websites?",
+    answer: "Glazing websites often feature large photographs — frameless extensions catching the sunlight, close-ups of silicone bond details, panoramic balustrade installations. The chat script loads asynchronously after all your visual content has rendered. Gallery pages display at full speed. The chat data footprint is smaller than a single installation photograph."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Phone answering and website chat are combined within the Core plan at £${pricing.tiers.core.price}/month — no additional fee. For glazing contractors, these two channels cover your core enquiry routes: phone calls from homeowners and builders, and website chats from visitors researching glass specifications and viewing your portfolio.`
+  },
+  {
+    question: "How is visitor data from glazing queries handled?",
+    answer: "Chat conversations containing property addresses, window schedules, glass specifications, building details, and visitor contact information are encrypted and stored on UK and EU servers under UK GDPR. Lead summaries go exclusively to you. No visitor data is shared with competing glaziers, sold to aggregators, or repurposed for advertising."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Glazing Contractors | Rapid Receptionist"
+  description={`AI website chat for UK glazing contractors. Engages visitors researching sealed units, structural glazing, and balustrades — captures project leads 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/glazing-contractors/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Glazing Contractor"
+  tradeNamePlural="Glazing Contractors"
+  tradeSlug="glazing-contractors"
+  headline="AI Website Chat for Glazing Contractor Companies"
+  accentWord="Glazing Contractor"
+  subhead="A homeowner finds your website at 9:15pm. She has noticed condensation between the panes in six windows — living room, dining room, and all four bedrooms. The frames are aluminium from the 1990s and she is considering whether to replace just the sealed units or upgrade to new thermally broken aluminium frames with low-E glass. She types: 'Hi — we have six double-glazed windows with condensation. Frames are aluminium. Can you replace just the glass panels, or do we need new frames? What is the cost difference?' Without chat, she bookmarks the page and forgets about it. With AI Website Chat, the AI explains both options from your profile, asks about the frame condition, window sizes, and postcode, and captures six window details. Thursday morning you call with a informed recommendation."
+  scenario="It is 11pm on a Sunday. An architect in North Oxford is finalising the facade specification for a contemporary infill house — a three-storey glass front elevation requiring frameless structural glazing with triple-glazed panels, a target U-value of 0.8, and solar control coating. He finds your website through a search for 'structural glazing Oxford' and types: 'Designing a three-storey frameless glass facade for a new-build in OX2. Need triple-glazed panels with structural silicone bonding, U-value target 0.8, solar control coating to the south elevation. Can you supply and install? I need a preliminary budget for the design team meeting on Thursday.' Without chat, he emails your contact form and waits for a Monday response. With AI Website Chat, the AI responds: 'Thank you — structural glass facades are one of our specialist capabilities. Triple-glazed panels with structural silicone bonding and solar control coatings are glass types we work with regularly. Could you share the elevation drawings and confirm the panel dimensions? We will prepare preliminary budget guidance before your Thursday meeting.' He uploads a PDF elevation. Monday at 8am you open the lead: three-storey frameless facade, OX2, triple-glazed, U-value 0.8, solar control south elevation, structural silicone, elevation drawing attached, Thursday design meeting deadline. You call at 9am with preliminary pricing notes."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/glazing-contractors/ai-receptionist/"
+  ctaHeadline="Capture the Architect Specifying Structural Glass at 11pm"
+  ctaSubhead={`An architect's Thursday design meeting deadline starts now. Your chat captures the triple-glazed facade specification before the browser closes. Included at £${pricing.tiers.core.price}/month.`}
+/>

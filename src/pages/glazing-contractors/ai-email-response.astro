@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Architect Glass Tenders',
+    text: "Architects specify structural glazing packages for contemporary homes, commercial facades, and extensions — frameless glass gables, curtain walling, balustrades, and bespoke rooflights. The glazing contractor who acknowledges the tender first demonstrates capacity and expertise. AI Email Response sends your acknowledgement within sixty seconds."
+  },
+  {
+    icon: '📐',
+    title: 'References Glass Specifications',
+    text: "When a tender specifies 'structural glass balustrade with 21.5mm toughened laminated panels, base channel fixing to concrete upstand, stainless steel handrail, and compliance with BS 6180 and Part K,' the AI references the scope accurately in its acknowledgement."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Installation Email Gap',
+    text: "Glaziers spend entire days on site — carrying panels, setting glass, applying silicone, and finishing. A structural glazing tender arriving at 9am sits unread until the evening. The sixty-second acknowledgement ensures your name appears in the architect's inbox before competing contractors."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Commercial Correspondence',
+    text: "Your inbox contains architect specifications, homeowner contact-form enquiries, glass supplier quotes, delivery confirmations, and warranty correspondence. The AI identifies genuine project opportunities and delivers them as structured leads, filtering the operational noise."
+  },
+  {
+    icon: '🤝',
+    title: 'Sustains Architect Partnerships',
+    text: "Architects who specify structural glazing rely on a small number of trusted contractors. Consistent sixty-second acknowledgements reinforce your reliability and keep your company receiving their high-value glass specifications."
+  },
+  {
+    icon: '📎',
+    title: 'References Technical Attachments',
+    text: "Glazing tenders include elevation drawings, glass schedules, structural calculations, and wind-load assessments. The AI notes attachments in both the acknowledgement and your lead summary so you know exactly what documentation to review."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI write a full glazing tender response?",
+    answer: "The AI generates only the initial acknowledgement — confirming receipt, referencing the glass type and key specification details, and assuring the architect that your detailed quotation will follow. Your site survey, glass schedule, structural calculations, programme, and pricing are prepared entirely by you. The acknowledgement ensures you are considered from the moment the tender arrives."
+  },
+  {
+    question: "Will it respond to supplier and delivery emails?",
+    answer: "The system is configured during setup to recognise genuine glazing tenders versus operational email traffic. Glass wholesale price lists, sealed unit delivery notifications, silicone supplier catalogues, and GGF newsletters are filtered out automatically. Only genuine project enquiries from architects, homeowners, and commercial clients trigger an acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner website enquiries?",
+    answer: "Contact-form submissions from homeowners — 'need four sealed units replaced in our semi in OX3' — receive a professional reply confirming interest and asking about the frame type, number of units, and preferred measurement date. These domestic enquiries are categorised separately from architect tenders on your lead dashboard."
+  },
+  {
+    question: "What does email response cost for glazing firms?",
+    answer: `At £${pricing.addOn.price}/month as a channel add-on, email response positions glazing contractors competitively when tendering for structural glass packages worth £10,000 to £60,000. An architect's confidence in your responsiveness — demonstrated through a sixty-second acknowledgement — influences which glazier receives the follow-up specification review meeting.`
+  },
+  {
+    question: "Can I compose all follow-up emails myself?",
+    answer: "Absolutely — the AI handles only the first acknowledgement. Your site survey observations, glass schedule, structural silicone methodology, installation programme, and detailed quotation are composed and sent entirely by you. No follow-up emails are generated automatically, and the AI never sends correspondence beyond the initial receipt confirmation."
+  },
+  {
+    question: "How is glazing tender data kept confidential?",
+    answer: "Structural glazing tenders contain architect drawings, engineering calculations, material specifications, and commercially sensitive budget information. All email data processed by the AI is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. Tender details are never disclosed to competing glaziers or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Glazing Contractors | Rapid Receptionist"
+  description={`AI email response for UK glazing contractors. Acknowledges architect structural glass tenders and homeowner sealed-unit enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/glazing-contractors/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Glazing Contractor"
+  tradeNamePlural="Glazing Contractors"
+  tradeSlug="glazing-contractors"
+  headline="AI Email Response for Glazing Contractor Companies"
+  accentWord="Glazing Contractor"
+  subhead="An architect emails a specification for a structural glazing package on a contemporary new-build in Cumnor — a four-metre-wide frameless glass gable, a set of minimal-frame sliding doors, a glass balustrade to the first-floor terrace using 21.5mm toughened laminated panels in a base channel, and a bespoke triangular rooflight. Total glazing budget: £48,000. Tender return in three weeks. You are on site installing a shopfront in Cowley Road — fitting the aluminium transoms, carrying glass panels from the van, and bedding each pane into the frame. Without AI Email Response, the architect's email waits until Friday. Two competing glaziers acknowledged by Wednesday. With it, your acknowledgement arrives within sixty seconds, referencing the frameless gable, the 21.5mm balustrade panels, and the three-week deadline."
+  scenario="It is 7:15am on a Thursday. Your inbox has accumulated overnight: a Checkatrade enquiry for a sealed unit replacement in Botley, an architect forwarding a glass schedule for a multi-storey residential development requiring 85 sealed units across four floors with acoustic-rated glass to the road elevation and toughened glass to the stairwell, a current client confirming that the Juliet balcony glass has arrived at the supplier's depot, and a glass wholesaler's monthly price list. Without AI Email Response, you scan the subjects while unlocking the workshop, mentally flag the multi-storey tender, and spend the day processing glass on the cutting table. The tender sits until Friday. Three competitors acknowledged by Wednesday afternoon. With AI Email Response, the multi-storey specification receives an immediate acknowledgement referencing the acoustic glazing requirements and the 85-unit count, the Checkatrade lead gets a professional response, the Juliet balcony delivery notification is flagged for your confirmation, and the price list is noted. At lunch you prioritise the multi-storey development — estimated glazing value £42,000 — and begin reviewing the glass schedule."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/glazing-contractors/ai-receptionist/"
+  ctaHeadline="Acknowledge the Glass Gable Tender While You Glaze the Shopfront"
+  ctaSubhead={`An architect's three-week tender window starts when the email lands. Your sixty-second acknowledgement keeps you competitive from the first minute. Add-on at £${pricing.addOn.price}/month.`}
+/>

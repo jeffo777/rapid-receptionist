@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "An architect calls about a frameless structural glazing package for a contemporary new-build — a full-height glass gable, floor-to-ceiling sliding doors, a frameless glass balustrade to the first-floor terrace, and a glass roof panel over the kitchen. Budget is £65,000 for the glazing package alone. You are on site installing a structural glass balustrade on a balcony — two-metre toughened laminated panels being lowered into the base channel, each one requiring precise alignment and silicone bedding. Your phone is in the van. The architect tries two more glazing contractors. One answers and arranges a Monday design meeting.",
+    with: "Your AI receptionist answers on the second ring. It captures the full specification — frameless gable, floor-to-ceiling sliders, glass balustrade, roof panel, £65,000 budget — and confirms you will call back. At lunch, with the balustrade panels set and curing, you read the lead and call the architect. You book a Wednesday site meeting."
+  },
+  {
+    without: "A facilities manager emails about replacing all the sealed units in a four-storey office block — 120 windows, many with failed seals showing condensation between the panes. She needs a FENSA-registered contractor who can work floor by floor without disrupting the tenants. Tender closes in two weeks. You are fitting a shopfront in Headington — measuring, cutting, and glazing the aluminium frames. The email sits until Thursday evening.",
+    with: "Your AI acknowledges the facilities manager's email within sixty seconds, referencing the sealed unit replacement scope, the 120-window count, and the two-week deadline. Thursday evening you begin reviewing the specification with ten days still ahead."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday morning with a photo of a cracked sealed unit — condensation between the panes, the outer pane chipped at the corner. She messages three glazing companies. You are at home with your family. By Monday morning, two have replied and one has offered a Tuesday measurement visit.",
+    with: "The AI responds to the WhatsApp within seconds, asks about the window type (casement, sash, fixed), the frame material, how many units are affected, and the property postcode. Monday at 8am you have a structured lead and call before she has finished her breakfast."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Residential Glazing",
+    items: ["Double and triple glazed sealed unit replacement", "Casement, sash, and tilt-and-turn windows", "Bi-fold and sliding patio door glazing", "Conservatory and orangery glass panels", "Rooflight and skylight installation", "Juliet balcony glass panels"]
+  },
+  {
+    category: "Commercial & Structural Glazing",
+    items: ["Aluminium shopfront glazing", "Frameless structural glass facades", "Glass curtain walling systems", "Glass partitions and office dividers", "Glass balustrades and handrails", "Fire-rated and acoustic glazing"]
+  },
+  {
+    category: "Specialist Glass Work",
+    items: ["Toughened safety glass processing", "Laminated security and safety glass", "Decorative and sandblasted glass panels", "Coloured and back-painted splashback glass", "Mirror supply and installation", "Bespoke cut-to-size glass fabrication"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Homeowners with Failed Sealed Units",
+    description: "The most common residential call. Homeowners notice condensation between their double-glazed panes — a telltale sign of seal failure. They want the sealed unit replaced without replacing the entire window frame. Speed of response matters because failed units worsen over time and homeowners want them fixed before winter."
+  },
+  {
+    icon: "📐",
+    title: "Architects Specifying Structural Glazing",
+    description: "Architects designing contemporary homes and extensions specify structural glass — frameless gables, floor-to-ceiling panels, glass balustrades, and minimal-frame sliding systems. They need glazing contractors who understand structural glass tolerances, U-value calculations, and compliance with Part L and Part K."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial Property Managers",
+    description: "Facilities managers and building managers overseeing offices, retail units, and public buildings require glazing contractors for sealed unit replacements, shopfront installations, glass partition fit-outs, and emergency board-ups after break-ins. Response speed signals reliability for ongoing maintenance contracts."
+  },
+  {
+    icon: "🏗️",
+    title: "Builders and Main Contractors",
+    description: "Builders subcontract glazing on new builds and extensions — windows, bi-folds, rooflights, and Juliet balconies. A glazing contractor who answers the phone and provides a prompt quote slots into the builder's programme. One who goes to voicemail gets replaced by a competitor on the next project."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand glazing industry terminology?",
+    answer: "Every term used across residential, commercial, and structural glazing is recognised — sealed units, toughened glass, laminated glass, low-E coatings, argon-filled cavities, U-values, casement, sash, tilt-and-turn, bi-fold, sliding doors, frameless glazing, structural silicone, glass balustrades, Juliet balconies, shopfronts, curtain walling, fire-rated glass, acoustic glass, and partitions. When an architect specifies 'a frameless structural glass gable with 12mm toughened laminated panels, structural silicone bonding, and a target U-value of 1.0,' the AI captures every detail."
+  },
+  {
+    question: "Can the AI distinguish between a simple sealed unit replacement and a major glazing project?",
+    answer: "A homeowner calling about 'a misted-up window in the bedroom' produces a very different lead from an architect specifying a structural glass facade for a new-build worth £50,000. The AI adjusts its questions to the scale described — residential replacements prompt questions about window type, frame material, and how many units are affected, while commercial and structural projects capture the specification, building type, access requirements, and tender deadline."
+  },
+  {
+    question: "What about emergency board-up calls?",
+    answer: "Break-ins, storm damage, and accidental glass breakage generate urgent calls outside normal hours. The AI identifies the emergency nature of the call, captures the property address, the type of glass damaged, access details, and the caller's contact number, then escalates the lead for your immediate attention. Your dashboard flags emergencies distinctly from standard replacement and project enquiries."
+  },
+  {
+    question: "How much does this cost for a glazing contractor?",
+    answer: `Glazing contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sealed-unit specialist handling twenty domestic replacements a week or a structural glazing firm managing major architectural projects, the allowance accommodates your call patterns. Each additional channel is £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this worthwhile for a small glazing company?",
+    answer: "Small glazing firms benefit disproportionately. When you are physically installing glass — carrying panels, setting them into frames, applying silicone, and checking alignments — you cannot hold a phone. Every missed call during an installation day is a sealed unit replacement, a shopfront quote, or a builder's subcontract that goes to the next glazier on the list. The AI ensures nothing slips through while your hands are full."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Your dashboard schedule determines when the AI activates. During installations — balustrade fitting, shopfront glazing, sealed unit replacements — route calls to the AI. During office hours at the workshop — processing glass, reviewing drawings, preparing quotes — answer calls yourself. Override the schedule at any point from your phone."
+  },
+  {
+    question: "How is customer and project data protected?",
+    answer: "Glazing enquiries contain property addresses, window schedules, structural specifications, architect details, and commercial contract information. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR and the Data Protection Act 2018, and shared exclusively with you. No project information is disclosed to competing glaziers or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Glazing Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK glazing contractors — sealed units, structural glazing, shopfronts, balustrades, and commercial glazing. Never miss a call while you install. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/glazing-contractors/ai-receptionist/"
+  tradeName="Glazing Contractor"
+  tradeNamePlural="Glazing Contractors"
+  tradeSlug="glazing-contractors"
+  headline="The AI Receptionist Built for Glazing Contractors"
+  accentWord="Glazing Contractors"
+  subhead={`You cannot answer the phone when you are lifting a toughened glass panel into a balustrade channel, silicone-bonding a frameless glass gable, or measuring an aluminium shopfront on a scaffold tower. Your AI receptionist captures every call, every message, and every enquiry — from homeowners with misted sealed units to architects specifying £50,000 structural glazing packages. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Structural Glazing Specification Arrives While You Set the Panel"
+  ctaSubhead={`An architect with a frameless glass gable and a £65,000 glazing budget will call three contractors today. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>
