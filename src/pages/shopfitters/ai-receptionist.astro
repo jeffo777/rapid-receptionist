@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A restaurant chain's procurement manager calls about fitting out four new sites across the South East — each requires bespoke joinery, commercial kitchen extraction, bar counters, banquette seating, and brand-compliant lighting. Deadline is twelve weeks for the first unit. You are on site in a boutique in Marylebone — the shop opens in three days, you are fitting the last run of display shelving, the electrician is wiring the LED track lighting, and the signage installer is measuring for the fascia. Your phone buzzes in the dust sheet. By the time you check at 6pm, the procurement manager has spoken to two other shopfitting firms and sent them the specification pack.",
+    with: "Your AI receptionist answers on the second ring. It captures the full scope — four restaurant sites, bespoke joinery, extraction, bar counters, banquette seating, brand lighting, twelve-week first unit deadline — and confirms you will call back. At 6pm you read the lead and call. You arrange a Tuesday specification review meeting."
+  },
+  {
+    without: "An interior designer emails a tender for a high-end hair salon fit-out in Chelsea — reception desk in Corian with integrated lighting, wash stations with bespoke cabinetry, styling stations with French oak mirrors, retail display wall, and a complete back-of-house staff area. Budget is £85,000. Tender closes in two weeks. You are managing a coffee shop fit-out that opens Thursday. The email sits until the weekend.",
+    with: "Your AI acknowledges the designer's email within sixty seconds, referencing the salon scope, the Corian reception desk, and the two-week tender deadline. Friday evening you begin reviewing the specification with twelve days still ahead."
+  },
+  {
+    without: "A landlord WhatsApps on Sunday evening with photos of an empty retail unit — 1,200 square feet, strip lighting, bare concrete floor, suspended ceiling tiles falling. He wants it fitted out as a coffee shop before his tenant's lease starts in eight weeks. You are at home. Two other shopfitters respond by Monday morning.",
+    with: "The AI responds to the WhatsApp within seconds, asks about the unit size, the tenant's concept, and the lease start date, and captures the photos. Monday at 7am you have a structured lead — empty unit, 1,200 sqft, coffee shop fit-out, eight-week deadline, interior photos — and call the landlord before your crew arrives on site."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Retail & Hospitality Fit-Outs",
+    items: ["Fashion boutiques and clothing stores", "Restaurants, cafés, and coffee shops", "Bars, pubs, and wine bars", "Hair salons and beauty studios", "Pharmacies and opticians", "Mobile phone and electronics stores"]
+  },
+  {
+    category: "Bespoke Joinery & Fabrication",
+    items: ["Display units and shelving systems", "Cash desk and counter fabrication", "Bar counters and back-bar joinery", "Reception desks (Corian, timber, stone)", "Mannequin plinths and window display fixings", "Retail wall panelling and feature walls"]
+  },
+  {
+    category: "Project & Brand Compliance",
+    items: ["Fascia signage and external branding", "LED and architectural lighting installation", "Brand guideline implementation", "Building regulations and fire compliance", "Mechanical and electrical coordination", "Landlord and planning consent management"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏪",
+    title: "Independent Retailers Opening New Stores",
+    description: "Independent shop owners opening their first or second location. They have a lease start date, a vision for the interior, and limited experience of the fit-out process. They need a shopfitter who can guide them from concept through to trading. The company that answers the phone with knowledge of display layouts, counters, and signage wins the confidence — and the contract."
+  },
+  {
+    icon: "🍽️",
+    title: "Restaurant & Hospitality Operators",
+    description: "Restaurant groups, independent café owners, and bar operators fitting out new venues or refurbishing existing ones. Hospitality fit-outs operate on unforgiving opening-night deadlines — every day of delay costs rent without revenue. A responsive shopfitter signals the reliability they need."
+  },
+  {
+    icon: "📐",
+    title: "Interior Designers & Architects",
+    description: "Designers specify the look — materials, finishes, furniture, lighting — and tender the manufacturing and installation to shopfitters. A prompt, professional response to a specification email keeps you on the designer's preferred contractor shortlist for future projects across multiple brands."
+  },
+  {
+    icon: "🏢",
+    title: "Chain Operators & Franchise Groups",
+    description: "Multi-site operators rolling out identical or branded fit-outs across new locations. A procurement manager issuing a specification pack for four sites needs a shopfitter who responds promptly, demonstrates capacity, and can replicate brand standards at scale."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand shopfitting terminology?",
+    answer: "Every term used in commercial fit-out work is recognised — retail display units, cash desks, counters, back-bar joinery, banquette seating, mannequin plinths, fascia signage, LED track lighting, suspended ceilings, raised access flooring, DDA compliance, brand guidelines, specification packs, and tender returns. When a procurement manager calls about 'four restaurant fit-outs requiring bespoke bar counters with integrated beer taps, banquette seating in brand-specified fabric, and commercial extraction to meet Building Regulations,' the AI captures the scope precisely."
+  },
+  {
+    question: "Can the AI handle calls from both independent shops and national chains?",
+    answer: "An independent boutique owner calling about 'a simple shop fit-out with some shelving and a nice counter' generates a different lead from a procurement team issuing a multi-site specification with brand guidelines, material schedules, and programme milestones. The AI adjusts its questioning to the complexity described — simpler projects prompt questions about the unit, timeline, and concept, while corporate tenders capture the specification detail, number of sites, and submission deadline."
+  },
+  {
+    question: "What about calls during a live fit-out with an opening deadline?",
+    answer: "Shopfitters rarely have quiet days. When you are fitting display units on a Tuesday knowing the shop opens Friday, every minute on site matters. The AI ensures you never miss a new enquiry while you focus on delivering the current project to deadline. Live project calls — from clients, suppliers, and subcontractors on the active fit-out — are flagged separately from new leads."
+  },
+  {
+    question: "How much does this cost for a shopfitting company?",
+    answer: `Shopfitting companies pay £${pricing.tiers.core.price}/month for the Core plan, which covers ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. Whether you are a specialist joiner delivering one boutique fit-out at a time or a firm running three concurrent restaurant projects, the allowance accommodates your call volume. Additional channels are each £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this practical for a small shopfitting firm?",
+    answer: "A two-person shopfitting team is precisely the business that benefits most. When both of you are on site — one routing cables behind a new counter, the other hanging the fascia sign — no one can answer the phone. The AI captures every enquiry during these intense fit-out periods, building your pipeline for the next project before the current one is even handed over."
+  },
+  {
+    question: "Can I control when the AI takes calls?",
+    answer: "Your dashboard schedule determines exactly when the AI activates. During intense final-fit periods — the last forty-eight hours before a shop opening — route everything to the AI. During slower specification-review periods at the workshop, answer calls yourself. Override the schedule manually at any time from your phone."
+  },
+  {
+    question: "How is client and project data protected?",
+    answer: "Shopfitting enquiries contain commercial lease details, landlord information, brand guidelines, design specifications, and sometimes sensitive financial data about fit-out budgets. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR and the Data Protection Act 2018, and shared exclusively with you. No project information is disclosed to competitors or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Shopfitters | Rapid Receptionist"
+  description={`AI receptionist for UK shopfitting companies — retail, hospitality, and commercial fit-outs. Never miss a call while you are on site fitting out. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/shopfitters/ai-receptionist/"
+  tradeName="Shopfitter"
+  tradeNamePlural="Shopfitters"
+  tradeSlug="shopfitters"
+  headline="The AI Receptionist Built for Shopfitting Companies"
+  accentWord="Shopfitting Companies"
+  subhead={`You cannot answer the phone when you are fitting bespoke joinery to brand-specified millimetre tolerances, hanging a fascia sign from a scaffold tower, or wiring LED display lighting forty-eight hours before a shop opening. Your AI receptionist captures every call, every message, and every enquiry — from independent retailers opening their first boutique to national chains rolling out fit-outs across multiple sites. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Four-Site Tender Arrives While You Hang the Fascia"
+  ctaSubhead={`A procurement manager with a specification pack for four restaurant fit-outs will call three shopfitters. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Fit the Joinery',
+    text: "Shopfitters spend days installing bespoke cabinetry, display units, and counters to brand-specified tolerances. Your hands hold the spirit level, the screw gun, or the trim router — not the phone. The AI answers every call in your company name and captures the fit-out brief."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Complex Fit-Out Briefs',
+    text: "When a restaurant operator describes needing 'a full fit-out including bar counter with tap integration, banquette seating in brand fabric, commercial extraction, and acoustic ceiling treatment,' the AI captures the scope and distinguishes it from a boutique owner wanting 'shelving and a cash desk.' Each lead reflects the project's true scale."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Urgent Site Calls',
+    text: "During a live fit-out, calls come from landlords, building control, sign installers, M&E subcontractors, and the client's project manager. The AI distinguishes these operational calls from new enquiries and escalates urgent items to your mobile immediately."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches After-Hours Operator Calls',
+    text: "Restaurant and retail operators often call shopfitters after their own trading hours — a café owner ringing at 9pm about a refurbishment, a boutique owner calling during her commute at 7am. These are committed leads from people who have cleared their business day to focus on the fit-out."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Estimating',
+    text: "Each lead specifies the venue type (retail, hospitality, salon), approximate unit size if mentioned, fit-out elements required (joinery, lighting, signage, M&E), the opening or completion deadline, and the caller's role (owner, designer, procurement). You can begin estimating before the site survey."
+  },
+  {
+    icon: '🏷️',
+    title: 'Commercial Credibility',
+    text: "Shopfitters compete for work from brand-conscious clients — fashion labels, restaurant groups, design agencies. A professional AI greeting that asks informed questions about the venue type and specification immediately signals a company accustomed to commercial-grade fit-out work."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their fit-out?",
+    answer: "The questions follow the caller's lead naturally. A shop owner is asked about the venue type, unit size, what elements they need (shelving, counter, signage, lighting), their opening date, and whether a designer is involved. A procurement manager issuing a multi-site tender is asked about the number of locations, specification pack availability, programme timeline, and submission deadline. Professional callers receive professional-grade questioning."
+  },
+  {
+    question: "Can the AI handle calls about different venue types?",
+    answer: "Retail boutiques, restaurants, coffee shops, hair salons, gyms, dental practices, pharmacies, and office receptions all fall within shopfitting scope. The AI recognises each venue type and adjusts its questions accordingly — a restaurant fit-out prompts questions about extraction and kitchen layout, while a clothing store prompts questions about display systems and changing rooms."
+  },
+  {
+    question: "What about calls during the final days before an opening?",
+    answer: "The forty-eight hours before a retail or hospitality opening are the most intense in shopfitting. You are snagging, touching up paintwork, dressing displays, and coordinating the final trades. The AI handles every incoming call so you can focus entirely on delivering the venue on time. New leads are captured; operational calls are escalated."
+  },
+  {
+    question: "How many call minutes are included?",
+    answer: `Your Core plan at £${pricing.tiers.core.price}/month provides ${pricing.tiers.core.minutes} minutes. Shopfitting companies receive a mix of owner-operator calls, designer tenders, and procurement enquiries. Most firms operate comfortably within the allowance. If you win a large multi-site contract and enquiry volume increases, overage is billed at 20p per minute with no penalties.`
+  },
+  {
+    question: "Can I answer calls during workshop days?",
+    answer: "When you are at the workshop — building cabinets, fabricating counters, reviewing drawings — you might prefer to answer calls yourself. Your dashboard lets you switch between AI and personal answering instantly. During on-site fit-out phases, route all calls to the AI. During workshop manufacturing periods, take calls directly."
+  },
+  {
+    question: "How is commercial fit-out data secured?",
+    answer: "Shopfitting enquiries contain brand specifications, lease details, landlord information, designer contacts, and commercial budgets. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project information is shared with competing shopfitters, disclosed to landlords, or sold to third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Shopfitters | Rapid Receptionist"
+  description={`AI phone answering for UK shopfitting companies. Captures retail, restaurant, salon, and commercial fit-out enquiries while you are on site. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/shopfitters/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Shopfitter"
+  tradeNamePlural="Shopfitters"
+  tradeSlug="shopfitters"
+  headline="AI Phone Answering for Shopfitting Companies"
+  accentWord="Shopfitting"
+  subhead="A boutique owner calls at 10:30am. She has signed the lease on a unit in the Covered Market in Oxford — 600 square feet, bare shell, and she wants it open as a homeware store in six weeks. She needs bespoke shelving, a reclaimed timber counter, pendant lighting, window display fixings, and a fascia sign matching her brand guidelines. You are on site in a coffee shop fit-out in Summertown — the counter is being installed, the barista equipment is arriving tomorrow, and you are routing the water supply behind the espresso station. Without AI Phone Answering, the boutique owner hears voicemail, hangs up, and calls the next shopfitter on her interior designer's list. With it, the AI captures the full brief — Covered Market, 600sqft, homeware, six-week deadline, shelving, counter, lighting, signage, brand guidelines — and at lunch you call her back and book a Wednesday site survey."
+  scenario="It is 2pm on a Thursday. You are managing the final fit at a hair salon in Headington — the styling stations are being fixed to the walls, the wash basin joinery is being plumbed, and the reception desk is being positioned. The salon opens Monday. Four calls come in between 1:30 and 4pm. Without AI Phone Answering, one leaves a voicemail — 'need a shopfitter for a restaurant' — the other three are bare missed calls. By Friday, two have spoken to competitors. With AI Phone Answering, all four are answered. Lead one: independent pizzeria in Cowley Road needing a full fit-out including wood-fired oven surround, counter, and seating for thirty-five — opening target eight weeks. Lead two: optician relocating to a larger unit in the Westgate and needing display walls, consultation rooms, and a reception desk — brand specifications provided by head office. Lead three: a wine bar owner wanting a back-bar refit with new shelving, undercounter fridges, and ambient lighting — work to happen during a two-week January closure. Lead four: the salon client's husband calling to ask what time the salon keys will be ready on Friday. At 4:15pm you check four leads and one operational note — three new fit-out projects worth a combined £120,000 — and prioritise your callbacks."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/shopfitters/ai-receptionist/"
+  ctaHeadline="Four Fit-Out Calls in Two Hours — Pizzeria, Optician, Wine Bar, All Captured"
+  ctaSubhead={`While you positioned the salon reception desk, four calls arrived. Three new projects worth £120,000 combined. From £${pricing.tiers.core.price}/month.`}
+/>

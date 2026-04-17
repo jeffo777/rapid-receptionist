@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Venue Photos Instantly',
+    text: "Operators WhatsApp photos of empty units, existing interiors needing refurbishment, or competitor venues they want to emulate. The AI responds within seconds, asks about the concept and deadline, and attaches every image to your lead. You can assess the unit's condition and scope before the callback."
+  },
+  {
+    icon: '📸',
+    title: 'Wins the Post-Lease Scramble',
+    text: "The moment a retailer signs a lease, the clock starts — rent is payable, the opening date is set, and the shopfitter search becomes urgent. WhatsApp messages sent in the hour after signing a lease are among the highest-converting leads in shopfitting. The AI captures them instantly."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Designer Referral Messages',
+    text: "Interior designers WhatsApp shopfitters they trust: 'Got a new project — cocktail bar in Cowley Road, can you take a look at the spec?' The AI responds immediately and captures the scope while the designer's attention is on your company."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Trading Hours',
+    text: "Retailers and hospitality operators think about fit-outs after their own business day ends. A restaurant owner WhatsApps at 11pm after closing, a boutique owner messages at 7am before opening. The AI catches these off-hours leads."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Informal Briefs',
+    text: "A WhatsApp saying 'need a fit-out for a new café, about 800sqft, Botley, opening in 8 weeks' becomes a structured lead. The AI adds concept details, specification status, and contact information through follow-ups."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp uses your business number. Commercial conversations between your company and operators, designers, and procurement teams stay on a professional line."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI handle photos of empty commercial units?",
+    answer: "The AI does not analyse architectural layouts from photos, but it acknowledges them effectively and asks the questions you need — venue concept, unit size, fit-out requirements, deadline, and budget range. Every photo, video, and floor plan sent by the operator is attached to your lead. Seeing the unit's condition before the site visit lets you prepare initial thoughts and arrive ready to discuss options."
+  },
+  {
+    question: "What about multi-message WhatsApp conversations?",
+    answer: "Fit-out conversations evolve over WhatsApp — an operator might initially message about the unit, then send designer mood boards, then ask about specific materials a week later. The AI maintains the conversation thread and your lead summary consolidates every message, attachment, and detail into one comprehensive fit-out brief."
+  },
+  {
+    question: "How much does AI WhatsApp cost for shopfitters?",
+    answer: `Add WhatsApp for £${pricing.addOn.price}/month alongside your Core plan. Shopfitting contracts span from £15,000 boutique refreshes to £200,000 multi-site restaurant programmes — responding to an operator's WhatsApp before competing firms see the message the next morning delivers a return that vastly exceeds the annual channel cost.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Sending your own message in any thread transfers the conversation to you immediately. The AI recognises your reply and steps aside. Most shopfitters let the AI handle the initial scope capture — venue type, unit size, deadline, key elements — then follow up personally to discuss specifications, arrange the site visit, and present the proposal."
+  },
+  {
+    question: "How is WhatsApp data from commercial enquiries protected?",
+    answer: "All WhatsApp messages — unit photos, lease details, brand specifications, designer contacts, and budget discussions — are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. No commercial information is shared with competing shopfitters, disclosed to landlords, or used for any purpose beyond your lead delivery."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Shopfitters | Rapid Receptionist"
+  description={`AI WhatsApp for UK shopfitting companies. Responds to retail unit photos, designer specifications, and fit-out enquiries while you are on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/shopfitters/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Shopfitter"
+  tradeNamePlural="Shopfitters"
+  tradeSlug="shopfitters"
+  headline="AI WhatsApp for Shopfitting Companies"
+  accentWord="Shopfitting"
+  subhead="An independent café owner WhatsApps at 12:15pm with five photos — the empty unit she just signed a lease on: exposed brick walls, concrete floor, strip lighting, a small kitchen area at the rear, and the shopfront with a roller shutter. Her message: 'Just got the keys! 750 sqft café space in East Oxford. Want an industrial look — exposed brick, polished concrete, reclaimed wood counter. Need it ready in seven weeks. Can you do the whole thing?' You are on site fitting bespoke display units in a clothing boutique in Bicester Village — the shop opens Saturday and every hour counts. Without AI WhatsApp, her message waits until the evening. She messages two other shopfitters; one responds in fifteen minutes. With it, the AI replies instantly, asks about her menu concept, coffee equipment requirements, and seating capacity, and your lead — complete with five unit photos — is waiting at lunch."
+  scenario="It is 6:30pm on a Tuesday. A dental practice manager in Abingdon has been tasked with finding a shopfitter to refurbish their reception and waiting area. The existing space is dated — worn carpet, MDF reception desk, fluorescent strip lighting. The practice owner wants a modern, calming environment — vinyl plank flooring, a Corian reception counter, LED downlighting, feature wall panelling, and new seating. She WhatsApps three shopfitters from Google: 'Hi — we need to refurbish our dental practice reception and waiting area. About 400 sqft. The practice is open Monday to Friday so all work needs to happen at weekends and evenings. Budget is around £18,000. Can you handle a project like this?' Without AI WhatsApp, you see the message Wednesday morning. Two shopfitters replied Tuesday evening — one with examples of medical practice refurbishments and a question about the access arrangements. With AI WhatsApp, the response arrives at 6:31pm: 'Thank you — medical and dental practice refurbishments are projects we handle regularly. Weekend and evening work is no problem. Could you share photos of the current reception area and confirm how many weekends you have available for the work? We will prepare options and arrange a visit.' She sends four photos. Wednesday morning you open the lead: dental practice, Abingdon, 400sqft reception refurb, weekend-only access, Corian counter, vinyl flooring, LED lighting, feature wall, £18k budget, photos attached. You call at 9am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/shopfitters/ai-receptionist/"
+  ctaHeadline="Respond to Unit Photos While You Fit the Display Shelving"
+  ctaSubhead={`A café owner sends five photos of her new unit the moment she gets the keys. The AI replies while you install joinery in Bicester Village. Add-on at £${pricing.addOn.price}/month.`}
+/>

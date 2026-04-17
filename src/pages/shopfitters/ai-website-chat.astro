@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Retailers Researching Fit-Outs',
+    text: "Shop owners visit shopfitter websites with urgent questions — 'how long does a fit-out take?', 'can you work from our designer's drawings?', 'do you handle signage as well as joinery?' The chat answers instantly from your profile and captures the project details."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Venue Type and Scale',
+    text: "Through conversation, the AI identifies the venue type (retail, restaurant, salon, office), unit size, fit-out elements required, the deadline, and whether a designer or brand specification is involved. You receive a pre-qualified lead that tells you the project complexity at a glance."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Lease-Signing Research',
+    text: "A retailer signs a lease at 5pm and spends the evening frantically researching shopfitters. At 9pm she finds your website, browses your portfolio of completed retail interiors, and types her first question. Without chat, she bookmarks and forgets. With it, you have her brief by morning."
+  },
+  {
+    icon: '📊',
+    title: 'Handles Timeline Questions',
+    text: "The most asked question on shopfitter websites is 'how quickly can you start?' The AI responds from your profile with typical lead times and captures the visitor's own deadline — 'lease starts 1st March' or 'need to open before Christmas' — a critical qualifying detail."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Your Portfolio Gallery',
+    text: "Shopfitting portfolios are visually powerful — empty shells transformed into polished retail environments. The chat widget converts gallery admiration into qualified fit-out enquiries while visitors browse your completed venues."
+  },
+  {
+    icon: '✅',
+    title: 'Bundled Free',
+    text: `Website chat is included with AI phone answering at £${pricing.tiers.core.price}/month. A single JavaScript snippet activates the chat on every page. Unlimited conversations on any website platform.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add chat to my shopfitting website?",
+    answer: "A lightweight JavaScript snippet is provided during onboarding. Paste it into your website header code — directly, or through WordPress, Squarespace, or Wix settings. The branded chat bubble appears on every page within minutes. If you need assistance, we walk your web developer through the process or handle installation remotely."
+  },
+  {
+    question: "Can the AI discuss different venue types with visitors?",
+    answer: "Your service profile tells the AI which venue types you specialise in — retail, hospitality, salons, offices — and it uses this to engage visitors. When someone asks 'do you fit out restaurants as well as shops?' the AI confirms from your profile, asks about the venue concept and deadline, and captures the lead. It does not quote prices but keeps the conversation productive and commercially relevant."
+  },
+  {
+    question: "What project details does the chat capture?",
+    answer: "The AI gathers the venue type, unit size (if known), fit-out elements required (joinery, counters, signage, lighting, M&E), whether brand guidelines or a designer's specification exist, the opening or completion deadline, the visitor's role (owner, designer, procurement), and their contact details. For shopfitters, this tells you whether you are looking at a £15,000 boutique refresh or a £200,000 multi-site restaurant programme."
+  },
+  {
+    question: "Does the chat widget slow down portfolio pages?",
+    answer: "Shopfitting websites feature large-format venue photography — completed restaurants, styled retail interiors, salon reveals. The chat script loads asynchronously after all visual content has rendered. Your portfolio displays at full speed. The chat bubble appears once the images are loaded. The script's data footprint is negligible compared to a single venue photograph."
+  },
+  {
+    question: "Is website chat a separate monthly fee?",
+    answer: `Phone answering and website chat are combined under the Core plan at £${pricing.tiers.core.price}/month. For shopfitters, these two channels cover the main enquiry paths — phone calls from designers and operators, and website chats from retailers browsing your portfolio late at night. One plan covers both without additional cost.`
+  },
+  {
+    question: "How is visitor data from fit-out queries handled?",
+    answer: "Chat conversations containing venue addresses, lease details, brand specifications, budget discussions, and visitor contact information are encrypted and stored on UK and EU servers in compliance with UK GDPR. Lead summaries go to you exclusively. Visitor data is never shared with competing shopfitters, disclosed to landlords, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Shopfitters | Rapid Receptionist"
+  description={`AI website chat for UK shopfitting companies. Engages retailers and hospitality operators researching fit-outs — captures project leads 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/shopfitters/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Shopfitter"
+  tradeNamePlural="Shopfitters"
+  tradeSlug="shopfitters"
+  headline="AI Website Chat for Shopfitting Companies"
+  accentWord="Shopfitting"
+  subhead="A restaurant owner finds your website at 10:30pm. He signed the lease on a 2,500-square-foot unit in Jericho this afternoon and needs it fitted out as a Mediterranean restaurant — open kitchen with extraction, bar counter with draught taps, booth seating for sixty covers, feature tile walls, and ambient pendant lighting. He has architect drawings but no shopfitter yet. He types: 'Just signed a lease on a big unit — need a full restaurant fit-out. Mediterranean concept. Open kitchen, bar, sixty covers. Have architect drawings. Can you turn this around in ten weeks?' Without chat, he emails your contact form and waits until tomorrow. With AI Website Chat, the AI asks about the unit location, drawing availability, and whether he has M&E specifications. Thursday morning you call with a detailed lead and book a Friday morning site meeting."
+  scenario="It is 11:45pm on a Sunday. A boutique fashion brand is expanding from online-only to its first physical store. The founder has secured a unit on the high street in Summertown — 450 square feet, bare shell. She needs floor-to-ceiling display shelving in brushed brass, a cash desk in matt black MDF with integrated card terminal, a fitting room with full-length mirror and curtain rail, window display fixings for mannequins, and fascia signage in her brand typeface. She finds your website through a Google search for 'bespoke shopfitter Oxford' and types: 'Opening my first shop — I have a vision but no idea about the practical side. I need everything from shelving to signage. Can you handle the whole thing? Budget around £25,000.' Without chat, she saves the tab and forgets about it by Tuesday. With AI Website Chat, the AI responds: 'Congratulations on the new store. We handle complete retail fit-outs from design through to opening — shelving, counters, display systems, signage, and finishing. Could you share the unit's address and your brand guidelines if you have them? One of our team will call you tomorrow to discuss the concept and arrange a site visit.' She uploads her brand PDF and shares the unit address. Monday at 8am you open the lead: first physical store, 450sqft bare shell, Summertown, brushed brass shelving, matt black cash desk, fitting room, window display, fascia signage, brand PDF attached, £25k budget. You call at 9am and book a Wednesday afternoon survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/shopfitters/ai-receptionist/"
+  ctaHeadline="Capture the Retailer Who Just Signed a Lease at 10pm"
+  ctaSubhead={`A restaurant owner with architect drawings and a ten-week deadline is typing into your chat right now. Capture the fit-out before he emails your competitors. Included at £${pricing.tiers.core.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Intense Fit-Out Days',
+    text: "Hanging fascia signs, fitting counters, wiring display lighting — shopfitters spend entire days on physical installation work where a phone call is impossible. Missed Call Text Back sends a branded text within seconds so the caller knows you are on site and will ring back."
+  },
+  {
+    icon: '⏱️',
+    title: 'Stops Operators Calling Competitors',
+    text: "An operator calling three shopfitters gets voicemail from two and a text from one: 'Thanks for calling — I am on site fitting a restaurant and will call you back shortly.' That operator stops scrolling Google and waits."
+  },
+  {
+    icon: '🏷️',
+    title: 'Commercial Professionalism',
+    text: "The text arrives from your business number with your company name. For shopfitting — involving bespoke joinery, brand-specified finishes, and five-figure budgets — a prompt professional response signals the kind of organised contractor that operators and designers trust."
+  },
+  {
+    icon: '📊',
+    title: 'Critical During January New Year Rush',
+    text: "January is peak shopfitting enquiry season — retailers planning spring refreshes, restaurant operators refurbishing during quiet months, and new business owners signing leases. Call volumes spike while you manage year-end projects. Missed Call Text Back catches every one."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Briefs',
+    text: "Callers often reply with project details — 'it is about a café fit-out in Summertown, about 500sqft, opening Easter.' These replies arrive in your lead summary, giving you the project scope before the callback."
+  },
+  {
+    icon: '🔄',
+    title: 'Complements Phone Answering',
+    text: "AI Phone Answering handles most calls with full conversations. Missed Call Text Back catches edge cases — a caller who hangs up quickly, a signal drop while you are under a suspended ceiling. Together, every enquiry is secured."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "The moment a call goes unanswered or reaches your voicemail, the text dispatches within seconds. The caller receives it before they have had time to search for another shopfitter. During January and spring when operators are actively sourcing fit-out contractors, this speed is the difference between making the survey shortlist and being forgotten entirely."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You write it during setup and change it whenever you want. A typical shopfitter message reads: 'Thank you for calling [company name]. I am currently on site completing a fit-out and will return your call at the earliest opportunity. Reply with your venue details for a faster response.' The message, tone, and content are entirely yours to customise."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They function as layered protection. Phone Answering handles the call with a full conversation and builds a comprehensive lead. Missed Call Text Back covers the rare gaps — a caller who disconnects before the AI picks up, or a moment of signal loss inside a commercial unit. Phone answering captures the conversation; the text catches what slips through."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Shopfitting projects range from £15,000 boutique refreshes to £200,000 multi-site programmes. Recovering one missed call through a timely text — an operator who would have contacted the next shopfitter — and converting that into a signed contract covers the add-on investment many times over.`
+  },
+  {
+    question: "Do operators actually reply to the text?",
+    answer: "Many do — particularly operators with urgent deadlines. Typical replies include the venue type, unit address, opening date, and key fit-out requirements. These arrive in your lead summary alongside the missed call record. When you call back after the site close, you already understand the project scope and can discuss specifics."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing venue addresses, fit-out requirements, and operator contact details are encrypted and held on UK and EU servers under UK GDPR. Only you can access this data. It is never shared with competing shopfitters, sold to lead services, or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Shopfitters | Rapid Receptionist"
+  description={`Missed Call Text Back for UK shopfitting companies. Automatically texts callers while you fit the joinery — keeps venue leads warm during busy seasons. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/shopfitters/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Shopfitter"
+  tradeNamePlural="Shopfitters"
+  tradeSlug="shopfitters"
+  headline="Missed Call Text Back for Shopfitting Companies"
+  accentWord="Shopfitting"
+  subhead="It is 11am on a Wednesday. You are fitting a bespoke walnut counter in a wine bar in Summertown — the countertop is heavy, the mitre joints need clamping, and the undercounter lighting needs wiring before the top goes on. Two calls come in between 10:30 and noon. Your phone is on the floor behind the bar, buried under offcuts. Without Missed Call Text Back, both callers hear voicemail. One leaves a message — 'need a shopfitter for a new shop' — the other hangs up. By lunchtime the unknown number has rung another company. With it, both receive texts within seconds. The first replies: 'Hi — opening a children's clothing boutique in the Covered Market in 6 weeks. Need shelving, a cash desk, fitting room, and window display. Budget about £18k.' At 12:30 you read the reply, call her, and book a Friday morning site visit."
+  scenario="It is 3pm on a Saturday. You have been working all day on a final fit for a restaurant opening on Monday — snagging the banquette upholstery, adjusting cabinet doors, and touching up paintwork. Three calls come in during the afternoon. Without Missed Call Text Back, you check at 5pm: three missed calls, one voicemail from a 'prospective café owner.' The other two are unknown numbers. Three venues, two permanently unrecoverable. With Missed Call Text Back, all three received texts. The first replies at 3:10: 'new juice bar in Cowley Road, 400sqft, need counter, shelving, feature wall, opening in 5 weeks.' The second at 3:25: 'dental surgery waiting room refit, 300sqft, need reception counter, seating, flooring, and lighting — all work evenings and weekends.' The third at 3:50: 'opening a barber shop in Headington, need chairs, mirrors, shelving, and a cash till area — about 250sqft.' At 5pm you finish snagging and open three leads — a juice bar, a dental surgery, and a barber shop — all with venue type, size, requirements, and access details. You call all three Monday morning and book surveys for the week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/shopfitters/ai-receptionist/"
+  ctaHeadline="Recover Three Venue Leads from One Restaurant Final Fit Saturday"
+  ctaSubhead={`Three operators called while you snagged the banquette. Three texts went out. Three replied. Three surveys booked by Monday. Add-on at £${pricing.addOn.price}/month.`}
+/>

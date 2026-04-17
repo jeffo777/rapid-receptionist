@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Venue Portfolio Reels',
+    text: "Fit-out reels captivate operators — time-lapses of bare shells becoming sleek cafés, drone flythrough reveals of finished restaurants, and close-ups of bespoke joinery details. When a follower DMs after watching a reel, the AI captures their own venue concept and timeline."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Design-Led Operators',
+    text: "Instagram's audience includes operators who prioritise aesthetics — independent boutique owners, artisan café founders, and cocktail bar creators. A DM saying 'your joinery work is exactly the standard we want' is a premium lead from someone who values craftsmanship and will invest accordingly."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Unit Photo DMs',
+    text: "Followers DM with photos of their empty unit — 'this is the space, can you transform it?' The AI acknowledges, asks about the concept and deadline, and attaches all photos to your lead for assessment."
+  },
+  {
+    icon: '🌙',
+    title: 'Captures Post-Service Inspiration',
+    text: "Restaurant and hospitality operators browse Instagram after their own service ends — chefs at midnight, bar managers at 2am. The AI captures these late-night DMs from operators planning refurbishments and new venues."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Visual Inspiration DMs',
+    text: "DMs from operators start with screenshots — 'we want something like this' with a reference photo from another venue. The AI asks about their own unit, concept, and budget, converting visual inspiration into a qualified lead."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Craft Content',
+    text: "Every joinery close-up, counter fabrication time-lapse, and finished venue walkthrough can trigger a DM. The AI converts visual admiration into commercial fit-out proposals."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "Switch to a Business or Creator account and link it to your Facebook Business page — a free change that takes two minutes. Shopfitting companies producing visual content — finished venue reveals, joinery fabrication close-ups, and fit-out time-lapses — typically operate Business accounts for the audience analytics and promotional tools they offer."
+  },
+  {
+    question: "What fit-out DMs arrive through Instagram?",
+    answer: "Almost exclusively operator-driven domestic enquiries. Café owners, boutique founders, salon owners, and restaurant operators who have been inspired by your portfolio. Common DMs include 'can you fit out a bar with that same level of joinery?', 'how much for a similar coffee shop counter?', and 'we are opening a new salon — love your work.' These leads convert at exceptional rates because the operator has already judged your craftsmanship."
+  },
+  {
+    question: "How quickly does the AI respond to DMs?",
+    answer: "Inside seconds. Instagram shows read receipts, so the operator sees immediate professionalism. Shopfitters competing for work from design-conscious operators win by responding first with informed questions about the venue concept and timeline. Speed measured in seconds creates the impression of a company with the capacity to deliver."
+  },
+  {
+    question: "What does Instagram DMs cost for shopfitters?",
+    answer: `Instagram DMs is £${pricing.addOn.price}/month as a channel add-on. Shopfitting companies whose Instagram portfolio generates enquiries find that DMs produce some of their most design-conscious, high-value leads. A single converted venue fit-out from an Instagram-sourced enquiry typically starts at £20,000 and frequently exceeds £50,000.`
+  },
+  {
+    question: "Can I reply personally to DMs?",
+    answer: "Your own message in any DM thread transfers control to you immediately. The AI withdraws. Most shopfitters let the AI capture the initial scope — venue type, concept, unit details, timeline — then follow up personally to discuss materials, share similar projects, and arrange the site survey."
+  },
+  {
+    question: "Is DM data from venue enquiries kept private?",
+    answer: "All Instagram DM content — unit photos, venue concepts, operator contact details, and budget discussions — is encrypted and stored on UK and EU servers under UK GDPR. No data is shared with competing shopfitters, used for advertising, or made accessible to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Shopfitters | Rapid Receptionist"
+  description={`AI Instagram DMs for UK shopfitting companies. Converts followers inspired by venue transformation reels into retail, restaurant, and salon fit-out consultations. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/shopfitters/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Shopfitter"
+  tradeNamePlural="Shopfitters"
+  tradeSlug="shopfitters"
+  headline="AI Instagram DMs for Shopfitting Companies"
+  accentWord="Shopfitting"
+  subhead="Your latest reel is a sixty-second time-lapse of a cocktail bar fit-out in Jericho — starting with a bare shell, showing the bespoke herringbone parquet floor being laid, the copper-topped bar counter being positioned, the back-bar shelving with integrated LED uplighting being installed, and ending with the final reveal: dim amber lighting, leather bar stools, and a wall of handwritten cocktail menus in illuminated brass frames. Seventy thousand views. A bar operator in Cowley Road DMs: 'Absolutely stunning. We are launching a new cocktail concept and want this exact level of detail. Can you come and look at our unit?' You are on site fitting a retail cash desk in a boutique. Without AI DMs, the message waits. With it, the operator shares his unit address and concept brief, and your lead is captured."
+  scenario="It is 1am on a Saturday. A chef in Oxford has just finished service at the restaurant where he works. He has been planning his own place for two years and has finally secured the lease on a 1,800-square-foot unit in a Victorian building on St Clements. He has been browsing Instagram for shopfitters who understand hospitality — and finds your account. Your portfolio shows exactly what he wants: open kitchens with pass counters, exposed services as a design feature, and bespoke joinery that feels both industrial and refined. He DMs: 'Chef looking to open my own restaurant in OX4. Large unit, 1,800sqft, Victorian building. Want an open kitchen with a pass counter overlooking the dining room, exposed ductwork as a feature, banquette seating for 80 covers, and a small cocktail bar near the entrance. Budget is £150k for the fit-out. I have a concept deck I can send. Interested?' Without AI Instagram DMs, you see the DM Saturday afternoon. He contacted two other shopfitters; one responded at 8am with congratulations and a request for the concept deck. With AI DMs, the reply arrives at 1:01am: 'Congratulations on the new restaurant — hospitality fit-outs with open kitchens and exposed services are among our favourite projects. We would love to see the concept deck. Could you share it along with the unit address? One of our team will call you on Monday to discuss the scope and arrange a site walkthrough.' He uploads the concept deck. Saturday at 10am you open the lead: chef-owner restaurant, 1,800sqft Victorian, OX4, open kitchen with pass counter, exposed ductwork, 80-cover banquette, cocktail bar, £150k budget, concept deck attached. You call Monday at 9am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/shopfitters/ai-receptionist/"
+  ctaHeadline="Turn Cocktail Bar Reels into Six-Figure Fit-Out Consultations"
+  ctaSubhead={`A copper-topped bar counter reel earns seventy thousand views. AI Instagram DMs converts every operator enquiry into a lead with concept, budget, and unit photos. Add-on at £${pricing.addOn.price}/month.`}
+/>

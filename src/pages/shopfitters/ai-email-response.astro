@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Designer Tenders Instantly',
+    text: "Interior designers send fit-out specifications by email — material schedules, finish samples, furniture layouts, M&E requirements, and brand guidelines. The shopfitter who acknowledges first demonstrates both capability and capacity. AI Email Response sends your professional acknowledgement within sixty seconds."
+  },
+  {
+    icon: '📐',
+    title: 'References Fit-Out Specifications',
+    text: "When a tender email specifies 'full restaurant fit-out including bespoke walnut bar counter, banquette seating in Kvadrat fabric, acoustic ceiling panels, LED cove lighting, and commercial grade vinyl flooring to Altro specification,' the AI references the scope accurately in its acknowledgement."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your On-Site Email Gap',
+    text: "Shopfitters spend entire days installing joinery, fixing fascias, and wiring lighting. A designer's tender arriving at 9am goes unread until the evening. The sixty-second acknowledgement ensures your name is on the shortlist while the designer's inbox is still open."
+  },
+  {
+    icon: '🗂️',
+    title: 'Filters Commercial Correspondence',
+    text: "Your inbox contains designer tenders, operator contact-form enquiries, supplier quotes for laminates and hardware, subcontractor availability confirmations, and landlord access coordination. The AI identifies genuine fit-out opportunities and separates them from operational traffic."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Designer Loyalty',
+    text: "Designers who send their best shopfitting projects to responsive contractors. A consistent sixty-second acknowledgement builds the trust that keeps your company receiving high-value tenders across multiple brands and venues."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Specification Attachments',
+    text: "Fit-out tenders include floor plans, material schedules, lighting layouts, and brand bibles. The AI references attachments in both the acknowledgement and your lead summary so you know exactly what documents need reviewing."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI write a full tender response?",
+    answer: "The AI produces only the initial acknowledgement — confirming receipt, referencing the venue type and key specification elements, and assuring the designer that a detailed quotation will follow. Your site survey, pricing, programme, and methodology document are prepared entirely by you. The acknowledgement keeps you competitive from the moment the tender arrives."
+  },
+  {
+    question: "Will it respond to supplier and hardware emails?",
+    answer: "During setup, the system learns to separate genuine fit-out tenders from routine correspondence. Laminate supplier catalogues, ironmongery quotes, scaffold invoices, and trade newsletters do not trigger acknowledgements. Only genuine project enquiries and designer specifications receive a response."
+  },
+  {
+    question: "How does it handle operator website contact forms?",
+    answer: "Contact-form submissions from shop owners and restaurant operators — 'looking for a shopfitter to fit out our new café in Headington' — receive a professional reply confirming interest and asking about the venue concept, unit size, and timeline. These domestic leads are categorised separately from designer tenders in your lead dashboard."
+  },
+  {
+    question: "What does email response cost for a shopfitting firm?",
+    answer: `At £${pricing.addOn.price}/month as a channel add-on, email response gives shopfitters an edge when tendering for projects worth £25,000 to £200,000. A designer's confidence in your responsiveness directly shapes which contractor gets recommended to the client — a sixty-second acknowledgement earns that trust from the very first email.`
+  },
+  {
+    question: "Can I write all subsequent emails myself?",
+    answer: "Every email after the initial acknowledgement is composed and sent by you personally. Your site survey findings, detailed quotation, programme schedule, material specifications, and terms of engagement are all your own professional work. The AI never generates follow-up correspondence."
+  },
+  {
+    question: "How is tender data kept confidential?",
+    answer: "Fit-out tenders contain designer specifications, brand guidelines, commercial lease details, and sensitive pricing. All email data processed by the AI is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. Specification details are never disclosed to competing shopfitters or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Shopfitters | Rapid Receptionist"
+  description={`AI email response for UK shopfitting companies. Acknowledges designer tenders and operator fit-out enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/shopfitters/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Shopfitter"
+  tradeNamePlural="Shopfitters"
+  tradeSlug="shopfitters"
+  headline="AI Email Response for Shopfitting Companies"
+  accentWord="Shopfitting"
+  subhead="An interior designer emails a specification for a high-street bakery fit-out in Summertown — bespoke oak counter with glazed display case, Carrara marble worktop, herringbone tile floor, pendant brass lighting, chalkboard feature wall, and a compact back-of-house prep area with stainless steel surfaces. Budget is £45,000, opening target eight weeks. You are on site at a clothing boutique in Bicester Village — hanging the last rail fixtures, adjusting the spotlight positions, and coordinating the window dresser who arrives tomorrow. Without AI Email Response, the designer's email waits until Friday evening. Two other shopfitters acknowledged by Wednesday lunch. With it, your acknowledgement arrives within sixty seconds, referencing the bakery scope, the Carrara marble detail, and the eight-week deadline."
+  scenario="It is 7:30am on a Wednesday. Your inbox has accumulated overnight: a Houzz enquiry for a coffee shop fit-out in Botley, a designer forwarding a tender for a cocktail bar in Cowley Road requiring a bespoke copper-topped bar counter with integrated ice wells and a feature wall of reclaimed brick, a client replying with their approved fabric sample for the banquette upholstery, and a lighting supplier confirming the LED track delivery for Thursday. Without AI Email Response, you skim the subjects while driving to site, mentally note the cocktail bar tender, and arrive at site to discover the ceiling grid supplier has sent the wrong specification. The tender sits until Thursday evening. Two competitors acknowledged by Tuesday. With AI Email Response, the cocktail bar tender receives an immediate acknowledgement referencing the copper-topped counter and reclaimed brick feature wall, the Houzz enquiry gets a professional response, the fabric approval is flagged for your confirmation, and the lighting delivery is noted. At lunch you prioritise the cocktail bar tender — estimated value £65,000 — and begin reviewing the specification."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/shopfitters/ai-receptionist/"
+  ctaHeadline="Acknowledge the Bakery Tender While You Dress the Boutique Window"
+  ctaSubhead={`A designer's eight-week deadline starts when the tender email lands. Your sixty-second acknowledgement keeps you competitive from the first minute. Add-on at £${pricing.addOn.price}/month.`}
+/>

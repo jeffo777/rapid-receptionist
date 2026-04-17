@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Venue Transformation Posts',
+    text: "Shopfitting before-and-afters are visually powerful — empty shells becoming polished restaurants, bare units becoming stylish boutiques. When a follower messages your page after seeing a completed venue, the AI captures their own fit-out vision and converts inspiration into a site survey."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Empty Unit Photo Messages',
+    text: "Operators message with photos of their new unit — bare walls, concrete floor, strip lighting — asking 'can you turn this into a coffee shop?' The AI acknowledges the photos, asks about the concept and deadline, and delivers the images alongside a structured fit-out lead."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Tagged Contractor Referrals',
+    text: "Happy clients tag your company when friends ask for shopfitter recommendations on Facebook. The friend messages your page, the AI captures the venue details within seconds — a referral lead with visual proof of your completed work."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Sunday Concept Development',
+    text: "Operators develop venue concepts on quiet Sundays — choosing finishes, browsing competitor interiors, and imagining their own space. The AI captures weekend enquiries that would otherwise wait until Monday."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Aspirational Messages',
+    text: "Messenger conversations about fit-outs start aspirational — 'love what you did to that restaurant.' The AI grounds the vision by asking about venue type, unit size, and opening date, converting admiration into a measurable brief."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Your Venue Portfolio',
+    text: "Every finished restaurant reveal, boutique opening, and salon transformation posted on Facebook can generate a Messenger enquiry. The AI converts social proof into commercial fit-out contracts."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page?",
+    answer: "You need a Facebook Business page with Messenger enabled — personal profiles cannot support the integration. Shopfitting companies typically use Facebook to showcase completed venue interiors, share fit-out progress photos, and collect operator reviews. The AI adds instant, professional message handling to your existing page presence."
+  },
+  {
+    question: "What fit-out enquiries come through Messenger?",
+    answer: "Predominantly operator-driven leads. Retailers, restaurateurs, salon owners, and café operators who have seen your completed venues and want something similar. Typical messages include 'we are opening a restaurant — can you do something like what you did there?', 'how much would a small boutique fit-out cost?', and 'we need a bar refurb done in three weeks.' These are pre-qualified leads from people who have already been convinced by your portfolio."
+  },
+  {
+    question: "How fast does the AI reply?",
+    answer: "Responses arrive within seconds. Messenger shows active indicators, creating an immediate impression of professionalism. Operators comparing three to five shopfitters give the earliest appointment to the company that responds first with relevant questions about their venue concept and timeline."
+  },
+  {
+    question: "What does Facebook Messenger cost for shopfitters?",
+    answer: `Messenger is priced at £${pricing.addOn.price}/month as a channel add-on. Shopfitting contracts range from £15,000 boutique refreshes to £200,000 multi-site programmes. Winning one venue fit-out per year through a prompt Facebook response — while competitors' messages accumulated over the weekend — repays the add-on cost indefinitely.`
+  },
+  {
+    question: "Can I continue Messenger conversations?",
+    answer: "Sending your own reply in any Messenger thread transfers the conversation to you seamlessly. Most shopfitters let the AI capture the initial scope — venue type, unit details, deadline, key elements — then follow up personally to discuss concepts, share similar project case studies, and schedule the site survey."
+  },
+  {
+    question: "How is Messenger data from fit-out queries protected?",
+    answer: "All Messenger conversations, unit photos, venue concepts, lease details, and operator contact information are encrypted and stored on UK and EU servers under UK GDPR. Data is delivered exclusively to you and is never shared with competing shopfitters, disclosed to landlords, or used for advertising."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Shopfitters | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK shopfitting companies. Converts venue transformation posts into retail, restaurant, and salon fit-out enquiries. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/shopfitters/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Shopfitter"
+  tradeNamePlural="Shopfitters"
+  tradeSlug="shopfitters"
+  headline="AI Facebook Messenger for Shopfitting Companies"
+  accentWord="Shopfitting"
+  subhead="You post a before-and-after of a restaurant fit-out in Cowley Road — the 'before' showing a derelict takeaway unit with peeling walls and a stained ceiling; the 'after' showing a stunning Mediterranean restaurant with terracotta walls, a handmade tile floor, an open kitchen pass with brass shelving, and custom booth seating upholstered in olive velvet. Three hundred likes, forty shares. A restaurant owner in Headington messages: 'Incredible work. We are opening a sister restaurant and want the same vibe. Can you do another one for us?' You are on site at a boutique fit-out, aligning display shelving to the millimetre. Without AI Messenger, the message waits until the evening. With it, the restaurateur gets an instant response, shares his unit photos, and your lead — sister restaurant, Headington, same design language, unit photos attached — is captured."
+  scenario="It is 8:30pm on a Thursday. A salon owner in Witney has been browsing shopfitter Facebook pages for three days. Her lease renewal is coming up and the landlord has offered a five-year deal if she invests in a full refurbishment. She finds your page, scrolls through four completed salon projects — wash stations, styling mirrors, reception desks, retail product walls — and messages: 'Hi — I run a hair salon in OX28 and I am refurbishing as part of a lease renewal. Need new wash stations, styling stations, a modern reception desk, retail display, and new flooring throughout. About 650 sqft. Budget is around £30,000. Can you come and look? I am only closed Sundays and Mondays so the fit-out needs to work around my trading schedule.' Without AI Messenger, you see the message Friday morning between site tasks. She has also messaged two other shopfitters; one replied Thursday evening with a link to their salon portfolio and an offer of a Sunday survey. With AI Messenger, the reply arrives at 8:31pm: 'Thank you — salon refurbishments are one of our specialisms and we are experienced at working around trading schedules. Sunday and Monday installation slots are very manageable. Could you share photos of the current salon interior and confirm how many styling stations you need? We will arrange a Sunday walkthrough.' She sends five current interior photos. Friday morning you open the lead: hair salon, OX28, 650sqft, wash stations, styling stations, reception desk, retail wall, flooring, £30k budget, Sunday/Monday access only, lease renewal driver, photos attached. You call at 9am and book a Sunday 10am survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/shopfitters/ai-receptionist/"
+  ctaHeadline="Turn Restaurant Reveal Posts into Multi-Site Fit-Out Enquiries"
+  ctaSubhead={`A Mediterranean restaurant before-and-after earns three hundred likes. AI Messenger converts every Cowley Road enquiry into a lead with venue type, budget, and photos. Add-on at £${pricing.addOn.price}/month.`}
+/>
