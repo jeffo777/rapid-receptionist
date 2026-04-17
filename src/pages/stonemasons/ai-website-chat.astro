@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Visitors Researching Heritage Masonry',
+    text: "Homeowners and heritage professionals browsing stonemasonry websites have specific questions — 'do you work with lime mortar or cement?', 'can you carve replacement stones to match originals?', 'do you have experience with listed buildings?' A chat widget lets them ask immediately, and the AI responds from your service profile to keep them engaged and capture the enquiry."
+  },
+  {
+    icon: '📐',
+    title: 'Handles Stone-Specific Questions',
+    text: "Visitors ask about the types of stone you work with, your finishing capabilities (sawn, tooled, rubbed, rock-faced), whether you can match existing stonework, and your experience with particular building periods. The AI replies based on your profile, keeping the conversation relevant and converting curiosity into a captured lead."
+  },
+  {
+    icon: '🕐',
+    title: 'Captures Evening Architectural Enquiries',
+    text: "Architects and conservation consultants browse masonry websites in the evening — reviewing potential masons for upcoming projects, comparing portfolios, and looking for heritage credentials. A chat widget at 9pm engages these high-value visitors and captures their project brief before they close the tab."
+  },
+  {
+    icon: '📊',
+    title: 'Pre-qualifies Masonry Enquiries',
+    text: "Chat naturally gathers the details you need: the stone type required, the nature of the work (repointing, repair, new build, carving), the building's listing status if applicable, the property location, access considerations, and the visitor's timeline. Your lead summary distinguishes a garden wall repair from a cathedral restoration."
+  },
+  {
+    icon: '🔗',
+    title: 'Complements Your Portfolio Pages',
+    text: "Stonemasons with online portfolios of completed heritage and architectural work attract the most engaged visitors. When a conservation officer is admiring your church restoration gallery and sees the chat widget, the step from appreciation to enquiry becomes a single click."
+  },
+  {
+    icon: '✅',
+    title: 'Part of Your Existing Plan',
+    text: `Website chat is included with the Core plan at £${pricing.tiers.core.price}/month. Installation is a simple JavaScript snippet added to your website header. Compatible with all platforms. Unlimited conversations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install the chat on my stonemasonry website?",
+    answer: "During onboarding we provide a JavaScript code snippet. Paste it into your website's header or use a plugin if your site runs on WordPress, Squarespace, or a similar platform. The chat bubble appears on every page in minutes, styled to complement your site's design. If you are more comfortable with a chisel than a keyboard, we guide you through it step by step or coordinate with your web developer."
+  },
+  {
+    question: "Can the AI discuss different stone types and finishes?",
+    answer: "Your service profile tells the AI what stones you work with — Bath stone, Portland, Cotswold limestone, York stone, sandstone, granite — and what finishes you offer. When a visitor asks 'do you work with Clipsham limestone for new-build ashlar?' the AI can confirm from your profile and ask about their project scope. It draws the visitor into a conversation and captures the lead, while leaving detailed specification advice to you on your callback."
+  },
+  {
+    question: "What information does the chat collect from visitors?",
+    answer: "Through natural dialogue, the AI captures the project type (repointing, restoration, new build, carving), the stone type if mentioned, the building's age and listing status, the property location, access details, the visitor's role (homeowner, architect, conservation officer), and their contact information. For stonemasons, this pre-qualification reveals at a glance whether you are looking at a domestic hearth installation or a multi-phase heritage programme."
+  },
+  {
+    question: "Does the chat widget affect my website speed?",
+    answer: "The script loads after your main page content has rendered. Stonemasonry websites with large portfolio galleries — high-resolution photographs of carved details, restored facades, and completed fireplaces — display at full speed before the chat bubble appears. The impact on loading performance is negligible."
+  },
+  {
+    question: "Is website chat charged on top of phone answering?",
+    answer: `Phone answering and website chat are both covered by the Core plan at £${pricing.tiers.core.price}/month — there is no separate charge. For stonemasonry businesses, these two channels capture the main routes enquiries arrive: phone calls from professionals who prefer to speak, and website chat from visitors researching your portfolio online.`
+  },
+  {
+    question: "How is chat data from heritage enquiries protected?",
+    answer: "Chat conversations about listed buildings, conservation areas, and heritage restoration projects are handled with strict confidentiality. All data is encrypted, held on UK and EU servers under UK GDPR, and delivered exclusively to you. Building addresses, listing details, and project specifications are never shared with third parties or used beyond your lead delivery."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Stonemasons | Rapid Receptionist"
+  description={`AI website chat for UK stonemasons. Engages visitors researching heritage restoration, carved stonework, and lime mortar repointing — captures leads from your portfolio pages 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/stonemasons/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Stonemason"
+  tradeNamePlural="Stonemasons"
+  tradeSlug="stonemasons"
+  headline="AI Website Chat for Stonemasonry Practices"
+  accentWord="Stonemasonry Practices"
+  subhead="A conservation officer in Oxfordshire finds your website while researching masons for a medieval bridge restoration. She scrolls through your portfolio — repointed church towers, carved replacement mullions, restored Georgian doorways. She sees the chat widget and types: 'Do you have experience with bridge masonry — specifically lime mortar repointing below the flood line?' Without chat, she bookmarks your site, forgets by Wednesday, and commissions the mason she already knows. With AI Website Chat, the AI confirms your lime mortar experience from your profile, asks about the bridge's listed status and location, and captures her contact details. By Tuesday you are discussing the project over the phone."
+  scenario="It is 8:45pm on a Wednesday. An architect in Bath is preparing a tender package for a private client who wants to restore a derelict Cotswold stone barn into a residential dwelling. The specification calls for extensive stone repair to the gable elevations, replacement mullioned windows carved from local Guiting stone, and lime mortar repointing throughout. She has shortlisted three masonry firms and is reviewing their websites. She finds your site, sees completed barn conversion projects in your portfolio, and types into the chat: 'We are preparing a barn conversion specification in the north Cotswolds — significant stone repair, new carved mullioned windows, and full repointing. Do you work with Guiting stone and can you carve replacement mullions from architectural drawings?' Without AI Website Chat, she notes your name, plans to email tomorrow, and never gets around to it — the other two firms she contacted tonight replied immediately. With AI Website Chat, the AI replies: 'We work extensively with Cotswold limestones including Guiting stone, and we carve window surrounds and mullions from architectural drawings routinely. Could you share the project location and an approximate programme, and we will arrange a conversation about the specification?' She provides the village name, says the project starts next spring, and shares her email address. Thursday morning you see the lead: barn conversion, Guiting stone mullions, full repointing, spring start, architect contact. You email her with your heritage CV and relevant project photos before 9am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/stonemasons/ai-receptionist/"
+  ctaHeadline="Convert Heritage Portfolio Browsers into Masonry Commissions"
+  ctaSubhead={`Architects and conservation officers browsing your portfolio at 9pm want answers now. Website chat captures the brief before they close the tab. Included at £${pricing.tiers.core.price}/month.`}
+/>

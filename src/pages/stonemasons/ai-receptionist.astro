@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A conservation officer from the local authority calls about a Grade II listed church in the Cotswolds — the south-facing parapet is spalling, three finials need replacing, and the lime mortar pointing is failing across the entire nave elevation. She needs a stonemason who understands lime-based repairs and has experience with ecclesiastical buildings. You are twenty feet up on a scaffold, carefully raking out decayed pointing from a Bath stone facade with a tungsten-tipped chisel, dust in your eyes, phone in the toolbox. The conservation officer leaves a voicemail and calls the next mason on the diocesan list.",
+    with: "The same conservation officer calls. Your AI receptionist answers, captures the full scope — Grade II listed church, spalling parapet, three finials for replacement, lime mortar repointing to the nave elevation, Cotswolds location — and confirms you will call back. At your tea break you ring the officer with the complete brief and arrange a site survey for Thursday."
+  },
+  {
+    without: "An architect emails about a new-build country estate in Oxfordshire — the client wants handcut Clipsham limestone ashlar to the front elevation, carved window surrounds with chamfered reveals, a balustraded entrance portico, and bespoke copings to the garden walls. The architect needs a mason who can work from architectural drawings and produce sample stones for client approval before production begins. You are in the workshop banker-masoning a replica corbel for a heritage restoration, concentration absolute, goggles on, chisel in hand. The email sits unread until the following morning. By then two other masonry firms have acknowledged.",
+    with: "Your AI acknowledges the architect's email within a minute, confirming receipt of the Clipsham limestone specification and noting the carved window surrounds, portico, and copings. Next morning you see the structured lead — a high-value new-build commission — and call the architect before the other firms have sent their formal responses."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday afternoon about a Victorian boundary wall that has partially collapsed after heavy rain — six courses of local sandstone have separated from the lime mortar bedding, rubble is across the pavement, and the council has left a hazard notice. He needs the wall rebuilt using like-for-like materials and traditional methods. You are fitting a Portland stone hearth at a residential property, kneeling on a dust sheet, adhesive setting. The WhatsApp goes unread until Sunday evening. By Monday he has found another mason who came out Sunday morning.",
+    with: "The Saturday WhatsApp gets an instant AI response. The AI captures the collapse — Victorian sandstone boundary wall, six courses down, pavement obstruction, council hazard notice, like-for-like rebuild required — and flags the urgency. Sunday morning you see the lead summary, call the homeowner at 8am, and visit at lunchtime with a plan to begin Monday."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Heritage & Conservation",
+    items: ["Listed building restoration", "Ecclesiastical and church stonework", "Lime mortar pointing and repointing", "Carved stone replacement and repair", "Heritage conservation surveys", "SPAB-compliant repair techniques"]
+  },
+  {
+    category: "New Build & Architectural",
+    items: ["Ashlar walling and facade cladding", "Carved window surrounds and mullions", "Quoins, copings, and string courses", "Porticos, columns, and balustrading", "Fireplace and hearth installation", "Bespoke architectural detailing"]
+  },
+  {
+    category: "General Masonry",
+    items: ["Natural stone walling (dry and mortared)", "Boundary and garden wall construction", "Stone steps and paving", "Stone cleaning and restoration", "Structural stone repairs", "Memorial and monumental masonry"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "⛪",
+    title: "Churches, Dioceses & Religious Buildings",
+    description: "Ecclesiastical clients represent some of the most prestigious and specialised masonry work in the country. Churchwardens, parochial church councils, and diocesan advisory committees commission parapet repairs, tower repointing, finial restoration, and carved stone replacement. These projects require heritage skills, understanding of lime mortars, and often Ecclesiastical Exemption procedures. A prompt response to a conservation officer or churchwarden's call can secure multi-year restoration programmes."
+  },
+  {
+    icon: "🏛️",
+    title: "Conservation Officers & Heritage Bodies",
+    description: "Local authority conservation officers, Historic England, the National Trust, and heritage trusts commission masonry repairs to listed buildings, scheduled monuments, and conservation areas. They need masons who understand Listed Building Consent, sensitive repair philosophy, and traditional materials. Being the first qualified mason to respond often leads to preferred contractor status for an entire authority or region."
+  },
+  {
+    icon: "📐",
+    title: "Architects & Private Clients",
+    description: "Architects designing new-build country houses, extensions to period properties, and commercial developments in conservation areas need stonemasons who can work from drawings, produce sample stones, and deliver architectural detailing to a specification. Private clients restoring manor houses, farmsteads, and estate buildings seek masons with verifiable heritage experience and local stone knowledge."
+  },
+  {
+    icon: "🏡",
+    title: "Homeowners & Domestic Clients",
+    description: "Homeowners in stone-built areas — the Cotswolds, Bath, the Yorkshire Dales, the Peak District — need masons for wall repairs, repointing, chimney rebuilds, hearth installations, and garden wall construction. Storm damage to stone boundary walls generates urgent calls. A prompt response to a homeowner whose wall has collapsed onto a pavement can lead to a valuable rebuild commission and neighbourhood referrals."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand stonemasonry terminology?",
+    answer: "Every term used across the masonry trade is recognised — ashlar, rubble walling, coursed and random, lime putty, NHL hydraulic lime, hot lime, pointing profiles (flush, recessed, ribbon, weatherstruck), quoins, copings, string courses, mullions, transoms, hood moulds, corbels, finials, voussoirs, keystones, and the full vocabulary of stone types from Bath stone and Portland stone to York stone and Clipsham limestone. When a conservation officer calls about 'NHL 3.5 lime repointing to a coursed rubble elevation with dressed quoins and a carved string course at first-floor level,' the AI captures the specification exactly."
+  },
+  {
+    question: "Can the AI handle calls from both homeowners and conservation professionals?",
+    answer: "A homeowner calling about repointing a garden wall in the Peak District generates a different lead from a diocesan advisory committee's architect calling about the restoration of a medieval church tower. The AI adjusts its approach instinctively — domestic callers are asked about the stone type, wall condition, and location, while heritage clients are asked about the building's listing status, scope of works, and any consent requirements. Each lead summary reflects the sophistication of the enquiry."
+  },
+  {
+    question: "What happens when someone calls about urgent stonework — a collapsed wall or falling masonry?",
+    answer: "Masonry emergencies are serious — a sandstone wall collapsing onto a pavement, a carved finial loosening on a church tower above a public path, or a lintel cracking and threatening structural failure. The AI recognises the urgency, captures the situation and location, and escalates to your mobile immediately. If you are on a scaffold with both hands occupied, the call transfers to our human operators. Routine enquiries about repointing quotes and hearth installations queue as standard leads."
+  },
+  {
+    question: "How much does the service cost for a stonemasonry business?",
+    answer: `Stonemasonry businesses — from a sole mason with a banker and a set of chisels to a company with a workshop, CNC capability, and multiple site crews — fit within the Core plan at £${pricing.tiers.core.price}/month. That covers ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. Additional channels like WhatsApp, SMS, email, and social media are available at £${pricing.addOn.price}/month each. The one-time setup fee of £${pricing.setup.price} is fully refundable within the first 30 days.`
+  },
+  {
+    question: "Is the service suitable for a sole trader stonemason?",
+    answer: "A sole trader mason is the person who benefits most. You spend entire days on a scaffold pointing stonework, at a banker carving a replacement corbel, or in a client's living room fitting a stone fireplace — physically unable to answer the phone. Every missed call from a conservation officer, architect, or homeowner is a commission going to the mason who picked up. One captured church restoration enquiry can pay for years of the service."
+  },
+  {
+    question: "Can I still answer my own calls when I am available?",
+    answer: "When you are driving to site, collecting stone from the quarry, or at your desk reviewing drawings, calls ring through to your mobile as usual. The AI only activates when you are genuinely out of reach — on the scaffold, at the banker, or outside working hours. You manage the schedule from your dashboard and adjust it whenever your routine changes."
+  },
+  {
+    question: "How is sensitive heritage project data protected?",
+    answer: "Stonemasonry enquiries can involve Listed Building Consent details, diocesan specifications, conservation area addresses, and commercially sensitive tender information. All data captured by the AI is encrypted in transit and at rest, stored exclusively on UK and EU servers under UK GDPR, and shared only with you. Heritage project details are never disclosed to third parties or repurposed."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Stonemasons | Rapid Receptionist"
+  description={`AI receptionist for UK stonemasons — heritage restoration, lime mortar repointing, carved stonework, and new-build masonry. Never miss a call while you are on the scaffold or at the banker. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/stonemasons/ai-receptionist/"
+  tradeName="Stonemason"
+  tradeNamePlural="Stonemasons"
+  tradeSlug="stonemasons"
+  headline="The AI Receptionist Built for Stonemasons"
+  accentWord="Stonemasons"
+  subhead={`You cannot answer the phone when you are on a scaffold repointing a listed limestone facade, at the banker carving a replacement finial, or fitting a Portland stone hearth with adhesive setting on your hands. Your AI receptionist captures every call, every message, and every enquiry — from conservation officers commissioning church restorations to homeowners with collapsed garden walls. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Heritage Masonry Commissions Go to the Mason Who Answers"
+  ctaSubhead={`A conservation officer will not leave three voicemails. She will call the next mason on the diocesan list. The AI makes sure you are the mason who picks up. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

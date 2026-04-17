@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Handles Short Enquiry Texts',
+    text: "Property owners and building managers text about masonry work between meetings — 'can you repoint a stone chimney in Moreton?' or 'need a stonemason for a limestone wall repair, are you free?' The AI responds within seconds, confirms your interest, and asks about the stone type and building age to build a usable lead."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Masonry Briefs from Fragments',
+    text: "A text saying 'need a carved stone fireplace surround, Bath stone, period property, BS6' gives the AI enough to capture — but it asks about the surround style, dimensions, and whether the client has a design or needs one drawn. Your lead arrives as a structured brief rather than a cryptic text."
+  },
+  {
+    icon: '🔔',
+    title: 'Catches Professional Referrals',
+    text: "Referral texts from architects, heritage consultants, and satisfied clients carry enormous weight in stonemasonry. A conservation officer texting 'recommended you to the owner of a listed property in Stroud — she will be in touch' is critical context. The AI captures it immediately."
+  },
+  {
+    icon: '🌙',
+    title: 'Active Beyond Workshop Hours',
+    text: "Heritage clients and homeowners text outside working hours — evenings, weekends, early mornings. A retired colonel texting at 9pm about his crumbling estate wall, or an architect texting at 7am with an urgent stone query, gets an instant AI response."
+  },
+  {
+    icon: '📋',
+    title: 'Consolidates Multi-message Threads',
+    text: "People text in stages — 'need some stone work done' then 'it is a listed cottage' then 'wall is bowing outward' then 'near Burford.' The AI processes the entire sequence and delivers one coherent lead with all the details consolidated."
+  },
+  {
+    icon: '📱',
+    title: 'Your Business Number Only',
+    text: "AI SMS operates through your professional line. Clients and heritage professionals text your business number and receive a business-quality reply."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a text about stonemasonry work?",
+    answer: "The AI identifies the masonry request and responds with a professional reply from your business — confirming your interest and asking targeted follow-ups. A detailed text like 'need lintels replaced in a listed sandstone property in Painswick' gets logged immediately with full context. A shorter text like 'do you do stone walls?' prompts the AI to ask about the stone type, wall location, building age, and the sender's postcode."
+  },
+  {
+    question: "Will the person texting know it is AI?",
+    answer: "The response reads like a well-managed stonemasonry practice replying between jobs. It uses your business name and responds with relevant masonry questions — not generic answers. Heritage professionals and homeowners texting a stonemason expect a knowledgeable, prompt reply, and that is exactly what they receive."
+  },
+  {
+    question: "What about emergency texts — falling masonry or structural cracking?",
+    answer: "Texts about structurally unsafe stonework — 'stones falling from the chimney onto the patio' or 'lintel cracking above the front door, visible gap widening' — are flagged as urgent in your lead summary. The AI responds immediately, captures the hazard detail and property address, and you receive a priority notification so you can triage the response."
+  },
+  {
+    question: "What does AI SMS cost for a stonemason?",
+    answer: `SMS is available at £${pricing.addOn.price}/month as an add-on to the Core plan. For stonemasonry businesses where individual commissions routinely exceed £5,000 and heritage restoration programmes can reach six figures, capturing a single lead through a prompt text response delivers a return that makes the monthly cost invisible.`
+  },
+  {
+    question: "Can I respond to texts myself when available?",
+    answer: "Replying directly to any text thread hands control to you — the AI recognises your message and steps back. Between jobs, in the van, or at your desk, you handle texts personally. On the scaffold or at the banker, the AI covers seamlessly."
+  },
+  {
+    question: "How is text data protected?",
+    answer: "All SMS conversations — including building addresses, heritage details, masonry specifications, and contact numbers — are encrypted and stored on UK and EU servers governed by UK GDPR. Data is accessible only to you and is never shared, sold, or repurposed for any reason."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Stonemasons | Rapid Receptionist"
+  description={`AI SMS for UK stonemasons. Responds to heritage repair texts, fireplace carving enquiries, and stone wall quotes while you are at the banker or on the scaffold. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/stonemasons/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Stonemason"
+  tradeNamePlural="Stonemasons"
+  tradeSlug="stonemasons"
+  headline="AI SMS for Stonemasonry Practices"
+  accentWord="Stonemasonry Practices"
+  subhead="A heritage consultant texts: 'Visited a Jacobean manor near Stow-on-the-Wold today — magnificent carved overmantel in the great hall needs conservation. Owner is open to proposals. Are you interested?' You are on a scaffold in Bourton, bedding a replacement sandstone coping in hot lime mortar, both hands occupied, phone in the van below. Without AI SMS, the text sits unread for four hours. By 5pm the consultant has texted two other masons — one replied within twenty minutes and has already spoken to the owner by phone. With it, the AI responds immediately, confirms your heritage carving experience, and asks for the owner's contact details. At teatime you call the consultant, and by Thursday you are standing in a Jacobean great hall measuring the overmantel."
+  scenario="It is 7:50am on a Monday. You are loading the van with tools and stone for a church repointing job starting at 9am in the Cotswolds. Your phone buzzes with a text from an architect you worked with last year: 'Morning — got a new project. Client buying a derelict chapel near Tetbury, wants to convert it to a dwelling. Significant stone repair to the nave walls, new window tracery, and a carved stone porch entrance. Probably £80k–£100k of masonry. Interested? I will send the survey report this week.' Without AI SMS, you see the text before driving but decide to reply properly later — which becomes tomorrow, then Wednesday. Meanwhile the architect, under time pressure from the client, contacts another mason who replied by 9am Monday with an enthusiastic yes. With AI SMS, the AI responds at 7:51am: 'Thank you — chapel conversions with carved tracery and porch detailing are exactly the projects we excel at. We would be very interested. Please send the survey report and we will review it this week.' The architect sends the PDF at lunchtime. By Wednesday you have reviewed the survey, called the architect, and discussed your approach. The project is yours."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/stonemasons/ai-receptionist/"
+  ctaHeadline="Capture Heritage Referral Texts Before They Go Cold"
+  ctaSubhead={`A consultant's text about a Jacobean overmantel will not wait until teatime. The AI responds while you are on the scaffold. Add-on at £${pricing.addOn.price}/month.`}
+/>

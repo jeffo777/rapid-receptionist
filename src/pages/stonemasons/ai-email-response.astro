@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Restoration Tenders Instantly',
+    text: "Heritage trusts, diocesan boards, and local authorities send masonry restoration tenders by email — specifications, condition surveys, architectural drawings, listed building consent applications. The stonemason who acknowledges first demonstrates professionalism and earns the most attention when the tender panel reviews responses. AI Email Response sends a professional acknowledgement within sixty seconds."
+  },
+  {
+    icon: '📐',
+    title: 'Recognises Heritage Specification Language',
+    text: "When a tender specifies 'NHL 3.5 lime mortar repointing to random rubble elevations, like-for-like replacement of three dressed sandstone mullions to south chancel window, and conservation-grade stone cleaning to tower using DOFF system,' the AI captures the specification accurately in the acknowledgement. The sender sees that their email reached a masonry practice that speaks their language."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Email Gap During Site Work',
+    text: "Stonemasons are on scaffolds, at bankers, and on heritage sites all day with no opportunity to check email. A diocesan restoration tender that arrives at 9am and sits unacknowledged until evening has lost an entire working day. The AI acknowledges receipt immediately, keeping you competitive while you continue working."
+  },
+  {
+    icon: '🗂️',
+    title: 'Differentiates Tender from Domestic Enquiry',
+    text: "Your inbox receives a mixture — formal heritage tenders, architect specification emails, homeowner contact form submissions, and hearth installation enquiries. The AI identifies each type and the lead summary arrives with clear context, so you know whether to prepare a formal tender response or make a quick domestic callback."
+  },
+  {
+    icon: '🤝',
+    title: 'Strengthens Architect and Trust Relationships',
+    text: "Architects and heritage trusts who have commissioned you before expect prompt communication when they issue a new tender or brief. A fast acknowledgement reinforces trust and signals availability. For masonry practices building long-term relationships with cathedral workshops, diocesan boards, and conservation consultancies, this consistency is invaluable."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Attached Surveys and Drawings',
+    text: "Heritage masonry tenders arrive with condition survey reports, stone analysis results, architectural drawings, and photographic schedules. The AI notes what is attached in both the acknowledgement and your lead summary — '3 attachments: condition survey, elevation drawings, and stone analysis report' — so you know exactly what to review."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI write a full heritage tender response?",
+    answer: "The AI sends only an initial acknowledgement — confirming receipt of the tender, noting the project scope and any deadline, and assuring the sender that a full response will follow. The detailed methodology, heritage references, stone sourcing proposals, and pricing that win restoration tenders are composed entirely by you in your own time."
+  },
+  {
+    question: "Will it reply to material supplier emails and newsletters?",
+    answer: "The system is configured during onboarding to distinguish genuine project enquiries and tenders from background email — quarry price lists, tool supplier promotions, trade publication newsletters, and spam. It responds only to actionable business communications."
+  },
+  {
+    question: "How does it handle emails about bespoke carved stonework?",
+    answer: "Enquiries about carved fireplaces, memorial stones, architectural carvings, and bespoke commissioned pieces arrive by email with reference images, design briefs, and sometimes architectural drawings. The AI acknowledges the enquiry, notes any attached images or documents, and confirms that you will review the brief and respond. Your lead summary flags the carving requirement so you can assess the scope and complexity before your callback."
+  },
+  {
+    question: "What is the cost for AI Email Response?",
+    answer: `Email response is priced at £${pricing.addOn.price}/month as an add-on to the Core plan. For stonemasonry practices where a single heritage restoration commission can be worth £50,000 to £200,000, acknowledging the tender within sixty seconds — rather than eight hours later — offers a competitive advantage whose value far exceeds the monthly cost.`
+  },
+  {
+    question: "Can I send my own follow-up emails afterwards?",
+    answer: "The AI handles only the initial acknowledgement. All subsequent emails — your detailed tender submission, heritage methodology, stone sourcing strategy, programme, and pricing — are composed and sent by you. The AI does not intervene in follow-up correspondence."
+  },
+  {
+    question: "How is tender email content kept confidential?",
+    answer: "Heritage tender documents, condition surveys, stone specifications, and conservation management plans are commercially and culturally sensitive. All email content processed by the AI is encrypted, stored on UK and EU servers under UK GDPR, and shared with no one except you. Tender information is never accessed for any purpose beyond generating your acknowledgement and lead summary."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Stonemasons | Rapid Receptionist"
+  description={`AI email response for UK stonemasons. Acknowledges heritage restoration tenders, carved stonework commissions, and architectural specifications within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/stonemasons/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Stonemason"
+  tradeNamePlural="Stonemasons"
+  tradeSlug="stonemasons"
+  headline="AI Email Response for Stonemasonry Practices"
+  accentWord="Stonemasonry Practices"
+  subhead="An English Heritage project manager emails a tender for the conservation of a medieval gatehouse at a scheduled monument in Wiltshire — the specification calls for stone consolidation, lime mortar repointing to all elevations, replacement of four eroded carved heads on the string course, and DOFF cleaning to the portcullis arch. The tender deadline is three weeks away. You are on a scaffold at a parish church in the Cotswolds, raking out decayed cement pointing from a limestone tower. Without AI Email Response, the tender sits unread until tonight while two other masonry firms acknowledge by noon. With it, your acknowledgement arrives within a minute and you begin reviewing the specification that evening."
+  scenario="It is 10:30am on a Monday. You are in your workshop banker-masoning a pair of replacement Portland stone pilaster capitals for a Regency crescent in Bath — exacting work requiring concentration, callipers, and an understanding of classical proportions. Dust fills the air, your goggles are on, and your phone is across the room. A cathedral's fabric advisory committee emails you: they are commissioning a five-year rolling conservation programme for a medieval cathedral's west front. Phase one involves a detailed condition survey of the carved figures in the west portal, stone analysis testing, trial conservation repairs, and a costed proposal for the subsequent four phases. The email includes the building's monument number, a summary of previous conservation reports, and a deadline of six weeks for the Phase 1 proposal. Without AI Email Response, you read the email at 6pm, begin reviewing the attachments Tuesday evening, and send a brief acknowledgement Wednesday. Two rival masonry firms acknowledged on Monday morning and are already reviewing the conservation reports. With AI Email Response, the acknowledgement goes out at 10:31am: 'Thank you for the cathedral west front conservation programme. We have received the tender documents and previous conservation reports, and will review them in detail this week. We look forward to submitting our Phase 1 proposal within the deadline.' The fabric committee notes your immediate engagement. Tuesday evening you begin your review with the full six-week window ahead of you — and eventually secure Phase 1, which grows into a multi-year programme worth over £400,000."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/stonemasons/ai-receptionist/"
+  ctaHeadline="Acknowledge Cathedral Tenders the Moment They Land"
+  ctaSubhead={`Heritage restoration tenders have tight deadlines and exacting panels. An acknowledgement within sixty seconds gives you the full window. Add-on at £${pricing.addOn.price}/month.`}
+/>

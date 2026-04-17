@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Craftsmanship Appreciation into Commissions',
+    text: "Stonemasonry generates extraordinary visual content — the grain of freshly carved Bath stone, the texture of hand-tooled ashlar, the contrast of new lime mortar against weathered limestone. When a follower DMs after seeing your carving process or completed restoration, the AI responds instantly and captures their project vision."
+  },
+  {
+    icon: '🎯',
+    title: 'Attracts Design-Aware Private Clients',
+    text: "Instagram reaches homeowners, architects, and interior designers who value craftsmanship and heritage aesthetics. A DM saying 'love the carved fireplace in your latest post — can you create something similar for our Georgian house?' is a premium domestic lead. The AI captures the style reference, room details, and contact information."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Varied Creative Enquiries',
+    text: "DMs arrive from homeowners wanting hearths and garden features, architects seeking masons for listed building extensions, interior designers looking for carved stone mantels, and occasionally memorial clients needing bespoke carved pieces. The AI adapts its questioning to each project type."
+  },
+  {
+    icon: '🌙',
+    title: 'Active During Evening Art Browsing',
+    text: "People browse creative and craft content after 8pm. A homeowner admiring your reel of a carved stone head being revealed from a rough block — chisel marks, dust, the form emerging — sends a DM at 10pm. The AI captures the enquiry while the visual fascination is still vivid."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Creative DMs',
+    text: "DMs about bespoke stonework arrive as fragments — a reference photo, a question about stone types, a comment about budget. The AI consolidates everything into a structured lead: commission type, stone preference, dimensions if mentioned, location, and contact details."
+  },
+  {
+    icon: '🔗',
+    title: 'Makes Your Workshop Content Pay',
+    text: "Reels showing carving processes, time-lapses of restoration work, and close-ups of tooled finishes earn followers. AI Instagram DMs turns that audience into paying clients. Every reel can generate a commission."
+  }
+];
+
+const faqs = [
+  {
+    question: "What kind of Instagram account do I need as a stonemason?",
+    answer: "An Instagram Business or Creator account connected to your Facebook Business page enables the DM integration. Switching from a personal account takes moments and is free. Many stonemasons already use Business accounts to share workshop content and restoration photography — the upgrade adds analytics and the DM integration we need."
+  },
+  {
+    question: "What masonry enquiries arrive through Instagram?",
+    answer: "Instagram DMs tend towards the premium and bespoke end of stonemasonry — homeowners inspired by carved fireplace photos, interior designers seeking custom stone mantels, architects admiring restoration portfolios, and occasionally memorial clients who have seen carved lettering work. These leads are typically high-value because the follower has already been captivated by your craftsmanship and is enquiring with genuine creative intent."
+  },
+  {
+    question: "How quickly does the AI reply to DMs?",
+    answer: "Within seconds. Instagram shows typing indicators and read receipts, confirming immediate activity. For masonry DMs triggered by a carving reel or restoration photo — someone watches stone being shaped and thinks 'I want something like that for our home' — the speed of the response determines whether inspiration becomes action or fades by the next scroll."
+  },
+  {
+    question: "What does AI Instagram DMs cost for stonemasons?",
+    answer: `The add-on costs £${pricing.addOn.price}/month alongside the Core plan. For stonemasons whose Instagram portfolio showcases carved fireplaces worth £3,000 to £15,000, restoration projects worth tens of thousands, and bespoke architectural commissions, capturing a single project from a DM covers the add-on cost for years.`
+  },
+  {
+    question: "Can I take over a DM conversation?",
+    answer: "Replying directly in any DM thread through the Instagram app causes the AI to step aside. You continue the conversation — sharing sketches, stone samples, previous commissions, and pricing — while the follower sees one continuous exchange between themselves and your practice."
+  },
+  {
+    question: "How is DM data handled?",
+    answer: "All Instagram DM content — messages, reference images, project descriptions, addresses, and contact details — is encrypted and stored on UK and EU servers under UK GDPR. Data is shared exclusively with you. No DM content is repurposed, sold, or accessed by anyone other than your practice."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Stonemasons | Rapid Receptionist"
+  description={`AI Instagram DMs for UK stonemasons. Converts followers inspired by your carving process reels and restoration portfolios into heritage and bespoke masonry commissions. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/stonemasons/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Stonemason"
+  tradeNamePlural="Stonemasons"
+  tradeSlug="stonemasons"
+  headline="AI Instagram DMs for Craft Stonemasons"
+  accentWord="Craft Stonemasons"
+  subhead="A homeowner watches your Instagram reel — a close-up of your hands carving a Bath stone acanthus leaf capital, chisel finding the form, stone dust drifting in workshop light. She DMs: 'This is beautiful work. We are restoring a Georgian farmhouse near Bradford-on-Avon and need a pair of carved capitals for the entrance portico. Can you do this?' You are on a scaffold fitting replacement quoins. Without AI Instagram DMs, the message waits until evening. With it, the homeowner gets an instant response, shares photos of the existing portico, and your lead arrives with a bespoke carving commission ready to price."
+  scenario="It is 9pm on a Friday. An interior designer in London is scrolling Instagram, curating inspiration for a client's country house renovation in the Cotswolds. She comes across your account — a beautifully photographed portfolio of carved stone fireplaces, restored window surrounds, and bespoke garden features. She DMs: 'Stunning portfolio. I am designing the interiors for a Grade II listed manor house near Northleach. The client wants a hand-carved stone chimneypiece for the drawing room — Bath stone, classical proportions, with a carved urn motif on the frieze. Can you produce a design from my brief and carve to specification? Budget is up to £12,000.' Without AI Instagram DMs, you read the message Saturday afternoon after a morning on site. The designer has also DM'd two other carving masons — one replied at 10pm Friday with relevant portfolio examples and began the conversation. With AI Instagram DMs, the AI replies at 9:01pm: 'Thank you — carved chimneypieces in Bath stone are one of our core specialisms. Classical proportions with urn detailing sounds like a wonderful commission. Could you share your design brief or any reference images, and confirm the room dimensions? One of our team will review the brief and call you early next week.' She sends a mood board, a reference image from a Georgian pattern book, and room measurements. Monday morning you open the lead: Grade II manor house, drawing room chimneypiece, Bath stone, carved urn frieze, £12,000 budget, interior designer contact in London, mood board and references attached. You call at 9am, discuss proportions and stone selection, and begin the most prestigious carving commission of the year."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/stonemasons/ai-receptionist/"
+  ctaHeadline="Turn Carving Process Reels into Bespoke Commissions"
+  ctaSubhead={`A reel of chisel meeting stone captivates thousands. AI Instagram DMs ensures every DM becomes a lead with scope, stone type, and contact details. Add-on at £${pricing.addOn.price}/month.`}
+/>

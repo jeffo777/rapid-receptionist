@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Are on the Scaffold',
+    text: "Stonemasons spend hours at height — pointing a limestone facade, fitting replacement quoins, or bedding copings in lime mortar — unable to reach a phone. The AI answers every call with your business name, asks informed questions about the stonework required, and delivers a comprehensive lead summary you can read when you descend."
+  },
+  {
+    icon: '⛪',
+    title: 'Captures Heritage Briefs with Precision',
+    text: "When a conservation officer calls about 'NHL 3.5 repointing to a random rubble nave elevation with dressed quoins, replacement of a weathered hood mould above the west door, and cleaning the chancel arch voussoirs,' the AI records the specification verbatim. Your lead summary reads like a scope of works — not a garbled voicemail."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Structural Emergencies',
+    text: "A carved finial loosening above a church porch, a lintel cracking under a Georgian window, or a boundary wall collapsing onto a public footpath — these emergencies demand rapid assessment. The AI detects urgency, captures the structural concern and location, and escalates to your mobile. If you are mid-point on a scaffold, the call routes to our human operators."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches After-Hours Heritage Enquiries',
+    text: "Architects and private clients often call about masonry projects in the evening — reviewing drawings at their desk, preparing client presentations, or writing conservation management plans. A 7pm call from an architect about a new-build stone facade is a premium lead. The AI captures the brief while you are at home."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Summaries Tailored to Masonry',
+    text: "Each lead arrives with the stone type mentioned, the work required (repointing, repair, carving, new build), the building's listed status if stated, the location, access considerations, and the caller's timeline. For experienced masons, this is often enough to give an informed preliminary view on the callback."
+  },
+  {
+    icon: '🏷️',
+    title: 'Projects a Professional Heritage Practice',
+    text: "Stonemasonry is a craft trade where reputation and professional presentation matter enormously. A AI greeting using your company name — followed by knowledgeable questions about the stone, the building, and the scope — immediately signals to conservation officers and architects that they are dealing with a serious masonry practice."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI say when a conservation officer calls about a listed building?",
+    answer: "The AI greets the caller using your company name and then has a natural conversation about the project. For heritage masonry, it asks about the building type and listed status, the stone type, the nature of the repair or restoration work, any consent requirements mentioned, the building's location, and the caller's timeline or programme. The officer experiences a professional, knowledgeable reception that reflects well on your practice."
+  },
+  {
+    question: "Can the AI distinguish between a garden wall repair and a church restoration?",
+    answer: "A homeowner describing three courses of garden wall that need rebuilding produces a fundamentally different lead from a diocesan architect describing a medieval tower restoration requiring a full scaffold, stone analysis, lime mortar specification, and phased programme. The AI captures what the caller describes and structures the lead accordingly — scale, complexity, heritage sensitivity, and budget indication are all apparent from the summary."
+  },
+  {
+    question: "What if an architect calls with a complex specification?",
+    answer: "Masons working with architects regularly receive detailed verbal briefs — stone type, finish (sawn, rubbed, tooled, rock-faced), jointing profile, bonding pattern, carved detailing, and programme requirements. The AI records these details accurately, producing a lead summary that mirrors the brief. You can review the specification before your callback and ask informed follow-up questions."
+  },
+  {
+    question: "How many phone minutes does the plan include?",
+    answer: `The Core plan at £${pricing.tiers.core.price}/month provides ${pricing.tiers.core.minutes} minutes of AI phone answering. Stonemasonry businesses typically receive fewer calls than high-volume domestic trades — but each call is potentially much more valuable. A single heritage restoration enquiry can represent six figures of work. The allowance covers typical monthly volumes comfortably, with overage at 20p per minute if needed.`
+  },
+  {
+    question: "Can I take calls directly when not on the tools?",
+    answer: "Calls ring through to your mobile whenever you are available — at the quarry selecting stone, in the workshop reviewing templates, driving between sites, or at your desk pricing a tender. The AI intercepts only when you cannot physically answer: on the scaffold, at the banker, or outside your set hours. Dashboard controls let you adjust the schedule instantly."
+  },
+  {
+    question: "How is heritage project information kept confidential?",
+    answer: "Masonry enquiries frequently involve listed building specifications, diocesan restoration programmes, conservation area details, and architecturally sensitive information. All data captured by the AI is encrypted during transmission and at rest, held on UK and EU servers under UK GDPR, and shared exclusively with you. Heritage project details are never disclosed to third parties or used for any purpose beyond generating your lead summaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Stonemasons | Rapid Receptionist"
+  description={`AI phone answering for UK stonemasons. Captures heritage restoration briefs, architectural specifications, and emergency masonry calls while you are on the scaffold or at the banker. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/stonemasons/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Stonemason"
+  tradeNamePlural="Stonemasons"
+  tradeSlug="stonemasons"
+  headline="AI Phone Answering for Stonemasonry Businesses"
+  accentWord="Stonemasonry Businesses"
+  subhead="A diocesan architect calls at 10am about a Grade I listed church in Somerset. The west tower needs comprehensive repointing in hot lime, twelve replacement pinnacle stones, and a new carved parapet detail to match the original fourteenth-century profile. You are twenty-two feet up on a scaffold in Cirencester, carefully raking out failed cement pointing from a Cotswold limestone facade with a tungsten chisel. Your phone is in the van. Without AI phone answering, the architect hears voicemail and calls the next mason on the cathedral workshop's recommended list. With it, the AI captures the full brief and you call the architect at lunchtime with the specification in front of you."
+  scenario="It is 11:15am on a Tuesday in October. You are at the banker in your workshop, carving a replacement Bath stone corbel for a Georgian townhouse restoration in Bristol. The work demands total concentration — you are following a profile template, working with a mallet and pitching chisel, checking the depth against the original with callipers. Stone dust fills the air and your ear defenders block the phone ringing on the workbench behind you. A heritage consultant calls. She has been commissioned by the National Trust to prepare a condition survey and repair specification for a seventeenth-century estate gatehouse in Wiltshire. The project involves stone analysis, lime mortar testing, trial repointing panels, and ultimately a phased restoration programme over two summers. She needs a mason with demonstrable SPAB experience, heritage references, and availability to begin with trial panels in the spring. Without AI Phone Answering, the call goes to voicemail. She has three masons to try and moves to the next one, who answers, discusses his heritage portfolio, and sends his CV by close of business. With AI Phone Answering, the AI answers on the second ring. It captures the project: National Trust gatehouse restoration, Wiltshire, condition survey and phased programme, SPAB experience required, trial panels in spring. At 12:30pm you put down the chisel, brush the dust from your phone, and see the lead summary. You call the consultant, discuss your relevant projects, and email your heritage CV that afternoon. By Friday you are confirmed for the trial panel phase of what becomes a £180,000 two-year restoration programme."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/stonemasons/ai-receptionist/"
+  ctaHeadline="Never Let a Heritage Commission Go to Voicemail"
+  ctaSubhead={`A conservation officer calls once. If voicemail answers, the next mason on the list gets the project. The AI keeps you in every conversation. From £${pricing.tiers.core.price}/month.`}
+/>

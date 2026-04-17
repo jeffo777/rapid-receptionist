@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Responds to Damage Photos from Site',
+    text: "Homeowners and building managers WhatsApp photos of deteriorating stonework — spalling ashlar, crumbling lime mortar, cracked lintels, missing copings. You are on a scaffold with goggles and a chisel. The AI responds within seconds, acknowledges the images, asks about the building age and stone type, and captures the full enquiry while you continue working."
+  },
+  {
+    icon: '📸',
+    title: 'Preserves Visual Evidence',
+    text: "Photos of damaged stonework are diagnostically valuable — you can see the stone type, the mortar condition, the extent of spalling, and the scale of intervention needed before visiting. The AI logs every image against the lead, and your summary arrives with the photos attached for review."
+  },
+  {
+    icon: '⚡',
+    title: 'Secures Commissions from Professionals',
+    text: "Conservation officers and architects increasingly use WhatsApp to contact tradespeople — sending site photos and voice notes from property inspections. A mason who responds professionally within seconds signals both capability and capacity. A mason who reads the message tomorrow has already been replaced on the shortlist."
+  },
+  {
+    icon: '🌙',
+    title: 'Captures Weekend Heritage Enquiries',
+    text: "Homeowners notice masonry problems at weekends — exploring their garden walls, looking up at chimneys, walking around their property. A Saturday afternoon WhatsApp with three photos of a cracked sandstone window sill is a genuine lead. The AI captures it and your lead is ready for Monday morning."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Informal Messages',
+    text: "A WhatsApp saying 'can u look at our chimney? Stones are loose and mortar is coming out, Bath' becomes a structured lead: chimney repair, loose masonry and failed mortar, Bath location. The AI asks about the building age, stone type, and access to complete the brief."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Number',
+    text: "AI WhatsApp connects to your business line. Clients and professionals message your practice number, receive professional responses, and your personal WhatsApp stays private."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI understand photos of deteriorating stonework?",
+    answer: "The AI acknowledges photos and asks the right diagnostic follow-ups — what stone type is the building (limestone, sandstone, granite), when was it built, has it been previously repaired with cement, and what is the extent of the visible damage. The images are attached to your lead summary so you can assess the stone condition, mortar failure, and intervention scale before your callback. Many masons find that seeing the stonework in advance saves a preliminary visit."
+  },
+  {
+    question: "What if a conservation officer sends a WhatsApp from a site visit?",
+    answer: "Conservation officers inspecting listed buildings often WhatsApp photos to potential masons directly from site — cracked mullions, spalling ashlar, failed pointing — with a message like 'are you available for a repair programme starting in the autumn?' The AI responds immediately, captures the building type, location, scope, and programme, and your lead arrives with the site photos attached. Responding to a heritage professional within seconds positions you as the responsive, capable mason they want on their shortlist."
+  },
+  {
+    question: "How much does AI WhatsApp cost for a stonemason?",
+    answer: `This add-on costs £${pricing.addOn.price}/month alongside the Core plan. Heritage masonry commissions — church restorations, carved stonework, and listed building programmes — can be worth tens or hundreds of thousands of pounds. Securing even one through a prompt WhatsApp response to a conservation officer or architect justifies the add-on cost indefinitely. Increasingly, younger heritage professionals prefer WhatsApp as their primary communication channel.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Typing your own reply in any WhatsApp thread causes the AI to step aside instantly. Most masons let the AI capture the initial enquiry — stone type, damage description, building details — then follow up personally to discuss the specification, share relevant portfolio photos, and arrange a site survey."
+  },
+  {
+    question: "Is WhatsApp message data stored securely?",
+    answer: "All WhatsApp exchanges — text messages, stonework photos, building addresses, specification details, and contact information — are encrypted and held on UK and EU servers under UK GDPR. For heritage projects involving listed building details and conservation-sensitive information, this privacy protection ensures that project data remains strictly between you and your client."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Stonemasons | Rapid Receptionist"
+  description={`AI WhatsApp for UK stonemasons. Responds to heritage damage photos, conservation officer enquiries, and lime mortar repair requests while you are on the scaffold. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/stonemasons/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Stonemason"
+  tradeNamePlural="Stonemasons"
+  tradeSlug="stonemasons"
+  headline="AI WhatsApp for Heritage and Architectural Stonemasons"
+  accentWord="Heritage and Architectural"
+  subhead="A conservation officer WhatsApps four photos from a site visit to a Grade II listed farmhouse in the Cotswolds — spalling quoins on the south gable, failed cement pointing that needs replacing with lime, a cracked sandstone lintel above the kitchen window, and a missing coping stone from the boundary wall. Her message reads: 'Available for a phased repair programme starting in spring? Building owner is keen to use a local mason.' You are on a scaffold in Cheltenham, fitting a replacement carved hood mould above a Georgian doorway. Without AI WhatsApp, the message sits unread until 6pm. By then, the officer has sent the same photos to two other masons — one responded within the hour. With it, the AI replies immediately, captures the building details, and your lead arrives with all four photos and the programme timeline."
+  scenario="It is 2:30pm on a Thursday. You are at the banker in your workshop, carving a pair of replacement scroll corbels from Portland stone for a Grade I listed manor house in Somerset. The work requires total focus — following the original profile from a plaster mould, working with a mallet and claws, checking the undercut against the template. Your phone is face-down on the workbench. An architect in Oxford WhatsApps you: 'I am specifying natural stone for a contemporary extension to a listed cottage in the Chilterns — Bath stone ashlar with tooled finish to the front elevation, rubbed quoins, and a carved datestone above the entrance. Can you produce sample panels and the datestone carving? Happy to send drawings.' Without AI WhatsApp, you see the message at 5pm, reply at 5:30, and the architect responds Monday — a three-day gap. With AI WhatsApp, the AI replies at 2:31pm: 'Thank you — Bath stone ashlar with tooled finish and carved detailing is exactly the work we specialise in. Could you share the drawings and confirm the programme? One of our team will review them and call you to discuss the specification.' The architect sends the elevation drawings and a programme note saying panels are needed by February. At 5pm you open the lead: Bath stone ashlar extension, tooled finish, carved datestone, Chilterns, architect drawings attached, February sample deadline. You call Friday morning and begin the most rewarding project of the year."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/stonemasons/ai-receptionist/"
+  ctaHeadline="Respond to Heritage Site Photos Before Your Competitors"
+  ctaSubhead={`Conservation officers WhatsApp damage photos from listed buildings and commission the mason who responds first. The AI ensures that mason is you. Add-on at £${pricing.addOn.price}/month.`}
+/>

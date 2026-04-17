@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Concentrated Work',
+    text: "Carving, pointing, and fitting stone demands total concentration — you cannot pause a lime mortar joint or abandon a chisel cut mid-profile. When a call goes unanswered, Missed Call Text Back sends a branded text within seconds. The caller knows you are a practising mason, not a company that ignores its phone."
+  },
+  {
+    icon: '⏱️',
+    title: 'Keeps Heritage Professionals Engaged',
+    text: "Conservation officers and architects who call a stonemason and reach voicemail typically try one or two more masons immediately. A text arriving six seconds later — 'Thank you for calling, I am on the scaffold and will return your call this afternoon' — pauses their search and keeps you in the conversation."
+  },
+  {
+    icon: '🏷️',
+    title: 'Branded and Credible',
+    text: "The text arrives from your business number with your practice name. For heritage masonry — where trust, reputation, and professionalism matter enormously — a prompt text response signals a well-run practice rather than an unreachable sole trader."
+  },
+  {
+    icon: '📊',
+    title: 'Safety Net for Rare High-Value Calls',
+    text: "Stonemasonry receives fewer calls than high-volume domestic trades, but each call can be exceptionally valuable — a church warden commissioning a tower restoration, an architect specifying carved ashlar, or a homeowner needing a collapsed wall rebuilt. Losing even one to voicemail is costly. Text back ensures none are lost entirely."
+  },
+  {
+    icon: '📋',
+    title: 'Gathers Context from Replies',
+    text: "Callers frequently reply to the text with project details — 'it is about repointing a listed cottage near Chipping Norton, lime mortar' or 'need a carved stone fireplace surround priced.' Your lead summary includes the phone number and the reply, giving you context before the callback."
+  },
+  {
+    icon: '🔄',
+    title: 'Complements AI Phone Answering',
+    text: "AI Phone Answering handles the vast majority of calls. Missed Call Text Back catches the rare exceptions — a caller who rings off before the AI connects, a momentary signal dropout on a rural heritage site, or a very brief call. Together, both systems form a complete safety net."
+  }
+];
+
+const faqs = [
+  {
+    question: "When is the text sent?",
+    answer: "The text fires the instant a call goes unanswered or reaches voicemail within your set ring time. The caller receives it within seconds — before they have dialled the next stonemason on their list. For heritage professionals calling from site with a specific project in mind, this immediacy keeps your practice in the conversation."
+  },
+  {
+    question: "What does the text say?",
+    answer: "You write the text yourself during onboarding and can change it whenever you wish. A typical stonemason's message might be: 'Thank you for calling [your practice name]. I am currently on the scaffold and will return your call at the next opportunity. If your enquiry involves a listed building or structural concern, please reply with the details.' The tone and content are entirely yours."
+  },
+  {
+    question: "Does Missed Call Text Back replace the AI Phone Answering?",
+    answer: "They serve different roles. AI Phone Answering intercepts the call, conducts a full conversation, and captures a detailed lead. Missed Call Text Back handles the few calls that slip past — a caller who hangs up after one ring, or a signal gap on a rural site. The phone system is the primary defence; the text is the backstop."
+  },
+  {
+    question: "How much does this feature cost?",
+    answer: `Missed Call Text Back is £${pricing.addOn.price}/month as an add-on. For a stonemasonry practice where a single heritage commission can be worth £10,000 to £200,000, recovering one missed call through a text response represents a return on investment that makes the monthly cost insignificant.`
+  },
+  {
+    question: "Do callers reply to these texts?",
+    answer: "Many do — especially professionals who prefer text communication. Common replies include the building type, stone specification, listing status, and the urgency of the project. These replies appear in your lead summary alongside the missed call record, giving you a full context brief before your callback."
+  },
+  {
+    question: "Is missed call data stored securely?",
+    answer: "Phone numbers, text replies containing heritage building locations, stone specifications, and project scope are all encrypted in transit and at rest on UK and EU servers under UK GDPR. Only you have access to this data. It is never disclosed to other parties, used for marketing, or repurposed beyond your lead delivery."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Stonemasons | Rapid Receptionist"
+  description={`Missed Call Text Back for UK stonemasons. Automatically texts callers when you are on the scaffold or at the banker — keeps heritage commissions warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/stonemasons/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Stonemason"
+  tradeNamePlural="Stonemasons"
+  tradeSlug="stonemasons"
+  headline="Missed Call Text Back for Heritage Stonemasons"
+  accentWord="Heritage Stonemasons"
+  subhead="It is 10:30am on a Thursday. You are on a scaffold at a Grade I listed manor house in the Cotswolds, carefully raking out failed cement pointing from dressed ashlar quoins with a tungsten chisel — concentration absolute, goggles on, dust in the air. Your phone is in the toolbox on the scaffold platform, face down. Two calls come in: one from a churchwarden whose church tower needs a full repointing survey, and one from an architect commissioning carved window surrounds for a new-build country house. Without Missed Call Text Back, both hear voicemail. The churchwarden tries one more mason. The architect moves down his list. With it, both receive an instant text: 'Thank you for calling — I am on a scaffold on a listed building and will call you back at lunch.' Both wait."
+  scenario="It is 2:15pm on a Saturday in November. You have spent the morning fitting a hand-carved Portland stone fireplace surround in a private residence near Cheltenham — precise work requiring spirit levels, stone adhesive, and careful alignment of the shelf and jambs. Your phone is on the kitchen worktop behind you. A homeowner in Stow-on-the-Wold calls. His Victorian boundary wall — coursed Cotswold limestone with dressed copings — has partially collapsed after heavy rain, with stones across the pavement and a council hazard notice on the debris. He needs a mason urgently. Without Missed Call Text Back, he hears voicemail, tries three more masons, and books the one who answered. With Missed Call Text Back, he receives a text six seconds later: 'Thank you for calling [your practice]. I am fitting a fireplace and will return your call within the hour. If this involves a structural or safety concern, please reply with the details.' He replies at 2:18pm: 'Boundary wall collapsed onto pavement in Stow. Council hazard notice. About 8 feet of coursed limestone down. Need it rebuilt like-for-like urgently.' At 3pm you finish the fireplace, check your phone, and see the lead summary: collapsed boundary wall, coursed Cotswold limestone, 8 feet, Stow-on-the-Wold, council hazard notice, urgent. You call back, arrange a Sunday morning visit, and begin the rebuild on Monday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/stonemasons/ai-receptionist/"
+  ctaHeadline="Recover Every Heritage Call Lost to the Scaffold"
+  ctaSubhead={`A conservation officer calls once. A text within seconds keeps the conversation alive until you descend. Add-on at £${pricing.addOn.price}/month.`}
+/>
