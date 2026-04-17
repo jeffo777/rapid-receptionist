@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Turns Website Visitors into Enquiries',
+    text: "Most suspended ceiling companies get website traffic from contractors searching for 'ceiling subcontractor near me' or architects looking for specialist ceiling companies. A chat widget on your site converts that passive browsing into active enquiries — visitors ask about your capabilities, coverage area, and availability without picking up the phone. For a trade where first response often determines who gets shortlisted, live chat captures leads that a contact form would lose."
+  },
+  {
+    icon: '📐',
+    title: 'Handles Technical Ceiling Questions',
+    text: "Website visitors may ask 'do you install concealed grid systems?' or 'can you do acoustic ceilings to BB93?' or 'what fire-rated ceiling systems do you work with?' The AI responds with knowledgeable answers based on your service profile, keeping the visitor engaged rather than bouncing them to search for another ceiling contractor. Every conversation is logged and sent to you as a lead summary."
+  },
+  {
+    icon: '🕐',
+    title: 'Available When Your Website Is Busiest',
+    text: "Quantity surveyors and contracts managers often browse subcontractor websites in the evening when they are compiling tender lists. An architect might check your portfolio at 9pm while finalising a specification. Without live chat, these visitors click away without making contact. The AI engages them instantly, captures their requirements, and delivers the lead to you by morning."
+  },
+  {
+    icon: '📊',
+    title: 'Qualifies Enquiries Before You Call Back',
+    text: "The chat conversation naturally establishes the key details — project type, location, approximate scale, timeline, and what the visitor is looking for. By the time you see the lead summary, you already know whether it is a twelve-thousand square metre warehouse ceiling or a fifty square metre boardroom refit, and you can prioritise your response accordingly."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Your Project Gallery',
+    text: "If a fit-out contractor is viewing your portfolio of completed ceiling installations and has a question about a specific project or system, the chat widget is right there. They ask, the AI responds, and what started as casual browsing becomes a qualified lead with contact details and project requirements attached."
+  },
+  {
+    icon: '✅',
+    title: 'Included in Your Plan at No Extra Cost',
+    text: `AI Website Chat is bundled with the Core plan at £${pricing.tiers.core.price}/month — there is no additional charge to add it to your site. Installation takes minutes: a small code snippet is added to your website and the chat widget appears on every page. It works on any website platform including WordPress, Squarespace, Wix, and custom-built sites.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How is the chat widget installed on my website?",
+    answer: "You receive a small JavaScript snippet to paste into your website — either in the header, footer, or via a plugin if you use WordPress, Squarespace, or similar. The entire process takes under five minutes. The widget then appears as a chat bubble on every page of your site, matching your branding colours. If you are not comfortable editing website code, we can walk you through it or coordinate directly with your web developer."
+  },
+  {
+    question: "Can the AI answer technical questions about ceiling systems?",
+    answer: "During setup, you provide your service profile — the grid systems you install, tile types you work with, specifications you are experienced in, your geographical coverage, and any specialist capabilities like clean room ceilings or healthcare installations. The AI uses this to respond knowledgeably when a visitor asks about concealed grid versus exposed grid, acoustic ratings, or fire barrier specifications. It does not make technical promises on your behalf, but it engages the visitor with enough expertise to keep them on your site rather than searching elsewhere."
+  },
+  {
+    question: "What information does the chat collect from visitors?",
+    answer: "The AI has a natural chat conversation that gathers the key details — what type of ceiling work the visitor needs, the approximate area or number of rooms, the project location, any specification requirements they mention, their timeline, and their contact details. For suspended ceiling enquiries, it also picks up on context clues like whether the visitor is a main contractor tendering a package or a facilities manager needing repair work. All of this arrives in your lead summary."
+  },
+  {
+    question: "Does the chat widget slow down my website?",
+    answer: "The chat script loads asynchronously — it does not block any of your page content from rendering. Visitors see your website at full speed and the chat widget appears once the page has loaded. The performance impact is negligible. Most suspended ceiling company websites include project image galleries that are far heavier than the chat snippet."
+  },
+  {
+    question: "Is there a charge for AI Website Chat?",
+    answer: `Website chat is included in the Core plan at £${pricing.tiers.core.price}/month at no additional cost. Unlike add-on channels such as WhatsApp or Facebook Messenger, you do not pay extra for chat. For most ceiling companies, the combination of AI phone answering and live website chat covers the two primary ways contractors and specifiers make initial contact — calling your number and visiting your website.`
+  },
+  {
+    question: "How are chat conversations and visitor data handled?",
+    answer: "Every chat session is recorded, summarised, and delivered to you as a structured lead. The conversation data — including any project details, contact information, and specification requirements shared by the visitor — is encrypted and stored on UK and EU servers under UK GDPR. Visitor data is never sold, shared with third parties, or used for advertising. You are the only person who receives the lead information."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Suspended Ceiling Installers | Rapid Receptionist"
+  description={`AI website chat for UK suspended ceiling installers. Engages visitors browsing your ceiling company website, answers technical questions about grid systems and specifications, and captures leads 24/7. Included in the Core plan at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/suspended-ceiling-installers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Suspended Ceiling Installer"
+  tradeNamePlural="Suspended Ceiling Installers"
+  tradeSlug="suspended-ceiling-installers"
+  headline="AI Website Chat for Ceiling Contractors"
+  accentWord="Ceiling Contractors"
+  subhead="A contracts manager at a fit-out company finds your website while building a tender list for an office refurbishment in Bristol. She browses your project gallery, sees that you have installed concealed grid systems in similar offices, and types a question into the chat: 'Do you cover Bristol and how quickly could you price a 2,000 sqm ceiling package?' The AI responds instantly, captures her details, and by the time you check your leads that evening, you have a qualified tender opportunity waiting."
+  scenario="It is 9:15pm on a Tuesday evening. A quantity surveyor is compiling a subcontractor shortlist for a ceiling package on a new medical centre. She has been through six ceiling company websites — three had no chat, two had chatbots that just said 'someone will be in touch,' and one did not load properly. She finds your website, sees your healthcare ceiling portfolio, and clicks the chat icon. She types: 'We need mineral fibre ceilings to HTM specification for a new GP surgery, approximately 800 sqm, with hygiene tiles in clinical areas and acoustic tiles in the waiting room. Do you have availability from September?' Without AI Website Chat, she would have emailed a contact form and heard nothing until tomorrow, by which time she has already spoken to two competitors on the phone. With AI Website Chat, the AI responds within seconds: 'Thank you for your enquiry. We regularly install healthcare ceiling systems to HTM standards. Could I get your name and the best number to call you on, and one of our team will discuss the project details with you?' She provides her details, specifies the project location in Swindon, and mentions the architect's name. By Wednesday morning, you call her with the full brief and book a site visit before any other ceiling company has even read her email."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/suspended-ceiling-installers/ai-receptionist/"
+  ctaHeadline="Turn Website Browsers into Ceiling Contracts"
+  ctaSubhead={`Your website should convert visitors into leads, not just show a phone number. AI chat captures every enquiry while you are on site. Included at £${pricing.tiers.core.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Saves Calls That Would Otherwise Vanish',
+    text: "In the suspended ceiling trade, you work at height on scaffold towers and mobile platforms for most of the day. Climbing down to answer every call is impractical and unsafe. Missed Call Text Back bridges the gap — when a call goes to voicemail, the caller immediately receives a branded text from your business confirming you will call them back. Instead of hearing silence and googling the next ceiling contractor, they wait."
+  },
+  {
+    icon: '⏱️',
+    title: 'Responds in the Critical First Thirty Seconds',
+    text: "A fit-out contractor who calls three ceiling subcontractors in succession will typically go with the first one who responds. If your phone rings while you are wiring hanger rods into a soffit, that contractor hears voicemail and dials the next number. A text arriving within seconds of the missed call changes the dynamic — they know you are working (which signals you are busy and in demand) and that you will call back promptly."
+  },
+  {
+    icon: '🏷️',
+    title: 'Uses Your Business Name and a Professional Message',
+    text: "The text arrives from your business number and reads professionally — not a generic 'we missed your call' but a personalised message that names your company, acknowledges the missed call, and confirms a callback. For ceiling companies working in the commercial sector, where professionalism is expected, this maintains the standards that main contractors and specifiers look for in a subcontractor."
+  },
+  {
+    icon: '📊',
+    title: 'Provides a Safety Net for Your Busiest Days',
+    text: "Programme-critical periods on ceiling installations — when the grid framework is going in and the tiles need to follow before other services are commissioned above — mean you physically cannot stop to answer the phone for entire days. Missed Call Text Back ensures every caller during those intense periods gets an immediate acknowledgement rather than an empty voicemail promise."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Contact Details Automatically',
+    text: "When the text goes out, the caller's number is logged automatically. Many callers reply to the text with additional details — 'it is about a ceiling package for an office in Watford, 800sqm' — and that response is captured in your lead summary. You end up with both the contact number and a brief description of what they need, all without picking up the phone."
+  },
+  {
+    icon: '🔄',
+    title: 'Works Alongside AI Phone Answering',
+    text: "Missed Call Text Back activates when a call genuinely cannot be answered — if the AI phone answering is at capacity, if there is a connection issue, or if the caller hangs up before the AI can pick up. It is a second safety net. Most ceiling companies use both together: the AI answers the majority of calls, and Missed Call Text Back catches the tiny percentage that slip through."
+  }
+];
+
+const faqs = [
+  {
+    question: "When exactly does the text get sent?",
+    answer: "The text is triggered the moment a call goes to voicemail or is not answered within your configured ring time. The caller receives the text within seconds of hanging up — often before they have had time to search for another ceiling contractor. This speed is the entire point of the feature: it converts an abandoned call into an active lead before the caller moves on."
+  },
+  {
+    question: "What does the text message actually say?",
+    answer: "You write the message during setup, and it is fully customisable. A typical text for a ceiling company might read: 'Thank you for calling [your business name]. We are on site and unable to take your call right now. We will call you back as soon as possible. If your enquiry is urgent, please reply to this text with the details.' The tone, length, and wording are entirely up to you — the AI sends exactly what you have written."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "No — they serve different purposes and work best together. AI Phone Answering answers the call, has a conversation, and captures a detailed lead. Missed Call Text Back is a fallback for the rare calls that are not answered — a caller who hangs up after two rings before the AI connects, or a call during a brief system handover. Think of AI Phone Answering as your receptionist and Missed Call Text Back as the 'we will call you back' note they leave at an empty reception desk."
+  },
+  {
+    question: "Is there a cost for Missed Call Text Back?",
+    answer: `Missed Call Text Back is an add-on at £${pricing.addOn.price}/month on top of the Core plan. For a ceiling company, where individual contracts often range from £5,000 to £50,000+, a single missed call recovered by the text message easily justifies the cost. Most ceiling contractors find that even one captured lead per month from this feature represents a substantial return on the investment.`
+  },
+  {
+    question: "Can callers reply to the text with project details?",
+    answer: "Yes, and many do. The reply arrives in your lead summary alongside the original missed call record. Some callers reply with a brief description — 'need ceiling repair to water-damaged grid in an office building' — which gives you context before your callback. Others simply reply confirming they will wait for your call. Either way, the conversation has started and you have their number logged."
+  },
+  {
+    question: "How is missed call and text data protected?",
+    answer: "All missed call records and text message exchanges are managed under UK GDPR and encrypted on UK and EU servers. The caller's phone number, the time of the call, and any reply text they send are stored securely and shared only with you. We do not use caller data for marketing, analytics, or any purpose beyond delivering your lead information. For ceiling companies handling enquiries about commercial projects, this ensures sensitive project information shared via text reply remains confidential."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Suspended Ceiling Installers | Rapid Receptionist"
+  description={`Missed Call Text Back for UK suspended ceiling companies. Automatically texts callers when you cannot answer — captures the lead and keeps them waiting for your callback. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/suspended-ceiling-installers/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Suspended Ceiling Installer"
+  tradeNamePlural="Suspended Ceiling Installers"
+  tradeSlug="suspended-ceiling-installers"
+  headline="Missed Call Text Back for Ceiling Installation Businesses"
+  accentWord="Ceiling Installation"
+  subhead="A main contractor calls about a ceiling package for a warehouse conversion in Swindon — four thousand square metres of exposed grid with metal pan infill tiles. You are on a mobile tower with an impact driver in your hand, hanger rods half-fixed to the deck above. The call goes to voicemail. Without Missed Call Text Back, the contractor dials the next ceiling subcontractor on their list. With it, the contractor receives a text within seconds: 'Thank you for calling. We are currently on site and will call you back shortly.' They wait — and you call back at lunch with the full scope in front of you."
+  scenario="It is 9:05am on a Friday morning. You are standing on a scaffold tower in a newly built training centre in Coventry, running the first main runner of a ceiling grid — laser level marking the line, hanger wire pre-cut, cross tees stacked on the platform beside you. Your phone is in your coat pocket, draped over the tower guardrail. A contracts manager at a regional fit-out company calls about a three-floor office ceiling in Leamington Spa — exposed grid with mineral fibre acoustic tiles, fire barriers at every floor compartment, and a programme that starts in three weeks. She needs three ceiling subcontractors for her tender shortlist by Monday. Your phone rings four times and goes to voicemail. Without Missed Call Text Back, she leaves a brief voicemail — 'Hi, it is Sarah from Vanguard Interiors, call me back when you can about a ceiling job' — and immediately calls the next company. By lunchtime she has three ceiling companies confirmed and your voicemail is irrelevant. With Missed Call Text Back, Sarah receives a text six seconds after hanging up: 'Thank you for calling Clearspan Ceilings. We are on site and will call you back as soon as possible. If your enquiry is urgent, please reply to this text.' Sarah replies: 'No rush — need you on a ceiling tender list for Leamington Spa office, 3 floors, exposed grid, programme starts mid-June.' At 10:30am you check your phone at a tea break and see the full lead — project, location, programme dates, contact name — ready for a callback. You ring Sarah, confirm your interest, and receive the tender documents by email that afternoon."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/suspended-ceiling-installers/ai-receptionist/"
+  ctaHeadline="Recover Every Missed Call with an Instant Text"
+  ctaSubhead={`When you cannot answer — because you are wiring hanger rods, cutting grid, or fitting tiles — the caller gets a text in seconds, not silence. Add-on at £${pricing.addOn.price}/month.`}
+/>

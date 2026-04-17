@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Captures Leads from Your Facebook Business Page',
+    text: "Commercial ceiling companies increasingly maintain Facebook pages to showcase completed projects — office fit-outs, healthcare ceilings, retail installations. When a property manager sees your work and sends a Messenger enquiry about ceiling repairs in their building, the AI responds immediately while you are on site fitting grid. Without it, that enquiry sits in a 'message request' folder you might not check for days."
+  },
+  {
+    icon: '📸',
+    title: 'Responds to Photo Messages from Potential Clients',
+    text: "Facilities managers often send photos of ceiling damage through Messenger — water-stained tiles, a sagging grid section, or a ceiling that needs modifying to accommodate new HVAC ducting. The AI acknowledges the images, asks about the location and urgency, and packages the conversation into a lead summary with the photos attached. You see the issue before you call back."
+  },
+  {
+    icon: '⚡',
+    title: 'First Response Wins the Maintenance Contract',
+    text: "Property management companies responsible for multiple commercial buildings tend to stick with ceiling contractors who respond promptly. A fast, professional Messenger reply to an initial enquiry creates a first impression that leads to repeat work across their entire portfolio. The AI delivers that responsiveness consistently, even when you are standing on a scaffold tower with your hands full."
+  },
+  {
+    icon: '🕐',
+    title: 'Active 24 Hours a Day',
+    text: "A building manager notices ceiling tiles shifting above a reception desk on a Friday evening. A fit-out company browses ceiling contractor pages on a Sunday while planning next week's subcontractor bookings. These out-of-hours Messenger enquiries are valuable — and they go cold quickly if unanswered. The AI engages every enquiry the moment it arrives, regardless of the day or time."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Lead Reports from Casual Conversations',
+    text: "Messenger conversations tend to be informal — short messages, abbreviations, questions asked over multiple exchanges. The AI consolidates the entire thread into a clean lead summary: who contacted you, what ceiling work they need, where the project is, how urgent it is, and how to reach them. Your callback starts informed, not confused."
+  },
+  {
+    icon: '🔗',
+    title: 'Links Your Social Presence to Your Sales Pipeline',
+    text: "Posting photos of completed ceiling installations on Facebook generates engagement. AI Messenger converts that engagement into actionable leads. A like on a project photo becomes a conversation about a similar installation, which becomes a lead summary in your inbox. The gap between marketing and sales shrinks to seconds."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page to use this?",
+    answer: "You need a Facebook Business page (not a personal profile) connected to Facebook Messenger. If you already have one — even if you rarely post on it — the AI can be connected to respond to incoming messages. Many ceiling companies have a low-activity Facebook page that occasionally receives enquiry messages they do not notice for days. The AI ensures those messages get immediate, professional responses whether you post regularly or not."
+  },
+  {
+    question: "What kind of ceiling enquiries come through Facebook Messenger?",
+    answer: "The enquiry profile on Messenger tends to differ from phone or email. Fit-out contractors and QS teams rarely use Facebook — they call or email. Messenger enquiries more often come from facilities managers, property managers, small business owners needing office ceiling repairs, and occasionally architects who have found your project portfolio through social media. These are typically smaller projects but can lead to ongoing maintenance relationships that provide steady, recurring revenue."
+  },
+  {
+    question: "How quickly does the AI respond to a Messenger enquiry?",
+    answer: "The AI responds within seconds of receiving a message. Facebook Messenger shows read receipts and typing indicators, so the sender sees that their message is being addressed immediately. For a ceiling company, this speed matters most for repair and maintenance enquiries — when a building manager has a ceiling problem, they are messaging multiple contractors simultaneously and the first professional response usually secures the job."
+  },
+  {
+    question: "What does AI Facebook Messenger cost?",
+    answer: `Messenger is an add-on channel at £${pricing.addOn.price}/month on top of the Core plan. For ceiling companies that maintain an active Facebook presence and receive enquiry messages through the platform, this channel captures leads that would otherwise sit unread in the message request folder. The cost is equivalent to less than thirty minutes of labour on a ceiling installation — a fraction of what a single captured lead is worth.`
+  },
+  {
+    question: "Can I still reply to Messenger conversations personally?",
+    answer: "When you respond to a Messenger thread yourself, the AI recognises your reply and steps back from the conversation. You can handle messages personally during evenings, weekends, or quiet periods, and the AI covers the times when you are on site and cannot check your phone. The handover is seamless — the person messaging you experiences a continuous, professional conversation."
+  },
+  {
+    question: "How is data from Messenger conversations protected?",
+    answer: "All Messenger conversation data — including enquiry details, contact information, and any images shared — is encrypted and stored on UK and EU servers under UK GDPR. The data is used solely to generate your lead summaries and is shared with no one outside your business. Facebook's own data policies apply to the platform itself, but the data we process from your conversations is handled entirely within our UK-based infrastructure."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Suspended Ceiling Installers | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK suspended ceiling companies. Responds to enquiries through your Facebook Business page instantly — captures ceiling repair requests, project enquiries, and maintenance leads. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/suspended-ceiling-installers/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Suspended Ceiling Installer"
+  tradeNamePlural="Suspended Ceiling Installers"
+  tradeSlug="suspended-ceiling-installers"
+  headline="AI Facebook Messenger for Ceiling Contractors"
+  accentWord="Ceiling Contractors"
+  subhead="A facilities manager sees your post about a completed office ceiling installation in Leeds and sends a Messenger enquiry: 'We manage twelve office buildings in West Yorkshire — all need ceiling tile replacements this year. Can you handle the volume?' You are on a scaffold tower in a different city. Without AI Messenger, that enquiry sits in your message requests for three days. With it, the facilities manager gets an instant reply, shares the building list, and by the time you check your leads that evening you have a potential twelve-building maintenance contract waiting."
+  scenario="It is 7:45pm on a Thursday evening. A property management company in Bristol is scrolling through Facebook, looking at ceiling contractor pages to find someone for an office building they have just taken on. The previous ceiling in the main open-plan area has water staining from an old roof leak, six tiles are cracked, and two sections of grid are bowing. They find your page, see project photos that look professional, and send a Messenger message: 'Hi, we need ceiling repairs to an office on the harbour — about 200 sqm of damaged grid and tiles. Can you come and take a look? We would need it done in the next month ideally.' Without AI Facebook Messenger, that message joins three unread requests in your inbox that you will notice on Saturday. By then the property company has found another ceiling contractor who responded Friday morning. With AI Facebook Messenger, the AI replies within seconds: 'Thank you for your message. We cover Bristol and can assess ceiling damage quickly. Could I get the building address and a contact number, and one of our team will arrange a site visit?' The property manager provides the details, mentions they manage fourteen other properties in the South West, and at 9pm you open your phone to find a lead summary that could turn into a long-term maintenance contract."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/suspended-ceiling-installers/ai-receptionist/"
+  ctaHeadline="Turn Facebook Enquiries into Ceiling Maintenance Contracts"
+  ctaSubhead={`Property managers searching for ceiling contractors on Facebook expect fast replies. The AI guarantees they get one. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Tender Emails Within a Minute',
+    text: "In the suspended ceiling trade, tender invitations arrive by email — often with a submission deadline measured in days, not weeks. A QS sends the ceiling package to four subcontractors at 3pm on a Tuesday. The ceiling company that acknowledges first and asks the right questions about the scope typically gets the most attention from the QS during the pricing period. AI Email Response sends a professional acknowledgement within sixty seconds, confirming you have received the tender and will review the documents."
+  },
+  {
+    icon: '📐',
+    title: 'Understands Ceiling Specification Language',
+    text: "When an email arrives referencing 'concealed grid to SAS International 130 system with Rockfon Tropic Class A tiles, minimum NRC 0.85, fire-rated barriers at all compartment walls,' the AI recognises this as a technical ceiling specification and captures it accurately in the response and lead summary. Your acknowledgement demonstrates familiarity with the specification rather than a generic 'thank you for your email.'"
+  },
+  {
+    icon: '🕒',
+    title: 'Responds to Emails You Would Not See for Hours',
+    text: "Most ceiling installers check email once or twice a day — at lunchtime and in the evening. An email that arrives at 9:30am might not be seen until 6pm. For tender invitations, that is half a working day lost. Enquiries from facilities managers about emergency ceiling repairs are even more time-sensitive. The AI provides an immediate professional response regardless of when the email arrives, keeping you in contention for time-critical work."
+  },
+  {
+    icon: '🗂️',
+    title: 'Organises Email Enquiries into Actionable Leads',
+    text: "Some emails are tender invitations with attached drawings. Some are enquiries from property managers about ceiling tile replacements. Some are architects requesting availability for a consultation. The AI categorises each email by type and urgency, and the lead summary arrives with the context you need to decide your response priority — rather than a generic notification that 'you have a new email.'"
+  },
+  {
+    icon: '🤝',
+    title: 'Maintains Professional Relationships Automatically',
+    text: "When a repeat client — a fit-out contractor you have worked with before — sends an email about a new project, a fast and professional acknowledgement reinforces the relationship. The AI responds as your business, thanking them for thinking of you and confirming that you will review the opportunity promptly. This is particularly valuable for ceiling companies trying to build preferred subcontractor status with main contractors."
+  },
+  {
+    icon: '📎',
+    title: 'Handles Emails with Attachments',
+    text: "Tender emails in the ceiling trade often include drawing files, specification documents, bill of quantities extracts, and programme snapshots. The AI acknowledges the email and notes that attachments have been received. Your lead summary confirms the attachment types so you know whether to expect a full tender package or just a brief scope description."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI compose a full email reply or just an acknowledgement?",
+    answer: "The AI sends a professional acknowledgement email on your behalf — confirming receipt of the enquiry, noting the key details (project type, location, any specification mentioned), and letting the sender know you will review it and respond personally. It does not attempt to answer technical questions, provide pricing, or commit to availability. The goal is to keep the sender engaged and confident that their email has been read and understood, rather than sitting in an inbox unseen."
+  },
+  {
+    question: "Will the AI reply to every email my business receives?",
+    answer: "The AI responds to incoming enquiry emails — tender invitations, project enquiries, repair requests, availability checks. It does not respond to spam, marketing emails, newsletters, or internal communication. You configure the parameters during setup, and the system learns to distinguish between genuine business enquiries and background email noise. For most ceiling companies, this means tender emails, new project enquiries, and client requests get an immediate response while everything else is ignored."
+  },
+  {
+    question: "How does it handle a tender email with drawing attachments?",
+    answer: "When a QS sends a tender invitation with attached ceiling layout drawings, specification documents, or programme charts, the AI acknowledges receipt of the email and confirms that the attachments have been received. Your lead summary notes the number and type of attachments — 'two PDF drawing files and one Excel BoQ attached' — so you know what to expect before you open the email yourself. The AI does not open or interpret drawing files, but it ensures the sender knows their documents arrived."
+  },
+  {
+    question: "What does AI Email Response cost?",
+    answer: `Email response is an add-on channel at £${pricing.addOn.price}/month on top of the Core plan. For ceiling companies where tender invitations arrive primarily by email — which describes the majority of the trade — this channel directly protects your tender pipeline. One acknowledged tender that you win because you responded first rather than twelve hours later pays for the add-on charge many times over.`
+  },
+  {
+    question: "Can I still respond to emails myself?",
+    answer: "The AI sends an initial acknowledgement within sixty seconds. You then follow up personally with a detailed response in your own time — reviewing the specification, checking your programme, and composing your reply. The AI does not interfere with your subsequent email correspondence. Think of it as a professional receptionist who confirms receipt of your post while you are on site, rather than someone composing your business letters."
+  },
+  {
+    question: "Is the content of email enquiries kept confidential?",
+    answer: "Tender emails frequently contain commercially sensitive information — project values, programme dates, client names, specification details, and pricing structures. All email content processed by the AI is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. We never access email content for any purpose beyond generating your lead summary and sending the acknowledgement response. Your tender communications remain as confidential as they would in a private inbox."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Suspended Ceiling Installers | Rapid Receptionist"
+  description={`AI email response for UK suspended ceiling companies. Acknowledges tender invitations, project enquiries, and repair requests within sixty seconds while you are on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/suspended-ceiling-installers/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Suspended Ceiling Installer"
+  tradeNamePlural="Suspended Ceiling Installers"
+  tradeSlug="suspended-ceiling-installers"
+  headline="AI Email Response for Ceiling Installation Contractors"
+  accentWord="Ceiling Installation"
+  subhead="A quantity surveyor sends a ceiling tender package to five subcontractors at 2pm on a Tuesday — four thousand square metres of exposed grid with acoustic mineral fibre tiles across three floors of a new office building in Milton Keynes. Three companies are on site and will not see the email until this evening. Your AI acknowledges the tender within sixty seconds, confirms you have received the drawings, and notes your interest. The QS knows you are responsive before your competitors have even opened the email."
+  scenario="It is 3:15pm on a Thursday. You are in a plant room on the fourth floor of a commercial building in Birmingham, coordinating with the M&E contractor about service penetrations through your ceiling grid. Your laptop is in the van, your phone is in your pocket but buried under your high-vis, and you have not checked email since breakfast. Meanwhile, an architect has emailed you about a bespoke ceiling feature for a new hotel lobby — a curved bulkhead detail with integrated LED lighting, spanning forty metres, in a material they would like your input on. They have copied three ceiling companies and want availability for a design meeting next Tuesday. Without AI Email Response, you see the email at 8pm and reply at 9pm — but two other ceiling contractors replied within the hour and the architect has already pencilled them in. With AI Email Response, the architect receives a professional acknowledgement at 3:16pm confirming that you have received the project brief and will respond with your availability. When you check your phone at 5pm, the lead summary shows the hotel project, the curved bulkhead feature, the design meeting request, and the architect's contact details. You reply confirming Tuesday and secure your place at the table."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/suspended-ceiling-installers/ai-receptionist/"
+  ctaHeadline="Acknowledge Ceiling Tenders Before the Competition"
+  ctaSubhead={`In the ceiling trade, the first subcontractor to respond to a tender email gets the most attention from the QS. AI email response ensures that is always you. Add-on at £${pricing.addOn.price}/month.`}
+/>

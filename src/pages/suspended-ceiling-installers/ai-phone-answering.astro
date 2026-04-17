@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers When You Are Twenty Feet Up',
+    text: "Suspended ceiling work puts you on a scaffold tower or mobile platform for most of the day — fixing hanger wires, levelling main runners, cutting cross tees to length, fitting mineral fibre tiles into a grid. Your phone could be in the pocket of the jacket you left on the deck below, or in a toolbox by the door. The AI answers every call with your business name and captures the full enquiry while you stay productive and safe."
+  },
+  {
+    icon: '🎯',
+    title: 'Captures Grid Specifications Accurately',
+    text: "When a fit-out contractor calls saying 'we need thirty-two hundred square metres of exposed grid with tegular mineral fibre, Class A acoustic performance, plus bulkheads around the perimeter columns,' the AI records every detail. The lead summary distinguishes between a straightforward office grid and a complex healthcare ceiling with hygiene tiles and fire-rated barriers — so your callback starts with the right conversation."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Ceiling Emergencies Immediately',
+    text: "A water leak damages 40 tiles overnight in a call centre that opens at 8am. A section of grid drops in a retail unit during trading hours. The AI detects the urgency and escalates to your mobile first, then to our human team if you are unreachable. Routine enquiries about office refurbishment tenders queue as standard leads — emergencies cut to the front."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches the Early Morning and Late Evening Calls',
+    text: "Contracts managers on commercial fit-outs typically plan their subcontractor calls for first thing in the morning or late afternoon once site operations have quietened. A 7am call about a programme change or a 6pm message about a variation to the ceiling package would normally go unanswered. The AI catches these and delivers lead summaries ready for when you start your day."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Summaries That Help You Price',
+    text: "Each call summary arrives with everything you need to assess the job — project type, approximate area, tile specification if mentioned, location, programme dates, whether it is a main contractor or direct client, and their level of urgency. For a ceiling company, this means you can often price the enquiry from the summary alone and call back with a ballpark figure, rather than starting from scratch."
+  },
+  {
+    icon: '🏷️',
+    title: 'Branded and Professional',
+    text: "The AI answers with your company name — 'Good morning, thank you for calling Clearspan Ceilings, how can I help?' For a trade that works almost exclusively through contractor relationships, a professional phone presence signals reliability. Fit-out contractors shortlisting ceiling subcontractors notice which companies answer the phone properly and which go straight to voicemail."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI actually say to a caller?",
+    answer: "Your AI receptionist answers with your company name in a professional greeting and then has a natural conversation to understand the enquiry. For suspended ceiling businesses, it asks about the type of work — grid installation, tile replacement, bulkhead construction, acoustic upgrade — the approximate area, the site location, any specific tile or grid specification mentioned, programme dates, and the caller's contact details. The conversation adapts to what the caller says rather than following a rigid script."
+  },
+  {
+    question: "How does it handle calls from quantity surveyors about tenders?",
+    answer: "Tender calls are the lifeblood of most ceiling companies. When a QS or contracts manager calls about a ceiling package for tender, the AI captures the project name, location, scope description, submission deadline, any specification references, and their contact details. You receive a structured summary that reads like a tender brief rather than a vague message, so you can decide immediately whether to tender and start pulling together your submission."
+  },
+  {
+    question: "What if a caller asks about something we do not do?",
+    answer: "If someone calls about a service outside your scope — say, plastering or partition wall installation — the AI explains politely that it has captured their enquiry and that you will review it and get back to them. This avoids turning away referral opportunities. If a main contractor calls about a ceiling-and-partition package, for instance, you might subcontract the partitions and keep the ceiling work yourself. The AI never says no on your behalf."
+  },
+  {
+    question: "How many minutes of call time are included?",
+    answer: `The Core plan gives you ${pricing.tiers.core.minutes} minutes of AI phone conversation time each month. A typical ceiling company receiving between ten and twenty-five enquiry calls per month will sit comfortably within this allowance, since most calls last two to three minutes. If you hit a busy spell — multiple tenders closing in one week, for example — any additional minutes are charged at 20p each with no cap and no penalty.`
+  },
+  {
+    question: "Do I control when the AI answers and when calls come to me directly?",
+    answer: "Completely. When you are in the office reviewing architects' ceiling layouts, writing a tender, or simply between jobs, calls ring through to your phone as normal. The AI only activates when you are unavailable — on the scaffold, driving to the next site, or outside your set working hours. You can adjust the schedule any time. Some ceiling companies set the AI to cover only site hours and handle evening calls themselves; others let it cover everything outside office hours."
+  },
+  {
+    question: "How is the information from calls kept secure?",
+    answer: "Ceiling projects often involve commercially sensitive information — tender prices, programme dates, client names, site locations. All data captured by the AI is encrypted during transmission and at rest, stored on UK and EU servers, and shared exclusively with you. Rapid Receptionist operates under UK GDPR and the Data Protection Act 2018 as your data processor. We do not access, sell, or repurpose any enquiry data for any purpose beyond delivering it to you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Suspended Ceiling Installers | Rapid Receptionist"
+  description={`AI phone answering for UK suspended ceiling installers and ceiling contractors. Answers every call with your business name while you are on the scaffold — captures grid specifications, tender enquiries, and emergency repair calls. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/suspended-ceiling-installers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Suspended Ceiling Installer"
+  tradeNamePlural="Suspended Ceiling Installers"
+  tradeSlug="suspended-ceiling-installers"
+  headline="AI Phone Answering for Suspended Ceiling Contractors"
+  accentWord="Ceiling Contractors"
+  subhead="A fit-out contractor calls at 7:45am about a ceiling package for a new office fit-out in Slough — three thousand square metres of concealed grid with acoustic mineral fibre tiles, fire barriers at every compartment line, and a six-week programme starting next month. You are on the A40 driving to a job in Uxbridge. Without AI phone answering, that call hits voicemail and the contractor moves to the next name on their approved list. With it, the AI answers, captures the full brief, and the lead is in your inbox before you park the van."
+  scenario="It is 8:30am on a Thursday. You are standing on a scaffold tower in the reception area of a solicitors' office in Manchester, wiring hanger rods into a concrete soffit. The laser level is projecting a clean line across the room and you have forty rods to fix before the grid can go in. Your phone is in your jacket pocket, draped over a trestle two metres below you. A contracts manager at a regional fit-out company is calling about a ceiling package for a school extension in Warrington — twelve classrooms needing acoustic tiles to BB93, corridors in a different specification, plus a separate ventilation strategy for the hall ceiling. Without AI Phone Answering, she hears your voicemail, makes a note to try again later, and by lunchtime has spoken to two other ceiling contractors who answered immediately. With AI Phone Answering, the call is answered on the second ring: 'Good morning, thank you for calling, how can I help?' The AI captures the full scope — twelve classrooms, acoustic to BB93, separate corridor spec, hall ceiling with ventilation coordination, Warrington location, school extension programme. You finish the hanger rod run at 10am, call her back with the complete brief in front of you, and book the site survey before anyone else responds."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/suspended-ceiling-installers/ai-receptionist/"
+  ctaHeadline="Stop Losing Ceiling Contracts to Unanswered Calls"
+  ctaSubhead={`One missed call from a fit-out contractor can be a £30,000 ceiling package. The AI makes sure you hear about every one. From £${pricing.tiers.core.price}/month.`}
+/>

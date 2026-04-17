@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Responds to WhatsApp Enquiries Instantly',
+    text: "Younger contracts managers and site managers increasingly use WhatsApp as their primary communication tool. A message asking 'are you available for a ceiling grid job in Leeds starting Monday?' demands a quick response — not a read receipt followed by silence while you finish fixing hanger rods. The AI replies within seconds, confirms interest, and captures the project details before the contractor messages the next ceiling company on their list."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Photo-Based Enquiries',
+    text: "WhatsApp is the channel where contractors send photos — a shot of a damaged ceiling grid, a picture of a specification sheet, or an image of the existing ceiling that needs replacing. The AI acknowledges the photos, asks clarifying questions about the scope and location, and packages everything into a lead summary with the images attached. You see the visual context alongside the written brief."
+  },
+  {
+    icon: '⚡',
+    title: 'Keeps You in the Running on Tight Tenders',
+    text: "When a QS needs ceiling subcontractor prices by Friday and WhatsApps three companies on Wednesday afternoon, the first to respond gets the most time with the tender documents. If you are cutting tiles on a noisy site and miss the message for four hours, you have lost half your pricing window. The AI responds immediately, confirms your interest, and buys you that critical time."
+  },
+  {
+    icon: '🕐',
+    title: 'Active Outside Your Working Hours',
+    text: "Site managers and project coordinators often deal with subcontractor communications in the evening, after the physical work of the day is done. A WhatsApp at 8pm about a ceiling programme change, a Sunday message confirming Monday's start time — these messages get instant, professional responses from the AI rather than sitting unread until Monday morning."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Summaries from Informal Messages',
+    text: "WhatsApp messages tend to be informal — 'mate can you do 500sqm grid in Manchester next month?' The AI turns this into a structured lead: type of work (grid installation), approximate area (500 sqm), location (Manchester), timeline (next month), plus the sender's name and contact details. Your lead summary reads like a brief, not a group chat."
+  },
+  {
+    icon: '🔒',
+    title: 'Business Number, Not Your Personal WhatsApp',
+    text: "AI WhatsApp connects to your business number, keeping your personal WhatsApp separate. Contractors message your professional line, the AI responds professionally, and your personal messages stay private. This separation also means you can switch off from work without missing business enquiries."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI respond to WhatsApp messages about ceiling specifications?",
+    answer: "When a contractor sends a WhatsApp message referencing specific ceiling systems — 'need Armstrong Dune tegular on exposed 24mm grid' or 'do you do Rockfon acoustic tiles?' — the AI captures those details accurately in the lead summary. It does not attempt to quote or confirm technical capabilities, but it engages the sender with enough understanding to keep the conversation moving and capture the full scope of what they need."
+  },
+  {
+    question: "Can it handle voice notes on WhatsApp?",
+    answer: "Currently, the AI processes text-based WhatsApp messages and image attachments. Voice notes are not transcribed automatically. If a contractor sends a voice note, the AI will acknowledge receipt and ask them to follow up with a text message summarising the key details. Most contractors in the ceiling trade are used to typing quick text messages on site, so this rarely causes friction."
+  },
+  {
+    question: "Is AI WhatsApp an extra cost?",
+    answer: `WhatsApp is an add-on channel at £${pricing.addOn.price}/month on top of the Core plan. For ceiling companies that receive a significant portion of their enquiries via WhatsApp — particularly from younger site managers and project coordinators — this is one of the most cost-effective channels to add. A single ceiling grid contract captured through WhatsApp comfortably outweighs several years of the monthly charge.`
+  },
+  {
+    question: "What happens if someone sends a photo of a damaged ceiling?",
+    answer: "The AI acknowledges the image and asks follow-up questions — the location of the damage, the affected area, whether the ceiling is in an occupied space, and the sender's contact details. The image is included in your lead summary alongside the text conversation, so you can see the extent of the damage and assess urgency before you call back. This is particularly useful for insurance-related ceiling repairs where a photo tells you more than a text description."
+  },
+  {
+    question: "Can I still use WhatsApp myself at the same time?",
+    answer: "The AI handles incoming messages on your business WhatsApp number when you are unavailable. When you pick up the conversation yourself — replying directly to a message thread — the AI steps back and lets you take over. There is no conflict between the AI's responses and your own. Many ceiling contractors let the AI handle initial enquiry capture and then take over the conversation personally once they have reviewed the lead summary."
+  },
+  {
+    question: "How is WhatsApp message data stored?",
+    answer: "All WhatsApp conversations — including text messages, images, project details, and contact information — are encrypted and stored on UK and EU servers in compliance with UK GDPR. The data is accessible only to you and is never shared with third parties, used for marketing, or retained beyond the purpose of delivering your leads. Ceiling project specifications and contractor contact details remain confidential throughout."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Suspended Ceiling Installers | Rapid Receptionist"
+  description={`AI WhatsApp assistant for UK suspended ceiling companies. Responds to contractor messages instantly while you are on the scaffold — captures ceiling grid specifications, tender deadlines, and repair requests. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/suspended-ceiling-installers/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Suspended Ceiling Installer"
+  tradeNamePlural="Suspended Ceiling Installers"
+  tradeSlug="suspended-ceiling-installers"
+  headline="AI WhatsApp for Ceiling Installation Companies"
+  accentWord="Ceiling Installation"
+  subhead="A site manager WhatsApps you a photo of a water-stained ceiling grid in an occupied office building — twelve tiles damaged overnight by a pipe leak, the area needs boarding out and retiling before the office opens on Monday. You are three floors up on a different job, cutting bulkhead framing with a chop saw. Without AI WhatsApp, that message sits unread for hours and the facilities team calls someone else. With it, the contractor gets an instant reply confirming you have received the request, and you see the full brief and photos at your next break."
+  scenario="It is 2:40pm on a Wednesday. You are on a mobile scaffold tower in a dental practice in Nottingham, fitting the last row of hygiene tiles into a concealed grid above the reception desk. Your phone is in the glove box of the van parked outside. A project manager at a regional fit-out company WhatsApps you: 'Hi, we have a ceiling package for a 1,200 sqm office refurb in Leicester — concealed grid, tegular mineral fibre, Class A acoustic. Are you available from early June? Could you price it if I send the drawings?' Without AI WhatsApp, they see two blue ticks at 5pm when you finally check your phone, by which time they have already received interest from two other ceiling subcontractors. With AI WhatsApp, they get an immediate reply: 'Thank you for your message. We are very interested in the Leicester project. Could you share the drawings and confirm the tender deadline? One of our team will come back to you with pricing.' The project manager sends the drawing file, the AI confirms receipt, and at 5:15pm you open your phone to find a structured lead summary with the full specification, location, timeline, and drawing attachment."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/suspended-ceiling-installers/ai-receptionist/"
+  ctaHeadline="Respond to Every WhatsApp Lead Before Your Competitors"
+  ctaSubhead={`Fit-out contractors message the subcontractors who reply first. AI WhatsApp makes sure that is always you. Add-on at £${pricing.addOn.price}/month.`}
+/>

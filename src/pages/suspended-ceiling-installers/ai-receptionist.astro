@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A fit-out contractor rings on Tuesday morning about a ceiling package for a new office block in Reading — thirty-two hundred square metres of exposed grid with tegular mineral fibre tiles, bulkheads around the perimeter to conceal cable trays, and a separate acoustic specification for the boardroom suite. You are standing on a scaffold tower wiring hanger rods into a concrete soffit, impact driver in one hand, safety glasses fogged. The call goes to voicemail. He needed grid layout drawings discussed by Wednesday. By Thursday he has appointed someone else.",
+    with: "The same fit-out contractor calls. Your AI receptionist answers professionally, records the full brief — thirty-two hundred square metres of exposed grid, tegular tiles, perimeter bulkheads, boardroom acoustic spec, Reading location, drawings discussion needed by Wednesday — and confirms you will call back. You finish the hanger rod run at your next break and ring him with the complete picture in front of you."
+  },
+  {
+    without: "An architect emails late on Friday about a healthcare project — a suspended ceiling to a new GP surgery that requires specific hygiene tiles, flush-fitting access panels for services above, and fire-rated barriers at every compartment line. You do not see the email until Monday. Two other ceiling companies have already responded with availability.",
+    with: "Your AI acknowledges the email within sixty seconds, confirming you have received the healthcare ceiling specification. Monday morning you open the summary — hygiene tiles, flush access panels, fire-rated barriers, compartment lines marked — and respond before anyone else has started their week."
+  },
+  {
+    without: "A quantity surveyor WhatsApps you on a Wednesday afternoon about re-tendering a ceiling package for a school refurbishment — six classrooms needing acoustic ceiling tiles to meet BB93 requirements, plus corridor ceilings in a different specification. You are cutting perimeter trim on a noisy chop saw in a half-finished office and miss the message entirely. The QS moves to the next name on the approved subcontractor list.",
+    with: "The WhatsApp gets an instant response capturing the scope — six classrooms, acoustic specification to BB93, corridor ceilings in a separate spec, school refurbishment, retender situation. The QS knows you are interested. You see the lead summary at your tea break and call to confirm your tender submission."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Grid Systems & Standard Ceilings",
+    items: ["Exposed grid ceiling systems", "Concealed grid installations", "Tegular and microlook tile systems", "Metal pan and strip ceilings", "Slat and open-cell ceiling systems", "Modular ceiling installations"]
+  },
+  {
+    category: "Acoustic & Performance Ceilings",
+    items: ["Acoustic ceiling design to BB93/HTM standards", "High-performance sound absorption systems", "Clean room and hygiene ceiling installations", "Humidity-resistant ceiling systems", "Fire-rated ceiling barrier installation", "Integrated lighting and services coordination"]
+  },
+  {
+    category: "Specialist & Bespoke Work",
+    items: ["Bulkhead and feature ceiling construction", "Curved and raked ceiling systems", "Canopy and floating ceiling installations", "Access panel and hatch fitting", "Ceiling-mounted partition head details", "Refurbishment and overlay systems"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Fit-Out Contractors & Main Contractors",
+    description: "The primary source of work for most ceiling companies. Fit-out contractors running office refurbishments, retail unit fit-outs, and commercial new builds need ceiling subcontractors who respond quickly to tender invitations and can mobilise within programme timescales. Speed of response when a QS or contracts manager calls often determines whether you make the tender shortlist."
+  },
+  {
+    icon: "🏥",
+    title: "Healthcare & Education Clients",
+    description: "NHS trusts, private healthcare groups, local authorities, and academy chains commission ceiling work with strict performance specifications — hygiene tiles in clinical areas, acoustic ratings to BB93 in classrooms, fire-rated barriers above compartment lines. These clients require subcontractors who understand the specifications and can discuss compliance confidently at tender stage."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial Property & Facilities Management",
+    description: "Property managers and facilities teams responsible for maintaining office buildings, retail parks, and industrial units. Ceiling tile replacements, water-damaged grid repairs, and ceiling modifications to accommodate new services are recurring work streams. These clients value reliability and a prompt response when they report a problem."
+  },
+  {
+    icon: "🎨",
+    title: "Architects & Interior Designers",
+    description: "Design professionals specifying feature ceilings, bespoke grid layouts, integrated lighting details, and acoustic solutions for high-end commercial interiors. They need a ceiling contractor who understands specification language and can contribute to buildability discussions during the design stage. Early engagement often leads to preferred subcontractor status."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI receptionist understand suspended ceiling terminology?",
+    answer: "During setup, your AI is configured with the vocabulary of the suspended ceiling trade — exposed grid, concealed grid, tegular, microlook, mineral fibre, metal pan, bulkhead, perimeter trim, hanger wire, cross tee, main runner, fire barrier, access panel, and every other term that contractors and specifiers use. When a QS calls about 'tegular mineral fibre on a concealed grid with acoustic performance to Class A,' the AI records the specification accurately and delivers it in your lead summary."
+  },
+  {
+    question: "Can the AI handle enquiries from both fit-out contractors and end clients?",
+    answer: "Commercial ceiling work generates enquiries from very different sources — a fit-out contractor calling about a three-thousand square metre office grid is a different conversation from a facilities manager reporting four water-stained tiles in a meeting room. The AI handles both, capturing scope, specification, urgency, timeline, and contact details regardless of who is calling. You see every lead in a structured summary and prioritise your callbacks accordingly."
+  },
+  {
+    question: "What happens when someone calls about an urgent ceiling repair?",
+    answer: "Ceiling emergencies happen — a water leak damages tiles overnight in an occupied office, a fire barrier inspection fails before handover, or a section of grid collapses in a retail unit. The AI recognises urgency language and escalates immediately, attempting to reach you on your mobile first. If it cannot reach you, the call is escalated to our human operators who will keep trying until someone responds."
+  },
+  {
+    question: "How much does the service cost for a ceiling company?",
+    answer: `For most suspended ceiling businesses — whether a two-man team handling office refurbs or a larger company running multiple site teams — the Core plan at £${pricing.tiers.core.price}/month covers the typical call volume comfortably. You get ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat included. Additional channels like WhatsApp and Facebook Messenger are £${pricing.addOn.price}/month each. The one-time setup fee of £${pricing.setup.price} is fully refundable within the 30-day guarantee period if the service is not right for your business.`
+  },
+  {
+    question: "Is this suitable for a sole trader ceiling fitter?",
+    answer: "A sole trader ceiling installer is arguably the person who needs this most. You are physically on a scaffold tower or mobile platform for the entire working day — fixing hanger rods, running grid, cutting tiles, fitting access panels — and you cannot climb down to answer every call. The AI handles every enquiry while you work and sends you detailed summaries at your break. One captured ceiling contract that would otherwise have gone to a competitor pays for years of the service."
+  },
+  {
+    question: "Can I take calls personally when I am not on site?",
+    answer: "The AI is your backup, not a barrier. When you are in the office measuring grid layouts from architects' drawings, pricing a tender, or driving between sites, calls ring through to your phone as normal. The AI only activates when you are genuinely unavailable — on the scaffold, in a noisy environment, or outside your working hours. You control the settings and can adjust them at any time."
+  },
+  {
+    question: "How does the service protect my clients' information?",
+    answer: "Every piece of information captured — project names, site addresses, grid specifications, contact details, programme dates — is protected under UK GDPR and the Data Protection Act 2018. Data is encrypted during transmission and at rest, stored exclusively on UK and EU servers, and shared only with you as the business owner. Rapid Receptionist acts as your data processor under a formal agreement. We never sell, share, or repurpose enquiry data with any third party."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Suspended Ceiling Installers | Rapid Receptionist"
+  description={`AI receptionist for UK suspended ceiling installers and ceiling contractors. Captures every call, chat, WhatsApp, and email enquiry while you are on the scaffold. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/suspended-ceiling-installers/ai-receptionist/"
+  tradeName="Suspended Ceiling Installer"
+  tradeNamePlural="Suspended Ceiling Installers"
+  tradeSlug="suspended-ceiling-installers"
+  headline="The AI Receptionist Built for Suspended Ceiling Installers"
+  accentWord="Ceiling Installers"
+  subhead={`You cannot answer the phone while you are wiring hanger rods into a concrete soffit, running a ceiling grid to a laser line, or cutting mineral fibre tiles on a busy commercial fit-out. Your AI receptionist captures every call, every message, and every enquiry across nine channels — and delivers the details when you climb down. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Every Unanswered Call Is a Ceiling Contract Going Elsewhere"
+  ctaSubhead={`A single missed tender invitation for a commercial ceiling package can exceed £50,000. The AI makes sure you never miss one. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Instant Replies to Text Enquiries',
+    text: "A site manager sends a text — 'need ceiling sub for office fit out in Sheffield, 1500sqm grid, can you price?' — and expects a fast response. If you are on a scaffold tower fitting cross tees, that text sits unread for hours. The AI responds within seconds, confirms you are interested, and captures the full scope before the sender moves on to the next subcontractor in their phone contacts."
+  },
+  {
+    icon: '📐',
+    title: 'Captures Ceiling Project Details from Short Messages',
+    text: "Text messages are brief by nature — contractors rarely type out full specifications. The AI asks smart follow-up questions to build a complete brief: what type of ceiling system, approximate area, location, programme dates, and whether they need a price or just availability confirmation. A three-word text becomes a structured lead summary with everything you need to respond properly."
+  },
+  {
+    icon: '🔔',
+    title: 'Never Misses a Tender Notification',
+    text: "Some main contractors send initial tender invitations by text — a quick message to check availability before following up with the full package by email. Missing that first text means you are not on the tender list when the documents arrive. The AI responds immediately, confirms your interest, and ensures your name is on the shortlist."
+  },
+  {
+    icon: '🌙',
+    title: 'Covers Evening and Weekend Texts',
+    text: "Project coordinators often sort their subcontractor communications during quieter hours — a Sunday evening text to confirm Monday's programme, a late Friday message about a change to the ceiling specification. The AI handles these outside your working hours, providing professional responses and capturing any changes or new requests for your Monday morning review."
+  },
+  {
+    icon: '📋',
+    title: 'Organised Lead Summaries',
+    text: "Every SMS exchange is converted into a structured lead summary — project type, area, specification mentions, location, timeline, and sender contact details. Instead of scrolling through fragmented text threads looking for the key details, you see a clean brief that you can act on immediately. For ceiling companies juggling multiple site enquiries, this alone saves significant time."
+  },
+  {
+    icon: '📱',
+    title: 'Works Through Your Business Number',
+    text: "AI SMS operates through your existing business number, so contractors text the same number they would call. The AI responds from that number, maintaining consistency. Your personal phone stays separate, and you can switch off knowing every business text gets a prompt, professional reply."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI reply to a text message?",
+    answer: "An incoming text triggers the AI to read the message, assess the enquiry, and compose a professional response. If the text contains enough context — 'need 2000sqm ceiling grid priced, office in Birmingham, start August' — the AI confirms your interest and logs the lead. If the message is brief or vague — 'do you do ceilings?' — the AI asks follow-up questions about the type of work, location, and approximate scope to build a useful brief before sending you the summary."
+  },
+  {
+    question: "Will contractors know they are texting an AI?",
+    answer: "The replies are natural and professional — the kind of response a well-organised ceiling company would send. Most contractors will not notice and will not care, because what matters to them is getting a fast, relevant response confirming that you are available and interested. The AI identifies itself as your business, not as a separate AI service."
+  },
+  {
+    question: "What if someone sends multiple texts in a row?",
+    answer: "The AI treats a rapid sequence of messages as a single conversation, waiting briefly for the sender to finish before composing a response. This avoids the awkwardness of replying to each message individually. If a site manager sends 'need ceiling sub' then 'Sheffield office fit-out' then '1500sqm concealed grid,' the AI processes all three messages together and responds to the complete enquiry."
+  },
+  {
+    question: "How much does AI SMS cost for a ceiling company?",
+    answer: `SMS is an add-on at £${pricing.addOn.price}/month on top of the Core plan at £${pricing.tiers.core.price}/month. For ceiling contractors who receive enquiries and programme updates by text — particularly from site managers who prefer texting to calling — this captures a communication channel that would otherwise require you to check your phone constantly between cutting tiles and fitting grid.`
+  },
+  {
+    question: "Can I reply to texts myself when I want to?",
+    answer: "When you respond to a text thread directly, the AI steps back and lets you handle the conversation. It only engages when you are unavailable and have not responded within a short window. This means you can handle texts personally during quieter periods — reviewing ceiling layouts in the office, driving between sites — while the AI covers the times when you are physically unable to check your phone."
+  },
+  {
+    question: "Are text message conversations stored securely?",
+    answer: "Every SMS conversation is encrypted and stored on UK and EU servers under UK GDPR compliance. The content of text exchanges — including project specifications, site locations, contractor names, and phone numbers — is shared only with you. We do not analyse, sell, or repurpose any message data. For ceiling companies handling commercially sensitive tender communication by text, this provides the same level of data security as a formal email exchange."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Suspended Ceiling Installers | Rapid Receptionist"
+  description={`AI SMS for UK suspended ceiling contractors. Responds to text messages instantly while you are on the scaffold — captures ceiling grid enquiries, programme updates, and tender notifications. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/suspended-ceiling-installers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Suspended Ceiling Installer"
+  tradeNamePlural="Suspended Ceiling Installers"
+  tradeSlug="suspended-ceiling-installers"
+  headline="AI SMS for Suspended Ceiling Companies"
+  accentWord="Ceiling Companies"
+  subhead="A contracts manager texts you: 'Can you price a ceiling package for an office refurb in Leeds? 2200sqm exposed grid, mineral fibre tiles, need price by Friday.' You are wiring hanger rods into a metal deck three floors up. Without AI SMS, that text goes unread for hours and the contracts manager assumes you are not interested. With it, the AI responds within seconds, confirms you will submit a tender, and the contractor keeps your name on the shortlist."
+  scenario="It is 11:20am on a Monday. You are on a scaffold tower in a newly stripped-out retail unit in Croydon, cutting perimeter trim with tin snips and fitting it to the wall angle around the shop floor. The acoustic ceiling tiles are arriving tomorrow and you need the entire grid framework finished by end of play today. Your phone buzzes in your jacket pocket hanging on the tower rail. A project coordinator at a national fit-out company has texted: 'Hi, are you available for a 3-week ceiling programme starting 12 June? Office building in Guildford, 1800sqm concealed grid with acoustic tiles. Can you let us know ASAP?' Without AI SMS, you see the text at 5:30pm and reply 'yes, interested' — but by then the coordinator has already confirmed two other ceiling subs and only needs one more for the shortlist, which is now full. With AI SMS, the reply goes back within thirty seconds: 'Thank you for the message. We are available from mid-June and very interested in the Guildford project. Could you send the specification and we will get a price back to you?' The coordinator replies with the ceiling layout drawing. At 12:45pm, you check your phone over a sandwich and find a full lead summary with the opportunity waiting."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/suspended-ceiling-installers/ai-receptionist/"
+  ctaHeadline="Never Miss a Ceiling Tender Notification by Text"
+  ctaSubhead={`When a contractor texts to check your availability, the AI confirms interest before anyone else replies. Add-on at £${pricing.addOn.price}/month.`}
+/>
