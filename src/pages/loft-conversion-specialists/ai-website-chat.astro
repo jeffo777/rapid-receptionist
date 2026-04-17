@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Researching Conversions',
+    text: "Homeowners visit loft conversion websites with specific questions — 'what type of conversion suits a semi-detached?', 'do we need planning for a dormer?', 'how long does a loft conversion take?' The chat widget answers from your profile and captures their project details simultaneously."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Conversion Type and Property',
+    text: "Through conversation, the AI identifies the conversion type the visitor is considering (dormer, hip-to-gable, mansard, Velux), the property type, the rooms they want to create, and whether they have measured their existing loft space. You receive a pre-qualified lead that tells you the project complexity immediately."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Loft Measurement Sessions',
+    text: "Loft conversion research peaks in the evening — a homeowner climbs into the loft with a tape measure, confirms there is enough headroom, and comes down excited. They find your website at 9pm and type their first question. The chat captures the lead before bedtime doubts set in."
+  },
+  {
+    icon: '📊',
+    title: 'Handles Planning and Regulations Questions',
+    text: "The most frequent loft conversion queries concern planning permission — 'do dormers need planning?', 'is a hip-to-gable permitted development?' The AI provides general guidance from your profile and captures the visitor's property details for your professional assessment."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Before-and-After Galleries',
+    text: "Loft conversion portfolios are visually compelling — cramped attic spaces transformed into beautiful bedrooms with dormer windows flooding the room with light. The chat widget converts gallery admiration into surveyed leads."
+  },
+  {
+    icon: '✅',
+    title: 'Included in the Core Plan',
+    text: `Website chat comes free with AI phone answering at £${pricing.tiers.core.price}/month. Paste a JavaScript snippet into your site header and the chat appears on every page. Unlimited conversations across all website platforms.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add the chat to my loft conversion website?",
+    answer: "During onboarding we provide a lightweight JavaScript snippet. Add it to your website's header — directly in the HTML, through a WordPress plugin, or via your Squarespace or Wix settings. The branded chat bubble appears on every page within minutes. If you prefer hands-off installation, we guide your web developer through the process or complete it remotely."
+  },
+  {
+    question: "Can the AI discuss conversion types with visitors?",
+    answer: "Your service profile tells the AI which conversion types you offer — dormer, hip-to-gable, mansard, Velux, bungalow — and it uses this to engage visitors. When someone asks 'can you do a mansard on a mid-terrace?' the AI confirms from your profile, asks about planning status and the number of rooms they want, and captures the lead. It does not provide structural advice but keeps the conversation productive."
+  },
+  {
+    question: "What details does the chat gather?",
+    answer: "The AI captures the conversion type desired, the property type (semi, terrace, detached, bungalow), existing loft conditions if described (headroom, hatch type, obstructions), the rooms they want to create, planning status, the property postcode, timeline, and their contact details. For loft specialists, this tells you whether you are looking at a straightforward Velux on a detached or a complex mansard on a terraced property requiring planning and party wall agreements."
+  },
+  {
+    question: "Does the chat slow down gallery-heavy websites?",
+    answer: "Loft conversion websites typically feature large before-and-after photo galleries, 3D renders, and walkthrough videos. The chat script loads asynchronously after this visual content has fully rendered. Your portfolio displays at normal speed and the chat bubble appears once the page is loaded. The script is smaller than a single loft conversion photograph."
+  },
+  {
+    question: "Is the chat widget an additional charge?",
+    answer: `Website chat and phone answering are both included in the Core plan at £${pricing.tiers.core.price}/month with no separate fee. For loft specialists, these two channels handle your primary enquiry sources — phone calls from Checkatrade and Bark listings, and website chats from homeowners browsing your conversion portfolio. One plan covers both.`
+  },
+  {
+    question: "How is visitor information from loft queries handled?",
+    answer: "Chat conversations containing property addresses, loft dimensions, conversion type preferences, planning enquiries, and visitor contact details are encrypted and stored on UK and EU servers in compliance with UK GDPR. Lead summaries are delivered exclusively to you. No visitor data is disclosed to other conversion companies, passed to aggregators, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Loft Conversion Specialists | Rapid Receptionist"
+  description={`AI website chat for UK loft conversion specialists. Engages visitors researching dormer, hip-to-gable, and mansard conversions — captures project leads 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/loft-conversion-specialists/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Loft Conversion Specialist"
+  tradeNamePlural="Loft Conversion Specialists"
+  tradeSlug="loft-conversion-specialists"
+  headline="AI Website Chat for Loft Conversion Companies"
+  accentWord="Loft Conversion"
+  subhead="A homeowner in Headington finds your website at 10pm. He has spent the evening in his loft with a tape measure — 2.4 metres from joist to ridge, no chimney breast in the way, existing Velux window he installed three years ago. He wants to convert the loft into a home office with a rear dormer for headroom and natural light. He types into the chat: 'Hi — we have got a 4-bed detached with good loft headroom. Measured 2.4m at the ridge. Want a rear dormer for a home office. Do you handle everything including planning and Building Regs?' Without chat, he writes your number on a Post-it and forgets until the weekend. With AI Website Chat, the AI asks about the property layout, existing access, and his timeline. Wednesday morning you call with a fully detailed lead."
+  scenario="It is 11:15pm on a Sunday. A young couple in Witney have a two-bedroom Victorian cottage and their first baby due in four months. They need a third bedroom and their only option is the loft. The husband has read everything online about dormer conversions on Victorian cottages — the party wall requirements, the planning implications, the staircase routing challenges. He finds your website, reads through three case studies of Victorian cottage conversions, and types: 'We live in a two-bed Victorian cottage in OX28 and we need a third bedroom before the baby arrives in four months. The loft has reasonable headroom but we are not sure what type of dormer would work best. The house is mid-terrace so we would need party wall stuff sorted with both neighbours. Can you do a survey and advise? We need someone who can start quickly.' Without chat, he emails your contact form and waits for a Monday reply. Two competitors with chat responded at 11:20pm Sunday — one has already discussed dormer options for Victorian cottages. With AI Website Chat, the AI responds: 'Thank you — Victorian cottage loft conversions are one of our core specialisms. A four-month timeline is achievable with early planning. Could you share the property postcode and any photos of the existing loft space? We will arrange a priority survey to assess the dormer options and advise on planning and party wall timelines.' He uploads two loft photos and confirms his postcode. Monday at 8am you open the lead: 2-bed Victorian mid-terrace, OX28, third bedroom needed, baby due in four months, party wall both sides, rapid start required, loft photos attached. You call at 8:15 and book a Tuesday evening survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/loft-conversion-specialists/ai-receptionist/"
+  ctaHeadline="Capture the Homeowner Who Just Measured Their Loft at 10pm"
+  ctaSubhead={`A tape measure reading 2.4 metres ridge-to-joist means a serious lead is typing into your chat right now. Capture the project before bedtime. Included at £${pricing.tiers.core.price}/month.`}
+/>

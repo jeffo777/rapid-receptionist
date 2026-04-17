@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Structural Work',
+    text: "Removing roof tiles, cutting rafters, positioning beams, building dormer frameworks — loft conversion specialists spend hours doing physical work two storeys up where a phone call is impossible. Missed Call Text Back sends a branded text the moment a call goes unanswered."
+  },
+  {
+    icon: '⏱️',
+    title: 'Keeps Families Waiting for Your Quote',
+    text: "A family ringing three loft companies gets voicemail from two and a text from one: 'Thank you for calling — I am on site installing steels in a dormer and will call you back this afternoon.' That family waits for the callback instead of continuing down their Checkatrade shortlist."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional and Reassuring',
+    text: "Loft conversions involve structural changes to someone's home — removing roof sections, installing steel beams, building new rooms. A prompt, branded text from your company signals the kind of professional, organised operation homeowners trust with this level of work."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Peak Season',
+    text: "Spring and early summer are when loft conversion enquiries peak — families wanting the conversion done before autumn. Call volumes rise while you manage live projects. Missed Call Text Back ensures every enquiry gets an immediate response."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Briefs',
+    text: "Callers often reply with project details — 'it is a dormer conversion on a semi in OX3, we need a bedroom and en-suite.' These replies arrive in your lead summary, giving you the project scope before you call back."
+  },
+  {
+    icon: '🔄',
+    title: 'Safety Net for Phone Answering',
+    text: "AI Phone Answering captures the vast majority of calls with a full conversation. Missed Call Text Back covers edge cases — a caller who hangs up before connection, or a signal drop at a rooftop site. Together, every enquiry is secured."
+  }
+];
+
+const faqs = [
+  {
+    question: "When exactly does the text send?",
+    answer: "Within seconds of the call going unanswered or hitting your voicemail, the text reaches the caller's phone. They receive it before they have had time to scroll down to the next loft conversion company on Google. During spring and summer when families are actively comparing conversion specialists, this speed is the difference between making the survey shortlist and being forgotten."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose it during setup and update it whenever you wish. A typical loft conversion specialist message reads: 'Thanks for calling [company name]. I am currently on site at a loft conversion and will return your call at the earliest opportunity. Reply with your project details for a faster response.' The wording, tone, and content are entirely customisable."
+  },
+  {
+    question: "Is this a replacement for AI Phone Answering?",
+    answer: "They serve as complementary layers. Phone Answering picks up the call, conducts a detailed conversation, and builds a structured lead with property type, conversion preference, and headroom details. Missed Call Text Back catches the rare calls that the phone cannot — a caller who rings for two seconds and hangs up, or a mobile signal gap on a rooftop site. Together, no enquiry escapes."
+  },
+  {
+    question: "How much is Missed Call Text Back?",
+    answer: `This add-on costs £${pricing.addOn.price}/month. Loft conversions range from £20,000 Velux installations to £75,000 mansard builds. Recovering one missed call through a timely text — a family who would have rung the next specialist — and winning that conversion covers the add-on cost many times over.`
+  },
+  {
+    question: "Do many callers actually reply?",
+    answer: "A significant number do — especially families who have been planning the conversion for weeks and are eager to progress. Typical replies include the property type, conversion type wanted, existing headroom if measured, postcode, and number of rooms required. These arrive in your lead summary alongside the missed call record, so your callback is already informed."
+  },
+  {
+    question: "How is missed call data kept secure?",
+    answer: "Phone numbers, text replies containing property addresses, loft dimensions, conversion preferences, and contact details are encrypted and held on UK and EU servers under UK GDPR. Only you have access. Data is never shared with other loft companies, sold to referral services, or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Loft Conversion Specialists | Rapid Receptionist"
+  description={`Missed Call Text Back for UK loft conversion specialists. Automatically texts callers while you work on the dormer — keeps conversion leads warm during peak season. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/loft-conversion-specialists/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Loft Conversion Specialist"
+  tradeNamePlural="Loft Conversion Specialists"
+  tradeSlug="loft-conversion-specialists"
+  headline="Missed Call Text Back for Loft Conversion Companies"
+  accentWord="Loft Conversion"
+  subhead="It is 10:30am on a Thursday. You are fitting the final steel purlin in a dormer conversion in Witney — the telehandler is lifting the beam, your crew is guiding it onto the bearing plates, and you are checking the alignment against the structural drawing from the scaffold platform. Two calls come in between 10 and 11am. Your phone is in your jacket on the landing below, three floors down. Without Missed Call Text Back, both callers hear voicemail. One leaves a message — 'want a loft conversion quote' — the other hangs up. By noon the unknown number has called another company. With it, both receive a text within seconds. The first replies: 'Hi — want a rear dormer on our 3-bed Victorian terrace in Jericho. Need a bedroom and en-suite. Both neighbours' lofts are converted already. Can you survey?' At 12:15 you read the reply and call her. You book a Saturday morning survey."
+  scenario="It is 2:45pm on a Saturday in June. You have been working all day on a hip-to-gable conversion — replacing the existing hip roof tiles with a new gable structure, a physically demanding job requiring concentration and both hands. Three calls come in during the afternoon. Without Missed Call Text Back, you check at 4pm: three missed calls, one voicemail saying 'hi, interested in a loft conversion.' You try the voicemail number — engaged. The other two are unknown numbers. Three potential conversions, two completely unrecoverable. With Missed Call Text Back, all three received texts within seconds of calling. The first replies at 2:50: 'rear dormer on a semi in OX14, measured 2.4m ridge height, want a bedroom and shower room.' The second at 3:05: 'hip-to-gable on a 1960s detached in Headington, want to maximise space for two bedrooms, have not measured yet.' The third at 3:30: 'looking at converting the loft of a bungalow in Eynsham, want a bedroom and office up there, worried about staircase position.' At 4pm you wash the dust off your hands and open three leads — a semi dormer with measurements, a detached hip-to-gable, and a bungalow conversion with staircase concerns — all with property type, location, and project context. You call all three before 5pm and book Monday, Tuesday, and Wednesday surveys."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/loft-conversion-specialists/ai-receptionist/"
+  ctaHeadline="Recover Three Conversion Leads from One Saturday Hip-to-Gable"
+  ctaSubhead={`Three families called while you replaced the hip. Three texts went out. Three replied. Three surveys booked by Monday. Add-on at £${pricing.addOn.price}/month.`}
+/>

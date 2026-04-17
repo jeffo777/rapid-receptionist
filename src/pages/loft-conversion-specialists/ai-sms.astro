@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Quick Feasibility Texts',
+    text: "Homeowners text loft specialists to test the water — 'hi, is it possible to convert the loft on a semi-detached?' A prompt reply opens the conversation. A five-hour silence suggests you are too busy to take on their project."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Conversion Briefs from Fragments',
+    text: "A text like 'want a dormer conversion, 3 bed terrace, Headington' gives the AI enough to start — and it asks about the rooms they want, existing headroom, and whether party wall agreements are needed. Your lead arrives complete."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Scaffolding Referrals Instantly',
+    text: "Loft scaffolding is visible for weeks. Neighbours see the dormer taking shape and text: 'Saw your scaffolding on our road — we want a dormer too.' The AI captures the referral within seconds while you are on that very scaffold."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Work Hours',
+    text: "Loft conversion decisions happen in the evening after the kids are in bed. A couple measured the loft at 7pm, agreed it has enough headroom, and text a specialist at 8:30pm. The AI catches the lead."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Message Threads',
+    text: "Texts arrive in stages — 'want a loft conversion' then 'it is a Victorian terrace' then 'mid-terrace actually' then 'Jericho area.' The AI builds one structured lead from the fragments."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Channel',
+    text: "AI SMS uses your business number. Clients text a professional line and receive specialist-quality responses."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a text about a loft conversion?",
+    answer: "The AI reads the message and responds professionally in your company name. A detailed text — 'want a hip-to-gable conversion on our 1950s semi in OX3, need two bedrooms' — is captured with full context. A brief text — 'can you do loft conversions?' — prompts the AI to ask about the property type, conversion type, rooms wanted, and location."
+  },
+  {
+    question: "Will the person know they are texting AI?",
+    answer: "The reply reads like a loft conversion specialist responding between tasks — professional, concise, and knowledgeable about conversion types. It uses your company name and asks the right questions about the caller's roof and project requirements. Homeowners care about professionalism and speed; the AI provides both within seconds."
+  },
+  {
+    question: "What about texts from existing loft clients?",
+    answer: "Clients on a live conversion sometimes text about access, deliveries, or staircase decisions. The AI captures these and categorises them separately from new enquiries. Your dashboard clearly distinguishes a new £50,000 dormer lead from a current client confirming the Velux delivery date."
+  },
+  {
+    question: "What does AI SMS cost for loft conversion companies?",
+    answer: `AI SMS costs £${pricing.addOn.price}/month as a channel add-on. Loft conversion projects range from £20,000 Velux conversions to £75,000 mansard builds. One captured enquiry through a timely text — while your competitors' phones sat unanswered on the scaffold plank — pays for the add-on many times across its lifetime.`
+  },
+  {
+    question: "Can I reply to texts myself?",
+    answer: "Your own reply in any text thread immediately transfers control to you. The AI recognises your message and steps aside. When you are free — at the yard, in the van, at the office — you handle texts personally. When you are two storeys up fitting steel beams, the AI maintains the professional response."
+  },
+  {
+    question: "How is text data protected?",
+    answer: "Text conversations including property addresses, loft measurements, conversion preferences, and contact numbers are encrypted and stored on UK and EU servers governed by UK GDPR. Only you can access this data. It is never shared with other loft companies, sold, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Loft Conversion Specialists | Rapid Receptionist"
+  description={`AI SMS for UK loft conversion specialists. Responds to dormer enquiry texts, scaffolding referrals, and headroom questions while you build on the roof. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/loft-conversion-specialists/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Loft Conversion Specialist"
+  tradeNamePlural="Loft Conversion Specialists"
+  tradeSlug="loft-conversion-specialists"
+  headline="AI SMS for Loft Conversion Specialist Businesses"
+  accentWord="Loft Conversion"
+  subhead="You are fitting steel purlins in a dormer conversion at a four-bed detached in Botley — the steels are heavy, the crane operator is waiting for your signals, and your entire crew is focused on the lift. At 11am the homeowner three doors down texts: 'Hi — been watching your work going up. Looks really impressive. We have been thinking about a dormer on our house too. Can you come and look when you get a minute?' Your phone is in the van fifty metres away. Without AI SMS, the text waits until you clean up at 4pm. By then she has texted two other loft companies and one has already replied. With it, the AI responds at 11:01am, she confirms her address, and on Thursday morning you walk down the road with your laser measure."
+  scenario="It is 9:20pm on a Tuesday. A homeowner in Summertown has just measured his loft for the third time — confirming 2.5 metres from floor joist to ridge, plenty of space for a dormer bedroom and en-suite. His wife agrees: it is time to start getting quotes. He texts three loft conversion companies: 'Hi — we have a 4-bed detached in OX2 with a big loft. Measured 2.5m at the ridge. Want a rear dormer to create a master suite — bedroom and en-suite. Do you do everything from design through to completion? Can you survey this week?' Without AI SMS, you see the text Wednesday morning. Two other specialists replied by 10pm Tuesday — one offered a Thursday survey, the other sent a portfolio link showing similar detached dormer conversions. Your Wednesday morning reply is third in the queue. With AI SMS, the response arrives at 9:21pm: 'Thank you for your message. Rear dormer conversions on detached houses are one of our most popular projects — 2.5 metres at the ridge provides excellent working height. Could you confirm whether you have any existing loft access and whether there are obstructions like tanks or chimney breasts? We will arrange a survey at your convenience.' He replies confirming a loft ladder, no tanks (moved to an airing cupboard), and a chimney breast on the east side. Wednesday morning you open the lead: 4-bed detached, OX2, rear dormer, master suite, 2.5m ridge height, loft ladder access, chimney breast east side, design-to-completion, survey requested. You call at 8am and book a Thursday evening survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/loft-conversion-specialists/ai-receptionist/"
+  ctaHeadline="Catch Every Scaffolding Referral Text While You Fit the Purlins"
+  ctaSubhead={`The neighbour watching your dormer rise texts while you guide the steel. The AI replies before you reach the van. Add-on at £${pricing.addOn.price}/month.`}
+/>

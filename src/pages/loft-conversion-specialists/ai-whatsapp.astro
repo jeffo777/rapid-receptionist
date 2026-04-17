@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Responds to Loft Photos Instantly',
+    text: "Homeowners WhatsApp photos taken from inside their loft — tape measure showing headroom, the roof structure, existing water tanks, chimney breasts blocking potential layouts. The AI responds within seconds, asks about the conversion they want, and attaches every image to your lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins the Saturday Comparison',
+    text: "Saturday morning is decision time for loft conversions. Homeowners WhatsApp three specialists with their loft measurements and photos. The company that responds first with informed questions — rather than Monday morning — wins the survey booking."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Neighbour Referrals',
+    text: "A neighbour sees your scaffolding go up and watches the dormer take shape over two weeks. She WhatsApps: 'Love what you are doing at number 12 — can you do the same to ours?' The AI captures the referral while you are on the scaffold at number 12."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Post-Measurement Enthusiasm',
+    text: "A homeowner climbs into the loft at 8pm, confirms there is enough headroom, climbs down excited, and WhatsApps a loft company at 8:30pm. That is genuine commitment. The AI captures it before the enthusiasm fades."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Loft Descriptions',
+    text: "A WhatsApp saying 'hip roof, 3-bed semi, want to go hip-to-gable, need two bedrooms up there, OX3' becomes a structured lead. The AI adds planning status and timeline through follow-up questions."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Line',
+    text: "AI WhatsApp uses your business number. Client conversations stay on a professional channel. Your personal WhatsApp remains private."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI interpret loft photos sent by WhatsApp?",
+    answer: "The AI does not perform structural analysis from photos, but it acknowledges them effectively and asks the questions you need — what rooms do you want to create, what is the measured ridge height, are there obstructions like tanks or chimney breasts, and what conversion type are you considering? Every photo, video, and measurement sent by the homeowner is attached to your lead. Having visual context before the survey lets you arrive prepared."
+  },
+  {
+    question: "What about WhatsApps from property developers?",
+    answer: "Developers converting lofts on multiple properties for resale value increasingly use WhatsApp for speed. A developer messaging about a row of three terraced houses all needing dormer conversions is a high-value multi-project lead. The AI captures the scope — number of properties, conversion type, programme requirements — and your lead summary reads like a tender brief."
+  },
+  {
+    question: "How much does AI WhatsApp cost for loft specialists?",
+    answer: `WhatsApp is priced at £${pricing.addOn.price}/month as an add-on to the Core plan. Loft conversions range from £20,000 for a basic Velux conversion to £70,000 or more for a complex mansard. Capturing one homeowner's WhatsApp enquiry before your competitors — and winning the conversion — generates a return that eclipses the annual add-on spend.`
+  },
+  {
+    question: "Can I continue WhatsApp conversations personally?",
+    answer: "Sending your own message in any thread hands the conversation to you. The AI recognises your reply and withdraws. Most loft specialists let the AI handle the initial capture — property type, headroom, conversion preference, postcode — then follow up personally to discuss design options and book the survey."
+  },
+  {
+    question: "How is WhatsApp data from loft enquiries protected?",
+    answer: "All WhatsApp messages — loft photos, roof measurements, property addresses, conversion preferences, and contact information — are encrypted and stored on UK and EU servers under UK GDPR. Data is delivered only to you. No client information is shared with other conversion companies, sold to lead platforms, or used for any purpose beyond your lead summaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Loft Conversion Specialists | Rapid Receptionist"
+  description={`AI WhatsApp for UK loft conversion specialists. Responds to loft photos, headroom measurements, and dormer enquiries while you build on the scaffold. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/loft-conversion-specialists/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Loft Conversion Specialist"
+  tradeNamePlural="Loft Conversion Specialists"
+  tradeSlug="loft-conversion-specialists"
+  headline="AI WhatsApp for Loft Conversion Specialist Companies"
+  accentWord="Loft Conversion"
+  subhead="A homeowner WhatsApps at 11:45am with four photos — the loft hatch from below, the inside of the loft showing the ridge and purlins, a tape measure stretched from joist to ridge reading 2.5 metres, and the chimney breast running through the centre of the space. Her message: 'Hi — thinking about a loft conversion. Here is what we have got to work with. 3-bed semi in OX3. Want a bedroom and en-suite. Is the chimney breast a problem? Are you free to survey?' You are on site at a dormer conversion in Carterton — the roofer is tiling the new dormer and you are checking the lead flashings against the detail drawings. Without AI WhatsApp, the message sits for four hours. She messages two more companies; one responds in eight minutes. With it, the AI replies instantly, acknowledges the photos, asks about the roof shape and party wall situation, and your lead — complete with loft measurements and chimney breast photos — arrives at lunchtime."
+  scenario="It is 8:05am on a Saturday. A couple in Abingdon have been discussing a loft conversion for months. This morning they have decided: they want a hip-to-gable with a rear dormer to create the maximum space on their 1960s semi. He WhatsApps four loft conversion specialists from Google: 'Morning — we want a hip-to-gable and rear dormer loft conversion on our 3-bed semi in OX14. Currently hipped both sides. Want to create two bedrooms and a shower room. Ridge height is about 2.3m — bit tight but hoping hip-to-gable solves it. Have not applied for planning yet. Can you survey and advise on what is possible?' Without AI WhatsApp, you are still asleep. By 10am the couple have received two professional replies — one with a video explaining hip-to-gable benefits and an offer of a Monday survey. Your reply at 10:30 is third. With AI WhatsApp, the response arrives at 8:06am: 'Thank you — hip-to-gable conversions on 1960s semis are one of our most common projects. Converting the hipped roof to a gable typically adds the headroom needed for comfortable rooms. Could you send photos of the existing roof from outside, showing both hips? We will assess the conversion potential and arrange a survey.' He sends two exterior shots. Saturday at 10am you check your phone: hip-to-gable plus dormer, 3-bed 1960s semi, OX14, two bedrooms and shower room, 2.3m ridge, hipped both sides, exterior photos attached, no planning yet. You call and book a Tuesday evening survey — the earliest slot — and arrive with a clear understanding of the roof geometry."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/loft-conversion-specialists/ai-receptionist/"
+  ctaHeadline="Respond to Loft Measurement WhatsApps Before the Other Three Specialists"
+  ctaSubhead={`A homeowner sends four loft photos and a tape-measure reading to four companies. The first informed response wins the survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A couple calls about converting the loft of their four-bedroom Victorian terrace — they want a rear dormer to create a master bedroom with en-suite, and their neighbour had a similar conversion done last year. You are on site at a hip-to-gable conversion in Summertown — the crane is positioning an 8-metre ridge beam and you are guiding the operator from the scaffold platform, two storeys up, hands occupied, radio in one hand, hard hat on, the entire crew watching the lift. The couple hear voicemail, hang up, and call the next specialist on Checkatrade.",
+    with: "Your AI receptionist answers in your company name. It captures the project — Victorian terrace, rear dormer, master bedroom and en-suite, neighbour reference — asks about the property layout, existing loft access, and their timeline. At lunch, once the ridge beam is bolted, you read the lead and call them back. You book a Saturday morning survey."
+  },
+  {
+    without: "An architect emails a specification for a mansard loft conversion on a Georgian townhouse in Jericho — planning consent secured, party wall agreements needed both sides, fire-rated separating walls, new mansard roof with zinc cladding, structural steelwork throughout, and a spiral staircase from the second floor. Tender return in three weeks. You are managing the first fix at another conversion all week. The email sits until Friday.",
+    with: "Your AI acknowledges the architect's email within sixty seconds, referencing the mansard scope, party wall requirements, and the three-week deadline. You begin your tender review that evening with the full submission window ahead."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday morning with photos taken from inside their loft — measuring tape stretched across the rafters showing 2.4 metres from floor joist to ridge, a shot of the existing Velux window, and one of the hatch access. He messages three loft conversion companies. You are with your family. By Monday, two have responded and one has offered a Tuesday survey.",
+    with: "The AI responds to the WhatsApp within seconds, asks about the property type, roof structure, and what rooms he wants to create, and attaches the loft photos to your lead. Monday at 8am you open the lead and call."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Conversion Types",
+    items: ["Rear dormer conversions", "L-shaped dormer conversions", "Hip-to-gable conversions", "Mansard conversions", "Velux (rooflight) conversions", "Bungalow loft conversions"]
+  },
+  {
+    category: "Structural & Technical",
+    items: ["Steel beam and purlin installation", "Ridge beam replacement", "Structural floor strengthening", "Fire regulation compliance (Part B)", "Sound insulation (Part E)", "Thermal insulation and ventilation (Part L/F)"]
+  },
+  {
+    category: "Finishing & Design",
+    items: ["Staircase design and installation", "En-suite bathroom plumbing", "Dormer window and cladding finishes", "Rooflight and Velux fitting", "Electrics and lighting design", "Party wall management (terraced and semi-detached)"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "👨‍👩‍👧‍👦",
+    title: "Growing Families Needing Space",
+    description: "The largest client group. Families who need an extra bedroom — or two — without moving house. They have researched loft conversions online, compared before-and-after galleries, and are ready to call specialists. The company that answers and asks informed questions about their roof type and headroom wins the survey."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners Creating Home Offices",
+    description: "The shift to hybrid working drives a steady stream of loft-to-office conversions. These clients want a quiet, insulated space with good natural light, proper electrics, and broadband connectivity. They contact specialists who understand the building regulations for habitable loft rooms."
+  },
+  {
+    icon: "📐",
+    title: "Architects Tendering Loft Projects",
+    description: "Architects design loft conversions — particularly complex mansards and multi-room dormers — and tender the build to specialists. A prompt, knowledgeable response to a tender specification keeps you on the architect's preferred contractor list."
+  },
+  {
+    icon: "🏘️",
+    title: "Property Developers Adding Value",
+    description: "Developers convert lofts to add bedrooms and bathrooms before resale. A three-bedroom terrace becomes a four-bedroom with en-suite — significantly increasing value. Developers need reliable specialists who can deliver to programme and budget."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand the different loft conversion types?",
+    answer: "Every conversion type is recognised and correctly captured — dormer (flat roof, pitched roof, and hipped), L-shaped dormer, hip-to-gable, mansard, Velux (rooflight only), and bungalow conversions. When a homeowner calls saying 'we want a hip-to-gable with a flat-roof rear dormer to maximise the headroom,' the AI captures the conversion type precisely. When an architect specifies a mansard with zinc cladding and fire-rated separating walls on a mid-terrace, the specification language is handled with equal confidence."
+  },
+  {
+    question: "Can the AI assess whether a loft is suitable for conversion?",
+    answer: "The AI does not provide structural assessments — that is your expertise during the survey. However, it asks the questions that help you pre-qualify the lead: What is the property type? What roof shape does it have? Has anyone measured the ridge height? Is there an existing loft hatch? Are there any obstructions like water tanks or chimney breasts? The answers let you gauge feasibility before committing to a site visit."
+  },
+  {
+    question: "What happens when building control or structural engineers call?",
+    answer: "Mid-project calls from building control inspectors, structural engineers, and party wall surveyors are identified as operational communications rather than new enquiries. The AI captures their name, organisation, the property they are calling about, and the nature of the call, then flags it for your immediate attention separately from new leads."
+  },
+  {
+    question: "How much does this cost for a loft conversion specialist?",
+    answer: `The Core plan at £${pricing.tiers.core.price}/month covers ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. Loft conversion specialists — whether running one conversion at a time or managing three concurrent projects — operate comfortably within this allowance. WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and Missed Call Text Back are each £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this useful for a specialist who only does loft conversions?",
+    answer: "A pureplay loft conversion company benefits enormously. Because loft conversions take six to twelve weeks per project, you are on site — physically building — for months at a stretch. Every unanswered call during a live conversion is a future project lost to a competitor who happened to pick up. The AI builds your pipeline while you complete your current build."
+  },
+  {
+    question: "Can I adjust when the AI answers versus when I answer?",
+    answer: "Your dashboard schedule controls the handover precisely. During noisy structural phases — steel installation, dormer framework, roofing — route all calls to the AI. During quieter finishing — plastering, decorating, snagging — take calls directly. You can override the schedule manually at any time from your phone."
+  },
+  {
+    question: "How is homeowner and project data protected?",
+    answer: "Loft conversion enquiries include property addresses, roof measurements, staircase positions, structural details, and sometimes budget ranges. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR and the Data Protection Act 2018, and shared exclusively with you. No information is disclosed to competitors or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Loft Conversion Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK loft conversion specialists — dormer, mansard, hip-to-gable, and Velux conversions. Never miss a call while you are on the scaffold. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/loft-conversion-specialists/ai-receptionist/"
+  tradeName="Loft Conversion Specialist"
+  tradeNamePlural="Loft Conversion Specialists"
+  tradeSlug="loft-conversion-specialists"
+  headline="The AI Receptionist Built for Loft Conversion Specialists"
+  accentWord="Loft Conversion Specialists"
+  subhead={`You cannot answer the phone when you are guiding a ridge beam into position, building a dormer framework two storeys up, or fitting steel purlins across the span of a Victorian roof. Your AI receptionist captures every enquiry — from growing families who need an extra bedroom to architects tendering complex mansard projects on period properties. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Dormer Enquiry Arrives While You Guide the Ridge Beam"
+  ctaSubhead={`A family who measured their loft headroom last night will call three conversion specialists today. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

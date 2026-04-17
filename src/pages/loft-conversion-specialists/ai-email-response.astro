@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Architect Loft Tenders',
+    text: "Architects designing complex loft conversions — mansards on Georgian terraces, multi-room dormers on large detached houses — send detailed tender packages by email. The specialist who acknowledges first demonstrates both capacity and interest. AI Email Response sends your professional acknowledgement within sixty seconds."
+  },
+  {
+    icon: '📐',
+    title: 'Understands Loft Specification Language',
+    text: "When a tender email specifies 'mansard conversion with zinc-clad dormer cheeks, fire-rated separating walls to party boundaries, new timber staircase from second floor landing, structural steelwork to support ridge and purlins, and mechanical ventilation,' the AI references the scope accurately in its acknowledgement."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your On-Roof Email Blind Spot',
+    text: "Loft conversion specialists spend entire days on the roof — stripping tiles, removing hips, building dormer frames, and felting. An architect's tender email arriving at 10am sits unread until evening. The AI ensures your acknowledgement arrives while the architect's inbox is still open."
+  },
+  {
+    icon: '🗂️',
+    title: 'Sorts Your Construction Inbox',
+    text: "Your email contains architect tenders, homeowner contact-form leads, timber supplier quotes, scaffold hire confirmations, and building control correspondence. The AI identifies genuine project enquiries and delivers them as structured leads, filtering out the operational noise."
+  },
+  {
+    icon: '🤝',
+    title: 'Maintains Architect Trust',
+    text: "Architects who send their best loft projects to responsive specialists. Consistent sixty-second acknowledgements reinforce the relationship and keep your company at the top of their preferred contractor list for dormer and mansard work."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Loft conversion tenders include loft survey reports, structural calculations, sectional drawings, and fire strategy documents. The AI references attachments in both the acknowledgement and your lead summary."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI prepare a full loft tender submission?",
+    answer: "The AI is limited to the initial acknowledgement — confirming receipt, referencing the conversion type and key structural requirements, and assuring the architect that a detailed response follows. Your survey report, methodology, programme, pricing, and fire strategy documentation are prepared entirely by you. The acknowledgement simply keeps you competitive from the moment the tender lands."
+  },
+  {
+    question: "Will it respond to scaffold and supplier emails?",
+    answer: "During onboarding, the system learns to distinguish genuine loft enquiries from routine correspondence. Scaffold hire confirmations, timber delivery schedules, rooflight supplier catalogues, and trade association newsletters do not trigger acknowledgements. Only genuine conversion enquiries and architect tenders receive a response."
+  },
+  {
+    question: "How does it handle homeowner website contact forms?",
+    answer: "Contact-form submissions from homeowners — 'interested in a dormer conversion for our semi in Headington' — receive a professional reply confirming interest and asking about the property type, existing loft conditions, and timeline. Your lead summary categorises these domestic enquiries separately from professional architect tenders."
+  },
+  {
+    question: "What does email response cost for loft specialists?",
+    answer: `Email response costs £${pricing.addOn.price}/month as an add-on. Loft conversion specialists tendering for projects worth £30,000 to £75,000 — where architect confidence in your responsiveness influences which specialist gets recommended to the client — gain a significant competitive advantage from a sixty-second acknowledgement.`
+  },
+  {
+    question: "Can I compose all follow-up emails myself?",
+    answer: "Every message after the initial acknowledgement is written and sent by you personally. Your survey findings, structural methodology, construction programme, fire safety strategy, and pricing are all your own work. The AI never generates follow-up correspondence on your behalf."
+  },
+  {
+    question: "How is loft tender data kept secure?",
+    answer: "Loft conversion tenders contain architect drawings, structural calculations, fire strategy documents, and commercially sensitive pricing information. All email data processed by the AI is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. Tender details are never disclosed to competing loft companies or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Loft Conversion Specialists | Rapid Receptionist"
+  description={`AI email response for UK loft conversion specialists. Acknowledges architect tenders and homeowner enquiries for dormer, mansard, and hip-to-gable conversions within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/loft-conversion-specialists/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Loft Conversion Specialist"
+  tradeNamePlural="Loft Conversion Specialists"
+  tradeSlug="loft-conversion-specialists"
+  headline="AI Email Response for Loft Conversion Companies"
+  accentWord="Loft Conversion"
+  subhead="An architect emails a tender for a mansard loft conversion on a Grade II-listed Georgian townhouse in Central Oxford — conservation area consent secured, party wall agreements required both sides, fire-rated separating walls, mansard roof with natural slate to match existing, structural steelwork throughout, and an oak staircase from the second-floor landing. Tender return in four weeks. You are stripping the existing hip roof on a conversion in Kidlington — tiles coming off, battens being removed, the whole roof structure exposed and fragile. Without AI Email Response, the tender sits unread until Friday. Two competitors acknowledged by Wednesday. With it, your acknowledgement arrives within sixty seconds, referencing the mansard scope, the listed building context, and the four-week deadline."
+  scenario="It is 7:45am on a Monday. You open your emails while loading the van at the yard. Overnight: a Bark notification for a dormer conversion on a bungalow in Bicester, an architect forwarding a specification for a large L-shaped dormer on a detached property in Summertown with three new rooms and an en-suite, a client emailing photos of their finished loft with a snagging list, and a building control officer confirming a Wednesday fire inspection. Without AI Email Response, you star the architect's email, drive to site, and forget until Tuesday evening — by which time two other specialists have acknowledged, one has already downloaded the specification and emailed clarification questions. With AI Email Response, the architect's tender receives an immediate acknowledgement referencing the L-shaped dormer scope and structural requirements, the Bark bungalow lead gets a professional response, the client's snagging email is flagged for your personal review, and the fire inspection confirmation is noted. At lunch you open four leads — the L-shaped dormer estimate (£65,000), the bungalow Velux (£22,000), and two operational items. You prioritise the L-shaped dormer tender and begin reviewing the drawings that evening."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/loft-conversion-specialists/ai-receptionist/"
+  ctaHeadline="Acknowledge Mansard Tenders While You Strip the Existing Roof"
+  ctaSubhead={`An architect's four-week tender window starts the moment the email lands. Your sixty-second acknowledgement keeps you competitive from the first minute. Add-on at £${pricing.addOn.price}/month.`}
+/>

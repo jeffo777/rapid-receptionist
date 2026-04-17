@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Build the Dormer',
+    text: "Loft conversion specialists spend days on structural work — removing roof tiles, cutting rafters, installing steel beams, building dormer frameworks, and felting roofs. Your hands are occupied two storeys up. The AI answers every call in your company name and captures the project brief."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Conversion Specifications',
+    text: "When a homeowner describes wanting 'a dormer loft conversion on our Victorian mid-terrace to create a bedroom and en-suite,' the AI captures the conversion type, property type, rooms required, existing roof access, and timeline. When an architect calls with a mansard specification and fire-rated separating wall requirements, the AI captures the tender scope with equal precision."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Live Project Calls',
+    text: "A building control officer calling to reschedule a steel inspection is distinguished from a new dormer enquiry. A structural engineer confirming beam calculations is not mixed with a homeowner asking for a quote. Operational calls are flagged separately and escalated to your mobile."
+  },
+  {
+    icon: '🌙',
+    title: 'Captures Evening Loft Research',
+    text: "Homeowners research loft conversions in the evening — measuring the loft with a tape measure, checking ridge height, looking up 'how much does a dormer conversion cost.' The 9pm call from someone who just measured 2.5 metres ridge-to-joist is a serious lead from someone ready to proceed."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Survey Planning',
+    text: "Each lead specifies the conversion type requested, property type, roof shape (if described), number of rooms wanted, whether the homeowner has measured headroom, postcode, and timeline. You can plan your survey schedule and prioritise callbacks by project complexity and readiness."
+  },
+  {
+    icon: '🏷️',
+    title: 'Specialist Credibility from the First Ring',
+    text: "Loft conversion specialists compete with general builders who 'also do lofts.' A professional AI greeting that asks specific questions about conversion types and roof structures immediately communicates pure specialism — the caller knows they have reached a dedicated loft company."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their loft conversion?",
+    answer: "The questions follow the caller's description naturally. A homeowner is asked about the property type (terraced, semi, detached, bungalow), what rooms they want to create (bedroom, en-suite, office, playroom), whether they have measured the existing loft headroom, their roof type if they know it, any existing Velux windows or loft access, the property postcode, and their ideal start date. Architects are asked about the specification scope, structural requirements, and tender deadline."
+  },
+  {
+    question: "Can the AI handle calls about different conversion types?",
+    answer: "Every loft conversion type is recognised and captured correctly. A caller describing 'a rear dormer to get the bedroom and en-suite in' generates a different lead from someone asking about a 'full mansard on a terraced property' or 'hip-to-gable with a flat-roof dormer to maximise space on a semi.' The AI adjusts its follow-up questions to the conversion type described — dormers prompt questions about front or rear, mansards prompt questions about planning permission, hip-to-gable conversions prompt questions about the existing hipped roof structure."
+  },
+  {
+    question: "What about party wall queries on terraced houses?",
+    answer: "Terraced and semi-detached loft conversions frequently involve party wall obligations. The AI captures any party wall concerns the caller mentions — 'do we need a party wall agreement for a dormer?' or 'our neighbour has already converted, will that affect ours?' — and includes this context in your lead summary so you can address it during the survey."
+  },
+  {
+    question: "How many call minutes are in the plan?",
+    answer: `The Core plan at £${pricing.tiers.core.price}/month provides ${pricing.tiers.core.minutes} minutes. Loft conversion specialists receive a mix of homeowner enquiries — families needing bedrooms, professionals wanting offices — and occasional architect tenders. Most companies operate within the allowance. If a Checkatrade promotion or strong spring demand generates higher call volume, overage is charged at 20p per minute with no penalties or caps.`
+  },
+  {
+    question: "Can I answer calls myself during quieter phases?",
+    answer: "During finishing — when the plastering, second-fix electrics, and decorating are underway and you have some freedom of movement — you might prefer to take calls directly. Your dashboard lets you switch seamlessly between AI and personal answering. During heavy structural phases — steel installation, dormer build, roof tiling — route everything to the AI."
+  },
+  {
+    question: "How is loft conversion data kept secure?",
+    answer: "Loft enquiries include property addresses, roof measurements, structural requirements, staircase positions, and budget discussions. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No enquiry information is shared with competitors, sold to lead services, or used for any purpose beyond your lead delivery."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Loft Conversion Specialists | Rapid Receptionist"
+  description={`AI phone answering for UK loft conversion specialists. Captures dormer, mansard, hip-to-gable, and Velux enquiries while you are building on the scaffold. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/loft-conversion-specialists/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Loft Conversion Specialist"
+  tradeNamePlural="Loft Conversion Specialists"
+  tradeSlug="loft-conversion-specialists"
+  headline="AI Phone Answering for Loft Conversion Companies"
+  accentWord="Loft Conversion"
+  subhead="A homeowner calls at 10:15am about a hip-to-gable conversion on her 1930s semi — she wants to create a fourth bedroom and en-suite, her neighbour had a similar conversion done by a different company, and she is comparing three loft specialists on Checkatrade. You are on site at a dormer conversion in Botley — the rear dormer framework is going up, the carpenter is cutting the roof opening, and you are checking the structural steel positions against the engineer's drawings. Your phone is in your jacket pocket on the landing below, unreachable. Without AI Phone Answering, the homeowner hears voicemail, hangs up, and rings the second specialist on her list. With it, the AI captures the full brief — hip-to-gable, 1930s semi, fourth bedroom, en-suite, neighbour reference — and your lead is waiting when you come down at lunch."
+  scenario="It is 2pm on a Wednesday. You are managing the first fix at a loft conversion in Kidlington — the electrician is routing cables through the new dormer structure, the plumber is installing the en-suite waste pipes through the floor, and you are coordinating their routes to avoid clashes before the plasterer arrives Friday. Three calls come in between 1:30 and 3:30pm. Without AI Phone Answering, one leaves a voicemail — 'want a quote for a loft conversion' — two hang up and produce bare missed call entries. By Thursday, two have spoken to competitors. With AI Phone Answering, all three are answered. Lead one: rear dormer on a three-bed Victorian terrace in Jericho, want a bedroom and office, party wall needed both sides, planning not yet explored. Lead two: hip-to-gable plus rear dormer on a 1950s semi in Headington, want to maximise space for two bedrooms, have measured 2.3 metres at the ridge. Lead three: Velux conversion on a detached bungalow in Eynsham, want a guest bedroom with en-suite, worried about headroom. At 3:45pm you review three leads — the terrace dormer (estimated £55,000), the hip-to-gable (estimated £65,000), and the bungalow Velux (estimated £30,000) — and prioritise callbacks by project value."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/loft-conversion-specialists/ai-receptionist/"
+  ctaHeadline="Three Loft Enquiries While You Routed the First-Fix Cables"
+  ctaSubhead={`A terrace dormer, a hip-to-gable, and a bungalow Velux — all captured while you managed the first fix. From £${pricing.tiers.core.price}/month.`}
+/>
