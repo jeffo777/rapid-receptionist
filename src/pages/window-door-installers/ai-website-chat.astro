@@ -1,0 +1,40 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  { icon: '💬', title: 'Captures Browsing Visitors', text: "A homeowner visits your website at 9pm comparing window companies. They want to know if you fit aluminium frames and whether you are FENSA registered. Without chat, they leave. With it, they get instant answers and you get a qualified lead." },
+  { icon: '📐', title: 'Handles Technical Questions', text: "Visitors ask about energy ratings, frame materials, sealed unit warranties, and whether you handle building regulations. The AI answers from your training data and captures the enquiry." },
+  { icon: '🕐', title: 'Active During Decision Hours', text: "Homeowners research windows in the evening — comparing prices, checking reviews, measuring openings. Your chat is live during those critical 7pm-11pm hours." },
+  { icon: '📱', title: 'Mobile-Friendly', text: "Most visitors browse on their phone. The chat widget works seamlessly on mobile — capturing leads from homeowners scrolling through window company websites on the sofa." },
+  { icon: '🎯', title: 'Qualifies Leads', text: "The chat captures window types, number of units, frame preference, property type, and timeline. You wake up to a lead that is ready to quote." },
+  { icon: '🔗', title: 'Works With Your Gallery', text: "Your installation photos attract visitors. The chat converts admirers into survey bookings." }
+];
+
+const faqs = [
+  { question: "How does website chat work for window companies?", answer: "A chat widget on your website responds instantly to visitor questions about your glazing services, captures their requirements, and collects contact details — all compiled into a lead summary." },
+  { question: "Can the chat discuss frame materials and energy ratings?", answer: "Yes. During setup, the AI is configured with your product range — UPVC, aluminium, timber, composite doors. It references your capabilities without quoting prices." },
+  { question: "Is there a message limit?", answer: "No. Website chat includes unlimited messages on all plans." },
+  { question: "How is data protected?", answer: "All data is managed under UK GDPR. Visitor details and conversations are encrypted and stored on UK and EU servers, shared only with you." }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Window & Door Installers | Rapid Receptionist"
+  description={`AI website chat for UK window and door installers and glazing companies. Captures visitor enquiries 24/7. Unlimited messages included. From £${pricing.tiers.starter.price}/month.`}
+  canonicalUrl="/window-door-installers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Window & Door Installer"
+  tradeNamePlural="Window & Door Installers"
+  tradeSlug="window-door-installers"
+  headline="AI Website Chat for Window & Door Installers"
+  accentWord="Window & Door Installers"
+  subhead="A homeowner browses your website at 10pm. They see your bi-fold installation gallery and type into the chat: 'Do you fit aluminium bi-folds? We are extending our kitchen.' The AI responds instantly, captures their project, and you call them first thing tomorrow."
+  scenario="It is 10:30pm on a Thursday. A couple in Cambridge are finalising plans for their rear extension. The architect has specified aluminium bi-fold doors — 4-metre span, anthracite grey, threshold flush with the patio. They land on your website, see a similar installation in your portfolio, and open the chat: 'Hi, we need 4m aluminium bi-folds for our extension in CB4. Do you supply and fit? How long is the lead time?' Without website chat, they send a contact form you check on Monday. By then, two competitors have already quoted. With AI Website Chat, the AI responds in seconds — confirming you supply and install aluminium bi-folds, asking about colour preference, opening configuration, and the build programme timeline. By 10:40pm, they have shared the architect's specification and their phone number."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/window-door-installers/ai-receptionist/"
+  ctaHeadline="Turn Website Visitors into Glazing Customers"
+  ctaSubhead={`Your installation photos attracted them. Your AI captures them. Included from £${pricing.tiers.starter.price}/month.`}
+/>

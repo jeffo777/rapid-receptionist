@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '⚡',
+    title: 'Answers While You Are Installing',
+    text: "Window fitting is a two-person job that demands total focus — you cannot put a frame down mid-lift to answer a call. The AI handles every call with your business name while you and your mate get the installation right."
+  },
+  {
+    icon: '🧠',
+    title: 'Understands Glazing Enquiries',
+    text: "When a caller says 'I need my bay window replacing — it is UPVC but the sealed units have gone' or 'we want bi-folds for our new extension,' the AI captures the window type, frame material, number of units, and any specific requirements."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Emergencies',
+    text: "A smashed window after a break-in. A door that will not lock. Glass cracked by a storm. The AI recognises emergency language and escalates immediately — reaching your mobile first, then our human team."
+  },
+  {
+    icon: '🕐',
+    title: 'Captures Evening Enquiries',
+    text: "Homeowners notice draughty windows in the evening, condensation between panes on cold mornings, and call installers between 6pm and 9pm. Those calls are your warmest leads. The AI catches every one."
+  },
+  {
+    icon: '📋',
+    title: 'Detailed Lead Summaries',
+    text: "Every call is summarised with the caller's name, number, address, what they need (replacements, new installation, repair), the number of windows or doors, frame material preference, and timeline."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional First Impression',
+    text: "The AI answers as your glazing business — 'Good afternoon, thank you for calling Clearview Windows, how can I help?' Callers hear a professional greeting that builds confidence."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI say when a window customer calls?",
+    answer: "It greets the caller with your business name and has a natural conversation. For window and door companies, it asks about the type of work — replacements, new installation, repairs — the frame material, how many units, the property type, timeline, and captures their contact details."
+  },
+  {
+    question: "Can it handle calls about both windows and doors?",
+    answer: "Yes. Whether someone calls about ten replacement windows, a single composite front door, bi-folds for an extension, or a failed sealed unit — the AI captures the scope and details for your follow-up."
+  },
+  {
+    question: "How many minutes do I get?",
+    answer: `The Starter plan includes ${pricing.tiers.starter.minutes} minutes per month. The Core plan gives you ${pricing.tiers.core.minutes} minutes for busier companies. Extra minutes are 20p each.`
+  },
+  {
+    question: "Can I still take calls when I am free?",
+    answer: "Yes. The AI only activates when you are unavailable. When you are in the office or showroom, calls come through as normal."
+  },
+  {
+    question: "How is customer data protected?",
+    answer: "All data is managed under UK GDPR. Names, addresses, and job details are encrypted and stored on UK and EU servers, shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Window & Door Installers | Rapid Receptionist"
+  description={`AI phone answering for UK window and door installers, glazing companies, and FENSA-registered fitters. Answers every call and captures glazing enquiry details. From £${pricing.tiers.starter.price}/month.`}
+  canonicalUrl="/window-door-installers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Window & Door Installer"
+  tradeNamePlural="Window & Door Installers"
+  tradeSlug="window-door-installers"
+  headline="AI Phone Answering for Window & Door Installers"
+  accentWord="Window & Door Installers"
+  subhead={`You are lifting a 3-metre aluminium bi-fold into a rear extension opening. Your mate is holding the far end. The spirit level is balanced on the threshold. A homeowner who found you on Checkatrade is calling about replacing every window in their 1970s semi. Your AI answers, captures the full brief, and the lead is waiting when you put the drill down. From £${pricing.tiers.starter.price}/month.`}
+  scenario="It is 10:30am on a Wednesday. You are fitting a composite front door in a detached house in Solihull — the old frame is out, the new threshold is shimmed and level, and you are about to expand-foam the reveals before fitting the cill. Your phone rings in the van. A homeowner three streets away has been putting off replacing their windows for two years — twelve casements and a bay window, all original UPVC from 1998 with blown sealed units and draughty gaskets. They finally decided this morning after waking up to condensation on every pane. Without AI Phone Answering, they hear voicemail, assume you are too busy, and call the national window company whose leaflet came through the door last week. With AI Phone Answering, they hear: 'Good morning, thank you for calling, how can I help?' The AI captures twelve casements, one bay, blown sealed units throughout, Solihull postcode, available for a survey any afternoon this week. You finish the door at 1pm and call them back."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/window-door-installers/ai-receptionist/"
+  ctaHeadline="Stop Missing Window & Door Enquiries"
+  ctaSubhead={`Every missed call is a house full of windows that someone else will fit. From £${pricing.tiers.starter.price}/month.`}
+/>
