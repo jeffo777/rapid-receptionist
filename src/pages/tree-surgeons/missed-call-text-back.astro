@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Dangerous Work',
+    text: "Crown thinning, rigging, and chainsaw operation at height require absolute concentration — answering a phone is not just inconvenient, it is genuinely dangerous. When a call goes unanswered, Missed Call Text Back sends a branded text within seconds. The caller knows you are in the canopy and will call back."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds the Caller in the Queue',
+    text: "A homeowner calling about a tree that needs reducing calls three tree surgeons. Two go to voicemail. One sends a text within six seconds: 'Thank you for calling — I am up a tree and will call you back this afternoon.' The homeowner waits for the callback instead of calling numbers four, five, and six."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional and Personal',
+    text: "The text comes from your business number with your company name. For tree surgery — where customers welcome someone with a chainsaw onto their property — a professional text response builds the confidence needed to award the job."
+  },
+  {
+    icon: '📊',
+    title: 'Critical During Peak Season',
+    text: "Late autumn, winter, and spring are the busiest months for tree surgery. Bare canopies reveal structural defects, storms bring emergency work, and planning conditions require tree removal before building starts. Missed Call Text Back ensures every lead during these peak months gets an instant acknowledgement."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Context',
+    text: "Callers reply to the text with useful information — 'it is about a massive conifer at the back of the garden, about 20 feet, in Witney' or 'need two stumps ground out please.' Your lead arrives with the phone number and the tree details."
+  },
+  {
+    icon: '🔄',
+    title: 'Backstop to Phone Answering',
+    text: "AI Phone Answering handles the overwhelming majority of calls. Text back catches the rare misses — a caller who hangs up after one ring, a signal dropout in a wooded valley, or a momentary gap between calls during a storm. Together they create a complete safety net."
+  }
+];
+
+const faqs = [
+  {
+    question: "When exactly is the text sent?",
+    answer: "The moment a call rings through to voicemail or exceeds your configured ring time, the text dispatches automatically. Your caller receives it within seconds — typically before they have even closed the dialler to search for the next tree surgeon. During storm weeks when homeowners are calling every company on the first page of Google, this six-second response is what keeps you in contention."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose the message yourself during setup. A typical tree surgeon text reads: 'Thank you for calling [your company]. We are currently up a tree on site and will return your call as soon as we descend. If your enquiry is urgent (storm damage, falling branches), please reply with details and we will prioritise.' You can edit the wording at any time."
+  },
+  {
+    question: "Does the text replace AI Phone Answering?",
+    answer: "They operate as complementary layers. AI Phone Answering answers the call and captures a full lead through conversation. Missed Call Text Back catches the tiny fraction of calls that slip through — a caller who disconnects before the AI picks up, or a poor mobile signal in a rural woodland. Phone answering is the main system; text back is the fallback."
+  },
+  {
+    question: "How much is Missed Call Text Back?",
+    answer: `The feature costs £${pricing.addOn.price}/month as an add-on. In tree surgery — where storm-season emergency callouts can be worth £500 to £5,000 each and even standard pruning jobs average £300 to £1,000 — recovering one missed call through a text response covers the add-on cost for the remainder of the year.`
+  },
+  {
+    question: "Do people actually reply to the text?",
+    answer: "Regularly. Common replies include the tree species, approximate size, the work needed, urgency, and location. These text replies appear in your lead summary alongside the missed call record, giving you a phone number, a tree description, a postcode, and a priority level before you have even descended."
+  },
+  {
+    question: "Is missed call data kept private?",
+    answer: "Phone numbers, text replies describing trees and property locations, and any other data captured through this channel are encrypted and stored on UK and EU servers under UK GDPR. Only you can access this information. It is never shared with other businesses, sold, or put to any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Tree Surgeons | Rapid Receptionist"
+  description={`Missed Call Text Back for UK tree surgery companies. Automatically texts callers when you are in the canopy or at the chipper — keeps leads warm during storm season. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/tree-surgeons/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Tree Surgeon"
+  tradeNamePlural="Tree Surgeons"
+  tradeSlug="tree-surgeons"
+  headline="Missed Call Text Back for Tree Surgery Businesses"
+  accentWord="Tree Surgery Businesses"
+  subhead="It is 11am on a Thursday. You are twenty feet up in a dense holly tree, climbing-saw in hand, removing deadwood from the interior — the kind of job that requires careful positioning, precise cuts, and constant awareness of branch tension. Your phone is in the truck on the road. Three calls come in before lunch: a homeowner about a leylandii hedge reduction, a property manager about a five-tree programme at a residential development, and a council arboricultural officer about an emergency — a dead elm hanging over a school fence. Without Missed Call Text Back, three callers hear voicemail. The council officer moves to the next contractor on the emergency rota. With it, all three receive a text within seconds. The council officer replies: 'Dead elm hanging over primary school boundary, Marston Road. Need safe today.' At lunchtime you see the reply, call immediately, and dispatch your second crew to make the elm safe before the school bell rings."
+  scenario="It is 3:45pm on a Saturday in February. You have been stump-grinding all afternoon at a property in Woodstock — seven stumps from a row of poplars felled last week. The grinding creates noise, vibration, and debris — hearing protection on, concentration on depth, unable to hear or access your phone. A homeowner in neighbouring Bladon calls. Her ancient apple tree — the centrepiece of the garden — has a major structural crack running through the main fork. She is worried it will split completely in the next storm and crush the summer house underneath. She needs someone experienced with heritage orchard trees. Without Missed Call Text Back, she hears voicemail and tries two more tree surgeons. One answers and books a Monday morning assessment. With Missed Call Text Back, she receives a text six seconds later: 'Thank you for calling [your company]. We are on a stump-grinding job and will call you back within the hour. If your enquiry is about a dangerous or structurally compromised tree, please reply with details.' She replies at 3:47pm: 'Hi — old apple tree has a large crack through the main fork. Leaning over a summer house. Worried it will split. We are in Bladon, OX20.' At 4:30pm you finish grinding, check your phone, and see the lead: heritage apple, structural crack at main fork, over summer house, Bladon OX20, structural concern. You call her at 4:35pm, discuss bracing and propping options versus crown reduction, and book a Monday morning assessment. She is delighted someone called back the same afternoon."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/tree-surgeons/ai-receptionist/"
+  ctaHeadline="Never Lose a Storm-Season Lead While You Climb"
+  ctaSubhead={`A council officer calling about a dead elm over a school fence needs you now. A text within seconds keeps the callout alive until you descend. Add-on at £${pricing.addOn.price}/month.`}
+/>

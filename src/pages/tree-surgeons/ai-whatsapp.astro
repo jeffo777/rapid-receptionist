@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Responds to Storm Damage Photos Instantly',
+    text: "After a storm, WhatsApp floods with photos — trees on roofs, branches through conservatories, trunks split at the union, roots heaving out of saturated ground. You are on your first clearance job. The AI responds to every message within seconds, captures the damage and location, and delivers a prioritised lead list ranked by severity."
+  },
+  {
+    icon: '📸',
+    title: 'Processes Tree Photos for Assessment',
+    text: "Homeowners send photos of the tree they want removed, reduced, or assessed — root lifting paving, a leaning trunk, fungal brackets at the base, or a canopy blocking all light. The AI acknowledges the images, asks about the tree height and species, and attaches the photos to your lead. Pre-visit photo assessment saves you wasted journeys."
+  },
+  {
+    icon: '⚡',
+    title: 'Wins the Three-Quote Race',
+    text: "Homeowners typically WhatsApp three tree surgeons the same tree photo. The first professional response almost always secures the site visit. While you are in the canopy with a chainsaw, the AI ensures your reply arrives before competitors have even seen theirs."
+  },
+  {
+    icon: '🌙',
+    title: 'Captures Weekend Garden Discoveries',
+    text: "Homeowners are in their gardens at weekends and notice the tree problems — the branch overhanging the neighbour's garden, the stump they want ground out, the hedge that has grown out of control. Weekend WhatsApps are high-quality domestic leads."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Informal Messages',
+    text: "A WhatsApp saying 'massive tree at back needs taking out, cant get any light, OX14' becomes a structured lead: tree removal, light obstruction, OX14 postcode. The AI adds species, approximate height, and access details through follow-ups."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Number',
+    text: "AI WhatsApp runs through your business line. Clients message a professional number and receive a professional reply. Your personal WhatsApp stays private."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess tree photos sent over WhatsApp?",
+    answer: "The AI does not diagnose tree conditions, but it acknowledges photos effectively and asks the right follow-ups — species, approximate height, proximity to buildings, access for machinery, and urgency. Every image is attached to your lead summary so you can make your own assessment before the callback. Photos of fungal brackets, splits, or lean give you critical advance information that often determines what equipment to bring."
+  },
+  {
+    question: "What about storm emergency WhatsApps?",
+    answer: "Storm damage WhatsApps — 'tree just fallen on the garage roof, kids at home, help ASAP' — are flagged as urgent in your lead queue. The AI responds immediately, captures the hazard and address, and your priority notification reaches you within seconds. During storm events, the AI handles dozens of simultaneous WhatsApp threads while you work through the first clearance."
+  },
+  {
+    question: "How much does AI WhatsApp cost for tree surgery?",
+    answer: `The WhatsApp add-on costs £${pricing.addOn.price}/month alongside your Core plan. For tree surgery companies where storm-season WhatsApp volumes spike dramatically and each emergency clearance is worth £300 to £3,000, this channel captures the work that arrives while you are physically up another tree. One captured storm job pays for the add-on for years.`
+  },
+  {
+    question: "Can I resume a WhatsApp conversation myself?",
+    answer: "Typing a message directly in any WhatsApp thread hands control to you immediately — the AI steps aside. Most tree surgeons let the AI handle the initial capture and follow up personally to discuss species identification, access logistics, and pricing."
+  },
+  {
+    question: "Is WhatsApp data secure?",
+    answer: "All WhatsApp exchanges — tree photos, property addresses, damage descriptions, contact details — are encrypted and stored on UK and EU servers under UK GDPR. Data is delivered exclusively to you and never shared, sold, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Tree Surgeons | Rapid Receptionist"
+  description={`AI WhatsApp for UK tree surgery companies. Responds to storm damage photos, crown reduction requests, and emergency felling enquiries while you are in the canopy. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/tree-surgeons/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Tree Surgeon"
+  tradeNamePlural="Tree Surgeons"
+  tradeSlug="tree-surgeons"
+  headline="AI WhatsApp for Tree Surgery Contractors"
+  accentWord="Tree Surgery Contractors"
+  subhead="A homeowner WhatsApps four photos of a large beech tree — fungal brackets emerging from the base, a longitudinal crack visible up the main stem, and two heavy limbs extending over the conservatory roof. Her message reads: 'This beech has been worrying me for two years. The crack is getting worse and I can see mushrooms at the bottom. Can you come and assess it urgently?' You are thirty feet up in an oak on the other side of the county, rigging a dying limb over a garage. Without AI WhatsApp, the message sits for five hours. With it, the homeowner gets an instant response, shares her postcode, and your lead summary — beech, fungal brackets, stem crack, over conservatory, urgent — is waiting with photos when you descend."
+  scenario="It is 7:20am on a Saturday morning in January. Storm Jocelyn hit overnight. You are loading the truck at the yard — chipper on the trailer, ropes, slings, chainsaw kit — preparing for the first callout. Your phone has seventeen WhatsApp notifications queued up from the last two hours. Without AI WhatsApp, you scroll through them at the yard — photos of fallen trees, panicked messages, addresses scattered across the county — trying to mentally prioritise while loading equipment. Two hours of triage before you reach the first site. With AI WhatsApp, every homeowner received an instant response during the night and early morning. The AI captured: a mature willow uprooted into a river (ecologist involvement likely — medium priority), a leylandii row collapsed across a driveway (access blocked — high priority), a large horse chestnut split and resting on a cottage roof (structural damage — emergency), a pine snapped at mid-height hanging on a neighbouring tree (hung limb — dangerous), and thirteen moderate branch falls, fence damage, and hedge collapses. At 7:20am you open seventeen structured leads ranked by severity, dispatch your second crew to the cottage roof emergency, head to the hung pine yourself, and schedule the remaining work across the next three days."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/tree-surgeons/ai-receptionist/"
+  ctaHeadline="Triage Seventeen Storm WhatsApps Before You Leave the Yard"
+  ctaSubhead={`Storm mornings bring a wall of photos and panicked messages. The AI responds to all of them while you load the chipper. Add-on at £${pricing.addOn.price}/month.`}
+/>

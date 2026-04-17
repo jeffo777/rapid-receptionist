@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Are Up a Tree',
+    text: "Crown reductions, sectional dismantling, and deadwooding keep you in the canopy for hours — harness on, chainsaw running, both hands occupied. The AI answers every call professionally, captures the tree species, work required, property access, and urgency, and has a structured lead waiting when you descend."
+  },
+  {
+    icon: '🌪️',
+    title: 'Manages Storm Surge Call Volumes',
+    text: "After a named storm, call volumes explode — homeowners with trees on sheds, branches through conservatories, and hedges uprooted across driveways. You cannot answer twenty calls while clearing your first storm site. The AI handles every call simultaneously, triages by severity, and delivers prioritised leads."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Genuine Emergencies',
+    text: "A tree leaning on power lines, a trunk split and threatening a house, or a large limb hanging over a school playground — these need immediate action. The AI detects the urgency, captures the hazard details and location, and calls your mobile. If you cannot answer mid-climb, it routes to our human operators who persist until someone on your team is reached."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening and Weekend Calls',
+    text: "Homeowners notice tree problems when they are in the garden — evenings and weekends. A Sunday afternoon call about a leaning willow or an evening call about a branch scraping the roof are genuine leads. The AI captures them while you are off the clock."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Summaries a Climber Can Use',
+    text: "Each lead includes the tree species if given, the work requested (crown reduction, fell, stump grind), approximate tree size, access situation, any TPO or conservation area mentioned, the property address, and the caller's timeline. Experienced tree surgeons can often estimate the job from the summary alone."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional First Impression',
+    text: "Tree surgery is a trade where trust matters — clients are inviting someone with a chainsaw onto their property. A greeting using your company name, followed by knowledgeable questions about the tree, immediately signals professionalism."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their tree work?",
+    answer: "The conversation adapts to what the caller describes. The AI asks about the tree species and approximate size, the work they want done (pruning, felling, stump removal), why the work is needed (light, safety, planning), property access for vehicles and chippers, any TPO or conservation area status they mention, the property location, and their timeline. The caller feels listened to rather than processed."
+  },
+  {
+    question: "Can the AI tell the difference between routine pruning and an emergency?",
+    answer: "A pensioner describing a cherry tree that blocks her kitchen window in summer produces a routine pruning lead. A distressed caller describing a crack running up the main stem of a horse chestnut leaning toward her bedroom generates an urgent escalation. The AI reads the caller's tone and language, classifies priority, and routes accordingly — emergencies to your mobile, routine work to standard lead queue."
+  },
+  {
+    question: "What happens during a storm when I get thirty calls in one morning?",
+    answer: "The AI handles unlimited simultaneous calls. Each caller gets a professional greeting, a conversation capturing the hazard and location, and a prioritised lead summary. You see the full list ranked by severity — a tree on a house sits above a fallen fence panel. This lets you dispatch your crew logically rather than chasing whichever voicemail you happen to play first."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `The Core plan at £${pricing.tiers.core.price}/month includes ${pricing.tiers.core.minutes} minutes. Most tree surgery businesses operate comfortably within this — fifteen to thirty enquiry calls a month is typical. Storm months may temporarily increase volume, and any overage is charged at 20p per minute with no penalties. The plan adjusts naturally to your business rhythm.`
+  },
+  {
+    question: "Can I take calls myself between jobs?",
+    answer: "When you are on the ground — loading the chipper, driving to the next site, at the yard sharpening chains — calls ring through to your mobile. The AI activates only when you are unreachable: up a tree, behind a chipper, or after hours. The handover is seamless and controlled entirely by your schedule."
+  },
+  {
+    question: "How is client information protected?",
+    answer: "Tree surgery enquiries include property addresses, tree locations within gardens, and sometimes TPO reference numbers. All data is encrypted, stored on UK and EU servers in compliance with UK GDPR, and accessible only to you. No client information is shared with third parties or used for any purpose beyond generating your lead summaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Tree Surgeons | Rapid Receptionist"
+  description={`AI phone answering for UK tree surgeons. Captures every call while you are up a tree — storm emergencies, crown reductions, and stump grinding quotes. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/tree-surgeons/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Tree Surgeon"
+  tradeNamePlural="Tree Surgeons"
+  tradeSlug="tree-surgeons"
+  headline="AI Phone Answering for Tree Surgery Businesses"
+  accentWord="Tree Surgery Businesses"
+  subhead="A homeowner calls at 9:30am. Her neighbour's ash tree has dropped a heavy limb overnight — it has crashed through her fence, flattened a section of hedge, and is resting against the side of her conservatory. She is shaken and needs someone out today. You are twenty-five feet up in a sycamore canopy on the other side of town, rigging a fork for lowering, chainsaw idling on your harness. Without AI phone answering, she hears voicemail, hangs up, and calls the next tree surgeon on Google. With it, the AI captures the emergency — fallen ash limb, conservatory contact, damaged fence, today if possible — and escalates to your crew on the ground."
+  scenario="It is 7:45am on a Wednesday in February. Storm Jocelyn swept through overnight and your phone has been ringing since 6:30am. You are already on the first callout — a large horse chestnut has split at the main union and half the crown is resting on the roof of a bungalow in Woodstock. You are on a ladder, rigging slings around the failed section, planning the cuts, communicating with your groundsman by radio. Your phone is in the truck cab. Between 7:45 and 9:30am, eleven calls come in. Without AI Phone Answering, eleven homeowners hear voicemail. Five leave messages, six do not. By midday, three have booked other tree surgeons. The remaining eight are already comparing competitors. With AI Phone Answering, all eleven calls are answered. The AI captures: oak branch through a greenhouse (urgent), silver birch uprooted across a driveway (blocking car), leylandii hedge toppled onto a fence (moderate), willow limb hanging over a school boundary (urgent — safeguarding), and seven standard branch clearances. At 10am your groundsman checks the phone and sees eleven prioritised leads — the willow near the school and the oak through the greenhouse flagged as emergencies. You dispatch a second crew to the school immediately. By Thursday afternoon, nine of the eleven callers have booked your company."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/tree-surgeons/ai-receptionist/"
+  ctaHeadline="Capture Every Storm Call While You Clear the Last One"
+  ctaSubhead={`Storm mornings bring thirty calls before lunch. The AI answers every one, triages by severity, and your crew dispatches by priority. From £${pricing.tiers.core.price}/month.`}
+/>

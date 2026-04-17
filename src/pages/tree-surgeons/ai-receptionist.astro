@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A homeowner calls about a large ash tree in her rear garden — it has been shedding branches onto the lawn after every gust of wind, and a heavy limb is hanging directly over the children's trampoline. She needs a crown reduction or possibly a full fell, and she wants someone out this week. You are thirty feet up in a mature oak, rigging a heavy limb for sectional dismantling, chainsaw on the harness, lowering rope through the block. You cannot touch the phone. The homeowner tries one more tree surgeon, speaks to a human, and books them for Friday.",
+    with: "Your AI receptionist answers on the second ring. It captures the full picture — ash tree dropping branches, heavy limb over a trampoline, crown reduction or fell needed, property address, this week preferred — and confirms you will call back. At lunchtime on the ground, you read the lead, call her, and book a Thursday morning visit."
+  },
+  {
+    without: "A local authority arboricultural officer calls about an emergency. Storm Isha has brought down a large sycamore across a residential road, blocking access for six properties and trapping two parked cars underneath the canopy. The council needs a NPTC-qualified crew with a chipper and MEWP on site within four hours. You are processing timber at a previous storm clearance site, chipper screaming, ear defenders on, phone in the truck cab. The officer moves to the next contractor on the emergency callout list.",
+    with: "The AI answers, identifies the emergency — storm-felled sycamore, blocked residential road, trapped cars, four-hour response needed — and escalates immediately to your mobile. If you cannot hear the mobile over the chipper, the call routes to our human operators who keep trying until they reach you or a crew member. You dispatch a team within the hour."
+  },
+  {
+    without: "A property management company emails on Monday morning about a programme of tree work across a portfolio of twenty-three residential estates — annual pollarding of lime avenues, deadwooding of mature oaks in communal gardens, crown lifting to maintain street-light clearance, and the removal of self-set sycamores from boundary walls. They need a tender by the end of the month. You are climbing all week, rigging and dismantling a storm-damaged beech in a churchyard. The email sits unread until Thursday night. Two competitors acknowledged by Monday lunchtime.",
+    with: "Your AI acknowledges the email within sixty seconds, noting the portfolio scope and tender deadline. Thursday evening you open the lead summary — twenty-three estates, annual pollarding, deadwooding, crown lifting, self-set removal, month-end deadline — and begin your tender with two weeks still ahead of you."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Pruning & Crown Work",
+    items: ["Crown reduction", "Crown thinning", "Crown lifting", "Deadwooding", "Formative pruning", "Pollarding and coppicing"]
+  },
+  {
+    category: "Felling & Removal",
+    items: ["Straight felling", "Sectional dismantling", "Hazardous tree removal", "Storm damage clearance", "Stump grinding and removal", "Hedge removal and management"]
+  },
+  {
+    category: "Consultancy & Compliance",
+    items: ["TPO and conservation area applications", "Arboricultural impact assessments", "BS 5837 tree surveys", "Subsidence investigations", "Planting and aftercare advice", "Health and safety tree inspections"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏡",
+    title: "Homeowners & Domestic Clients",
+    description: "The largest source of tree surgery work. Homeowners with overgrown trees blocking light, branches threatening roofs, or TPO-protected trees needing council-approved pruning. Domestic clients often call urgently after storms, when branches have fallen on fences, sheds, or conservatories. The tree surgeon who answers first — or whose AI answers — almost always wins the booking."
+  },
+  {
+    icon: "🏛️",
+    title: "Local Authorities & Councils",
+    description: "Councils commission emergency callouts for storm-felled trees blocking highways, annual maintenance contracts for parks and street trees, and specialist work on veteran and ancient trees. These clients use approved contractor lists and emergency rotas — being reachable when the callout comes is the single most important factor."
+  },
+  {
+    icon: "🏢",
+    title: "Property Managers & Housing Associations",
+    description: "Multi-site tree maintenance contracts — cyclical pruning programmes, reactive storm clearance, subsidence-related works, and duty-of-care inspections. Property managers need responsive contractors who acknowledge enquiries promptly and deliver scheduled work reliably."
+  },
+  {
+    icon: "🌳",
+    title: "Arboricultural Consultants & Developers",
+    description: "Consultants subcontract tree surgery to implement their recommendations. Developers need trees cleared, protected, or transplanted to satisfy planning conditions. Arboricultural consultants refer tree surgery firms to their clients — a referred call that goes to voicemail damages both the consultant's reputation and yours."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand arboricultural terminology?",
+    answer: "Every term used in professional tree surgery is recognised — crown reduction, crown thin, crown lift, deadwooding, pollarding, coppicing, formative pruning, straight fell, sectional dismantling, rigging, speedline, lowering, stump grinding, root pruning, subsidence investigation, TPO (Tree Preservation Order), conservation area notification, BS 5837 survey, NPTC certification, and every common species name from sycamore and ash to horse chestnut and cedar. When a council arboricultural officer calls about 'a 30% crown reduction to a mature TPO oak overhanging a public footpath,' the AI records the specification exactly."
+  },
+  {
+    question: "Can the AI handle both a garden pruning call and a council emergency callout?",
+    answer: "A retired homeowner calling about a cherry tree that needs shaping for aesthetic reasons generates a very different lead from a highways officer calling about a storm-felled horse chestnut blocking the A40 at rush hour. The AI adjusts naturally — domestic callers are asked about the tree species, the work they want, their property access, and timing. Emergency callers are asked about the location, the nature of the hazard, the urgency, and who to contact on arrival. Each lead summary reflects the nature and priority of the call."
+  },
+  {
+    question: "What about emergency storm damage calls?",
+    answer: "After a named storm, tree surgery businesses can receive dozens of calls in a single morning — trees on roofs, across roads, through fences, and into power lines. The AI handles every call simultaneously, capturing the hazard, location, and urgency, and escalates the most critical situations to your mobile immediately. If you are mid-climb and cannot answer, the call transfers to our human operators. Standard pruning and quote requests queue as normal leads."
+  },
+  {
+    question: "How much does this cost for a tree surgery business?",
+    answer: `Tree surgery businesses — from a sole-trader climber with a pickup and chipper to a multi-crew company with MEWP trucks and a consultancy arm — fit within the Core plan at £${pricing.tiers.core.price}/month. That provides ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and Missed Call Text Back are each £${pricing.addOn.price}/month as add-ons. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this useful for a sole-trader tree surgeon?",
+    answer: "A sole trader spends the entire working day up a tree, operating a chainsaw, feeding a chipper, or grinding stumps — physically unable to answer the phone for hours at a stretch. Every missed call during your busiest months is a tree surgery job going to a competitor. The AI captures every enquiry with full scope and urgency details while you keep climbing. A single captured domestic pruning job typically covers several months of the service."
+  },
+  {
+    question: "Do I keep control over my own phone?",
+    answer: "Calls ring through to your mobile whenever you are on the ground and available — driving between jobs, at the yard loading the chipper, or at home writing quotes. The AI only activates when you are genuinely unreachable: up a tree, behind a chipper, or outside your set hours. You manage the schedule from your dashboard and can adjust it instantly."
+  },
+  {
+    question: "How is customer data handled?",
+    answer: "Tree surgery enquiries include property addresses, tree locations, photographs, and sometimes TPO reference numbers. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers under UK GDPR and the Data Protection Act 2018, and shared only with you. Client data is never sold, shared with third parties, or used for any purpose beyond your lead delivery."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Tree Surgeons | Rapid Receptionist"
+  description={`AI receptionist for UK tree surgeons — crown reductions, emergency felling, stump grinding, and arboricultural consultancy. Never miss a call while you are up a tree. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/tree-surgeons/ai-receptionist/"
+  tradeName="Tree Surgeon"
+  tradeNamePlural="Tree Surgeons"
+  tradeSlug="tree-surgeons"
+  headline="The AI Receptionist Built for Tree Surgeons"
+  accentWord="Tree Surgeons"
+  subhead={`You cannot answer the phone when you are thirty feet up in a canopy, rigging limbs for sectional dismantling, or feeding brash through a screaming chipper. Your AI receptionist captures every call, every message, and every enquiry — from homeowners needing a garden prune to councils needing an emergency storm clearance crew. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Storm Damage Calls Will Not Wait While You Climb Down"
+  ctaSubhead={`A highways officer needs a crew on site in four hours. If voicemail answers, the next contractor on the rota gets the callout. The AI makes sure you never miss the dispatch. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

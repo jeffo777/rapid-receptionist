@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Researching Tree Work',
+    text: "Homeowners browsing tree surgery websites have specific questions — 'do you have a MEWP for hard-to-access trees?', 'is my oak protected by a TPO?', 'can you do stump grinding after felling?' A chat widget starts that conversation instantly, keeping the visitor on your site and capturing their tree details."
+  },
+  {
+    icon: '📐',
+    title: 'Handles Service and Capability Questions',
+    text: "Common chat questions include coverage area, whether you handle TPO applications, if you can process timber, and what size trees you can manage. The AI draws answers from your service profile and captures the visitor's tree species, size, and property details in return."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Garden Browsing',
+    text: "Homeowners sit in the garden on summer evenings looking at the tree that blocks all their light and decide to do something about it. They search for tree surgeons, find your website, and at 8:30pm see the chat widget. The AI captures their tree species, the work they want, and their postcode while the frustration is still fresh."
+  },
+  {
+    icon: '📊',
+    title: 'Pre-qualifies Tree Surgery Leads',
+    text: "The chat gathers the details you need to assess the job — tree species, approximate height, the work wanted (reduction, fell, stump grind), access for vehicles and chipper, any TPO or conservation area status, and the property location. You know whether this is a quick garden prune or a major riparian removal before your callback."
+  },
+  {
+    icon: '🔗',
+    title: 'Sits Alongside Your Gallery',
+    text: "Tree surgery companies with before-and-after galleries — overgrown gardens transformed by crown lifting, storm-damaged trees safely dismantled, stumps ground below grade — generate immediate interest. The chat widget converts that interest into an enquiry."
+  },
+  {
+    icon: '✅',
+    title: 'Included in Your Plan',
+    text: `Website chat comes as standard with the Core plan at £${pricing.tiers.core.price}/month — no additional charge. Adding it requires a small JavaScript snippet in your website header. Works on any platform. Unlimited chat conversations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add the chat to my tree surgery website?",
+    answer: "We supply a lightweight JavaScript snippet during setup. Paste it into your site header — or install via a WordPress, Squarespace, or Wix plugin. The chat bubble appears on every page within minutes. If website editing is outside your comfort zone, we walk you through the process or work directly with your web developer to get it installed."
+  },
+  {
+    question: "Can the AI discuss different tree services?",
+    answer: "Your service profile tells the AI what you offer — crown reductions, felling, sectional dismantling, stump grinding, hedge work, TPO applications, consultancy — and it uses this to engage visitors. When someone asks 'do you do stump grinding after a tree is felled?' the AI confirms from your profile and asks about the stump diameter and location. It keeps the conversation going and captures the lead."
+  },
+  {
+    question: "What information does the chat collect?",
+    answer: "Through natural dialogue, the AI captures the tree species and approximate size, the work required, the reason for the work (light, safety, planning), property access for machinery, any mention of TPO or conservation area status, the visitor's postcode, and their contact details. This lets you assess the scope — a five-metre ornamental cherry versus a twenty-metre TPO oak — before you pick up the phone."
+  },
+  {
+    question: "Will the widget slow my website down?",
+    answer: "The chat script loads after your primary content has fully rendered. Tree surgery sites with photo galleries and video reels display at their normal speed before the chat appearance. The additional data load is minimal — far smaller than a single tree surgery before-and-after photograph."
+  },
+  {
+    question: "Is website chat charged separately?",
+    answer: `Phone answering and website chat are bundled together under the Core plan at £${pricing.tiers.core.price}/month. For tree surgery businesses, these cover the two primary ways potential clients make contact — calling after seeing your vehicle signage, and chatting after finding your website through search. One plan covers both.`
+  },
+  {
+    question: "How is visitor chat data protected?",
+    answer: "Chat exchanges — including tree locations, property addresses, TPO details, and contact information — are encrypted and held on UK and EU servers under UK GDPR. Lead summaries are delivered exclusively to you. Visitor data is never shared with advertisers, sold to lead-generation platforms, or used for any third-party purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Tree Surgeons | Rapid Receptionist"
+  description={`AI website chat for UK tree surgery companies. Engages visitors researching crown reductions, felling, and stump grinding — captures tree work leads from your website 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/tree-surgeons/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Tree Surgeon"
+  tradeNamePlural="Tree Surgeons"
+  tradeSlug="tree-surgeons"
+  headline="AI Website Chat for Tree Surgery Companies"
+  accentWord="Tree Surgery Companies"
+  subhead="A homeowner in Abingdon finds your website at 9pm after spending the evening in her garden staring at a massive Norway spruce that blocks all the afternoon sun from her patio. She has been putting off dealing with it for three years. She types into the chat: 'How much to fell a large spruce — about 18 metres tall — in a back garden with reasonable access?' Without chat, she bookmarks the page and forgets about it for another month. With AI Website Chat, the AI responds instantly, asks about vehicle access, proximity to structures, and whether she wants the stump ground, and captures her postcode. Tuesday morning you call with a clear picture of the job."
+  scenario="It is 10:15pm on a Thursday. An architect in Oxford is working late on a planning application for a residential development. The site survey has identified three mature oaks with Tree Preservation Orders and a row of self-set sycamores along the northern boundary that need removing. She needs an arboricultural consultant and a tree surgery contractor who can produce a BS 5837 survey and implement the recommendations. She finds your website, sees your ARB Association membership badge and consultancy services, and types into the chat: 'We need a BS 5837 survey for a residential development in OX2 — three TPO oaks to be retained and protected, sycamores along the north boundary to be removed. Can you handle the survey and the tree work? Planning submission is in eight weeks.' Without AI Website Chat, she emails tomorrow morning and gets a reply on Monday. By then she has contacted two other arb firms. With AI Website Chat, the AI responds: 'We provide BS 5837 surveys and can implement the tree work from our own recommendations. Could you share the site address and any existing survey documents? One of our consultants will call you tomorrow to discuss the scope.' She provides the site postcodes, mentions the submission deadline, and shares her email for follow-up. Friday morning at 8am you see the lead: BS 5837 survey, three TPO oaks for retention, sycamore removal, OX2, eight-week planning deadline, architect contact. You call and discuss the programme — the survey alone is worth £2,500, and the subsequent tree work another £8,000."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/tree-surgeons/ai-receptionist/"
+  ctaHeadline="Convert Tree Research into Booked Surveys"
+  ctaSubhead={`Homeowners researching tree work on your website at 9pm are ready to act. A chat widget captures the lead before they close the browser. Included at £${pricing.tiers.core.price}/month.`}
+/>

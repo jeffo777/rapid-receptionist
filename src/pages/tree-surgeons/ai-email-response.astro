@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Maintenance Tenders Promptly',
+    text: "Local authorities, housing associations, and property management companies send tree work tenders by email — annual pruning programmes, reactive storm callout contracts, site clearance specifications, and BS 5837 survey requirements. The tree surgery company that acknowledges first signals both interest and capacity. AI Email Response sends a professional acknowledgement within sixty seconds."
+  },
+  {
+    icon: '📐',
+    title: 'Recognises Arboricultural Specifications',
+    text: "When a tender specifies '30% crown reduction to twenty-seven mature limes, pollarding of twelve street trees to previous points, and sectional dismantling of three category U ash within ten metres of a school boundary,' the AI captures the arboricultural language accurately. The acknowledgement demonstrates that the email reached a competent tree surgery business."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Climbing Schedule',
+    text: "Tree surgeons climb all day. Emails arriving at 9am sit unread until evening — or later during busy storm-season weeks. The AI acknowledges tenders and enquiries immediately, keeping you competitive while you clear the backlog from the canopy."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Domestic Emails',
+    text: "Your inbox contains a mixture — formal maintenance tenders, contact form submissions from homeowners, TPO application confirmations from councils, and chainsaw parts order confirmations. The AI identifies genuine enquiries and your lead summaries distinguish a six-figure council contract from a garden hedge trim."
+  },
+  {
+    icon: '🤝',
+    title: 'Maintains Professional Relationships',
+    text: "Repeat clients — housing associations, estate managers, and commercial property companies — expect swift responses when issuing new work orders. A fast acknowledgement reinforces the relationship and signals your capacity for the upcoming programme."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Tender Attachments',
+    text: "Tree work tenders arrive with tree schedules, site plans, BS 5837 surveys, TPO schedules, and health and safety requirements. The AI notes attachments in the acknowledgement and your lead summary, telling you exactly what to review."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI write a detailed tender response?",
+    answer: "No — the AI sends only an initial acknowledgement that confirms receipt, references the project scope, and states that a full response will follow. Your detailed methodology, risk assessments, pricing, NPTC certification evidence, and references are compiled by you. The acknowledgement simply ensures your name stays on the table while you prepare."
+  },
+  {
+    question: "Will it respond to chainsaw supplier emails and newsletters?",
+    answer: "The system is configured during setup to distinguish genuine work enquiries and tenders from routine background email — Stihl parts availability, trade publication newsletters, insurance renewal reminders, and spam. Only actionable business communications receive an AI acknowledgement."
+  },
+  {
+    question: "How does it handle emails about TPO applications?",
+    answer: "Homeowners and property managers who need tree work on TPO-protected trees sometimes email asking for help with the application process. The AI acknowledges the enquiry, notes the TPO context, and your lead summary flags the regulatory requirement. You can then assess whether to offer the application service, refer to a consultant, or carry out the work once consent is granted."
+  },
+  {
+    question: "How much does AI Email Response cost?",
+    answer: `Email response is available at £${pricing.addOn.price}/month as an add-on. For tree surgery businesses tendering for council and housing association contracts worth £10,000 to £250,000 annually, a sixty-second acknowledgement — rather than a next-morning reply — delivers a competitive advantage that far outweighs the monthly cost.`
+  },
+  {
+    question: "Can I send my own follow-up after the acknowledgement?",
+    answer: "The AI handles only the initial response. All follow-up correspondence — your tender submission, risk assessments, method statements, pricing schedules, and references — is composed and sent entirely by you."
+  },
+  {
+    question: "How is email content protected?",
+    answer: "Tender documents, tree schedules, site plans, and commercial pricing information are treated as confidential. All email data processed by the AI is encrypted, held on UK and EU servers under UK GDPR, and shared only with you. Tender details are never disclosed to competitors or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Tree Surgeons | Rapid Receptionist"
+  description={`AI email response for UK tree surgery companies. Acknowledges maintenance tenders, TPO-related enquiries, and storm clearance contracts within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/tree-surgeons/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Tree Surgeon"
+  tradeNamePlural="Tree Surgeons"
+  tradeSlug="tree-surgeons"
+  headline="AI Email Response for Tree Surgery Contractors"
+  accentWord="Tree Surgery Contractors"
+  subhead="A county council highways department emails a tender for a three-year reactive tree works framework — emergency storm callouts within four hours, programmed deadwooding of highway trees, a schedule of annual pollarding across thirty locations, and on-call weekend cover from October to March. The submission deadline is three weeks away. You are on site all day sectional-dismantling a mature beech adjacent to a railway line, concentration total, phone in the truck. Without AI Email Response, the tender sits unread until Thursday night. Two competitors acknowledged by Monday afternoon. With it, your acknowledgement lands within a minute and you begin preparing your submission that evening."
+  scenario="It is 9:15am on a Monday. Your inbox has accumulated over the weekend. You are at the yard, chipper on the trailer, about to leave for the first job — a three-day crown reduction programme on a row of limes at a housing estate. Your email contains six messages: a housing association maintenance manager forwarding a schedule of forty-one trees requiring annual pruning across seven estates, a homeowner asking about a silver birch removal, a council arboricultural officer attaching a tree condition survey for twenty-three highway elms potentially requiring felling due to chalara, a tree consultancy asking if you can implement their recommendations on a development site, a chainsaw parts order confirmation, and a spam email about solar panels. Without AI Email Response, all six sit unanswered until you check your phone at lunchtime — if you check at all during an intensive climbing day. The housing association manager emailed three contractors; the first to acknowledge received a follow-up call by 10am. With AI Email Response, the housing association tender, the homeowner enquiry, the council elm survey, and the consultancy implementation request each receive an individual acknowledgement within sixty seconds. At lunchtime you open four structured leads — the housing association forty-one-tree programme, the elm survey (potentially £60,000 of felling), the consultancy subcontract, and the domestic birch removal — and can prioritise your response effort accordingly."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/tree-surgeons/ai-receptionist/"
+  ctaHeadline="Acknowledge Council Tenders the Morning They Arrive"
+  ctaSubhead={`A three-year highways framework tender will not wait while you climb. An acknowledgement within sixty seconds keeps you in the running. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Before-and-After Engagement',
+    text: "Tree surgery transformations are dramatic — an overgrown garden reclaimed by crown lifting, a dying tree safely dismantled, a stump ground below grade. When a homeowner sees the transformation and messages your page, the AI responds instantly and captures their own tree issue."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Tree Photo Messages',
+    text: "Facebook users send Messenger photos of trees they are worried about — dark fungal growth at the base, dead limbs in the crown, roots lifting the driveway, ivy consuming the trunk. The AI acknowledges the images, asks follow-up questions about species and proximity to buildings, and delivers the photos with your lead."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Recommendation-Driven Leads',
+    text: "Tree surgery businesses thrive on recommendations — 'used these guys for our oak, brilliant work' tagged on a local Facebook group. The recommendation drives a follower to your page, they message, and the AI captures the enquiry within seconds."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Sunday Garden Time',
+    text: "Sunday morning is when homeowners walk the garden, notice the tree problems that have been building all winter, and decide to act. A Sunday Messenger enquiry is a high-intent domestic lead. The AI captures it and your brief is ready for Monday."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Informal Garden Messages',
+    text: "Messenger conversations about trees tend to be informal — 'this tree is massive and blocks all our light,' followed by 'I think it might be an oak,' then 'we are in Witney.' The AI consolidates the thread into one structured lead."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Your Content',
+    text: "Time-lapses of tree felling, aerial drone footage of crown reductions, and before-and-after garden transformations earn engagement. AI Messenger turns that engagement into tree surgery bookings."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page?",
+    answer: "A Facebook Business page with Messenger enabled is the requirement — personal accounts cannot be connected. Most tree surgery businesses already have a Facebook presence where they post completed work and gather reviews. If your page is basic, the AI still handles incoming messages with full professionalism on your behalf."
+  },
+  {
+    question: "What tree surgery enquiries come through Messenger?",
+    answer: "Almost exclusively domestic — homeowners who have seen your work through a neighbour's recommendation, a community group reference, or a local search. Typical requests involve tree pruning, felling, stump grinding, hedge reduction, and occasionally emergency storm damage. The homeowners who message through Facebook tend to be further along in their decision process because they have already seen your work."
+  },
+  {
+    question: "How quickly does the AI reply?",
+    answer: "Within seconds. Facebook Messenger shows active indicators and read receipts, so the homeowner sees immediate engagement from your business. In tree surgery — where three or four companies typically receive the same enquiry — the speed of the first professional reply frequently determines who gets the site visit."
+  },
+  {
+    question: "How much does Facebook Messenger cost?",
+    answer: `Messenger is available at £${pricing.addOn.price}/month as an add-on to the Core plan. For tree surgery companies where the average domestic job is worth £400 to £2,000, capturing one client through a prompt Messenger reply covers the annual add-on cost comfortably.`
+  },
+  {
+    question: "Can I reply to Messenger conversations myself?",
+    answer: "Sending your own message in any thread transfers control to you. The AI steps aside and the homeowner sees one continuous conversation. Most tree surgeons let the AI handle the initial response and species identification, then follow up personally with access questions, pricing, and scheduling."
+  },
+  {
+    question: "How is Messenger data protected?",
+    answer: "All Messenger conversations, tree photos, property addresses, and contact details are encrypted and held on UK and EU servers under UK GDPR. Data is delivered only to you and is never used for advertising, sold to aggregators, or accessed by anyone outside your business."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Tree Surgeons | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK tree surgery companies. Converts before-and-after engagement into tree work bookings from your Facebook page. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/tree-surgeons/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Tree Surgeon"
+  tradeNamePlural="Tree Surgeons"
+  tradeSlug="tree-surgeons"
+  headline="AI Facebook Messenger for Tree Surgery Businesses"
+  accentWord="Tree Surgery Businesses"
+  subhead="You post a time-lapse video of your crew sectional-dismantling a huge dead elm in a tight residential garden — rigging, lowering, chipper eating the brash, stump grinder finishing the job. Four hundred views in two hours. A homeowner in the same village messages: 'We have got an enormous silver birch in our garden that has grown into the overhead phone lines — can you come and look at it?' You are thirty feet up a lime tree at a school, chainsaw running, unable to check your phone. Without AI Messenger, the message sits unread until the evening. Three other tree surgeons got the same enquiry from local search. With it, the homeowner gets an instant response, shares their address, and your lead is ready when you clock off."
+  scenario="It is 9:30am on a rainy Saturday in March. Storm Kathleen blew through overnight and social media is buzzing. A homeowner in Headington posts in the 'Headington Neighbours' Facebook group: 'Big branch just come down from the chestnut at the end of the garden — landed on the trampoline. Can anyone recommend a tree surgeon?' Three people tag your page. The homeowner clicks through, sees your work photos and five-star reviews, and sends a Messenger message: 'Hi — a huge branch came down from our horse chestnut overnight. It has destroyed the trampoline and there are more broken branches hanging up in the crown. We have got kids and I am worried about another one coming down. Can someone come and make it safe?' Without AI Facebook Messenger, you are on your first storm callout — a cypress blown across a driveway in Marston — and you see the message at lunchtime. By then the homeowner has also contacted two other tagged tree surgeons; one replied at 10am and has pencilled in a Monday visit. With AI Messenger, the reply goes back at 9:31am: 'Thank you for getting in touch. We can certainly help with storm-damaged trees and will prioritise making your garden safe for the children. Could you share your address and some photos of the hanging branches? One of our team will call you today.' She sends three photos — the wrecked trampoline, the torn branch stub, and two visible hung limbs in the crown. At 12pm you check the lead: storm-damaged horse chestnut, branch down, hung branches remaining, children's garden, Headington, photos attached. You call, discuss immediacy, and book a Sunday morning safety clearance before the kids go back outside."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/tree-surgeons/ai-receptionist/"
+  ctaHeadline="Turn Every Time-Lapse Post into a Tree Surgery Booking"
+  ctaSubhead={`Dramatic before-and-after content earns engagement. AI Messenger converts every enquiry into a lead with species, access, and address. Add-on at £${pricing.addOn.price}/month.`}
+/>

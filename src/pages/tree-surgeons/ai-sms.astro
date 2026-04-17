@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Quick Availability Checks',
+    text: "Homeowners text to test the water — 'any chance you could look at a tree for us this week?' A fast reply confirms interest and starts the conversation. A three-hour silence while you are up an ash sends them to the next tree surgeon."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Tree Work Briefs from Texts',
+    text: "A text saying 'large oak at the bottom of the garden needs a big reduction, Witney' gives the AI enough to work with — and it asks about the tree height, proximity to buildings, access for a chipper, and any TPO status. Your lead arrives as a proper brief."
+  },
+  {
+    icon: '🔔',
+    title: 'Captures Neighbour Referrals',
+    text: "Neighbour referral texts are gold in tree surgery — 'saw your crew doing a brilliant job on the tree next door, can you quote for ours too?' The AI responds instantly while the referral is warm and captures the second job before you have finished the first."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Climbing Hours',
+    text: "Tree problems are noticed in the evening — a homeowner walks the garden after work and sees the leaning trunk for the first time from a new angle. The 8pm text is a genuine lead. The AI catches it."
+  },
+  {
+    icon: '📋',
+    title: 'Consolidates Burst Texts',
+    text: "People text in stages — 'need a tree taken down' then 'it is a big conifer' then 'about 15 metres' then 'near Banbury.' The AI processes the whole thread and sends one complete lead."
+  },
+  {
+    icon: '📱',
+    title: 'Your Business Number',
+    text: "AI SMS uses your business number. Clients text your professional line and receive professional replies."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI respond to a tree surgery text?",
+    answer: "The AI identifies the tree work request and replies professionally under your business name. A detailed text like 'need a 20m ash felled in a rear garden near Chipping Norton, possible TPO' is logged with full context. A vaguer text like 'can you do trees?' prompts follow-ups about the species, size, work needed, access, and postcode."
+  },
+  {
+    question: "Will the person texting know it is AI?",
+    answer: "The reply reads like a professional tree surgery company responding between jobs — your business name, relevant questions about the tree, and a confident tone. Homeowners texting a tree surgeon care about getting a fast, competent response. The AI delivers that within seconds."
+  },
+  {
+    question: "What about emergency tree damage texts?",
+    answer: "Texts about trees on buildings, across roads, or threatening power lines are flagged as urgent in your lead summary. The AI captures the hazard, location, and urgency, and your priority notification arrives immediately. You can triage emergency texts alongside your phone-based escalations."
+  },
+  {
+    question: "What does AI SMS cost for a tree surgeon?",
+    answer: `This add-on is priced at £${pricing.addOn.price}/month alongside the Core plan. For tree surgery businesses where a single domestic tree job averages £300 to £1,500 and emergency storm work can reach several thousand, recouping the annual add-on cost requires capturing just one lead through a prompt text reply.`
+  },
+  {
+    question: "Can I take over text conversations?",
+    answer: "Typing your own reply in any text thread causes the AI to step back. Between climbs, at the truck, or at home, you respond personally. In the canopy or behind the chipper, the AI maintains the channel."
+  },
+  {
+    question: "How is text data handled?",
+    answer: "SMS conversations — tree descriptions, addresses, species details, TPO references, and phone numbers — are encrypted and stored on UK and EU servers under UK GDPR. Data is accessible only to you and is never sold, shared, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Tree Surgeons | Rapid Receptionist"
+  description={`AI SMS for UK tree surgery companies. Responds to tree removal texts, pruning requests, and neighbour referrals while you are up in the canopy. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/tree-surgeons/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Tree Surgeon"
+  tradeNamePlural="Tree Surgeons"
+  tradeSlug="tree-surgeons"
+  headline="AI SMS for Tree Surgery Businesses"
+  accentWord="Tree Surgery Businesses"
+  subhead="Your crew has just finished a sectional dismantling of a large dying elm in a residential garden in Headington. As you chip the last of the brash, the neighbour two doors down texts: 'Just watched you take that tree down — very impressive. We have got a huge Leyland cypress at the back that blocks all the light. Can you take a look?' You are covered in chainsaw oil, feeding branches into the chipper, hearing protection on. Without AI SMS, the text waits until you clean up. By 5pm the neighbour has texted two other tree surgeons. With it, the reply goes back in seconds, the neighbour confirms the address, and you walk down the road with a tape measure before loading up."
+  scenario="It is 8:50pm on a Tuesday evening. A homeowner in Bicester has spent the evening looking up at the ash tree at the end of her garden from the patio — it is enormous, the canopy extends over three neighbouring gardens, and she has noticed several dead branches in the upper crown. She texts three tree surgeons from Google: 'Hi, need a crown reduction on a very large ash, probably 25 metres, lots of deadwood in the top. Rear garden, reasonable access via a side gate. In OX26. Can you quote?' Without AI SMS, you see the text at 6am Wednesday. Two competitors responded last night — one at 9:05pm, one at 9:30pm. The homeowner has already confirmed a Thursday site visit with the first. With AI SMS, the response arrives at 8:51pm: 'Thank you for your message. Large ash crown reductions are routine work for us. Could you confirm whether you are aware of any TPO on the tree, and what days work best for a site visit? We will arrange for one of our team to assess the tree and provide a quotation.' She replies: 'No TPO as far as I know. Any day this week works.' Wednesday morning you open the lead: 25m ash, crown reduction with deadwood, OX26, side gate access, no known TPO, flexible availability. You call at 8am and book a Friday morning survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/tree-surgeons/ai-receptionist/"
+  ctaHeadline="Capture Every Neighbour Referral Text at the Chipper"
+  ctaSubhead={`The neighbour two doors down watched your crew work all day. Her text arrives while you chip the last branch. The AI replies before you switch off the engine. Add-on at £${pricing.addOn.price}/month.`}
+/>
