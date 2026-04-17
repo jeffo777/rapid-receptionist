@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTASection from '../components/CTASection.astro';
+import HeroSection from '../components/HeroSection.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 import pricing from '../data/pricing.json';
 
@@ -142,17 +143,11 @@ const allFaqs = [
   </section>
 
   <!-- Hero -->
-  <section class="section ct-hero" id="ct-hero">
-    <div class="container">
-      <span class="badge badge--accent">{channelName} × {tradeNamePlural}</span>
-      <h1 set:html={headline.replace(accentWord, `<span class="text-accent">${accentWord}</span>`)} />
-      <p class="ct-hero__sub">{subhead}</p>
-      <div class="ct-hero__actions">
-        <a href="/get-started/" class="btn btn--primary btn--lg">Get Started</a>
-        <a href="/pricing/" class="btn btn--outline btn--lg">View Pricing</a>
-      </div>
-    </div>
-  </section>
+  <HeroSection
+    headline={headline}
+    subhead={subhead}
+    accentWord={accentWord}
+  />
 
   <!-- Scenario -->
   <section class="section section--alt" id="ct-scenario">

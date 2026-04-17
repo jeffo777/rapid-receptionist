@@ -21,7 +21,7 @@ import trades from '../data/trades.json';
         <h4 class="footer__heading">Construction Trades</h4>
         <ul class="footer__links">
           {trades.slice(0, 8).map((trade) => (
-            <li><a href={`/construction-trades/${trade.slug}/ai-receptionist/`}>{trade.name}</a></li>
+            <li><a href={`/${trade.slug}/ai-receptionist/`}>{trade.name}</a></li>
           ))}
           <li><a href="/construction-trades/" class="footer__view-all">View All 46 Trades →</a></li>
         </ul>

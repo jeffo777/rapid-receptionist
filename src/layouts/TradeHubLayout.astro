@@ -92,14 +92,14 @@ const steps = [
 
 /* Build channel URL map for trade-specific links */
 const channelTradeUrlMap: Record<string, string> = {
-  'ai-phone-answering': `/construction-trades/${tradeSlug}/ai-phone-answering/`,
-  'ai-website-chat': `/construction-trades/${tradeSlug}/ai-website-chat/`,
-  'ai-whatsapp': `/construction-trades/${tradeSlug}/ai-whatsapp/`,
-  'ai-sms': `/construction-trades/${tradeSlug}/ai-sms/`,
-  'ai-email': `/construction-trades/${tradeSlug}/ai-email-response/`,
-  'ai-facebook-messenger': `/construction-trades/${tradeSlug}/ai-facebook-messenger/`,
-  'ai-instagram-dm': `/construction-trades/${tradeSlug}/ai-instagram-dms/`,
-  'missed-call-text-back': `/construction-trades/${tradeSlug}/missed-call-text-back/`,
+  'ai-phone-answering': `/${tradeSlug}/ai-phone-answering/`,
+  'ai-website-chat': `/${tradeSlug}/ai-website-chat/`,
+  'ai-whatsapp': `/${tradeSlug}/ai-whatsapp/`,
+  'ai-sms': `/${tradeSlug}/ai-sms/`,
+  'ai-email': `/${tradeSlug}/ai-email-response/`,
+  'ai-facebook-messenger': `/${tradeSlug}/ai-facebook-messenger/`,
+  'ai-instagram-dm': `/${tradeSlug}/ai-instagram-dms/`,
+  'missed-call-text-back': `/${tradeSlug}/missed-call-text-back/`,
 };
 
 const features = channels.map(ch => ({

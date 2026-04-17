@@ -1,4 +1,4 @@
-﻿---
+---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import pricing from '../../data/pricing.json';
 import Header from '../../components/Header.astro';
@@ -52,7 +52,7 @@ const categoryOrder = [
             <h2 class="trade-category__title">{category}</h2>
             <div class="trades-grid">
               {categoryTrades.map((trade) => (
-                <a href={`/construction-trades/${trade.slug}/ai-receptionist/`} class="trade-card fade-in">
+                <a href={`/${trade.slug}/ai-receptionist/`} class="trade-card fade-in">
                   <span class="trade-card__icon">{trade.icon}</span>
                   <div class="trade-card__content">
                     <h3 class="trade-card__name">{trade.name}</h3>
@@ -85,8 +85,8 @@ const categoryOrder = [
           <span class="stats-bar__label">Year-Round Coverage</span>
         </div>
         <div class="stats-bar__item">
-          <span class="stats-bar__number`>£${pricing.tiers.core.price}</span>
-          <span class=`stats-bar__label">Per Month From</span>
+          <span class="stats-bar__number">£{pricing.tiers.starter.price}</span>
+          <span class="stats-bar__label">Per Month From</span>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@ const categoryOrder = [
 
   <CTASection
     headline="Respond First. Win the Job."
-    subhead=`Every construction trade. Every communication channel. From £${pricing.tiers.core.price}/month with a 30-day money-back guarantee.`
+    subhead={`Every construction trade. Every communication channel. From £${pricing.tiers.starter.price}/month with a 30-day money-back guarantee.`}
   />
 
   <CookieConsent />

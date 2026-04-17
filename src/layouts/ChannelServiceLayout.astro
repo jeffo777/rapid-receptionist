@@ -158,7 +158,7 @@ const allFaqs = [
 
         <div class="trades-grid">
           {trades.map((trade) => (
-            <a href={`/construction-trades/${trade.slug}/${channelSlugPrefix}/`} class="trade-link-card fade-in">
+            <a href={`/${trade.slug}/${channelSlugPrefix}/`} class="trade-link-card fade-in">
               <span class="trade-link-card__icon">{trade.icon}</span>
               <span class="trade-link-card__name">{channelName} for {trade.name}</span>
               <span class="trade-link-card__arrow">→</span>
