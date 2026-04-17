@@ -919,12 +919,48 @@ The AI chat widget will be added via GoHighLevel. The owner will provide a scrip
 - UK-specific references: Gas Safe, NICEIC, NAPIT, BPCA, Part P, EICRs, stopcocks, consumer units, letting agents, etc.
 - **Varied UK locations** in FAQs — use a mix of regions, NOT just one area. Some FAQs should have no location at all.
 
+## CRITICAL: Content Differentiation Rules
+
+These rules exist because previous batches of trade pages developed **structural duplication** — FAQ answers that started the same way, benefit descriptions that were interchangeable between trades, and CTA headlines reused across pages. This is unacceptable for SEO and user experience.
+
+### FAQ Answer Rules
+
+1. **Every FAQ answer must have a unique opening sentence.** Do NOT start multiple FAQ answers across the site with the same phrase (e.g., "All data is managed under UK GDPR" or "It greets the caller with your business name"). Find a different way into the answer for each trade.
+2. **Every FAQ answer must contain at least one trade-specific example.** A GDPR answer for a plasterer should mention plaster specifications or site addresses. A GDPR answer for a suspended ceiling installer should mention grid layouts or tile specifications. The factual content may be similar, but the framing must be unique.
+3. **Pricing FAQ answers must be written differently for each trade.** Do not reuse the sentence structure "The Core plan is £X/month with Y minutes." Instead, contextualise: "Most two-man ceiling teams find that..." or "For a sole trader plasterer, the Core plan at..." — the pricing variables come from `pricing.json`, but the surrounding prose must be unique.
+4. **"Can I still take calls" FAQ answers must include a trade-specific scenario.** Not just "Yes, the AI only activates when you are unavailable." Instead: "Yes — when you are in the showroom pricing worktops, calls ring through as normal. The AI only steps in when you are on site fitting units."
+5. **Do NOT write short, compressed FAQ answers.** Every FAQ answer must be 3-5 sentences minimum with substantive, trade-specific detail. One-line answers like "Yes. Encrypted, stored on UK servers, shared only with you." are not acceptable.
+
+### Benefit/Feature Text Rules
+
+1. **Every benefit text block must be unique across the entire site.** Do not reuse descriptions like "Every call is summarised with the caller's name, number, location..." across multiple trades.
+2. **Each benefit must reference a specific scenario from that trade.** Not "The AI catches calls after hours" but "Site managers call at 6am about programme changes. QS teams text at 7pm about tender returns. The AI catches every one."
+3. **Statistics must be presented differently.** If one trade page says "85% of callers who reach voicemail never try again," the next trade should frame the same insight differently: "When a main contractor hits voicemail, they call the next subcontractor on the register within thirty seconds."
+
+### CTA Headline Rules
+
+1. **Every CTA headline must be unique across the entire site.** Do not reuse "Stop Losing Website Visitors" or "Stop Missed Calls Becoming Missed Jobs" across multiple trades.
+2. **CTA headlines should reference the specific trade.** "Stop Losing Ceiling Contracts to Voicemail" not "Stop Missing Jobs."
+3. **CTA subheads must include a trade-specific hook.** Not just "From £X/month" but "One missed ceiling grid contract pays for three years of this service. From £X/month."
+
+### Pre-Submission Checklist
+
+Before creating ANY trade page, verify:
+
+- [ ] Every FAQ answer starts with a different opening sentence than any other page on the site
+- [ ] Every FAQ answer contains at least one trade-specific term or scenario
+- [ ] Every benefit text block is unique — not interchangeable with another trade's page
+- [ ] The CTA headline and subhead are unique across the entire site
+- [ ] No answer is shorter than 3 sentences
+- [ ] Would a reader notice if this page's content was swapped with another trade's page? (If not, rewrite it)
+
 ## Speed-to-Lead Data Attribution
 
 When using speed-to-lead statistics:
 - You may reference the statistic without citing the source inline (the data is verified)
 - Use natural language: "Research shows that 78% of customers hire the first business to respond" not "According to LeadConnect/LeanData (2023)..."
 - Don't overload any single page with statistics — 2-3 per page is enough
+- **Frame the same statistic differently on each page.** Do not copy-paste the same stat sentence across trades.
 
 ---
 
