@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Pour the Slab',
+    text: "Extension specialists spend days on groundworks — digging trenches, laying reinforcement, pouring concrete, and vibrating it level. You physically cannot hold a phone. The AI answers every call in your company name and captures the project brief: extension type, planning status, dimensions, and timeline."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Detailed Extension Briefs',
+    text: "When a homeowner describes wanting to 'knock through and extend the back of the house, open-plan with bi-folds, about four by eight metres,' the AI captures the layout vision, asks about planning, property type, and access, and delivers a lead you can assess before the callback. When an architect calls with a detailed specification, the AI captures the structural requirements, party wall status, and submission deadline."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Live Project Calls',
+    text: "Mid-build calls from building control, structural engineers, and clients are distinguished from new enquiries. A building control officer confirming a Friday foundation inspection is flagged differently from a new homeowner asking for a quote. Urgent operational calls escalate to your mobile."
+  },
+  {
+    icon: '🌙',
+    title: 'Captures Evening Extension Plans',
+    text: "Homeowners plan extensions in the evening — measuring rooms, browsing Pinterest for kitchen-diner inspiration, and discussing layouts with their partner. The 9pm call to your company is a high-intent lead from someone ready to commit to a project worth £40,000 to £100,000."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Summaries Built for Quoting',
+    text: "Each lead includes the extension type (rear, side, wraparound, double-storey), approximate dimensions, planning route (PD or full planning), whether an architect is involved, the property type and postcode, and the caller's timeline. You can begin pricing the job before the site visit."
+  },
+  {
+    icon: '🏷️',
+    title: 'Specialist First Impression',
+    text: "Extension specialists compete with general builders. A professional AI greeting that asks informed questions about extension types and planning routes immediately signals specialism — the homeowner knows they have reached a company that does extensions every day, not occasionally."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their extension project?",
+    answer: "The conversation follows the caller's lead. Homeowners are asked about the extension type they want (rear, side, wraparound, double-storey), the approximate size, their planning situation (permitted development, approved, or not yet explored), whether they have architect drawings, the property type and location, and their ideal start date. Professional callers issuing tenders are asked about the specification, contract form, and submission deadline."
+  },
+  {
+    question: "Can the AI handle permitted development queries?",
+    answer: "Permitted development is one of the most frequently discussed topics in extension enquiry calls. The AI recognises the term, captures whether the caller believes their project falls within PD rights, and notes any specific measurements or conditions they mention — 'our architect says we can go out four metres under PD' or 'we are in a conservation area so we need full planning.' This context helps you advise accurately during the callback."
+  },
+  {
+    question: "What about calls from architects with formal tenders?",
+    answer: "Architects issue structured specifications with bills of quantities, structural requirements, and submission deadlines. The AI captures this with appropriate formality — noting the project type, key structural elements (steelwork, underpinning, party walls), the contract form if mentioned, the deadline, and the architect's practice details. Your lead reads like a tender brief."
+  },
+  {
+    question: "How many call minutes are included?",
+    answer: `Your Core plan at £${pricing.tiers.core.price}/month includes ${pricing.tiers.core.minutes} minutes. Extension specialists typically receive a steady flow of domestic enquiry calls — homeowners requesting quotes — alongside occasional architect tenders. Most businesses operate comfortably within the allowance. If a marketing campaign or seasonal demand pushes volume higher, overage is billed at 20p per minute without penalties.`
+  },
+  {
+    question: "Can I take calls directly during finishing phases?",
+    answer: "During second fix and snagging — when the noisy, dusty work has finished and you are fitting kitchens, tiling, and decorating — you might prefer to take calls yourself. The schedule in your dashboard lets you switch to direct calls during quieter phases and back to AI during groundworks, steelwork, and shell construction when you are physically on the tools."
+  },
+  {
+    question: "How is extension project data kept secure?",
+    answer: "Extension enquiries include property addresses, architect specifications, party wall schedules, planning references, and budget figures. All captured data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project information is disclosed to other builders, sold to lead aggregators, or used beyond your lead delivery."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Extension Specialists | Rapid Receptionist"
+  description={`AI phone answering for UK extension specialists. Captures rear, side, wraparound, and double-storey extension enquiries while you are on site. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/extension-specialists/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Extension Specialist"
+  tradeNamePlural="Extension Specialists"
+  tradeSlug="extension-specialists"
+  headline="AI Phone Answering for Extension Specialist Companies"
+  accentWord="Extension Specialist"
+  subhead="A homeowner calls at 10am about a rear extension for her 1930s semi — she wants to replace a cramped kitchen and separate dining room with one open-plan space, bi-fold doors onto the garden, and a skylight lantern for natural light. She has architect drawings and wants to proceed under permitted development. You are on site at a different extension — the ready-mix has just arrived for the foundation pour, the pump operator is waiting for direction, and you are knee-deep in trench checking the reinforcement cages. Without AI Phone Answering, she hears voicemail, hangs up, and rings the next extension company on Google. With it, the AI captures the project — rear extension, 1930s semi, open-plan kitchen-diner, bi-folds, lantern, PD route, architect drawings available — and your lead summary waits for your lunch break."
+  scenario="It is 2pm on a Thursday. You are on the scaffold at a double-storey side extension in Summertown — the brickwork has reached the first-floor window cill height and you are checking the cavity width, wall tie spacing, and DPC level before the bricklayer continues. Four calls come in between 1:30 and 3:30pm. Without AI Phone Answering, one leaves a voicemail — 'ring me about an extension' — the other three produce missed calls with no message. By Friday morning, two have spoken to competitors. With AI Phone Answering, all four are answered. Lead one: wraparound extension on a detached house in Kidlington, architect appointed, planning submitted, looking for builder quotes by month-end. Lead two: side return extension on a Victorian terrace in Jericho, party wall agreement needed both sides, architect drawings ready. Lead three: single-storey rear on a 1960s bungalow in Eynsham, homeowner wants to maximise permitted development to avoid planning. Lead four: existing client calling to confirm the kitchen delivery date for next Tuesday. At 3:45pm you check four leads — three new projects worth a combined £180,000 and one operational note — and prioritise your callbacks by value and readiness."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/extension-specialists/ai-receptionist/"
+  ctaHeadline="Four Extension Calls in Two Hours — All Answered, All Captured"
+  ctaSubhead={`While you checked the cavity width on one extension, four potential clients called about others. The AI captured every brief. From £${pricing.tiers.core.price}/month.`}
+/>

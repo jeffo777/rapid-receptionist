@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Hands-On Extension Work',
+    text: "Pouring foundations, laying blocks, fitting steels, building roof structures — extension specialists spend entire days in physical construction. Your phone is in the van or your pocket, unreachable. Missed Call Text Back sends a branded text within seconds so every caller knows you are on site and will ring back."
+  },
+  {
+    icon: '⏱️',
+    title: 'Stops Homeowners Calling Competitors',
+    text: "A homeowner ringing three extension companies for quotes gets voicemail from two and a text from one: 'Thanks for calling — I am on site pouring a foundation and will call you back shortly.' That homeowner stops scrolling Google and waits for the callback."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional and Branded',
+    text: "The text arrives from your business number with your company name. For extension work — involving weeks of disruption, tens of thousands of pounds, and deep trust — a prompt professional response signals the kind of organised, reliable company homeowners want managing their project."
+  },
+  {
+    icon: '📊',
+    title: 'Critical During Spring Rush',
+    text: "Spring is when extension demand peaks — planning permissions granted over winter are ready to execute, and homeowners want their new kitchen-diner for summer entertaining. Enquiry calls stack up while you manage live projects. Missed Call Text Back ensures every one gets a response."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Details',
+    text: "Callers regularly reply with project specifics — 'it is about a wraparound extension, we have planning and architect drawings, in OX3.' These reply texts give you a project overview before the callback."
+  },
+  {
+    icon: '🔄',
+    title: 'Complements AI Phone Answering',
+    text: "Phone Answering handles the majority of calls with a full conversation. Missed Call Text Back catches the rare gaps — a caller who hangs up quickly, a signal drop at a rural construction site. Together, nothing slips through."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text fire?",
+    answer: "The text sends the instant a call is unanswered or hits voicemail within your configured ring time. The caller receives it within seconds — before opening a new browser tab to find the next extension company. During peak extension season, when homeowners are actively comparing three to five builders, this immediacy is what keeps your name in the conversation."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You write it during setup and edit it whenever you like. A typical extension specialist message reads: 'Thank you for calling [company name]. I am currently on site managing an extension project and will return your call at the earliest opportunity. If you could reply with your project details, I will have all the information ready for our conversation.' The message, tone, and content are entirely yours."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They operate as layered protection. AI Phone Answering takes the call, has a detailed conversation, and builds a structured lead. Missed Call Text Back covers the edge cases — a caller who drops before the AI connects, or a momentary mobile signal loss on a rural foundation dig. Phone answering captures the conversation; the text catches what the phone cannot."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. For extension specialists handling projects worth £30,000 to £150,000, recovering a single missed call with a prompt text — and winning the project — covers the add-on investment for an extended period.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Many do — particularly homeowners eager to start their extension. Replies typically include the extension type, property location, approximate dimensions, planning status, and preferred start date. These arrive in your lead summary alongside the missed call record. When you call back at the end of the day, you already know the project scope."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing extension details, property addresses, and planning information are encrypted and held on UK and EU servers under UK GDPR. Only you access this data. It is never shared with other extension companies, sold to referral services, or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Extension Specialists | Rapid Receptionist"
+  description={`Missed Call Text Back for UK extension specialists. Automatically texts missed callers while you manage the build — keeps extension leads warm during spring rush. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/extension-specialists/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Extension Specialist"
+  tradeNamePlural="Extension Specialists"
+  tradeSlug="extension-specialists"
+  headline="Missed Call Text Back for Extension Specialist Companies"
+  accentWord="Extension Specialist"
+  subhead="It is 11am on a Monday. You are supervising the steel erection at a single-storey rear extension in Witney — the telehandler is lowering an 8-metre RSJ into position, two of your crew are guiding it onto the padstones, and you are confirming the bearing dimensions against the structural engineer's drawing. Two calls come in between 10:30 and 11:30. Your phone is on the dashboard, the engine off, dust and noise everywhere. Without Missed Call Text Back, both callers hear voicemail. One leaves a message — 'call me about an extension' — the other hangs up. By noon, both have rung other companies. With it, both receive a text within seconds. The first replies: 'Hi — looking for a quote for a rear extension on our bungalow in Eynsham. About 4 metres deep. Want to make the kitchen bigger. Have not done anything about planning yet.' At 12:15 you read the reply, call her back, and book a Thursday evening visit."
+  scenario="It is 3pm on a Saturday in April. You have been pouring the oversite concrete for a wraparound extension all day — delivered in two loads, the second arriving at 1:30pm — and you are tamping, floating, and checking levels. Your phone has been face-down on the windowsill since 8am. Three calls came in during the afternoon. Without Missed Call Text Back, you check at 4pm: three missed calls, one voicemail saying 'hi, we want an extension quote.' You call the voicemail number and reach voicemail yourself. The other two are unknown numbers you cannot trace. Three potential extension projects — two permanently lost. With Missed Call Text Back, all three called and received an instant text. The first replies at 3:05: 'rear extension on our detached in OX14, about 5 by 7, have planning permission.' The second at 3:20: 'just a single-storey rear, about 3 metres deep, Victorian terrace in Jericho, might need party wall stuff.' The third at 3:45: 'want to extend over the garage to create a bedroom and en-suite, it is a 1980s semi in Headington.' At 4:15pm you wash the concrete off your hands and open three extension leads — all with project type, dimensions, location, and planning context — ranging from a Victorian terrace party wall job to a first-floor-over-garage conversion. You call all three before 5pm and book Monday, Tuesday, and Wednesday site visits."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/extension-specialists/ai-receptionist/"
+  ctaHeadline="Recover Three Extension Leads from One Concrete Pour Saturday"
+  ctaSubhead={`Three homeowners called while you floated the oversite. Three texts went out. Three replied. Three site visits booked by Monday. Add-on at £${pricing.addOn.price}/month.`}
+/>

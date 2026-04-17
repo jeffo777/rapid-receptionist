@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Before-and-After Gallery Engagement',
+    text: "Extension transformations are visually dramatic — dark kitchens become light-filled open-plan living spaces. When a homeowner sees your gallery and messages 'this is exactly what we want,' the AI captures their project details and converts admiration into a site visit."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Kitchen Photo Messages',
+    text: "Facebook users message with photos of their current kitchen — cramped, dated, too small for the family. 'This is our kitchen — can you make it like the one in your gallery?' The AI acknowledges the photos, asks about dimensions and planning, and delivers the images alongside a structured lead."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Tagged Recommendations',
+    text: "Happy extension clients tag your company when friends ask for builder recommendations on Facebook. The friend messages your page and the AI captures the enquiry within seconds — a warm referral lead with built-in trust and evidence of your work quality."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Sunday Inspiration Sessions',
+    text: "Sunday afternoons are when couples browse extension ideas on Facebook, see your completed projects, and decide to make contact. The AI captures these high-intent weekend leads for Monday morning."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Aspirational Messages',
+    text: "Messenger conversations about extensions start aspirational — 'we love what you did at that house.' The AI grounds the conversation by asking about their property type, dimensions, and planning status, turning broad interest into a qualified lead."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Your Transformation Content',
+    text: "Every before-and-after gallery post, progress time-lapse, and client testimonial video can generate Messenger enquiries. The AI converts social proof into extension bookings."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page?",
+    answer: "A Facebook Business page with Messenger activated is required — personal accounts do not support the integration. Extension companies typically maintain active Facebook pages to showcase completed projects, share progress updates, and collect client reviews. The AI adds professional message handling to your existing social presence."
+  },
+  {
+    question: "What extension enquiries come through Messenger?",
+    answer: "Almost exclusively domestic leads. Homeowners see your completed extension galleries — open-plan kitchen-diners, bi-fold door reveals, lantern roof interiors — and message asking about pricing, timelines, and whether you are available. These are high-quality prospects who have already judged your work quality and want to engage specifically because they like what they see."
+  },
+  {
+    question: "How quickly does the AI reply on Messenger?",
+    answer: "Inside seconds. Messenger shows active indicators, so the homeowner sees immediate engagement from your business. For extension specialists — where homeowners compare portfolios of three to five companies — the speed of your first professional reply often determines who gets invited to measure up."
+  },
+  {
+    question: "What does Facebook Messenger cost?",
+    answer: `Facebook Messenger is available at £${pricing.addOn.price}/month as an add-on. Extension specialists handle residential projects spanning £25,000 single-storey rears to £150,000 double-storey wraparounds — winning even the most modest Facebook-sourced extension enquiry through a prompt Messenger reply repays the annual add-on cost from the first project.`
+  },
+  {
+    question: "Can I pick up Messenger conversations?",
+    answer: "Typing your own reply in any Messenger thread transfers the conversation to you. The homeowner sees one continuous exchange. Most extension specialists let the AI handle the initial scope capture and follow up personally to discuss design details, arrange the site visit, and provide a quote."
+  },
+  {
+    question: "How is Messenger data protected?",
+    answer: "All Messenger conversations, kitchen photos, extension dimensions, planning details, and homeowner contact information are encrypted and stored on UK and EU servers under UK GDPR. Data is delivered to you alone and is never disclosed to competitors, sold to lead brokers, or repurposed for advertising."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Extension Specialists | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK extension specialists. Converts before-and-after gallery engagement into rear, side, and wraparound extension leads. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/extension-specialists/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Extension Specialist"
+  tradeNamePlural="Extension Specialists"
+  tradeSlug="extension-specialists"
+  headline="AI Facebook Messenger for Extension Companies"
+  accentWord="Extension Companies"
+  subhead="You post a before-and-after gallery of a rear extension in Headington — the 'before' showing a dark, cramped 1960s kitchen with a single window; the 'after' showing a stunning 5-metre extension with full-width bi-fold doors, polished concrete floor, and a skylight lantern flooding the space with natural light. Two hundred likes, thirty-five shares. A homeowner in Marston messages: 'This transformation is incredible. Our kitchen is almost identical to the before photo. Can you do the same thing for us?' You are on another site, supervising the bricklayers at a wraparound extension. Without AI Messenger, the message waits. With it, the homeowner gets an instant response, shares photos of her own kitchen, and your lead is captured."
+  scenario="It is 8pm on a Friday. A homeowner in Botley has been browsing extension company Facebook pages all evening with her husband. They have a 1930s semi-detached house with a rear reception room, a separate kitchen, and a narrow side passage. An architect friend has suggested they could open the side return, knock through the rear reception and kitchen, and extend out three metres — creating one large L-shaped kitchen-dining-family space. She finds your page, scrolls through five completed extension projects — all showing the same kind of transformation — and messages: 'Hi — we have a 1930s semi and want to open the side return and extend at the rear. Our architect friend has done rough sketches. The side passage is about 1 metre wide. Do you handle party walls as part of the build? And can you advise on whether this needs planning or would come under PD?' Without AI Facebook Messenger, you see the message Saturday lunchtime after a morning on site. She has also messaged two other companies; one replied at 8:15pm Friday with a helpful explanation of PD limits for semi-detached properties. With AI Messenger, the reply arrives at 8:01pm: 'Thank you — side return and rear extensions on semi-detached houses are one of our most popular project types. We coordinate party wall agreements as standard. Could you share your postcode and your friend's sketches? One of our team will call you to discuss PD eligibility and arrange a visit.' She sends the sketches and her postcode. Saturday morning you open the lead: 1930s semi, side return plus rear extension, L-shaped kitchen-diner, 1m side passage, party wall needed, PD query, architect sketches attached, Botley. You call at 9am, discuss PD for semi-detached houses, and book a Tuesday evening consultation."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/extension-specialists/ai-receptionist/"
+  ctaHeadline="Turn Kitchen Transformation Posts into Extension Consultations"
+  ctaSubhead={`A before-and-after gallery post earns two hundred likes. AI Messenger converts every enquiry into a lead with dimensions, planning, and photos. Add-on at £${pricing.addOn.price}/month.`}
+/>

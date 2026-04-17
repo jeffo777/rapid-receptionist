@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Architect Tenders Immediately',
+    text: "Architects send extension specifications by email — detailed drawings, structural calculations, and bills of quantities with three-week submission deadlines. The extension company that acknowledges first signals both interest and capacity. AI Email Response sends your professional acknowledgement within sixty seconds."
+  },
+  {
+    icon: '📐',
+    title: 'Understands Extension Specifications',
+    text: "When a tender email specifies 'single-storey wraparound extension with 8-metre RSJ, insulated cavity walls, flat roof with parapet and green roof finish, level-threshold bi-fold doors, and underfloor heating throughout,' the AI captures and references the scope accurately. The architect receives an acknowledgement that demonstrates competence."
+  },
+  {
+    icon: '🕒',
+    title: 'Fills Your On-Site Email Gap',
+    text: "Extension specialists spend entire working days on site — pouring foundations, laying blocks, checking steelwork. Emails arriving at 9am go unread until evening. A sixty-second acknowledgement keeps you competitive while your hands are in mortar."
+  },
+  {
+    icon: '🗂️',
+    title: 'Categorises Incoming Emails',
+    text: "Your inbox contains architect tenders, homeowner contact-form submissions, builders' merchant quotes, subcontractor confirmations, and building control correspondence. The AI identifies genuine project enquiries and separates them from operational noise."
+  },
+  {
+    icon: '🤝',
+    title: 'Strengthens Architect Relationships',
+    text: "Preferred architects send their best extension work to responsive builders. A prompt acknowledgement on every tender reinforces the professional relationship and keeps you on their shortlist."
+  },
+  {
+    icon: '📎',
+    title: 'References Attached Documents',
+    text: "Extension tenders include floor plans, elevations, structural calculations, and specifications. The AI notes attachments in the acknowledgement and your lead summary, so you know exactly what documents need reviewing."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI write a full extension tender response?",
+    answer: "The AI limits itself to an initial acknowledgement — confirming receipt, referencing the extension type and key specifications, and assuring the architect that a detailed response will follow. Your pricing, methodology, programme, and supporting documentation are prepared by you. The acknowledgement simply ensures you stay on the table while you prepare your submission."
+  },
+  {
+    question: "Will it acknowledge supplier and material emails?",
+    answer: "The system is taught during setup to distinguish project enquiries from routine inbox traffic. Builders' merchant quotations, scaffold hire confirmations, insurance documents, and trade newsletters do not receive acknowledgements. Only genuine extension enquiries and tender invitations trigger a response."
+  },
+  {
+    question: "How does it handle homeowner website contact forms?",
+    answer: "Contact-form submissions from homeowners — 'we want a quote for a rear extension in Headington' — receive a professional reply confirming interest, referencing the extension type, and asking about their planning status and timeline. Your lead summary tags these as domestic enquiries separately from professional architect tenders."
+  },
+  {
+    question: "What does email response cost for an extension specialist?",
+    answer: `This channel is £${pricing.addOn.price}/month as an add-on alongside the Core plan. For extension specialists tendering for projects routinely worth £40,000 to £150,000 — where a prompt acknowledgement influences the architect's recommendation — the sixty-second response advantage far outweighs a monthly add-on charge.`
+  },
+  {
+    question: "Can I compose my own follow-up correspondence?",
+    answer: "Every email after the initial acknowledgement is yours. Your tender pricing, construction methodology, programme schedules, insurance evidence, and references are composed and sent by you. The AI does not generate any follow-up messages."
+  },
+  {
+    question: "How is email tender data kept confidential?",
+    answer: "Extension tender documents — including architect drawings, structural calculations, bills of quantities, and your commercial pricing — represent sensitive business information. All email data processed by the AI is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. Tender details are never disclosed to competing builders or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Extension Specialists | Rapid Receptionist"
+  description={`AI email response for UK extension specialists. Acknowledges architect tenders and homeowner enquiries for rear, side, and wraparound extensions within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/extension-specialists/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Extension Specialist"
+  tradeNamePlural="Extension Specialists"
+  tradeSlug="extension-specialists"
+  headline="AI Email Response for Extension Specialist Companies"
+  accentWord="Extension Specialist"
+  subhead="An architect emails a specification for a wraparound extension on a period semi in Jericho — rear extension four metres deep, side return opened with structural steelwork, two party wall agreements required, flat roof with parapet detail, and a fifteen-page specification including mechanical ventilation and underfloor heating. Tender return is three weeks. You are managing the groundworks on a different extension — drainage, foundations, and a concrete oversite pour that will not wait. Without AI Email Response, the tender sits unread until Friday. Two competitors acknowledged by Tuesday lunchtime. With it, your acknowledgement references the wraparound scope, the party wall requirements, and the three-week deadline within sixty seconds."
+  scenario="It is 8am on a Tuesday. Your inbox has accumulated overnight: a Houzz lead for a rear extension in Eynsham, an architect forwarding a tender for a double-storey side extension on a detached house in Summertown with structural steelwork and a suspended ground floor, a homeowner replying to a previous quote asking if you can reduce the price by simplifying the roof from a lantern to flat rooflights, and a building control officer confirming a Thursday foundation inspection. Without AI Email Response, you skim subject lines while loading the van at the yard, flag the architect tender, and drive to site. The tender sits unread until Wednesday evening — by which time two other extension companies have acknowledged, one has already requested additional drawing files. With AI Email Response, the architect tender receives an immediate acknowledgement referencing the double-storey scope and structural specifications, the Houzz lead gets a professional response, the homeowner's roof query is flagged for your personal reply, and the building control confirmation is noted. At lunch you review four leads and prioritise the double-storey tender — estimated build value £140,000 — beginning your review immediately."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/extension-specialists/ai-receptionist/"
+  ctaHeadline="Acknowledge Extension Tenders While You Pour the Oversite"
+  ctaSubhead={`An architect's three-week tender window starts when the email arrives. Your acknowledgement within sixty seconds keeps you competitive from day one. Add-on at £${pricing.addOn.price}/month.`}
+/>

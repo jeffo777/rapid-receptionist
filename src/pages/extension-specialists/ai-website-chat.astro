@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Browsing Extension Ideas',
+    text: "Homeowners visit extension company websites with specific questions — 'can we go out 6 metres under permitted development?', 'do you handle the party wall process?', 'how long does a rear extension take from start to finish?' The chat widget answers immediately from your profile and captures the visitor's own project details."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies Projects by Type and Scale',
+    text: "Through conversation, the AI identifies whether the visitor wants a simple rear extension, a wraparound, a double-storey, or a side return — and captures dimensions, planning status, architect involvement, and location. You know the project's complexity before your callback."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Late-Night Kitchen Table Research',
+    text: "Extension decisions happen at 9pm — architect plans on the dining table, cost estimators open on the laptop, Pinterest boards full of kitchen-diner inspiration. The couple finds your website and types their first question. Without chat, they bookmark and forget. With it, they share their project and your lead is waiting by morning."
+  },
+  {
+    icon: '📊',
+    title: 'Answers Planning Route Questions',
+    text: "The most common chat question is about permitted development — 'our house is semi-detached, can we go out four metres without planning?' The AI provides general guidance from your profile and captures the property type and dimensions for your detailed assessment."
+  },
+  {
+    icon: '🔗',
+    title: 'Complements Your Portfolio Gallery',
+    text: "Extension companies with before-and-after galleries — dark galley kitchens transformed into light-filled open-plan spaces — generate immediate interest. The chat widget sits beside these images and converts admiration into enquiries."
+  },
+  {
+    icon: '✅',
+    title: 'Bundled with Phone Answering',
+    text: `Website chat is included free with the Core plan at £${pricing.tiers.core.price}/month. Add a small JavaScript snippet to your site header and the chat bubble appears on every page. Unlimited conversations. Works on any website platform.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add the chat to my extension company website?",
+    answer: "A small JavaScript snippet is provided during setup. Copy it into your website header — directly in the code or via a WordPress, Squarespace, or Wix plugin. The chat bubble appears on every page within minutes. If you need assistance, we guide your web developer or handle the installation remotely. The snippet is lightweight and does not interfere with your existing site functionality."
+  },
+  {
+    question: "Can the AI discuss permitted development and planning?",
+    answer: "Permitted development is the question extension companies hear most often. The AI engages visitors on PD topics using your service profile — confirming that you handle PD assessments, noting that limits vary by property type and location, and capturing the visitor's property details for your professional assessment. It does not offer formal planning advice but keeps the conversation productive and captures the lead."
+  },
+  {
+    question: "What project details does the chat capture?",
+    answer: "The AI gathers the extension type (rear, side, wraparound, double-storey), approximate dimensions, planning status, whether an architect or structural engineer is already appointed, the property type and postcode, the visitor's preferred start date, and their contact details. For extension specialists, this tells you at a glance whether this is a £25,000 single-storey rear or an £120,000 double-storey wraparound."
+  },
+  {
+    question: "Does the chat widget affect my website performance?",
+    answer: "The chat script loads after your page content renders completely. Extension company websites with large portfolio galleries — before-and-after extension photos, 3D renders, and video walkthroughs — display at their normal speed. The chat bubble appears once the visual content is loaded. Its data footprint is trivial compared to a single project photo."
+  },
+  {
+    question: "Is website chat an extra monthly charge?",
+    answer: `Phone answering and website chat come together under the Core plan at £${pricing.tiers.core.price}/month. For extension specialists, these two channels cover the primary enquiry paths — homeowners phoning from Checkatrade listings, and visitors chatting after browsing your portfolio online. A single plan handles both without additional cost.`
+  },
+  {
+    question: "How is visitor data from extension enquiries handled?",
+    answer: "Chat conversations containing property addresses, extension dimensions, planning details, budget discussions, and visitor contact information are encrypted and stored on UK and EU servers in full compliance with UK GDPR. Lead summaries go to you exclusively. Visitor data is never shared with competitors, sold to aggregators, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Extension Specialists | Rapid Receptionist"
+  description={`AI website chat for UK extension specialists. Engages visitors researching rear, side, wraparound, and double-storey extensions — captures project leads 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/extension-specialists/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Extension Specialist"
+  tradeNamePlural="Extension Specialists"
+  tradeSlug="extension-specialists"
+  headline="AI Website Chat for Extension Companies"
+  accentWord="Extension Companies"
+  subhead="A couple in Headington finds your website at 9:45pm. They have spent three weeks since their architect produced initial sketches for a wraparound extension — single-storey rear and side, creating an L-shaped open-plan kitchen-diner-living space with full-width bi-fold doors. They like your portfolio — the before-and-after transformations match exactly what they want. She types: 'We have architect sketches for a wraparound extension on our 1930s semi — about 35sqm total. Our architect thinks it qualifies as permitted development. Can you give us a rough timeline and come to look?' Without chat, she bookmarks the page. With AI Website Chat, the AI asks about their postcode, confirms your PD experience, and captures the brief. Thursday morning you call with a structured lead."
+  scenario="It is 11pm on a Wednesday. A property developer in North Oxford is evaluating a three-bedroom Victorian terrace he is considering purchasing. His strategy is to extend at the rear — maximising permitted development to four metres — open up the side return, convert the loft with a rear dormer, and sell the property as a five-bedroom family home. He finds your website through a Google search for 'extension specialist Oxford' and types into the chat: 'I am looking at buying a mid-terrace Victorian in OX2. Want to do a 4m rear extension under PD, open the side return, and potentially convert the loft. Do you do design-and-build packages? I need a ballpark cost for the extension and side return combined — budget is around £80k for both. Can you also advise on party wall requirements for the terrace?' Without chat, he bookmarks and moves on to the next builder website. With AI Website Chat, the AI responds immediately: 'Design-and-build extensions are one of our core services. Rear extension with side return on a Victorian terrace is a project type we handle regularly. Party wall agreements would typically be needed both sides for a mid-terrace. Could you share the property postcode and any photos? One of our team will call you tomorrow with initial guidance on scope and costs.' He provides the Rightmove listing link and his phone number. Thursday at 8am you open the lead: Victorian mid-terrace, OX2, 4m rear under PD, side return opening, £80k budget, developer, party wall both sides, Rightmove link attached. You call, discuss the commercial strategy, and arrange a Friday site visit — before he has even made an offer on the property."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/extension-specialists/ai-receptionist/"
+  ctaHeadline="Turn Permitted Development Questions into Extension Contracts"
+  ctaSubhead={`Every homeowner researching PD rights on your website at 10pm is ready to build. A chat widget captures the project before the browser tab closes. Included at £${pricing.tiers.core.price}/month.`}
+/>

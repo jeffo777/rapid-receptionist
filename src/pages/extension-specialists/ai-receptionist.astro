@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A homeowner calls about a single-storey rear extension with a skylight lantern and bi-fold doors — she has preliminary architect sketches, wants to go through permitted development to avoid a planning application, and needs a builder who specialises in extensions rather than general building. You are on site supervising a foundation pour for a wraparound extension — the ready-mix wagon is reversing down the drive, the pump is being set up, and you are marking the pour depth on the formwork. Your phone buzzes in your pocket, unreachable. The homeowner tries two more extension companies. The first answers and books a Tuesday site visit.",
+    with: "Your AI receptionist answers on the second ring. It captures the full brief — single-storey rear, skylight lantern, bi-folds, permitted development route, architect sketches available — and confirms you will call back. At 3pm, once the foundation is poured and tamped, you read the lead and call her. You book a Wednesday evening visit."
+  },
+  {
+    without: "An architect emails a detailed specification for a two-storey side and rear extension on a Victorian terrace in East Oxford — party wall agreements required on both sides, underpinning to the existing rear wall, structural steelwork to create an open-plan ground floor, and first-floor bedroom extension above. Budget is £120,000 to £150,000. Tender return in three weeks. You are managing the second fix on another extension all week — kitchen fitting, tiling, snagging. The email sits until Saturday morning. Two extension specialists acknowledged by Tuesday afternoon.",
+    with: "Your AI acknowledges the architect's email within sixty seconds, referencing the two-storey side-and-rear scope, party wall requirements, and the three-week deadline. Saturday morning you open the lead and begin reviewing the specification with the full response window still ahead."
+  },
+  {
+    without: "A couple WhatsApp on Sunday morning with photos of their 1930s semi — the classic narrow galley kitchen looking onto a small patio. They want to knock through and extend out, creating an open-plan kitchen-diner with doors onto the garden. They message three extension companies they found on Houzz. You are with your family. The WhatsApp waits until Monday morning. By then, the other two builders have responded, one has already asked to see the architect's drawings.",
+    with: "The AI responds to the WhatsApp within seconds, asks about the property type, dimensions, planning status, and timeline, and captures the photos. Monday morning you have a structured lead — 1930s semi, rear extension, open-plan kitchen-diner, photos attached — and call before 9am."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Extension Types",
+    items: ["Single-storey rear extensions", "Double-storey rear and side extensions", "Wraparound (rear and side) extensions", "Side return extensions (Victorian and Edwardian terraces)", "Front extensions and porches", "Infill extensions"]
+  },
+  {
+    category: "Design & Specification",
+    items: ["Open-plan kitchen-diner layouts", "Bi-fold and sliding door installations", "Skylight lantern roofs and roof lights", "Flat roof and parapet roof construction", "Structural steelwork and RSJ installation", "Level threshold and accessible design"]
+  },
+  {
+    category: "Planning & Compliance",
+    items: ["Permitted development assessment", "Full planning applications", "Party wall agreements (Party Wall Act 1996)", "Building Regulations (full plans and building notice)", "Structural engineering coordination", "SAP calculations and energy performance"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏡",
+    title: "Homeowners Planning Extensions",
+    description: "The primary client base. Homeowners who need more space — growing families, home workers, downsizers wanting open-plan living — and have decided an extension is preferable to moving. They research extensively, compare portfolios, and contact three to five extension specialists. The company that responds first with relevant experience almost always secures the initial consultation."
+  },
+  {
+    icon: "📐",
+    title: "Architects & Designers",
+    description: "Architects design extensions and then tender the build to specialist contractors. An architect issuing a specification for a two-storey extension with structural steelwork and party wall obligations expects a prompt, professional response. Responsive extension specialists become architects' first-choice contractors."
+  },
+  {
+    icon: "🏘️",
+    title: "Property Developers & Landlords",
+    description: "Developers extend properties to increase value before sale — loft conversions paired with rear extensions, side returns opened up on period terraces, or permitted development maximised on semi-detached houses. Speed of response signals the capacity to meet their programme deadlines."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners via Referral",
+    description: "Extension work generates powerful word-of-mouth referrals. A neighbour sees the finished kitchen-diner through the garden fence, asks for details, and calls your company. These referral leads convert at exceptional rates — but only if someone answers the phone when they call."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand the technical language of home extensions?",
+    answer: "Every term used in residential extension work is recognised — single-storey, double-storey, wraparound, side return, rear, infill, permitted development, full planning, party wall (Act 1996), Building Regulations, building notice, full plans, structural calculations, RSJ, steelwork, foundation design, underpinning, cavity walls, insulated render, flat roof, parapet, lantern roof, bi-fold doors, sliding doors, level threshold, and SAP calculations. When an architect calls about 'a single-storey wraparound with a 6-metre RSJ spanning the full width, flat roof with parapet detail, and level-threshold bi-folds under permitted development,' the AI captures the specification word for word."
+  },
+  {
+    question: "Can the AI distinguish between a simple rear extension and a complex multi-storey project?",
+    answer: "A homeowner describing 'a small conservatory replacement with a proper extension' generates a very different lead summary from an architect specifying a two-storey side-and-rear extension requiring party wall awards, underpinning, and a structural steel frame. The AI adjusts its questions to the complexity described — simpler projects prompt questions about dimensions and planning route, while complex projects capture the specification detail, structural requirements, and professional contacts involved."
+  },
+  {
+    question: "What about enquiries involving planning and permitted development?",
+    answer: "Planning queries are among the most common extension questions. The AI identifies whether the caller has planning permission, is relying on permitted development rights, or has not yet investigated. It captures the planning status as part of the lead — 'planning approved March 2026,' 'proceeding under PD,' or 'not yet applied' — so you know the project's readiness before your callback."
+  },
+  {
+    question: "How much does this cost for an extension specialist?",
+    answer: `Extension specialist businesses — from sole traders managing one project at a time to companies running three or four concurrent sites — fit within the Core plan at £${pricing.tiers.core.price}/month. That covers ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and Missed Call Text Back are each £${pricing.addOn.price}/month as add-ons. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this worth it for a sole trader who only does one extension at a time?",
+    answer: "A sole-trader extension specialist is precisely the person who benefits most. Running a single site means you are physically on the tools — laying foundations, fixing steelwork, building walls, fitting roofs — for months at a time. Every missed call during a live build is a future extension contract going to a competitor. The AI captures every enquiry while you complete your current project, building your pipeline for the next one."
+  },
+  {
+    question: "Do I keep control of when calls come through to me?",
+    answer: "Calls ring your mobile whenever you are free — at the office writing quotes, driving to site, at the builders' merchant. The AI activates only when you cannot answer: on the scaffold, pouring foundations, or outside your set hours. Your dashboard lets you adjust the schedule instantly — useful when you move from a noisy groundworks phase to a quieter finishing phase."
+  },
+  {
+    question: "How is customer and project data protected?",
+    answer: "Extension enquiries contain property addresses, architect specifications, planning reference numbers, party wall details, and sometimes budget ranges. All data is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR and the Data Protection Act 2018, and shared exclusively with you. Project information is never disclosed to competitors or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Extension Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK extension specialists — rear, side, wraparound, and double-storey extensions. Never miss a call while you are on site. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/extension-specialists/ai-receptionist/"
+  tradeName="Extension Specialist"
+  tradeNamePlural="Extension Specialists"
+  tradeSlug="extension-specialists"
+  headline="The AI Receptionist Built for Extension Specialists"
+  accentWord="Extension Specialists"
+  subhead={`You cannot answer the phone when you are supervising a foundation pour, positioning an RSJ with the crane, or checking the bricklayer's cavity width on a wraparound extension. Your AI receptionist captures every call, every message, and every enquiry — from homeowners dreaming of an open-plan kitchen-diner to architects tendering complex two-storey projects. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Your Next Kitchen-Diner Extension Starts with a Call You Cannot Miss"
+  ctaSubhead={`A homeowner with architect sketches and permitted development rights will call three extension companies. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

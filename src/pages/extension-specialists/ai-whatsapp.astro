@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Responds to Extension Plan Photos Instantly',
+    text: "Homeowners WhatsApp photos of their architect's floor plans, existing rooms, and the garden they want to extend into. The AI responds within seconds, asks about the extension type and planning status, and attaches all images to your lead. You can assess the project's viability before picking up the phone."
+  },
+  {
+    icon: '📸',
+    title: 'Captures the Saturday Morning Comparison',
+    text: "Saturday morning is when homeowners WhatsApp extension companies. They have spent the week thinking about it, they have the architect's drawings open, and they message three builders simultaneously. The first professional response almost always secures the site visit."
+  },
+  {
+    icon: '⚡',
+    title: 'Wins Referral WhatsApps',
+    text: "A neighbour watches your crew build a stunning rear extension — open-plan, bi-folds, lantern roof — and WhatsApps: 'Just seen what you did next door, can you do the same for us?' The AI responds instantly while you are on your current site, captures the scope, and the referral lead is secure."
+  },
+  {
+    icon: '🌙',
+    title: 'Active During Evening Planning',
+    text: "Extension decisions crystallise after dinner. Couples WhatsApp builders while looking at their kitchen and imagining the transformation. A 9:30pm message about a rear extension is genuine intent from someone with budget and motivation."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Informal Descriptions',
+    text: "A WhatsApp like 'want to knock out the back wall and extend about 4 metres, make the kitchen bigger, OX4' becomes a structured lead: single-storey rear, 4m depth, kitchen extension, OX4 postcode. The AI adds property type and planning details through follow-ups."
+  },
+  {
+    icon: '🔒',
+    title: 'Keeps Your Personal WhatsApp Separate',
+    text: "AI WhatsApp uses your business number. Clients message a professional line. Your personal conversations stay completely private."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess extension drawings sent by WhatsApp?",
+    answer: "The AI does not interpret architectural drawings technically, but it acknowledges them effectively and asks the questions you need answered — extension type, approximate dimensions, planning route, property type, and timeline. Every drawing, photo, and sketch sent by the homeowner is attached to your lead summary. Seeing floor plans and site photos before the callback lets you prepare relevant questions and rough cost parameters in advance."
+  },
+  {
+    question: "What if someone sends multiple WhatsApp messages over time?",
+    answer: "Extension projects evolve — a homeowner might initially message about a rear extension, then add a question about side return options, then share updated architect drawings a week later. The AI maintains the conversation thread and your lead summary consolidates all messages, photos, and details into one complete brief."
+  },
+  {
+    question: "How much does AI WhatsApp cost for extension specialists?",
+    answer: `This channel is £${pricing.addOn.price}/month as an add-on. Extension projects typically range from £25,000 for a modest single-storey rear to £150,000 for a complex double-storey wraparound. Capturing one homeowner's enquiry through a fast WhatsApp reply — before competitors respond — produces a return that vastly outweighs the annual add-on investment.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Typing your own message transfers the conversation to you immediately. The AI recognises your reply and steps aside. Most extension specialists let the AI handle the initial capture — project type, dimensions, planning, postcode — then follow up personally to discuss design options, pricing, and arrange the site visit."
+  },
+  {
+    question: "How is WhatsApp data secured?",
+    answer: "All WhatsApp messages — architect drawings, property photos, extension dimensions, planning details, and contact information — are encrypted and stored on UK and EU servers under UK GDPR. Data is delivered only to you. No client information is shared with other builders, sold to lead services, or used for any purpose beyond your lead summaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Extension Specialists | Rapid Receptionist"
+  description={`AI WhatsApp for UK extension specialists. Responds to architect plan photos, permitted development queries, and homeowner enquiries while you are on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/extension-specialists/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Extension Specialist"
+  tradeNamePlural="Extension Specialists"
+  tradeSlug="extension-specialists"
+  headline="AI WhatsApp for Extension Specialist Companies"
+  accentWord="Extension Specialist"
+  subhead="A homeowner WhatsApps at 11:30am with three photos — her current galley kitchen, the cramped dining room behind it, and the small patio garden she wants to extend into. Her message reads: 'We want to knock through the kitchen and dining room and extend out about 4 metres. Want bi-fold doors and a lantern skylight. Our architect says it should be permitted development. Can you come and look?' You are on site at a wraparound extension in Botley — the steelwork went in yesterday and the bricklayers are building the cavity walls. Without AI WhatsApp, the message sits unread for five hours. She messages two more extension companies; one replies in twelve minutes with a Monday site visit. With it, the AI responds instantly, asks about the property type and postcode, confirms your PD experience, and your lead — including the three kitchen photos — is waiting when you check your phone at lunch."
+  scenario="It is 7:50am on a Saturday. A couple in Abingdon have been discussing their extension project all week. He opens WhatsApp and messages four extension specialists found through Google and Checkatrade: 'Morning — we want a double-storey extension on our detached 4-bed in OX14. Single-storey rear kitchen-diner on the ground floor, extra bedroom and en-suite above. Already have planning permission. Architect drawings available. Looking for a builder who specialises in extensions to start in the autumn. Can you give us a ballpark and come for a chat?' Without AI WhatsApp, you are still in bed. By 9:30am the couple have received two professional replies and forwarded the architect drawings to both companies. By noon they have booked Monday and Tuesday evening site visits. Your reply arrives at 11am — too late to be first, too late to be second. With AI WhatsApp, the response arrives at 7:51am: 'Thank you — double-storey extensions are one of our core services. Planning permission and architect drawings make this an ideal brief. Could you share the drawings and confirm your preferred meeting dates? We will review them and arrange a consultation.' By 8:10am the couple have sent the PDF drawings and confirmed Wednesday evening works for them. Saturday at 10am you check your phone: double-storey extension, 4-bed detached, OX14, planning approved, architect drawings attached, autumn start, full brief. You call Monday morning and book a Wednesday consultation — the first with full project documentation in hand."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/extension-specialists/ai-receptionist/"
+  ctaHeadline="Respond to Extension Drawing WhatsApps Before the Other Three Builders"
+  ctaSubhead={`A homeowner sends architect sketches to four extension companies on Saturday morning. The first professional response wins the site visit. Add-on at £${pricing.addOn.price}/month.`}
+/>
