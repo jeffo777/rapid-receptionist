@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Building Managers Researching Compliance',
+    text: "Building managers visit fire protection websites after receiving fire risk assessments — searching for contractors to meet deficiency deadlines. Typical questions include 'can you upgrade our communal alarm?', 'do you do compartmentation surveys?', and 'how quickly can fire stopping be certified?' The chat answers and captures the brief."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Fire Protection Discipline',
+    text: "Through conversation, the AI identifies whether the visitor needs active systems (sprinklers, alarms, AOV), passive protection (fire stopping, intumescent coatings, compartmentation), or compliance services (surveys, certification, remediation). You receive a lead categorised by discipline."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Compliance Research',
+    text: "A Responsible Person reads a fire risk assessment after business hours and researches fire protection contractors at 9pm. Without chat, she bookmarks and forgets. With it, the AI captures the deficiency details, building type, and deadline before the browser closes."
+  },
+  {
+    icon: '📊',
+    title: 'Answers Certification Questions',
+    text: "Visitors ask about FIRAS, BAFSA, IFC, and FIA credentials — 'are you FIRAS-certified for fire stopping?' The AI confirms from your profile and captures the visitor's project scope while answering the certification question."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Your Project Portfolio',
+    text: "Fire protection portfolios showcase riser compartmentation before-and-afters, sprinkler installations, and intumescent coating projects. The chat converts technical interest into qualified compliance leads."
+  },
+  {
+    icon: '✅',
+    title: 'Bundled Free',
+    text: `Website chat is included with AI phone answering at £${pricing.tiers.core.price}/month. A single JavaScript snippet, unlimited conversations, every website platform.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add chat to my fire protection website?",
+    answer: "A lightweight JavaScript snippet is provided at onboarding. Add it to your website header — directly in the code, through WordPress, or via Squarespace or Wix settings. The branded chat bubble appears instantly on every page. If your web developer needs guidance, we provide step-by-step instructions or handle the installation remotely."
+  },
+  {
+    question: "Can the AI discuss fire protection standards with visitors?",
+    answer: "Your service profile tells the AI your certifications and capabilities — FIRAS fire stopping, BAFSA sprinkler installation, FIA alarm design. When a visitor asks 'are you certified for fire stopping in high-rise residential?' the AI confirms from your profile and captures the building details, penetration count, and compliance deadline. It does not provide fire engineering advice but keeps conversations technically credible."
+  },
+  {
+    question: "What project details does the chat capture?",
+    answer: "The AI gathers the fire protection discipline required, the building type and height, the fire rating or alarm category, the number of penetrations or detectors, the certification standard needed, any fire risk assessment or building control deadline, the visitor's role (building manager, contractor, architect), and their contact details. This tells you whether you are looking at a £2,000 domestic alarm or a £200,000 multi-block compartmentation programme."
+  },
+  {
+    question: "Does the chat slow down my website?",
+    answer: "The chat script loads asynchronously after all page content has rendered. Fire protection websites — typically featuring project galleries, certification logos, and technical documentation — display at full speed. The chat bubble appears once everything else has loaded. The script's footprint is negligible compared to a single project photograph."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Website chat and phone answering operate under the same Core plan at £${pricing.tiers.core.price}/month — there is no additional fee. For fire protection specialists, these two channels cover the primary enquiry routes: phone calls from main contractors and building managers, and website chats from Responsible Persons researching compliance solutions in the evening.`
+  },
+  {
+    question: "How is visitor data from fire safety queries handled?",
+    answer: "Chat conversations containing building addresses, fire risk assessment details, compartmentation layouts, alarm schedules, and visitor contact information are encrypted and stored on UK and EU servers compliant with UK GDPR. Lead summaries go exclusively to you. No data is shared with competing fire protection companies, disclosed to building owners, or used for any other purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Fire Protection & Sprinkler Contractors | Rapid Receptionist"
+  description={`AI website chat for UK fire protection contractors. Engages building managers and Responsible Persons researching fire alarm, sprinkler, and fire stopping compliance. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/fire-protection/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Fire Protection Contractor"
+  tradeNamePlural="Fire Protection & Sprinkler Contractors"
+  tradeSlug="fire-protection"
+  headline="AI Website Chat for Fire Protection Companies"
+  accentWord="Fire Protection"
+  subhead="A Responsible Person finds your website at 10pm. She manages a seven-storey residential block in Central Oxford and has just received a fire risk assessment identifying twelve deficiencies — the communal fire alarm is outdated, fire stopping to riser penetrations is missing in multiple locations, and three fire doors on the upper floors have failed inspection. She types: 'We have just received a fire risk assessment with significant findings. The alarm needs upgrading, fire stopping is missing in the risers, and fire doors need replacing. Can you handle all three disciplines? We need quotes urgently — the assessment gives us a twelve-week remediation deadline.' Without chat, she emails your contact form and waits. With AI Website Chat, the AI asks about the building height, the number of floors, the current alarm type, the estimated penetration count, and the number of fire doors. Thursday morning you call with a comprehensive lead — seven-storey block, OX1, twelve deficiencies, alarm upgrade, riser fire stopping, three fire doors, twelve-week deadline — and you book a Friday morning survey."
+  scenario="It is 11:30pm on a Sunday. A developer is reviewing the fire strategy for a new-build student accommodation block — 120 bedrooms across five storeys, requiring a residential sprinkler system to BS 9251, an L1 fire alarm with voice evacuation, fire stopping to all service penetrations, and intumescent paint to exposed structural steelwork in the ground-floor common areas. He finds your website through a search for 'fire protection contractor Oxford' and types: 'Planning a 120-bed student block. Need a full fire protection package — sprinklers, L1 alarm with voice evac, fire stopping, and intumescent steel. Can you handle the whole package? Need budgets for the planning stage.' Without chat, he bookmarks the page. With AI Website Chat, the AI responds and captures the building spec — 120 beds, five storeys, BS 9251 sprinklers, L1 voice evacuation, fire stopping and intumescent, planning-stage budgets. Monday you call at 9am and arrange a design meeting with his fire engineer."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/fire-protection/ai-receptionist/"
+  ctaHeadline="Capture the Responsible Person Researching Compliance at 10pm"
+  ctaSubhead={`A building manager with twelve fire risk assessment deficiencies and a twelve-week deadline is researching contractors right now. Your chat captures the scope before she closes the browser. Included at £${pricing.tiers.core.price}/month.`}
+/>

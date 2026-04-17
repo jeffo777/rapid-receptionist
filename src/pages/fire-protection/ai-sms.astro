@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Quick Availability Checks',
+    text: "Main contractors text to verify capacity — 'hi, can you start fire stopping on our project in 3 weeks?' A prompt professional reply secures your place in the construction programme. Silence means the next FIRAS-certified firm on the list gets the call."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Fire Safety Briefs from Fragments',
+    text: "A text like 'need fire stopping on a 6-storey resi, FIRAS cert needed, about 250 penetrations' gives the AI enough to start. It asks about wall types, fire rating, and programme timing. Your lead arrives with the detail needed for pricing."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Contractor Referral Texts',
+    text: "Main contractors recommend fire protection firms to colleagues by text. When the referred contractor texts, the AI captures the project scope immediately while the recommendation is current."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Building managers send deficiency report summaries by text after reviewing fire risk assessments. Main contractors text subcontract enquiries in the evening while planning the next week's programme. The AI catches every after-hours message."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Threads',
+    text: "Texts arrive in fragments — 'need fire stopping' then 'its a resi conversion' then 'about 100 penetrations' then 'FIRAS needed.' The AI assembles one structured lead from the complete thread."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Compliance Channel',
+    text: "AI SMS uses your business number. Conversations about building deficiencies, enforcement deadlines, and remediation programmes stay on a professional line."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a fire protection enquiry text?",
+    answer: "The AI reads the incoming message and responds using your company name within seconds. A detailed text — 'need FIRAS fire stopping to 200 penetrations in a new-build residential block, one-hour compartment walls, timber stud and masonry mix, programme starts in 4 weeks' — is captured with every specification detail. A brief text — 'do you do fire stopping?' — prompts the AI to ask about the building type, penetration count, fire rating, and certification standard."
+  },
+  {
+    question: "Will the sender know it is AI?",
+    answer: "The reply reads like a fire protection professional responding between site tasks — technically aware, direct, and commercially relevant. It uses your company name and asks pertinent questions about the building type, fire rating, and programme timeline. Main contractors and building managers texting fire protection firms value competence and speed; the AI delivers both immediately."
+  },
+  {
+    question: "What about texts from active project clients?",
+    answer: "Main contractors on live projects sometimes text about access times, drawing revisions, or material delivery confirmations. The AI captures these and categorises them separately from new fire protection enquiries. Your dashboard clearly distincts a new £40,000 compartmentation contract from a current client confirming Thursday's scaffold access."
+  },
+  {
+    question: "What does AI SMS cost for fire protection firms?",
+    answer: `AI SMS costs £${pricing.addOn.price}/month as a channel add-on. Fire protection contracts span from £2,000 domestic alarm installations to six-figure multi-block remediation programmes. Securing one main contractor's subcontract through a rapid text response — while their message sat unread on competing firms' phones — generates returns that far exceed the annual channel investment.`
+  },
+  {
+    question: "Can I text back personally?",
+    answer: "Your own reply returns control to you in any thread. The AI recognises your message and withdraws. During office days when you are writing reports and preparing tenders, handle texts yourself. During installation phases on site, let the AI maintain your professional response."
+  },
+  {
+    question: "How is text data from fire safety enquiries handled?",
+    answer: "Text messages containing building addresses, penetration counts, fire ratings, compliance deadlines, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you and is never shared with competing fire protection firms, disclosed to developers, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Fire Protection & Sprinkler Contractors | Rapid Receptionist"
+  description={`AI SMS for UK fire protection contractors. Responds to fire stopping subcontract texts, building manager compliance queries, and alarm upgrade enquiries. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fire-protection/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Fire Protection Contractor"
+  tradeNamePlural="Fire Protection & Sprinkler Contractors"
+  tradeSlug="fire-protection"
+  headline="AI SMS for Fire Protection Businesses"
+  accentWord="Fire Protection"
+  subhead="You are in a riser cupboard on the fifth floor of a residential block, sealing a cluster of cable penetrations through a one-hour compartment wall — fire batt packed into the openings, intumescent acrylic sealant applied around each cable bundle, and the FIRAS label being affixed to confirm certification. At 2pm a main contractor on another project texts: 'Hi mate — got a new-build in Kidlington, 8 storeys, need all fire stopping doing. About 350 penetrations. Need FIRAS cert for building control. Can you start in 5 weeks?' Your phone is in your pocket but your gloved hands are covered in sealant. Without AI SMS, the text waits four hours. He texts three other firms; one responds in twenty minutes. With it, the AI replies at 2:01pm, confirms your FIRAS capability, and asks about the wall construction and fire rating. He replies with 'mix of masonry and metal stud, one-hour rating throughout.' At 5pm you open the lead and call. You book a Monday site walkthrough to count and categorise penetrations."
+  scenario="It is 9pm on a Thursday. A housing association compliance officer has spent the evening reviewing fire risk assessment action plans across her portfolio. She needs fire alarm upgrades in three sheltered housing blocks — all currently fitted with basic domestic smoke detectors needing replacement with L2 communal detection systems with heat detectors in kitchens and linked smoke detectors in corridors. She texts fire protection contractors from her approved supplier list: 'Hi — need L2 fire alarm upgrades to 3 sheltered housing blocks. Currently Grade D — need smoke and heat detection in communals and kitchens. Total of 90 flats across the 3 blocks. Want to do them one at a time — residents are elderly and vulnerable. Need a sensitive approach. Can you survey and quote?' Without AI SMS, you see the text Friday morning. Two firms replied Thursday night — one with a reassuring explanation of phased installations minimising disruption to elderly residents. With AI SMS, the response arrives at 9:01pm: 'Thank you — fire alarm upgrades in sheltered housing are projects we handle with particular care for resident welfare. Phased installations block by block are our standard approach. Could you confirm the block addresses and whether the current wiring can be reused? We will arrange resident-friendly survey visits.' She replies with the three addresses. Friday morning you open the lead: 3 sheltered blocks, 90 flats, Grade D to L2, elderly residents, phased approach, sensitive installation, addresses confirmed. You call at 9am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/fire-protection/ai-receptionist/"
+  ctaHeadline="Catch the Main Contractor's 350-Penetration Text While You Seal the Riser"
+  ctaSubhead={`A main contractor texts about an 8-storey new-build with FIRAS certification needed. The AI replies while your hands are covered in intumescent sealant. Add-on at £${pricing.addOn.price}/month.`}
+/>

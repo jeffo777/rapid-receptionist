@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Deficiency Photos Instantly',
+    text: "Main contractors and building managers WhatsApp photos of failed fire stopping — missing penetration seals, degraded intumescent coatings, abandoned cavity barriers. The AI responds in seconds, asks about the building and certification requirement, and attaches every photo to your lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins the Post-Inspection Scramble',
+    text: "When building control rejects fire stopping or a fire risk assessor identifies missing compartmentation, the responsible party WhatsApps fire protection firms urgently. The first professional response earns the remediation contract."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Main Contractor Subcontract Messages',
+    text: "Main contractors WhatsApp their preferred fire protection subcontractors: 'Got a resi conversion — 200 penetrations, need FIRAS cert, start in 4 weeks.' The AI captures the scope and deadline while you are on another site sealing a riser."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Building managers review fire risk assessments after their own buildings close for the day. Main contractors plan subcontract packages in the evening. The AI catches every after-hours message from people making fire safety decisions."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Urgent Compliance Messages',
+    text: "A WhatsApp saying 'need fire stopping remediated on a 10-storey resi block, BC inspection in 2 weeks, FIRAS cert required' becomes a structured lead with building type, height, deadline, and certification standard."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Compliance Channel',
+    text: "AI WhatsApp uses your business number. Conversations about building deficiencies, compliance failures, and remediation timelines stay on a professional line."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI interpret fire stopping deficiency photos?",
+    answer: "The AI does not perform technical assessments from photographs, but it acknowledges them effectively — confirming receipt of the images showing the deficiency — and asks the questions you need: building type and height, wall or floor construction, fire rating required, number of penetrations affected, certification standard (FIRAS, IFC), and the inspection or enforcement deadline. Every photo is attached to your lead for your own technical review before attending site."
+  },
+  {
+    question: "What about multi-message WhatsApp conversations?",
+    answer: "Fire protection conversations evolve over WhatsApp — a building manager might initially message about fire stopping, then send additional photos from another floor, then ask about alarm upgrades a week later. The AI maintains the conversation thread and your lead summary consolidates every message, photo, and requirement into one comprehensive fire safety brief."
+  },
+  {
+    question: "How much does AI WhatsApp cost for fire protection companies?",
+    answer: `WhatsApp is available at £${pricing.addOn.price}/month as a channel add-on. Fire protection contracts range from £3,000 domestic alarm installations to £200,000 multi-block compartmentation programmes. Responding to a building manager's urgent WhatsApp before competing firms see the message on Monday morning — when the enforcement deadline is already ticking — secures work that repays the channel cost indefinitely.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Send your own message in any thread and the conversation transfers to you immediately. The AI recognises your reply and steps back. Most fire protection specialists let the AI handle the initial capture — building type, fire discipline, penetration count, certification standard — then follow up personally to discuss methodology, arrange the survey, and confirm the programme."
+  },
+  {
+    question: "How is WhatsApp data from fire safety enquiries protected?",
+    answer: "All WhatsApp messages — deficiency photos, building addresses, compartmentation layouts, fire risk assessment references, and contact information — are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. No fire safety information is shared with competing contractors, disclosed to building owners, or used for any purpose beyond your lead delivery."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Fire Protection & Sprinkler Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK fire protection contractors. Responds to fire stopping deficiency photos, alarm upgrade queries, and compartmentation enquiries. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fire-protection/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Fire Protection Contractor"
+  tradeNamePlural="Fire Protection & Sprinkler Contractors"
+  tradeSlug="fire-protection"
+  headline="AI WhatsApp for Fire Protection Companies"
+  accentWord="Fire Protection"
+  subhead="A main contractor WhatsApps at 4:15pm with six photos — close-ups of service penetrations through a one-hour compartment wall in a residential conversion: cables passing through without any fire stopping, pipe sleeves with gaps visible around the annular space, and a ductwork penetration with daylight showing through the void. His message: 'BC has rejected all the fire stopping on this conversion. Previous sub did not install it properly. Need someone FIRAS-certified to strip it out and redo the lot — about 150 penetrations across three floors. Inspection rescheduled for three weeks. Can you turn this around?' You are on another site sealing a cable tray penetration on the ninth floor of a new-build — sealant gun loaded, fire batt positioned, ready to apply the ablative coating. Without AI WhatsApp, the message waits until the evening. Two other fire stopping firms respond by 5pm. With it, the AI responds instantly, asks about the wall construction and fire rating, and your lead — complete with six rejection photos — is waiting at 5:30pm."
+  scenario="It is 8pm on a Tuesday. A facilities manager for a university college in Oxford has been reviewing fire risk assessment reports for the college's accommodation blocks — eight Victorian buildings, each requiring compartmentation surveys, fire stopping to historic service routes, and potential fire door replacements. She WhatsApps three fire protection firms: 'Hi — we manage 8 residential buildings for a university college. The fire risk assessor has identified potential compartmentation issues in all of them. We need surveys and remediation plans for each building. The buildings are Grade II listed so all work needs to be sensitively done. Can you survey listed buildings? Budget in the region of £60,000 for the whole programme.' Without AI WhatsApp, you see the message Wednesday morning. One firm replied at 8:20pm with experience of Grade II listed fire protection projects. With AI WhatsApp, the response arrives at 8:01pm: 'Thank you — compartmentation surveys and remediation in listed buildings are projects we undertake regularly. We understand the sensitivity of working with heritage fabric, particularly around historic lath-and-plaster walls and original timber floors. Could you share the fire risk assessment summary and confirm how many buildings need surveying first? We will prepare a programme and methodology.' She sends the assessor's summary. Wednesday morning you open the lead: 8 Victorian college buildings, Grade II listed, compartmentation surveys, fire stopping remediation, fire door assessments, heritage sensitivity required, £60k programme, assessor's report attached. You call at 9am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/fire-protection/ai-receptionist/"
+  ctaHeadline="Respond to Building Control Rejection Photos While You Seal the Riser"
+  ctaSubhead={`A main contractor sends six photos of failed fire stopping with a three-week inspection deadline. The AI replies while your sealant gun is loaded. Add-on at £${pricing.addOn.price}/month.`}
+/>

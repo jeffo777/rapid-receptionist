@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Fire Stopping Phases',
+    text: "Sealing penetrations, applying intumescent coatings, installing cavity barriers — fire protection installation phases require full concentration and both hands. Missed Call Text Back sends a branded text the moment a call goes unanswered."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Compliance-Pressured Callers',
+    text: "A building manager calling three fire protection firms about an enforcement deadline gets voicemail from two and a text from one: 'Thanks for calling — I am on a fire stopping installation and will return your call this afternoon.' That building manager waits."
+  },
+  {
+    icon: '🏷️',
+    title: 'Certified Professionalism',
+    text: "Fire protection is a certification-driven industry — FIRAS, BAFSA, IFC, FIA. A prompt, professional text response signals the kind of organised, compliant contractor that building control officers and fire risk assessors trust."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Post-Assessment Seasons',
+    text: "Fire risk assessments generate waves of remediation enquiries. After a round of assessments across a housing association or facilities management portfolio, call volumes spike. Missed Call Text Back ensures every compliance lead is retained."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Details',
+    text: "Callers reply to the text with project specifics — 'need fire stopping for a 10-storey resi, about 300 penetrations, FIRAS cert needed, BC inspection in 4 weeks.' These details arrive in your lead summary before you return the call."
+  },
+  {
+    icon: '🔄',
+    title: 'Complements AI Phone Answering',
+    text: "Phone Answering conducts full conversations and builds detailed fire protection leads. Missed Call Text Back covers the rare calls that slip through — a caller who hangs up on the first ring, or a signal gap inside a concrete riser cupboard. Together, nothing is lost."
+  }
+];
+
+const faqs = [
+  {
+    question: "When is the missed call text sent?",
+    answer: "Within seconds of the unanswered call. The caller's phone vibrates with your branded text before they have looked up the next fire protection company. During post-assessment remediation seasons — when building managers are calling multiple FIRAS-certified firms under enforcement pressure — this instant response keeps your company on every remediation shortlist."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose the message during setup and can modify it whenever you choose. A typical fire protection company message reads: 'Thank you for calling [company name]. I am currently on a fire protection installation and will return your call at the earliest opportunity. Reply with your fire safety requirements for a faster response.' The phrasing is entirely customisable."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They work as a layered system. Phone Answering holds full conversations measuring the fire protection scope — building type, discipline, penetration count, certification standard, and enforcement deadline. Missed Call Text Back catches the rare calls that escape — a caller hanging up after one ring, or a signal black spot deep inside the building's service risers. Together, every fire safety enquiry is captured."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Fire protection projects range from £2,000 domestic alarm installations to multi-block remediation programmes exceeding £100,000. Recovering one enforcement-driven enquiry through a timely text — a building manager who would have called the next FIRAS contractor — and converting that into a compartmentation survey converts a negligible monthly cost into substantial contract value.`
+  },
+  {
+    question: "Do building managers reply to the text?",
+    answer: "A significant proportion do — especially those under compliance pressure. Typical replies include the building address, the deficiency type, the enforcement deadline, and whether they need fire stopping, alarm upgrades, or both. These structured details arrive in your lead dashboard before you make the return call, giving you context to provide an informed response."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing building addresses, fire protection specifications, compliance deadlines, and contact details are encrypted and held on UK and EU servers under UK GDPR. Only you have access. No information is shared with competing fire protection firms, sold to lead platforms, or used for any purpose beyond your lead delivery."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Fire Protection & Sprinkler Contractors | Rapid Receptionist"
+  description={`Missed Call Text Back for UK fire protection contractors. Automatically texts callers while you install on site — keeps fire stopping and alarm upgrade leads warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fire-protection/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Fire Protection Contractor"
+  tradeNamePlural="Fire Protection & Sprinkler Contractors"
+  tradeSlug="fire-protection"
+  headline="Missed Call Text Back for Fire Protection Companies"
+  accentWord="Fire Protection"
+  subhead="It is 10:30am on a Thursday. You are in a basement plant room applying intumescent paint to the underside of a structural steel beam — second coat of three, the beam supported on temporary props, the coating thickness measured with a wet-film gauge after each pass. Two calls come in at 10:45 and 11:15. Your phone is in a ziplock bag on the scaffold platform above. Without Missed Call Text Back, both callers hear voicemail. One leaves a message. The other — a building control officer trying to schedule an inspection — hangs up and tries another firm. With it, both receive texts within seconds. The BCO replies: 'Hi — just need to schedule a fire stopping inspection for Plot 12 on Thursday or Friday next week. Let me know what works.' The other: 'need fire alarm upgrade for a care home in Abingdon — 40 beds, currently basic domestic, need L1 addressable system. Urgent.' At noon you read both and call. You confirm Thursday for the BCO and book a Tuesday survey at the care home."
+  scenario="It is 3pm on a Saturday. You just finished a sprinkler installation commissioning in a new residential block — all zones tested, flow rates verified, the building control officer has signed off the final inspection. Your phone shows four missed calls between 1pm and 3pm. Without Missed Call Text Back, you scroll through: two unknown numbers, two with voicemails. One voicemail — 'calling about some fire stopping, can you ring me back' — and one — inaudible. Two leads with no context, two completely unrecoverable. With Missed Call Text Back, all four received texts. The first replied at 1:15: 'need FIRAS fire stopping to a residential conversion — 12 flats, 3 floors, about 180 penetrations, programme starts week commencing 12th May.' The second at 1:40: 'care home needs fire door survey and replacement programme — 28 doors across 3 floors, mixture of FD30 and FD60.' The third at 2:10: 'main contractor here — need intumescent paint to exposed steelwork in a new commercial unit, about 400sqm, 60-minute rating.' The fourth at 2:50: 'homeowner — need a domestic sprinkler system for a self-build in Eynsham, Welsh building regs apply.' At 3:30 you open four leads — a £25,000 fire stopping contract with programme dates, a £18,000 fire door programme, a £32,000 intumescent coating project, and a £5,000 domestic sprinkler — all with project details and timelines."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/fire-protection/ai-receptionist/"
+  ctaHeadline="Recover Four Fire Safety Leads from One Commissioning Saturday"
+  ctaSubhead={`While you commissioned the sprinkler system, four fire protection enquiries called. Four texts went out. Four replied. Four surveys booked by Monday. Add-on at £${pricing.addOn.price}/month.`}
+/>

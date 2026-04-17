@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Fire Engineer Tenders',
+    text: "Fire engineers and architects issue passive fire protection specifications by email — intumescent coating schedules, fire stopping penetration lists, cavity barrier layouts, and compartmentation strategies. The contractor who acknowledges first demonstrates both expertise and availability. AI Email Response sends your acknowledgement within sixty seconds."
+  },
+  {
+    icon: '📐',
+    title: 'References Fire Protection Specifications',
+    text: "When a tender specifies 'FIRAS-certified fire stopping to all service penetrations through 60-minute and 120-minute compartment walls, intumescent paint to structural steelwork achieving 90-minute fire resistance, and cavity barrier installation to the ventilated rainscreen facade,' the AI references the scope precisely."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your On-Site Email Gap',
+    text: "Fire protection operatives spend entire days on site — up scaffolding, in risers, on roofs installing sprinkler pipework. A fire engineer's tender arriving at 9am sits unopened until you return to the office. The sixty-second acknowledgement ensures your name appears before competitors."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Compliance Correspondence',
+    text: "Your inbox contains fire engineer tenders, building manager enquiries, sealant supplier quotes, certification body correspondence, and building control inspection confirmations. The AI identifies genuine project opportunities and delivers them as structured leads."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Fire Engineer Trust',
+    text: "Fire engineers who specify complex passive fire protection packages rely on certified contractors who respond professional and promptly. Consistent sixty-second acknowledgements keep your company on their preferred contractor shortlist."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Technical Drawing Attachments',
+    text: "Fire protection tenders include compartmentation drawings, penetration schedules, structural steelwork layouts, and fire strategy documents. The AI references these attachments in both the acknowledgement and your lead summary."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI prepare a fire protection tender submission?",
+    answer: "Only the first acknowledgement is generated automatically — confirming receipt to the fire engineer, referencing the fire protection disciplines and key technical details, and indicating that your detailed submission follows. Your methodology document, site survey findings, programme, certification approach, and commercial pricing are entirely your own professional work."
+  },
+  {
+    question: "Will it respond to supplier and certification body emails?",
+    answer: "During setup, the system is trained to separate genuine fire protection tenders from operational correspondence. Sealant manufacturer bulletins, fire batt supplier deliveries, FIRAS audit notifications, and FIA membership renewals do not receive automatic acknowledgements. Only project enquiries and specification tenders trigger the response."
+  },
+  {
+    question: "How does it handle building manager contact forms?",
+    answer: "Contact-form submissions from building managers — 'need fire alarm upgrade and compartmentation survey for a residential block in OX4' — receive a professional reply confirming your capability and asking about the building type, number of floors, current system, and compliance deadline. These building management leads are categorised separately from architect and fire engineer tenders."
+  },
+  {
+    question: "What does email response cost for fire protection firms?",
+    answer: `This channel add-on is priced at £${pricing.addOn.price}/month. Fire protection companies tendering for projects worth £10,000 to £200,000 gain a demonstrable commercial advantage from acknowledging the fire engineer's specification within sixty seconds — before the three competing firms have even opened the email.`
+  },
+  {
+    question: "Can I write all follow-up emails myself?",
+    answer: "Every subsequent email is composed and sent by you personally. Your fire stopping methodology, sprinkler design submission, intumescent coating specification, certification documentation, programme, and commercial terms are your own professional work throughout. The AI's involvement ends with the initial acknowledgement."
+  },
+  {
+    question: "How is fire protection tender data kept secure?",
+    answer: "Fire protection tenders contain building layouts, compartmentation strategies, structural details, and commercially sensitive pricing. All email data is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. Specification details are never disclosed to competing fire protection contractors."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Fire Protection & Sprinkler Contractors | Rapid Receptionist"
+  description={`AI email response for UK fire protection contractors. Acknowledges fire engineer specifications and building manager compliance enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fire-protection/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Fire Protection Contractor"
+  tradeNamePlural="Fire Protection & Sprinkler Contractors"
+  tradeSlug="fire-protection"
+  headline="AI Email Response for Fire Protection Companies"
+  accentWord="Fire Protection"
+  subhead="A fire engineer emails a passive fire protection specification for a new-build hospital wing — intumescent paint to all exposed structural steelwork providing 120-minute fire resistance, FIRAS-certified fire stopping to every service penetration through compartment walls and floors, fire dampers at all duct penetrations, cavity barriers within the external wall system, and fire-rated board encasement to steelwork in the service corridors. Tender value estimated at £185,000. Tender return deadline: four weeks. You are on site in a residential block applying intumescent mastic around cable transits in a communal riser — work that takes total concentration because each seal requires photographic evidence for the FIRAS certificate. Without AI Email Response, the hospital tender sits unread until the weekend. Three competitors acknowledged by Wednesday. With it, your acknowledgement arrives within sixty seconds, referencing the 120-minute intumescent coating and the FIRAS fire stopping scope."
+  scenario="It is 7am on a Monday. Your inbox has accumulated over the weekend: a main contractor forwarding a fire stopping schedule for a 14-storey residential tower — 600 penetrations across all compartment walls and floors with FIRAS certification required for building control sign-off, a building manager asking for a quote to upgrade the fire alarm in a three-storey office from an L3 to an L1 system, a fire batt supplier confirming Tuesday delivery of Rockwool Firestop materials, and a BAFSA membership renewal notice. Without AI Email Response, you scan the inbox while unlocking the van, mentally note the tower, and drive to site. The 600-penetration tender sits until Tuesday evening. Two competitors acknowledged by Monday afternoon. With AI Email Response, the tower tender receives an immediate acknowledgement referencing the 600-penetration scope, the FIRAS certification requirement, and the building height, the office alarm upgrade gets a professional response, the delivery confirmation is noted, and the membership email is filtered. At lunch you prioritise the tower tender — estimated value £95,000 — and begin reviewing the penetration schedule."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/fire-protection/ai-receptionist/"
+  ctaHeadline="Acknowledge the Hospital Wing Tender While You Certify the Riser"
+  ctaSubhead={`A fire engineer's four-week tender for a £185,000 passive fire protection package starts when the email lands. Your sixty-second acknowledgement keeps you on the shortlist. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Fire Safety Project Posts',
+    text: "Fire protection before-and-afters are compelling — riser cupboards transformed from cable chaos to certified compartmentation, steelwork coated from bare to fully protected. Building managers seeing these transformations message wanting the same standard applied to their own buildings."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Deficiency Photo Messages',
+    text: "Building managers message with photos of missing fire stopping, degraded intumescent coatings, or damaged fire doors. The AI acknowledges the photos, asks about the building type and compliance deadline, and captures the deficiency images alongside a structured remediation lead."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Word-of-Mouth Referrals',
+    text: "A building manager who used your fire stopping services recommends you to a colleague on Facebook. The colleague messages your page. The AI captures the referral lead with the original recommendation as social proof."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Evening Report Reviews',
+    text: "Building managers and Responsible Persons review fire risk assessments in the evening and message fire protection firms while the deficiencies are fresh in their minds. The AI captures these compliance-driven weekend and evening enquiries."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Compliance Messages',
+    text: "Messenger conversations about fire protection start with urgency — 'we have just failed an inspection.' The AI structures the enquiry by asking about the building type, deficiency nature, and enforcement timeline."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Your Certification Content',
+    text: "Every FIRAS-labelled fire stopping photo, intumescent coating project, and sprinkler installation video posted on Facebook can generate a compliance enquiry. The AI converts professional credibility into remediation contracts."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my fire protection company?",
+    answer: "Yes — you need a Business page rather than a personal profile, as the Messenger integration requires Business page access. Most fire protection companies already operate a Facebook Business page to showcase FIRAS-certified installations, sprinkler commissioning projects, and intumescent coating work. The AI simply adds instant professional message handling on top of your existing presence."
+  },
+  {
+    question: "What fire protection enquiries come through Messenger?",
+    answer: "Primarily building manager and compliance-driven leads. Common messages include 'our fire risk assessment has found issues — can you survey?', 'need fire stopping in a residential block — are you FIRAS-certified?', and 'looking to upgrade our fire alarm to an L1 system.' These leads often carry enforcement deadlines, making responsiveness commercially critical."
+  },
+  {
+    question: "How quickly does the AI reply on Messenger?",
+    answer: "Within seconds. Messenger shows active status, creating an impression of immediate availability. Building managers comparing three fire protection firms — often under enforcement pressure — award the survey appointment to the company that responds first with informed questions about the building type, deficiency scope, and compliance deadline."
+  },
+  {
+    question: "What does Messenger cost for fire protection companies?",
+    answer: `Add Messenger for £${pricing.addOn.price}/month as a channel add-on. Fire protection contracts span from £3,000 alarm installations to £200,000 compartmentation remediation programmes. One building manager's multi-block remediation contract — secured through a prompt Facebook response while competitors' messages sat unread over the weekend — repays the add-on cost for years.`
+  },
+  {
+    question: "Can I continue the Messenger conversation?",
+    answer: "Reply in any Messenger thread and the conversation transfers to you. The AI steps aside. Most fire protection specialists let the AI capture the initial scope — building type, fire discipline, deficiency details, certification requirement, deadline — then follow up personally to discuss methodology, arrange the survey, and present the remediation proposal."
+  },
+  {
+    question: "How is Messenger data from fire safety queries protected?",
+    answer: "All Messenger conversations, deficiency photographs, building addresses, fire risk assessment references, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you and is never shared with competing fire protection firms, disclosed to building owners, or used for advertising."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Fire Protection & Sprinkler Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK fire protection contractors. Converts compliance posts and fire safety content into building manager remediation enquiries. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fire-protection/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Fire Protection Contractor"
+  tradeNamePlural="Fire Protection & Sprinkler Contractors"
+  tradeSlug="fire-protection"
+  headline="AI Facebook Messenger for Fire Protection Companies"
+  accentWord="Fire Protection"
+  subhead="You post a before-and-after of a communal riser in a residential block — the 'before' showing a chaotic mess of cables and pipes passing through a compartment wall with no fire stopping whatsoever, gaps visible around every penetration; the 'after' showing every penetration sealed with intumescent sealant, fire batts neatly installed, and FIRAS certification labels affixed to each seal. A hundred and sixty likes. A building manager in Summertown messages: 'We have risers exactly like your 'before' picture. Our fire risk assessor has flagged them. Can you survey and quote?' You are on another site commissioning a sprinkler system on the third floor. Without AI Messenger, the message waits. With it, the building manager confirms the block address and number of floors, and your lead — communal riser fire stopping, Summertown, fire risk assessment flagged, address confirmed — is captured."
+  scenario="It is 9:30pm on a Wednesday. A Responsible Person for a converted warehouse complex in East Oxford — four floors, twenty-two flats, shared corridors, and a commercial unit on the ground floor — has received a fire risk assessment with urgent recommendations. The assessor has identified: missing fire stopping at service penetrations on every floor, a communal fire alarm that does not meet L2 standard, three fire doors that fail the gap test, and a smoke ventilation system that has not been serviced in three years. She finds your Facebook page through a recommendation in a building management Facebook group and messages: 'Hi — we have just received a fire risk assessment with urgent findings across a converted warehouse complex. Multiple issues: fire stopping missing, alarm not to L2, fire doors failing, and smoke vent not maintained. 22 flats, 4 floors, commercial ground floor. Can you handle all of this? We need to respond to the assessment within 8 weeks.' Without AI Messenger, you see the message Thursday morning between tasks. She has also messaged two other firms; one replied Wednesday night with a structured list of the four disciplines they cover. With AI Messenger, the reply arrives at 9:31pm — addressing each deficiency category — and she confirms the building address. Thursday morning you open the lead: converted warehouse, OX4, 22 flats over 4 floors, commercial ground floor, fire stopping missing, L2 alarm upgrade needed, 3 failing fire doors, smoke vent service required, 8-week assessment response deadline, address confirmed. You call at 9am and book a Friday morning survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/fire-protection/ai-receptionist/"
+  ctaHeadline="Turn FIRAS Certificate Posts into Multi-Block Remediation Contracts"
+  ctaSubhead={`A riser before-and-after earns a hundred and sixty likes. AI Messenger converts every building manager enquiry into a survey with deficiency details and compliance deadlines. Add-on at £${pricing.addOn.price}/month.`}
+/>

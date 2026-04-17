@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A building management company calls about upgrading the fire alarm system in a six-storey residential block — the existing Grade D domestic system needs replacing with an L1 addressable system with full coverage to every flat, communal area, plant room, and riser cupboard. Building control has flagged the deficiency following a recent fire risk assessment. Deadline: twelve weeks. You are on a high-rise construction site injecting intumescent sealant into service penetrations on the eighth floor — fire stopping every cable tray, pipe transit, and ventilation duct penetrating the compartment wall. Your phone is in the welfare cabin. The building manager reaches two other fire protection firms. One arranges a Wednesday survey.",
+    with: "Your AI receptionist answers on the second ring. It captures the full scope — six-storey residential, L1 addressable upgrade, building control requirement, twelve-week deadline — and confirms you will call back. At the lunch break you read the lead and call. You book a Thursday morning walkthrough of the building."
+  },
+  {
+    without: "An architect emails a specification for passive fire protection on a new-build mixed-use development — intumescent paint to all structural steelwork providing 60 minutes fire resistance, fire stopping to every service penetration through compartment walls and floors, fire dampers to ductwork at compartment boundaries, and cavity barriers in the external wall construction. Tender return in three weeks. You are on site applying intumescent coatings to a steel frame in a warehouse conversion. The email sits until Sunday evening.",
+    with: "Your AI acknowledges the architect's email within sixty seconds, referencing the intumescent steelwork scope, the fire stopping and damper requirements, and the three-week tender deadline. Sunday evening you begin reviewing the specification with fourteen days ahead."
+  },
+  {
+    without: "A main contractor WhatsApps on Saturday with photos of exposed fire stopping around services in a residential conversion — the building control officer has rejected the work done by the previous subcontractor and the main contractor needs it ripped out and redone to FIRAS certification standard before the next inspection in ten days. You are at home. Two other fire protection firms respond by Monday morning.",
+    with: "The AI responds to the WhatsApp within seconds, asks about the building type, the number of penetrations, the compartmentation layout, and the inspection date, and captures the rejection photos. Monday at 7am you have a structured lead with full deficiency context."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Active Fire Protection",
+    items: ["Residential and commercial sprinkler systems (BS 9251 / BS EN 12845)", "Fire alarm design and installation (L1, L2, L3, Grade A)", "Emergency lighting and signage", "Smoke ventilation and AOV systems", "Gas suppression systems", "Voice alarm and public address systems"]
+  },
+  {
+    category: "Passive Fire Protection",
+    items: ["Fire stopping — service penetrations and linear joints", "Intumescent paint and coatings to structural steelwork", "Fire door supply, installation, and certification", "Compartmentation surveys and remediation", "Cavity barrier installation in cladding and SFS systems", "Fire-rated board encasement of steelwork and ducts"]
+  },
+  {
+    category: "Compliance & Certification",
+    items: ["Fire risk assessment support and remediation", "FIRAS third-party certified fire stopping", "Building control liaison and sign-off", "Post-Grenfell cladding fire safety assessments", "EWS1 form investigations and remediation", "Responsible Person fire safety advisory"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Main Contractors on New Builds",
+    description: "Main contractors subcontract fire protection — sprinkler installations, fire alarm first and second fixes, fire stopping, and intumescent coatings. A fire protection specialist who answers the phone, captures the specification, and provides a prompt quotation slots into the construction programme. One who goes to voicemail gets replaced before the next fire stopping phase."
+  },
+  {
+    icon: "🏢",
+    title: "Building Managers & Freeholders",
+    description: "Residential block managers and freeholders commissioning fire alarm upgrades, sprinkler retrofits, compartmentation surveys, and fire door replacements — often driven by fire risk assessment recommendations or building control enforcement notices. Every week of delay increases their regulatory exposure."
+  },
+  {
+    icon: "📐",
+    title: "Architects & Fire Engineers",
+    description: "Architects and fire engineers specify fire protection systems for new developments — sprinkler layouts, fire alarm categories, passive fire protection schedules, and compartmentation strategies. They tender to BAFSA and FIRAS-certified contractors and expect professional, prompt responses."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners & Self-Builders",
+    description: "Homeowners in new-build and conversion projects requiring domestic sprinkler systems (mandatory in Wales, increasingly specified in England), fire alarm installations, and fire door upgrades. Though smaller in scale, these leads arrive steadily and often convert quickly."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand fire protection terminology?",
+    answer: "Every term across active and passive fire protection is recognised — sprinkler systems (BS 9251, BS EN 12845), fire alarm categories (L1, L2, L3, Grade A, Grade D), addressable versus conventional panels, fire stopping (penetration seals, linear joint seals), intumescent paint (30/60/90/120 minute ratings), fire doors (FD30, FD60), compartmentation, cavity barriers, fire dampers, AOV smoke ventilation, and third-party certification schemes (FIRAS, IFC, BAFSA, FIA). When a building manager describes 'upgrading from a Grade D domestic system to an L1 addressable fire alarm with smoke detection in every habitable room and heat detection in kitchens and plant rooms,' the AI captures the scope precisely."
+  },
+  {
+    question: "Can the AI handle calls about both sprinkler systems and passive fire protection?",
+    answer: "Fire protection companies often deliver both active and passive services. A call about 'installing a wet-pipe sprinkler system to BS 9251 in a new residential block' generates a very different lead from a call about 'fire stopping three hundred service penetrations on a commercial refurbishment to FIRAS certification.' The AI adjusts its questioning to the service described — sprinkler calls capture the building type, number of heads, water supply, and programme, while passive calls capture the penetration count, wall construction, fire rating required, and certification standard."
+  },
+  {
+    question: "What about urgent calls from building control or fire risk assessors?",
+    answer: "Building control enforcement notices and fire risk assessment deficiency reports drive urgent work — alarm upgrades, fire stopping remediation, compartmentation repairs. The AI identifies the regulatory pressure from the caller's language, captures the deficiency details and inspection deadline, and escalates the lead for your immediate attention."
+  },
+  {
+    question: "How much does this cost for a fire protection company?",
+    answer: `Fire protection contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you focus exclusively on sprinkler installation or deliver full active and passive fire protection packages, the allowance covers your call patterns. Each additional channel is £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a specialist fire stopping company?",
+    answer: "Specialist fire stopping firms — one or two FIRAS-certified operatives delivering penetration seals across construction sites — are precisely the companies that benefit most. When both operatives are up on the scaffold sealing cable transits with intumescent sealant, no one answers the phone. The AI captures every enquiry during installation, building your pipeline for the next project."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Your dashboard lets you schedule AI activation precisely. During on-site fire stopping, sprinkler installation, or alarm commissioning — route all calls to the AI. During office-based survey planning, report writing, or quotation preparation, take calls directly. Override the schedule from your phone at any time."
+  },
+  {
+    question: "How is fire protection project data secured?",
+    answer: "Fire protection enquiries contain building addresses, compartmentation layouts, fire strategy documents, alarm system specifications, and compliance-sensitive information. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR and the Data Protection Act 2018, and shared exclusively with you. No project information is disclosed to competing fire protection firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Fire Protection & Sprinkler Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK fire protection and sprinkler contractors — fire stopping, intumescent coatings, sprinkler systems, fire alarms, and compartmentation. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/fire-protection/ai-receptionist/"
+  tradeName="Fire Protection Contractor"
+  tradeNamePlural="Fire Protection & Sprinkler Contractors"
+  tradeSlug="fire-protection"
+  headline="The AI Receptionist Built for Fire Protection Companies"
+  accentWord="Fire Protection"
+  subhead={`You cannot answer the phone when you are sealing service penetrations with intumescent sealant on the fourteenth floor, commissioning a sprinkler system in a residential block, or wiring an addressable fire alarm panel. Your AI receptionist captures every call, every message, and every enquiry — from main contractors needing FIRAS-certified fire stopping to building managers commissioning L1 alarm upgrades. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Compartmentation Survey Arrives While You Seal the Riser"
+  ctaSubhead={`A building manager with a fire risk assessment deficiency and a twelve-week enforcement deadline will call three fire protection firms. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>
