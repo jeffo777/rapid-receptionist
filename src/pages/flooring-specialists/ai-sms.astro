@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Instant Reply to Every Text',
+    text: "A letting agent texts you about replacing vinyl in three rental flats. You are gluing down LVT in a show home and cannot check your phone. The AI replies within seconds, captures the property details, and confirms you will call back — all before the agent messages anyone else."
+  },
+  {
+    icon: '🏗️',
+    title: 'Handles Trade and Commercial Texts',
+    text: "Site managers, facilities coordinators, and letting agents often text rather than call. The AI handles their messages professionally — capturing project scope, timelines, and specifications — so you can respond with a considered quote when you are free."
+  },
+  {
+    icon: '🕐',
+    title: 'Active Outside Working Hours',
+    text: "Text messages arrive at all hours. A homeowner texts at 9pm asking about carpet fitting, a landlord messages at 7am about vinyl for a vacant property. The AI ensures every SMS gets a prompt, professional response."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Key Details Automatically',
+    text: "The AI asks the right questions — what type of flooring, how many rooms, approximate sizes, whether existing flooring needs removing. You get a complete brief via text without having to chase for details."
+  },
+  {
+    icon: '⚡',
+    title: 'Speed Wins Work',
+    text: "When a customer texts three flooring companies, the first to reply gets the measure-up. Your AI responds in seconds — while competitors do not see the message until their lunch break."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional SMS Presence',
+    text: "Instant, well-written text responses give the impression of a well-run flooring business. Customers remember the company that replied immediately — it builds trust before you have even spoken."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI SMS work for flooring businesses?",
+    answer: "When a customer sends a text to your business number, the AI responds instantly. It has a natural text conversation to understand what flooring work they need — type, rooms, sizes, timeline — and captures their contact details. Everything is sent to you as a lead summary."
+  },
+  {
+    question: "Can the AI handle detailed flooring specifications via text?",
+    answer: "Yes. Whether someone texts asking about engineered oak for a whole ground floor or safety vinyl for a commercial kitchen, the AI captures the details accurately. It asks follow-up questions about room count, existing flooring, and subfloor concerns to build a comprehensive lead."
+  },
+  {
+    question: "How much does AI SMS cost?",
+    answer: `AI SMS is an add-on channel at £${pricing.addOn.price}/month, available on any plan. Pair it with the Starter plan (£${pricing.tiers.starter.price}/month) or Core plan (£${pricing.tiers.core.price}/month), or get everything in the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can I still text customers myself?",
+    answer: "Yes. The AI handles initial responses and lead capture. Once you are available, you can continue the conversation personally. The handoff is seamless."
+  },
+  {
+    question: "Does it work with my existing business number?",
+    answer: "Yes. AI SMS integrates with your existing business phone number. Customers text the same number they always have — nothing changes on their end."
+  },
+  {
+    question: "How is text message data protected?",
+    answer: "All SMS data is managed under UK GDPR and the Data Protection Act 2018. Messages and contact details are encrypted and stored on UK and EU servers. Data is shared only with you and never sold or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Flooring Specialists | Rapid Receptionist"
+  description={`AI SMS for UK flooring specialists, LVT fitters, and carpet installers. Responds instantly to text messages with intelligent AI that captures flooring enquiries. £${pricing.addOn.price}/month add-on.`}
+  canonicalUrl="/flooring-specialists/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Flooring Specialist"
+  tradeNamePlural="Flooring Specialists"
+  tradeSlug="flooring-specialists"
+  headline="AI SMS for Flooring Specialists"
+  accentWord="Flooring Specialists"
+  subhead={`A letting agent texts about LVT for four vacant flats. You are fitting carpet on a staircase and cannot check your phone. Your AI replies instantly, captures every property, and confirms you will call back. £${pricing.addOn.price}/month add-on.`}
+  scenario="It is 11:20am on a Tuesday. You are fitting carpet underlay in a bedroom in a new-build estate in Milton Keynes — the fitter behind you is cutting carpet to size and you are both working to get three bedrooms done before 4pm. Your phone buzzes in your tool bag. A landlord in Northampton has texted: 'Hi, I need vinyl in kitchen and bathroom of a 2-bed flat. Tenant moves in 3 weeks. Can you do it?' Without AI SMS, the text sits unread until you finish at 4pm. The landlord texted two other fitters at the same time — one replied at 11:25am and booked the job. With AI SMS, your reply goes out at 11:21am: 'Thanks for getting in touch. We can certainly help with that. Can I grab the property postcode and your preferred day for us to measure up?' By 11:30am, you have a confirmed lead."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/flooring-specialists/ai-receptionist/"
+  ctaHeadline="Reply to Every Text in Seconds"
+  ctaSubhead={`A landlord's text could be four flats of flooring work. Your AI replies instantly. £${pricing.addOn.price}/month add-on.`}
+/>

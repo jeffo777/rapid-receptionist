@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -50,8 +50,8 @@ const faqs = [
 ---
 
 <BaseLayout
-  title=`Pricing — AI Receptionist for Construction Trades | From £${pricing.tiers.core.price}/mo | Rapid Receptionist`
-  description=`Transparent pricing for UK construction trades. AI phone answering + web chat from £${pricing.tiers.core.price}/month, add channels at £${pricing.addOn.price}/month each, or get everything for £${pricing.tiers.all.price}/month. No contracts, 30-day money-back guarantee.`
+  title=`Pricing — AI Receptionist for Construction Trades | From £${pricing.tiers.starter.price}/mo | Rapid Receptionist`
+  description=`Transparent pricing for UK construction trades. AI phone answering + web chat From £${pricing.tiers.starter.price}/month, add channels at £${pricing.addOn.price}/month each, or get everything for £${pricing.tiers.all.price}/month. No contracts, 30-day money-back guarantee.`
   canonicalUrl="/pricing/"
 >
   <Header slot="header" />
@@ -78,7 +78,7 @@ const faqs = [
   <!-- CTA -->
   <CTASection
     headline="Respond First. Win the Job."
-    subhead=`Join the UK construction trades who never miss a lead. From £${pricing.tiers.core.price}/month, no contracts, cancel anytime.`
+    subhead=`Join the UK construction trades who never miss a lead. From £${pricing.tiers.starter.price}/month, no contracts, cancel anytime.`
   />
 
   <CookieConsent />

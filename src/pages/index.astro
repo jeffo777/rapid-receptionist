@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import pricing from '../data/pricing.json';
 import Header from '../components/Header.astro';
@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     question: "How is this different from voicemail or a virtual receptionist?",
-    answer: `Voicemail is where leads go to die — 85% of callers who reach voicemail never call back, and 80% won't even leave a message. A traditional virtual receptionist costs £200-500/month, works limited hours, and only covers phone. Rapid Receptionist answers instantly across up to 8 channels, 24/7, from £${pricing.tiers.core.price}/month. It captures more detail than most human receptionists, never takes a sick day, and never puts your caller on hold while they deal with another client.`
+    answer: `Voicemail is where leads go to die — 85% of callers who reach voicemail never call back, and 80% won't even leave a message. A traditional virtual receptionist costs £200-500/month, works limited hours, and only covers phone. Rapid Receptionist answers instantly across up to 8 channels, 24/7, From £${pricing.tiers.starter.price}/month. It captures more detail than most human receptionists, never takes a sick day, and never puts your caller on hold while they deal with another client.`
   },
   {
     question: "Which construction trades does Rapid Receptionist cover?",
@@ -98,7 +98,7 @@ const faqs = [
 
 <BaseLayout
   title="Rapid Response AI Receptionist for UK Construction Trades | Rapid Receptionist"
-  description=`The rapid response AI receptionist built for 46 UK construction trades. Answers calls and website chat 24/7 from £${pricing.tiers.core.price}/mo. Add WhatsApp, SMS, email and social channels from £${pricing.addOn.price}/mo each. 30-day money-back guarantee.`
+  description=`The rapid response AI receptionist built for 46 UK construction trades. Answers calls and website chat 24/7 From £${pricing.tiers.starter.price}/mo. Add WhatsApp, SMS, email and social channels from £${pricing.addOn.price}/mo each. 30-day money-back guarantee.`
   canonicalUrl="/"
 >
   <Header slot="header" />

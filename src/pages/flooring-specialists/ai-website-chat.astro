@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Captures Visitors While You Install',
+    text: "Someone browsing your website at 8pm is comparing flooring companies. They want to know if you fit Karndean, whether you cover their area, or how quickly you could measure up. AI Website Chat answers instantly — while you are eating dinner or putting the kids to bed."
+  },
+  {
+    icon: '📐',
+    title: 'Handles Technical Flooring Questions',
+    text: "Website visitors ask about LVT vs engineered wood, whether you can fit over underfloor heating, or if you do subfloor preparation. The AI draws on your training data to answer accurately and capture the enquiry details for your follow-up."
+  },
+  {
+    icon: '🕐',
+    title: 'Works 24/7 — Especially Evenings',
+    text: "Most homeowners browse flooring websites in the evening after work. That 7pm-10pm window is when the majority of domestic flooring decisions are being researched. Your chat widget is live and capturing leads during every one of those hours."
+  },
+  {
+    icon: '📱',
+    title: 'Mobile-Friendly Chat Widget',
+    text: "Over 70% of your website visitors are on their phones. The chat widget works seamlessly on mobile — no clunky forms, no tiny text. A homeowner browsing in bed on their phone gets the same professional experience as someone on a desktop."
+  },
+  {
+    icon: '🎯',
+    title: 'Qualifies Leads Automatically',
+    text: "The chat captures what type of flooring they want, which rooms, approximate sizes, their postcode, and their contact details — before you even know they visited your site. You wake up to a qualified lead with everything you need to quote."
+  },
+  {
+    icon: '🔗',
+    title: 'Complements Your Portfolio',
+    text: "Flooring websites live and die on photos — beautiful herringbone patterns, pristine engineered oak installations, flawless commercial vinyl. The chat widget sits alongside your gallery, ready to convert admirers into enquiries the moment they are impressed."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the website chat work for flooring businesses?",
+    answer: "A chat widget appears on your website — typically in the bottom-right corner. When a visitor starts a conversation, the AI responds immediately. It answers common flooring questions, captures what type of work they need, which rooms are involved, their location, and their contact details. Everything is sent to you as a lead summary."
+  },
+  {
+    question: "Can the chat answer questions about specific flooring products?",
+    answer: "Yes — during setup, we configure the AI with your product range and capabilities. If you specialise in Karndean, Amtico, or specific engineered wood brands, the chat can reference those. It will not give prices — that is your expertise — but it handles product suitability questions well enough to keep the visitor engaged and capture their details."
+  },
+  {
+    question: "Is there a limit on chat messages?",
+    answer: "No. AI Website Chat includes unlimited messages on both the Starter and Core plans. Whether you get five chat enquiries a week or fifty, there is no additional charge for chat volume."
+  },
+  {
+    question: "Does it work on mobile?",
+    answer: "Yes. The chat widget is fully responsive and works on all devices. Since most of your website traffic comes from mobile — homeowners browsing on their phones — this is critical. The experience is smooth and professional on every screen size."
+  },
+  {
+    question: "Can I customise the chat to match my website design?",
+    answer: "Yes. The chat widget can be styled to match your website's colour scheme and branding. It integrates seamlessly with your existing flooring website — whether you built it yourself, used a website builder, or had it professionally designed."
+  },
+  {
+    question: "How does Rapid Receptionist protect visitor data from chat?",
+    answer: "All chat data is managed under UK GDPR and the Data Protection Act 2018. Visitor names, contact details, and conversation content are encrypted and stored on UK and EU servers. Data is shared only with you and never sold or repurposed. Full details are in our privacy policy."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Flooring Specialists | Rapid Receptionist"
+  description={`AI website chat for UK flooring specialists, LVT fitters, and carpet installers. Captures visitor enquiries 24/7 with intelligent chat that understands flooring. Unlimited messages included. From £${pricing.tiers.starter.price}/month.`}
+  canonicalUrl="/flooring-specialists/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Flooring Specialist"
+  tradeNamePlural="Flooring Specialists"
+  tradeSlug="flooring-specialists"
+  headline="AI Website Chat for Flooring Specialists"
+  accentWord="Flooring Specialists"
+  subhead="A homeowner is browsing your portfolio at 9pm, admiring the herringbone LVT you fitted last month. They want to know if you cover their area and how soon you could measure up. Without chat, they bookmark your site and forget about it. With AI Website Chat, they get an instant answer and you get a qualified lead in your inbox by morning."
+  scenario="It is 9:45pm on a Wednesday. A couple in Cheltenham have just decided to replace the tired carpet throughout their ground floor with engineered oak. They have been scrolling through flooring company websites for an hour. They land on yours — the portfolio looks great. They type into the chat: 'Do you fit engineered oak and can you do underfloor heating?' The AI responds in seconds, confirms you do, asks about the rooms involved and approximate sizes, captures their postcode and phone number, and tells them you will be in touch tomorrow. By 10pm they have stopped looking. Thursday morning, you call them first."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/flooring-specialists/ai-receptionist/"
+  ctaHeadline="Turn Website Visitors into Flooring Customers"
+  ctaSubhead={`Your portfolio attracted them. Your AI captures them. Included from £${pricing.tiers.starter.price}/month.`}
+/>

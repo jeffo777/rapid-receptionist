@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '⚡',
+    title: 'Answers While You Are Laying Floors',
+    text: "Flooring installation demands continuous focus — whether you are spreading adhesive for LVT, rolling out vinyl, or fitting tongue-and-groove engineered boards. You cannot stop mid-row to take a call. The AI handles every call with your business name while you keep working."
+  },
+  {
+    icon: '🧠',
+    title: 'Understands Flooring Enquiries',
+    text: "When a caller says 'I need LVT in the kitchen and hallway' or 'can you lay engineered oak over underfloor heating,' the AI understands what they mean. It captures room sizes, flooring preferences, subfloor concerns, and whether they need uplift of existing flooring."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Urgent Jobs',
+    text: "A care home with vinyl lifting in a corridor. A restaurant with tiles cracking before an inspection. The AI recognises emergency language and escalates immediately — reaching your mobile first, then our human operators. Routine domestic measure-up requests are handled as standard leads."
+  },
+  {
+    icon: '🕐',
+    title: 'Covers Evenings and Weekends',
+    text: "Homeowners browse flooring samples on Saturday mornings and ring fitters between 6pm and 9pm on weeknights. Those are prime enquiry windows and you are often driving home or eating dinner. The AI catches every one."
+  },
+  {
+    icon: '📋',
+    title: 'Detailed Lead Summaries',
+    text: "Every call is summarised with the caller's name, number, location, flooring type they want, number of rooms, and any specific requirements like underfloor heating compatibility or subfloor preparation. You call back fully informed."
+  },
+  {
+    icon: '🎯',
+    title: 'Your Business Name, Your Greeting',
+    text: "The AI answers as your flooring business. 'Good morning, thank you for calling Premier Floors, how can I help?' Callers hear a professional greeting that matches your brand — not a generic answering service."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI say when a flooring customer calls?",
+    answer: "It greets the caller with your business name and has a natural conversation to understand what they need. For flooring businesses, it asks about the type of flooring (LVT, engineered wood, carpet, vinyl), which rooms are involved, approximate sizes if the caller knows them, whether existing flooring needs removing, and captures their contact details and availability for a measure-up."
+  },
+  {
+    question: "Can it handle calls about different flooring types?",
+    answer: "Yes — carpet, LVT, engineered wood, laminate, vinyl, safety flooring, carpet tiles, and specialist products like Karndean or Amtico. The AI captures whatever the caller describes and notes any brand preferences. It does not try to advise on products — that is your job when you call back."
+  },
+  {
+    question: "What if a commercial client calls about a large contract?",
+    answer: "The AI handles commercial enquiries the same way — capturing the facility type, square meterage if mentioned, the flooring specification, timeline, and contact details. Whether it is a school, office, medical practice, or retail unit, the lead summary gives you everything you need to follow up professionally."
+  },
+  {
+    question: "How many minutes of phone time do I get?",
+    answer: `The Starter plan includes ${pricing.tiers.starter.minutes} minutes per month — enough for most sole trader fitters handling domestic work. The Core plan gives you ${pricing.tiers.core.minutes} minutes for busier flooring companies. Additional minutes are 20p each with no cap or penalty.`
+  },
+  {
+    question: "Can I still answer calls myself when I'm available?",
+    answer: "Yes. The AI only activates when you are unavailable — on a job, driving, or after hours. When you are in the showroom or between installations, calls come through to you as normal. You control when the AI picks up."
+  },
+  {
+    question: "How does Rapid Receptionist protect customer data?",
+    answer: "All data is managed under UK GDPR and the Data Protection Act 2018. Names, addresses, phone numbers, and job descriptions are encrypted in transit and at rest, stored on UK and EU servers, and shared only with you. We never sell or repurpose enquiry data. Full details are in our privacy policy."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Flooring Specialists | Rapid Receptionist"
+  description={`AI phone answering for UK flooring specialists, LVT fitters, carpet installers, and flooring contractors. Answers every call, captures flooring enquiry details, and escalates emergencies. From £${pricing.tiers.starter.price}/month.`}
+  canonicalUrl="/flooring-specialists/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Flooring Specialist"
+  tradeNamePlural="Flooring Specialists"
+  tradeSlug="flooring-specialists"
+  headline="AI Phone Answering for Flooring Specialists"
+  accentWord="Flooring Specialists"
+  subhead={`You are on your knees spreading adhesive for a herringbone LVT installation in a show home. The developer is calling about three more units. Your AI answers, captures the full specification — rooms, flooring type, timeline — and the lead is waiting for you when you stand up.`}
+  scenario="It is 2:15pm on a Thursday. You are halfway through laying engineered oak in a semi-detached in Harrogate — the boards are acclimatised, the underlay is down, and you have got a rhythm going on the click-lock installation. Your phone buzzes in your jacket across the room. A letting agent in Leeds has four rental properties that all need new LVT before new tenants move in next month — kitchens, hallways, and bathrooms. They want someone who can handle all four. Without AI Phone Answering, they hear your voicemail, assume you are too busy, and call the flooring company whose van they passed yesterday. With AI Phone Answering, they hear: 'Good afternoon, thank you for calling, how can I help?' The AI captures all four properties, the rooms involved, the timeline, and the agent's direct number. You finish the row at 3pm and call them back with a plan."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/flooring-specialists/ai-receptionist/"
+  ctaHeadline="Stop Missing Flooring Jobs"
+  ctaSubhead={`Every missed call is a floor that someone else will lay. From £${pricing.tiers.starter.price}/month.`}
+/>

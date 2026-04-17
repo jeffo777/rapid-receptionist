@@ -1,0 +1,106 @@
+﻿---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A property developer rings while you're on your knees spreading adhesive for a herringbone LVT install in a show home. Open time on the glue is twenty minutes. You can't stop. They get your voicemail, assume you're unreliable, and call the next flooring company on their list.",
+    with: "The same developer calls. Your AI receptionist answers with your business name, captures the brief — three apartments, LVT throughout, handover in six weeks — and confirms you'll call back today. You finish the row, clean up, and ring them back with the full spec in front of you."
+  },
+  {
+    without: "A homeowner emails on Sunday evening asking about replacing carpet with engineered oak in their lounge and hallway. You don't check emails until Tuesday. They've already booked someone who replied on Monday morning.",
+    with: "The email gets an immediate response confirming you've received their enquiry. Tuesday morning, you open your inbox to find room dimensions, their preferred wood species, and whether they need the old carpet uplifted — everything you need to quote without a site visit."
+  },
+  {
+    without: "A facilities manager sends a WhatsApp asking about replacing worn vinyl in a medical practice — twelve treatment rooms, needs doing over a bank holiday weekend. Your phone is on silent because you're measuring up a kitchen. The message sits unread until the next day.",
+    with: "The WhatsApp gets an instant reply that captures the facility type, number of rooms, the bank holiday deadline, and the manager's availability for a site survey. You see it over lunch and call back with confidence."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Domestic Flooring",
+    items: ["LVT and luxury vinyl plank installation", "Engineered and solid wood flooring", "Laminate flooring fitting", "Carpet supply and fitting", "Vinyl sheet and tile installation", "Underfloor heating compatibility work"]
+  },
+  {
+    category: "Commercial & Contract Flooring",
+    items: ["Office carpet tile installation", "Safety flooring for healthcare and education", "Commercial vinyl and linoleum", "Retail and hospitality floor coverings", "Warehouse and industrial resin overlay preparation", "Multi-unit residential developments"]
+  },
+  {
+    category: "Specialist & Preparation",
+    items: ["Subfloor preparation and screeding", "DPM installation and moisture testing", "Herringbone and parquet pattern laying", "Karndean and Amtico design flooring", "Floor sanding and refinishing", "Stair carpet and runner fitting"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Domestic Homeowners",
+    description: "Homeowners choosing new flooring for renovations, extensions, or room refreshes. They've been browsing LVT samples on Instagram, comparing engineered wood prices online, or asking neighbours who did their kitchen floor. They want advice on what works for their space, a clear price, and someone who will turn up when they say they will."
+  },
+  {
+    icon: "🏗️",
+    title: "Builders & Developers",
+    description: "Main contractors and developers looking for reliable flooring subcontractors for new builds and refurbishments. They need someone who can handle multiple plots, work to programme schedules, and provide consistent quality across different flooring types — LVT in bathrooms, carpet on stairs, engineered wood in living areas."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial & Facilities Managers",
+    description: "Office managers, school bursars, healthcare facility coordinators, and retail fit-out companies who need hard-wearing commercial flooring installed quickly and professionally. They often work to tight deadlines — half-term installations, weekend changeovers, or phased refurbishments that cannot disrupt daily operations."
+  },
+  {
+    icon: "🏘️",
+    title: "Landlords & Letting Agents",
+    description: "Property managers replacing worn flooring between tenancies. They need quick turnaround, competitive pricing, and a flooring company that can handle LVT for kitchens, vinyl for bathrooms, and carpet for bedrooms — ideally from a single supplier who'll coordinate the lot."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand flooring terminology?",
+    answer: "Yes. During setup, your AI receptionist is configured with flooring-specific vocabulary — LVT, engineered oak, Karndean, Amtico, herringbone, chevron, click-lock, glue-down, screed, DPM, underlay grades, transition strips, and expansion gaps. When a customer says 'I want LVT in the kitchen but I'm worried about the underfloor heating,' the AI understands and captures it accurately."
+  },
+  {
+    question: "Can the AI handle enquiries for different flooring types?",
+    answer: "Absolutely. Whether someone calls about fitting carpet in three bedrooms, laying engineered oak throughout a ground floor, installing safety flooring in a nursery, or replacing commercial carpet tiles in an office — the AI captures the type of flooring, the rooms or areas involved, and any specific brand preferences. You get the complete picture in the lead summary."
+  },
+  {
+    question: "What happens with urgent commercial flooring jobs?",
+    answer: "The AI recognises urgency. If a facilities manager calls because vinyl is lifting in a care home corridor or a school needs emergency carpet replacement before Ofsted arrive, the AI escalates immediately — trying your mobile first, then reaching our human operators. Routine domestic measure-up requests are handled as standard leads."
+  },
+  {
+    question: "How much does it cost for a flooring business?",
+    answer: `The Starter plan is £${pricing.tiers.starter.price}/month and includes AI phone answering (${pricing.tiers.starter.minutes} minutes) plus unlimited website chat — ideal for sole trader fitters handling domestic work. The Core plan at £${pricing.tiers.core.price}/month gives you ${pricing.tiers.core.minutes} minutes for busier flooring companies. Additional channels like WhatsApp, SMS, and Facebook are £${pricing.addOn.price}/month each, or get everything with the All Channels bundle at £${pricing.tiers.all.price}/month. Setup is £${pricing.setup.price} one-time (refundable within 30 days).`
+  },
+  {
+    question: "Is this suitable for a one-person flooring fitting operation?",
+    answer: "It was built for exactly this. A sole trader flooring fitter is the person most likely to be on their knees with adhesive on their hands when the phone rings. You cannot employ a receptionist. The AI handles the calls you physically cannot answer — morning, evening, weekends — and texts you every lead with full details so you can follow up between installations."
+  },
+  {
+    question: "Can I still answer calls myself when I'm free?",
+    answer: "Yes. The AI only activates when you are unavailable — on a job, driving, or after hours. When you're at the showroom or between jobs, calls ring through to you as normal. You control when the AI picks up."
+  },
+  {
+    question: "How does Rapid Receptionist handle customer data?",
+    answer: "All customer data is managed under UK GDPR and the Data Protection Act 2018. Names, addresses, phone numbers, room measurements, and job descriptions are encrypted during transmission and storage, held exclusively on UK and EU servers, and shared only with you. We never sell, share, or repurpose enquiry data. Full details are in our privacy policy."
+  }
+];
+---
+
+<TradeHubLayout
+  title="Rapid Response AI Receptionist for Flooring Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK flooring specialists, LVT fitters, and carpet installers. Answers calls, captures leads from chat, WhatsApp, and social media while you're laying floors. From £${pricing.tiers.starter.price}/month.`}
+  canonicalUrl="/flooring-specialists/ai-receptionist/"
+  tradeName="Flooring Specialist"
+  tradeNamePlural="Flooring Specialists"
+  tradeSlug="flooring-specialists"
+  headline="The Rapid Response AI Receptionist for Flooring Specialists"
+  accentWord="Flooring Specialists"
+  subhead={`You cannot answer the phone while you're spreading adhesive, rolling out vinyl, or knee-deep in a herringbone pattern with a deadline. Your AI receptionist picks up every call, captures every lead from chat, WhatsApp, and social media, and delivers the details to you between jobs. From £${pricing.tiers.starter.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Stop Losing Flooring Jobs to Missed Calls"
+  ctaSubhead={`Every call your flooring business misses is a customer who books someone else. From £${pricing.tiers.starter.price}/month — respond first, win the work.`}
+/>
