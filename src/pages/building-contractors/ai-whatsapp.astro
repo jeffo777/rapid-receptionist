@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Responds to Site Photos and Videos',
+    text: "Homeowners and architects WhatsApp photos of properties, existing structures, and problem areas — a damp wall that needs assessing before an extension, a roof structure visible through a loft hatch, or a plot with planning permission. The AI responds immediately, asks about the project scope, and delivers the media alongside a structured lead."
+  },
+  {
+    icon: '📸',
+    title: 'Captures Developer Enquiries on the Move',
+    text: "Property developers message builders from potential acquisition sites — 'looking at a detached house for conversion into three flats, can you ballpark the build cost?' These time-sensitive messages arrive while you are on your own site. The AI responds quickly and captures the development scope."
+  },
+  {
+    icon: '⚡',
+    title: 'Wins the Saturday Morning Rush',
+    text: "Saturday morning is when homeowners send their building project WhatsApps — they have spent the week thinking about the extension and finally message three builders. The builder who responds first within seconds, rather than Monday morning, secures the site visit."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Project Discussions',
+    text: "Couples discuss building projects after dinner and WhatsApp builders while the enthusiasm is high. A 9pm message about a loft conversion is a serious lead from someone ready to commit. The AI keeps the momentum going."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Complex Messages',
+    text: "A WhatsApp saying 'want a rear extension, about 4x6m, already have architect drawings, want someone who can project manage the whole thing, we are in OX2' gives the AI enough to capture — and it asks about planning status and timeline to complete the brief."
+  },
+  {
+    icon: '🔒',
+    title: 'Business Line Only',
+    text: "AI WhatsApp connects through your professional number. Clients and architects message a business line and receive professional responses while your personal WhatsApp stays private."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI handle WhatsApp photos of building projects?",
+    answer: "The AI acknowledges images and asks the follow-ups that matter — what work do you want done, is there an architect involved, what is the planning status, and when do you want to start? Photos of existing structures, plots, and problem areas are attached to your lead summary so you can assess the project's feasibility before your callback. Seeing the existing building or site condition in advance often saves a speculative site visit."
+  },
+  {
+    question: "What if a developer WhatsApps about a commercial project?",
+    answer: "Developers increasingly use WhatsApp for initial contractor approaches — it is fast, informal, and lets them attach site photos and planning documents. The AI responds with the professionalism expected of a main contractor, captures the project scope and programme requirements, and your lead arrives with full development context. Being the first builder to respond professionally to a developer's WhatsApp often determines who gets the initial site walk."
+  },
+  {
+    question: "How much does WhatsApp cost for a building contractor?",
+    answer: `The WhatsApp channel is £${pricing.addOn.price}/month as an add-on. Building contractors operate in a market where a standard domestic extension starts around £30,000 and commercial conversion projects routinely exceed six figures. Responding to one WhatsApp enquiry before your competitors — and winning the project — covers the add-on expense indefinitely.`
+  },
+  {
+    question: "Can I continue WhatsApp conversations personally?",
+    answer: "Sending your own reply in any thread hands control to you — the AI recognises your message and steps back. Most builders let the AI handle the initial capture and pre-qualification, then follow up personally to discuss specifications, arrange site visits, and build the client relationship."
+  },
+  {
+    question: "Is WhatsApp data handled securely?",
+    answer: "All WhatsApp conversations — project photos, property addresses, planning documents, budget discussions, and contact information — are encrypted and held on UK and EU servers under UK GDPR. Data is delivered to you exclusively and is never shared with competitors, sold to lead brokers, or accessed by third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Building Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK building contractors. Responds to extension enquiries, development briefs, and site photos while you manage the build. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/building-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Building Contractor"
+  tradeNamePlural="Building Contractors"
+  tradeSlug="building-contractors"
+  headline="AI WhatsApp for Building & Construction Companies"
+  accentWord="Building & Construction"
+  subhead="An architect WhatsApps at 11am with photos of a derelict agricultural building in the Cotswolds — collapsed roof structure, stone walls still standing, planning permission for conversion to a three-bedroom dwelling. Her message reads: 'Client has PP for barn conversion. Structural survey attached. Looking for a builder experienced with stone barn work. Tender return in four weeks. Interested?' You are on site in Abingdon, managing the bricklayers on a two-storey extension — checking cavity widths, supervising the installation of cavity trays, and discussing window reveals with the window fitter. Without AI WhatsApp, the message sits until you check your phone at tea break. The architect has messaged three builders; one replied within ten minutes. With it, the AI responds immediately, confirms your barn conversion experience, and captures the tender scope."
+  scenario="It is 8:15am on a Saturday. A young couple in Kidlington who bought a three-bedroom semi six months ago are sitting at the kitchen table with their architect's preliminary sketches for a single-storey wraparound extension — rear and side, creating an open-plan kitchen-diner-living space with bi-fold doors to the garden. They WhatsApp three builders they found through Checkatrade reviews: 'Hi — we have got architect sketches for a wraparound extension (rear and side) on our 3-bed semi in OX5. About 30sqm total. Planning not yet submitted but architect says it should be permitted development. Looking for someone who can manage the whole build. Are you available spring next year? Happy to send the sketches.' Without AI WhatsApp, you are asleep until 8:45, see the message at 9, reply at 10 after coffee — by which time both other builders have responded, one has already asked to see the sketches, and the couple have forwarded them. With AI WhatsApp, the reply arrives at 8:16am: 'Thank you — wraparound extensions are a core part of our work and we would love to see the sketches. Could you share the drawings and confirm your ideal start timeframe? One of our team will review them and call you early next week.' By 8:20am the couple have sent the sketches and their contact details. Monday morning you open the lead: 30sqm wraparound extension, semi-detached, OX5, sketches attached, spring start, full project management required. You call at 9am and book a Wednesday evening site visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/building-contractors/ai-receptionist/"
+  ctaHeadline="Respond to Extension Enquiries Before the Other Two Builders"
+  ctaSubhead={`A homeowner WhatsApps three builders on Saturday morning. The one who replies first gets the site visit. The AI ensures that builder is you. Add-on at £${pricing.addOn.price}/month.`}
+/>

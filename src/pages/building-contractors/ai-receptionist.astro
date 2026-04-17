@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A homeowner calls about a rear extension and loft conversion — she has planning permission, wants to start after Easter, and needs a builder who can manage the whole project from groundworks to final fix. You are on site at a new-build in Kidlington managing the steel installation on a first-floor extension — the crane is rigging the RSJ, building control is arriving in twenty minutes, and you are coordinating the structural engineer on the phone with the steel fixers. Your mobile buzzes and goes to voicemail. The homeowner calls two more builders. The one who answered books a Wednesday evening site visit.",
+    with: "Your AI receptionist answers professionally. It captures the full brief — rear extension and loft conversion, planning permission in place, post-Easter start, project management required — and confirms you will call back. At lunch you read the lead, call her, and book a Thursday evening consultation."
+  },
+  {
+    without: "An architect emails a tender package for a barn conversion in the Cotswolds — structural opening-up, new floor cassettes, glazed gable, underfloor heating, listed building consent conditions, and a twelve-month programme. The tender return is three weeks away. You are on site all week managing the first fix on a four-bedroom new-build — juggling electricians, plumbers, and the carpenter, checking Building Regs compliance at every stage. The email sits unread until Friday night. Two competitors acknowledged by Tuesday morning.",
+    with: "Your AI acknowledges the architect's email within sixty seconds, referencing the barn conversion scope and the three-week deadline. Friday evening you open the lead summary and begin reviewing the tender with the full response window ahead of you."
+  },
+  {
+    without: "A property developer WhatsApps on Saturday morning about a five-unit residential scheme — three terraced houses and two flats above a commercial ground floor. He needs a main contractor who can manage the programme, coordinate subcontractors, handle CDM compliance, and deliver to NHBC standards. He is interviewing builders next week. You are at a different site doing a weekend concrete pour for a garage foundation, sleeves rolled, phone in the van. The WhatsApp sits until Sunday evening. By Monday the developer has shortlisted three builders — all of whom responded on Saturday.",
+    with: "The AI responds to the developer's WhatsApp within seconds, captures the five-unit scheme scope, and confirms you will call. Sunday evening you review the brief. Monday at 8am you call the developer, discuss programme and preliminaries, and are shortlisted for a Tuesday site walk."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Residential Construction",
+    items: ["New-build houses and bungalows", "Ground-up self-build management", "Extensions (single, double, wraparound)", "Loft conversions (dormer, hip-to-gable, mansard)", "Garage conversions", "Basement and cellar conversions"]
+  },
+  {
+    category: "Commercial & Multi-unit",
+    items: ["Small commercial builds and fit-outs", "Multi-unit residential developments", "Mixed-use scheme management", "Student and HMO conversions", "CDM principal contractor duties", "NHBC and warranty-compliant construction"]
+  },
+  {
+    category: "Renovation & Conversion",
+    items: ["Barn conversions", "Listed building restoration and conversion", "Period property renovation", "Structural alterations and steelwork", "Whole-house refurbishment", "Party wall and boundary work"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏡",
+    title: "Homeowners & Self-builders",
+    description: "The core of most building contractors' work. Homeowners commission extensions, loft conversions, garage conversions, and internal reconfiguration. Self-builders need a main contractor to manage the entire project from foundation to snagging. These clients research extensively, get three to five quotes, and book the builder who responds first with confidence and professionalism."
+  },
+  {
+    icon: "📐",
+    title: "Architects & Designers",
+    description: "Architects tender building work for their clients — sending specification documents, drawings, and bills of quantities. The builder who acknowledges promptly and demonstrates programme understanding earns the architect's trust and repeat commissions. Responsive builders become architects' preferred contractors."
+  },
+  {
+    icon: "🏢",
+    title: "Property Developers & Investors",
+    description: "Developers need main contractors for new-build schemes, conversions, and refurbishment projects. They value programme reliability, cost control, and professional communication. A developer messaging on a Saturday about a five-unit scheme is testing responsiveness — the builder who replies fastest gets the first site walk."
+  },
+  {
+    icon: "⚖️",
+    title: "Quantity Surveyors & Project Managers",
+    description: "QS firms and project management consultancies issue tenders and manage procurement for their clients. They operate on tight submission deadlines and judge builders partly on their responsiveness during the tender process. An acknowledgement within sixty seconds signals the professionalism they need."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand building and construction terminology?",
+    answer: "The AI recognises the full vocabulary of general building — extensions, loft conversions, groundworks, substructure, superstructure, first fix, second fix, RSJ steel installation, building regulations, party wall agreements, CDM regulations, JCT contracts, retention, valuations, preliminaries, practical completion, snagging, NHBC standards, and every common material and method. When an architect calls about 'a JCT Minor Works contract for a single-storey rear extension with structural steelwork, insulated cavity walls, and a green roof system,' the AI captures the brief accurately."
+  },
+  {
+    question: "Can the AI handle calls from both homeowners and professionals?",
+    answer: "A homeowner calling about a kitchen extension generates a fundamentally different lead from an architect tendering a barn conversion under a JCT Design and Build contract. The AI adapts naturally — asking domestic clients about the project scope, planning status, and timeline, while capturing professional briefs with specification detail, programme requirements, and submission deadlines. Each lead summary reflects the scale and formality of the enquiry."
+  },
+  {
+    question: "What about urgent calls during live construction work?",
+    answer: "Main contractors receive urgent calls during the working day — building control arriving unannounced, a subcontractor needing programme clarification, a structural engineer requesting a site visit, or a client chasing progress. The AI distinguishes between new enquiry calls and existing project calls, and escalates anything flagged as urgent to your mobile. If you cannot answer while managing the pour or the steel lift, it routes to our human operators."
+  },
+  {
+    question: "How much does the service cost for a building contractor?",
+    answer: `Building contractors — from a sole trader managing domestic extensions to a company running multiple sites with full CDM compliance — fit within the Core plan at £${pricing.tiers.core.price}/month. That includes ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. Additional channels (WhatsApp, SMS, email, social media, Missed Call Text Back) are £${pricing.addOn.price}/month each. The setup fee of £${pricing.setup.price} is fully refundable within 30 days.`
+  },
+  {
+    question: "Is this suitable for a sole-trader builder?",
+    answer: "A sole-trader builder is the person who benefits most. You spend entire days physically on the tools — mixing, laying, lifting, cutting — unable to answer the phone. When you manage the project yourself and do the physical work, every missed call is a potential extension, conversion, or renovation going to a competitor. The AI captures every enquiry with full project scope while you lay the next course of blocks."
+  },
+  {
+    question: "Can I still take calls between tasks?",
+    answer: "When you are off the tools — driving between sites, at the builders' merchant, in the office pricing a tender, or walking a site with a client — calls ring through to your mobile normally. The AI activates only when you are genuinely unreachable: on the scaffold, pouring concrete, or outside working hours. You control the schedule from your dashboard."
+  },
+  {
+    question: "How is project and tender data protected?",
+    answer: "Building contractor enquiries include property addresses, planning reference numbers, architect specifications, tender pricing, and commercially sensitive development details. All data is encrypted in transit and at rest, stored exclusively on UK and EU servers under UK GDPR, and shared with no one except you. Tender information is never disclosed to competitors or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Building Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK building contractors — extensions, loft conversions, new builds, and commercial projects. Never miss a call while you are managing the site. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/building-contractors/ai-receptionist/"
+  tradeName="Building Contractor"
+  tradeNamePlural="Building Contractors"
+  tradeSlug="building-contractors"
+  headline="The AI Receptionist Built for Building Contractors"
+  accentWord="Building Contractors"
+  subhead={`You cannot answer the phone when you are managing three subcontractors on a loft conversion, the steel is going in, building control is arriving at two, and the electrician needs first-fix sign-off by Friday. Your AI receptionist captures every call, every message, and every enquiry — from homeowners planning kitchen extensions to architects tendering barn conversions. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Extension Enquiry Will Not Wait for Your Pour to Set"
+  ctaSubhead={`A homeowner with planning permission and a budget will call three builders. If voicemail answers, you are already third choice. The AI keeps you first. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

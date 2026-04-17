@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Build Progress Engagement',
+    text: "Building contractors produce compelling visual content — time-lapses of extensions rising from foundations, steel going in, roofs going on, and finished interiors. When a follower DMs after watching a build-progress reel, the AI captures their project vision and turns admiration into a structured lead."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Design-Conscious Homeowners',
+    text: "Instagram's audience includes homeowners actively planning renovations and extensions — following interior designers, saving kitchen-diner inspiration, and researching builders. A DM saying 'love your kitchen extensions — thinking of doing something similar to our 1930s semi' is a premium lead from someone who values quality and design."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Before-and-After DM Enquiries',
+    text: "Followers send DMs with photos of their current property — dated kitchens, cramped rooms, unused garages — asking if you can transform the space. The AI acknowledges the images, asks about scope and planning, and attaches the photos to your lead summary."
+  },
+  {
+    icon: '🌙',
+    title: 'Captures Evening Inspiration Moments',
+    text: "Building project inspiration strikes after 8pm — scrolling through Reels, seeing a stunning extension, and thinking 'we could do that.' The AI captures the DM before the inspiration fades by morning."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Aspirational DMs',
+    text: "DMs about extensions are often aspirational — 'can you do something like this?' followed by a screenshot from Pinterest. The AI extracts the project type, property details, location, and contact from the conversation."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Your Build Content',
+    text: "Every foundation pour, steel lift, and finished interior you post can trigger DMs. The AI converts visual appreciation into structured project leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need as a builder?",
+    answer: "Your Instagram needs to be set to Business or Creator mode and linked to a Facebook Business page. The switch is free and takes two minutes. Building companies producing regular content — site progress shots, completed project galleries, and construction time-lapses — typically run Business accounts already for the promotional tools and audience insights."
+  },
+  {
+    question: "What building enquiries arrive through Instagram DMs?",
+    answer: "Domestic projects dominate — homeowners inspired by your completed extensions, loft conversions, and renovation galleries. DMs asking 'how much for something similar in our 1930s semi?' or 'could you convert our integral garage into a playroom?' are typical. These are high-quality leads because the follower has already been captivated by your design sensibility and build quality."
+  },
+  {
+    question: "How quickly does the AI respond to DMs?",
+    answer: "Within seconds. Instagram displays read receipts, showing the homeowner that your business is actively engaged. For building contractors — where homeowners message multiple companies from the same shortlist — a reply speed measured in seconds rather than hours frequently determines who secures the initial consultation."
+  },
+  {
+    question: "How much does Instagram DMs cost for builders?",
+    answer: `The add-on is £${pricing.addOn.price}/month alongside your Core plan. For building companies whose Instagram presence drives enquiries for extensions worth £40,000 to £100,000 and loft conversions worth £30,000 to £60,000, capturing one project from an Instagram DM covers the add-on cost for the entirety of its lifespan.`
+  },
+  {
+    question: "Can I take over DM conversations?",
+    answer: "Replying directly in any Instagram DM thread transfers the conversation to you. The AI steps aside and the follower sees a single unbroken exchange. Most builders let the AI capture the initial scope and contact details, then follow up personally with design discussions, site visit scheduling, and pricing."
+  },
+  {
+    question: "Is DM data kept confidential?",
+    answer: "All Instagram DM content — messages, property photos, project descriptions, planning details, and contact information — is encrypted and stored on UK and EU servers under UK GDPR. No DM content is shared with third parties, sold to lead platforms, or repurposed for advertising."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Building Contractors | Rapid Receptionist"
+  description={`AI Instagram DMs for UK building contractors. Converts followers inspired by your extension galleries and build-progress reels into project consultations. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/building-contractors/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Building Contractor"
+  tradeNamePlural="Building Contractors"
+  tradeSlug="building-contractors"
+  headline="AI Instagram DMs for Building & Construction Companies"
+  accentWord="Building & Construction"
+  subhead="Your latest reel performs — a split-screen time-lapse showing a dated 1970s kitchen on the left transforming into a stunning open-plan kitchen-diner extension on the right. Bi-fold doors, polished concrete floor, handleless cabinets, pendant lighting. Eighty thousand views. A homeowner in Oxford DMs: 'Absolutely love this transformation. Our kitchen is identical to the before — small, dark, looking onto a tiny patio. Can you do something similar? We have got architect drawings but have not applied for planning yet.' You are on a scaffold at a two-storey extension in Abingdon, managing the bricklayers and checking cavity wall ties. Without AI DMs, the message waits. With it, she gets an instant response, shares her architect's preliminary sketches, and your lead arrives with everything you need."
+  scenario="It is 9:15pm on a Thursday. An interior designer in London has been curating Instagram content for a weekend presentation to a client in the Cotswolds who wants to renovate a five-bedroom Victorian rectory — new kitchen extension, internal reconfiguration, three new bathrooms, and full redecoration. She needs a builder who combines design sensitivity with period-property experience. She finds your account, scrolls through projects — a Georgian townhouse renovation, a barn conversion, a contemporary extension on a listed cottage — and DMs: 'Beautiful portfolio. We are working on a Victorian rectory renovation in the north Cotswolds — full internal restructure, new rear extension, three bathroom installations. The client values quality and attention to detail. Can you tender for the build phase? Budget is £350,000–£400,000. Happy to send the brief.' Without AI Instagram DMs, you see the message Friday morning between site tasks. The designer messaged three builders; one replied at 10pm with a portfolio summary and his availability. With AI Instagram DMs, the reply arrives at 9:16pm: 'Thank you — Victorian property renovation and extensions are central to our work. A £350,000–£400,000 build programme in the Cotswolds is exactly our scale and specialism. Please share the brief and we will review it and arrange a conversation with you and the client next week.' She sends a PDF outline brief and the client's timeline. Friday morning you open the lead: Victorian rectory, full renovation, extension, three bathrooms, £350–400k, interior designer contact in London, brief attached. You call at 9am and begin the most valuable project conversation of the year."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/building-contractors/ai-receptionist/"
+  ctaHeadline="Convert Kitchen Extension Reels into Build Consultations"
+  ctaSubhead={`A time-lapse reel of a dated kitchen becoming a stunning extension captivates thousands. AI Instagram DMs turns every enquiry into a structured lead. Add-on at £${pricing.addOn.price}/month.`}
+/>

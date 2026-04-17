@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Planning Extensions',
+    text: "Homeowners spend weeks browsing builder websites before picking up the phone — looking at completed project galleries, reading cases studies, checking accreditations. A chat widget lets them ask 'do you do loft conversions?', 'can you handle the planning application?', or 'how long does a rear extension take?' and the AI responds instantly from your service profile."
+  },
+  {
+    icon: '📐',
+    title: 'Pre-qualifies Project Scope',
+    text: "Through natural conversation, the chat captures the project type, approximate size, planning status, whether an architect is already involved, the property location, and the client's budget range if they share it. Your lead summary distinguishes a simple garage conversion from a complex two-storey side extension with structural steelwork."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Kitchen-Table Research',
+    text: "Building projects are discussed over the kitchen table in the evening — architect drawings on the laptop, extension cost calculators open in another tab, builder websites in a third. When a couple find your website at 9pm and see the chat widget, they type their first question instead of adding you to a bookmark list that never gets revisited."
+  },
+  {
+    icon: '📊',
+    title: 'Answers Common Builder Questions',
+    text: "Visitors ask about your coverage area, whether you are FMB registered, if you manage the whole project or just the build, what insurances you carry, and whether you provide a fixed price or day rate. The AI responds from your profile and captures the visitor's project brief in return."
+  },
+  {
+    icon: '🔗',
+    title: 'Sits on Every Portfolio Page',
+    text: "Building contractors with detailed project galleries — extensions with before-and-after photos, loft conversions showing the transformation, barn conversions captured at every stage — generate the most website interest. The chat widget converts gallery browsers into enquiries."
+  },
+  {
+    icon: '✅',
+    title: 'No Extra Charge',
+    text: `Website chat is bundled with the Core plan at £${pricing.tiers.core.price}/month. Installation requires a small JavaScript snippet in your website header. Works on WordPress, Squarespace, Wix, and custom sites. Unlimited conversations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install the chat on my building company website?",
+    answer: "We provide a lightweight JavaScript snippet during onboarding. Paste it into your website's header code — or use a plugin if you run WordPress, Squarespace, or Wix. The chat bubble appears on every page within minutes, styled to complement your existing brand. If you would rather not touch code, we talk your web developer through the installation or do it remotely."
+  },
+  {
+    question: "Can the AI discuss different types of building work?",
+    answer: "Your service profile tells the AI what you offer — extensions, loft conversions, garage conversions, new builds, refurbishments, barn conversions, commercial fit-outs — and it uses this information to engage visitors. When someone asks 'do you do hip-to-gable loft conversions?' the AI confirms from your profile and asks about the property type, location, and timeline. It keeps the conversation moving toward a captured lead."
+  },
+  {
+    question: "What details does the chat collect from visitors?",
+    answer: "The AI gathers the project type and scope, planning status (approved, pending, not yet applied), whether an architect or structural engineer is already involved, the property postcode, the visitor's preferred start date, and their contact details. For building contractors, this pre-qualification reveals at a glance whether the lead is a £10,000 internal reconfiguration or a £200,000 self-build."
+  },
+  {
+    question: "Will the widget slow my website down?",
+    answer: "The script initialises after your primary page content has fully loaded, so project gallery pages with large photo grids, embedded videos, and case study carousels render at their normal speed. The chat bubble appears once the heavy content is already visible. Its total data footprint is negligible compared to a single high-resolution construction photograph."
+  },
+  {
+    question: "Is website chat charged on top of phone answering?",
+    answer: `Both services are included in the Core plan at £${pricing.tiers.core.price}/month — no separate charge. For building contractors, phone and website chat cover the two main enquiry routes: homeowners calling your office number, and visitors chatting after finding your website through Google, Checkatrade, or a recommendation.`
+  },
+  {
+    question: "How is chat data from building enquiries protected?",
+    answer: "Chat conversations containing property addresses, project specifications, budget discussions, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Lead summaries are delivered to you exclusively. Visitor data is never shared with competitors, sold to lead-generation platforms, or used for any third-party purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Building Contractors | Rapid Receptionist"
+  description={`AI website chat for UK building contractors. Engages visitors researching extensions, loft conversions, and new builds — captures project leads from your portfolio pages 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/building-contractors/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Building Contractor"
+  tradeNamePlural="Building Contractors"
+  tradeSlug="building-contractors"
+  headline="AI Website Chat for Building Companies"
+  accentWord="Building Companies"
+  subhead="A homeowner in Bicester finds your website at 9:15pm. She has been browsing builder websites for two weeks since her architect submitted the planning application for a single-storey rear extension with lantern roof and open-plan kitchen-diner. She likes your gallery — clean brickwork, neat steel installations, finished kitchens that look magazine-quality. She types into the chat: 'We have got planning for a rear extension — about 5m x 8m with a lantern roof. Are you available to start in September?' Without chat, she bookmarks the page and adds you to a spreadsheet of builders to ring this weekend. With AI Website Chat, the AI asks about the property postcode, confirms your build types, and captures her contact details. Thursday morning you call with a lead already containing the scope, planning status, and timeline."
+  scenario="It is 10:30pm on a Sunday. A self-builder in Chipping Norton is working through his architect's specification for a four-bedroom timber-frame house on a rural infill plot. Planning is approved, the groundworks contractor is confirmed, but he needs a main contractor to manage the superstructure build from slab to second fix. He has been browsing builders' websites all evening, comparing portfolios of new-build projects. He finds your site, sees your timber-frame and SIP panel experience, and types: 'Planning for a 4-bed timber-frame house approved — need a main contractor from slab onwards. Can you manage timber-frame erection, first and second fix, and all finishing trades? Plot is near Chipping Norton. Hoping to start in March.' Without AI Website Chat, he adds you to the call list and forgets until the following weekend. Meanwhile two other builders he contacted tonight via chat have already responded and arranged Tuesday site meetings. With AI Website Chat, the AI replies instantly, confirms your timber-frame capability, asks about the frame supplier, and captures his details. Monday at 8am you call: four-bedroom self-build, timber frame, Chipping Norton, March start, main contractor role from slab. You arrange a Wednesday site meeting and begin the most significant project of the year."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/building-contractors/ai-receptionist/"
+  ctaHeadline="Convert Extension Research into Site Visit Bookings"
+  ctaSubhead={`A homeowner browsing builder portfolios at 9pm has planning permission and a budget. A chat widget captures the lead before the bookmark. Included at £${pricing.tiers.core.price}/month.`}
+/>

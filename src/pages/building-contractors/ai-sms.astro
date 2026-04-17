@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Quick Availability Checks',
+    text: "Homeowners text builders to test the water — 'any chance you are free to look at an extension job for us?' A fast, professional reply opens the conversation. A four-hour silence while you are on the scaffold sends them to the next builder."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Project Briefs from Fragments',
+    text: "A text saying 'want a loft conversion, 3 bed semi, Witney' gives the AI enough to start — and it asks about the conversion type (dormer, hip-to-gable), whether they have drawings, and their timeline. Your lead arrives as a structured brief."
+  },
+  {
+    icon: '🔔',
+    title: 'Captures Recommendation Texts',
+    text: "Recommendations drive a huge proportion of building work. A text saying 'Sandra next door recommended you — we want an extension similar to hers' is a warm lead with built-in trust. The AI responds instantly and captures the scope while the referral energy is fresh."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Homeowners text builders in the evening after discussing their project at home. A 9pm text about a kitchen extension is genuine intent. The AI catches it while you rest."
+  },
+  {
+    icon: '📋',
+    title: 'Consolidates Multi-Message Threads',
+    text: "People text in stages — 'need an extension' then 'it is the back of the house' then 'about 4 by 6 metres' then 'we are in Abingdon.' The AI consolidates the thread into one lead with all the information."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS operates through your business line. Clients text a professional number and receive a business-quality response."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a text about a building project?",
+    answer: "The AI identifies the construction enquiry and responds professionally under your company name. A detailed text like 'need a single-storey rear extension with bi-folds, we have planning, in OX14' is logged with full context. A shorter text like 'are you available for building work?' prompts the AI to ask about the project type, scope, location, and timeline."
+  },
+  {
+    question: "Will the sender know it is AI replying?",
+    answer: "The response reads as a professional building company replying between tasks on site. It uses your company name, asks relevant project questions, and matches the tone homeowners expect from an organised builder. The professionalism of the response is often what persuades the sender to share their full project details."
+  },
+  {
+    question: "What about texts regarding ongoing builds?",
+    answer: "Existing clients sometimes text about live projects — delivery confirmations, schedule queries, or site access issues. The AI captures these and flags them separately from new enquiry texts, so you can distinguish between a new extension lead and a client confirming the electrician can access the site tomorrow morning."
+  },
+  {
+    question: "How much does AI SMS cost for builders?",
+    answer: `The SMS channel costs £${pricing.addOn.price}/month as an add-on. Building contractors typically handle projects ranging from a £10,000 garage conversion to extensions exceeding £80,000. A single domestic enquiry captured through a quick text reply during a busy site day represents a return on investment that makes the monthly add-on cost negligible.`
+  },
+  {
+    question: "Can I reply to texts myself when convenient?",
+    answer: "Typing your own reply in any text thread transfers control to you and the AI steps aside. Between site visits, at the merchant, or in the office, you handle texts personally. On the scaffold or during a pour, the AI maintains the professional response."
+  },
+  {
+    question: "How is SMS data protected?",
+    answer: "Text conversations — including property addresses, project descriptions, planning references, and contact details — are encrypted and stored on UK and EU servers under UK GDPR. Data is accessible only to you and is never shared, sold, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Building Contractors | Rapid Receptionist"
+  description={`AI SMS for UK building contractors. Responds to extension texts, loft conversion enquiries, and recommendation referrals while you manage the site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/building-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Building Contractor"
+  tradeNamePlural="Building Contractors"
+  tradeSlug="building-contractors"
+  headline="AI SMS for Building & Construction Businesses"
+  accentWord="Building & Construction"
+  subhead="Your crew has just finished stripping out the internal walls for a kitchen extension in Eynsham — the structural steel is due from the fabricator on Wednesday and you have been managing the skip logistics all morning. The neighbour from across the road texts: 'Hi — been watching the work progress over the fence. Brilliant quality. We want a similar rear extension. Can you come and have a chat when you get a minute?' You are covered in demolition dust, loading the skip, phone on the dashboard. Without AI SMS, the text waits until you shower at home. By evening the neighbour has texted two other builders from Google. With it, the reply goes back in seconds, the neighbour confirms her address, and you walk across the road with a tape measure at the end of the working day."
+  scenario="It is 8:35pm on a Monday. A homeowner in Carterton has been discussing a loft conversion with his partner all evening. They have measured the loft space, checked the head height, and decided they want a dormer conversion to create a fourth bedroom and en-suite for their growing family. He texts three builders: 'Hi — interested in a dormer loft conversion for our 3-bed detached in OX18. Existing loft has good head height. Want a bedroom and en-suite. Can you give us a rough idea of cost and timeframe?' Without AI SMS, you see the text Tuesday morning at 7am during the commute. Two other builders replied by 9pm Monday — one gave a ballpark range, the other offered a Wednesday site visit. By Tuesday morning the homeowner has booked both. With AI SMS, the response arrives at 8:36pm: 'Thank you for your message. Dormer loft conversions are one of our core services. The cost and programme depend on the dormer type, structural requirements, and spec level. Could you confirm whether you have any existing drawings and your preferred timeframe? We will arrange a site assessment and provide a detailed quotation.' He replies with his preferred dates and mentions he has a structural survey from when he bought the house. Tuesday morning you open the lead: dormer loft conversion, 3-bed detached, OX18, bedroom and en-suite, structural survey available, timeline flexible. You call at 8am and book a Thursday evening visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/building-contractors/ai-receptionist/"
+  ctaHeadline="Capture Every Neighbour Referral Text at the Skip"
+  ctaSubhead={`The neighbour watching your crew across the road texts while you load the skip. The AI replies before you wipe the dust off your phone. Add-on at £${pricing.addOn.price}/month.`}
+/>

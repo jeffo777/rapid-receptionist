@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Manage the Site',
+    text: "Building contractors spend entire days physically on site — checking subcontractor progress, coordinating deliveries, meeting building control, fitting steels, and solving the hundred daily problems that keep a build on programme. The AI answers every call with your company name and captures a structured project brief."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Detailed Project Briefs',
+    text: "When a homeowner calls about a wraparound extension with a kitchen-diner and bi-fold doors opening onto the garden, the AI captures the project scope, planning status, approximate budget if mentioned, property postcode, and ideal start date. When an architect calls about a JCT Minor Works tender with a four-week return deadline, the AI captures the contract form, project type, deadline, and the architect's contact details."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Urgent Site Issues',
+    text: "Not every call is a new enquiry — existing clients chase progress, building control calls to reschedule inspections, and subcontractors need programme clarifications. The AI identifies urgency and escalates critical calls to your mobile. If you are mid-pour and cannot answer, it routes to human operators who reach your site manager."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches After-Hours Enquiries',
+    text: "Homeowners discuss building projects in the evening — around the kitchen table with their architect's drawings spread out, laptop open showing Pinterest boards of kitchen-diners. The 8:30pm call to a builder they found on Checkatrade is a high-intent lead. The AI captures the project while the enthusiasm is fresh."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Summaries for Busy Builders',
+    text: "Each lead includes the project type, scope, planning status, approximate size, property location, any professional contacts mentioned (architect, structural engineer), and the caller's timeline. You can assess whether this is a £15,000 garage conversion or a £250,000 new build before you ring back."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional First Impression',
+    text: "Building work involves significant trust and investment. A professional AI greeting using your company name — followed by informed questions about the project — signals to homeowners and architects that they are dealing with an organised, capable contractor."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their building project?",
+    answer: "The conversation flows naturally based on what the caller describes. For domestic clients, the AI asks about the project type (extension, conversion, refurbishment), planning status, approximate scope, the property location, and their timeline. For professionals issuing tenders, it captures the contract type, project details, submission deadline, and their contact information. The caller experiences a knowledgeable, professional reception."
+  },
+  {
+    question: "Can the AI handle calls from architects and quantity surveyors?",
+    answer: "Professional callers issuing tenders or inviting expressions of interest are handled with the formality they expect. An architect describing a barn conversion specification with structural opening-up and glazed gable end generates a lead summary that reads like a tender brief. A QS forwarding a bill of quantities for pricing receives a professional acknowledgement and their details are captured precisely."
+  },
+  {
+    question: "What if building control calls about an inspection?",
+    answer: "The AI recognises that building control, structural engineers, and local authority officers are not new enquiries but operational calls. It captures the caller's name, organisation, the building or site they are calling about, and the nature of the call, then escalates to your mobile or flags as urgent. You receive the message alongside your new leads but clearly categorised."
+  },
+  {
+    question: "How many minutes does the plan provide?",
+    answer: `The Core plan at £${pricing.tiers.core.price}/month includes ${pricing.tiers.core.minutes} minutes of AI phone answering. Building contractors typically receive a mix of domestic enquiry calls and professional tender communications — most operate well within the allowance. Overage is charged at 20p per minute with no penalties. During busy periods when multiple projects are generating calls, the plan flexes with your workload.`
+  },
+  {
+    question: "Can I answer my own phone during quieter moments?",
+    answer: "When you are at the office pricing a job, at the builders' merchant, or driving between sites, calls ring through to your mobile as normal. The AI catches only the calls you physically cannot answer — when you are on the scaffold, managing a concrete pour, or outside your operating hours. The switch is controlled by your schedule and you can override it from your dashboard."
+  },
+  {
+    question: "How is tender and project data kept secure?",
+    answer: "Building contractor enquiries routinely include property addresses, planning references, architectural specifications, bill of quantities data, and commercially sensitive contract information. Everything captured by the AI is encrypted, stored on UK and EU servers under UK GDPR, and accessible only to you. Tender data is never shared with competitors, subcontractors, or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Building Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK building contractors. Captures extension enquiries, barn conversion tenders, and new-build leads while you manage the site. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/building-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Building Contractor"
+  tradeNamePlural="Building Contractors"
+  tradeSlug="building-contractors"
+  headline="AI Phone Answering for Building & Construction Companies"
+  accentWord="Building & Construction"
+  subhead="An architect calls at 10:15am about a single-storey rear extension for a client in Headington — structural steel required, two-course cavity wall, contemporary flat roof with parapet detail, and a glazed corner connecting to the garden. She wants three tenders returned in three weeks. You are on site at a loft conversion in Summertown — the dormer steels arrived this morning, your carpenter is building the framework, and you are checking the structural engineer's drawings against the as-built dimensions. Without AI Phone Answering, the architect hears voicemail and calls the next builder on her list. With it, the AI captures the project — single-storey extension, structural steel, flat roof with parapet, glazed corner, Headington, three-week tender return — and your lead is ready when you climb down at lunch."
+  scenario="It is 2:45pm on a Wednesday. You are managing a complex day at a whole-house refurbishment in Witney. The bricklayers have finished the extension walls and the scaffolders are wrapping up. The electrician needs first-fix sign-off before the plumber can start. Building control has called to confirm a Friday beam-bearing inspection. Amidst all this, three new enquiry calls come in between 2pm and 4pm. Without AI Phone Answering, one leaves a voicemail — 'Hi, wanting a price for a double-storey extension, give me a ring' — no name, no details. The other two hang up. You check your phone at 4:30pm, try the voicemail number, and reach voicemail yourself. Two leads lost entirely, one going cold. With AI Phone Answering, all three calls are answered professionally. Lead one: double-storey side extension with kitchen-diner below and bedroom above, planning approved, Carterton OX18, wants to start in eight weeks. Lead two: garage-to-living-space conversion, insulation and Building Regs route query, Eynsham, flexible timeline. Lead three: an architect requesting your credentials for a listed cottage renovation tender in Burford with a four-week submission window. At 4:30pm you open three structured leads, call the double-storey extension client first — the highest value — and book a Friday evening site visit. You email the architect your company profile before close of business."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/building-contractors/ai-receptionist/"
+  ctaHeadline="Never Miss a Tender Call While You Manage the Pour"
+  ctaSubhead={`An architect tendering your next project calls once. If voicemail answers, the next builder on the list gets the invitation. From £${pricing.tiers.core.price}/month.`}
+/>

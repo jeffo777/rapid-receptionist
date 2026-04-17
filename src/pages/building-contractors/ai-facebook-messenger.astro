@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Project Gallery Engagement',
+    text: "Building contractors with Facebook galleries of completed extensions, loft conversions, and renovations attract enquiries from homeowners who see the finished result and want something similar. When a follower messages your page, the AI responds within seconds and captures their project vision."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Before-and-After Messages',
+    text: "Facebook users message building company pages with photos of their current property — 'this is our kitchen, we want to knock through to the dining room and extend out the back.' The AI acknowledges the images, asks about planning status and dimensions, and delivers the photos alongside a structured lead."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Recommendation-Chain Leads',
+    text: "Building work generates powerful recommendations — happy clients post about their new extension on Facebook, tag the builder, and friends message the page asking for quotes. These warm, trust-rich leads must be captured immediately before the momentum fades."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Sunday Planning Sessions',
+    text: "Sunday afternoon is when couples make building decisions — browsing extension ideas, reviewing builder portfolios, and discussing budgets. A Sunday Messenger enquiry is a committed domestic lead that the AI captures for Monday morning."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Informal Build Messages',
+    text: "Messenger conversations about building work wander — 'want an extension,' then 'maybe two storeys,' then 'have you done any in Witney?' The AI consolidates the thread into one coherent lead with project type, scope, location, and contact details."
+  },
+  {
+    icon: '🔗',
+    title: 'Turns Likes into Leads',
+    text: "Every completed project photo posted on Facebook generates engagement. AI Messenger converts that engagement into bookings. A loft conversion gallery post can bring three enquiries in a weekend."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my building company?",
+    answer: "A Facebook Business page with Messenger turned on is the requirement — personal profiles cannot connect. Most building contractors maintain a Facebook presence for sharing project progress, completed work galleries, and client reviews. Even a basic page benefits from the AI handling incoming Messenger enquiries professionally."
+  },
+  {
+    question: "What building enquiries come through Messenger?",
+    answer: "Predominantly domestic — homeowners who have seen your work through a friend's recommendation or found your page through local search. Typical requests include rear extensions, loft conversions, garage conversions, internal reconfiguration, and whole-house renovations. Occasionally, developers and landlords discover your page through shared posts and message about conversion or HMO projects."
+  },
+  {
+    question: "How fast does the AI respond on Messenger?",
+    answer: "Responses arrive within seconds. Messenger displays active indicators, so the homeowner sees your business engaging immediately. In building — where homeowners typically contact three to five contractors — the first professional response frequently secures the initial consultation. A builder who replies Monday to a Saturday message has already lost ground."
+  },
+  {
+    question: "What does Messenger cost for a building contractor?",
+    answer: `Facebook Messenger costs £${pricing.addOn.price}/month as a channel add-on. Given that building contractors handle projects ranging from garage conversions at £10,000 through to extensions at £50,000 to £100,000 and loft conversions at £30,000 to £60,000, one converted Facebook enquiry generating even the smallest of these projects repays the add-on cost several times over across a year.`
+  },
+  {
+    question: "Can I continue a Messenger conversation myself?",
+    answer: "Sending your own message in any thread transfers it to you. The AI withdraws and the homeowner sees one seamless conversation. Most builders let the AI handle the initial response and project scope capture, then follow up personally to discuss timelines, specifications, and pricing."
+  },
+  {
+    question: "How is Messenger data protected?",
+    answer: "All Messenger conversations, property photos, project descriptions, planning details, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you and is never used for advertising, sold to lead aggregators, or accessed by anyone outside your company."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Building Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK building contractors. Converts extension gallery engagement and recommendation referrals into project leads from your Facebook page. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/building-contractors/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Building Contractor"
+  tradeNamePlural="Building Contractors"
+  tradeSlug="building-contractors"
+  headline="AI Facebook Messenger for Building Companies"
+  accentWord="Building Companies"
+  subhead="You post a gallery of a completed wraparound extension — open-plan kitchen-diner, herringbone floor, Crittall-style glazing, bi-fold doors opening to a landscaped garden. A hundred and forty likes, twenty shares. A homeowner in Bicester sees the post through a friend's share and messages: 'This is exactly what we want to do — we have a three-bed semi with a tiny galley kitchen. Can you do something similar for us?' You are on a different site, pouring the foundation for a garage conversion. Without AI Messenger, the message waits until Thursday. With it, the homeowner gets an instant response, shares photos of her current kitchen, and your lead — galley-to-open-plan extension, 3-bed semi, Bicester — is waiting when you check your phone."
+  scenario="It is 6:45pm on a Friday. You have just posted a progress video from a loft conversion project — a time-lapse of the dormer framework going up, steels being positioned, and the felt going on. Within two hours it has ninety views and four comments. A homeowner in Kidlington messages at 8:30pm: 'Incredible transformation. We have got a hip roof on our bungalow and we have been told it could be converted to create two bedrooms upstairs. Is that something you do? Our neighbours had theirs done but used a different builder who they were not entirely happy with.' Without AI Facebook Messenger, you see the message Saturday morning, start typing a reply but get distracted by a call about Monday's lintel delivery, and finally respond at noon — by which time the homeowner has also messaged two other builders, one of whom replied at 9pm Friday with relevant hip-to-gable project examples. With AI Messenger, the reply arrives at 8:31pm: 'Thank you — hip-to-gable and mansard conversions on bungalows are one of our core specialisms. Could you share your postcode and any photos of the existing roof? We will assess the conversion potential and arrange a consultation.' She sends two photos and her postcode. Saturday morning you open the lead: hip-to-gable bungalow conversion, two bedrooms, Kidlington, previous neighbour experience, photos attached. You call at 9am and book a Tuesday evening visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/building-contractors/ai-receptionist/"
+  ctaHeadline="Turn Every Extension Gallery Post into a Site Visit Booking"
+  ctaSubhead={`A wraparound extension gallery earns a hundred likes. AI Messenger converts the messages into project leads with scope, photos, and contact details. Add-on at £${pricing.addOn.price}/month.`}
+/>

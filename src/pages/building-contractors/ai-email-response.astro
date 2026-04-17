@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Tender Packages Instantly',
+    text: "Architects, quantity surveyors, and project managers send building work tenders by email — specifications, drawings, bills of quantities, and programme requirements. The contractor who acknowledges first demonstrates both interest and professional capacity. AI Email Response sends your acknowledgement within sixty seconds of receipt."
+  },
+  {
+    icon: '📐',
+    title: 'Recognises Construction Specification Language',
+    text: "When a tender email specifies 'JCT Design and Build 2024, two-storey rear extension with partial basement, piled foundations, structural steelwork, insulated render system, and mechanical ventilation with heat recovery,' the AI captures the technical scope in the acknowledgement. The architect sees that the email reached a capable building company."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your On-Site Email Gap',
+    text: "Building contractors spend entire days managing construction — coordinating trades, checking workmanship, solving problems. An architect's tender email arriving at 9am and sitting unread until evening has lost competitive ground. The AI acknowledges while you build."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Domestic Enquiries',
+    text: "Your inbox is a mix — formal tender invitations from architects, homeowner contact-form submissions, building material supplier quotes, subcontractor availability confirmations, and Building Regs correspondence. The AI identifies genuine enquiries and your lead summary provides clear categorisation."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Architect Confidence',
+    text: "Architects who have worked with you before expect prompt responses when they issue new tenders. A sixty-second acknowledgement reinforces their confidence in your capacity and keeps you on their preferred contractor list for future projects."
+  },
+  {
+    icon: '📎',
+    title: 'Logs Tender Attachments',
+    text: "Building tenders arrive with architectural drawings, structural calculations, specification documents, and bills of quantities. The AI notes the attachments in both the acknowledgement and your lead summary — '4 attachments: floor plans, structural calcs, specification, and BoQ' — so you know exactly what to review."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce a full tender submission?",
+    answer: "The AI sends only the initial acknowledgement — confirming receipt of the tender, referencing the project type and any submission deadline, and assuring the architect or QS that a detailed response will follow. Your methodology, programme, pricing, preliminaries, and supporting documentation are compiled entirely by you using your own estimating process."
+  },
+  {
+    question: "Will it respond to supplier and merchant emails?",
+    answer: "During setup, the system learns to filter your inbox — supplier price lists from Jewson and Travis Perkins, skip hire booking confirmations, scaffold hire invoices, trade magazine subscriptions, and insurance renewal reminders are all ignored. Only genuine project enquiries, tender invitations, and architect correspondence trigger an acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner contact-form emails?",
+    answer: "Homeowner enquiries arriving through your website contact form — 'we want a quote for a rear extension' or 'looking for a builder for a loft conversion' — receive a professional acknowledgement confirming interest and asking about the project scope and timeline. Your lead summary flags these as domestic enquiries alongside any professional tenders."
+  },
+  {
+    question: "What does AI Email Response cost for a building contractor?",
+    answer: `Email response is priced at £${pricing.addOn.price}/month as an add-on. For building contractors tendering for projects worth £50,000 to £500,000 — where being the first to acknowledge can influence the architect's recommendation to the client — a sixty-second response offers a competitive advantage that vastly exceeds the monthly investment.`
+  },
+  {
+    question: "Can I write my own follow-up emails?",
+    answer: "Absolutely — the AI is limited to that first acknowledgement confirming receipt. Every subsequent message in the thread — your tender submission, preliminaries breakdown, construction programme, CDM documentation, and references — is written and sent by you. The AI never contributes to follow-up correspondence."
+  },
+  {
+    question: "How is tender email data secured?",
+    answer: "Tender documents — including architectural drawings, specifications, bills of quantities, and pricing information — are commercially sensitive. All email content processed by the AI is encrypted, stored on UK and EU servers under UK GDPR, and shared exclusively with you. Tender information is never disclosed to competing contractors or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Building Contractors | Rapid Receptionist"
+  description={`AI email response for UK building contractors. Acknowledges architect tenders, development briefs, and homeowner enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/building-contractors/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Building Contractor"
+  tradeNamePlural="Building Contractors"
+  tradeSlug="building-contractors"
+  headline="AI Email Response for Building & Construction Firms"
+  accentWord="Building & Construction"
+  subhead="An architect emails a tender for a three-bedroom new-build house on an infill plot in Woodstock — full specification, structural calculations, M&E layout, and a bill of quantities priced to JCT Minor Works terms. Tender return is three weeks. You are on site managing a loft conversion — the dormer steels went in this morning, the felt is going on the roof, and the carpenter is trimming the opening for the new staircase. Without AI Email Response, the tender sits unread in your inbox until you open your laptop after dinner. Two other builders acknowledged by lunchtime and the architect has already shared additional surveyor information with them. With it, your acknowledgement arrives within sixty seconds — 'Thank you for the three-bedroom new-build tender. We have received the specification, structural calculations, and BoQ, and will review them in detail this week.' — and the architect files your response alongside the others before lunch."
+  scenario="It is 7:30am on a Tuesday. You are at the builders' merchant collecting steel lintels and DPC for a garage conversion starting today. Your phone buzzes with emails accumulated overnight: a Checkatrade lead for a bathroom renovation, a quantity surveyor forwarding a tender for a six-flat conversion of a former pub with structural strengthening and sprinkler installation, an existing client emailing about a snagging list, and a building control officer confirming a Thursday inspection. Without AI Email Response, you skim the subject lines, star the QS tender, and drive to the first site. The tender sits unread until Wednesday evening. The QS emailed four builders; two acknowledged by 9am Tuesday and have already downloaded the tender documents. With AI Email Response, the QS tender receives an immediate acknowledgement noting the six-flat conversion scope and submission deadline, the Checkatrade bathroom lead gets a separate acknowledgement confirming interest, the client snagging email is flagged for your review, and the building control confirmation is noted. At lunch you open four structured leads — the six-flat tender (estimated contract value £800,000), the bathroom renovation (£12,000), and two operational items to address. You prioritise the QS tender, download the documents, and begin your review that evening with the full submission window ahead of you."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/building-contractors/ai-receptionist/"
+  ctaHeadline="Acknowledge Architect Tenders While You Manage the Build"
+  ctaSubhead={`A three-week tender window starts when the email arrives, not when you read it. An acknowledgement within sixty seconds keeps you competitive from the first minute. Add-on at £${pricing.addOn.price}/month.`}
+/>
