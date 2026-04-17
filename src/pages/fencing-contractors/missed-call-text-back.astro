@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls Missed During Physical Work',
+    text: "Concreting posts, nailing feather edge boards, operating a post knocker, or wrestling wind-blown panels into position — fencing is hands-on work where your phone is the last thing you can reach. When a call goes unanswered, Missed Call Text Back sends a branded text within seconds. The homeowner knows you are working, not ignoring them."
+  },
+  {
+    icon: '⏱️',
+    title: 'Acts Before the Caller Moves On',
+    text: "A homeowner calling about a blown fence panel will call two or three fencing companies. If your phone goes to voicemail, they call the next number immediately. A text arriving six seconds later — 'Thank you for calling, we are on site and will call you back shortly' — pauses that search. You stay in the running."
+  },
+  {
+    icon: '🏷️',
+    title: 'Branded and Trustworthy',
+    text: "The text arrives from your business number with your company name. For fencing — a trade plagued by fly-by-night operators — a professional text response immediately signals that you are an established, responsive business. Trust starts before the callback."
+  },
+  {
+    icon: '📊',
+    title: 'Storm-Season Safety Net',
+    text: "After a named storm, missed call volumes spike dramatically. You might miss ten, twenty, thirty calls in a single day while repairing fences. Missed Call Text Back ensures every one of those callers receives an immediate acknowledgement, reducing the number who slip away to competitors."
+  },
+  {
+    icon: '📋',
+    title: 'Gathers Context from Text Replies',
+    text: "Callers often reply to the text with details — 'it is about 4 panels blown down in Abingdon, backs onto a field' or 'need a quote for a new boundary fence, about 20 metres.' Your lead summary includes the phone number and the text reply. You call back with context."
+  },
+  {
+    icon: '🔄',
+    title: 'Complement to AI Phone Answering',
+    text: "Most calls are answered by the AI phone system. Missed Call Text Back catches the exceptions — callers who hang up after one ring, rare connectivity gaps, or moments when you briefly have signal but not enough for the AI to connect. Together, both systems form a complete net."
+  }
+];
+
+const faqs = [
+  {
+    question: "When exactly does the text go out?",
+    answer: "The text fires the instant a call reaches voicemail or goes unanswered within your set ring time. Delivery to the caller happens within seconds — typically before they have scrolled to the next fencing company in their search results. During storm periods when callers are anxious and impatient, this immediacy is especially valuable."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You write the message yourself during setup — it is fully customisable and can be changed at any time. A typical fencing contractor's message might read: 'Thank you for calling [your business]. We are currently on site and will call you back as soon as possible. If your fence is an emergency, reply to this text with the details.' The tone, wording, and calls to action are entirely yours."
+  },
+  {
+    question: "Does Missed Call Text Back replace AI Phone Answering?",
+    answer: "They work as a pair, not as alternatives. AI Phone Answering intercepts the call and conducts a full conversation, capturing a detailed lead. Missed Call Text Back handles the small number of calls that slip through — a caller who hangs up before the AI connects, or a brief mobile signal dropout. Phone answering is the first line; text back is the safety net behind it."
+  },
+  {
+    question: "How much does this feature cost?",
+    answer: `The add-on is £${pricing.addOn.price}/month alongside your Core plan. For a fencing contractor where a single domestic boundary replacement is worth £1,000 to £3,000 and a commercial perimeter contract can exceed £20,000, recovering even one missed call through a text response delivers a return that dwarfs the monthly cost — especially during November to March storm season when missed call rates peak.`
+  },
+  {
+    question: "Do callers actually reply to these texts?",
+    answer: "Many do. Common replies include the type of fence they need, the number of panels affected, their location, and whether it is urgent. These text replies appear in your lead summary alongside the missed call record. You start your callback knowing who called, what they need, and where they are — eliminating the 'who was that missed call from?' guessing game."
+  },
+  {
+    question: "Is missed call data kept secure?",
+    answer: "All missed call records, phone numbers, and text replies — including addresses, damage descriptions, and boundary details — are encrypted and stored on UK and EU servers under UK GDPR. Data is shared only with you. No information is sold, repurposed, or accessed by anyone outside your business."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Fencing Contractors | Rapid Receptionist"
+  description={`Missed Call Text Back for UK fencing companies. Automatically texts callers when you are concreting posts or nailing panels — keeps the lead warm during storm season. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fencing-contractors/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Fencing Contractor"
+  tradeNamePlural="Fencing Contractors"
+  tradeSlug="fencing-contractors"
+  headline="Missed Call Text Back for Fencing Contractors"
+  accentWord="Fencing Contractors"
+  subhead="It is 9am on a Tuesday in November. Storm Babet was two days ago and your phone has not stopped ringing. You are on a job replacing six panels and two concrete posts at a property in Headington, postcrete setting around a plumbed post, both hands occupied. Three calls come in before 10am. Without Missed Call Text Back, three homeowners hear voicemail, two call other fencing companies, and you lose two potential jobs before you even check your phone. With it, all three receive an instant text — 'Thank you for calling, we are on a storm repair and will call you back shortly' — and all three wait."
+  scenario="It is 2:30pm on a Saturday in late October. You have just finished a close board fence installation along a rear boundary in Didcot — posts concreted, rails attached, feather edge boards nailed and capped. You are loading tools into the van when you realise you had two missed calls during the last hour of the job — one at 1:45pm and one at 2:15pm. Without Missed Call Text Back, you listen to the voicemails. The first is a homeowner in Wallingford: 'Hi, just wondered if you could quote for a new fence, give me a ring back please.' There is no name. The second voicemail is blank — someone who hung up. You call the first number back but it goes straight to voicemail. The second number gives you nothing to work with. Both leads are effectively lost. With Missed Call Text Back, the 1:45pm caller received a text six seconds after hanging up: 'Thank you for calling [your company]. We are on a job and will call you back shortly. If you would like a quicker response, reply with your fencing requirements.' She replied at 1:48pm: 'Need about 12 metres of close board fencing with concrete posts down the left side of our rear garden. We are in Wallingford, OX10. Can you do a site visit this week?' The 2:15pm caller — who left a blank voicemail — also received the text and replied: 'Hi, just moved into a new build and the developer only put up cheap lapboard fence. Want to upgrade to proper close board. About 20 panels worth. Can you help?' At 2:35pm, sitting in the van, you see two lead summaries: one for 12 metres of close board in Wallingford with a midweek visit request, and one for a 20-panel lapboard-to-close-board upgrade in a new build. You call both within ten minutes and book surveys for Tuesday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/fencing-contractors/ai-receptionist/"
+  ctaHeadline="Recover Every Storm-Season Missed Call with a Text"
+  ctaSubhead={`November through March, your missed call rate doubles. A text within seconds keeps every caller waiting for your callback. Add-on at £${pricing.addOn.price}/month.`}
+/>

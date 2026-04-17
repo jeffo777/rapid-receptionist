@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Responds to Storm Damage Messages Instantly',
+    text: "After a named storm, WhatsApp lights up — homeowners sending photos of flattened panels, snapped posts, and exposed boundaries. You are already on a repair job with postcrete on your hands. The AI responds to every message within seconds, captures the damage details and location, and queues them as prioritised leads so you can triage the most urgent repairs first."
+  },
+  {
+    icon: '📸',
+    title: 'Processes Boundary Photos',
+    text: "Homeowners send WhatsApp photos constantly — pictures of rotting panels, leaning posts, boundary disputes marked with string lines, and screenshots of fences they like from Pinterest. The AI acknowledges the images, asks about the boundary length and materials preferred, and delivers the photos alongside a structured lead summary. You can assess the job scope from the photos before calling back."
+  },
+  {
+    icon: '⚡',
+    title: 'Secures Jobs in Competitive Periods',
+    text: "Fencing is fiercely competitive — homeowners often WhatsApp three or four contractors with the same photo and message. The contractor who replies first usually gets the site visit. While you are concreting posts on another job, the AI ensures that first reply is always yours."
+  },
+  {
+    icon: '🌙',
+    title: 'Captures Evening and Weekend Messages',
+    text: "Homeowners notice their fencing problems in the evening and at weekends — walking the garden after work, hosting a barbecue and noticing the sagging panels, or discovering storm damage on Saturday morning. The AI catches these messages and delivers structured leads for your weekday schedule."
+  },
+  {
+    icon: '📋',
+    title: 'Turns Casual Messages into Proper Briefs',
+    text: "A WhatsApp saying 'mate can u fix 3 panels and a post in my back garden in Bicester?' becomes a structured lead: work type (panel and post replacement), quantity (3 panels, 1 post), location (Bicester). The AI adds contact details and availability to complete the brief."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Number',
+    text: "AI WhatsApp uses your business number. Clients message a professional line, receive professional responses, and your personal WhatsApp stays private."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI understand fence damage descriptions sent over WhatsApp?",
+    answer: "Homeowners describe fence damage in their own words — 'the wind ripped out three panels and the post is cracked at the bottom' or 'the whole fence is leaning into the neighbour's garden.' The AI captures the description accurately, asks clarifying questions about the boundary length and materials they want, and produces a lead summary that reads like a damage report. Technical accuracy matters less than capturing the caller's exact words — you interpret the specification on your callback."
+  },
+  {
+    question: "What about photo messages showing damaged fencing?",
+    answer: "Photos of fence damage are often the most useful part of a WhatsApp enquiry — you can see the post type, panel style, damage extent, and site access from a single image. The AI acknowledges photos, asks about the boundary length and replacement preferences, and attaches the images to your lead summary. Many fencing contractors report that a good damage photo saves them a wasted site visit by revealing the scope before they drive out."
+  },
+  {
+    question: "What does AI WhatsApp cost for a fencing company?",
+    answer: `WhatsApp is an add-on at £${pricing.addOn.price}/month alongside the Core plan. For fencing companies where homeowners routinely send damage photos and enquiry messages via WhatsApp — particularly younger homeowners who default to messaging rather than calling — this channel secures work that would otherwise go unnoticed during your busiest hours on site.`
+  },
+  {
+    question: "Can I take over a WhatsApp chat when I finish a job?",
+    answer: "The moment you type a reply directly in the WhatsApp thread, the AI steps aside and you continue the conversation. Most fencing contractors let the AI capture the initial details and photos, then follow up personally to discuss materials, give a rough price, and arrange a site visit. The customer sees one seamless conversation."
+  },
+  {
+    question: "Is WhatsApp message data stored securely?",
+    answer: "Every WhatsApp exchange — text, images, boundary descriptions, and contact details — is encrypted and held on UK and EU servers under UK GDPR. The data is accessible only to you and is never shared or repurposed. For fencing enquiries where customers share their home address and garden photos, this privacy protection is essential."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Fencing Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK fencing companies. Responds to storm damage photos, panel replacement requests, and boundary enquiries instantly while you are on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fencing-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Fencing Contractor"
+  tradeNamePlural="Fencing Contractors"
+  tradeSlug="fencing-contractors"
+  headline="AI WhatsApp for Fencing Contractors"
+  accentWord="Fencing Contractors"
+  subhead="A homeowner WhatsApps you six photos of a fence flattened by last night's wind — four panels down, two posts snapped at the base, the garden fully exposed to a public footpath. The message says: 'Can you fix this ASAP? Got young kids and the garden backs onto a path.' You are on another storm job, postcrete bag in hand, post in the ground. Without AI WhatsApp, the message sits for hours. With it, the homeowner gets a response in seconds, shares the home address, and your lead summary arrives with the photos and the urgency flag."
+  scenario="It is 3:45pm on a Saturday in January. Storm Jocelyn hit last night and you have been repairing domestic fencing since 7am — you are on your fourth job, fitting replacement concrete posts into gravel along the boundary of a semi-detached in Aylesbury. Your phone is in the van, vibrating with notifications you cannot check. A property developer WhatsApps you a chain of messages: first, a photo of a ripped-down chain link fence at a development site near Thame. Then: 'Hi, we have a 12-plot housing development and the temporary perimeter fencing on the south side has been destroyed by the storm. The site is open to a residential street and we are liable if anyone walks on. Need emergency fencing up by Monday morning.' Then a second photo showing the exposed southern boundary. Without AI WhatsApp, these messages join a queue of fifty storm-damage notifications. You finally read them at 8pm, exhausted, and reply Sunday morning — but the developer has already commissioned an emergency fencing crew who responded Saturday evening. With AI WhatsApp, the AI replies at 3:46pm: 'Thank you for the photos. We can see this needs urgent attention. Could you confirm the site address, the approximate length of fencing needed, and whether you need temporary or permanent replacement? One of our team will call you today.' The developer replies with the site postcode, '80 metres approximately,' and 'temporary Heras panels to secure it, then permanent mesh panel once the plots are handed over.' At 5pm you check your phone, see the lead summary with the site address, scope, urgency, and photos, and call the developer. You arrange Heras panels for Sunday morning and quote the permanent mesh panel fence for February. The overall value of the job — emergency temporary plus permanent — exceeds £15,000."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/fencing-contractors/ai-receptionist/"
+  ctaHeadline="Respond to Every Storm Damage WhatsApp Before Competitors"
+  ctaSubhead={`When fences are down across the county, homeowners and developers WhatsApp the fastest responder. AI WhatsApp ensures that is always you. Add-on at £${pricing.addOn.price}/month.`}
+/>

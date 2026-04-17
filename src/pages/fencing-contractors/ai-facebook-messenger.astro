@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Storm-Season Facebook Enquiries',
+    text: "After a named storm, fencing companies see a spike in Facebook Messenger enquiries — homeowners posting photos of their flattened fence and messaging local contractors through Facebook. The AI responds to each one immediately, captures the damage details, and converts the surge into a prioritised lead list while you are physically repairing fences elsewhere."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Damage Photo Messages',
+    text: "Homeowners send Messenger photos of blown panels, rotting posts, and collapsed boundaries. The AI acknowledges the images, asks about the boundary length and replacement preference, and delivers the photos alongside a structured lead summary. Seeing the damage before your callback helps you bring the right materials on the van."
+  },
+  {
+    icon: '⚡',
+    title: 'Beats Competitors on Response Time',
+    text: "Domestic fencing is competitive — homeowners shopping via Facebook message multiple companies and book the first to respond. A professional Messenger reply within seconds from the AI secures the initial conversation and sets the tone for winning the work."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Weekend Garden Time',
+    text: "Homeowners are in their gardens at weekends — noticing the fence leaning, seeing the neighbour's new close board installation, thinking about replacing their old lap panels. Weekend Messenger enquiries are prime domestic work leads. The AI catches them and has the lead ready for Monday morning."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Messenger Threads',
+    text: "Messenger conversations are fragmented. The AI consolidates them into clean lead summaries: fence type, panel count, boundary side, post type, gate requirement, postcode, and contact details."
+  },
+  {
+    icon: '🔗',
+    title: 'Turns Project Photos into Revenue',
+    text: "Posting completed fencing jobs on Facebook generates enquiries. A well-photographed close board boundary or oak post-and-rail paddock attracts comments and DMs. The AI converts that interest into actionable leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my fencing company?",
+    answer: "A Facebook Business page with Messenger active is required — not a personal profile. Most fencing contractors already have one for posting project photos. Even if your page is rarely updated, the AI handles incoming messages professionally. We connect it during setup in a few straightforward steps."
+  },
+  {
+    question: "What fencing enquiries arrive through Facebook?",
+    answer: "The majority are domestic — homeowners who have seen your work on Facebook, been recommended by a friend, or found your page while searching for local fencing companies. Common requests involve boundary panel replacements, close board upgrades, gate installations, and storm damage repairs. Occasionally, smallholding and equestrian clients also enquire through Facebook about post and rail or stock fencing."
+  },
+  {
+    question: "How quickly does the AI respond on Messenger?",
+    answer: "Responses arrive within seconds. Facebook Messenger shows read receipts, so the homeowner knows their enquiry has been seen and is being handled. After a storm when homeowners are messaging multiple fencing companies simultaneously, this speed advantage is decisive — the first professional response typically secures the site visit."
+  },
+  {
+    question: "What is the cost for AI Facebook Messenger?",
+    answer: `This add-on costs £${pricing.addOn.price}/month alongside the Core plan. For fencing companies whose Facebook presence generates domestic enquiries — particularly after storms, when Messenger activity surges — this channel captures work that arrives through social media while you are physically repairing fences elsewhere. One storm-season lead covers the add-on for an entire year.`
+  },
+  {
+    question: "Can I continue Messenger conversations myself?",
+    answer: "Replying directly to a Messenger thread transfers control to you — the AI recognises your message and steps aside. You can follow up personally with pricing, material options, and site visit arrangements while the customer sees a single continuous conversation."
+  },
+  {
+    question: "How is Messenger data handled?",
+    answer: "All Messenger conversations, images, boundary details, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data is shared exclusively with you and is never used for advertising or any third-party purpose. Facebook's platform policies apply to the app itself, but the lead data we extract is handled within our UK infrastructure."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Fencing Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK fencing companies. Responds to storm damage enquiries, panel replacement requests, and boundary quotes through your page. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fencing-contractors/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Fencing Contractor"
+  tradeNamePlural="Fencing Contractors"
+  tradeSlug="fencing-contractors"
+  headline="AI Facebook Messenger for Fencing Companies"
+  accentWord="Fencing Companies"
+  subhead="Storm Isha hit last night. By 8am, your Facebook page has five Messenger notifications — homeowners sending photos of panels ripped off hinges, posts snapped at ground level, and gardens exposed to footpaths. You are already on a repair job with postcrete on your gloves. Without AI Messenger, those five enquiries sit unread until tonight. With it, every homeowner gets an instant response, shares their address and damage photos, and your lead queue is prioritised by urgency by the time you check your phone."
+  scenario="It is 4pm on a Sunday. A homeowner in Wantage is looking at her back garden after a windy night — the fence panel between her garden and the footpath behind the house has blown clean off, the concrete gravel board is cracked, and anyone walking on the path can see straight into her garden. She opens Facebook, searches 'fencing Wantage,' and finds your page. Your most recent post shows a completed close board fence — smart, professional, with concrete posts and gravel boards. She sends a Messenger message: 'Hi, we have lost a panel at the back where we adjoin the footpath. The gravel board is cracked too. We need it replaced quickly — my daughter's bedroom window looks straight onto the gap. Can you come this week?' Without AI Facebook Messenger, you see the message Monday afternoon. She has already had a fencing contractor recommended by a friend on Facebook and booked a Tuesday visit. With AI Messenger, the reply comes back in seconds: 'Sorry to hear about the panel — that must be concerning with the footpath access. Could you send a photo of the damage and share your postcode? One of our team will call you first thing tomorrow to arrange a visit.' She sends a photo showing the gap, the cracked gravel board, and the exposed footpath. Monday morning you open a lead with the photo, the urgency (child safety and footpath access), and the postcode. You call at 8am, visit at lunchtime with a replacement panel, post, and gravel board on the van, and have the fence repaired by 3pm."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/fencing-contractors/ai-receptionist/"
+  ctaHeadline="Turn Storm-Season Facebook Enquiries into Same-Week Repairs"
+  ctaSubhead={`After every storm, five homeowners message your Facebook page before lunch. The AI responds to all five while you repair the first. Add-on at £${pricing.addOn.price}/month.`}
+/>

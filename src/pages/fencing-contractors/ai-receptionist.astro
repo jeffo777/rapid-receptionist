@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A facilities manager at a distribution centre in Northampton calls on Monday morning about replacing 200 metres of palisade security fencing along the perimeter — the existing fence has been hit by a delivery lorry and the site is exposed overnight. You are concreting posts into the ground on a domestic close board job in Kettering, spirit level in one hand, fence post steady with the other, postcrete setting fast. The call goes to voicemail. The facilities manager needs the perimeter secured by the weekend and contacts two other fencing companies before lunch.",
+    with: "The same facilities manager calls. Your AI receptionist answers professionally, captures the full scope — 200 metres of palisade fencing, distribution centre, Northampton, perimeter breach, weekend deadline — and flags the urgency. At your next break you call back with the site details already in front of you and book a survey for Tuesday morning."
+  },
+  {
+    without: "An architect emails about acoustic fencing for a new housing development bordering a dual carriageway in Milton Keynes — planning conditions require a 3-metre acoustic barrier along the southern boundary, specified to a minimum sound reduction of 28dB. You are bolt-cutting and fitting mesh panel security fencing at a school in Bedford, angle grinder sparking, ear defenders on. Three other fencing contractors reply to the architect by Wednesday. You find the email on Thursday evening.",
+    with: "Your AI acknowledges the architect's email within sixty seconds, confirming receipt of the acoustic fencing specification and noting the planning condition. Wednesday morning you see the structured lead summary and call the architect before any competitor has sent a formal quotation."
+  },
+  {
+    without: "A homeowner WhatsApps on Sunday afternoon — Storm Isha has blown down three panels and a concrete post in their rear garden, the property backs onto a public footpath, and they need temporary security before the children go back to school on Monday. You are at home with your family. The WhatsApp goes unread until Monday morning. By then the homeowner has called a handyman who propped up the panels with timber battens and charged £150 for twenty minutes' work.",
+    with: "The Sunday WhatsApp gets an instant AI response. The AI captures the storm damage — three panels down, one concrete post snapped, rear boundary onto a public footpath, child safety concern — and offers a callback first thing Monday. You see the lead summary at 7am, call the homeowner at 7:30, and arrive with replacement panels and a new concrete post before school drop-off."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Domestic Fencing",
+    items: ["Close board fencing and feather edge", "Panel fencing (lap and overlap)", "Picket fencing and decorative styles", "Trellis and screening", "Concrete posts and gravel boards", "Pedestrian and driveway gates"]
+  },
+  {
+    category: "Commercial & Security Fencing",
+    items: ["Palisade and steel palisade fencing", "Mesh panel fencing (V-mesh and 358)", "Chain link and welded mesh", "Acoustic fencing and noise barriers", "Anti-climb and razor wire systems", "Automated gates and access control"]
+  },
+  {
+    category: "Agricultural & Specialist Fencing",
+    items: ["Post and rail fencing", "Stock fencing and deer fencing", "Equestrian fencing and field enclosures", "Knee rail and estate fencing", "Highway and safety barriers", "Temporary and event fencing"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏡",
+    title: "Homeowners & Residential Clients",
+    description: "The volume work for most fencing contractors — garden boundary replacements after storms, new fencing for extensions, privacy screening, and front garden railings. Homeowners often call urgently after storm damage or when planning work at short notice. Responding to these calls quickly — especially after severe weather when every fencing company is swamped — often determines who gets the work."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial & Industrial Clients",
+    description: "Factories, warehouses, distribution centres, car dealerships, and office parks needing perimeter security fencing, mesh panel enclosures, and automated gate systems. These projects are larger, longer, and more specification-driven. A facilities manager calling about a security breach needs a fast response — the site may be uninsured until the fence is repaired."
+  },
+  {
+    icon: "🏗️",
+    title: "Developers & Main Contractors",
+    description: "Housebuilders needing boundary fencing packages for new-build estates, commercial developers specifying acoustic barriers, and main contractors subcontracting perimeter fencing on construction sites. These clients issue formal tenders with tight response windows and value contractors who acknowledge promptly and demonstrate understanding of the specification."
+  },
+  {
+    icon: "🐴",
+    title: "Agricultural & Equestrian Clients",
+    description: "Farmers needing stock fencing for field boundaries, equestrian yards requiring post and rail for paddocks, and estate owners installing deer fencing or parkland boundaries. These clients often operate in rural areas with poor phone signal, making prompt text and WhatsApp responses as important as phone answering."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand fencing terminology when callers describe their project?",
+    answer: "Every term your clients use is recognised — close board, feather edge, overlap panel, concrete post, concrete gravel board, palisade, V-mesh, 358 mesh, chain link, post and rail, stock fencing, acoustic barrier, automated gate, and dozens more. When a facilities manager calls describing 'a 2.4-metre palisade perimeter with cranked tops and a sliding cantilever gate with intercom,' the AI records the specification precisely. Your lead summary reads like a site survey brief."
+  },
+  {
+    question: "Can the AI handle both a £300 garden fence and a £30,000 security fence contract?",
+    answer: "Fencing enquiries span an enormous range — from a homeowner needing three replacement panels after a storm to a facilities manager requiring 500 metres of anti-climb mesh with CCTV integration. The AI adapts its questioning instinctively: for domestic work it captures panel count, boundary length, post type, and access. For commercial work it records perimeter length, fence specification, height requirements, gate access, and any security standards. Both arrive as clear, structured lead summaries."
+  },
+  {
+    question: "What happens when someone calls about storm damage fencing?",
+    answer: "Storm damage calls are urgent — panels down, posts snapped, properties exposed to footpaths and roads. The AI detects the urgency, records the damage description and location, and escalates to your mobile immediately. If a storm has generated a surge of calls and you are already dealing with another emergency, the call routes to our human operators. You see the lead the moment you check your phone, with damage details and contact information ready for triage."
+  },
+  {
+    question: "How much does the service cost for a fencing company?",
+    answer: `For fencing contractors — whether a two-person domestic team or a company running multiple commercial crews — the Core plan at £${pricing.tiers.core.price}/month fits standard enquiry volumes. The plan includes ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. WhatsApp, SMS, email, and social media channels are available individually at £${pricing.addOn.price}/month each. A one-time setup fee of £${pricing.setup.price} is fully refundable within the 30-day guarantee period.`
+  },
+  {
+    question: "Is this practical for a sole trader fencing installer?",
+    answer: "Sole trader fencing contractors are on site alone all day — digging post holes, concreting posts plumb, fitting rails, nailing feather edge boards, hanging gates. Both hands are occupied, often with heavy materials, and the phone is in the van. Every missed call during a busy Tuesday in November — when half the country's fences have blown down — is a job going to the competitor who answered. One storm-damage job covers the annual cost of the service."
+  },
+  {
+    question: "Can I still take calls directly between jobs?",
+    answer: "When you finish a run of fencing and are driving to the next job, loading materials at the yard, or quoting on site, calls come straight to your mobile. The AI is a safety net that only activates when you cannot physically answer — in the middle of concreting, operating a post driver, or outside your set hours. You manage the schedule from your dashboard and can switch it on or off in seconds."
+  },
+  {
+    question: "How does the service handle customer data?",
+    answer: "Fencing enquiries involve property addresses, boundary dimensions, sometimes access codes for commercial sites, and contact details. All information captured by the AI is encrypted in transit and at rest, stored exclusively on UK and EU servers under UK GDPR, and shared only with you. We never sell or repurpose client data. You remain the data controller and Rapid Receptionist acts as your data processor under a formal agreement."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Fencing Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK fencing contractors — domestic, commercial, security, and agricultural fencing companies. Captures every call while you are concreting posts. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/fencing-contractors/ai-receptionist/"
+  tradeName="Fencing Contractor"
+  tradeNamePlural="Fencing Contractors"
+  tradeSlug="fencing-contractors"
+  headline="The AI Receptionist Built for Fencing Contractors"
+  accentWord="Fencing Contractors"
+  subhead={`You cannot answer the phone when you are concreting fence posts, fitting close board panels, or bolting palisade sections to a commercial perimeter. Your AI receptionist captures every call, every message, and every enquiry — from homeowners with storm-damaged panels to facilities managers needing 500 metres of security fencing. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Storm Season Does Not Check Whether You Can Answer the Phone"
+  ctaSubhead={`When panels are down across the county and every homeowner is calling at once, the AI ensures none of them hear voicemail. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

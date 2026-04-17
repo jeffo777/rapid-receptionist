@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While Posts Are Setting',
+    text: "Fencing work demands both hands — steadying a post while postcrete sets, nailing arris rails to slotted concrete posts, or bolting palisade pales to horizontal rails with an impact driver. Your phone is in the van, in a pocket you cannot reach, or face-down on the ground. The AI answers every call with your company name and captures the full enquiry before the postcrete has even hardened."
+  },
+  {
+    icon: '🏢',
+    title: 'Captures Commercial Security Briefs',
+    text: "When a facilities manager calls about replacing a damaged section of 2.4-metre mesh panel fencing with cranked tops around an industrial estate, the AI records the perimeter length, fence type, height, access requirements, and urgency. Your lead summary reads like a site assessment brief — not a garbled voicemail. You can price the job accurately before stepping foot on site."
+  },
+  {
+    icon: '🚨',
+    title: 'Prioritises Storm Damage Calls',
+    text: "After a named storm, your phone rings constantly. Panels blown flat, posts snapped at ground level, properties exposed to public access. The AI handles the surge, capturing each caller's damage description, location, and urgency level. Genuine emergencies — a boundary fence down onto a school playground — escalate to your mobile immediately. Standard panel replacements queue as prioritised leads."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Post-Storm Evening Calls',
+    text: "Homeowners discover fence damage when they get home from work — 6pm, 7pm, 8pm — and want it sorted before the weekend. These are exactly the calls that generate quick, profitable domestic work. The AI answers professionally, reassures the caller, and captures the damage details for your morning callback schedule."
+  },
+  {
+    icon: '📋',
+    title: 'Detailed Leads That Speed Up Quoting',
+    text: "Each call summary includes the fence type needed, run length, post type (concrete or timber), gate requirements, access situation, and the caller's postcode. For experienced fencing contractors, this is frequently enough to give a confident estimate on the callback — especially for standard close board and panel work where you know your costs per metre."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional Presence That Wins Trust',
+    text: "Fencing is a trade where cowboy operators damage the industry's reputation. A professional AI phone greeting — using your company name, asking informed questions about the boundary and materials — immediately separates you from the competition. Homeowners hear a proper business, not an unanswered phone, and their confidence increases before you have even visited."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI say when a homeowner calls about fencing?",
+    answer: "After greeting the caller with your company name, the AI has a natural conversation about their fencing needs — what type of fence they want (close board, panel, picket, mesh), the approximate run length in metres or panel count, whether they need posts and gravel boards replacing, any gate requirements, the property location, and their preferred timeline. The caller experiences a professional, knowledgeable reception rather than a voicemail."
+  },
+  {
+    question: "Can the AI distinguish between a small domestic repair and a large commercial contract?",
+    answer: "A homeowner calling about three blown-down panels generates a different lead from a site manager calling about 400 metres of V-mesh perimeter fencing for a new industrial unit. The AI adapts its questions to match the scope described — domestic callers are asked about panel count, post type, and access; commercial callers about perimeter length, fence specification, height, security features, and programme. The lead summaries arrive clearly differentiated."
+  },
+  {
+    question: "How does it handle a surge of calls after a storm?",
+    answer: "Named storms generate dozens of fencing enquiries in a single morning. The AI handles unlimited simultaneous calls without queuing or voicemail, capturing each caller's damage description, panel count, boundary situation, and postcode. You receive a prioritised list of leads rather than a full voicemail box and thirty missed calls. Properties with genuine safety risks — fences down onto roads or public paths — are flagged for immediate attention."
+  },
+  {
+    question: "How many minutes of phone answering come with the plan?",
+    answer: `Your monthly allowance is ${pricing.tiers.core.minutes} minutes of AI phone answering under the Core plan at £${pricing.tiers.core.price}/month. Most fencing contractors sit comfortably within this — a typical month brings fifteen to thirty enquiry calls outside of storm events. After a storm, call volume spikes and you may use more; overage is charged at 20p per minute with no cap or penalty. Unlimited website chat is also included.`
+  },
+  {
+    question: "Can I answer calls personally when I am not on site?",
+    answer: "Calls route to your mobile whenever you are available — driving between jobs, at the timber yard, or at home doing quotes. The AI only intercepts when you cannot physically answer: concreting posts, operating a post knocker, or outside your working hours. You toggle the schedule from your dashboard, and many fencing contractors adjust it seasonally — leaving the AI active longer during winter storm periods."
+  },
+  {
+    question: "How is data from calls kept confidential?",
+    answer: "Fencing enquiries include property addresses, boundary measurements, sometimes access codes for commercial premises, and contact details for homeowners and facilities managers. Every piece of data is encrypted during transmission and at rest, held on UK and EU servers under UK GDPR, and shared exclusively with you. No client information is ever sold, shared with third parties, or used for purposes beyond delivering your lead summaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Fencing Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK fencing contractors. Handles domestic panel quotes, commercial security briefs, and storm damage surges while you are on the post hole digger. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/fencing-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Fencing Contractor"
+  tradeNamePlural="Fencing Contractors"
+  tradeSlug="fencing-contractors"
+  headline="AI Phone Answering for Fencing Companies"
+  accentWord="Fencing Companies"
+  subhead="A homeowner calls at 9am on a Monday in November — Storm Ciarán tore down four panels, snapped a concrete post, and their garden backs onto a busy footpath. You are already on another storm damage job in the next town, knee-deep in a post hole, postcrete bag open, concrete post steadied against your shoulder. Without AI phone answering, the homeowner hears voicemail, hangs up, and calls two more fencing companies before you have set the post. With it, the AI captures the damage, the panel count, the boundary exposure, and the postcode — and you call back at lunchtime with a plan."
+  scenario="It is 10:30am on a Thursday. You and your mate are fitting close board fencing along the side boundary of a semi-detached house in Swindon — digging post holes with a manual auger, concreting posts plumb, cutting arris rails to length, and nailing feather edge boards one by one. Your phone is in the van cab, fifteen metres away on the drive. A commercial property manager calls. He manages three light industrial units on an estate near the M4 and needs the entire rear perimeter re-fenced — approximately 180 metres of 2-metre mesh panel fencing with a vehicle access gate and pedestrian gate, both to be lockable. The current fence is chain link from the 1990s and has been cut through twice in the last month, with tools stolen from two of the tenants' yards. He needs the work done within three weeks to satisfy the insurance company. Without AI Phone Answering, this call goes to voicemail. The property manager, in a hurry, leaves a fifteen-second message — 'call me about some fencing' — and rings three other contractors. One answers, discusses the project in detail, and arranges a site visit for Friday. By the time you hear the voicemail at 5pm, the property manager has already committed to two surveys and your chances of winning the contract have halved. With AI Phone Answering, the AI answers and captures the full brief: three industrial units, 180 metres of mesh panel, two gates, security issue, insurance deadline, three-week programme. At 1pm, after you and your mate break for lunch, you see the lead summary. You call the property manager, discuss the specification, and book a site visit for Thursday afternoon — the same day. Friday morning you send a detailed quotation while the other contractors are still doing their first surveys."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/fencing-contractors/ai-receptionist/"
+  ctaHeadline="Never Lose a Fencing Contract to an Unanswered Call"
+  ctaSubhead={`A facilities manager with a security breach calls once. If voicemail answers, the next fencing company gets the job. The AI ensures you are always the one who picks up. From £${pricing.tiers.core.price}/month.`}
+/>

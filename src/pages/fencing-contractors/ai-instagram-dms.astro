@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Completed Project Views into Leads',
+    text: "Fencing photographs well — a crisp close board run against a green lawn, an oak post-and-rail paddock fence stretching across a field, a sleek automated gate on a driveway. When a follower DMs after seeing your work, the AI responds instantly, captures their boundary details, and converts visual admiration into a site visit booking."
+  },
+  {
+    icon: '🎯',
+    title: 'Engages Property-Conscious Homeowners',
+    text: "Instagram attracts homeowners who care about aesthetics — they want their boundary to look as good as the garden inside it. A DM saying 'love the cedar close board fence in your last post — do you do that style with capped posts?' is a high-intent domestic lead. The AI captures the style preference, boundary length, and contact details before the inspiration fades."
+  },
+  {
+    icon: '📱',
+    title: 'Handles DMs from Varied Clients',
+    text: "Instagram DMs for fencing companies come from homeowners wanting garden boundaries, equestrian clients needing paddock fencing, property developers requiring show-home perimeters, and commercial premises wanting smart entrance gates. The AI adapts its questioning to each, capturing the relevant scope and specifications."
+  },
+  {
+    icon: '🌙',
+    title: 'Responds During Evening Scrolling',
+    text: "Homeowners scroll Instagram after dinner and see a beautifully finished fence that makes them look at their own boundary with fresh eyes. The DM they send at 9pm is a prime lead. The AI responds in seconds, capturing the enquiry while the comparison between your work and their tired fence is vivid in their mind."
+  },
+  {
+    icon: '📋',
+    title: 'Creates Structured Leads from DM Threads',
+    text: "DMs arrive in fragments — a question, a photo of their existing fence, a reference to your portfolio. The AI tracks the thread, asks the right follow-ups about boundary length and material preference, and delivers a clean lead summary."
+  },
+  {
+    icon: '🔗',
+    title: 'Makes Your Content Portfolio Work Harder',
+    text: "Every fencing project photo you post can generate an enquiry. The AI ensures that every DM inspired by your content converts into a lead with contact details and project scope — closing the gap between social engagement and revenue."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a specific Instagram account type?",
+    answer: "An Instagram Business or Creator account linked to a Facebook Business page is needed. Switching from a personal account is free and takes two minutes in your Instagram settings. Most fencing contractors posting project photos already have Business accounts. If you have not switched, we handle this during onboarding."
+  },
+  {
+    question: "What kind of fencing enquiries come through Instagram?",
+    answer: "Instagram DMs lean towards domestic and aesthetic-focused work — homeowners inspired by your close board, cedar, or decorative fencing photos. Equestrian clients finding your post-and-rail portfolio are another strong source. These leads tend to be higher value than average because the customer has already selected your visual style and is enquiring with genuine intent rather than price shopping."
+  },
+  {
+    question: "How fast does the AI reply to DMs?",
+    answer: "Replies arrive within seconds. Instagram shows typing indicators and read receipts, so the sender sees immediate activity. For fencing enquiries driven by visual inspiration — someone has seen your cedar boundary photo and is comparing it to their tired lap panels — a fast response sustains the emotional drive to upgrade. A 24-hour delay lets that comparison fade."
+  },
+  {
+    question: "What does AI Instagram DMs cost?",
+    answer: `Instagram DMs is priced at £${pricing.addOn.price}/month as an add-on to the Core plan. For fencing companies that invest in photographing completed work — especially premium installations like cedar, oak, and estate fencing — this channel converts the audience your content builds into actual paying projects. One domestic boundary job from an Instagram DM exceeds the annual cost of the add-on.`
+  },
+  {
+    question: "Can I handle DM conversations personally?",
+    answer: "Whenever you reply directly in a DM thread through the Instagram app, the AI stands down. Many fencing contractors let the AI capture the initial interest and then follow up personally to discuss timber options, heights, pricing, and visit scheduling."
+  },
+  {
+    question: "How is DM data protected?",
+    answer: "All Instagram DM data — messages, images, boundary details, addresses — is processed under UK GDPR, encrypted, and stored on UK and EU servers. It is shared only with you and never repurposed. Instagram's own platform policies apply separately."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Fencing Contractors | Rapid Receptionist"
+  description={`AI Instagram DMs for UK fencing companies. Converts followers inspired by your fencing portfolio into boundary survey bookings. Captures close board, cedar, and estate fencing leads. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fencing-contractors/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Fencing Contractor"
+  tradeNamePlural="Fencing Contractors"
+  tradeSlug="fencing-contractors"
+  headline="AI Instagram DMs for Fencing Specialists"
+  accentWord="Fencing Specialists"
+  subhead="A homeowner sees your Instagram post — a cedar close board fence with capped posts, photographed at golden hour, dew on the lawn behind it. She DMs: 'This is stunning. Exactly what we want for our rear boundary. About 15 metres. Can you quote?' You are on a commercial job fitting mesh panels with an impact driver. Without AI Instagram DMs, the message waits until tonight. With it, she gets an instant reply, shares her postcode and boundary photos, and your lead arrives with a premium domestic project ready to price."
+  scenario="It is 8:15pm on a Saturday evening. A homeowner in the Cotswolds is scrolling Instagram while his partner watches television. He comes across your reel showing a completed estate fencing project — oak post and rail across a paddock, mortise-and-tenon joints, a view over rolling Gloucestershire fields behind it. He saves the reel, follows your account, and sends a DM: 'We have just bought a small property near Stow with about two acres fenced with old wire that is falling apart. We want proper oak post and rail like this around the whole boundary — horse-safe for two horses. Can you come and look?' Without AI Instagram DMs, you see the message Monday afternoon. The homeowner has also DM'd two other fencing companies and one responded Sunday morning, asked the right questions, and booked a site visit for next week. With AI Instagram DMs, the AI responds at 8:16pm: 'Thank you — that is one of our favourite projects. Oak post-and-rail for equestrian use is absolutely something we specialise in. Could you share your property postcode and confirm the approximate boundary length? One of our team will call you to arrange a site visit.' He replies with the postcode, estimates the boundary at about 400 metres, and mentions the property has a main entrance that could take a new wooden field gate. Monday morning you see a lead summary: equestrian post-and-rail, oak, 400 metres, two horses, field gate opportunity, Cotswolds location. You call at 8:30am and book a Thursday morning survey on what could be a £20,000+ project."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/fencing-contractors/ai-receptionist/"
+  ctaHeadline="Turn Fencing Photography into Boundary Survey Bookings"
+  ctaSubhead={`A well-photographed fence generates DMs. The AI converts every DM into a lead with scope, postcode, and contact details. Add-on at £${pricing.addOn.price}/month.`}
+/>

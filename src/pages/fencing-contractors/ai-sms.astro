@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Quick Availability Checks',
+    text: "Homeowners and property managers often text to check availability before committing to a call — 'can you do a fence this side of Christmas?' or 'are you taking on work at the moment?' A fast text reply confirms your availability and starts the conversation. A four-hour delay sends them to the next fencing company in the list."
+  },
+  {
+    icon: '📐',
+    title: 'Structures Fence Briefs from Short Texts',
+    text: "A text saying 'need 6 panels replaced, concrete posts, Banbury' gives the AI enough to work with — but it asks follow-ups about the panel style, post condition, gate requirements, and the sender's availability. Your lead summary is a proper job brief with location, scope, and contact details."
+  },
+  {
+    icon: '🔔',
+    title: 'Captures Referral and Recommendation Texts',
+    text: "Neighbour referrals often arrive by text — 'my next-door neighbour had their fence done by you, can you quote for ours too?' A fast response to a referral signals reliability and catches the lead while the recommendation is still warm."
+  },
+  {
+    icon: '🌙',
+    title: 'Handles After-Hours Messages',
+    text: "Storm damage is discovered in the evening. Fence panel quotes are requested at weekends. A homeowner texts at 10pm after the dog escaped through a gap where a panel should be. The AI captures it all and delivers clean leads for your next working morning."
+  },
+  {
+    icon: '📋',
+    title: 'Consolidates Multi-part Texts',
+    text: "People text in bursts — 'need a fence done' then 'about 12 panels' then 'back garden, Didcot' then 'needs doing before we move in next month.' The AI processes the entire thread and sends one consolidated lead with the full picture."
+  },
+  {
+    icon: '📱',
+    title: 'Business Number Only',
+    text: "AI SMS connects to your business number. All texts come through your professional line. Your personal phone remains private."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a text about fencing work?",
+    answer: "Once a fencing enquiry arrives by text, the AI identifies the request and responds professionally — confirming your interest and asking targeted follow-ups. If the text is detailed ('need 20m close board with concrete posts, rear boundary, Abingdon'), it logs the lead immediately. If vague ('can you do a garden fence?'), it asks about the boundary length, fence type, post preference, and location to build a usable brief."
+  },
+  {
+    question: "Will the sender know it is an AI replying?",
+    answer: "The response reads like a professionally managed fencing company replying between jobs. It uses your business name, not 'AI assistant.' Homeowners texting a tradesperson expect a quick, relevant reply — the speed and quality of the response creates confidence regardless of whether a person or an AI composed it."
+  },
+  {
+    question: "What if a customer texts about a storm emergency?",
+    answer: "Storm damage texts — 'fence is completely flat, garden open to a main road, need it sorted today' — are flagged as urgent in your lead summary. The AI responds immediately, captures the damage description, boundary exposure, and property address, and the alert reaches you as a prioritised notification. If you have AI Phone Answering active, the most critical cases also trigger a mobile call escalation."
+  },
+  {
+    question: "What does AI SMS cost for a fencing contractor?",
+    answer: `Texting is available at £${pricing.addOn.price}/month as an add-on to the Core plan. For fencing companies whose customers frequently text about availability, storm repairs, and neighbour referrals, this captures a communication channel that many competitors ignore. A single fencing job won through a quick text response covers the add-on cost for years.`
+  },
+  {
+    question: "Can I respond to texts personally when free?",
+    answer: "Whenever you reply directly to a text thread, the AI recognises your message and steps back. Between jobs — at the yard, in the van, at home — you handle texts yourself. On site with posts to concrete and panels to nail, the AI covers. The person messaging sees a continuous, professional conversation."
+  },
+  {
+    question: "How is text message data protected?",
+    answer: "All SMS conversations — addresses, boundary details, damage descriptions, contact numbers — are encrypted and stored on UK and EU servers under UK GDPR. No text data is shared with third parties, sold, or repurposed. Your customers' information stays between you and them."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Fencing Contractors | Rapid Receptionist"
+  description={`AI SMS for UK fencing companies. Responds to panel replacement texts, storm damage alerts, and availability checks while you are concreting posts. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fencing-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Fencing Contractor"
+  tradeNamePlural="Fencing Contractors"
+  tradeSlug="fencing-contractors"
+  headline="AI SMS for Fencing Installers"
+  accentWord="Fencing Installers"
+  subhead="A neighbour of your last customer texts: 'Your guys just did an amazing fence next door. Can you do ours too? About 8 panels, same style.' You are on the other side of the fence fitting the last gravel board with a rubber mallet. Without AI SMS, the text sits unread until you check your phone at tea break — and by then the referral has cooled. With it, the reply goes back in seconds, the neighbour shares the address, and you walk around the corner after lunch to measure up."
+  scenario="It is 6:40pm on a Friday in October. A homeowner in Brackley texts you: 'Hi, seen your van around the village. Our back fence is on its last legs — about 10 panels along the rear, concrete posts are fine but panels are rotten. Plus need a new side gate. Can you give us a price?' You finished your last job at 4pm and are at home with your family, boots off, phone on the kitchen counter. Without AI SMS, you see the text at 9pm and reply Saturday morning, but the homeowner texted two other fencing contractors at the same time and one responded at 7pm with a friendly message and a Saturday morning site visit offer. With AI SMS, the response arrives at 6:41pm: 'Thank you for your message. We would be happy to take a look — 10 panels and a side gate is a straightforward job for us. Could you share your postcode and a good time for us to come and measure up?' The homeowner replies with the address, says mornings work best, and mentions the neighbours on the other side might want theirs done too. Saturday morning you open the lead summary — 10 panels, gate, concrete posts retained, postcode, neighbour referral potential — and call to arrange a Tuesday morning visit. One text response has potentially secured two boundary replacements in the same road."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/fencing-contractors/ai-receptionist/"
+  ctaHeadline="Catch Every Fencing Referral Text the Moment It Arrives"
+  ctaSubhead={`Neighbour referrals arrive by text while you are on the other side of the fence. The AI responds before the recommendation cools. Add-on at £${pricing.addOn.price}/month.`}
+/>

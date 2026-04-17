@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Commercial Fencing Tenders Rapidly',
+    text: "Facilities managers, developers, and local authorities send fencing tenders by email — perimeter specifications, site plans, programme charts. The fencing contractor who acknowledges first demonstrates professionalism and gets the most attention during the pricing window. AI Email Response sends a professional acknowledgement within sixty seconds, naming the project and noting key details."
+  },
+  {
+    icon: '📐',
+    title: 'Identifies Fence Specification Details',
+    text: "When a tender email specifies '2.4m galvanised steel palisade with triple-pointed pales, 100mm pale spacing, cranked tops to Secured by Design standards,' the AI captures the specification language accurately. The acknowledgement shows the sender that their email reached someone who understands what they are asking for — not a generic auto-reply."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Email Gap',
+    text: "Fencing contractors spend entire days on site with no opportunity to check email. A security fencing tender from a property management company that arrives at 9am and goes unread until 7pm has lost ten hours. The AI acknowledges receipt immediately, keeping you in contention while competitors who sit at desks respond manually."
+  },
+  {
+    icon: '🗂️',
+    title: 'Distinguishes Tender from Domestic Enquiry',
+    text: "Your inbox receives a mix — commercial tender invitations, homeowner contact form submissions, neighbour referrals, and gate automation enquiries. The AI identifies each type and the lead summary arrives with appropriate context, so you know whether the email needs a formal tender response or a quick callback."
+  },
+  {
+    icon: '🤝',
+    title: 'Strengthens Repeat Client Relationships',
+    text: "Property managers and facilities companies who have used you before expect prompt communication when they issue a new tender. A fast acknowledgement reinforces trust and signals capacity. For fencing contractors building framework agreements with commercial clients, this consistency is critical."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Attached Site Plans and Specifications',
+    text: "Commercial fencing tenders typically arrive with site boundary drawings, access plans, and specification documents as attachments. The AI notes what is attached — '2 PDF files: site layout and fence specification' — in both the acknowledgement and your lead summary, so you know exactly what awaits your review."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI compose a full tender response?",
+    answer: "No — it sends a professional acknowledgement confirming receipt of the tender, noting key scope details, and assuring the sender you will submit a full response. The purpose is to keep you in the running by demonstrating immediate engagement. Your detailed pricing, methodology, and accreditation information follow in your own time."
+  },
+  {
+    question: "Will the AI respond to non-business emails?",
+    answer: "The system is configured during setup to distinguish business enquiries from background noise. It responds to tender invitations, project enquiries, homeowner requests, and commercial specifications. Supplier newsletters, tool promotion emails, and spam are filtered out automatically."
+  },
+  {
+    question: "How does it handle emails asking about gate automation?",
+    answer: "Gate automation enquiries — electric sliding gates, swing gate operators, intercom systems — often arrive from homeowners and commercial clients who assume this is part of fencing. The AI acknowledges the enquiry and captures the scope. If you offer gate automation, the lead is classified accordingly. If you do not, the AI still captures the details so you can refer the client to a gate specialist and maintain the relationship."
+  },
+  {
+    question: "What is the pricing for AI Email Response?",
+    answer: `Email response is available at £${pricing.addOn.price}/month as a channel add-on to the Core plan. For fencing companies that receive commercial tenders, planning condition specifications, and property management enquiries by email, this channel protects a pipeline of work that arrives electronically while you are physically on site. One acknowledged tender that converts to a contract justifies years of the add-on cost.`
+  },
+  {
+    question: "Can I reply to emails myself afterwards?",
+    answer: "The AI handles only the initial acknowledgement — confirming receipt and noting the key details. All subsequent correspondence is yours. You review the specification, prepare your quotation, and send your detailed response whenever you are ready. The AI does not interfere with follow-up emails."
+  },
+  {
+    question: "How is email content kept confidential?",
+    answer: "Tender documents, site plans, security specifications, and client contact details are commercially sensitive. All email content processed by the AI is encrypted, stored on UK and EU servers under UK GDPR, and shared with no one except you. We never access tender information for any purpose beyond generating your lead summary and acknowledgement."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Fencing Contractors | Rapid Receptionist"
+  description={`AI email response for UK fencing companies. Acknowledges perimeter security tenders, commercial boundary specifications, and domestic fencing enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/fencing-contractors/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Fencing Contractor"
+  tradeNamePlural="Fencing Contractors"
+  tradeSlug="fencing-contractors"
+  headline="AI Email Response for Fencing Companies"
+  accentWord="Fencing Companies"
+  subhead="A property management company emails a tender for replacing the perimeter fencing around a retail park in Coventry — 350 metres of 2.4-metre mesh panel with automated vehicle and pedestrian gates, CCTV integration points, and Secured by Design compliance. The submission deadline is next Wednesday. You are fitting close board fencing in a residential garden, posts in the ground, rails attached, feather edge boards going up one by one. Without AI Email Response, the tender sits unread until tonight. Two competitors acknowledge by lunchtime. With it, your acknowledgement arrives within sixty seconds and you start your pricing before anyone else has opened the drawings."
+  scenario="It is 11:20am on a Tuesday. You are bolting mesh panels to RSJ posts on a new industrial compound in Warwick — impact driver in hand, safety glasses on, steel-toed boots on a concrete pad. Your email is on your laptop in the van cab. A local authority's procurement team sends you an invitation to tender for 600 metres of palisade security fencing around a new council depot, including two sliding automated gates with intercom and key-fob access. The tender closes in ten working days. Without AI Email Response, you open the email at 6pm, have eight working days left instead of ten, and start pricing under pressure. Three other fencing contractors acknowledged on Tuesday morning and have been reviewing the drawings all day. With AI Email Response, the acknowledgement goes out at 11:21am: 'Thank you for the tender invitation for the council depot perimeter fencing. We have received the specification documents and gate requirements and will review them in detail. We look forward to submitting our tender within the deadline.' The procurement officer marks you as engaged. At lunchtime you see the lead summary, download the drawings, and begin your take-off that evening — with the full ten-day window ahead of you."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/fencing-contractors/ai-receptionist/"
+  ctaHeadline="Acknowledge Security Fencing Tenders the Moment They Land"
+  ctaSubhead={`Perimeter fencing tenders have tight deadlines. An acknowledgement in sixty seconds gives you the full pricing window. Add-on at £${pricing.addOn.price}/month.`}
+/>

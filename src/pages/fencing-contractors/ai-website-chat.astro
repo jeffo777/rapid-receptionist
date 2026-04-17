@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Visitors Researching Fence Options',
+    text: "Homeowners browsing fencing company websites want answers before they commit to a phone call — 'do you supply and fit close board or just panels?', 'how tall can a rear garden fence legally be?', 'do you do concrete posts or just wooden?' A chat widget starts the conversation instantly, keeps them on your site instead of bouncing to search results, and captures a lead with every exchange."
+  },
+  {
+    icon: '📐',
+    title: 'Answers Material and Style Questions',
+    text: "Visitors ask about fence types, heights, materials, and finishes. The AI responds from your service profile — confirming you fit close board, panel, mesh, post and rail, or whatever you specialise in. It does not give technical specifications, but it engages the visitor enough to establish interest and capture their contact details and boundary requirements."
+  },
+  {
+    icon: '🕐',
+    title: 'Active When Homeowners Browse',
+    text: "Most fencing research happens in the evening — a homeowner looks at a rotting fence over dinner and googles 'fencing companies near me' at 8pm. Finding your website and seeing a chat widget that asks 'looking for a new fence?' is the difference between an engaged lead and a forgotten bookmark. The AI converts after-hours browsers into next-morning callbacks."
+  },
+  {
+    icon: '📊',
+    title: 'Pre-qualifies Fencing Enquiries',
+    text: "The chat naturally gathers useful details — fence type wanted, run length in panels or metres, whether posts need replacing, gate requirements, rear or front boundary, access to the boundary, and the visitor's postcode. You see a lead summary that tells you whether this is a three-panel repair or a full boundary replacement before you pick up the phone."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Your Fence Gallery',
+    text: "If your website shows photos of completed fencing projects — close board installations, mesh panel compounds, oak post and rail paddocks — visitors looking at those images have immediate questions. The chat sits right alongside the gallery, turning interest into an enquiry without the visitor needing to find your phone number."
+  },
+  {
+    icon: '✅',
+    title: 'Bundled With Your Plan',
+    text: `Website chat comes included with the Core plan at £${pricing.tiers.core.price}/month — no additional fee. Installation is a JavaScript snippet pasted into your site header, compatible with any platform. There is no limit on the number of chat conversations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install the chat widget on my fencing website?",
+    answer: "We provide a lightweight JavaScript snippet during your setup. Copy it into your website header or footer — or install via a plugin if you use WordPress, Squarespace, or Wix. The chat bubble appears on every page within minutes. If editing your website feels unfamiliar, we walk you through the process step by step or liaise with your web developer directly."
+  },
+  {
+    question: "Can the AI talk about different types of fencing?",
+    answer: "Your service profile tells the AI what you offer — close board, lap panel, overlap panel, mesh, palisade, post and rail, acoustic, decorative — and it replies accordingly. If a visitor asks 'do you fit close board fencing with concrete posts?' the AI can confirm from your profile and ask for their boundary length and postcode. It keeps the visitor engaged and captures the lead, while leaving detailed specification advice to you on the callback."
+  },
+  {
+    question: "What information does the chat collect?",
+    answer: "Through natural conversation, the AI captures the fence style required, approximate run length, post type preference (concrete or timber), whether they need new posts or just panels, any gate requirements, their property location, and contact details. For fencing businesses, this pre-qualification reveals at a glance whether the visitor needs a quick panel swap or a full perimeter replacement — letting you plan your callback appropriately."
+  },
+  {
+    question: "Does the chat widget affect my website performance?",
+    answer: "The script loads after your main page content has rendered, so visitors see your website — images, gallery, text — at full speed before the chat bubble appears. Fencing company websites with large photo galleries are already image-heavy; the chat widget adds negligible weight by comparison. Page load time is unaffected."
+  },
+  {
+    question: "Is website chat included in the plan or extra?",
+    answer: `Unlimited website chat is part of the Core plan at £${pricing.tiers.core.price}/month with no add-on charge. For fencing contractors, having both phone answering and website chat covered under one plan captures the two ways homeowners most commonly make contact — calling your number and browsing your site. No per-conversation fees apply.`
+  },
+  {
+    question: "How is chat data protected?",
+    answer: "Every chat exchange is encrypted, stored on UK and EU servers governed by UK GDPR, and delivered to you as a structured lead summary. The visitor's property details, boundary information, and contact details are shared exclusively with you. Chat data is never used for advertising, analytics, or any third-party purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Fencing Contractors | Rapid Receptionist"
+  description={`AI website chat for UK fencing companies. Engages visitors browsing close board, panel, and security fencing pages — captures boundary details and leads 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/fencing-contractors/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Fencing Contractor"
+  tradeNamePlural="Fencing Contractors"
+  tradeSlug="fencing-contractors"
+  headline="AI Website Chat for Fencing Businesses"
+  accentWord="Fencing Businesses"
+  subhead="A homeowner in Peterborough searches 'close board fencing near me' after noticing three rotten panels in her rear boundary. She finds your website, looks at your gallery, and sees the chat widget. She types: 'Do you replace individual rotten panels or do I need to redo the whole fence?' Without chat, she would read your page, fail to find the exact answer, and return to Google. With AI Website Chat, the AI explains you can do either, asks how many panels are affected, and captures her address and phone number. You call her in the morning with a quote."
+  scenario="It is 9:15pm on a Tuesday. A couple in Rugby has spent the evening measuring their rear garden boundary — the old lap panel fence is sagging, two posts have rotted through, and the neighbour has agreed to split the cost of a replacement. They search for fencing contractors, find your website, and browse your close board gallery. The husband types into the chat: 'We need about 18 metres of close board fencing with concrete posts and gravel boards to replace our old lap panels. Both sides of a rear boundary. Can you quote?' Without AI Website Chat, they submit a contact form and hear nothing until Wednesday afternoon. By then, another fencing company whose website had live chat has already responded, discussed the shared boundary arrangement, and offered a site visit for Saturday. With AI Website Chat, the AI responds immediately: 'Absolutely — 18 metres of close board with concrete posts and gravel boards is one of our most popular installations. Could you share your postcode and a good day for a site visit? Are you sharing the cost with your neighbour or handling it independently?' They reply with the postcode, confirm it is a shared cost, and say weekends work best. Wednesday morning you open a lead summary with the run length, fence type, post type, boundary arrangement, neighbour agreement, and their contact details. You call at 8am and book a Saturday survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/fencing-contractors/ai-receptionist/"
+  ctaHeadline="Convert Fence Browsers into Booked Boundary Surveys"
+  ctaSubhead={`Homeowners browsing your fencing gallery want answers now, not tomorrow. Website chat starts the conversation while they are on your site. Included at £${pricing.tiers.core.price}/month.`}
+/>
