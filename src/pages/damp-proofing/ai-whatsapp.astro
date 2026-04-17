@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Damp Photos Instantly',
+    text: "Homeowners WhatsApp photos of the damp — tide marks on walls, mould spreading in corners, peeling wallpaper at the skirting, white salt deposits on plaster. The AI responds within seconds, asks targeted questions about the wall and property, and attaches every photo to your lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins the Post-Discovery Panic',
+    text: "When a homeowner discovers spreading mould or a worsening damp patch, they WhatsApp damp specialists with photos seeking urgent reassurance. The first professional response that demonstrates understanding of the symptoms — not just 'we will call you back' — earns the survey booking."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Builder Subcontract Messages',
+    text: "Builders developing or renovating properties WhatsApp damp proofers with scope: 'converting a Victorian terrace, need DPC to ground floor and tanking to the cellar — can you quote?' The AI captures the project address, scope, and programme."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Hours',
+    text: "Homeowners photograph damp in the morning light and message after work. Property managers forward tenant damp complaints after hours. The AI catches every evening and weekend WhatsApp."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Fragmented Damp Messages',
+    text: "A WhatsApp saying 'got damp downstairs, old house, ground floor, OX4' becomes a structured lead. The AI asks about the wall location, property age, and whether there is a cellar or crawl space underneath."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp uses your business number. Conversations about property damp, structural deficiencies, and remediation quotes stay professional and separated from personal messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess damp severity from WhatsApp photos?",
+    answer: "The AI does not perform remote damp diagnoses, but it acknowledges photos effectively — confirming it can see the damp patch, mould, or salt deposits — and asks the questions you need to prepare for the survey: which wall is affected and whether it faces externally, the property age and type, whether the damp is at ground level or higher, whether a cellar exists below, and the postcode. Every photo is attached to your lead so you can assess the likely damp type before visiting."
+  },
+  {
+    question: "What about evolving WhatsApp damp conversations?",
+    answer: "Damp conversations develop over days — a homeowner sends a photo of one wall, then notices a second room showing similar symptoms, then asks whether the problem could be linked to the guttering she saw overflowing last week. The AI maintains the thread and consolidates every message, photo, and evolving detail into one comprehensive damp survey lead."
+  },
+  {
+    question: "How much does AI WhatsApp cost for damp proofing firms?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on alongside the Core plan. Damp proofing work ranges from £500 single-room DPC treatments to £25,000 basement waterproofing packages. Capturing one homeowner's multi-room treatment or one developer's cellar conversion through a rapid WhatsApp response — while your phone sat face-down during a survey — repays the channel cost many times over.`
+  },
+  {
+    question: "Can I take over a WhatsApp thread?",
+    answer: "Send a message in any thread and the AI transfers control to you. Most damp specialists let the AI handle the initial capture — affected rooms, wall orientation, property age, symptoms, postcode — then follow up personally to discuss the likely damp type, explain the survey process, and book the visit."
+  },
+  {
+    question: "How is WhatsApp data from damp enquiries kept secure?",
+    answer: "All WhatsApp messages — damp photographs, property addresses, structural condition notes, and contact information — are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. No property information is shared with competing damp firms, sold to lead services, or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Damp Proofing Specialists | Rapid Receptionist"
+  description={`AI WhatsApp for UK damp proofing specialists. Responds to damp photos, rising damp queries, and basement waterproofing messages while you survey on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/damp-proofing/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Damp Proofing Specialist"
+  tradeNamePlural="Damp Proofing Specialists"
+  tradeSlug="damp-proofing"
+  headline="AI WhatsApp for Damp Proofing Specialist Companies"
+  accentWord="Damp Proofing"
+  subhead="A homeowner WhatsApps at 7:45am with four photos — close-ups of a damp patch at the base of her dining room wall showing tide marks at about 800mm, white salt deposits crystallising on the plaster, the skirting board showing signs of rot, and a wider shot showing the wall faces the front garden. Her message: 'Morning — this damp has been getting worse since we moved in six months ago. It was just a small patch but now it is spreading. The skirting is going soft. Is this rising damp? Can you survey and tell us what needs doing?' You are loading the van for a survey in Botley — moisture meter, protimeter pins, borescope, and DPC injection kit all packed. Without AI WhatsApp, her message waits until the evening. She messages two more firms; one responds in fifteen minutes with an explanation of rising damp symptoms and offers a Thursday survey. With it, the AI responds instantly, confirms that ground-level damp with salt deposits and timber decay is consistent with rising damp, asks about the property age and whether adjacent rooms show similar signs, and your lead — with four diagnostic photos — is waiting at coffee break."
+  scenario="It is Saturday afternoon. A landlord in Kidlington has received a complaint from their tenant — black mould has appeared in the bathroom and both bedrooms, the walls feel cold and damp, and the tenant's child has developed respiratory symptoms. The landlord is concerned about a Section 11 obligation and potential Homes (Fitness for Human Habitation) Act implications. He WhatsApps three damp specialists: 'Tenant complaining of bad mould in bathroom and two bedrooms. Kids in the house with breathing problems. I think it is condensation not rising damp but need a professional opinion and solution. Property is a 1970s mid terrace in OX5. Need it sorted quickly — worried about legal liability.' Without AI WhatsApp, you see the message Sunday morning. One firm replied Saturday afternoon with reassurance about ventilation solutions and offered a Monday inspection. With AI WhatsApp, the response arrives at 2:01pm: 'Thank you — mould in multiple rooms of a 1970s mid-terrace with health concerns requires prompt investigation. Condensation issues are common in mid-terraces of that era due to limited ventilation. Could you confirm whether the property has extractor fans in the bathroom and kitchen, and whether the loft insulation has been upgraded? We will arrange an urgent survey within the next few days.' He confirms no extractors and original 100mm insulation. Monday morning you open the lead: 1970s mid-terrace, OX5, mould in bathroom and two bedrooms, child respiratory symptoms, suspected condensation, no extractors, limited insulation, tenant health urgency, legal liability concern. You call at 8am and book a Tuesday morning survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/damp-proofing/ai-receptionist/"
+  ctaHeadline="Respond to Rising Damp Photos While You Load the Survey Kit"
+  ctaSubhead={`A homeowner sends four photos of tide marks and salt deposits. The AI responds while you pack the protimeter. Add-on at £${pricing.addOn.price}/month.`}
+/>

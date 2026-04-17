@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Quick Survey Availability Texts',
+    text: "Homeowners and solicitors text to check availability — 'hi, can you do a damp survey this week?' A fast, professional reply confirms capacity. Silence implies a company too busy to help."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Damp Briefs from Short Messages',
+    text: "A text like 'damp in kitchen, old terrace house, OX3' gives the AI enough context. It asks about the wall location, property age, and whether there is a cellar. Your lead arrives with the detail you need for scheduling."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Estate Agent Referral Texts',
+    text: "Estate agents recommend damp surveyors by text when a homebuyer's survey flags damp. When the buyer or solicitor texts, the AI captures the property details while the referral is fresh."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Survey Hours',
+    text: "Homeowners photograph damp in the morning and text in the evening. Solicitors text survey requests after office hours. The AI catches every after-hours message from people ready to commission a survey."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Threads',
+    text: "Texts arrive in fragments — 'got damp downstairs' then 'the wallpaper is coming off' then 'its a victorian terrace' then 'OX1 area.' The AI assembles one structured lead from all the fragments."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Survey Line',
+    text: "AI SMS uses your business number. Conversations about property damp, structural waterproofing, and survey scheduling stay professional."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a damp enquiry text?",
+    answer: "The AI reads the inbound message and replies using your company name within seconds. A detailed text — 'need a damp survey for a Victorian cottage in Woodstock, surveyor flagged rising damp in the kitchen and hallway' — is acknowledged with the full property context preserved. A brief text — 'got damp in the bedroom' — triggers follow-up questions about the wall location, property type, and floor level."
+  },
+  {
+    question: "Will the person texting know it is AI?",
+    answer: "The reply reads like a damp specialist responding between survey appointments — knowledgeable, professional, and directly relevant to the damp condition described. It uses your company name and asks appropriate questions. Homeowners texting about damp want two things: reassurance that their problem is understood and confidence that a qualified specialist will attend promptly. The AI provides both within seconds."
+  },
+  {
+    question: "What about texts from existing survey clients?",
+    answer: "Clients sometimes text about survey date confirmations, access arrangements, or questions about a report you have already submitted. The AI captures these and flags them separately from new damp leads. Your dashboard clearly differentiates a new solicitor survey instruction from a current client asking when the plastering crew arrives."
+  },
+  {
+    question: "What does AI SMS cost for damp proofing companies?",
+    answer: `This channel add-on costs £${pricing.addOn.price}/month. Damp proofing work ranges from £400 single-wall DPC injections to £20,000 basement waterproofing installations. Securing one solicitor's pre-purchase survey instruction through a prompt text — while your phone sat on the van dashboard during a cellar inspection — pays for the channel many times over.`
+  },
+  {
+    question: "Can I text back personally?",
+    answer: "Your own reply in any text thread transfers control back to you immediately. During office report-writing days, handle texts yourself. During surveys and installations, let the AI maintain professional communication while your hands hold the moisture meter."
+  },
+  {
+    question: "How is text data from damp enquiries stored?",
+    answer: "Text messages containing property addresses, damp descriptions, solicitor details, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you and is never shared with competing damp firms, sold to aggregators, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Damp Proofing Specialists | Rapid Receptionist"
+  description={`AI SMS for UK damp proofing specialists. Responds to survey requests, solicitor instructions, and homeowner damp enquiry texts while you work on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/damp-proofing/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Damp Proofing Specialist"
+  tradeNamePlural="Damp Proofing Specialists"
+  tradeSlug="damp-proofing"
+  headline="AI SMS for Damp Proofing Specialist Businesses"
+  accentWord="Damp Proofing"
+  subhead="You are in a sub-floor void beneath a Victorian terrace, torch in hand, inspecting the ventilation — checking air brick positions, measuring the void depth, and photographing evidence of standing water and timber decay. At 2pm a solicitor texts: 'Hi — we urgently need a damp report for a property purchase. Homebuyer survey flagged rising damp throughout the ground floor and a cellar with water staining. Property is a period cottage in Charlbury. Exchange in 3 weeks. Can you survey this week?' Your phone is in your jacket, draped over the hallway radiator upstairs. Without AI SMS, the text waits three hours. She texts two other PCA-registered firms; one replies in twenty minutes and offers a Thursday survey. With it, the AI responds at 2:01pm, confirms your PCA-registered capability, and asks whether the cellar is full-height or a crawl space. She confirms full-height cellar with stone walls. At 5pm you read the lead and call. You book a Wednesday afternoon survey."
+  scenario="It is 8pm on a Sunday. A landlord in Abingdon has been reviewing damp complaints from two of his rental properties — one a 1930s semi where the tenant reports mould in the bathroom ceiling and window condensation throughout, the other an older cottage where the downstairs walls show classic rising damp symptoms with tide marks and deteriorating plaster. He texts three damp proofing firms: 'Hi — I have 2 rental properties with damp issues. One is condensation/mould in a 1930s semi. The other is rising damp in an older cottage. Need surveys on both — probably different solutions. Can you quote for both surveys and any remediation needed?' Without AI SMS, you read the text Monday morning alongside fifteen other messages. He has two replies by Sunday evening. With AI SMS, the response arrives at 8:01pm: 'Thank you — condensation and rising damp are very different problems requiring different solutions. We survey both regularly. Could you confirm the postcodes for the two properties and whether the tenants can provide access during the week? We will schedule both surveys in a single visit if they are nearby.' He replies with both addresses. Monday you open the lead: two properties, one condensation (1930s semi, OX14), one rising damp (older cottage, OX14), both require survey and remediation quote, addresses confirmed, tenant access needed. You book both surveys for Thursday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/damp-proofing/ai-receptionist/"
+  ctaHeadline="Catch the Solicitor's Urgent Survey Text While You Inspect the Sub-Floor"
+  ctaSubhead={`A solicitor texts about a three-week exchange deadline while you crawl through the void. The AI replies while you photograph the ventilation. Add-on at £${pricing.addOn.price}/month.`}
+/>

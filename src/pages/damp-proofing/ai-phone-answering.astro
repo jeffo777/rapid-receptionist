@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Survey the Property',
+    text: "Damp surveyors spend hours inside properties — running moisture meters across walls, inspecting sub-floor ventilation, checking rainwater goods, and photographing defects. The AI answers every call in your company name while you concentrate on the diagnosis."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Varied Damp Enquiries',
+    text: "When a homeowner calls about 'black mould on the bedroom wall,' the AI captures the room, wall orientation, and property type. When a developer describes a basement conversion requiring Type C structural waterproofing with cavity drain membranes and a sump system, the AI captures the engineering scope. Each lead reflects the project's true complexity."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Urgent Water Ingress',
+    text: "Active water ingress into occupied basements, burst pipes behind walls, and flood recovery work generate urgent calls. The AI identifies the emergency, captures the property address and severity, and escalates to your mobile immediately."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Damp Discovery Calls',
+    text: "Homeowners notice damp problems in the evening — a musty smell when they close up for the night, condensation running down a cold wall, black mould appearing behind a moved piece of furniture. The 8pm call about 'a damp wall in the spare room' is a genuine lead."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Survey Scheduling',
+    text: "Each lead specifies the damp type described, the affected rooms and wall locations, the property type and age, the floor level, whether a cellar or crawl space exists, and the caller's timeline. You can schedule the survey efficiently before visiting."
+  },
+  {
+    icon: '🏷️',
+    title: 'PCA-Level Credibility',
+    text: "Damp proofing is trust-sensitive — homeowners worry about misdiagnosis and unnecessary work. A professional AI greeting that asks specific questions about moisture patterns, wall orientation, and property construction immediately communicates genuine expertise."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their damp problem?",
+    answer: "The questions follow the caller's situation. A homeowner with visible damp is asked which rooms are affected, whether the damp is at ground level or higher, which direction the affected wall faces, whether the property has a cellar or crawl space, the property age, and whether they have noticed a musty smell or mould. A solicitor commissioning a pre-purchase report is asked for the property address, the survey findings that prompted the referral, the exchange deadline, and whether the buyer's mortgage company has conditions attached."
+  },
+  {
+    question: "Can the AI handle calls from solicitors needing damp reports?",
+    answer: "Solicitors and conveyancing firms represent a significant revenue stream for damp surveyors — pre-purchase damp reports with PCA-standard recommendations. The AI recognises the legal context, captures the property address, the homebuyer survey findings, the exchange timeline, and the solicitor's contact details. These time-critical leads are flagged for priority response."
+  },
+  {
+    question: "What about calls during active DPC injection work?",
+    answer: "Injecting DPC requires sustained concentration — drilling at precise intervals, positioning the injection lance, maintaining consistent cream delivery into each hole. A phone call mid-injection interrupts the pattern and wastes material. The AI handles every incoming call so you can maintain the work quality that underpins your PCA guarantee."
+  },
+  {
+    question: "How many call minutes are included?",
+    answer: `The Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Damp proofing companies receive a steady mix of homeowner damp enquiries, solicitor survey instructions, builder subcontract requests, and commercial waterproofing leads. Most firms operate comfortably within the allowance. If a marketing campaign or seasonal spike increases volume, overage is billed at 20p per minute without penalties.`
+  },
+  {
+    question: "Can I answer calls during report-writing days?",
+    answer: "When you are in the office writing damp survey reports, preparing specifications, or pricing remediation work, you may prefer to answer calls directly. Toggle between AI and personal answering from your dashboard at any time. During survey days on site and DPC installation phases, route all calls to the AI."
+  },
+  {
+    question: "How is damp survey data secured?",
+    answer: "Damp enquiries contain property addresses, structural deficiency information, solicitor contact details, mortgage conditions, and commercially sensitive sale data. All information is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No property details are shared with competing damp firms, sold to aggregators, or used beyond your lead delivery."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Damp Proofing Specialists | Rapid Receptionist"
+  description={`AI phone answering for UK damp proofing specialists. Captures rising damp, tanking, DPC injection, and waterproofing enquiries while you survey on site. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/damp-proofing/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Damp Proofing Specialist"
+  tradeNamePlural="Damp Proofing Specialists"
+  tradeSlug="damp-proofing"
+  headline="AI Phone Answering for Damp Proofing Specialist Companies"
+  accentWord="Damp Proofing"
+  subhead="A conveyancing solicitor calls at 11:15am. Her client is purchasing an 1890s end-of-terrace in Jericho and the homebuyer's survey has flagged rising damp to the ground-floor reception room — tide marks visible at one metre, plaster salts crystallising on the chimney-breast wall, and a musty smell in the under-stairs cupboard. She needs a PCA-standard damp report before exchange in four weeks. You are surveying a semi in Cowley — moisture meter pressed against a cold external wall, protimeter readings noted on your clipboard, sub-floor void inspected via the inspection hatch. Your phone is in your jacket on the kitchen worktop. Without AI Phone Answering, the solicitor hears voicemail and instructs the next PCA-registered firm on her list. With it, the AI captures the full brief — 1890s terrace, Jericho, rising damp flagged, tide marks at one metre, salt crystallisation, under-stairs smell, PCA report needed, four-week exchange — and your lead waits for the drive home."
+  scenario="It is 2:30pm on a Wednesday. You are in a cellar in Headington applying cementitious tanking slurry to the brick walls — second coat brushed on in the opposite direction to the first, working quickly before the first coat cures beyond the recoat window. Three calls come in between 2 and 4pm. Without AI Phone Answering, one leaves a voicemail — 'got some damp, can you call me' — two hang up. By Thursday, two have spoken to other damp firms. With AI Phone Answering, all three are answered. Lead one: homeowner in Summertown with black mould across the entire north-facing bedroom wall — cold wall, no heating on that wall, single-glazed sash windows, condensation running down the glass every morning. Lead two: developer converting a Victorian coach house into a dwelling — needs DPC injection to all ground-floor walls, tanking to the partial cellar, and replastering with salt-retardant render throughout. Lead three: another solicitor — pre-purchase report for a cottage in Woodstock with suspected rising damp and a below-ground room showing water stains. At 4:15pm you check three leads — a condensation diagnosis, a £12,000 conversion damp package, and a solicitor's report — and prioritise."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/damp-proofing/ai-receptionist/"
+  ctaHeadline="Solicitor, Coach House Conversion, and Mould Diagnosis — All in Two Hours"
+  ctaSubhead={`While you applied the tanking slurry in the cellar, three damp opportunities called. The AI captured every symptom and deadline. From £${pricing.tiers.core.price}/month.`}
+/>

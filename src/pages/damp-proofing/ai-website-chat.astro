@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Researching Damp Solutions',
+    text: "Homeowners visit damp proofing websites with specific worries — 'is this rising damp or condensation?', 'will I need replastering after DPC?', 'how much does tanking a cellar cost?' The chat responds from your profile and captures their property details while answering their questions."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Damp Type and Severity',
+    text: "Through natural conversation, the AI identifies whether the visitor is dealing with rising damp, penetrating damp, condensation, or basement waterproofing. You receive a pre-qualified lead specifying the damp type, affected area, and property characteristics."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Damp Research',
+    text: "Homeowners notice damp problems in the evening — condensation on cold walls, a musty smell when closing the curtains, mould discovered behind a wardrobe they just moved. At 10pm she types: 'I have just found black mould behind my wardrobe on the outside wall — is this damp or condensation?' The chat captures the problem before she sleeps on it and forgets."
+  },
+  {
+    icon: '📊',
+    title: 'Explains Damp Types from Your Profile',
+    text: "Visitors ask about the difference between rising damp and condensation, whether DPC injection works, and how cavity drain membranes function. The AI responds from your service profile with educational guidance while capturing the visitor's own property situation."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Your Case Studies',
+    text: "Damp proofing portfolios showcase dramatic transformations — salt-damaged walls restored, tanked cellars converted to living spaces, mould-covered bedrooms made habitable. The chat converts visitors' concern into survey bookings while they view your results."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat comes bundled with AI phone answering at £${pricing.tiers.core.price}/month. One JavaScript snippet activates the chat widget across your entire site.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add chat to my damp proofing website?",
+    answer: "During onboarding we supply a lightweight JavaScript snippet. Add it to your site header — whether through direct HTML editing, your WordPress theme settings, or your Squarespace code injection panel. The branded chat widget appears across every page instantly. Most damp proofing websites are live with chat in under five minutes."
+  },
+  {
+    question: "Can the AI discuss damp types with visitors?",
+    answer: "Your profile informs the AI about your services and diagnostic approach. When a visitor asks 'is the damp patch at the bottom of my wall rising damp?' the AI explains from your profile that ground-level damp with tide marks and salt deposits is consistent with rising damp, while emphasising that a professional survey with moisture meter readings is needed for definitive diagnosis. It captures the property details and books the survey lead."
+  },
+  {
+    question: "What property details does the chat gather?",
+    answer: "The AI captures the damp symptoms described, the affected rooms and wall locations, the property type (terrace, semi, detached, flat), the property age, whether a cellar or crawl space exists, the wall orientation (north-facing walls indicating potential condensation), the floor level affected, and the visitor's postcode, timeline, and contact details. This tells you whether you are visiting a condensation assessment or scoping a £15,000 basement waterproofing project."
+  },
+  {
+    question: "Does the chat impact my image-heavy damp portfolio?",
+    answer: "Damp proofing websites often feature dramatic before-and-after photographs — salt-encrusted walls, mould-covered bedrooms, cellar tanking sequences. The chat script loads asynchronously after all your visual content has rendered. Image galleries display at full speed. The chat data footprint is smaller than one damp photograph."
+  },
+  {
+    question: "Is website chat charged separately?",
+    answer: `Phone answering and website chat both operate under the Core plan at £${pricing.tiers.core.price}/month — no additional charge. For damp specialists, these channels cover the two primary enquiry paths: phone calls from homeowners and solicitors during working hours, and website chats from worried homeowners researching damp solutions in the evening.`
+  },
+  {
+    question: "How is visitor data from damp queries protected?",
+    answer: "Chat conversations containing property addresses, damp symptoms, structural condition descriptions, solicitor details, and visitor contact information are encrypted and stored on UK and EU servers compliant with UK GDPR. Lead summaries go exclusively to you. No property data is shared with competing damp firms or used for any other purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Damp Proofing Specialists | Rapid Receptionist"
+  description={`AI website chat for UK damp proofing specialists. Engages homeowners researching rising damp, condensation, and basement waterproofing solutions. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/damp-proofing/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Damp Proofing Specialist"
+  tradeNamePlural="Damp Proofing Specialists"
+  tradeSlug="damp-proofing"
+  headline="AI Website Chat for Damp Proofing Specialist Companies"
+  accentWord="Damp Proofing"
+  subhead="A homeowner finds your website at 9:30pm. She recently moved into a 1920s semi and has noticed damp patches at the base of the living room wall — the wallpaper is bubbling along the skirting, there are white crystalline deposits forming on the plaster, and the room has a persistent damp smell. She types: 'Hi — we have just moved into a 1920s semi and there is damp coming up from the bottom of the wall in the living room. There are white marks on the plaster and a damp smell. Is this rising damp? How much would it cost to fix? We are worried it is getting worse.' Without chat, she bookmarks the page and forgets. With AI Website Chat, the AI explains that ground-level damp with salt deposits is consistent with rising damp but requires a moisture survey for confirmation, asks about the wall's external or party wall status, whether other rooms show similar symptoms, and captures the postcode. Thursday morning you call with a pre-qualified lead and book a Saturday survey."
+  scenario="It is midnight on a Sunday. A property developer in Botley has signed contracts on a Victorian end-of-terrace to convert into two flats. The surveyor's report flags rising damp throughout the ground floor, penetrating damp to the gable wall, and a semi-basement cellar with standing water after heavy rain. He needs a comprehensive damp remediation strategy — DPC injection to all ground-floor walls, external repointing to the gable, tanking or membrane waterproofing to the cellar, and replastering throughout with renovating plaster. He finds your website while reviewing the surveyor's report and types: 'Bought a Victorian end terrace for conversion. Rising damp ground floor, penetrating damp on the gable, cellar floods in heavy rain. Need a full damp strategy — DPC, repointing, cellar waterproofing, replastering. Can you survey and spec the remediation? Project starts in 8 weeks.' Without chat, he sends a contact form and checks Monday. With AI Website Chat, the AI acknowledges the scope — DPC, gable repair, cellar waterproofing, replastering — asks about the cellar dimensions and the water depth during flooding, and he uploads the surveyor's PDF. Monday you open the lead: Victorian terrace conversion, Botley, full damp remediation, DPC + gable + cellar + replastering, surveyor report attached, 8-week start. You call at 9am and book a Wednesday survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/damp-proofing/ai-receptionist/"
+  ctaHeadline="Capture the Homeowner Who Found Mould Behind the Wardrobe at 10pm"
+  ctaSubhead={`A worried homeowner is researching damp on your website right now. Your chat captures her property details and books the survey before she closes the browser. Included at £${pricing.tiers.core.price}/month.`}
+/>

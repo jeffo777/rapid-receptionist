@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A conveyancing solicitor calls about a damp survey for a Victorian terraced house her client is purchasing — the homebuyer's surveyor has noted rising damp staining to the ground-floor walls, a musty smell in the cellar, and suspected failed DPC. The solicitor needs a full PCA-standard damp report with costings before exchange. Completion is in five weeks. You are on site injecting a chemical damp-proof course into the external wall of a semi in East Oxford — drill holes at 120mm centres along the mortar course, injection lance inserted, silicone DPC cream pumped into each hole. Your phone is in the van. The solicitor tries two more damp-proofing firms. One answers and books the survey for Thursday.",
+    with: "Your AI receptionist answers on the second ring. It captures the full brief — Victorian terrace, rising damp noted on survey report, cellar damp, suspected DPC failure, solicitor requiring PCA-standard report, five-week completion — and confirms you will call back. At lunch you read the lead and call. You book the survey for Wednesday morning."
+  },
+  {
+    without: "A commercial property manager emails about structural waterproofing for a basement in a Grade II listed office building — water ingress through the rubble stone walls during heavy rain, damage to stored documents and server equipment. He needs a Type C cavity drain membrane system designed and installed without disturbing the historic fabric. Budget approval required from the trustees. You are in another basement tanking a cellar conversion with cementitious slurry — three coats applied over two days. The email sits until Friday evening.",
+    with: "Your AI acknowledges the property manager's email within sixty seconds, referencing the Type C cavity drain membrane, the listed building constraints, and the water ingress severity. Friday evening you begin reviewing the specification with full context already captured."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday with photos of black mould spreading across a bedroom wall — the wall feels cold and damp to the touch, the wallpaper is peeling at the skirting, and there is a musty smell they have noticed for months. She messages three damp-proofing companies. You are at home with your family. By Monday, two have replied and one has offered a Tuesday inspection.",
+    with: "The AI responds to the WhatsApp within seconds, asks whether the damp is on an external wall or internal wall, whether there is a cellar or crawl space below, what floor level is affected, and the postcode. Monday at 8am you have a structured lead with photos showing the mould pattern and wall location."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Rising Damp Treatment",
+    items: ["Chemical DPC injection (silicone cream and resin)", "Physical DPC installation", "Replastering with salt-retardant render", "Hygroscopic salt analysis and remediation", "Failed DPC diagnosis and replacement", "Damp-proof membrane installation to floors"]
+  },
+  {
+    category: "Structural Waterproofing",
+    items: ["Type A barrier protection (tanking slurry)", "Type B structurally integral protection", "Type C drained protection (cavity drain membranes)", "Basement conversion waterproofing", "Below-ground structural waterproofing", "Sump and pump drainage systems"]
+  },
+  {
+    category: "Penetrating Damp & Condensation",
+    items: ["Penetrating damp diagnosis and repair", "External wall repointing and render repair", "Condensation assessment and ventilation solutions", "Positive input ventilation (PIV) systems", "Mould remediation and prevention", "Moisture mapping and environmental monitoring"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Homeowners with Damp Problems",
+    description: "The most common enquiry. Homeowners notice damp patches on walls, black mould in bedrooms, peeling wallpaper at the skirting, or a musty smell that will not go away. They want a diagnosis — rising damp, penetrating damp, or condensation — and a permanent solution. Speed of response matters because damp worsens with every passing week."
+  },
+  {
+    icon: "⚖️",
+    title: "Solicitors & Conveyancing Firms",
+    description: "Solicitors commissioning pre-purchase damp surveys when a homebuyer's report flags damp. These leads are time-critical — exchange and completion dates create immovable deadlines. A damp surveyor who answers the phone and confirms a survey within days wins the instruction."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial Property Managers",
+    description: "Facilities managers and landlords dealing with water ingress in basements, damp in commercial interiors, and structural waterproofing requirements. These projects often involve listed buildings, heritage constraints, and trustee budget approvals — demanding professional survey reports and engineered solutions."
+  },
+  {
+    icon: "🏗️",
+    title: "Builders & Developers",
+    description: "Builders subcontract damp proofing during renovation and conversion projects — basement conversions requiring Type C waterproofing, period property renovations needing new DPC, and new-build warranty work. A damp proofer who responds promptly slots into the construction programme."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand damp proofing terminology?",
+    answer: "Every term across the full spectrum of damp diagnosis and treatment is recognised — rising damp, penetrating damp, condensation, DPC injection (silicone cream, resin), tanking (cementitious slurry, bituminous coatings), cavity drain membranes (Type A, B, C waterproofing), hygroscopic salts, salt analysis, replastering with renovating plaster, moisture mapping, positive input ventilation, sump and pump systems, and structural waterproofing. When a surveyor describes 'rising damp with tide marks at 1.2 metres, hygroscopic salt crystallisation on the plaster surface, and a failed 1960s DPC injection,' the AI captures the diagnosis precisely."
+  },
+  {
+    question: "Can the AI distinguish between a routine damp survey and a major waterproofing project?",
+    answer: "A homeowner calling about 'a damp patch in the bedroom' generates a very different lead from a developer describing a full basement conversion requiring Type C cavity drain membranes, sump chambers, and dual-pump drainage with battery backup. The AI adjusts its questions accordingly — domestic calls capture the affected rooms, wall orientation, floor level, and property age, while commercial and structural projects capture the below-ground depth, water table information, building use, and programme."
+  },
+  {
+    question: "What about urgent damp calls?",
+    answer: "Burst pipes causing sudden water damage, flood recovery work, and active water ingress into basements generate urgent calls. The AI identifies the emergency from the caller's language, captures the property address, the source of water if known, the extent of damage, and whether the property is currently occupied, then escalates the lead for immediate attention."
+  },
+  {
+    question: "How much does this cost for a damp proofing company?",
+    answer: `Damp proofing specialists pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you focus on residential DPC injection surveys or deliver structural waterproofing packages for basement conversions, the allowance covers your call patterns. Each additional channel is £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a one-person damp surveying firm?",
+    answer: "Solo PCA-registered damp surveyors benefit disproportionately. When you are on a ladder inspecting guttering, in a cellar with a moisture meter, or drilling injection holes along a mortar course, your phone goes unanswered. Every missed call during a survey day is a solicitor's instruction, a homeowner with worsening mould, or a builder's subcontract that goes to a competitor."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Your dashboard schedule determines precisely when the AI activates. During surveys and installation work on site, route every call to the AI. During office hours — writing survey reports, preparing specifications, and pricing work — answer calls yourself. Override the schedule at any time from your phone."
+  },
+  {
+    question: "How is damp survey data protected?",
+    answer: "Damp survey enquiries contain property addresses, structural condition information, solicitor details, survey reports, and commercially sensitive purchase data. All information captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No property or client information is disclosed to competing damp proofing firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Damp Proofing Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK damp proofing specialists — rising damp, DPC injection, tanking, waterproofing, and damp surveys. Never miss an enquiry while you survey. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/damp-proofing/ai-receptionist/"
+  tradeName="Damp Proofing Specialist"
+  tradeNamePlural="Damp Proofing Specialists"
+  tradeSlug="damp-proofing"
+  headline="The AI Receptionist Built for Damp Proofing Specialists"
+  accentWord="Damp Proofing"
+  subhead={`You cannot answer the phone when you are drilling injection holes along a mortar course, tanking a cellar with cementitious slurry, or running a moisture meter across a suspect wall. Your AI receptionist captures every call, every message, and every enquiry — from homeowners with black mould to solicitors commissioning pre-purchase damp reports. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Solicitor's Damp Report Instruction Arrives While You Drill the DPC"
+  ctaSubhead={`A solicitor with a five-week completion deadline will call three damp specialists today. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

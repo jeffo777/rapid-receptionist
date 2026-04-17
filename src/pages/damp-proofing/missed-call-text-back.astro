@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Surveys and Treatment',
+    text: "Drilling DPC injection holes, tanking walls, inspecting sub-floors, running moisture meters — damp work keeps both hands occupied and demands concentration. Missed Call Text Back sends a branded text the moment a survey or treatment call goes unanswered."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Worried Homeowners',
+    text: "A homeowner calling three damp specialists about spreading mould gets voicemail from two and a text from one: 'Thanks for calling — I am on a damp survey and will return your call this afternoon.' That homeowner waits for your callback rather than instructing a competitor."
+  },
+  {
+    icon: '🏷️',
+    title: 'PCA-Certified Professionalism',
+    text: "Damp proofing requires trust — homeowners worry about misdiagnosis and unnecessary treatment. A prompt, professional text signals the organised, qualified specialist they have been hoping to find."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Autumn and Winter',
+    text: "Damp enquiries peak from October through March — cold walls, condensation, and rising damp symptoms all become visible during the heating season. Missed Call Text Back ensures no seasonal lead escapes during your busiest survey period."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Details',
+    text: "Callers reply with damp specifics — 'rising damp in hallway, Victorian terrace, OX4.' These replies arrive in your lead summary with symptom details before you make the return call."
+  },
+  {
+    icon: '🔄',
+    title: 'Complements Phone Answering',
+    text: "AI Phone Answering conducts full conversations and builds detailed damp leads. Missed Call Text Back catches the rare edge cases — a caller who hangs up immediately, or a signal drop inside a stone cellar. Zero leads escape."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text go out?",
+    answer: "Seconds after the unanswered call. The homeowner's phone vibrates with your branded message before they have scrolled to the next damp company on Google. During autumn and winter when damp enquiries spike, this near-instant response keeps you on every worried homeowner's shortlist."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "The message is entirely yours — written during setup and editable at any time. A typical damp specialist message reads: 'Thank you for calling [company name]. I am currently surveying a property and will return your call shortly. Reply with details of your damp concern for a faster response.' Adjust the wording to match your company voice and service style."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They function as paired layers. Phone Answering conducts full diagnostic conversations — asking about rooms affected, wall orientation, property age, cellar access, and timber exposure. Missed Call Text Back catches the rare calls that slip past — a caller who disconnects after one ring, or a signal dead spot inside a rubble-walled cellar. Combined, every damp enquiry is retained."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Damp proofing work spans from £400 single-room DPC injections to £18,000 basement waterproofing systems. Recovering one missed call through a timely branded text — a homeowner who would have booked the next firm on Checkatrade — and converting it into a multi-room treatment transforms a modest monthly investment into substantial revenue.`
+  },
+  {
+    question: "Do homeowners reply to the text?",
+    answer: "Many do — particularly those who have been living with worsening damp and want the problem assessed. Typical replies include the room affected, the damp symptoms they have noticed, the property age, and their postcode. These descriptive details appear in your lead summary before you return the call, allowing you to discuss the likely damp type with authority."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing property addresses, damp descriptions, and contact details are encrypted and held on UK and EU servers under UK GDPR. Only you can access the data. Nothing is shared with competing damp firms, sold to lead generators, or used for any purpose beyond delivering your leads."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Damp Proofing Specialists | Rapid Receptionist"
+  description={`Missed Call Text Back for UK damp proofing specialists. Automatically texts callers while you survey or treat damp on site — keeps survey and treatment leads warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/damp-proofing/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Damp Proofing Specialist"
+  tradeNamePlural="Damp Proofing Specialists"
+  tradeSlug="damp-proofing"
+  headline="Missed Call Text Back for Damp Proofing Specialist Companies"
+  accentWord="Damp Proofing"
+  subhead="It is 10:15am on a Wednesday. You are surveying a 1930s semi-detached in Cowley — moisture meter pressed against the chimney breast, protimeter readings logged, the sub-floor void accessed through a lifted floorboard, air brick blockages noted. Two calls come in at 10:30 and 10:50. Your phone is in your coat on the kitchen worktop. Without Missed Call Text Back, both callers hear voicemail. One leaves a message. The other hangs up and tries the next PCA firm on Checkatrade. With it, both receive texts within seconds. The first replies: 'Hi — three rooms downstairs have damp, tide marks on the walls, skirting going soft. It is an 1880s terrace in OX1. Can you survey this week?' At noon you read the reply and call. You book a Friday morning survey — the classic DPC injection job: chemical cream into three external walls, hacking off contaminated plaster, and replastering with renovating render."
+  scenario="It is 2pm on a Saturday in November. You have been surveying two properties back-to-back — one in Woodstock, one in Charlbury — documenting rising damp in old cottages with stone walls and earth floors. Your phone shows three missed calls. Without Missed Call Text Back, you check at 3pm: three missed calls, one voicemail — 'got some damp, sound like a lot of companies' — and two unknowns. Three potential leads, two completely unrecoverable. With Missed Call Text Back, all three received texts. The first replied at 2:10: '1970s flat, ground floor, damp and mould in both bedrooms, tenant with small children, landlord needs survey and certificate, OX14.' The second at 2:25: 'buying a house, surveyor flagged rising damp, need PCA report for mortgage, exchange in 4 weeks, Witney.' The third at 2:40: 'developer — converting barn to dwelling, need DPC and tanking to stone walls, planning approved, start in 6 weeks, Burford.' At 3pm you open three leads — a landlord's compliance survey, a solicitor-instructed mortgage condition report, and a barn conversion damp package — each with property details and timeline. Monday morning you call all three and schedule surveys for the week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/damp-proofing/ai-receptionist/"
+  ctaHeadline="Recover Three Damp Survey Leads from One November Saturday"
+  ctaSubhead={`While you surveyed two cottages, three homeowners called. Three texts went out. Three replied. Three surveys booked by Monday. Add-on at £${pricing.addOn.price}/month.`}
+/>

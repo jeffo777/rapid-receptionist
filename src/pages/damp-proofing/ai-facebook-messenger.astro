@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Damp Treatment Before-and-Afters',
+    text: "Damp proofing transformations are dramatic — salt-encrusted, mould-covered walls restored to clean, dry, freshly plastered surfaces. When a follower messages after seeing a before-and-after post, the AI captures their own damp problem while the visual evidence is compelling."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Damp Photo Messages',
+    text: "Homeowners message with photos of their damp — tide marks, mould patches, peeling wallpaper, crumbling plaster. The AI acknowledges the photos and asks about the wall orientation, property type, and when the damp was first noticed."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Neighbourhood Word-of-Mouth',
+    text: "You treat rising damp in a terraced street and the homeowner posts the results on Facebook. Neighbours in adjacent houses — likely with identical DPC issues — message your page wanting the same treatment."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Evening Worry Hours',
+    text: "Homeowners worry about damp in the evening — when the heating goes off and the walls feel cold, or when they discover mould behind furniture. The AI captures every anxious Sunday evening Messenger enquiry."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Emotional Damp Messages',
+    text: "Damp messages are often emotional — 'we are so worried about the mould, our children are sleeping in that room.' The AI responds sensitively and professionally, gathering property details while acknowledging the concern."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Transformation Photo',
+    text: "Every cellar tanking sequence, DPC injection time-lapse, and replastered wall reveal posted on Facebook can generate a damp remediation enquiry from a follower with a similar problem."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for damp proofing?",
+    answer: "A Business page with Messenger activated is essential — the integration does not work with personal Facebook profiles. Most damp proofing specialists already maintain a Business page to share before-and-after transformations, customer testimonials, and educational posts about damp causes. The AI adds immediate, professional message handling to your existing social proof."
+  },
+  {
+    question: "What damp enquiries come through Messenger?",
+    answer: "Predominantly anxious homeowners. Common messages include 'we have damp patches on the ground floor walls — is this rising damp?', 'black mould keeps coming back in the bedroom even after we clean it,' and 'our surveyor said we need a DPC — how much does that cost?' These leads are highly motivated because the homeowner is actively searching for a solution."
+  },
+  {
+    question: "How quickly does the AI respond on Messenger?",
+    answer: "Within seconds of the message arriving. Messenger displays active status, so the homeowner sees your company engaging immediately. Homeowners dealing with worsening damp typically message two to four specialists. The first professional response that demonstrates understanding of their specific symptoms — ground-level damp, mould patterns, salt deposits — builds trust and wins the survey booking."
+  },
+  {
+    question: "What does Facebook Messenger cost for damp firms?",
+    answer: `Messenger costs £${pricing.addOn.price}/month as a channel add-on. Damp proofing work ranges from £400 single-room DPC treatments to £20,000 structural waterproofing installations. One homeowner's multi-room damp treatment — secured through a prompt Messenger reply while competitors' messages sat unanswered over the weekend — repays the channel investment for years.`
+  },
+  {
+    question: "Can I continue Messenger conversations myself?",
+    answer: "Send your own message in any thread and the AI hands the conversation to you permanently. Most damp specialists let the AI capture the initial brief — symptoms described, rooms affected, property type and age, postcode — then follow up personally to explain the likely damp type, outline the survey process, and schedule the visit."
+  },
+  {
+    question: "How is Messenger data from damp enquiries protected?",
+    answer: "All Messenger conversations, damp photographs, property addresses, structural condition information, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you and is never shared with competing damp firms, sold to lead platforms, or used for advertising purposes."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Damp Proofing Specialists | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK damp proofing specialists. Converts before-and-after damp treatment posts into homeowner survey bookings from your Facebook page. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/damp-proofing/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Damp Proofing Specialist"
+  tradeNamePlural="Damp Proofing Specialists"
+  tradeSlug="damp-proofing"
+  headline="AI Facebook Messenger for Damp Proofing Specialist Companies"
+  accentWord="Damp Proofing"
+  subhead="You post a before-and-after of a ground-floor hallway in a Victorian terraced house — the 'before' showing tide marks reaching 900mm up the wall, white hygroscopic salt deposits across the plaster surface, and the skirting board visibly rotting; the 'after' showing the wall re-rendered with salt-retardant renovating plaster, a new chemical DPC installed, new skirting fitted, and the hallway freshly decorated. A hundred and ninety likes, twenty-two shares. A homeowner three streets away messages: 'Our hallway looks exactly like your before picture — tide marks and white powdery stuff on the wall. It has been getting worse for years. Can you do the same treatment?' You are on another survey. Without AI Messenger, the message waits. With it, the AI asks about the property age, how many rooms are affected, and the postcode. Your lead is captured."
+  scenario="It is 10pm on a Wednesday. A first-time buyer in Carterton has received her homebuyer's survey report. It notes 'rising damp to the ground-floor kitchen and dining room, damp staining to the cellar walls, and evidence of historic but potentially failed DPC injection.' Her mortgage company has conditioned the offer on obtaining a specialist damp report. She finds your Facebook page through a PCA member search and messages: 'Hi — I am buying a house and my survey found rising damp downstairs and damp in the cellar. The bank says I need a specialist report before they will release the mortgage. The DPC may have been done before but failed. Can you do a proper PCA damp survey? I need it done within 2 weeks for exchange.' Without AI Messenger, you see the message Thursday morning after your first survey. She has also messaged two other PCA firms; one replied at 10:20pm with a clear outline of the PCA survey process and offered a next-week appointment. With AI Messenger, the reply arrives at 10:01pm: 'Thank you — PCA-standard damp surveys for mortgage conditions are one of our core services. If a previous DPC has failed, our survey will include moisture profiling to confirm whether re-treatment is needed. Could you share the survey extract mentioning the damp and confirm the property address? We will check our availability for the next two weeks.' She sends the survey page. Thursday morning you open the lead: first-time buyer, Carterton, rising damp ground floor, cellar damp, possible failed DPC, mortgage condition, 2-week exchange, survey extract attached. You call at 9am and book next Tuesday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/damp-proofing/ai-receptionist/"
+  ctaHeadline="Turn Hallway DPC Transformation Posts into Three-Street Referral Leads"
+  ctaSubhead={`A Victorian terrace before-and-after earns a hundred and ninety likes. AI Messenger converts every neighbour's message into a survey with symptoms and postcode. Add-on at £${pricing.addOn.price}/month.`}
+/>
