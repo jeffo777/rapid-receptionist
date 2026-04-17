@@ -65,8 +65,8 @@ const {
 /* Auto-generate pricing note from central pricing data if not provided */
 const isCorePlan = channelName === 'AI Phone Answering' || channelName === 'AI Website Chat';
 const generatedPricingNote = isCorePlan
-  ? `${channelName} is included in the <strong>Starter plan at £${pricing.tiers.core.price}/month</strong> (${pricing.tiers.core.minutes} mins) or the <strong>Core plan at £${pricing.tiers.core.price}/month</strong> (${pricing.tiers.core.minutes} mins), both with unlimited website chat. Add extra channels at <strong>£${pricing.addOn.price}/month each</strong>. <a href='/pricing/'>Full pricing →</a>`
-  : `${channelName} is an <strong>add-on at £${pricing.addOn.price}/month</strong>. Pair with Starter (£${pricing.tiers.core.price}/month) or Core (£${pricing.tiers.core.price}/month), or get everything for <strong>£${pricing.addOn.price}/month</strong>. <a href='/pricing/'>Full pricing →</a>`;
+  ? `${channelName} is included in the <strong>Core plan at £${pricing.tiers.core.price}/month</strong> with ${pricing.tiers.core.minutes} minutes of talk time and unlimited website chat. Add extra channels at <strong>£${pricing.addOn.price}/month each</strong>. <a href='/pricing/'>Full pricing →</a>`
+  : `${channelName} is an <strong>add-on at £${pricing.addOn.price}/month</strong> on top of the Core plan (£${pricing.tiers.core.price}/month). <a href='/pricing/'>Full pricing →</a>`;
 const resolvedPricingNote = pricingNote || generatedPricingNote;
 
 const siteUrl = 'https://rapidreceptionist.co.uk';
