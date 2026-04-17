@@ -6,6 +6,7 @@ import FAQAccordion from '../components/FAQAccordion.astro';
 import CTASection from '../components/CTASection.astro';
 import HeroSection from '../components/HeroSection.astro';
 import CookieConsent from '../components/CookieConsent.astro';
+import StatisticsSection from '../components/StatisticsSection.astro';
 import pricing from '../data/pricing.json';
 
 export interface FAQItem {
@@ -208,6 +209,8 @@ const allFaqs = [
       </div>
     </div>
   </section>
+
+  <StatisticsSection />
 
   <FAQAccordion faqs={allFaqs} />
 

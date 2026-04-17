@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A homeowner calls while you are fitting a concealed cistern frame behind stud work. Your spirit level is balanced, the frame is clamped, and you are about to drill the fixings. Their call goes to voicemail. They wanted three bathrooms refitting in a house they just bought — that is six weeks of work you will never know about.",
+    with: "The same homeowner calls. Your AI receptionist answers: 'Good morning, thank you for calling, how can I help?' It captures the property details — three bathrooms, full refit including tiling, the house is empty so access is easy. You finish the cistern frame and call them back at lunch with the full brief."
+  },
+  {
+    without: "A landlord emails at 7pm asking about refitting all six bathrooms in a rental block before new tenants move in. You do not check email until the next morning. By then, two other bathroom companies have already acknowledged and one has arranged a site visit.",
+    with: "The email gets an instant acknowledgement confirming receipt of the specification. Next morning, you open a clean lead summary — six bathrooms, rental block, timeline, the landlord's direct number — and call first thing."
+  },
+  {
+    without: "A builder WhatsApps you photos of a gutted bathroom in a Victorian terrace. He needs first fix plumbing, tanking, tiling, and all sanitaryware fitted before the client returns from holiday in three weeks. Your phone is in the van while you are tiling a shower enclosure. The message sits unread for hours.",
+    with: "The WhatsApp gets an instant reply capturing the scope — full bathroom fit-out, Victorian terrace, three-week deadline. The builder gets confirmation you will call back today. You see the lead at your next break and ring him before anyone else."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Domestic Bathroom Installation",
+    items: ["Full bathroom design and installation", "Bathroom renovation and refurbishment", "En-suite creation and fitting", "Cloakroom and WC installation", "Shower room conversion", "Accessible and disabled bathroom fitting"]
+  },
+  {
+    category: "Specialist & Wet Room",
+    items: ["Wet room design and installation", "Tanking and waterproofing", "Underfloor heating installation", "Wall-hung sanitaryware and concealed cisterns", "Steam shower and sauna fitting", "Luxury walk-in shower enclosures"]
+  },
+  {
+    category: "Commercial & Multi-Unit",
+    items: ["New-build bathroom installations", "Multi-unit apartment bathrooms", "HMO and rental property bathrooms", "Hotel and B&B bathroom refurbishment", "Care home and accessible facilities", "Show home bathroom fitting"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Domestic Homeowners",
+    description: "Homeowners planning bathroom renovations — they have spent weeks browsing Instagram, collecting tile samples, and comparing bathroom fitters. A new bathroom is one of the most disruptive home projects and they want someone trustworthy, skilled, and responsive. Your speed of reply is a powerful trust signal."
+  },
+  {
+    icon: "🏗️",
+    title: "Builders & Developers",
+    description: "Main contractors and property developers needing reliable bathroom fitting subcontractors for new builds and refurbishments. They want a fitter who handles the full package — first fix plumbing, tanking, tiling, sanitaryware, and finishing — across multiple plots to a consistent standard."
+  },
+  {
+    icon: "🏘️",
+    title: "Landlords & Property Managers",
+    description: "Landlords refitting bathrooms between tenancies or upgrading HMO facilities to meet regulations. They need competitive pricing, fast turnaround, and a bathroom company that can manage the entire job without them having to coordinate plumbers, tilers, and electricians separately."
+  },
+  {
+    icon: "♿",
+    title: "Accessibility & Care Clients",
+    description: "Occupational therapists, care providers, and families needing accessible bathroom adaptations — level-access showers, grab rails, raised toilets, and wet room conversions. These enquiries are sensitive and time-critical, and they need a fitter who responds promptly and understands the requirements."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand bathroom fitting terminology?",
+    answer: "Yes. During setup, your AI receptionist is configured with bathroom-specific vocabulary — concealed cisterns, wall-hung basins, tanking systems, thermostatic shower valves, wet room formers, tray-less showers, vanity units, LED mirrors, underfloor heating mats, and everything else your customers might describe. When someone says 'I want a wet room with a walk-in rainfall shower and wall-hung toilet,' the AI captures it accurately."
+  },
+  {
+    question: "Can the AI handle enquiries for both simple refits and high-end installations?",
+    answer: "Absolutely. Whether someone calls about replacing a tired bathroom suite in a rental flat or wants a luxury wet room with underfloor heating and dual rainfall showers, the AI captures the scope, specification level, timeline, and contact details. You get the full picture before calling back."
+  },
+  {
+    question: "What happens if someone calls about a bathroom emergency?",
+    answer: "The AI recognises urgency. If a caller describes a leak from a bathroom above, a burst pipe behind tiles, or a toilet overflowing, the AI escalates immediately — trying your mobile first, then our human operators. Routine bathroom renovation enquiries are handled as standard leads."
+  },
+  {
+    question: "How much does it cost for a bathroom fitting business?",
+    answer: `The Starter plan is £${pricing.tiers.starter.price}/month with ${pricing.tiers.starter.minutes} minutes of AI phone answering plus unlimited website chat. The Core plan at £${pricing.tiers.core.price}/month gives you ${pricing.tiers.core.minutes} minutes for busier businesses. Additional channels like WhatsApp and Facebook are £${pricing.addOn.price}/month each, or get the All Channels bundle at £${pricing.tiers.all.price}/month. Setup is £${pricing.setup.price} one-time (refundable within 30 days).`
+  },
+  {
+    question: "Is this suitable for a one-man bathroom fitting business?",
+    answer: "It was built for exactly this. A sole trader bathroom fitter is the person most likely to be siliconing a shower tray or tanking a wet room when the phone rings. You cannot employ a receptionist. The AI handles every call, captures what the customer wants, and sends you the details so you can follow up between jobs."
+  },
+  {
+    question: "Can I still answer calls when I am free?",
+    answer: "Yes. The AI only activates when you are unavailable. When you are between jobs or at your showroom, calls ring through to you as normal. You control when the AI picks up."
+  },
+  {
+    question: "How does Rapid Receptionist handle customer data?",
+    answer: "All customer data is managed under UK GDPR and the Data Protection Act 2018. Names, addresses, bathroom specifications, and job details are encrypted during transmission and storage, held on UK and EU servers, and shared only with you. We never sell, share, or repurpose enquiry data."
+  }
+];
+---
+
+<TradeHubLayout
+  title="Rapid Response AI Receptionist for Bathroom Fitters | Rapid Receptionist"
+  description={`AI receptionist for UK bathroom fitters, bathroom installation companies, and wet room specialists. Answers calls, captures leads from chat, WhatsApp, and social media while you are on site. From £${pricing.tiers.starter.price}/month.`}
+  canonicalUrl="/bathroom-fitters/ai-receptionist/"
+  tradeName="Bathroom Fitter"
+  tradeNamePlural="Bathroom Fitters"
+  tradeSlug="bathroom-fitters"
+  headline="The Rapid Response AI Receptionist for Bathroom Fitters"
+  accentWord="Bathroom Fitters"
+  subhead={`You cannot answer the phone while you are tanking a wet room, fitting a concealed cistern, or tiling a shower enclosure. Your AI receptionist picks up every call, captures every lead from chat, WhatsApp, and social media, and delivers the details between installations. From £${pricing.tiers.starter.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Stop Losing Bathroom Jobs to Missed Calls"
+  ctaSubhead={`Every call your bathroom business misses is a customer booking another fitter. From £${pricing.tiers.starter.price}/month — respond first, win the work.`}
+/>

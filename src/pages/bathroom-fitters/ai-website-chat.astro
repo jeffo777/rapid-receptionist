@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Captures Visitors Browsing Your Portfolio',
+    text: "A homeowner lands on your website at 10pm, browses your bathroom gallery, and wants to know if you do wet rooms. Without chat, they bookmark your site and forget. With AI Website Chat, they get an instant answer and you get a qualified lead by morning."
+  },
+  {
+    icon: '📐',
+    title: 'Handles Technical Bathroom Questions',
+    text: "Visitors ask about wet room tanking, underfloor heating, wall-hung vs pedestal basins, and whether you can work with their chosen tiles. The AI draws on your training data to answer and captures everything for your follow-up."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Decision-Making Hours',
+    text: "Couples plan bathroom renovations in the evening — scrolling Pinterest, comparing bathroom fitters, measuring their space. Your chat is live during those 7pm-11pm hours when decisions are being made."
+  },
+  {
+    icon: '📱',
+    title: 'Mobile-Friendly Experience',
+    text: "Most visitors browse on their phone — often while sitting in the very bathroom they want to renovate. The chat widget works seamlessly on mobile."
+  },
+  {
+    icon: '🎯',
+    title: 'Qualifies Bathroom Leads',
+    text: "The chat captures bathroom type, fixture preferences, room dimensions, budget expectations, and timeline. You wake up to a lead that reads like a completed project brief."
+  },
+  {
+    icon: '🔗',
+    title: 'Works With Your Bathroom Gallery',
+    text: "Your portfolio photos attract visitors. The chat converts them into leads. A beautiful wet room photo next to an instant chat response creates a first impression competitors cannot match."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does website chat work for bathroom fitters?",
+    answer: "A chat widget appears on your website. When a visitor opens a conversation, the AI responds instantly — answering questions about your services, capturing what type of bathroom work they need, and collecting their contact details. Everything is sent to you as a lead summary."
+  },
+  {
+    question: "Can the chat discuss specific bathroom fixtures?",
+    answer: "Yes. During setup, we configure the AI with your capabilities and product range. Whether you specialise in wet rooms, luxury walk-in showers, or accessible bathrooms, the AI references your strengths without quoting prices."
+  },
+  {
+    question: "Is there a message limit?",
+    answer: "No. Website chat includes unlimited messages on all plans. There is no additional charge regardless of volume."
+  },
+  {
+    question: "Does the chat try to quote bathroom jobs?",
+    answer: "Never. Bathroom pricing depends on specification, room layout, plumbing requirements, and tile choices. The AI steers towards booking a home survey — which is how bathroom fitters convert leads."
+  },
+  {
+    question: "How is chat data protected?",
+    answer: "All data is managed under UK GDPR. Visitor details and conversations are encrypted and stored on UK and EU servers, shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Bathroom Fitters | Rapid Receptionist"
+  description={`AI website chat for UK bathroom fitters, bathroom installers, and wet room specialists. Captures visitor enquiries 24/7 with intelligent chat. Unlimited messages included. From £${pricing.tiers.starter.price}/month.`}
+  canonicalUrl="/bathroom-fitters/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Bathroom Fitter"
+  tradeNamePlural="Bathroom Fitters"
+  tradeSlug="bathroom-fitters"
+  headline="AI Website Chat for Bathroom Fitters"
+  accentWord="Bathroom Fitters"
+  subhead="A couple is browsing your bathroom gallery at 9:30pm. They love the wet room you fitted in a Victorian terrace. They type into the chat: 'Can you do wet rooms with underfloor heating?' The AI responds instantly, captures their project, and you call them first thing tomorrow."
+  scenario="It is 11pm on a Friday. A homeowner in Bath has been planning her bathroom renovation for months. She has chosen tiles, picked out a freestanding bath, and wants a walk-in rainfall shower with a frameless glass screen. She lands on your website, scrolls through six completed bathroom projects, and opens the chat: 'Hi, I love the wet room with the rainfall shower. I want something similar but with a freestanding bath as well. My bathroom is about 3m x 2.5m. Do you do free design consultations?' Without website chat, she fills in a contact form you might not see until Monday. With AI Website Chat, the AI responds in five seconds — yes you offer consultations, asking about her timeline, whether she needs the old bathroom stripped out, and her preferred day for a home visit. By 11:10pm, she has shared her tile choices, confirmed her phone number, and stopped looking at other bathroom fitters."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/bathroom-fitters/ai-receptionist/"
+  ctaHeadline="Turn Website Visitors into Bathroom Customers"
+  ctaSubhead={`Your portfolio attracted them. Your AI captures them. Included from £${pricing.tiers.starter.price}/month.`}
+/>

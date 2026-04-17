@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '⚡',
+    title: 'Answers While You Are Fitting',
+    text: "Bathroom fitting demands focus — you cannot stop mid-tile, put down a grout float, or step away from a plumbing connection to answer a call. The AI handles every call with your business name while you keep the installation on track."
+  },
+  {
+    icon: '🧠',
+    title: 'Understands Bathroom Enquiries',
+    text: "When a caller says 'I want a wet room with a walk-in rainfall shower and wall-hung toilet,' the AI captures exactly what they mean. It records the type of bathroom, the fixtures they want, the room dimensions if mentioned, and whether it is a new installation or a renovation."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Real Emergencies',
+    text: "A leak from a bathroom above flooding a kitchen ceiling. A burst pipe behind newly tiled walls. A toilet that will not stop running. The AI recognises emergency language and escalates immediately — reaching your mobile first, then our human team."
+  },
+  {
+    icon: '🕐',
+    title: 'Captures Evening and Weekend Calls',
+    text: "Couples plan bathroom renovations in the evenings — browsing tiles online, measuring their bathroom, debating wet room vs standard shower. Those 7pm to 9pm calls are your warmest leads. The AI catches every one."
+  },
+  {
+    icon: '📋',
+    title: 'Detailed Lead Summaries',
+    text: "Every call is summarised with the caller's name, number, location, what they want, whether it is a full refit or a refresh, and how soon they want to start. You call back knowing whether it is a quick suite swap or a luxury wet room installation."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional First Impression',
+    text: "The AI answers as your bathroom business — 'Good morning, thank you for calling Waterstone Bathrooms, how can I help?' Callers hear a professional greeting that builds confidence before you have even spoken."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI say when a bathroom customer calls?",
+    answer: "It greets them with your business name and has a natural conversation. For bathroom businesses, it asks about the type of work — full renovation, en-suite, wet room, accessible bathroom — the room size, any fixture preferences, their timeline, and captures their contact details. It does not design bathrooms or quote — it captures the brief for your follow-up."
+  },
+  {
+    question: "Can it tell the difference between a basic refit and a wet room conversion?",
+    answer: "The AI captures what the caller describes. If someone says 'just swap the suite for something modern,' that is recorded. If someone says 'remove the bath, tank the whole room, and install a walk-in shower with underfloor heating,' that is recorded too. You see the scope in the lead summary and prioritise accordingly."
+  },
+  {
+    question: "How many minutes of phone time do I get?",
+    answer: `The Starter plan includes ${pricing.tiers.starter.minutes} minutes per month. The Core plan gives you ${pricing.tiers.core.minutes} minutes for busier bathroom companies. Additional minutes are 20p each with no cap.`
+  },
+  {
+    question: "Can I still take calls when I am free?",
+    answer: "Yes. The AI only activates when you are unavailable — on a job, driving, or after hours. When you are between installations, calls ring through to you as normal."
+  },
+  {
+    question: "How does Rapid Receptionist protect customer data?",
+    answer: "All data from phone calls is managed under UK GDPR and the Data Protection Act 2018. Data is encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Bathroom Fitters | Rapid Receptionist"
+  description={`AI phone answering for UK bathroom fitters, bathroom installers, and wet room specialists. Answers every call, captures bathroom enquiry details, and escalates emergencies. From £${pricing.tiers.starter.price}/month.`}
+  canonicalUrl="/bathroom-fitters/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Bathroom Fitter"
+  tradeNamePlural="Bathroom Fitters"
+  tradeSlug="bathroom-fitters"
+  headline="AI Phone Answering for Bathroom Fitters"
+  accentWord="Bathroom Fitters"
+  subhead={`You are tiling a shower enclosure — the adhesive is spread, the first row is level, and you have twenty minutes before it starts to skin over. A homeowner who saw your wet room on Instagram is calling about converting their family bathroom. Your AI answers, captures every detail, and the lead is waiting when you clean up. From £${pricing.tiers.starter.price}/month.`}
+  scenario="It is 9:45am on a Thursday. You are fitting a wall-hung basin in an en-suite in a new-build in Manchester — the concealed waste is connected, the brackets are fixed, and you are carefully lifting the basin onto the frame. Your phone rings in the bedroom next door. A couple in Didsbury have just had a baby and want to convert their spare bathroom into a family-friendly space — walk-in shower instead of the bath, non-slip flooring, better storage. They are keen to get it done before the baby starts crawling. Without AI Phone Answering, they hear your voicemail, assume you are too busy, and call the bathroom showroom down the road who answers on the second ring. With AI Phone Answering, they hear: 'Good morning, thank you for calling, how can I help?' The AI captures the conversion details — bath removal, walk-in shower, non-slip floor, Didsbury postcode, baby on the way so timing matters. You hang the basin, finish the silicone, and call them back at 11am with the full brief."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/bathroom-fitters/ai-receptionist/"
+  ctaHeadline="Stop Missing Bathroom Jobs"
+  ctaSubhead={`Every missed call is a bathroom that someone else will fit. From £${pricing.tiers.starter.price}/month.`}
+/>

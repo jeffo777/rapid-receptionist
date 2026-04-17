@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Instant Acknowledgement',
+    text: "A property developer emails a specification for eight bathrooms in a new-build apartment block. You are tiling a shower enclosure. Without AI Email Response, your reply comes 48 hours later. With it, the developer gets an immediate confirmation that their spec has landed."
+  },
+  {
+    icon: '🏗️',
+    title: 'Handles Trade Specifications',
+    text: "Builders and developers email bathroom specifications — suite choices, tile selections, plumbing requirements. The AI acknowledges receipt and confirms you will respond with a quote."
+  },
+  {
+    icon: '🕐',
+    title: 'Responds Outside Office Hours',
+    text: "Architects email bathroom layouts at 6pm. Homeowners send enquiries on Sunday. Every email gets an instant acknowledgement regardless of when it arrives."
+  },
+  {
+    icon: '📋',
+    title: 'Extracts Key Information',
+    text: "The AI identifies the scope of bathroom work, any product preferences, timeline, and contact details from the email — delivering a clean summary for your review."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional First Impression',
+    text: "An instant acknowledgement tells the sender their bathroom project matters to you before you have even read the full brief."
+  },
+  {
+    icon: '🔄',
+    title: 'Nothing Gets Lost',
+    text: "Bathroom specifications from architects and contractors arrive at all hours. The AI ensures every email is acknowledged and ready for your review."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Email Response work for bathroom companies?",
+    answer: "When an email arrives at your business address, the AI sends an immediate acknowledgement confirming receipt. It summarises the key details and confirms you will review and respond. The original email and summary are packaged for you."
+  },
+  {
+    question: "Does the AI quote bathroom jobs via email?",
+    answer: "No. Bathroom pricing depends on suite specification, tile choices, plumbing complexity, and room layout. The AI acknowledges the enquiry and steers towards a home survey."
+  },
+  {
+    question: "How much does AI Email Response cost?",
+    answer: `AI Email Response is an add-on at £${pricing.addOn.price}/month on any plan. Pair with Starter (£${pricing.tiers.starter.price}/month) or Core (£${pricing.tiers.core.price}/month), or get everything in the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can it handle bathroom layout attachments?",
+    answer: "The AI notes that attachments have been received but does not analyse them. Floor plans and specifications are for you to review during follow-up."
+  },
+  {
+    question: "How is email data protected?",
+    answer: "All email data is managed under UK GDPR. Content, sender details, and attachments are encrypted and stored on UK and EU servers, shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Bathroom Fitters | Rapid Receptionist"
+  description={`AI email response for UK bathroom fitters, bathroom installers, and wet room specialists. Instant acknowledgement for every email enquiry. £${pricing.addOn.price}/month add-on.`}
+  canonicalUrl="/bathroom-fitters/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Bathroom Fitter"
+  tradeNamePlural="Bathroom Fitters"
+  tradeSlug="bathroom-fitters"
+  headline="AI Email Response for Bathroom Fitters"
+  accentWord="Bathroom Fitters"
+  subhead={`A developer emails specifications for eight apartment bathrooms — suite choices, tile selections, and a six-week programme. You are on site all day. Without AI Email Response, they wait until tomorrow. With it, they know you are interested within sixty seconds. £${pricing.addOn.price}/month add-on.`}
+  scenario="It is 4:50pm on a Friday. An architect in Brighton emails your business address with a detailed bathroom specification for a luxury coastal apartment conversion — freestanding baths, rainfall showers, heated towel rails, underfloor heating, and floor-to-ceiling porcelain tiles. They have attached elevation drawings and want a quote by Wednesday. You are packing up from a wet room installation in Hove. Without AI Email Response, the architect sends the same specification to four other bathroom companies over the weekend. Two acknowledge within the hour and one arranges a site visit for Monday. With AI Email Response, the architect gets an acknowledgement at 4:51pm: 'Thank you for the detailed specification. We have received the drawings and will review everything on Monday morning. We will be in touch to discuss the project and arrange a site visit.' Monday morning, you open the summary and call first."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/bathroom-fitters/ai-receptionist/"
+  ctaHeadline="Acknowledge Every Bathroom Specification Instantly"
+  ctaSubhead={`An architect's bathroom spec deserves an immediate response. Your AI delivers it. £${pricing.addOn.price}/month add-on.`}
+/>
