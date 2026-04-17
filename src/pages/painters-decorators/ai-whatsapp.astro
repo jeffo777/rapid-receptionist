@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Customers Send Wall Photos',
+    text: "Homeowners photograph the peeling paint, the stained ceiling, or the wallpaper they want removed and send it via WhatsApp. The AI acknowledges the photos and captures the context — giving your painting business a head start."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Response',
+    text: "WhatsApp users expect fast replies. When someone messages a decorating contractor and hears nothing, they message the next one. Your AI replies in seconds."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for Decorators on Site',
+    text: "You are on a ladder with a roller in your hand. Checking WhatsApp is not realistic. The AI handles messages so your painting and decorating business never misses a lead."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Lead Capture',
+    text: "The AI asks follow-ups — which rooms, wall condition, paint or wallpaper, preparation needed. Each WhatsApp conversation becomes a usable lead."
+  },
+  {
+    icon: '🕐',
+    title: 'Evening and Weekend Coverage',
+    text: "Homeowners WhatsApp painting contractors in the evenings when they can see the tired walls. The AI captures these leads in real time."
+  },
+  {
+    icon: '🔗',
+    title: 'Complements Phone and Chat',
+    text: "Some customers prefer WhatsApp to calling. Offering it alongside phone answering means your decorating business captures every communication preference."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI WhatsApp work for painters and decorators?",
+    answer: "Customers message your WhatsApp business number. The AI responds instantly, asks about the decorating work needed, captures details, and sends you a lead summary. Handles text, photos, and voice notes."
+  },
+  {
+    question: "Can the AI handle photo messages?",
+    answer: "Yes. When a customer sends photos of peeling paint, damaged walls, or colour ideas, the AI acknowledges them and continues the conversation to capture the full brief."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI WhatsApp is £${pricing.addOn.price}/month. Same price for sole trader decorators, painting contractors, and larger painting and decorating companies.`
+  },
+  {
+    question: "Can I still reply myself?",
+    answer: "Yes. The AI handles initial engagement. You step in when ready."
+  },
+  {
+    question: "Do I need WhatsApp Business?",
+    answer: "No. We set it up during onboarding, or connect to your existing WhatsApp Business account."
+  },
+  {
+    question: "How is data protected?",
+    answer: "All data is managed under UK GDPR. Encrypted, stored on UK and EU servers, shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Painters & Decorators | Rapid Receptionist"
+  description="AI WhatsApp for UK painters, decorators, painting businesses, and decorating contractors. Responds instantly to WhatsApp enquiries with photos of decorating work. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/painters-decorators/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Painter & Decorator"
+  tradeNamePlural="Painters & Decorators"
+  tradeSlug="painters-decorators"
+  headline="AI WhatsApp for Painters & Decorators"
+  accentWord="Painters"
+  subhead="A homeowner photographs their peeling hallway ceiling and WhatsApps your painting business. Instead of that message sitting unread while you finish a lounge, your AI replies in seconds — capturing room details, preparation needs, and timeline. Built for decorating contractors who cannot check their phone with a roller in hand."
+  scenario="It is Saturday morning. A homeowner in Bramhall has just had a new kitchen fitted and the walls around the units need making good and painting — filler, primer, and two coats of a specific Dulux Heritage colour. They photograph the bare plaster patches, the filler marks, and the colour chart page showing the shade they want. They WhatsApp your number: 'Hi, we have just had a new kitchen and need the walls around it finishing. Can you come and have a look? Photos attached.' You are on a job in Hazel Grove and will not check your phone until lunchtime. Without AI WhatsApp, the message sits for four hours. They message another painter who replies in ten minutes and books a visit for Monday. With the AI, they get an instant response: 'Thanks for the photos — we can see the areas that need making good. Could you confirm your postcode and when would suit for a visit? We will arrange a callback today.' They reply with their address. You call at 1pm and book a look for Sunday afternoon."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/painters-decorators/ai-receptionist/"
+  ctaHeadline="Stop Losing WhatsApp Leads"
+  ctaSubhead="Homeowners send photos of tired walls and want a fast reply. Your AI delivers it. £${pricing.addOn.price}/month."
+/>

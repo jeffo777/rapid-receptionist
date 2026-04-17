@@ -1,0 +1,102 @@
+﻿---
+import ChannelServiceLayout from '../../layouts/ChannelServiceLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const steps = [
+  {
+    number: 1,
+    title: 'A Customer Calls Your Number',
+    description: "They've found you on Google, spotted your van, or been referred by a neighbour. They dial your number — and instead of voicemail, your AI receptionist answers instantly with your business name."
+  },
+  {
+    number: 2,
+    title: 'The AI Has a Real Conversation',
+    description: "Your AI receptionist greets the caller by your business name — 'Good morning, thank you for calling Marshall Brickwork, how can I help?' It then asks the right questions: what work is needed, where the property is, how urgent it is, and captures their contact details. No script reading — a genuine back-and-forth exchange."
+  },
+  {
+    number: 3,
+    title: 'You Get the Lead, Fully Detailed',
+    description: "Every call is summarised and sent to you instantly — caller name, phone number, location, nature of the work, urgency level. You have everything you need to call them back with a quote or arrange a site visit. No voicemails to decode, no missed details."
+  }
+];
+
+const benefits = [
+  {
+    icon: '⚡',
+    title: 'Instant Answer, Every Time',
+    text: 'Your AI receptionist picks up within two rings — morning, evening, weekend, bank holiday. While your competitors send callers to voicemail, yours gets answered by a knowledgeable, professional voice that sounds like a real member of your team.'
+  },
+  {
+    icon: '🧠',
+    title: 'Understands Construction Terminology',
+    text: "The AI is trained on your specific trade's vocabulary. It knows the difference between a skim and a render, between first fix and second fix, between a patch repair and a full strip. Your callers get a receptionist who actually understands what they're describing."
+  },
+  {
+    icon: '🚨',
+    title: 'Emergency Escalation Built In',
+    text: "If a caller describes a genuine emergency — a gas smell, a burst pipe, a collapsed ceiling, an electrical fault — the AI escalates immediately. It tries to reach you on your mobile first. If you can't be reached, our human operators step in."
+  },
+  {
+    icon: '📊',
+    title: 'Full Lead Capture',
+    text: "Every call is logged with the caller's name, phone number, location, the work they need, and how urgent it is. You receive the summary instantly — by email, text, or app notification — so you can follow up at the right time with all the details."
+  },
+  {
+    icon: '🕐',
+    title: '300 Minutes of Talk Time',
+    text: 'The Core plan includes 300 minutes of actual AI conversation time per month. For the majority of sole traders and small construction businesses, this covers the call volume comfortably. Additional minutes are charged at 20p each — no caps, no surprises.'
+  },
+  {
+    icon: '🎯',
+    title: 'Your Business Name, Your Greeting',
+    text: "The AI answers as your business. 'Good afternoon, thank you for calling Preston Plastering, how can I help?' Callers hear a professional greeting that matches your brand — not a generic third-party answering service."
+  }
+];
+
+const faqs = [
+  {
+    question: "What exactly does the AI say when it answers my calls?",
+    answer: "It greets the caller with your business name — 'Good morning, thank you for calling [your business name], how can I help you today?' From there, it has a natural conversation to understand what work is needed, where the property is, how urgent the job is, and captures the caller's name and contact details. The tone is professional but approachable — the same way a good in-house receptionist would handle the call."
+  },
+  {
+    question: "Can the AI tell the difference between an emergency and a routine enquiry?",
+    answer: "Yes. The AI assesses urgency during every call. If a caller describes something urgent — water pouring through a ceiling, a gas smell, a power failure, a break-in — the AI escalates immediately. First it tries to reach you on your mobile. If you're unavailable, the call is passed to our dedicated human operators who take over. Routine enquiries — quote requests, availability checks, follow-ups — are captured in detail and sent to you for a callback at your convenience."
+  },
+  {
+    question: "What happens if the AI can't answer a caller's question?",
+    answer: "The AI doesn't try to quote jobs or give technical advice — it's a receptionist, not an estimator. If a caller asks something beyond its scope, it acknowledges the question honestly and lets them know you'll follow up personally with the answer. The goal is always to capture the lead and make the caller feel heard, not to pretend to be something it isn't."
+  },
+  {
+    question: "How many minutes do I get and what happens if I go over?",
+    answer: "The Core plan includes 300 minutes of actual AI phone conversation time per month. That's the time spent actively talking to callers — not standby time. For most construction sole traders and small firms, 300 minutes handles the volume comfortably. If you consistently exceed it, additional talk time is charged at 20p per minute with no cap and no penalty."
+  },
+  {
+    question: "Does the AI phone answering work with my existing business number?",
+    answer: "Yes. We set up call forwarding from your existing business number to your Rapid Receptionist line. Your customers dial the same number they always have — nothing changes on their end. The entire setup is handled by our team during the done-for-you onboarding."
+  },
+  {
+    question: "Can I still answer calls myself when I'm available?",
+    answer: "Absolutely. You can set the AI to answer only when you're unavailable — on a job, driving, after hours. When you're at your desk or between jobs, calls ring through to you as normal. The AI acts as your backup, not your replacement. You stay in control of when it activates."
+  }
+];
+---
+
+<ChannelServiceLayout
+  title="AI Phone Answering for UK Construction Trades | Rapid Receptionist"
+  description=`AI phone answering built for 46 UK construction trades. Answers every call with your business name, captures lead details, and escalates emergencies. 300 minutes included. From £${pricing.tiers.core.price}/month.`
+  canonicalUrl="/construction-trades/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  channelSlugPrefix="ai-phone-answering"
+  headline="AI Phone Answering for UK Construction Trades"
+  accentWord="AI Phone Answering"
+  subhead="Your phone rings while you're mid-job. Instead of voicemail, your AI receptionist answers with your business name, captures the lead, and sends you the details. 300 minutes included. 24/7/365."
+  speedStat="62% of calls to UK construction businesses go unanswered."
+  speedText="That's not a branding problem — it's a structural one. You can't answer the phone when you're laying blocks, pulling cable, or fitting a kitchen. AI Phone Answering makes sure every call is answered in under 3 seconds, every time."
+  scenario="It's 9:15am on a Tuesday. You're halfway through chasing a first-floor ceiling when your phone rings. It's a homeowner who found you on Google — they need their entire ground floor re-plastered after a flood. They want someone this week. Your AI receptionist answers: 'Good morning, thank you for calling Preston Plastering, how can I help?' It captures their name, address, the scope of the work, and their availability. By the time you finish the ceiling at 11am, the full lead is sitting in your inbox. Without AI Phone Answering, they'd have heard your voicemail, hung up, and called the next plasterer on the list."
+  steps={steps}
+  benefits={benefits}
+  pricingNote=`AI Phone Answering is included in the <strong>Core plan at £${pricing.tiers.core.price}/month</strong> alongside unlimited website chat. The Core plan includes 300 minutes of AI phone talk time. Additional channels can be added at <strong>£${pricing.addOn.price}/month each</strong>, or get everything with the <strong>All Channels bundle at £${pricing.tiers.all.price}/month</strong>. <a href='/pricing/'>See full pricing →</a>`
+  faqs={faqs}
+  ctaHeadline="Stop Sending Callers to Voicemail"
+  ctaSubhead=`85% of callers who reach voicemail never call back. AI Phone Answering makes sure they never have to. From £${pricing.tiers.core.price}/month.`
+/>

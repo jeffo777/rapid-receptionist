@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '✉️',
+    title: 'Catches Van and Leaflet Leads',
+    text: "Many bricklaying leads come from people who spotted your van or picked up a leaflet. They text because it is quick and they are at work themselves. The AI ensures that text gets a professional reply in seconds."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Professional Response',
+    text: "A fast text reply tells the customer: this bricklayer runs a professional operation. It sets the right tone before you have even spoken."
+  },
+  {
+    icon: '🔗',
+    title: 'Completes the Missed Call Loop',
+    text: "If a customer misses your callback and sends a follow-up text, the AI handles it. Paired with Missed Call Text-Back, it creates a seamless lead capture chain."
+  },
+  {
+    icon: '📵',
+    title: 'Works on Noisy Sites',
+    text: "You cannot hear your phone ring on a construction site, and you certainly cannot hear a text notification. The AI responds while you work, regardless of the noise."
+  },
+  {
+    icon: '🌙',
+    title: 'After-Hours Text Coverage',
+    text: "Customers text at all hours. The AI responds at 6am, midnight, and everything in between."
+  },
+  {
+    icon: '📊',
+    title: 'Organised Lead Tracking',
+    text: "Every text enquiry is logged and sent to you as a structured lead. No more scrolling through old messages to find that text from last Tuesday."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI SMS work for bricklayers?",
+    answer: "When someone texts your business number, the AI reads the message, identifies the enquiry, and sends one professional reply capturing their details. The lead is sent to you with the customer's name, number, and what they need."
+  },
+  {
+    question: "What kind of bricklaying texts does it handle?",
+    answer: "Availability checks, follow-ups from missed calls, requests from people who saw your van, and quick questions like 'do you do garden walls?' or 'how much roughly for repointing a front wall?'"
+  },
+  {
+    question: "Does the AI text back and forth?",
+    answer: "No — one professional reply per text. It captures the lead and sets expectations for your personal follow-up."
+  },
+  {
+    question: "How much does AI SMS cost?",
+    answer: `It is an add-on at £${pricing.addOn.price}/month. Pair it with the Core plan (£${pricing.tiers.core.price}/month) or the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can I respond to texts myself when available?",
+    answer: "Yes. The AI handles texts when you are on site. When you are free, you reply as normal."
+  },
+  {
+    question: "Is SMS data handled under GDPR?",
+    answer: "Yes. All data from text messages is encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Bricklayers | Rapid Receptionist"
+  description="AI SMS for UK bricklayers, bricklaying contractors, and brickwork businesses. Responds instantly to text enquiries about brickwork, captures lead details 24/7. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/bricklayers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Bricklayer"
+  tradeNamePlural="Bricklayers"
+  tradeSlug="bricklayers"
+  headline="AI SMS for Bricklayers"
+  accentWord="Bricklayers"
+  subhead="A homeowner spots your bricklaying contractor van outside their neighbour's house and texts your number: 'Do you do garden walls? Ours needs rebuilding.' Instead of that text sitting unread, your bricklaying business AI replies in seconds."
+  scenario="It is 3pm on a Friday. You are pointing the front elevation of a new-build in Bury, up on the scaffold with mortar on your hands. Your phone is in the site cabin. A text arrives from an unknown number: 'Hi, I got your number from the van on Elm Road. We need our front boundary wall rebuilt — it is about 8 metres long and the whole thing is leaning. Are you available in the next few weeks?' You do not see the text until 6pm. Without AI SMS, you think about replying but decide to do it properly on Monday — and forget. With AI SMS, they get a reply within seconds: 'Thanks for your message. We would be happy to look at the boundary wall. Could you confirm your postcode and the best time for a quick visit? We will arrange a callback today.' You call them at 6:15. They are delighted and book a visit for Tuesday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/bricklayers/ai-receptionist/"
+  ctaHeadline="Stop Missing Text Enquiries"
+  ctaSubhead="Every unanswered text is a wall someone else will build. £${pricing.addOn.price}/month."
+/>

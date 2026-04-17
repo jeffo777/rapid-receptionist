@@ -7,59 +7,60 @@ import PricingCard from '../components/PricingCard.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTASection from '../components/CTASection.astro';
 import CookieConsent from '../components/CookieConsent.astro';
+import pricing from '../data/pricing.json';
 
 const faqs = [
   {
-    question: "What does the Core plan at £99/month actually include?",
-    answer: "The Core plan gives you an AI receptionist that answers your phone and handles your website chat — the two channels where you lose the most leads. You get 300 minutes of AI phone talk time every month, unlimited website chat messages, human emergency escalation, and trade-specific AI training that means your receptionist knows the difference between a boiler repair and a full system install. It answers with your business name, captures caller details, and sends you the lead instantly."
+    question: `What does the Core plan at £${pricing.tiers.core.price}/month include?`,
+    answer: "The Core plan gives you an AI receptionist that answers your phone and handles your website chat — the two channels where construction businesses lose the most leads. You get 300 minutes of AI phone talk time every month, unlimited website chat messages, human emergency escalation, and trade-specific AI training configured for your particular construction trade. Whether you're a plasterer, a roofing contractor, or a drainage specialist, the AI understands your terminology and captures the right details from every enquiry."
   },
   {
     question: "Can I buy individual channels without the Core plan?",
-    answer: "Yes — every channel is available standalone at £19/month each. So if you already answer your own phone but want AI handling your WhatsApp messages and Facebook enquiries, you just pick those two channels for £38/month. No minimum, no bundling requirements. You only pay for what you actually use. The £299 setup fee still applies because we configure and train your AI regardless of how many channels you choose."
+    answer: `Yes — every add-on channel is available standalone at £${pricing.addOn.price}/month each. If you handle your own phone calls but want AI covering your WhatsApp messages and Facebook enquiries, pick those two channels for £46/month. No minimum commitment, no bundling requirements. You only pay for what your customers actually use. The £${pricing.setup.price} setup fee still applies because we configure and train your AI regardless of how many channels you choose.`
   },
   {
-    question: "What does the £299 setup fee cover?",
-    answer: "The setup fee covers the full configuration of your AI across whichever channels you choose. We train the AI on your specific trade, services, and pricing. We configure your business name, greeting style, and escalation rules. We connect each channel to your business accounts and test everything before going live. It's a genuine done-for-you service — not a template with a tooltip. The entire setup fee is fully refundable under our 30-day money-back guarantee."
+    question: `What does the £${pricing.setup.price} setup fee cover?`,
+    answer: "The setup fee covers the complete configuration of your AI receptionist across whichever channels you select. We train the AI on your specific construction trade — its vocabulary, its common job types, its urgency signals. We configure your business name, greeting style, escalation rules, and the details you want captured from every enquiry. We connect each channel to your business accounts and test everything before going live. This is a genuine done-for-you service, not a template with a tick-box. The full setup fee is refundable under our 30-day money-back guarantee."
   },
   {
-    question: "What's the All Channels bundle at £179/month?",
-    answer: "Instead of buying the Core plan plus all six add-on channels individually — which would cost £213/month — the All Channels bundle gives you everything for £179/month. That's AI phone answering with 300 minutes, unlimited website chat, plus WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back. Every channel your customers actually use, covered around the clock."
+    question: `What's the All Channels bundle at £${pricing.tiers.all.price}/month?`,
+    answer: `Buying the Core plan plus all six add-on channels individually would cost £${pricing.tiers.core.price + (6 * pricing.addOn.price)}/month. The All Channels bundle gives you everything for £${pricing.tiers.all.price}/month — a saving of £${pricing.tiers.core.price + (6 * pricing.addOn.price) - pricing.tiers.all.price} every month. That includes AI phone answering with ${pricing.tiers.core.minutes} minutes, unlimited website chat, plus WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back. Every channel your clients use, covered around the clock, every day of the year.`
   },
   {
     question: "How does the phone talk time work?",
-    answer: "Your Core plan includes 300 minutes of actual AI phone conversation time per month — that's the time the AI spends actively talking to callers, not standby time. For the majority of sole traders and small trade businesses, 300 minutes is plenty. If you consistently go over, additional talk time is charged at 20p per minute. All text-based channels — chat, WhatsApp, SMS, email, and social messages — are unlimited regardless of your plan."
+    answer: "Your Core plan includes 300 minutes of actual AI phone conversation time per month — that's the time the AI spends actively talking to callers, not idle standby time. For the majority of sole traders and small construction businesses, 300 minutes handles the call volume comfortably. If you consistently exceed it, additional talk time is charged at 20p per minute with no cap. All text-based channels — website chat, WhatsApp, SMS, email, and social messages — are unlimited regardless of volume."
   },
   {
     question: "Are there any contracts or lock-in periods?",
-    answer: "None at all. Every plan is monthly with no contracts, no minimum terms, and no lock-in periods. Cancel any time — takes effect at the end of your billing cycle. We keep your business because the service works for you, not because you're stuck in a contract. If you don't want it next month, you stop paying."
+    answer: "None whatsoever. Every plan is month-to-month with no contracts, no minimum terms, and no cancellation penalties. Cancel any time and it takes effect at the end of your billing cycle. We keep your business because the service delivers results, not because you're locked into a twelve-month agreement. If you decide next month it's not for you, you stop paying and that's the end of it."
   },
   {
     question: "What's the 30-day money-back guarantee?",
-    answer: "If you're not happy within the first 30 days, we refund everything — your monthly fee and your £299 setup fee. No questions, no forms, no awkward phone call. We take on the risk so you don't have to. We'd rather give you your money back than have you feeling trapped. Most tradesmen who try the service keep it running because they see the leads coming in within the first week."
+    answer: `If you're not satisfied within the first 30 days, we refund everything — your monthly fee and your £${pricing.setup.price} setup fee. No forms, no awkward phone call, no questions asked. We take on the risk so you don't have to. We'd rather refund you entirely than have you feeling trapped. Most construction businesses who try the service keep it running because they see leads being captured within the first few days.`
   },
   {
     question: "How does this compare to a human virtual receptionist?",
-    answer: "A human virtual receptionist typically costs £200 to £500 per month, only works standard office hours, and covers phone calls only. Rapid Receptionist starts at £99/month for phone and chat, works 24/7/365 including weekends and bank holidays, responds to every enquiry within seconds, and can cover up to 8 channels. It never calls in sick, never puts your callers on hold, and never forgets to send you the message."
+    answer: `A human virtual receptionist typically costs £200 to £500 per month, only works during standard office hours, and covers phone calls only. Rapid Receptionist starts at £${pricing.tiers.core.price}/month for phone and chat, operates 24/7/365 including weekends and bank holidays, responds to every enquiry within seconds, and covers up to 8 channels. It never calls in sick, never puts your callers on hold while dealing with another client, and never forgets to pass on a message.`
   },
   {
     question: "How does Rapid Receptionist handle data protection and GDPR?",
-    answer: "Rapid Receptionist is fully compliant with UK GDPR and the Data Protection Act 2018. All customer data captured by your AI receptionist — names, phone numbers, locations, job details — is encrypted in transit and at rest, stored on secure UK/EU-based servers, and shared only with you. We never sell, trade, or use personal data for marketing. Both you and your customers can request data deletion at any time. As the tradesman, you remain the data controller for your customer data; we act as your data processor, handling it strictly according to our data processing agreement. Our full privacy policy is available at <a href='/privacy/'>rapidreceptionist.co.uk/privacy</a>."
+    answer: "Rapid Receptionist operates in full compliance with UK GDPR and the Data Protection Act 2018. All client information captured by your AI receptionist — names, phone numbers, property addresses, project descriptions — is encrypted during transmission and while stored, held on UK and EU-based servers, and accessible only to you. We never sell, distribute, or repurpose personal data for any purpose. Both you and your clients can request deletion at any point. You retain full data controller status for all client information; we act as your data processor under a formal data processing agreement. Full details are in our <a href='/privacy/'>privacy policy</a>."
   }
 ];
 ---
 
 <BaseLayout
-  title="Pricing — AI Receptionist for UK Tradesmen | From £99/mo | Rapid Receptionist"
-  description="Transparent pricing for UK tradesmen. AI phone answering + web chat from £99/month, or add individual channels at £19/month each. No contracts, 30-day money-back guarantee."
+  title=`Pricing — AI Receptionist for Construction Trades | From £${pricing.tiers.core.price}/mo | Rapid Receptionist`
+  description=`Transparent pricing for UK construction trades. AI phone answering + web chat from £${pricing.tiers.core.price}/month, add channels at £${pricing.addOn.price}/month each, or get everything for £${pricing.tiers.all.price}/month. No contracts, 30-day money-back guarantee.`
   canonicalUrl="/pricing/"
 >
   <Header slot="header" />
 
   <!-- Hero -->
   <HeroSection
-    headline="Transparent Pricing. No Surprises. Built for UK Tradesmen."
+    headline="Transparent Pricing for Construction Trades. No Surprises."
     accentWord="Transparent Pricing"
-    subhead="Start with AI phone answering and web chat at £99/month, then add any channel you need at £19/month each. Or grab everything for £179/month."
+    subhead=`Start with AI phone answering and web chat at £${pricing.tiers.core.price}/month. Add any channel at £${pricing.addOn.price}/month each. Or grab everything for £${pricing.tiers.all.price}/month. 30-day money-back guarantee.`
     showTrustRow={false}
     showAIReceptionist={false}
   />
@@ -76,11 +77,10 @@ const faqs = [
 
   <!-- CTA -->
   <CTASection
-    headline="Stop Losing Jobs to Missed Calls"
-    subhead="Join the UK tradesmen who never miss a lead. From £99/month, no contracts, cancel anytime."
+    headline="Respond First. Win the Job."
+    subhead=`Join the UK construction trades who never miss a lead. From £${pricing.tiers.core.price}/month, no contracts, cancel anytime.`
   />
 
   <CookieConsent />
   <Footer slot="footer" />
 </BaseLayout>
-

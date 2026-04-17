@@ -10,29 +10,35 @@ import trades from '../data/trades.json';
         <a href="/" class="footer__logo" aria-label="Rapid Receptionist — Home">
           <span class="footer__logo-rapid">Rapid</span><span class="footer__logo-rest"> Receptionist</span>
         </a>
-        <p class="footer__tagline">Built by tradesmen, for tradesmen.</p>
+        <p class="footer__tagline">Respond first. Win the job.</p>
         <p class="footer__desc">
-          24/7 AI receptionist covering up to 8 channels. Never miss another job.
+          The rapid response AI receptionist for UK construction trades. 46 trades. Up to 8 channels. 24/7/365.
         </p>
       </div>
 
       <!-- Trades Column -->
       <div class="footer__col">
-        <h4 class="footer__heading">Trades</h4>
+        <h4 class="footer__heading">Construction Trades</h4>
         <ul class="footer__links">
-          {trades.slice(0, 7).map((trade) => (
-            <li><a href={`/ai-receptionist-for-${trade.slug}/`}>{trade.name}</a></li>
+          {trades.slice(0, 8).map((trade) => (
+            <li><a href={`/construction-trades/${trade.slug}/ai-receptionist/`}>{trade.name}</a></li>
           ))}
+          <li><a href="/construction-trades/" class="footer__view-all">View All 46 Trades →</a></li>
         </ul>
       </div>
 
-      <!-- More Trades Column -->
+      <!-- Services Column -->
       <div class="footer__col">
-        <h4 class="footer__heading">More Trades</h4>
+        <h4 class="footer__heading">Services</h4>
         <ul class="footer__links">
-          {trades.slice(7).map((trade) => (
-            <li><a href={`/ai-receptionist-for-${trade.slug}/`}>{trade.name}</a></li>
-          ))}
+          <li><a href="/construction-trades/ai-phone-answering/">AI Phone Answering</a></li>
+          <li><a href="/construction-trades/ai-website-chat/">AI Website Chat</a></li>
+          <li><a href="/construction-trades/ai-whatsapp/">AI WhatsApp</a></li>
+          <li><a href="/construction-trades/ai-sms/">AI SMS</a></li>
+          <li><a href="/construction-trades/ai-email-response/">AI Email Response</a></li>
+          <li><a href="/construction-trades/ai-facebook-messenger/">AI Facebook Messenger</a></li>
+          <li><a href="/construction-trades/ai-instagram-dms/">AI Instagram DMs</a></li>
+          <li><a href="/construction-trades/missed-call-text-back/">Missed Call Text-Back</a></li>
         </ul>
       </div>
 
@@ -56,7 +62,7 @@ import trades from '../data/trades.json';
         &copy; {new Date().getFullYear()} Rapid Receptionist. All rights reserved.
       </p>
       <p class="footer__built">
-        Built by tradesmen, for tradesmen. 🔧
+        The rapid response AI receptionist for UK construction trades. 🏗️
       </p>
     </div>
   </div>

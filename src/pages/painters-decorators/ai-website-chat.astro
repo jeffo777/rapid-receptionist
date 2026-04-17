@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Visitors Comparing Decorators',
+    text: "Homeowners browse multiple painting and decorating websites before choosing. The chat widget engages them the instant they land on yours — before they click away to the next decorating contractor."
+  },
+  {
+    icon: '📐',
+    title: 'Captures Decorating-Specific Details',
+    text: "The AI asks the right questions — which rooms, walls or ceilings or woodwork, wallpaper requirements, current condition, and timeline. You receive a lead with substance, not just a name and number."
+  },
+  {
+    icon: '♾️',
+    title: 'Unlimited Chat Sessions',
+    text: "No cap on conversations. Whether your painting business website gets 3 or 30 enquiries a month, every visitor is engaged without extra charges."
+  },
+  {
+    icon: '📱',
+    title: 'Mobile-Friendly',
+    text: "Homeowners browse decorating companies on their phones — usually in the evening when they are staring at tired walls. The chat widget works perfectly on any device."
+  },
+  {
+    icon: '🕐',
+    title: '24/7 Engagement',
+    text: "Visitors do not keep decorating hours. Someone browsing painting contractors at 11pm on a Sunday gets the same instant engagement as a weekday visitor."
+  },
+  {
+    icon: '🎨',
+    title: 'Branded to Your Business',
+    text: "The widget uses your business name and brand colours — it looks like part of your decorating business website, not a generic add-on."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does website chat work for painters and decorators?",
+    answer: "A chat widget appears on your website. When a visitor clicks, the AI greets them and asks about their decorating needs — rooms, walls, ceilings, woodwork, wallpaper. It captures their details and sends you a lead summary."
+  },
+  {
+    question: "Do I need to monitor the chat?",
+    answer: "No. The AI handles every conversation autonomously. You review leads when convenient."
+  },
+  {
+    question: "What if they ask for a decorating quote?",
+    answer: "The AI does not quote. Decorating prices depend on room size, wall condition, paint quality, and preparation needed. The AI captures the details for your assessment."
+  },
+  {
+    question: "Is it included in the base price?",
+    answer: `Yes. Unlimited website chat is included at £${pricing.tiers.core.price}/month alongside phone answering.`
+  },
+  {
+    question: "Will it slow my website?",
+    answer: "No. Lightweight, asynchronous loading — no impact on page speed."
+  },
+  {
+    question: "How is chat data protected?",
+    answer: "Encrypted, stored on UK and EU servers, managed under UK GDPR."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Painters & Decorators | Rapid Receptionist"
+  description="AI website chat for UK painters, decorators, painting businesses, and decorating contractors. Engages visitors with decorating-specific questions, captures leads 24/7. Unlimited messages included."
+  canonicalUrl="/painters-decorators/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Painter & Decorator"
+  tradeNamePlural="Painters & Decorators"
+  tradeSlug="painters-decorators"
+  headline="AI Website Chat for Painters & Decorators"
+  accentWord="Painters"
+  subhead="A homeowner lands on your painting business website at 9pm, scrolling through your portfolio of feature walls and period restorations. They want to know if you can match a heritage colour for their Edwardian hallway. Instead of leaving, they chat with your AI — and by morning your decorating company has a fully qualified lead."
+  scenario="It is 10pm on a Tuesday. A couple in Didsbury are redecorating their 1930s semi. They have spent the evening on Pinterest choosing a deep teal for the lounge feature wall and a warm blush for the dining room. They find your painting and decorating website and your portfolio shows exactly the quality they want. They need to know if you strip wallpaper too — the hallway has three layers of woodchip that need removing before anything can go on. Without website chat, they bookmark the tab and plan to call tomorrow. Tomorrow comes and they forget — life gets in the way. With AI Website Chat: 'Hi, what decorating work are you looking for?' They describe the rooms, the colours, the woodchip problem, and their timeline. The AI captures their postcode and phone number. Wednesday morning, you call before they have had their second coffee."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/painters-decorators/ai-receptionist/"
+  ctaHeadline="Stop Losing Website Visitors"
+  ctaSubhead="Your portfolio attracted them. Your AI captures them. Included at £${pricing.tiers.core.price}/month."
+/>

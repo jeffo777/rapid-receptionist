@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Instant Acknowledgement',
+    text: "Letting agents and builders email decorating specifications and expect a prompt response. Your AI sends an immediate acknowledgement — while other painting contractors leave the email unread."
+  },
+  {
+    icon: '📐',
+    title: 'Handles Property Schedules',
+    text: "Decorating emails from landlords often include property lists, room schedules, and colour specifications. The AI acknowledges receipt and confirms your painting business will review."
+  },
+  {
+    icon: '🏗️',
+    title: 'Wins Repeat Business',
+    text: "Letting agents send decorating briefs to multiple painting and decorating businesses. The one who acknowledges first gets the work. An instant reply puts your decorating company at the front."
+  },
+  {
+    icon: '🕐',
+    title: 'Out-of-Hours Coverage',
+    text: "Property managers email at all hours. Your AI responds instantly — no enquiry sits in silence."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional and Branded',
+    text: "The reply uses your business name. It tells the sender they are dealing with an organised painting contractor."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Data Logged',
+    text: "Every email exchange is summarised as a lead. No hunting through your inbox."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Email Response work for painting businesses?",
+    answer: "When someone emails your business, the AI sends an instant professional acknowledgement. Works for painting contractors, decorating companies, and sole trader decorators."
+  },
+  {
+    question: "Does it reply to every email?",
+    answer: "It acknowledges inbound enquiries — new decorating requests, schedules, quote requests. Not spam or existing threads."
+  },
+  {
+    question: "Can it handle emails with property lists?",
+    answer: "Yes. If a letting agent sends a schedule of properties needing repainting, the AI acknowledges receipt and confirms you will review."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI Email is £${pricing.addOn.price}/month. Pair with the Core plan or the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Does it work with my existing email?",
+    answer: "Yes. Email forwarding is configured during setup."
+  },
+  {
+    question: "Is email data secure?",
+    answer: "Yes. Managed under UK GDPR, encrypted, stored on UK and EU servers."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Painters & Decorators | Rapid Receptionist"
+  description="AI email response for UK painters, decorators, painting businesses, and decorating contractors. Instantly acknowledges decorating specifications and quote requests. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/painters-decorators/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Painter & Decorator"
+  tradeNamePlural="Painters & Decorators"
+  tradeSlug="painters-decorators"
+  headline="AI Email Response for Painters & Decorators"
+  accentWord="Painters"
+  subhead="A letting agent emails your painting company with a schedule of six flats needing repainting before new tenants move in. Instead of that email sitting for three days, the agent gets an instant acknowledgement and your decorating business reviews the schedule at the weekend."
+  scenario="It is Friday at 3pm. A letting agency in Manchester city centre emails your business: 'We have six properties across South Manchester that need full repaints before new tenancies start on the 1st. All magnolia — walls, ceilings, and gloss on the woodwork. Can you confirm availability and your day rate for a painter working alone or a two-man team?' You are finishing a domestic lounge in Chorlton and will not check email until the weekend. Without AI Email, the agency hears nothing and emails two other painting contractors on Monday morning. With AI Email Response, the agency manager gets an immediate reply: 'Thank you for your enquiry regarding the six property repaints. We have received the schedule and will review availability. We will respond with rates and a proposed timeline within 48 hours.' She marks you as responsive. Saturday morning, you reply with day rates for solo and two-man options — first to respond with a considered proposal."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/painters-decorators/ai-receptionist/"
+  ctaHeadline="Stop Losing Email Enquiries"
+  ctaSubhead="A letting agent's property schedule deserves an immediate response. Your AI delivers it. £${pricing.addOn.price}/month."
+/>

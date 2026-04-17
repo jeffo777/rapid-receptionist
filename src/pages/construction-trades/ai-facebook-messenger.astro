@@ -1,0 +1,102 @@
+﻿---
+import ChannelServiceLayout from '../../layouts/ChannelServiceLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const steps = [
+  {
+    number: 1,
+    title: 'A Customer Messages Your Facebook Page',
+    description: "They've seen your work on Facebook — maybe a before-and-after photo, maybe a recommendation in a local group, maybe your Facebook ad. They click 'Message' and type their enquiry."
+  },
+  {
+    number: 2,
+    title: 'Your AI Responds Instantly',
+    description: "Within seconds, the AI reads the message, identifies what the customer needs, and sends one professional response — acknowledging the enquiry, capturing their details, and letting them know you'll follow up personally."
+  },
+  {
+    number: 3,
+    title: 'You Get a Structured Lead',
+    description: "The customer's name, contact details, what they need, and the urgency are sent to you as a lead notification. Facebook does the marketing; the AI does the capturing; you do the work."
+  }
+];
+
+const benefits = [
+  {
+    icon: '📘',
+    title: 'Captures Leads from Your Best Marketing',
+    text: "Facebook is one of the most effective marketing channels for construction trades — before-and-after posts, local group recommendations, and targeted ads generate serious enquiries. AI Facebook Messenger makes sure those enquiries are actually captured."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Response Builds Trust',
+    text: "When a customer messages your Facebook page, they can see whether you've read it. A message that sits on 'seen' with no reply looks unprofessional. An instant, well-written response tells them you're a business that takes enquiries seriously."
+  },
+  {
+    icon: '👥',
+    title: 'Handles Local Group Enquiries',
+    text: "Many construction leads come from local Facebook groups — 'Can anyone recommend a plasterer in Sheffield?' When someone follows that recommendation to your page and sends a message, the AI catches it immediately."
+  },
+  {
+    icon: '🌙',
+    title: '24/7 Coverage',
+    text: "Facebook browsing peaks in the evening — exactly when you've finished work and want to switch off. The AI responds to evening and weekend messages so you don't have to sit on your phone after a ten-hour day."
+  },
+  {
+    icon: '📱',
+    title: 'No More Notification Overload',
+    text: "Instead of checking Facebook Messenger constantly throughout the day, you review structured lead summaries at your convenience. The AI handles the immediate response; you handle the follow-up."
+  },
+  {
+    icon: '🏅',
+    title: 'Maintains Your Response Rate Badge',
+    text: "Facebook awards a 'Very Responsive' badge to pages that reply quickly. AI Facebook Messenger keeps your response time under a minute, earning and maintaining that badge — which makes your page look active and trustworthy."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Facebook Messenger work?",
+    answer: "When a potential customer sends a message to your Facebook business page, the AI reads it and replies within seconds. It sends one professional response acknowledging the enquiry, captures the key details, and lets the customer know you'll follow up. The lead is then sent to you with all the information."
+  },
+  {
+    question: "Does the AI have a full Messenger conversation?",
+    answer: "No — AI Facebook Messenger uses a one-reply model. It sends one professional, detailed response to each inbound message. This captures the lead and sets expectations without creating an ongoing thread that needs monitoring. Full conversational AI is available on phone and website chat."
+  },
+  {
+    question: "Do I need a Facebook business page?",
+    answer: "Yes — AI Facebook Messenger connects to your Facebook business page. If you already have one (which most construction businesses do), we connect during onboarding. If you don't have one, it takes about ten minutes to set up and we can guide you through it."
+  },
+  {
+    question: "Will the AI respond to comments on my posts as well?",
+    answer: "No — the AI handles only direct messages (Messenger), not public comments on posts or photos. Comments remain visible on your page for you to respond to manually. This keeps the AI focused on private lead enquiries."
+  },
+  {
+    question: "How much does AI Facebook Messenger cost?",
+    answer: `AI Facebook Messenger is an add-on channel at £${pricing.addOn.price}/month. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat) or use it standalone. The All Channels bundle at £${pricing.tiers.all.price}/month includes Facebook Messenger alongside all seven other channels.`
+  },
+  {
+    question: "What happens to messages sent while I'm running Facebook ads?",
+    answer: "This is one of the most valuable use cases. When your Facebook ads generate enquiries via Messenger, the AI responds instantly — even if those ads are running at midnight. You capture leads from your ad spend 24/7, not just during the hours you happen to be checking your phone."
+  }
+];
+---
+
+<ChannelServiceLayout
+  title="AI Facebook Messenger for UK Construction Trades | Rapid Receptionist"
+  description=`AI Facebook Messenger for 46 UK construction trades. Responds instantly to Facebook page messages, captures leads, and maintains your response rate. £${pricing.addOn.price}/month add-on.`
+  canonicalUrl="/construction-trades/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  channelSlugPrefix="ai-facebook-messenger"
+  headline="AI Facebook Messenger for UK Construction Trades"
+  accentWord="AI Facebook Messenger"
+  subhead=`A homeowner sees your work on Facebook, messages your page, and gets an instant professional response — even if you're mid-job. Every lead captured. Every message acknowledged. £${pricing.addOn.price}/month.`
+  speedStat="Businesses that respond on Facebook within 5 minutes are 21x more likely to convert the lead."
+  speedText="Facebook generates some of the best leads for construction trades — word-of-mouth recommendations, local group posts, before-and-after photos. But those leads die the moment a message sits unanswered. AI Facebook Messenger responds in seconds."
+  scenario="It's 8:30pm on a Saturday. You posted a before-and-after of a rear extension last week, and it's been shared 47 times. A homeowner messages your page: 'Saw your work — brilliant job. We're looking at a similar extension with a flat roof and bifold doors. Do you cover the Nottingham area? What sort of lead time are you working to?' Without AI Facebook Messenger, that message sits until Monday — and by then, three of the other contractors who liked the post have already replied to her. With AI Facebook Messenger, she gets an instant response: 'Thanks for getting in touch — glad you liked the extension! We'd love to discuss your project. Could you let us know your postcode and approximate size, and we'll arrange a call to go through the details?' Lead captured. Customer engaged. And you follow up Monday morning with full context."
+  steps={steps}
+  benefits={benefits}
+  pricingNote=`AI Facebook Messenger is available as an <strong>add-on channel at £${pricing.addOn.price}/month</strong>. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat), use it standalone, or include it in the <strong>All Channels bundle at £${pricing.tiers.all.price}/month</strong>. <a href='/pricing/'>See full pricing →</a>`
+  faqs={faqs}
+  ctaHeadline="Stop Losing Leads from Facebook"
+  ctaSubhead=`Your Facebook marketing generates enquiries. AI Facebook Messenger makes sure you actually capture them. £${pricing.addOn.price}/month.`
+/>

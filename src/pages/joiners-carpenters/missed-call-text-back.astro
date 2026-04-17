@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '🛡️',
+    title: 'Your Safety Net When Calls Slip Through',
+    text: "Calls drop in workshops with thick walls. Callers hang up after two rings. Signal disappears in loft conversions. Whatever the reason for a missed call, the text-back ensures the caller still hears from your joinery business within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Buys You Critical Time',
+    text: "The gap between a caller hanging up and dialling the next carpentry contractor is about 30 seconds. A text from your joinery company resets that clock. It tells them you are on a job and coming back to them."
+  },
+  {
+    icon: '🚫',
+    title: 'Breaks the Competitor Call Habit',
+    text: "85% of callers who reach voicemail never try again — they call the next joiner. A text that arrives within seconds interrupts that pattern. They wait for your callback instead."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for Workshop Realities',
+    text: "You cannot hear your phone over the planer thicknesser. Your hands are full of timber. You are up a ladder fitting a door lining. This channel exists for exactly those moments in every carpentry business."
+  },
+  {
+    icon: '💬',
+    title: 'Customised to Your Business',
+    text: "The text uses your business name and a personalised message — not a generic 'we missed your call.' It sounds like it came from your joinery contractor operation because it was written for you during setup."
+  },
+  {
+    icon: '🔄',
+    title: 'Works Behind AI Phone Answering',
+    text: "If the AI answers the call, the text-back does not trigger. If the call slips through — a one-ring hang-up, a signal drop — the text catches it. Two layers of protection for your carpentry company."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text-back activate?",
+    answer: "It activates when a call goes unanswered — whether the caller hung up before the AI could answer, the call dropped due to poor signal, or you were unavailable. The text is sent within seconds."
+  },
+  {
+    question: "What does the text say?",
+    answer: "It is customised with your business name. Example: 'Thanks for calling Oakley Joinery. Sorry we could not pick up — we are currently on a job. We will call you back within the hour. If it is urgent, reply to this text.' You approve the wording during setup."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "No — it sits behind it as a fallback. AI Phone Answering catches the vast majority of calls. Missed Call Text-Back catches the small number that slip through."
+  },
+  {
+    question: "What if the caller replies to the text?",
+    answer: "If you have AI SMS active, the reply is handled by the AI. If not, the reply comes directly to you. Either way, the lead is captured."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `Missed Call Text-Back is an add-on at £${pricing.addOn.price}/month. Same price for sole trader joiners, carpentry contractors, and larger joinery businesses. Pair with the Core plan or the All Channels bundle.`
+  },
+  {
+    question: "Can I use it without AI Phone Answering?",
+    answer: `Yes. If you prefer answering your own calls and just want a safety net, Missed Call Text-Back works standalone at £${pricing.addOn.price}/month. The simplest way to stop missed calls becoming missed joinery jobs.`
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text-Back for Joiners & Carpenters | Rapid Receptionist"
+  description="Missed call text-back for UK joiners, joinery businesses, and carpentry contractors. Sends a professional text within seconds of a missed call. Stops customers calling the next joinery company. £${pricing.addOn.price}/month."
+  canonicalUrl="/joiners-carpenters/missed-call-text-back/"
+  channelName="Missed Call Text-Back"
+  tradeName="Joiner"
+  tradeNamePlural="Joiners & Carpenters"
+  tradeSlug="joiners-carpenters"
+  headline="Missed Call Text-Back for Joiners & Carpenters"
+  accentWord="Joiners"
+  subhead="You are routing a profile when the phone rings. They hang up after two rings. Five seconds later, they get a text from your joinery business: 'Sorry we missed your call — we are on a carpentry job and will call you back within the hour.' They wait. The next carpentry contractor never gets the call."
+  scenario="It is 10:45am on a Thursday. You are in a property in Poynton, fitting a run of bespoke skirting to match the existing 1920s ogee profile. The mitre saw is loud and your phone is in your toolbox by the door. A homeowner in Hazel Grove calls — she wants a joiner to build a fitted study for the box room so she can work from home properly. Your phone rings twice and stops. Without the text-back, she assumes you are too busy and googles 'joiner near me Hazel Grove.' Three minutes later, she has called someone else and booked a home visit. With Missed Call Text-Back, her phone buzzes within seconds: 'Thanks for calling Harrison Carpentry. Sorry we missed your call — we are on a job and will ring you back by lunchtime. If it is urgent, reply to this text and we will prioritise.' She puts her phone down and waits. You call at 12:30, discuss the study, and book a visit for Saturday. A fitted study — two weeks of work — won by a five-second text."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/joiners-carpenters/ai-receptionist/"
+  ctaHeadline="Stop Missed Calls Becoming Missed Jobs"
+  ctaSubhead="One text. Five seconds. The difference between losing a joinery customer and keeping them. £${pricing.addOn.price}/month."
+/>

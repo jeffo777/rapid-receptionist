@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import pricing from '../data/pricing.json';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CTASection from '../components/CTASection.astro';
@@ -7,8 +8,8 @@ import CookieConsent from '../components/CookieConsent.astro';
 ---
 
 <BaseLayout
-  title="About Rapid Receptionist — Built by Tradesmen, for Tradesmen | UK"
-  description="The story behind Rapid Receptionist. Built by people who've worked in trades and know what it costs to miss a call. AI receptionist for UK tradesmen."
+  title="About Rapid Receptionist — The Rapid Response AI Receptionist for Construction Trades"
+  description="Why we built an AI receptionist exclusively for UK construction trades. 46 trades. 8 channels. One mission: make sure your customers never hear voicemail."
   canonicalUrl="/about/"
 >
   <Header slot="header" />
@@ -16,9 +17,9 @@ import CookieConsent from '../components/CookieConsent.astro';
   <!-- Hero -->
   <section class="section about-hero" id="about-hero">
     <div class="container">
-      <span class="badge badge--accent">Our Story</span>
-      <h1>We Built This Because We <span class="text-accent">Watched Tradesmen Lose Money</span> Every Single Day.</h1>
-      <p class="about-hero__sub">Rapid Receptionist exists because of one frustrating truth: good tradesmen lose work not because they're bad at their job, but because they can't answer the phone while they're doing it.</p>
+      <span class="badge badge--accent">About Us</span>
+      <h1>We Built Rapid Receptionist Because <span class="text-accent">Construction Trades Deserve Better</span> Than Voicemail.</h1>
+      <p class="about-hero__sub">Every day, skilled contractors across the UK lose work — not because they lack ability, but because their phone rang while their hands were full. Rapid Receptionist exists to close that gap.</p>
     </div>
   </section>
 
@@ -26,33 +27,31 @@ import CookieConsent from '../components/CookieConsent.astro';
   <section class="section section--alt" id="origin">
     <div class="container about-content">
       <div class="about-block">
-        <h2>The Problem We Saw</h2>
-        <p>We spent years working with UK trade businesses — plumbers, electricians, roofers, locksmiths, builders. The same problem came up in every conversation: missed calls.</p>
-        <p>Not because they were lazy or disorganised. Because they were doing their job. You can't answer a phone when you're halfway up a scaffold, elbow-deep in a boiler, or wiring a consumer unit. It's physically impossible.</p>
-        <p>And every missed call is lost money. Research consistently shows that 85% of people who reach your voicemail will never call back. They just call the next tradesman on the list. It takes less than 30 seconds for a customer to move on.</p>
-        <p>We watched good businesses — genuinely skilled tradesmen doing excellent work — lose thousands of pounds a year to calls they physically couldn't answer. Not because they didn't care, but because the phone rang at the worst possible moment.</p>
+        <h2>The Problem That Triggered Everything</h2>
+        <p>The UK construction industry employs over 2.4 million people, and the vast majority of them work with their hands. Plasterers with trowels. Electricians with wire strippers. Roofers with nail guns. Plumbing contractors under sinks. Bricklayers building garden walls in the rain.</p>
+        <p>None of them can answer a phone call while they're mid-task. And yet, every day, potential customers ring, hear voicemail, and immediately dial the next contractor on Google. Research consistently shows that 85% of callers who reach voicemail will never ring back. The job is gone in under thirty seconds.</p>
+        <p>We spoke with dozens of UK construction businesses — sole traders, small firms, specialist subcontractors — and heard the same frustration repeated: "I'm good at my trade, but I keep losing work because I can't get to the phone." Not because they were lazy or unprofessional. Because they were doing their actual job.</p>
       </div>
 
       <div class="about-block">
-        <h2>Why We Built Something Different</h2>
-        <p>Virtual receptionist services already existed. We looked at all of them. The problem was that none of them were built for trades.</p>
-        <p>Generic answering services don't know the difference between a boiler breakdown and a boiler service. They don't understand that a lockout at 2am needs handling differently to a quote request for new windows. They can't tell whether a call is an emergency that needs escalating now or a routine enquiry that can wait.</p>
-        <p>So we built one that could. An AI receptionist trained specifically on trade vocabulary, trade scenarios, and trade urgency levels. One that knows what questions to ask a homeowner calling about a leak, how to triage a gas emergency, and when to escalate a call versus when to log it.</p>
-        <p>Then we went further. We added website chat, WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back. Because modern customers don't just call — they message, they DM, they email. And tradesmen were losing leads on every single one of those channels.</p>
+        <h2>Why Generic Solutions Didn't Work</h2>
+        <p>Virtual receptionist services already existed when we started. We examined them all. The fundamental problem was that none of them understood construction.</p>
+        <p>A generic answering service doesn't know the difference between a skim coat and a full re-plaster. It can't tell whether a caller describing a damp patch needs a damp proofer, a roofer, or a drainage contractor. It doesn't understand that a gas smell needs escalating immediately while a quote for a boiler swap can wait until Monday.</p>
+        <p>So we built something purpose-built for 46 UK construction trades. An AI receptionist trained on trade-specific vocabulary, urgency signals, and job types — from domestic bathroom refits to commercial fit-outs to multi-plot new builds. One that knows what questions to ask, what constitutes an emergency, and what details you need to price a job before you call them back.</p>
+        <p>Then we expanded beyond phone calls. Modern customers don't just ring — they WhatsApp, they message on Facebook, they fill in website contact forms, they DM on Instagram. Construction businesses were losing leads across every one of those channels, so we covered all eight of them.</p>
       </div>
 
       <div class="about-block">
-        <h2>What Drives Us</h2>
-        <p>We believe tradesmen are the backbone of the UK economy. Plumbers keep the water flowing. Electricians keep the lights on. Roofers keep the rain out. These aren't glamorous tech-startup businesses — they're the people who keep the country running.</p>
-        <p>They deserve better than a voicemail that nobody checks and a missed call that costs them a job. They deserve technology that works as hard as they do.</p>
-        <p>Every decision we make at Rapid Receptionist comes back to one question: does this help a tradesman win more work? If it does, we build it. If it doesn't, we don't. No feature bloat, no unnecessary complexity, no enterprise pricing that makes no sense for a one-man band.</p>
+        <h2>What Drives Every Decision We Make</h2>
+        <p>Construction trades keep the country built, heated, waterproofed, wired, and standing. Plasterers, bricklayers, groundworkers, joiners, tilers, roofers, electricians, plumbers — every one of them provides an essential service. They deserve technology that respects their work and helps them grow, not software designed for tech companies and repackaged with a hard-hat logo.</p>
+        <p>Every decision at Rapid Receptionist comes back to a single test: does this help a construction business respond faster and win more work? If it does, we build it. If it doesn't, we leave it alone. No feature bloat, no enterprise pricing designed for corporate switchboards, no complexity that requires a training course to understand.</p>
       </div>
 
-      <div class="about-block">
-        <h2>Our Pricing Philosophy</h2>
-        <p>We charge £99 a month for phone answering and website chat. Every additional channel is £19 a month. The whole lot is £179 a month. There are no contracts, no hidden fees, and no activation charges buried in the small print.</p>
-        <p>We chose these numbers carefully. A single missed call from a plumbing customer is worth £150-£300 to most plumbers. One boiler installation enquiry can be worth £2,500-£4,000. The maths is simple: if the service catches one lead that you would've otherwise missed, it's paid for itself for the entire month.</p>
-        <p>We offer a 30-day money-back guarantee on everything — including the setup fee. If it doesn't work for you, you get your money back. We built something we're confident in, and we're happy to prove it before you commit a penny.</p>
+      <div class="about-block`>
+        <h2>How We Price — and Why</h2>
+        <p>We charge £{pricing.tiers.core.price} a month for AI phone answering and website chat — the two channels where construction businesses lose the most leads. Additional channels cost £{pricing.addOn.price} a month each, or £{pricing.tiers.all.price} a month for everything. There's a one-time £{pricing.setup.price} setup fee that covers your full done-for-you configuration. No contracts. No hidden charges. No per-minute surcharges disguised as fair usage.</p>
+        <p>These numbers are deliberate. A single missed enquiry from a homeowner wanting their kitchen re-plastered is worth £400-£800. One commercial tiling contract can be worth £5,000+. The maths is straightforward: if Rapid Receptionist captures one lead you would have otherwise missed, it has paid for itself multiple times over.</p>
+        <p>We back everything with a 30-day money-back guarantee — monthly fee and setup fee, fully refunded. If it doesn't deliver results for your trade, you get every penny back.</p>
       </div>
     </div>
   </section>
@@ -65,32 +64,32 @@ import CookieConsent from '../components/CookieConsent.astro';
       </div>
       <div class="values-grid">
         <div class="value-card fade-in">
-          <span class="value-card__icon">🔧</span>
-          <h3>Trade-First Design</h3>
-          <p>Every feature, every AI response, every channel integration is designed specifically for tradesmen. This isn't a generic receptionist service with a trade-themed skin on top. It's built from the ground up for the way trades operate.</p>
+          <span class="value-card__icon">🏗️</span>
+          <h3>Construction-First Design</h3>
+          <p>Every AI response, every channel integration, every configuration option is designed specifically for construction trades. This isn't a generic receptionist service with a construction theme bolt-ed on. It's engineered from the ground up for the way contractors, specialists, and subcontractors actually operate.</p>
         </div>
         <div class="value-card fade-in">
           <span class="value-card__icon">💷</span>
           <h3>Honest Pricing</h3>
-          <p>One price on the website. One price on the invoice. No hidden fees, no per-minute charges that inflate your bill, no "enterprise" tier that locks essential features behind a paywall. What you see is what you pay.</p>
+          <p>One price on the website. Same price on the invoice. No hidden fees, no per-minute charges that inflate your bill, no "premium" tier that locks essential features behind a paywall. What you see is exactly what you pay, every single month.</p>
         </div>
         <div class="value-card fade-in">
           <span class="value-card__icon">🤝</span>
           <h3>No Lock-In</h3>
-          <p>No contracts. No minimum terms. Cancel any time with a phone call or an email. We keep customers by being good at what we do, not by making it difficult to leave.</p>
+          <p>No contracts. No minimum terms. No cancellation hoops. Cancel any time with a single message and it takes effect at the end of your billing cycle. We earn your business every month by being good at what we do, not by making it difficult to walk away.</p>
         </div>
         <div class="value-card fade-in">
           <span class="value-card__icon">🇬🇧</span>
-          <h3>Built for the UK</h3>
-          <p>UK pricing in pounds. UK English spelling. UK-specific trade terminology and regulations. UK emergency escalation protocols. This service is designed for tradesmen working in the United Kingdom — not an American product repackaged for the UK market.</p>
+          <h3>Built for UK Construction</h3>
+          <p>UK pricing in pounds. UK English. UK-specific building terminology, regulations, and trade structures. UK emergency escalation protocols. This service is designed for construction businesses operating in the United Kingdom — not an American product with a UK flag stuck on the homepage.</p>
         </div>
       </div>
     </div>
   </section>
 
   <CTASection
-    headline="Ready to Stop Missing Calls?"
-    subhead="Join the UK tradesmen who never lose a lead. £99/month, 30-day money-back guarantee, no contracts."
+    headline="Respond First. Win the Job."
+    subhead=`Join the UK construction trades who never miss a lead. £${pricing.tiers.core.price}/month, 30-day money-back guarantee, no contracts.`
   />
 
   <CookieConsent />

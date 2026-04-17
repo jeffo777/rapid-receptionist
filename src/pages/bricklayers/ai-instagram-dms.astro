@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Your Brickwork Portfolio Sells You',
+    text: "Bricklayers who show their work on Instagram — herringbone paths, feature walls, restored chimneys, precision pointing — attract genuine enquiries. The AI captures those DMs the moment they arrive."
+  },
+  {
+    icon: '⚡',
+    title: 'Responds While You Post Content',
+    text: "You share a reel of a completed brick arch. It gets hundreds of views. DMs follow. The AI handles them all while you are back on site the next morning."
+  },
+  {
+    icon: '🌟',
+    title: 'Matches Your Craftsmanship Online',
+    text: "A professional, instant reply matches the quality of the brickwork in your feed. It tells enquirers: this bricklayer is as precise in communication as they are with a trowel."
+  },
+  {
+    icon: '📱',
+    title: 'Catches Evening Scrollers',
+    text: "Instagram browsing peaks in the evening. When someone sees your work at 9pm and DMs you, the AI catches that impulse enquiry before they scroll past."
+  },
+  {
+    icon: '📈',
+    title: 'Maximises Ad Performance',
+    text: "If you boost posts or run Instagram ads showcasing your brickwork, the AI captures every DM those ads generate — even at 2am."
+  },
+  {
+    icon: '🔗',
+    title: 'Turns Admiration into Bookings',
+    text: "The gap between 'that brickwork is incredible' and 'I have booked them' is one DM. The AI makes sure that DM gets an instant, professional response."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Instagram DMs work for bricklayers?",
+    answer: "When someone DMs your Instagram business account, the AI reads the message and sends one professional reply within seconds. It captures what they are interested in and confirms you will follow up. The lead — including any photos — is sent to you."
+  },
+  {
+    question: "Do I need an Instagram business account?",
+    answer: "Yes. Switching from personal to business is free and takes two minutes. We guide you through it if needed."
+  },
+  {
+    question: "Does the AI reply to comments on posts?",
+    answer: "No — direct messages only. Post comments remain for you to engage with manually."
+  },
+  {
+    question: "What kind of brickwork DMs does it handle?",
+    answer: "Enquiries inspired by your portfolio photos, questions about feature brickwork, requests for quotes on walls and extensions, and availability checks. Many include photos of what the customer wants done."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI Instagram DMs is an add-on at £${pricing.addOn.price}/month. Pair it with the Core plan or the All Channels bundle.`
+  },
+  {
+    question: "Is DM data GDPR compliant?",
+    answer: "Yes. All data from DMs is encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Bricklayers | Rapid Receptionist"
+  description="AI Instagram DMs for UK bricklayers and bricklaying contractors. Responds instantly to Instagram messages about brickwork projects. Ideal for bricklaying businesses showcasing their portfolio. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/bricklayers/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Bricklayer"
+  tradeNamePlural="Bricklayers"
+  tradeSlug="bricklayers"
+  headline="AI Instagram DMs for Bricklayers"
+  accentWord="Bricklayers"
+  subhead="You post a timelapse of a herringbone brick path. It gets 3,500 views and four DMs asking about similar work. Your AI replies to every one — capturing names, postcodes, and project details — while you are laying the next one."
+  scenario="It is Thursday evening. You posted a short reel yesterday showing a completed brick feature wall in a customer's garden — a curved wall in reclaimed London stocks with a sandstone cap. It has 2,800 views and has been saved 45 times. At 8pm, a DM arrives: 'That curved wall is stunning. We are having our garden landscaped and want a raised brick planter that curves around the patio — similar brick finish to yours. Do you cover South Manchester? Roughly how long would something like that take?' Without AI Instagram DMs, you see the message at 10pm, think about replying, and decide to do it properly tomorrow. You forget. With the AI, they get a reply within seconds: 'Thank you, glad you liked the garden wall. We would love to discuss your raised planter project. Could you share your postcode and a rough idea of the patio dimensions? We will arrange a call to go through materials and timing.' They reply with a sketch and measurements. Friday morning, you call them."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/bricklayers/ai-receptionist/"
+  ctaHeadline="Turn Instagram Followers into Brickwork Customers"
+  ctaSubhead="Your portfolio attracts them. The AI captures them. £${pricing.addOn.price}/month."
+/>

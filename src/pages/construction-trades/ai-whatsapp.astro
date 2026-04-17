@@ -1,0 +1,102 @@
+﻿---
+import ChannelServiceLayout from '../../layouts/ChannelServiceLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const steps = [
+  {
+    number: 1,
+    title: 'A Customer WhatsApps Your Business',
+    description: "They've saved your number from a van, a leaflet, or a Google listing. They send a WhatsApp message — maybe with a photo of the problem — asking if you're available."
+  },
+  {
+    number: 2,
+    title: 'Your AI Sends an Instant Professional Reply',
+    description: "Within seconds, the AI reads their message, identifies what they need, and sends one professional reply acknowledging the enquiry, confirming the details, and letting them know you'll be in touch personally."
+  },
+  {
+    number: 3,
+    title: 'You Follow Up With Full Context',
+    description: "The lead is sent to you with the customer's name, number, what they need, and any photos they attached. You call them back with all the context — no guesswork, no 'sorry, what was it you messaged about?'"
+  }
+];
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Where Your Customers Already Are',
+    text: "WhatsApp has over 40 million users in the UK. Many homeowners and site managers now prefer messaging over calling — especially for initial enquiries, especially with photos attached. If you are not responding instantly, you are not responding at all."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Photo Enquiries',
+    text: "Customers often send photos of the problem — a cracked render, a leaking roof, a damaged lintel. The AI acknowledges the photo, captures the details, and confirms you'll review and follow up. The photo is included in your lead notification."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Response, Not Hours Later',
+    text: "WhatsApp users expect fast replies. A message that sits unread for three hours isn't an enquiry — it's a customer who's already contacted someone else. The AI responds in seconds, every time, confirming their message has been received."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional First Impression',
+    text: "Instead of a delayed or half-typed reply sent from a dusty van, your customers receive a polished, professional response that makes your business look organised and responsive — even when you're up to your elbows in work."
+  },
+  {
+    icon: '🔒',
+    title: 'Keeps Your Personal Number Private',
+    text: "WhatsApp messages come through your business number, not your personal mobile. You maintain a clear boundary between your work and personal life, while still capturing every lead."
+  },
+  {
+    icon: '🔔',
+    title: 'Never Miss a Message Again',
+    text: "Whether the message arrives at 7am, 7pm, or 3am on Christmas Day, the AI responds instantly. No more waking up to a string of unanswered WhatsApp messages from potential customers."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI WhatsApp work?",
+    answer: "When a customer sends a WhatsApp message to your business number, the AI reads the message, identifies what they need, and sends one professional reply within seconds. The reply acknowledges their enquiry, confirms the key details, and lets them know you'll be in touch personally. The full conversation — including any photos — is sent to you as a lead notification."
+  },
+  {
+    question: "Can the AI have a back-and-forth WhatsApp conversation?",
+    answer: "AI WhatsApp uses a one-reply model. The AI sends one professional response to each inbound message. It doesn't engage in a full conversation thread — that's reserved for the Conversational channels (phone and website chat). The one-reply approach is deliberate: it captures the lead, sets expectations, and hands the conversation to you for the personal follow-up."
+  },
+  {
+    question: "Do I need a WhatsApp Business account?",
+    answer: "We connect your Rapid Receptionist AI to a WhatsApp Business account linked to your business number. If you don't have one, we help you set it up during onboarding. Your customers message the same number they'd normally call."
+  },
+  {
+    question: "What happens if someone sends a photo with their message?",
+    answer: "The AI acknowledges that photos were received and includes them in your lead notification. If a homeowner sends a photo of their damp wall or a site manager sends a photo of a damaged section, you see it alongside the message details when you review the lead."
+  },
+  {
+    question: "How much does AI WhatsApp cost?",
+    answer: `AI WhatsApp is available as an add-on channel at £${pricing.addOn.price}/month. You can pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat) or use it standalone. Alternatively, the All Channels bundle at £${pricing.tiers.all.price}/month includes WhatsApp alongside all seven other channels.`
+  },
+  {
+    question: "Can I still use WhatsApp myself alongside the AI?",
+    answer: "Yes. The AI handles inbound messages when you're unavailable. When you're free, you can respond directly from the WhatsApp Business app as normal. The AI acts as your backup — catching messages you'd otherwise miss while on the tools."
+  }
+];
+---
+
+<ChannelServiceLayout
+  title="AI WhatsApp for UK Construction Trades | Rapid Receptionist"
+  description=`AI WhatsApp for 46 UK construction trades. Responds instantly to WhatsApp enquiries, captures lead details and photos. £${pricing.addOn.price}/month add-on. 24/7 coverage.`
+  canonicalUrl="/construction-trades/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  channelSlugPrefix="ai-whatsapp"
+  headline="AI WhatsApp for UK Construction Trades"
+  accentWord="AI WhatsApp"
+  subhead=`A customer WhatsApps your business with a photo of their cracked render. Instead of silence, your AI replies in seconds — professional, detailed, and confirming you'll be in touch. £${pricing.addOn.price}/month.`
+  speedStat="WhatsApp messages have a 98% open rate — five times higher than email."
+  speedText="Your customers are already on WhatsApp. A third of UK homeowners now prefer to message a tradesperson rather than call them. If that message sits unanswered for three hours, it's not an enquiry anymore — it's a lead your competitor picked up."
+  scenario="It's Saturday morning. A homeowner in Bristol spots a crack in their external render after a storm. They google 'plasterer near me,' find your number, and send you a WhatsApp message with two photos: one of the crack, one of the affected wall from further back. They type: 'Hi, can you take a look at this? How soon could you come out?' Without AI WhatsApp, that message sits unread until Monday. By then, they've already booked someone else. With AI WhatsApp, they get an instant reply: 'Thanks for your message. We can see the photos and will get back to you today with availability. Could you confirm your postcode and the best time to call?' The lead is captured. The customer is engaged. And you review the whole thing — photos included — over your morning coffee."
+  steps={steps}
+  benefits={benefits}
+  pricingNote=`AI WhatsApp is available as an <strong>add-on channel at £${pricing.addOn.price}/month</strong>. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat), use it standalone, or include it in the <strong>All Channels bundle at £${pricing.tiers.all.price}/month</strong>. <a href='/pricing/'>See full pricing →</a>`
+  faqs={faqs}
+  ctaHeadline="Stop Ignoring WhatsApp Enquiries"
+  ctaSubhead=`Every unread WhatsApp message is a lead going cold. AI WhatsApp responds in seconds, 24/7. £${pricing.addOn.price}/month.`
+/>

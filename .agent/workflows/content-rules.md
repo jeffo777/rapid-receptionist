@@ -25,7 +25,15 @@ Every single piece of written content on this website **MUST be unique, custom-w
 - **Structural reuse:** Using the same layout component across multiple pages (e.g., TradeHubLayout) to maintain consistent section order and design.
 - **Navigation/link generation:** Using trades.json to auto-generate nav dropdowns, footer links, or breadcrumbs.
 - **Component reuse:** Using the same FAQ accordion component on every page — but the actual FAQ questions and answers must be unique per page.
-- **Brand-consistent phrases:** Using recurring brand phrases like "Built by tradesmen, for tradesmen" or "£99/month" where contextually appropriate — these are brand elements, not spun content.
+- **Pricing variables:** All pricing MUST come from `src/data/pricing.json`. Use `pricing.tiers.starter.price`, `pricing.tiers.core.price`, `pricing.addOn.price`, etc. The surrounding sentence must be unique and hand-written per page, but numbers are injected from the JSON. NEVER hardcode `£49`, `£95`, `£23`, `£177`, or `£295` — always use the variable. This allows site-wide pricing changes from a single file.
+- **Brand-consistent phrases:** Using recurring brand phrases like "Built by tradesmen, for tradesmen" or "From £{pricing.tiers.starter.price}/month" where contextually appropriate — these are brand elements, not spun content.
+
+### URL Structure Rules
+
+- Trade pages use **flat URLs**: `/{trade-slug}/ai-receptionist/`, `/{trade-slug}/ai-phone-answering/`, etc.
+- DO NOT use `/construction-trades/{trade-slug}/` — that prefix was removed.
+- Channel overview pages (the generic "AI Phone Answering for all trades" pages) remain at `/construction-trades/ai-phone-answering/`.
+- Import paths from trade pages to layouts: `../../layouts/` (two levels up).
 
 ### Content Quality Standards
 

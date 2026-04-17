@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '✉️',
+    title: 'Catches Builder Availability Checks',
+    text: "Builders often text groundworkers to check availability — 'Are you free Monday for a foundation dig in Bolton?' A fast reply keeps you in the running."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Reply From the Trench',
+    text: "You cannot type a text with hands covered in wet clay. The AI sends a clean, professional response while you carry on working."
+  },
+  {
+    icon: '🔗',
+    title: 'Pairs With Missed Call Text-Back',
+    text: "When a customer receives your text-back and replies with details, the AI captures that reply — completing the lead capture loop."
+  },
+  {
+    icon: '📵',
+    title: 'Works When Signal Is Poor',
+    text: "Foundation trenches, basements, and rural sites often have patchy signal. The AI responds independently of your phone's connection."
+  },
+  {
+    icon: '🌙',
+    title: '24/7 Text Coverage',
+    text: "Texts arrive at all hours. The AI responds at 5am, midnight, and every hour between."
+  },
+  {
+    icon: '📊',
+    title: 'Structured Lead Logging',
+    text: "Every text becomes a structured lead — no more scrolling through message threads to find that enquiry from Thursday."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI SMS work for groundworkers?",
+    answer: "When someone texts your business number, the AI sends one professional reply capturing their details and the nature of the enquiry. The lead is delivered to you in a structured format."
+  },
+  {
+    question: "What kind of groundwork texts does it handle?",
+    answer: "Availability checks from builders, follow-ups from missed calls, quick questions from homeowners about drainage or excavation, and replies to missed call text-back messages."
+  },
+  {
+    question: "Does it text back and forth?",
+    answer: "No — one reply per message. It captures the lead and sets expectations for your follow-up."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI SMS is an add-on at £${pricing.addOn.price}/month. Pair it with the Core plan or the All Channels bundle.`
+  },
+  {
+    question: "Can I reply to texts myself?",
+    answer: "Yes. The AI handles texts when you are on site. When free, you respond directly."
+  },
+  {
+    question: "Is SMS data GDPR compliant?",
+    answer: "Yes. All data is encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Groundworkers | Rapid Receptionist"
+  description="AI SMS for UK groundworkers, groundwork contractors, and groundworks businesses. Responds instantly to text enquiries about foundations, drainage, and excavation. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/groundworkers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Groundworker"
+  tradeNamePlural="Groundworkers"
+  tradeSlug="groundworkers"
+  headline="AI SMS for Groundworkers"
+  accentWord="Groundworkers"
+  subhead="A builder texts your number: 'Free next week? Need founds digging for a side extension in Rochdale.' Instead of that text going unread until tonight, your AI replies in seconds."
+  scenario="It is 11am on a Monday. You are operating a mini excavator on a drainage job in Oldham, cutting a trench through heavy clay for a new foul run. Your phone buzzes in the cab with a text from an unknown number: 'Hi, got your number from Dave at Ridgeway Construction. We need groundworks for a two-storey rear extension in Rochdale — strip founds, muck away, and a new drain connection. Can you price it? Start date is three weeks.' You are mid-dig with the bucket in the ground. Without AI SMS, that text sits unread until 5:30pm. By then, the sender has heard back from two other groundworkers. With AI SMS, they get a reply within seconds: 'Thanks for your message. We are happy to look at the Rochdale extension. Could you confirm the site postcode and whether the architect's drawings are available? We will arrange a call today.' They reply with the postcode and email the drawings. You call at lunchtime with a head start on the competition."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/groundworkers/ai-receptionist/"
+  ctaHeadline="Stop Missing Text Enquiries"
+  ctaSubhead="Every unanswered text is a foundation someone else will dig. £${pricing.addOn.price}/month."
+/>

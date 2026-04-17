@@ -3,20 +3,37 @@ import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
-import SpeedBanner from '../components/SpeedBanner.astro';
-import ScenarioBlock from '../components/ScenarioBlock.astro';
+import WithoutWithSection from '../components/WithoutWithSection.astro';
+import ConstructionSpecialisms from '../components/ConstructionSpecialisms.astro';
+import ClientTypes from '../components/ClientTypes.astro';
 import StepsGrid from '../components/StepsGrid.astro';
 import FeatureGrid from '../components/FeatureGrid.astro';
-import TrustSection from '../components/TrustSection.astro';
-import TestimonialSlider from '../components/TestimonialSlider.astro';
+import StatisticsSection from '../components/StatisticsSection.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTASection from '../components/CTASection.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 import channels from '../data/channels.json';
+import pricing from '../data/pricing.json';
 
 export interface FAQItem {
   question: string;
   answer: string;
+}
+
+export interface ScenarioPair {
+  without: string;
+  with: string;
+}
+
+export interface SpecialismGroup {
+  category: string;
+  items: string[];
+}
+
+export interface ClientType {
+  icon: string;
+  title: string;
+  description: string;
 }
 
 export interface Props {
@@ -29,9 +46,9 @@ export interface Props {
   headline: string;
   accentWord: string;
   subhead: string;
-  speedStat: string;
-  speedText: string;
-  scenario: string;
+  withoutWithScenarios: ScenarioPair[];
+  specialisms: SpecialismGroup[];
+  clientTypes: ClientType[];
   faqs: FAQItem[];
   ctaHeadline?: string;
   ctaSubhead?: string;
@@ -47,12 +64,12 @@ const {
   headline,
   accentWord,
   subhead,
-  speedStat,
-  speedText,
-  scenario,
+  withoutWithScenarios,
+  specialisms,
+  clientTypes,
   faqs,
   ctaHeadline = `Stop Missing Jobs, ${tradeNamePlural}`,
-  ctaSubhead = `Join the UK ${tradeNamePlural.toLowerCase()} who never miss a lead. Only £99/month, 30-day money-back guarantee, no contracts.`,
+  ctaSubhead = `Join the UK ${tradeNamePlural.toLowerCase()} who never miss a lead. From £${pricing.tiers.starter.price}/month, 30-day money-back guarantee, no contracts.`,
 } = Astro.props;
 
 const steps = [
@@ -75,14 +92,14 @@ const steps = [
 
 /* Build channel URL map for trade-specific links */
 const channelTradeUrlMap: Record<string, string> = {
-  'ai-phone-answering': `/ai-phone-answering-for-${tradeSlug}/`,
-  'ai-website-chat': `/ai-website-chat-for-${tradeSlug}/`,
-  'ai-whatsapp': `/ai-whatsapp-for-${tradeSlug}/`,
-  'ai-sms': `/ai-sms-for-${tradeSlug}/`,
-  'ai-email': `/ai-email-response-for-${tradeSlug}/`,
-  'ai-facebook-messenger': `/ai-facebook-messenger-for-${tradeSlug}/`,
-  'ai-instagram-dm': `/ai-instagram-dms-for-${tradeSlug}/`,
-  'missed-call-text-back': `/ai-missed-call-text-back-for-${tradeSlug}/`,
+  'ai-phone-answering': `/construction-trades/${tradeSlug}/ai-phone-answering/`,
+  'ai-website-chat': `/construction-trades/${tradeSlug}/ai-website-chat/`,
+  'ai-whatsapp': `/construction-trades/${tradeSlug}/ai-whatsapp/`,
+  'ai-sms': `/construction-trades/${tradeSlug}/ai-sms/`,
+  'ai-email': `/construction-trades/${tradeSlug}/ai-email-response/`,
+  'ai-facebook-messenger': `/construction-trades/${tradeSlug}/ai-facebook-messenger/`,
+  'ai-instagram-dm': `/construction-trades/${tradeSlug}/ai-instagram-dms/`,
+  'missed-call-text-back': `/construction-trades/${tradeSlug}/missed-call-text-back/`,
 };
 
 const features = channels.map(ch => ({
@@ -114,11 +131,11 @@ const serviceSchema = {
   },
   "offers": {
     "@type": "Offer",
-    "price": "99",
+    "price": "95",
     "priceCurrency": "GBP",
     "priceSpecification": {
       "@type": "UnitPriceSpecification",
-      "price": "99",
+      "price": "95",
       "priceCurrency": "GBP",
       "unitText": "month"
     }
@@ -130,12 +147,37 @@ const serviceSchema = {
   }
 };
 
-/* Append GDPR FAQ to the faqs array */
+/* BreadcrumbList schema */
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${siteUrl}/` },
+    { "@type": "ListItem", "position": 2, "name": "Construction Trades", "item": `${siteUrl}/construction-trades/` },
+    { "@type": "ListItem", "position": 3, "name": `AI Receptionist for ${tradeNamePlural}` }
+  ]
+};
+
+/* FAQ schema */
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer.replace(/<[^>]*>/g, '')
+    }
+  }))
+};
+
+/* Append GDPR FAQ to the faqs array — completely rewritten for RR construction context */
 const allFaqs = [
   ...faqs,
   {
-    question: "How does Rapid Receptionist handle my customers' personal data?",
-    answer: "We take data protection seriously and operate in full compliance with UK GDPR and the Data Protection Act 2018. When your AI receptionist captures a caller's name, phone number, location, or job details, that data is encrypted in transit and at rest, stored on UK/EU-based servers, and only shared with you — the business owner. We never sell, share, or use customer data for marketing purposes. Data is retained only as long as needed to deliver the service, and both you and your customers can request deletion at any time. Our full privacy policy is available at <a href='/privacy/'>rapidreceptionist.co.uk/privacy</a>. As a UK tradesman, you remain the data controller for your customer information — we act as a data processor on your behalf, handling enquiry details strictly according to your instructions and our processing agreement."
+    question: "How does Rapid Receptionist protect my clients' personal information?",
+    answer: "Data security is built into every layer of our service. When your AI receptionist captures a client's name, contact number, site address, or project details, that information is encrypted both in transit and at rest using industry-standard protocols. All data is stored on UK and EU-based servers — never offshore. We operate as your data processor under UK GDPR and the Data Protection Act 2018, meaning we handle enquiry data strictly on your behalf and never sell, share, or repurpose it. You and your clients can request deletion of any stored data at any time. As the contractor, you remain the data controller for all client information captured through our service. Our full data handling practices are detailed in our <a href='/privacy/'>privacy policy</a>."
   }
 ];
 ---
@@ -143,23 +185,36 @@ const allFaqs = [
 <BaseLayout title={title} description={description} canonicalUrl={canonicalUrl}>
   <Header slot="header" />
 
+  <!-- Breadcrumbs -->
+  <section class="th-breadcrumbs">
+    <div class="container">
+      <nav aria-label="Breadcrumb">
+        <ol class="th-breadcrumb-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/construction-trades/">Construction Trades</a></li>
+          <li aria-current="page">AI Receptionist for {tradeNamePlural}</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
   <HeroSection
     headline={headline}
     accentWord={accentWord}
     subhead={subhead}
   />
 
-  <SpeedBanner stat={speedStat} text={speedText} />
+  <WithoutWithSection tradeName={tradeName} scenarios={withoutWithScenarios} />
 
-  <ScenarioBlock text={scenario} />
+  <ConstructionSpecialisms tradeName={tradeName} groups={specialisms} />
+
+  <ClientTypes tradeName={tradeName} clients={clientTypes} />
 
   <StepsGrid steps={steps} />
 
   <FeatureGrid features={features} columns={3} />
 
-  <TrustSection />
-
-  <TestimonialSlider />
+  <StatisticsSection />
 
   <FAQAccordion faqs={allFaqs} />
 
@@ -167,8 +222,41 @@ const allFaqs = [
 
   <CookieConsent />
 
-  <!-- Service Schema -->
+  <!-- Schema Markup -->
   <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <Footer slot="footer" />
 </BaseLayout>
+
+<style>
+  /* Breadcrumbs */
+  .th-breadcrumbs {
+    padding: calc(var(--header-height) + var(--space-4)) 0 0;
+  }
+
+  .th-breadcrumb-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    flex-wrap: wrap;
+  }
+
+  .th-breadcrumb-list li:not(:last-child)::after {
+    content: '›';
+    margin-left: var(--space-2);
+    color: var(--color-text-muted);
+  }
+
+  .th-breadcrumb-list a {
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+  }
+
+  .th-breadcrumb-list a:hover {
+    color: var(--color-accent);
+  }
+</style>

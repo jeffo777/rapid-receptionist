@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Visitors Browsing for Tilers',
+    text: "Homeowners compare multiple tiling businesses before choosing. The chat widget engages them the moment they land on your site — before they click away to the next tiling contractor."
+  },
+  {
+    icon: '📐',
+    title: 'Captures Tiling-Specific Details',
+    text: "The AI asks the right questions for tiling enquiries — which rooms, wall or floor or both, tile type and size, whether the substrate is prepared, and the customer's timeline."
+  },
+  {
+    icon: '♾️',
+    title: 'Unlimited Chat Sessions',
+    text: "No cap. Whether your tiling company website gets 3 chat enquiries or 30 a month, every visitor is engaged without extra charges."
+  },
+  {
+    icon: '📱',
+    title: 'Mobile-First Design',
+    text: "Most homeowners browse tile fitters on their phones — usually in the evening after choosing tiles at the showroom. The chat widget loads fast on mobile and desktop."
+  },
+  {
+    icon: '🕐',
+    title: '24/7 Lead Capture',
+    text: "Visitors do not keep tiling hours. Someone browsing tiling contractors at 11pm gets the same instant engagement as a 10am visitor."
+  },
+  {
+    icon: '🎨',
+    title: 'Branded to Your Business',
+    text: "The chat widget uses your tiling business name and brand colours. It looks like a natural part of your website — not a generic add-on."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does website chat work for tilers and tile fitters?",
+    answer: "A chat widget appears on your website. When a visitor clicks it, the AI greets them and asks about their tiling needs — bathroom retile, kitchen splashback, floor tiling, wet room. It captures their details and sends you a lead summary."
+  },
+  {
+    question: "Do I need to be online to monitor the chat?",
+    answer: "No. The AI handles every conversation. You review leads when you are ready — no live monitoring needed."
+  },
+  {
+    question: "What if a visitor asks for a tiling quote through chat?",
+    answer: "The AI does not quote. Tiling prices depend on room size, tile type, substrate condition, and pattern complexity. The AI captures the details and passes the lead."
+  },
+  {
+    question: "Is website chat included in the base price?",
+    answer: `Yes. Unlimited website chat is included in the Core plan at £${pricing.tiers.core.price}/month alongside phone answering. Same price for sole trader tilers and larger tiling companies.`
+  },
+  {
+    question: "Will it slow my website down?",
+    answer: "No. The widget is lightweight and loads asynchronously — no impact on page speed or search rankings."
+  },
+  {
+    question: "How is chat data protected?",
+    answer: "All data is encrypted, stored on UK and EU servers, and managed under UK GDPR."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Tilers | Rapid Receptionist"
+  description="AI website chat for UK tilers, tiling businesses, and tile fitters. Engages visitors with tiling-specific questions, captures lead details 24/7. Ideal for tiling contractors. Unlimited messages included."
+  canonicalUrl="/tilers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Tiler"
+  tradeNamePlural="Tilers"
+  tradeSlug="tilers"
+  headline="AI Website Chat for Tilers"
+  accentWord="Tilers"
+  subhead="A homeowner visits your tiling business website at 9pm after choosing tiles at the showroom. They want to know if you handle large-format porcelain. Instead of leaving, they chat with your AI — and by morning your tiling company has a qualified lead with room measurements, tile choices, and a timeline."
+  scenario="It is 9:30pm on a Friday. A homeowner in Sale has just spent the afternoon at a tile showroom choosing marble-effect porcelain for their kitchen and utility floor. They have 42 square metres to cover and need someone who works with large-format tiles — 120cm by 60cm panels that require proper levelling and a skilled hand. They google 'tiler Sale large format,' find your website, and see your gallery of large-format kitchen floors. They want to know your availability and whether you lay underfloor heating too. Without website chat, they bookmark the tab, intend to call Monday, and forget. With AI Website Chat, the widget pops up: 'Hi, what tiling work are you looking for?' They describe the kitchen floor, the tile size, and the underfloor heating question. The AI captures the m², tile brand, postcode, and phone number. Saturday morning, you call them before they have even finished breakfast."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/tilers/ai-receptionist/"
+  ctaHeadline="Stop Losing Website Visitors"
+  ctaSubhead="They chose the tiles. Now choose the tiler. Your AI captures them. Included at £${pricing.tiers.core.price}/month."
+/>

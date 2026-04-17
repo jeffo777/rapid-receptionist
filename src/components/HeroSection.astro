@@ -1,4 +1,5 @@
 ---
+import pricing from '../data/pricing.json';
 export interface Props {
   headline: string;
   subhead: string;
@@ -43,7 +44,7 @@ if (accentWord) {
           </span>
           <span class="trust-row__divider" aria-hidden="true"></span>
           <span class="trust-row__item">
-            From <strong>£99/month</strong>
+            From <strong>£{pricing.tiers.starter.price}/month</strong>
           </span>
           <span class="trust-row__divider" aria-hidden="true"></span>
           <span class="trust-row__item">

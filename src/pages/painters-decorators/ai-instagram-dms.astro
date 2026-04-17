@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Before-and-After Posts Drive Leads',
+    text: "You post a before-and-after of a lounge transformation. The likes come in — and so do the DMs. Your AI replies to every one while your painting business focuses on the next room."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant DM Response',
+    text: "Instagram rewards fast replies. When someone DMs a decorating contractor and gets a response in seconds, they feel valued. Two days of silence sends them to the next painter."
+  },
+  {
+    icon: '🎨',
+    title: 'Visual Enquiries Handled',
+    text: "DMs about decorating often reference specific posts — 'I want that exact colour scheme' or 'Can you do the wallpaper from your last reel?' The AI acknowledges the reference and captures details."
+  },
+  {
+    icon: '🔧',
+    title: 'Designed for Decorators on Site',
+    text: "You cannot respond to DMs while rollering a ceiling. The AI handles every message so your painting and decorating business never loses a lead."
+  },
+  {
+    icon: '🌙',
+    title: 'After-Hours Lead Capture',
+    text: "Instagram browsing peaks in the evenings. Homeowners see your work, get inspired, and DM. The AI captures them immediately."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Delivered to You',
+    text: "Every DM conversation is summarised as a structured lead alongside your other channel leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Instagram DMs work for painters and decorators?",
+    answer: "The AI monitors your Instagram business account. When someone DMs about decorating work, it responds instantly, captures their needs and details, and sends you a lead summary."
+  },
+  {
+    question: "Can it handle messages referencing my posts?",
+    answer: "Yes. When someone says 'I want my lounge like in your last post,' the AI acknowledges it and asks about their room, colour preferences, and timeline."
+  },
+  {
+    question: "Is this good for decorators who post transformation content?",
+    answer: "Absolutely. Before-and-after content drives the most DMs. The AI handles the surge so your painting business captures every interested follower."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI Instagram DMs is £${pricing.addOn.price}/month. Same price for sole trader decorators, painting contractors, and larger painting companies.`
+  },
+  {
+    question: "Do I need an Instagram business account?",
+    answer: "Yes. Switching from personal to business is free and takes two minutes."
+  },
+  {
+    question: "How is DM data protected?",
+    answer: "All data is encrypted, stored on UK and EU servers, managed under UK GDPR."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Painters & Decorators | Rapid Receptionist"
+  description="AI Instagram DMs for UK painters, decorators, and painting businesses. Responds instantly to Instagram messages about decorating work. Ideal for decorating contractors showcasing transformations. £${pricing.addOn.price}/month."
+  canonicalUrl="/painters-decorators/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Painter & Decorator"
+  tradeNamePlural="Painters & Decorators"
+  tradeSlug="painters-decorators"
+  headline="AI Instagram DMs for Painters & Decorators"
+  accentWord="Painters"
+  subhead="You post a timelapse of a dark dining room being transformed with warm white walls and a midnight blue feature wall. It gets 8,000 views and twelve DMs. Your AI replies to every one — capturing room sizes, colour preferences, and budgets — while your painting and decorating business finishes the next job."
+  scenario="It is Friday evening. You posted a reel on Thursday showing a master bedroom transformation — old magnolia stripped back, walls lined, and redecorated in a soft sage green with white woodwork and a wallpapered chimney breast in a botanical print. It has 8,400 views and climbing. At 9pm, a DM arrives: 'We want our bedroom exactly like this. Can you do Wilmslow? How much would a full bedroom redecoration be — walls, ceiling, woodwork, and a feature wall?' Without AI Instagram DMs, you are relaxing with a glass of wine and do not check until Saturday morning. You start composing a reply but get distracted by weekend family plans. By Monday, they have DM'd another decorator. With the AI, they get an instant response: 'Thank you — glad you liked the bedroom transformation! We would love to discuss your bedroom project. Could you share the room dimensions, your postcode, and whether the walls need any preparation before decorating? We will arrange a call early next week.' They reply with photos and measurements. Monday morning, you call and book a home visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/painters-decorators/ai-receptionist/"
+  ctaHeadline="Turn Instagram Followers into Decorating Customers"
+  ctaSubhead="Your transformations inspire them. Your AI captures them. £${pricing.addOn.price}/month."
+/>

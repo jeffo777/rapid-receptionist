@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Customers Send Photos Directly',
+    text: "Homeowners photograph the wardrobe space, the damaged door frame, or the existing skirting profile and send it via WhatsApp. The AI acknowledges the photos and captures the context — giving your joinery business a head start before you even call back."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Response, Every Time',
+    text: "WhatsApp users expect fast replies. When someone messages a carpentry contractor and gets nothing for two days, they message the next one. Your AI replies in seconds, keeping the customer engaged while you finish the job you are on."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for How Joiners Work',
+    text: "You are covered in sawdust with ear defenders on. Checking WhatsApp between cuts is unsafe and impractical. The AI handles messages throughout the day so your joinery company never misses an opportunity."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Lead Capture',
+    text: "The AI does not just acknowledge — it asks follow-up questions about the work needed, the property, and the timeline. Each conversation becomes a usable lead summary."
+  },
+  {
+    icon: '🕐',
+    title: 'Evening and Weekend Coverage',
+    text: "WhatsApp messages from homeowners peak in the evenings and weekends — when they are home and can see what needs doing. The AI engages them regardless of the hour."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Other Channels',
+    text: "WhatsApp complements phone and chat. Some customers prefer typing to calling. Offering WhatsApp alongside phone answering means your carpentry business captures leads from every communication preference."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI WhatsApp work for joiners?",
+    answer: "Customers message your WhatsApp business number. The AI responds instantly, asks about the work needed — doors, staircases, fitted furniture, repairs — captures their details, and sends you a lead summary. It handles photos, text, and voice notes."
+  },
+  {
+    question: "Can the AI handle photo messages?",
+    answer: "Yes. When a customer sends photos of a damaged door, a space they want fitted furniture in, or an existing profile they want matched, the AI acknowledges them and continues the conversation to capture the full brief."
+  },
+  {
+    question: "How much does AI WhatsApp cost for joiners and carpenters?",
+    answer: `AI WhatsApp is an add-on at £${pricing.addOn.price}/month. The same price for sole trader joiners, carpentry contractors, and larger joinery businesses. Pair it with the Core plan or get everything with the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can I still reply to WhatsApp messages myself?",
+    answer: "Yes. When you are free, you take over the conversation. The AI only handles initial engagement and lead capture — it hands off seamlessly when you step in."
+  },
+  {
+    question: "Do I need WhatsApp Business already?",
+    answer: "No. We set up the WhatsApp Business integration as part of your onboarding. If you already have a WhatsApp Business account, we connect to it."
+  },
+  {
+    question: "How is WhatsApp data protected?",
+    answer: "All messages and customer data are managed under UK GDPR. Data is encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Joiners & Carpenters | Rapid Receptionist"
+  description="AI WhatsApp for UK joiners, carpentry contractors, and joinery businesses. Responds instantly to WhatsApp enquiries with photos of joinery work needed. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/joiners-carpenters/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Joiner"
+  tradeNamePlural="Joiners & Carpenters"
+  tradeSlug="joiners-carpenters"
+  headline="AI WhatsApp for Joiners & Carpenters"
+  accentWord="Joiners"
+  subhead="A homeowner photographs the gap where their old fitted wardrobe used to be and WhatsApps your joinery business. Instead of that message sitting unread while you are in the workshop, your AI replies in seconds — capturing dimensions, timber preferences, and the customer's timeline. Built for carpentry contractors who cannot check their phone between cuts."
+  scenario="It is Saturday morning. A homeowner in Hale has just had their bathroom ripped out and discovered that the door frame is rotten at the base — the previous tiler had been siliconing over the damage for years. They photograph the soft timber, the crumbling frame, and the gap where the architrave has come away. They WhatsApp your number: 'Hi, can you replace a door frame and architrave? The base is rotten. Photos attached.' You are in your workshop machining timber for a kitchen job and will not check your phone for hours. Without AI WhatsApp, the message sits until the afternoon. By then, they have messaged two other joiners and picked the one who replied first. With AI WhatsApp, they get an instant response: 'Thanks for the photos — we can see the rot damage at the base of the frame. Could you confirm whether the door itself needs replacing too, and your postcode? We will arrange a callback today.' They reply with the details. You call at lunchtime and book the job for next Tuesday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/joiners-carpenters/ai-receptionist/"
+  ctaHeadline="Stop Losing WhatsApp Leads"
+  ctaSubhead="Homeowners send joinery enquiries with photos. Your AI replies before they message anyone else. £${pricing.addOn.price}/month."
+/>

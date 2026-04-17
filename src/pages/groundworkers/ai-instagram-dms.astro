@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Before-and-After Transformations Sell',
+    text: "Groundwork transformations are dramatic — overgrown wasteland to level, compacted formation; muddy trench to clean concrete foundation. Those before-and-after posts on Instagram attract DMs from builders and homeowners alike."
+  },
+  {
+    icon: '⚡',
+    title: 'Responds While You Dig',
+    text: "You post a timelapse of an excavation. It gets views. DMs follow. The AI handles them all while you are on the next site."
+  },
+  {
+    icon: '🌟',
+    title: 'Professional Response Matches Your Work',
+    text: "A clean, instant reply matches the precision of your foundation layout. It tells enquirers: this groundworker is as professional in communication as they are on the machine."
+  },
+  {
+    icon: '📱',
+    title: 'Catches Evening Browsers',
+    text: "Instagram scrolling peaks in the evening. When someone sees your work at 9pm, the AI catches that DM before they scroll past."
+  },
+  {
+    icon: '📈',
+    title: 'Ad-Driven Lead Capture',
+    text: "If you boost posts or run ads, the AI captures every DM those ads generate — 24/7."
+  },
+  {
+    icon: '🔗',
+    title: 'Converts Admirers into Customers',
+    text: "The gap between 'impressive work' and 'booked' is one DM. The AI ensures that DM gets handled professionally."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Instagram DMs work for groundworkers?",
+    answer: "When someone DMs your Instagram business account, the AI sends one professional reply within seconds. It captures what they are interested in and confirms you will follow up. The lead is sent to you."
+  },
+  {
+    question: "Do I need a business account?",
+    answer: "Yes. Switching is free and takes two minutes."
+  },
+  {
+    question: "Does it reply to post comments?",
+    answer: "No — direct messages only. Post comments remain for you to engage with."
+  },
+  {
+    question: "What kind of groundwork DMs does it handle?",
+    answer: "Enquiries from builders who saw your excavation content, homeowners asking about drainage, developers checking availability, and general questions about your services."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI Instagram DMs is an add-on at £${pricing.addOn.price}/month.`
+  },
+  {
+    question: "Is DM data GDPR compliant?",
+    answer: "Yes. All data is encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Groundworkers | Rapid Receptionist"
+  description="AI Instagram DMs for UK groundworkers and groundwork contractors. Responds instantly to Instagram messages about excavation, foundations, and drainage. Ideal for groundwork businesses showcasing site transformations. £${pricing.addOn.price}/month."
+  canonicalUrl="/groundworkers/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Groundworker"
+  tradeNamePlural="Groundworkers"
+  tradeSlug="groundworkers"
+  headline="AI Instagram DMs for Groundworkers"
+  accentWord="Groundworkers"
+  subhead="You post a timelapse of a foundation dig — from overgrown garden to clean, level trenches in one day. A builder DMs asking if you are free next month. Your AI replies while you load the digger."
+  scenario="It is Friday evening. You posted a reel on Wednesday showing the transformation of a rear garden — the footage starts with the overgrown mess and finishes with perfectly level, compacted formation ready for a concrete slab. It has 1,900 views. At 7:30pm, a DM arrives from a builder you have never worked with: 'Saw your reel — that is exactly the standard we need. We have got three extensions lined up in Trafford starting June. All need foundations digging, drains connecting, and concrete oversite. Are you interested in pricing them as a package? We would want the same gang on all three.' Without AI Instagram DMs, you see the message at 10pm, start composing a reply, get distracted, and forget about it until Monday. The builder has already had three replies from other groundworkers. With the AI, they get a response in seconds: 'Thank you for getting in touch. We would be very interested in discussing the Trafford extensions. Could you share a contact number and the approximate plot sizes? We will call you first thing tomorrow to go through the details.' Saturday morning, you have a phone conversation and agree to price all three."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/groundworkers/ai-receptionist/"
+  ctaHeadline="Turn Instagram Into a Lead Machine"
+  ctaSubhead="Your excavation content attracts builders. The AI captures them. £${pricing.addOn.price}/month."
+/>

@@ -1,0 +1,32 @@
+{
+  "tiers": {
+    "starter": {
+      "name": "Starter",
+      "price": 49,
+      "minutes": 120,
+      "chatLimit": "unlimited",
+      "description": "AI Phone Answering + Unlimited Website Chat"
+    },
+    "core": {
+      "name": "Core",
+      "price": 95,
+      "minutes": 300,
+      "chatLimit": "unlimited",
+      "description": "AI Phone Answering + Unlimited Website Chat"
+    },
+    "all": {
+      "name": "All Channels",
+      "price": 177,
+      "description": "Phone + Chat + All 6 add-on channels"
+    }
+  },
+  "addOn": {
+    "price": 23,
+    "channels": ["WhatsApp", "SMS", "Email", "Facebook Messenger", "Instagram DMs", "Missed Call Text-Back"]
+  },
+  "setup": {
+    "price": 295,
+    "refundDays": 30
+  },
+  "extraMinutePence": 20
+}

@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '✉️',
+    title: 'Catches the Text-First Customers',
+    text: "Some customers prefer texting — they are at work themselves, it is late, or they just do not like calling. For plasterers, text enquiries often come from people who spotted your van or leaflet and want a quick reply."
+  },
+  {
+    icon: '⚡',
+    title: 'Professional Reply in Seconds',
+    text: "A text that gets an instant, well-written reply signals a professional operation. It tells the enquirer: this plasterer is organised, responsive, and easy to work with."
+  },
+  {
+    icon: '🔗',
+    title: 'Pairs With Missed Call Text-Back',
+    text: "If a customer misses your call and you send a text-back, they often reply by text. The AI handles that reply — completing the lead capture loop seamlessly."
+  },
+  {
+    icon: '📵',
+    title: 'Works When Your Phone Is Off',
+    text: "Whether your phone is on silent during a client meeting, switched off on a Sunday, or out of signal in a basement — the AI responds to texts independently."
+  },
+  {
+    icon: '🌙',
+    title: '24/7 Coverage',
+    text: "Text messages arrive at all hours. A homeowner texting at 11pm about a damp patch is a genuine lead. The AI catches it instantly, regardless of the time."
+  },
+  {
+    icon: '📊',
+    title: 'Every Text Logged as a Lead',
+    text: "No more scrolling through old texts trying to find that message from last week. Every SMS enquiry is logged, timestamped, and sent to you as a structured lead."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI SMS work for plasterers?",
+    answer: "When a customer texts your business number, the AI reads the message, identifies the enquiry, and sends one professional reply — confirming receipt and capturing their details. The lead is then sent to you with the customer's name, number, and what they need."
+  },
+  {
+    question: "What kind of plastering enquiries come by text?",
+    answer: "Common ones include: availability checks after seeing your van, follow-ups from missed calls, quick requests like 'how much to skim a bedroom?', and replies to missed call text-back messages. Many are short and direct — exactly the kind of message that deserves a fast reply."
+  },
+  {
+    question: "Does the AI have a full text conversation?",
+    answer: "No. It sends one professional response per message — acknowledging the enquiry and capturing the lead. Full conversational AI is reserved for phone and website chat."
+  },
+  {
+    question: "How much does AI SMS cost?",
+    answer: `AI SMS is an add-on at £${pricing.addOn.price}/month. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat) or include it in the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can I reply to texts myself when I am free?",
+    answer: "Yes. The AI handles messages when you are unavailable. When you are between jobs, you can reply directly as normal."
+  },
+  {
+    question: "How is data from SMS enquiries protected?",
+    answer: "All data is managed under UK GDPR. Contact details are encrypted, stored on UK and EU servers, and shared only with you. We never sell or repurpose enquiry data."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Plasterers | Rapid Receptionist"
+  description="AI SMS for UK plasterers and plastering businesses. Responds instantly to text message enquiries about plastering work, captures lead details 24/7. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/plasterers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Plasterer"
+  tradeNamePlural="Plasterers"
+  tradeSlug="plasterers"
+  headline="AI SMS for Plasterers"
+  accentWord="Plasterers"
+  subhead="A potential customer texts your plastering business after spotting your van outside a neighbour's house. Instead of that text going unread until tonight, your AI replies in seconds — professional, detailed, and the lead is captured. Works for plastering contractors, rendering companies, and sole traders."
+  scenario="It is 2:30pm on a Tuesday. You are loading your van after finishing a ceiling re-skim in a terraced house. A neighbour across the road spotted your van an hour ago, took a note of the number, and texts: 'Hi, are you the plasterer working on number 42? We need our living room re-skimming - the plaster is cracking everywhere. Are you available in the next couple of weeks?' You are driving to your next job and do not see the text for three hours. Without AI SMS, the neighbour assumes you are not interested and calls someone from Checkatrade. With AI SMS, they get a reply within seconds: 'Thanks for your message. We would be happy to take a look at the living room. Could you let me know your house number and the best time for a quick visit? We will arrange a callback today.' You call them at 5pm and book the job — a five-minute drive from where you were already working."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/plasterers/ai-receptionist/"
+  ctaHeadline="Stop Missing Text Enquiries"
+  ctaSubhead="Every unanswered text is a plastering job going to someone faster. £${pricing.addOn.price}/month."
+/>

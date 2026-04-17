@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '👍',
+    title: 'Turns Recommendations into Leads',
+    text: "Someone tags your tiling business in a local Facebook group: 'Best tiler I have used.' Multiple people message your page. Your AI replies to all of them instantly while your tiling contractor team are on site."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Messenger Response',
+    text: "Facebook shows how fast you reply. A response under one minute builds trust. Your AI achieves seconds — making your tiling company look sharp and professional."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Photo Messages',
+    text: "Customers message with photos of damaged tiles, bare walls, or inspiration images. The AI acknowledges the photos and captures what work is needed, where, and when."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for Tilers on Site',
+    text: "You are not checking Facebook between tile cuts. The AI handles Messenger conversations so your tiling business never misses a social media lead."
+  },
+  {
+    icon: '🕐',
+    title: 'Evening and Weekend Coverage',
+    text: "Facebook activity peaks when homeowners are off work — exactly when tile fitters are off the tools. The AI captures every enquiry regardless of the hour."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Lead Summaries',
+    text: "Every Messenger conversation becomes a lead — name, phone, location, rooms, tile type, timeline. Reviewed alongside your other leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Facebook Messenger work for tilers?",
+    answer: "The AI connects to your Facebook business page. When someone messages about tiling work, it responds instantly, captures their needs and details, and sends you a lead summary."
+  },
+  {
+    question: "Do I need to monitor my Facebook page?",
+    answer: "No. The AI handles all incoming Messenger conversations. You receive lead summaries and follow up at your convenience."
+  },
+  {
+    question: "What if someone messages about non-tiling work?",
+    answer: "The AI handles off-topic messages professionally without creating a false lead."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI Facebook Messenger is £${pricing.addOn.price}/month. Same price for sole trader tilers, tiling contractors, and larger tiling companies.`
+  },
+  {
+    question: "Do I need a Facebook business page?",
+    answer: "Yes. If you do not have one yet, we can help set one up during onboarding."
+  },
+  {
+    question: "Is Messenger data protected?",
+    answer: "Yes. All data is managed under UK GDPR, encrypted, and stored on UK and EU servers."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Tilers | Rapid Receptionist"
+  description="AI Facebook Messenger for UK tilers, tiling businesses, and tile fitters. Responds instantly to Facebook page messages about tiling work. Ideal for tiling contractors. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/tilers/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Tiler"
+  tradeNamePlural="Tilers"
+  tradeSlug="tilers"
+  headline="AI Facebook Messenger for Tilers"
+  accentWord="Tilers"
+  subhead="Someone tags your tiling business page in a local Facebook group after you tiled their bathroom. Five people message asking about availability. Your AI replies to every one while your tiling contractor team are setting tiles on site — no leads lost."
+  scenario="It is 7:30pm on a Saturday. Earlier this week, you posted a before-and-after of a bathroom transformation — dated beige tiles replaced with large-format marble-effect porcelain, a walk-in shower with a recessed niche, and a herringbone floor in a contrasting grey. The post has been shared 28 times. A homeowner in Cheadle messages your page: 'That bathroom is stunning. We want something very similar for our en-suite. Do you cover SK8? What sort of timeframe would we be looking at?' You are at a family dinner and will not check your phone properly until tomorrow. Without AI Facebook Messenger, the message sits overnight. They message another tiler on Sunday morning. With the AI, they get an instant reply: 'Thank you — glad you liked the bathroom! We would love to discuss your en-suite project. Could you share the rough room dimensions and your postcode? We will arrange a call early next week.' They reply with measurements. Monday morning, you have a qualified lead with photos of your own work as the reference point."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/tilers/ai-receptionist/"
+  ctaHeadline="Stop Losing Facebook Leads"
+  ctaSubhead="A recommendation in a local group could be your next bathroom project. Your AI responds first. £${pricing.addOn.price}/month."
+/>

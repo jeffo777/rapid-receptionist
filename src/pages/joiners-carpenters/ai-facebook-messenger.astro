@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '👍',
+    title: 'Turns Recommendations into Leads',
+    text: "Someone tags your joinery business in a Facebook group: 'Best joiner I have used.' Three people message your page within the hour. Your AI replies to all of them instantly — capturing details while your carpentry contractor team are on site."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Messenger Response',
+    text: "Facebook shows customers how fast you reply. A response time under one minute builds trust. Your AI achieves seconds — making your joinery company look sharp and responsive."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Photo Messages',
+    text: "Customers message with photos of damaged doors, awkward spaces, or inspiration images from Pinterest. The AI acknowledges the photos and captures the context — what work is needed, where, and when."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for Joiners on Site',
+    text: "You are not checking Facebook messages between cuts. The AI handles Messenger conversations throughout the day so your carpentry business never misses a lead from social media."
+  },
+  {
+    icon: '🕐',
+    title: 'Evening and Weekend Coverage',
+    text: "Facebook activity peaks in the evenings and at weekends — exactly when joiners and carpenters are off the tools and homeowners are browsing. The AI captures every enquiry."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Lead Summaries',
+    text: "Every Messenger conversation becomes a lead summary — name, phone, location, work description, timeline. You review it alongside your phone and chat leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Facebook Messenger work for joiners?",
+    answer: "The AI connects to your Facebook business page. When someone messages your page about joinery or carpentry work, the AI responds instantly, asks about their needs, captures their details, and sends you a lead summary."
+  },
+  {
+    question: "Do I need to monitor my Facebook page?",
+    answer: "No. The AI handles all incoming Messenger conversations. You receive lead summaries and follow up at your convenience — no need to sit watching notifications."
+  },
+  {
+    question: "What if someone messages about something other than joinery?",
+    answer: "The AI responds professionally to any enquiry. If the message is off-topic or spam, it handles it politely without creating a false lead."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI Facebook Messenger is an add-on at £${pricing.addOn.price}/month. The same price for sole trader joiners, carpentry contractors, and larger joinery businesses.`
+  },
+  {
+    question: "Do I need a Facebook business page?",
+    answer: "Yes — you need a Facebook page for your joinery or carpentry business. If you do not have one yet, we can help you set one up during onboarding."
+  },
+  {
+    question: "Is Messenger data protected?",
+    answer: "Yes. All data from Facebook conversations is managed under UK GDPR, encrypted, and stored on UK and EU servers."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Joiners & Carpenters | Rapid Receptionist"
+  description="AI Facebook Messenger for UK joiners and joinery businesses. Responds instantly to Facebook page messages about carpentry and joinery work. Ideal for carpentry contractors. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/joiners-carpenters/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Joiner"
+  tradeNamePlural="Joiners & Carpenters"
+  tradeSlug="joiners-carpenters"
+  headline="AI Facebook Messenger for Joiners & Carpenters"
+  accentWord="Joiners"
+  subhead="Someone tags your joinery business page in a local Facebook group. Four people message asking about fitted furniture. Your AI replies to every one while your carpentry contractor team are knee-deep in a kitchen install — no leads lost, no messages forgotten."
+  scenario="It is 8pm on a Saturday. Earlier this week, you posted a video on your Facebook page showing a fitted boot room you built — oak coat hooks, shoe rack with angled shelves, and a bench with hidden storage underneath. The post has been shared 31 times. A homeowner in Cheadle Hulme messages your page: 'We have just moved into a 1930s semi and the hallway is a mess of shoes and coats. Could you do something similar for us? What sort of budget would we be looking at?' You are at a birthday party and will not check your phone properly until tomorrow. Without AI Facebook Messenger, the message sits overnight. They message a second joiner on Sunday morning. With the AI, they get an instant reply: 'Thank you for your message — glad you liked the boot room! We would love to discuss something similar for your hallway. Could you share the rough dimensions and a couple of photos? We will arrange a call early next week.' They reply with measurements and photos. Monday morning, you have a fully qualified lead with images."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/joiners-carpenters/ai-receptionist/"
+  ctaHeadline="Stop Losing Facebook Leads"
+  ctaSubhead="A recommendation in a local group could be your next kitchen project. Your AI responds first. £${pricing.addOn.price}/month."
+/>

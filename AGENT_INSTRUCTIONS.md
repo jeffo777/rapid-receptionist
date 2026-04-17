@@ -145,7 +145,7 @@ These must be prominently featured across the website. Group and deploy them str
 
 | USP | Short Form | Where to Use |
 |---|---|---|
-| **Only £99/month** | "Only £99/mo" | Hero trust row, pricing page, CTAs |
+| **From £49/month** | "From £49/mo" | Hero trust row, pricing page, CTAs |
 | **30-day money-back guarantee** | "30-day money-back guarantee" | Hero trust row, guarantee badge, every CTA |
 | **No contracts** | "No contracts — cancel anytime" | Pricing page, CTAs, FAQs |
 | **Setup fee fully refundable** | "Setup fee included in 30-day guarantee" | Pricing page, FAQs |
@@ -182,19 +182,42 @@ These must be prominently featured across the website. Group and deploy them str
 
 # 5. Pricing & Commercial Model
 
-## Single-Tier Pricing
+## CRITICAL: Centralised Pricing via pricing.json
+
+> **All pricing on the site is sourced from `src/data/pricing.json`.** 
+> NEVER hardcode prices in any page file. Always import and reference the JSON.
+> Changing a price in pricing.json updates every page on the next build.
+
+## 3-Tier Pricing
 
 | Item | Details |
 |---|---|
-| **Monthly Price** | £99/month |
-| **Setup Fee** | £299 (one-time, "done for you") |
-| **Talk Time** | 5 hours included |
-| **Messages** | Unlimited (all text-based channels) |
+| **Starter Plan** | £49/month — AI Phone (120 min) + Unlimited Website Chat |
+| **Core Plan** | £95/month — AI Phone (300 min) + Unlimited Website Chat |
+| **All Channels** | £177/month — Core + all 6 add-on channels |
+| **Add-on Channels** | £23/month each (WhatsApp, SMS, Email, Facebook, Instagram, Missed Call Text-Back) |
+| **Setup Fee** | £295 (one-time, "done for you") |
 | **Overage** | £0.20/minute |
 | **Guarantee** | 30-day full money-back (setup fee + monthly fee) |
 | **Contract** | None — cancel anytime |
 
-## What's Included — Everything
+## How to Reference Pricing in Pages
+
+```astro
+// In any .astro page:
+import pricing from '../data/pricing.json';
+// or from trade pages:
+import pricing from '../../data/pricing.json';
+
+// In hand-written FAQ answers:
+answer: `The Starter plan is £${pricing.tiers.starter.price}/month with ${pricing.tiers.starter.minutes} minutes included — enough for most sole traders.`
+```
+
+The layout files (`TradeHubLayout.astro`, `ChannelTradeLayout.astro`) already import pricing.json and:
+- Auto-generate `pricingNote` sections from the channel type and pricing data
+- Default CTA subheads reference `pricing.tiers.starter.price`
+
+## What's Included — Everything (All Channels Plan)
 
 - ✅ AI Phone Answering (24/7)
 - ✅ AI Website Chat
@@ -203,7 +226,6 @@ These must be prominently featured across the website. Group and deploy them str
 - ✅ AI Email
 - ✅ AI Facebook Messenger
 - ✅ AI Instagram DMs
-- ✅ AI GBP Messages
 - ✅ Missed Call Text-Back
 - ✅ Human Escalation (business owner + Rapid Receptionist operators)
 - ✅ Trade-specific AI training
@@ -221,7 +243,7 @@ This replaces a free trial. The guarantee is stronger because the customer gets 
 
 ## Why There's a Setup Fee
 
-The £299 setup fee:
+The £295 setup fee:
 - Filters out tyre kickers — only committed tradesmen sign up
 - Covers the genuine work of configuring their AI receptionist
 - Is fully refundable within 30 days — so it's zero risk

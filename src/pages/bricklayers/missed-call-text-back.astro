@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '🛡️',
+    title: 'Your Last Line of Defence',
+    text: "No system is perfect. Calls drop. Callers hang up after one ring. Signal fails on site. Missed Call Text-Back ensures that even when everything else fails, the customer hears from your business within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Stops the 30-Second Switch',
+    text: "The window between a caller hanging up and dialling the next bricklayer is about 30 seconds. A well-timed text resets that clock entirely."
+  },
+  {
+    icon: '🚫',
+    title: 'Breaks the Competitor Pattern',
+    text: "85% of people who reach voicemail never call back — they call someone else. A text that arrives within seconds interrupts that behaviour."
+  },
+  {
+    icon: '🧱',
+    title: 'Built for Construction Sites',
+    text: "Construction sites have noise, dust, restricted areas, and safety rules about phone use. You physically cannot answer many calls. This channel exists for exactly those moments."
+  },
+  {
+    icon: '💬',
+    title: 'Your Business Name, Your Message',
+    text: "The text includes your business name and a personalised message — not a generic template. It sounds like it came from your team."
+  },
+  {
+    icon: '🔄',
+    title: 'Sits Behind AI Phone Answering',
+    text: "If the AI answers the call, the text-back does not trigger. If the call slips through, the text catches it. Belt and braces."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the text-back activate for bricklayers?",
+    answer: "It activates when a call goes unanswered — whether you could not pick up, the caller hung up before the AI connected, or the call dropped on site. The text is sent within seconds."
+  },
+  {
+    question: "What does the text say?",
+    answer: "It is customised with your business name. Example: 'Thanks for calling [Your Business Name]. Sorry we could not pick up — we are currently on a bricklaying job. We will call you back within the hour. If urgent, reply to this text.' You approve the wording."
+  },
+  {
+    question: "Does this replace phone answering?",
+    answer: "No — it sits behind it as a safety net. AI Phone Answering catches the majority of calls. Missed Call Text-Back catches the small number that slip through."
+  },
+  {
+    question: "What if the caller replies to the text?",
+    answer: "If you have AI SMS active, the reply is handled by the AI. If not, it comes directly to you."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `Missed Call Text-Back is an add-on at £${pricing.addOn.price}/month. Pair it with the Core plan or the All Channels bundle.`
+  },
+  {
+    question: "Can I use it without phone answering?",
+    answer: `Yes. If you prefer to answer your own calls and just want a safety net, it works standalone at £${pricing.addOn.price}/month.`
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text-Back for Bricklayers | Rapid Receptionist"
+  description="Missed call text-back for UK bricklayers, bricklaying businesses, and brickwork contractors. Sends a professional text within seconds of a missed call. Stops customers calling the next bricklaying company. £${pricing.addOn.price}/month."
+  canonicalUrl="/bricklayers/missed-call-text-back/"
+  channelName="Missed Call Text-Back"
+  tradeName="Bricklayer"
+  tradeNamePlural="Bricklayers"
+  tradeSlug="bricklayers"
+  headline="Missed Call Text-Back for Bricklayers"
+  accentWord="Bricklayers"
+  subhead="You are up a scaffold laying facing brick when a homeowner calls about rebuilding their front garden wall. They hang up after three rings. Five seconds later, they get a text: 'Sorry we missed your call — we are on site and will call back within the hour.' They wait. Your competitor never gets the call."
+  scenario="It is 10:45am on a Tuesday. You are on the second lift of a gable end in Prestwich — the mortar is at the perfect consistency and you are working to a string line that needs your full attention. A homeowner half a mile away calls about repointing the front of their Victorian terrace. The phone rings twice in your pocket and stops — they assumed you were not going to answer. They unlock their phone and start typing 'bricklayer near me' into Google. Then their phone buzzes: 'Thanks for calling Mitchell Brickwork. Sorry we missed your call — we are currently on a job nearby. We will ring you back by lunchtime. If it is urgent, reply to this text and we will prioritise.' They put their phone down. At 12:30, you call them from the van and book a site visit for Thursday. Without the text, they would have called someone else at 10:46."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/bricklayers/ai-receptionist/"
+  ctaHeadline="Stop Missed Calls Becoming Missed Jobs"
+  ctaSubhead="One text. Five seconds. The difference between losing a bricklaying customer and keeping them. £${pricing.addOn.price}/month."
+/>

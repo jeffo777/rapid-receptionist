@@ -1,0 +1,102 @@
+﻿---
+import ChannelServiceLayout from '../../layouts/ChannelServiceLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const steps = [
+  {
+    number: 1,
+    title: 'A Call Comes In — But Gets Missed',
+    description: "Maybe you're on a ladder. Maybe you're driving between sites. Maybe the AI phone answering is temporarily unavailable. Whatever the reason, the call rings out or the caller hangs up before connection."
+  },
+  {
+    number: 2,
+    title: 'An Automatic Text Is Sent Instantly',
+    description: "Within seconds of the missed call, the caller receives a professional text message from your business number — letting them know you're currently on a job and will be in touch shortly. It stops them dialling the next contractor."
+  },
+  {
+    number: 3,
+    title: 'The Caller Waits — Instead of Moving On',
+    description: "That one text buys you time. The customer knows you exist, knows you received their call, and expects a callback. They don't ring the next tradesperson on Google. The lead stays warm while you finish what you're doing."
+  }
+];
+
+const benefits = [
+  {
+    icon: '🛡️',
+    title: 'The Ultimate Safety Net',
+    text: "No system is perfect. Calls can disconnect. Callers can hang up after one ring. Signal can drop on rural sites. Missed Call Text-Back ensures that even when everything else fails, the customer still hears from you within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Buys You Critical Time',
+    text: "The window between a customer hanging up and calling your competitor is about 30 seconds. A well-timed text message resets that clock entirely. It tells the caller: 'I'm real, I'm busy, I'm coming back to you.' That's often enough."
+  },
+  {
+    icon: '🚫',
+    title: 'Stops the Competitor Call',
+    text: "Research shows 85% of callers who reach voicemail never call back — they call someone else. A text that arrives within seconds of their missed call interrupts that behaviour. They wait for your callback instead."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for Construction Realities',
+    text: "Construction sites have noise, poor signal, dusty hands, and dangerous situations where answering a phone isn't an option. Missed Call Text-Back was designed for exactly these conditions — when you physically cannot take the call."
+  },
+  {
+    icon: '🔄',
+    title: 'Works With AI Phone Answering',
+    text: "Missed Call Text-Back sits behind AI Phone Answering as a fallback layer. If the AI answers the call, great — the text-back isn't triggered. If the call slips through for any reason, the text catches it. Belt and braces."
+  },
+  {
+    icon: '💬',
+    title: 'Customisable Message',
+    text: "The text message is tailored to your business. It includes your business name, a professional acknowledgement, and a timeframe for callback. No generic 'we missed your call' templates — a message that sounds like it came from your team."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does Missed Call Text-Back activate?",
+    answer: "It activates when a call to your business number goes unanswered — whether that's because you couldn't pick up, the caller hung up before the AI answered, or the call disconnected due to poor signal. The text is sent within seconds of the missed call being detected."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "The message is customised with your business name and configured during setup. A typical example: 'Thanks for calling [Your Business Name]. Sorry we couldn't pick up — we're currently on a job. We'll call you back within the hour. If it's urgent, please text back and we'll prioritise your call.' You approve the exact wording before it goes live."
+  },
+  {
+    question: "Does the caller need to have texting enabled?",
+    answer: "The text is sent as a standard SMS, which works on virtually every mobile phone in the UK — smartphone or not. If the caller rang from a landline, the text-back cannot be delivered (landlines don't receive texts), but the vast majority of inbound calls to construction businesses come from mobiles."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "No — it complements it. Think of it as a fallback layer. AI Phone Answering catches 99% of calls by answering them directly. Missed Call Text-Back catches the 1% that slip through — the caller who hangs up after one ring, the call that drops mid-connection, the rare technical glitch. It's your safety net."
+  },
+  {
+    question: "How much does Missed Call Text-Back cost?",
+    answer: `Missed Call Text-Back is an add-on channel at £${pricing.addOn.price}/month. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat) or use it standalone. The All Channels bundle at £${pricing.tiers.all.price}/month includes it alongside all seven other channels.`
+  },
+  {
+    question: "Can I use Missed Call Text-Back without AI Phone Answering?",
+    answer: `Yes — you can use it standalone if you prefer to answer your own calls but want a safety net for the ones you miss. At £${pricing.addOn.price}/month on its own, it's the simplest way to stop missed calls turning into missed jobs.`
+  }
+];
+---
+
+<ChannelServiceLayout
+  title="Missed Call Text-Back for UK Construction Trades | Rapid Receptionist"
+  description=`Missed call text-back for 46 UK construction trades. Sends an automatic professional text within seconds of a missed call. Stops customers calling your competitor. £${pricing.addOn.price}/month.`
+  canonicalUrl="/construction-trades/missed-call-text-back/"
+  channelName="Missed Call Text-Back"
+  channelSlugPrefix="missed-call-text-back"
+  headline="Missed Call Text-Back for UK Construction Trades"
+  accentWord="Missed Call Text-Back"
+  subhead=`A customer calls while you're on a scaffold. They hear one ring and hang up. Five seconds later, they get a text from your business: 'Sorry we missed you — we'll call back within the hour.' They wait. Your competitor never gets the call. £${pricing.addOn.price}/month.`
+  speedStat="85% of callers who reach voicemail never call back."
+  speedText="They don't leave a message. They don't try again later. They call the next tradesperson on Google. Missed Call Text-Back intercepts that behaviour — turning a dead-end missed call into a warm lead that waits for your callback."
+  scenario="It's 11am on a Monday. You're up a scaffold tying in a gable end when a homeowner three streets away calls about a loose ridge tile they noticed over the weekend. Your phone is in the van. The call rings five times and goes to voicemail. They don't leave a message — they never do. They start scrolling for the next roofer. Then their phone buzzes: 'Thanks for calling Marshall Roofing. Sorry we missed your call — we're currently on a job nearby. We'll ring you back by lunchtime. If it's urgent, reply to this text and we'll prioritise.' They put their phone down and wait. At 12:30, you call them back. Without Missed Call Text-Back, they'd have booked someone else an hour ago."
+  steps={steps}
+  benefits={benefits}
+  pricingNote=`Missed Call Text-Back is available as an <strong>add-on channel at £${pricing.addOn.price}/month</strong>. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat), use it standalone, or include it in the <strong>All Channels bundle at £${pricing.tiers.all.price}/month</strong>. <a href='/pricing/'>See full pricing →</a>`
+  faqs={faqs}
+  ctaHeadline="Stop Missing Calls. Start Catching Them."
+  ctaSubhead=`One text. Five seconds. The difference between losing a customer and keeping them. £${pricing.addOn.price}/month — the cheapest insurance your business will ever buy.`
+/>

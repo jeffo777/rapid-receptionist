@@ -1,0 +1,106 @@
+﻿---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A builder calls asking if you can dig foundations for a rear extension starting Monday. You are operating a mini digger in a trench two metres deep and cannot hear a thing. They leave a voicemail you never listen to and call the next groundworker.",
+    with: "Your AI receptionist answers with your business name, captures the site address, the extension dimensions, whether they need foul and storm drainage connecting, and the builder's programme deadline. By the time you climb out of the trench, the lead is in your inbox."
+  },
+  {
+    without: "A property developer emails a specification for groundworks on a twelve-unit housing scheme — strip foundations, drainage, service trenches, and hard landscaping. You are on site all week and do not check email until Saturday. Three other groundworkers have already priced it.",
+    with: "The developer gets an instant acknowledgement confirming you have received the spec. You review it Saturday morning, run your numbers on Sunday, and submit your price before Monday's site meeting — first in the queue."
+  },
+  {
+    without: "A homeowner WhatsApps you photos of a flooded garden after heavy rain, asking about drainage solutions. The message sits unread for two days while you finish a drainage run on a commercial site.",
+    with: "The AI replies in seconds, acknowledges the photos, captures the property address and the urgency, and confirms you will call back. You review the photos that evening and call them first thing."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Foundations & Substructures",
+    items: ["Strip foundations for extensions and new builds", "Trench fill foundations", "Raft foundations", "Pad and beam foundations", "Underpinning and foundation strengthening", "Basement and cellar excavation"]
+  },
+  {
+    category: "Drainage & Services",
+    items: ["Foul and storm water drainage", "Soakaways and attenuation tanks", "Service trench excavation (gas, water, electric)", "Septic tank and treatment plant installation", "Land drain and French drain systems", "Manhole and inspection chamber installation"]
+  },
+  {
+    category: "Civil & External Works",
+    items: ["Site clearance and demolition", "Reduced level digs and site levelling", "Retaining wall construction", "Hard landscaping and driveways", "Kerb laying and footpath construction", "Concrete slabs and oversite preparation"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Builders & Main Contractors",
+    description: "Site managers needing groundwork subcontractors for house extensions, new builds, and commercial projects. They work to tight programme schedules and need fast confirmation of availability and day rates."
+  },
+  {
+    icon: "🏠",
+    title: "Domestic Homeowners",
+    description: "Homeowners needing garden drainage, foundation work for extensions, driveway excavation, or land levelling. Whether they searched for a groundworker, a groundwork contractor, or a local groundworks company, they often do not fully understand the scope of groundwork and need clear, patient communication."
+  },
+  {
+    icon: "🏢",
+    title: "Property Developers",
+    description: "Developers sourcing groundwork contractors for multi-plot housing schemes, commercial builds, and site infrastructure. They send detailed specifications and expect any groundwork business or civil engineering contractor they contact to respond rapidly with pricing."
+  },
+  {
+    icon: "🌊",
+    title: "Insurance & Emergency Work",
+    description: "Insurers, loss adjusters, and homeowners dealing with flooding, collapsed drains, subsidence, and emergency excavation. These enquiries are time-critical and need immediate escalation."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI understand groundwork terminology?",
+    answer: "During setup, your AI receptionist is configured with groundwork-specific vocabulary — strip foundations, trench fill, reduced level dig, formation level, blinding, DPM, soakaways, attenuation crates, foul runs, storm runs, service connections, and more. When a builder calls asking about 'digging the founds for a double-storey extension with a stepped trench on sloping ground,' the AI understands and captures every detail."
+  },
+  {
+    question: "Can the AI handle calls about both domestic and commercial groundwork?",
+    answer: "Yes. Whether the caller is a homeowner asking about a soakaway for their flooded garden or a site manager needing foundations for a 24-unit development, the AI captures the scope of work, the location, the timeline, and the urgency. It does not differentiate between job sizes — it records everything and sends it to you."
+  },
+  {
+    question: "What happens if someone calls about an emergency — like a collapsed drain or flooding?",
+    answer: "The AI recognises urgent language. If a caller describes raw sewage backing up, a retaining wall failure, a collapsed drain under a road, or significant flooding, the AI escalates immediately — trying your mobile first, then passing to our human operators. Routine drainage and foundation enquiries are captured as standard leads."
+  },
+  {
+    question: "How much does it cost for a groundwork business or groundwork contractor?",
+    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat. Additional channels are £${pricing.addOn.price}/month each. The All Channels bundle is £${pricing.tiers.all.price}/month. The pricing is the same whether you are a sole trader groundworker, a groundwork contractor with a gang, or a civil engineering company handling large developments. There is a one-time setup fee of £${pricing.setup.price} (refundable within 30 days).`
+  },
+  {
+    question: "Is this suitable for a small groundworks company or sole trader?",
+    answer: "Absolutely. Whether you are a sole trader groundworker with a mini digger, a two-man groundwork business, or a groundwork contractor running a larger gang with plant — this was built for you. Small groundwork outfits are exactly who this was designed for. You are in a trench or operating plant all day. You cannot answer the phone. The AI catches every call and sends you the details so you can follow up between jobs or at the end of the day."
+  },
+  {
+    question: "Can the AI handle calls from builders alongside homeowner enquiries?",
+    answer: "Yes. Builders calling about subcontract groundwork, homeowners asking about drainage, developers sending specs — the AI handles them all with the same professionalism. Each call is captured as a structured lead with the caller's details and the nature of the work."
+  },
+  {
+    question: "How does Rapid Receptionist protect customer data?",
+    answer: "All data is managed under UK GDPR and the Data Protection Act 2018. Contact details, site addresses, and job descriptions are encrypted during transmission and storage, held on UK and EU servers, and shared only with you. We never sell or repurpose enquiry data. You remain the data controller; we act as your data processor under a formal agreement."
+  }
+];
+---
+
+<TradeHubLayout
+  title="Rapid Response AI Receptionist for Groundworkers | Rapid Receptionist"
+  description="AI receptionist for UK groundworkers, groundwork contractors, and groundworks businesses. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are digging foundations, laying drains, or operating plant. From £${pricing.tiers.core.price}/month."
+  canonicalUrl="/groundworkers/ai-receptionist/"
+  tradeName="Groundworker"
+  tradeNamePlural="Groundworkers"
+  tradeSlug="groundworkers"
+  headline="The Rapid Response AI Receptionist for Groundworkers"
+  accentWord="Groundworkers"
+  subhead="Whether you run a one-man groundwork business or a groundwork contractor with a full gang and plant, you cannot answer the phone from two metres deep in a foundation trench. Your AI receptionist answers every call, captures every lead, and sends you the details while your groundworks company keeps digging. From £${pricing.tiers.core.price}/month."
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Stop Losing Groundwork Jobs to Missed Calls"
+  ctaSubhead="Every call your groundwork business misses while you are in the trench is a builder calling the next groundwork contractor. From £${pricing.tiers.core.price}/month — respond first, win the work."
+/>

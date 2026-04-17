@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '⚡',
+    title: 'Answers When You Are Mid-Tile',
+    text: "Tiling demands focus. You cannot put down a notched trowel mid-spread or stop cutting a mitre to answer the phone. Whether you run a sole trader tiling business or a tiling contractor operation, the AI answers every call while you keep the adhesive fresh."
+  },
+  {
+    icon: '🧠',
+    title: 'Understands Tiling Enquiries',
+    text: "When a caller says 'the bathroom needs retiling — we have already chosen the tiles from Topps' or 'we want a herringbone splashback in metro tiles,' the AI captures every detail — tile type, room, layout, and substrate condition."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Water Damage Emergencies',
+    text: "Water leaking through a shower wall. Tiles falling off behind a bath. A wet room membrane failure. The AI recognises these as emergencies and escalates immediately — reaching your mobile first."
+  },
+  {
+    icon: '🕐',
+    title: 'Catches Evening Callers',
+    text: "Homeowners often call tile fitters after 6pm — when they are home and can see the bathroom they want retiled. These are prime leads. The AI catches every one."
+  },
+  {
+    icon: '📋',
+    title: 'Detailed Lead Summaries',
+    text: "Every call is logged: caller name, number, location, rooms to tile, tile type, substrate condition, and urgency. When you call back, you already know the full brief."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional First Impression',
+    text: "The AI answers as your tiling company: 'Good afternoon, thank you for calling, how can I help?' Callers hear a professional business — not a rushed voicemail or an engaged tone."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI say when a tiling customer calls?",
+    answer: "It greets the caller with your business name and has a natural conversation. For tiling businesses and tile fitters, it asks about the type of work — bathroom, kitchen, floor, splashback — the room size, tile type if known, and the customer's timeline. The summary is sent to you as a structured lead."
+  },
+  {
+    question: "Can it tell the difference between a small repair and a full bathroom retile?",
+    answer: "Yes. A caller asking about replacing three cracked tiles gets a different conversation flow than someone planning a full wet room conversion. The AI adapts based on what the caller describes."
+  },
+  {
+    question: "How many talk minutes do I get?",
+    answer: "300 minutes per month on the Core plan. For most tiling businesses, this covers the volume. Extra minutes are 20p each, no cap."
+  },
+  {
+    question: "Does it work with my existing number?",
+    answer: "Yes. Call forwarding is set up from your existing number. Your customers dial the same number — nothing changes for them."
+  },
+  {
+    question: "Can I still take calls myself when I am free?",
+    answer: "Absolutely. The AI only activates when you are unavailable. Between jobs, at lunch, or end of day — calls ring through to you."
+  },
+  {
+    question: "How is caller data protected?",
+    answer: "All data is managed under UK GDPR. Encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Tilers | Rapid Receptionist"
+  description="AI phone answering for UK tilers, tiling contractors, tile fitters, and tiling businesses. Answers every call, captures tiling enquiry details, escalates emergencies. 300 minutes included. From £${pricing.tiers.core.price}/month."
+  canonicalUrl="/tilers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Tiler"
+  tradeNamePlural="Tilers"
+  tradeSlug="tilers"
+  headline="AI Phone Answering for Tilers"
+  accentWord="Tilers"
+  subhead="Whether you are a sole trader tile fitter or a tiling contractor with a team, you cannot stop mid-spread to answer the phone. A homeowner wants their en-suite retiled in large-format porcelain before Christmas. Your AI answers, captures the brief, and the lead is waiting when you clean your trowel."
+  scenario="It is 10:15am on a Wednesday. You are in a bathroom in Didsbury, applying adhesive to a shower wall — the first row of large-format porcelain tiles needs to be set before the adhesive skins over. Your phone rings in the hallway. A couple in Chorlton have just ripped out their 1990s avocado bathroom suite and want someone to tile the entire room — walls and floor — in white metro tiles with a contrasting floor in Victorian-pattern porcelain. They need it done before their parents visit in three weeks. Without AI Phone Answering, they hear your voicemail, assume you are booked up, and call the next tiler on Checkatrade. With the AI: 'Good morning, thank you for calling, how can I help?' It captures the bathroom scope, the tile choices, the timeline, their address, and availability for a measure-up. You finish the shower wall at 12:30, review the lead, and call them back — they are relieved and book a visit for Saturday morning."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/tilers/ai-receptionist/"
+  ctaHeadline="Stop Missing Tiling Jobs"
+  ctaSubhead="Every missed call is a bathroom or kitchen that someone else will tile. From £${pricing.tiers.core.price}/month."
+/>

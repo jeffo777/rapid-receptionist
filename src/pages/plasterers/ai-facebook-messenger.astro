@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📘',
+    title: 'Captures Word-of-Mouth Leads',
+    text: "Plastering gets a huge amount of work through Facebook recommendations. When someone in a local group asks 'anyone know a good plasterer?', the people who message your page from that recommendation need an instant reply."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Reply to Page Messages',
+    text: "Facebook shows how fast you respond. An instant reply earns the 'Very Responsive' badge — making your page look active and trustworthy. The AI keeps your response time under a minute."
+  },
+  {
+    icon: '📸',
+    title: 'Before-and-After Posts Drive DMs',
+    text: "Your before-and-after photos of re-skims, rendered walls, and Venetian plaster jobs attract genuine enquiries via Messenger. The AI captures those leads while you are on the tools."
+  },
+  {
+    icon: '🌙',
+    title: 'Evening Coverage',
+    text: "Facebook usage peaks between 7pm and 10pm — exactly when you want to be off the clock. The AI handles all evening messages so you do not have to sit on your phone after a ten-hour day."
+  },
+  {
+    icon: '📱',
+    title: 'No More Notification Overload',
+    text: "Instead of checking Messenger constantly, you review structured lead summaries at your convenience. The AI handles the immediate response; you handle the follow-up."
+  },
+  {
+    icon: '🏅',
+    title: 'Maintains Response Rate Badge',
+    text: "Facebook rewards pages that reply within minutes. The AI ensures your plastering page consistently earns and keeps the 'Very Responsive to Messages' badge."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Facebook Messenger work for plasterers?",
+    answer: "When someone messages your Facebook business page — whether through a recommendation post, your ads, or directly — the AI reads the message and sends one professional reply within seconds. It acknowledges what they need, captures their details, and confirms you will follow up. The lead is sent to you."
+  },
+  {
+    question: "Do I need a Facebook page to use this?",
+    answer: "Yes. Most plastering businesses already have a Facebook page — even a basic one with your business name, phone number, and a few photos. We connect the AI during onboarding. If you do not have one, it takes ten minutes to set up."
+  },
+  {
+    question: "Does the AI respond to public comments on my posts?",
+    answer: "No. It handles only direct messages (Messenger), not public comments. Comments on your posts and photos remain visible for you to respond to manually."
+  },
+  {
+    question: "What happens when someone finds me through a Facebook group recommendation?",
+    answer: "When someone posts 'can anyone recommend a plasterer in Leeds?' and a friend tags your page, the enquirer often messages your page directly. The AI catches that message and responds instantly — before they message four other plasterers who were also tagged."
+  },
+  {
+    question: "How much does AI Facebook Messenger cost?",
+    answer: `It is an add-on at £${pricing.addOn.price}/month. Pair it with the Core plan (£${pricing.tiers.core.price}/month) or the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Is data from Facebook Messenger handled under GDPR?",
+    answer: "Yes. All data captured through Messenger is managed under UK GDPR. Contact details are encrypted, stored on UK and EU servers, and disclosed only to you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Plasterers | Rapid Receptionist"
+  description="AI Facebook Messenger for UK plasterers and plastering businesses. Responds instantly to Facebook page messages about plastering work. Captures leads 24/7. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/plasterers/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Plasterer"
+  tradeNamePlural="Plasterers"
+  tradeSlug="plasterers"
+  headline="AI Facebook Messenger for Plasterers"
+  accentWord="Plasterers"
+  subhead="Someone tags your plastering business page in a local Facebook group. Three people message you within the hour asking for quotes. Your AI replies to all of them while your plastering contractor team are on site — no leads lost, no messages forgotten."
+  scenario="It is 7:45pm on a Saturday. Earlier this week, you posted a before-and-after of a Victorian ceiling restoration — collapsed lath-and-plaster replaced with a perfect skim finish. The post has been shared 23 times. A homeowner in Chorlton messages your page: 'That ceiling is incredible. Our landing ceiling is sagging and we are worried it is going to come down. Can you take a look? We are around all next week.' Without AI Facebook Messenger, you are watching TV and do not see it until Sunday afternoon. By then, they have messaged two other plasterers. With AI Facebook Messenger, they get a reply in seconds: 'Thank you for getting in touch. We would be happy to take a look at the ceiling. Could you share your postcode and a couple of photos if possible? We will arrange a visit early next week.' They reply with photos. Monday morning, you have the lead complete with images and address."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/plasterers/ai-receptionist/"
+  ctaHeadline="Stop Missing Facebook Leads"
+  ctaSubhead="Your Facebook recommendations generate leads. The AI captures them. £${pricing.addOn.price}/month."
+/>

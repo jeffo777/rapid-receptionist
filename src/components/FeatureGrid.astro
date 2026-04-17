@@ -1,4 +1,5 @@
 ---
+import pricing from '../data/pricing.json';
 export interface Feature {
   icon: string;
   name: string;
@@ -20,7 +21,7 @@ const { features, columns = 2 } = Astro.props;
     <div class="section-header">
       <span class="badge badge--trust section-header__badge">✓ Every Channel Covered</span>
       <h2>8 Channels. <span class="text-accent">Zero</span> Missed Leads.</h2>
-      <p>Phone and website chat from £99/month. Add any messaging or social channel for £19/month each.</p>
+      <p>Phone and website chat from £{pricing.tiers.core.price}/month. Add any messaging or social channel for £{pricing.addOn.price}/month each.</p>
     </div>
 
     <div class:list={['feature-grid', `feature-grid--${columns}`]}>

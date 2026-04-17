@@ -1,0 +1,102 @@
+﻿---
+import ChannelServiceLayout from '../../layouts/ChannelServiceLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const steps = [
+  {
+    number: 1,
+    title: 'A Visitor Lands on Your Website',
+    description: "They've found you through Google, checked your reviews, and clicked through to your site. They have a question — maybe about pricing, maybe about availability, maybe about whether you cover their postcode. The chat widget appears."
+  },
+  {
+    number: 2,
+    title: 'Your AI Engages Them in Conversation',
+    description: "The AI greets the visitor, asks what work they need, captures their name, phone number, and location, and gives them the confidence that their enquiry has been received and you'll follow up personally. It handles the full conversation — no scripts, no dead ends."
+  },
+  {
+    number: 3,
+    title: 'You Receive a Qualified Lead',
+    description: "Every chat conversation is summarised and sent to you — visitor name, contact details, what they need, and how urgent it is. You get a ready-to-action lead without having monitored a single chat session."
+  }
+];
+
+const benefits = [
+  {
+    icon: '🕐',
+    title: 'Converts Visitors While You Work',
+    text: "Most website visitors leave within 15 seconds if there is no engagement. The AI chat widget catches them at the moment of highest intent — when they have already found your site and are actively looking for someone to do the work."
+  },
+  {
+    icon: '💬',
+    title: 'Full Conversational AI',
+    text: "This isn't a FAQ bot or a form in disguise. The AI has a genuine back-and-forth conversation with your website visitors — understanding what they need, asking follow-up questions, and capturing the details you need to quote or schedule."
+  },
+  {
+    icon: '📱',
+    title: 'Works on Mobile and Desktop',
+    text: "The chat widget is responsive and loads fast on every device. Whether your visitor is on a laptop at their kitchen table or browsing on their phone while waiting for a train, the experience is smooth and professional."
+  },
+  {
+    icon: '🔧',
+    title: 'Trade-Specific Conversations',
+    text: "The AI is configured for your specific construction trade. A plasterer's chat widget knows to ask about room sizes and surface conditions. A roofer's knows to ask about roof type and access. The right questions for the right trade."
+  },
+  {
+    icon: '♾️',
+    title: 'Unlimited Chat Messages',
+    text: "There are no limits on the number of chat conversations your AI can handle. Whether you get 5 website enquiries a month or 50, every single one is handled — no extra charges, no throttling, no message caps."
+  },
+  {
+    icon: '🎨',
+    title: 'Branded to Match Your Site',
+    text: "The chat widget is styled to complement your website's design. It uses your brand colours and your business name, so it looks like a natural part of your site — not a third-party add-on bolted onto the corner."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI website chat actually work?",
+    answer: "A small chat widget appears on your website — typically in the bottom-right corner. When a visitor clicks it, the AI greets them and starts a conversation. It asks what work they need, captures their name, phone number, and location, assesses urgency, and lets them know you'll follow up. The entire conversation is sent to you as a lead summary. It works 24/7, handles multiple conversations simultaneously, and never keeps a visitor waiting."
+  },
+  {
+    question: "Do I need to install anything on my website?",
+    answer: "We install a small code snippet on your website during the done-for-you setup. It takes a few minutes and works with virtually every website platform — WordPress, Wix, Squarespace, custom builds, whatever you're running. You don't need to touch any code yourself."
+  },
+  {
+    question: "What if a visitor asks something the AI can't answer?",
+    answer: "The AI is a receptionist, not an estimator. If a visitor asks for a quote or technical advice that's beyond its scope, it lets them know honestly and confirms you'll follow up with a personalised response. The priority is always to capture the lead and leave the visitor feeling confident that their enquiry has been received."
+  },
+  {
+    question: "Can the AI handle multiple chat conversations at once?",
+    answer: "Yes. Unlike a human receptionist who can only manage one live chat at a time, the AI handles unlimited simultaneous conversations. If ten visitors land on your site at the same time, all ten get an instant response."
+  },
+  {
+    question: "Is the website chat included in the Core plan?",
+    answer: `Yes. Website chat with unlimited messages is included in the Core plan at £${pricing.tiers.core.price}/month alongside AI phone answering with 300 talk minutes. These two channels together cover the largest sources of missed leads for construction businesses.`
+  },
+  {
+    question: "Will the chat widget slow down my website?",
+    answer: "No. The widget is lightweight and loads asynchronously — meaning it doesn't block your page content from rendering. It has zero impact on your website's speed or search engine rankings."
+  }
+];
+---
+
+<ChannelServiceLayout
+  title="AI Website Chat for UK Construction Trades | Rapid Receptionist"
+  description="AI website chat for 46 UK construction trades. Engages visitors in real conversation, captures lead details, and works 24/7. Unlimited messages included with the Core plan."
+  canonicalUrl="/construction-trades/ai-website-chat/"
+  channelName="AI Website Chat"
+  channelSlugPrefix="ai-website-chat"
+  headline="AI Website Chat for UK Construction Trades"
+  accentWord="AI Website Chat"
+  subhead="A visitor lands on your website at 10pm. Instead of bouncing, they chat with your AI — and by morning, you've got a fully qualified lead with name, number, and job details. Unlimited messages. 24/7."
+  speedStat="79% of website visitors expect a response within 60 seconds."
+  speedText="If there's no live chat and no immediate response, they leave. They google the next contractor. They're gone. AI Website Chat engages every visitor the moment they arrive — morning, evening, weekends, bank holidays — and turns browsers into booked leads."
+  scenario="It's 10:30pm on a Sunday. A homeowner in Leeds is sitting at their kitchen table, googling tilers for a bathroom reno they want done before Christmas. They find your website, like your portfolio photos, but want to know whether you cover their area and how far out you're booked. Without AI Website Chat, they'd close the tab and try the next contractor. With it, a chat widget pops up: 'Hi, thanks for visiting! What can I help you with?' They type their question, the AI captures their name, number, postcode, and the details of the job. Monday morning, the lead is waiting in your inbox."
+  steps={steps}
+  benefits={benefits}
+  pricingNote=`AI Website Chat with unlimited messages is included in the <strong>Core plan at £${pricing.tiers.core.price}/month</strong> alongside AI phone answering (300 minutes). Additional channels can be added at <strong>£${pricing.addOn.price}/month each</strong>, or get everything with the <strong>All Channels bundle at £${pricing.tiers.all.price}/month</strong>. <a href='/pricing/'>See full pricing →</a>`
+  faqs={faqs}
+  ctaHeadline="Stop Losing Website Visitors"
+  ctaSubhead=`Every visitor who leaves without enquiring is a lost lead. AI Website Chat captures them before they bounce. Included in the Core plan at £${pricing.tiers.core.price}/month.`
+/>

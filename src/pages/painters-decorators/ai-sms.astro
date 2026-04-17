@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Captures Casual Enquiries',
+    text: "Neighbours see your van, friends text your number. They text because it feels quick. Your AI replies instantly, turning a casual text into a captured lead for your painting business."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Professional Reply',
+    text: "A text reply within seconds tells the customer your decorating company is responsive. They wait for your callback instead of texting the next painting contractor."
+  },
+  {
+    icon: '🔇',
+    title: 'No Ladder Interruptions',
+    text: "You cannot check texts safely on a ladder or while cutting in. The AI handles SMS conversations so your painting and decorating business runs without interruption."
+  },
+  {
+    icon: '📋',
+    title: 'Full Details from Short Texts',
+    text: "Even from 'can you paint a lounge?' the AI draws out room size, wall condition, paint preferences, and timeline."
+  },
+  {
+    icon: '🕐',
+    title: 'After-Hours Capture',
+    text: "Texts arrive throughout the evening. The AI replies regardless."
+  },
+  {
+    icon: '🔗',
+    title: 'Pairs with Missed Call Text-Back',
+    text: "Customers who miss you by phone can text back and engage with the AI. Two safety nets for your decorating business."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI SMS work for painters and decorators?",
+    answer: "When someone texts your business number, the AI responds instantly and has a natural text conversation about their decorating needs. It captures details and sends you a structured lead."
+  },
+  {
+    question: "What kind of texts does it handle?",
+    answer: "Everything from 'do you do wallpapering?' to detailed messages about full house redecorations. The AI adapts to the enquiry."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI SMS is £${pricing.addOn.price}/month. Same price for sole trader decorators, painting contractors, and painting companies.`
+  },
+  {
+    question: "Can I reply myself?",
+    answer: "Yes. You take over when you are ready."
+  },
+  {
+    question: "Does it use my existing number?",
+    answer: "Yes. Routed through your Rapid Receptionist number, connected to your existing line."
+  },
+  {
+    question: "How is data protected?",
+    answer: "All data encrypted, stored on UK and EU servers, managed under UK GDPR."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Painters & Decorators | Rapid Receptionist"
+  description="AI SMS for UK painters, decorators, painting businesses, and decorating contractors. Responds instantly to text enquiries about painting and decorating work. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/painters-decorators/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Painter & Decorator"
+  tradeNamePlural="Painters & Decorators"
+  tradeSlug="painters-decorators"
+  headline="AI SMS for Painters & Decorators"
+  accentWord="Painters"
+  subhead="A neighbour sees your decorating contractor van and texts: 'Can you wallpaper a feature wall?' Instead of that text going unread while your painting business finishes a ceiling, your AI replies in seconds — professional and the lead is captured."
+  scenario="It is 3pm on a Thursday. You are in a flat in Salford, rollering a living room ceiling — arms above your head, paint tray balanced, second coat going on while the first is still tacky enough to blend. Your phone buzzes in your back pocket. A text from a letting agent: 'Hi, we need 3 flats repainting between tenancies — all magnolia, walls and ceilings. Can you give us a day rate? Properties are in Stretford.' You are mid-roller and cannot stop. Without AI SMS, you plan to reply at the end of the day but you are tired and forget. By Monday, the agency has booked someone else. With AI SMS, the letting agent gets an instant reply: 'Thanks for your message. We would be happy to quote for the three flats. Could you confirm the number of rooms per flat and when the current tenants move out? We will arrange a call to discuss rates.' They reply with the details. You call at 5:30pm and agree a day rate. Three flats — a guaranteed fortnight of work."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/painters-decorators/ai-receptionist/"
+  ctaHeadline="Stop Losing Text Enquiries"
+  ctaSubhead="A text from a letting agent could be three flats of work. Your AI replies instantly. £${pricing.addOn.price}/month."
+/>

@@ -2,18 +2,18 @@
   {
     "name": "AI Phone Answering",
     "slug": "ai-phone-answering",
-    "pageUrl": "/ai-phone-answering-for-tradesmen/",
+    "pageUrl": "/construction-trades/ai-phone-answering/",
     "tier": 1,
     "tierLabel": "Conversational",
     "icon": "📞",
     "shortDescription": "Answers calls 24/7 with your business name and has a real conversation with callers.",
-    "description": "The flagship channel. Your AI receptionist answers every call with your business name, captures lead details, understands the nature of the work, assesses urgency, and escalates emergencies — all while you're on a job.",
+    "description": "The flagship channel. Your AI receptionist answers every call with your business name, captures lead details, understands the nature of the work, assesses urgency, and escalates emergencies — all while you're on site.",
     "capabilities": ["Full back-and-forth conversation", "Answers with your business name", "Captures lead details and job requirements", "Assesses urgency during the call", "Escalates emergencies to you or our human team"]
   },
   {
     "name": "AI Website Chat",
     "slug": "ai-website-chat",
-    "pageUrl": "/ai-website-chat-for-tradesmen/",
+    "pageUrl": "/construction-trades/ai-website-chat/",
     "tier": 1,
     "tierLabel": "Conversational",
     "icon": "💬",
@@ -24,7 +24,7 @@
   {
     "name": "AI WhatsApp",
     "slug": "ai-whatsapp",
-    "pageUrl": "/ai-whatsapp-for-tradesmen/",
+    "pageUrl": "/construction-trades/ai-whatsapp/",
     "tier": 2,
     "tierLabel": "One Reply",
     "icon": "📱",
@@ -35,7 +35,7 @@
   {
     "name": "AI SMS",
     "slug": "ai-sms",
-    "pageUrl": "/ai-sms-for-tradesmen/",
+    "pageUrl": "/construction-trades/ai-sms/",
     "tier": 2,
     "tierLabel": "One Reply",
     "icon": "✉️",
@@ -46,7 +46,7 @@
   {
     "name": "AI Email",
     "slug": "ai-email",
-    "pageUrl": "/ai-email-response-for-tradesmen/",
+    "pageUrl": "/construction-trades/ai-email-response/",
     "tier": 2,
     "tierLabel": "One Reply",
     "icon": "📧",
@@ -57,7 +57,7 @@
   {
     "name": "AI Facebook Messenger",
     "slug": "ai-facebook-messenger",
-    "pageUrl": "/ai-facebook-messenger-for-tradesmen/",
+    "pageUrl": "/construction-trades/ai-facebook-messenger/",
     "tier": 2,
     "tierLabel": "One Reply",
     "icon": "📘",
@@ -68,23 +68,23 @@
   {
     "name": "AI Instagram DMs",
     "slug": "ai-instagram-dm",
-    "pageUrl": "/ai-instagram-dms-for-tradesmen/",
+    "pageUrl": "/construction-trades/ai-instagram-dms/",
     "tier": 2,
     "tierLabel": "One Reply",
     "icon": "📸",
     "shortDescription": "Responds to Instagram direct messages and captures leads.",
-    "description": "Tradesmen who showcase their work on Instagram attract enquiries via DMs. The AI responds instantly, captures the potential customer's details, and makes sure no lead slips through the cracks.",
+    "description": "Contractors who showcase their work on Instagram attract enquiries via DMs. The AI responds instantly, captures the potential customer's details, and makes sure no lead slips through the cracks.",
     "capabilities": ["Instant professional reply", "Captures lead details", "Assesses urgency", "Escalates emergencies"]
   },
   {
     "name": "Missed Call Text-Back",
     "slug": "missed-call-text-back",
-    "pageUrl": "/ai-missed-call-text-back-for-tradesmen/",
+    "pageUrl": "/construction-trades/missed-call-text-back/",
     "tier": 3,
     "tierLabel": "Fallback",
     "icon": "🔔",
     "shortDescription": "Automatic safety net text when a call is missed.",
     "description": "The ultimate safety net. If a caller hangs up before the AI answers or the call disconnects, an automatic text is sent letting them know you're on a job and will be in touch — so they don't call a competitor.",
-    "capabilities": ["Automatic text when call is missed", "Lets caller know you're busy on a job", "Prevents them calling a competitor"]
+    "capabilities": ["Automatic text when call is missed", "Lets caller know you're busy on site", "Prevents them calling a competitor"]
   }
 ]

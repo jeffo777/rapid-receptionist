@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '🛡️',
+    title: 'Your Safety Net for Missed Calls',
+    text: "Calls drop in bathrooms with thick walls and no signal. Callers hang up after two rings. Whatever the reason, the text-back ensures the caller still hears from your tiling business within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Buys You Critical Time',
+    text: "The gap between a caller hanging up and dialling the next tiling contractor is about 30 seconds. A text from your tiling company resets that clock — they wait for your callback."
+  },
+  {
+    icon: '🚫',
+    title: 'Breaks the Competitor Habit',
+    text: "85% of callers who reach voicemail never try again. A text within seconds interrupts that pattern. They wait for your tile fitting business instead of calling the next one."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for Tiling Realities',
+    text: "You cannot answer a phone while cutting tiles on a wet saw or spreading adhesive. Your hands are occupied, the timing matters. This channel exists for exactly those moments."
+  },
+  {
+    icon: '💬',
+    title: 'Customised to Your Business',
+    text: "The text uses your business name and a personalised message — not a generic auto-reply. It sounds like it came from your tiling contractor operation."
+  },
+  {
+    icon: '🔄',
+    title: 'Works Behind AI Phone Answering',
+    text: "If the AI answers the call, the text-back does not trigger. If the call slips through, the text catches it. Two layers of protection."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the text-back activate?",
+    answer: "It activates when a call goes unanswered — whether the caller hung up too quickly, the call dropped, or you were unavailable. The text is sent within seconds."
+  },
+  {
+    question: "What does the text say?",
+    answer: "It is customised with your business name. Example: 'Thanks for calling [Your Business Name]. Sorry we could not pick up — we are currently on a tiling job. We will call you back within the hour. If it is urgent, reply to this text.' You approve the wording during setup."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "No — it sits behind it as a fallback. Phone Answering catches most calls. Text-Back catches the ones that slip through."
+  },
+  {
+    question: "What if the caller replies?",
+    answer: "If you have AI SMS active, the reply is handled by the AI. If not, it comes directly to you."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `£${pricing.addOn.price}/month. Same price for sole trader tilers, tiling contractors, and larger tiling companies.`
+  },
+  {
+    question: "Can I use it standalone?",
+    answer: `Yes. If you answer your own calls and just want a safety net for misses, it works at £${pricing.addOn.price}/month without AI Phone Answering.`
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text-Back for Tilers | Rapid Receptionist"
+  description="Missed call text-back for UK tilers, tiling businesses, tile fitters, and tiling contractors. Sends a professional text within seconds of a missed call. Stops customers calling the next tiling company. £${pricing.addOn.price}/month."
+  canonicalUrl="/tilers/missed-call-text-back/"
+  channelName="Missed Call Text-Back"
+  tradeName="Tiler"
+  tradeNamePlural="Tilers"
+  tradeSlug="tilers"
+  headline="Missed Call Text-Back for Tilers"
+  accentWord="Tilers"
+  subhead="You are setting a mosaic border when the phone rings. They hang up after two rings. Five seconds later, they get a text from your tiling business: 'Sorry we missed your call — we are on a tiling job and will call you back within the hour.' They wait. The next tiling contractor never gets the call."
+  scenario="It is 11am on a Friday. You are in an en-suite in Wilmslow, cutting and setting small mosaic tiles around a shower niche — precise, fiddly work that demands both hands and full concentration. Your phone rings once in the bedroom next door. A homeowner in Handforth wants her utility room and cloakroom floor tiled before Christmas — she has already bought the tiles and just needs someone to lay them. She decides you must be too busy and starts scrolling Checkatrade for another tiler. Then her phone buzzes: 'Thanks for calling Premier Tiling. Sorry we missed your call — we are on a job and will ring you back by lunchtime. If it is urgent, reply to this text.' She puts her phone down and waits. You call at 12:15, discuss the job, and book a measure-up for Monday. Two small rooms — a straightforward day's work won by a five-second text."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/tilers/ai-receptionist/"
+  ctaHeadline="Stop Missed Calls Becoming Missed Jobs"
+  ctaSubhead="One text. Five seconds. The difference between losing a tiling customer and keeping them. £${pricing.addOn.price}/month."
+/>

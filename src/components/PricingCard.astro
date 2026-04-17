@@ -1,92 +1,182 @@
 ---
 import CTAButton from './CTAButton.astro';
+import pricing from '../data/pricing.json';
 ---
 
 <div class="pricing-layout" id="pricing-layout">
-  <!-- Core Plan Card -->
-  <div class="pricing-card pricing-card--core" id="pricing-card-core">
-    <div class="pricing-card__badge-row">
-      <span class="badge badge--accent">Core Plan</span>
-      <span class="badge badge--outline">Most Popular</span>
+  <!-- Plan Cards Grid -->
+  <div class="pricing-plans">
+    <!-- Starter Plan Card -->
+    <div class="pricing-card pricing-card--starter" id="pricing-card-starter">
+      <div class="pricing-card__badge-row">
+        <span class="badge badge--trust">Starter Plan</span>
+      </div>
+      <h3 class="pricing-card__title">Get Started</h3>
+      <p class="pricing-card__subtitle">Perfect for sole traders — AI phone answering + website chat at a price that works.</p>
+
+      <div class="pricing-card__price-row">
+        <div class="pricing-card__price">
+          <span class="pricing-card__currency">£</span>
+          <span class="pricing-card__amount">{pricing.tiers.starter.price}</span>
+          <span class="pricing-card__period">/month</span>
+        </div>
+        <p class="pricing-card__setup">+ £{pricing.setup.price} one-time setup <span class="text-trust">(fully refundable)</span></p>
+      </div>
+
+      <div class="pricing-card__divider"></div>
+
+      <div class="pricing-card__features">
+        <h4 class="pricing-card__features-title">What's included:</h4>
+        <ul class="check-list">
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>AI Phone Answering <strong>({pricing.tiers.starter.minutes} mins/month)</strong></span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>AI Website Chat <strong>(Unlimited)</strong></span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>Human emergency escalation</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>Trade-specific AI training</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>100% done-for-you setup</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>Answers with your business name</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>Real-time lead notifications</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>24/7/365 availability</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pricing-card__divider"></div>
+
+      <div class="pricing-card__details">
+        <div class="pricing-card__detail-row">
+          <span>Phone talk time</span>
+          <strong>{pricing.tiers.starter.minutes} mins/month</strong>
+        </div>
+        <div class="pricing-card__detail-row">
+          <span>Website chat messages</span>
+          <strong class="text-trust">Unlimited</strong>
+        </div>
+        <div class="pricing-card__detail-row">
+          <span>Overage rate</span>
+          <strong>£0.20/min</strong>
+        </div>
+        <div class="pricing-card__detail-row">
+          <span>Contract</span>
+          <strong class="text-trust">None — cancel anytime</strong>
+        </div>
+      </div>
+
+      <div class="pricing-card__cta">
+        <CTAButton label={`Get Started — £${pricing.tiers.starter.price}/mo`} size="lg" id="pricing-starter-cta" />
+        <p class="pricing-card__guarantee">
+          🛡 <strong class="text-trust">30-day money-back guarantee</strong> — setup fee + monthly fee fully refundable
+        </p>
+      </div>
     </div>
-    <h3 class="pricing-card__title">Rapid Receptionist</h3>
-    <p class="pricing-card__subtitle">AI phone answering + website chat — the two channels that matter most.</p>
 
-    <div class="pricing-card__price-row">
-      <div class="pricing-card__price">
-        <span class="pricing-card__currency">£</span>
-        <span class="pricing-card__amount">99</span>
-        <span class="pricing-card__period">/month</span>
+    <!-- Core Plan Card -->
+    <div class="pricing-card pricing-card--core" id="pricing-card-core">
+      <div class="pricing-card__badge-row">
+        <span class="badge badge--accent">Core Plan</span>
+        <span class="badge badge--outline">Most Popular</span>
       </div>
-      <p class="pricing-card__setup">+ £299 one-time setup <span class="text-trust">(fully refundable)</span></p>
-    </div>
+      <h3 class="pricing-card__title">Rapid Receptionist</h3>
+      <p class="pricing-card__subtitle">AI phone answering + website chat — more minutes for busier businesses.</p>
 
-    <div class="pricing-card__divider"></div>
-
-    <div class="pricing-card__features">
-      <h4 class="pricing-card__features-title">What's included:</h4>
-      <ul class="check-list">
-        <li class="check-list__item">
-          <span class="check-list__icon">✓</span>
-          <span>AI Phone Answering <strong>(300 mins/month)</strong></span>
-        </li>
-        <li class="check-list__item">
-          <span class="check-list__icon">✓</span>
-          <span>AI Website Chat <strong>(Unlimited)</strong></span>
-        </li>
-        <li class="check-list__item">
-          <span class="check-list__icon">✓</span>
-          <span>Human emergency escalation</span>
-        </li>
-        <li class="check-list__item">
-          <span class="check-list__icon">✓</span>
-          <span>Trade-specific AI training</span>
-        </li>
-        <li class="check-list__item">
-          <span class="check-list__icon">✓</span>
-          <span>100% done-for-you setup</span>
-        </li>
-        <li class="check-list__item">
-          <span class="check-list__icon">✓</span>
-          <span>Answers with your business name</span>
-        </li>
-        <li class="check-list__item">
-          <span class="check-list__icon">✓</span>
-          <span>Real-time lead notifications</span>
-        </li>
-        <li class="check-list__item">
-          <span class="check-list__icon">✓</span>
-          <span>24/7/365 availability</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="pricing-card__divider"></div>
-
-    <div class="pricing-card__details">
-      <div class="pricing-card__detail-row">
-        <span>Phone talk time</span>
-        <strong>300 mins/month</strong>
+      <div class="pricing-card__price-row">
+        <div class="pricing-card__price">
+          <span class="pricing-card__currency">£</span>
+          <span class="pricing-card__amount">{pricing.tiers.core.price}</span>
+          <span class="pricing-card__period">/month</span>
+        </div>
+        <p class="pricing-card__setup">+ £{pricing.setup.price} one-time setup <span class="text-trust">(fully refundable)</span></p>
       </div>
-      <div class="pricing-card__detail-row">
-        <span>Website chat messages</span>
-        <strong class="text-trust">Unlimited</strong>
-      </div>
-      <div class="pricing-card__detail-row">
-        <span>Overage rate</span>
-        <strong>£0.20/min</strong>
-      </div>
-      <div class="pricing-card__detail-row">
-        <span>Contract</span>
-        <strong class="text-trust">None — cancel anytime</strong>
-      </div>
-    </div>
 
-    <div class="pricing-card__cta">
-      <CTAButton label="Get Started — £99/mo" size="lg" id="pricing-core-cta" />
-      <p class="pricing-card__guarantee">
-        🛡 <strong class="text-trust">30-day money-back guarantee</strong> — setup fee + monthly fee fully refundable
-      </p>
+      <div class="pricing-card__divider"></div>
+
+      <div class="pricing-card__features">
+        <h4 class="pricing-card__features-title">What's included:</h4>
+        <ul class="check-list">
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>AI Phone Answering <strong>({pricing.tiers.core.minutes} mins/month)</strong></span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>AI Website Chat <strong>(Unlimited)</strong></span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>Human emergency escalation</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>Trade-specific AI training</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>100% done-for-you setup</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>Answers with your business name</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>Real-time lead notifications</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__icon">✓</span>
+            <span>24/7/365 availability</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pricing-card__divider"></div>
+
+      <div class="pricing-card__details">
+        <div class="pricing-card__detail-row">
+          <span>Phone talk time</span>
+          <strong>{pricing.tiers.core.minutes} mins/month</strong>
+        </div>
+        <div class="pricing-card__detail-row">
+          <span>Website chat messages</span>
+          <strong class="text-trust">Unlimited</strong>
+        </div>
+        <div class="pricing-card__detail-row">
+          <span>Overage rate</span>
+          <strong>£0.20/min</strong>
+        </div>
+        <div class="pricing-card__detail-row">
+          <span>Contract</span>
+          <strong class="text-trust">None — cancel anytime</strong>
+        </div>
+      </div>
+
+      <div class="pricing-card__cta">
+        <CTAButton label={`Get Started — £${pricing.tiers.core.price}/mo`} size="lg" id="pricing-core-cta" />
+        <p class="pricing-card__guarantee">
+          🛡 <strong class="text-trust">30-day money-back guarantee</strong> — setup fee + monthly fee fully refundable
+        </p>
+      </div>
     </div>
   </div>
 
@@ -95,8 +185,8 @@ import CTAButton from './CTAButton.astro';
     <div class="pricing-addons__header">
       <span class="badge badge--accent-outline">Add-On or Standalone Channels</span>
       <h3 class="pricing-addons__title">Cover Every Channel Your Customers Use</h3>
-      <p class="pricing-addons__subtitle">£19/month per channel — buy as an add-on to the Core plan, or standalone. No minimum.</p>
-      <p class="pricing-addons__setup-note">All plans include a one-time £299 done-for-you setup <span class="text-trust">(fully refundable)</span></p>
+      <p class="pricing-addons__subtitle">£{pricing.addOn.price}/month per channel — buy as an add-on to the Core plan, or standalone. No minimum.</p>
+      <p class="pricing-addons__setup-note">All plans include a one-time £{pricing.setup.price} done-for-you setup <span class="text-trust">(fully refundable)</span></p>
     </div>
 
     <div class="pricing-addons__grid">
@@ -104,64 +194,43 @@ import CTAButton from './CTAButton.astro';
         <span class="addon-card__icon">💬</span>
         <h4 class="addon-card__name">AI WhatsApp</h4>
         <p class="addon-card__desc">Automated WhatsApp responses. Captures lead details from every message.</p>
-        <span class="addon-card__price">£19<span>/mo</span></span>
+        <span class="addon-card__price">£{pricing.addOn.price}<span>/mo</span></span>
       </div>
       <div class="addon-card">
         <span class="addon-card__icon">📱</span>
         <h4 class="addon-card__name">AI SMS</h4>
         <p class="addon-card__desc">Professional AI text message responses to customer enquiries.</p>
-        <span class="addon-card__price">£19<span>/mo</span></span>
+        <span class="addon-card__price">£{pricing.addOn.price}<span>/mo</span></span>
       </div>
       <div class="addon-card">
         <span class="addon-card__icon">🔔</span>
         <h4 class="addon-card__name">Missed Call Text-Back</h4>
         <p class="addon-card__desc">Automatic text sent when a call is missed — stops them calling a competitor.</p>
-        <span class="addon-card__price">£19<span>/mo</span></span>
+        <span class="addon-card__price">£{pricing.addOn.price}<span>/mo</span></span>
       </div>
       <div class="addon-card">
         <span class="addon-card__icon">📧</span>
         <h4 class="addon-card__name">AI Email Response</h4>
         <p class="addon-card__desc">Automated email replies. Captures enquiry details and sends you the lead.</p>
-        <span class="addon-card__price">£19<span>/mo</span></span>
+        <span class="addon-card__price">£{pricing.addOn.price}<span>/mo</span></span>
       </div>
       <div class="addon-card">
         <span class="addon-card__icon">📘</span>
         <h4 class="addon-card__name">AI Facebook Messenger</h4>
         <p class="addon-card__desc">Automated Facebook message responses. Never miss a social lead.</p>
-        <span class="addon-card__price">£19<span>/mo</span></span>
+        <span class="addon-card__price">£{pricing.addOn.price}<span>/mo</span></span>
       </div>
       <div class="addon-card">
         <span class="addon-card__icon">📸</span>
         <h4 class="addon-card__name">AI Instagram DMs</h4>
         <p class="addon-card__desc">Automated Instagram DM responses. Captures leads from your profile.</p>
-        <span class="addon-card__price">£19<span>/mo</span></span>
+        <span class="addon-card__price">£{pricing.addOn.price}<span>/mo</span></span>
       </div>
     </div>
 
-    <!-- Bundles -->
+    <!-- All Channels Bundle -->
     <div class="pricing-bundles">
-      <h4 class="pricing-bundles__title">Save with Bundles</h4>
       <div class="pricing-bundles__grid">
-        <div class="bundle-card">
-          <div class="bundle-card__header">
-            <h5 class="bundle-card__name">Core + Messaging</h5>
-            <span class="bundle-card__channels">Phone + Chat + WhatsApp + SMS + Email + Missed Call Text-Back</span>
-          </div>
-          <div class="bundle-card__price-row">
-            <span class="bundle-card__price">£149<span>/mo</span></span>
-            <span class="bundle-card__save">Save £26/mo</span>
-          </div>
-        </div>
-        <div class="bundle-card">
-          <div class="bundle-card__header">
-            <h5 class="bundle-card__name">Core + Social</h5>
-            <span class="bundle-card__channels">Phone + Chat + Facebook + Instagram</span>
-          </div>
-          <div class="bundle-card__price-row">
-            <span class="bundle-card__price">£129<span>/mo</span></span>
-            <span class="bundle-card__save">Save £8/mo</span>
-          </div>
-        </div>
         <div class="bundle-card bundle-card--featured">
           <span class="badge badge--accent bundle-card__badge">Best Value</span>
           <div class="bundle-card__header">
@@ -169,8 +238,8 @@ import CTAButton from './CTAButton.astro';
             <span class="bundle-card__channels">Phone + Chat + WhatsApp + SMS + Email + Facebook + Instagram + Missed Call Text-Back</span>
           </div>
           <div class="bundle-card__price-row">
-            <span class="bundle-card__price">£179<span>/mo</span></span>
-            <span class="bundle-card__save">Save £34/mo</span>
+            <span class="bundle-card__price">£{pricing.tiers.all.price}<span>/mo</span></span>
+            <span class="bundle-card__save">Save £{pricing.tiers.core.price + (6 * pricing.addOn.price) - pricing.tiers.all.price}/mo vs buying separately</span>
           </div>
         </div>
       </div>
@@ -187,21 +256,30 @@ import CTAButton from './CTAButton.astro';
     display: flex;
     flex-direction: column;
     gap: var(--space-16);
-    max-width: 900px;
+    max-width: 1100px;
     margin-inline: auto;
   }
 
-  /* ---- Core Card ---- */
+  .pricing-plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  /* ---- Plan Cards ---- */
   .pricing-card {
-    max-width: 520px;
-    margin-inline: auto;
     width: 100%;
     background: var(--color-surface);
-    border: 2px solid var(--color-border-accent);
+    border: 1px solid var(--color-border-subtle);
     border-radius: var(--radius-2xl);
     padding: var(--space-10);
     position: relative;
     overflow: hidden;
+  }
+
+  .pricing-card--core {
+    border: 2px solid var(--color-accent);
   }
 
   .pricing-card::before {
@@ -518,6 +596,12 @@ import CTAButton from './CTAButton.astro';
 
   /* ---- Responsive ---- */
   @media (max-width: 768px) {
+    .pricing-plans {
+      grid-template-columns: 1fr;
+      max-width: 520px;
+      margin-inline: auto;
+    }
+
     .pricing-addons__grid {
       grid-template-columns: 1fr 1fr;
     }

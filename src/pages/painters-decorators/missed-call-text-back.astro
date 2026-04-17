@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '🛡️',
+    title: 'Safety Net for Missed Calls',
+    text: "Calls drop in rooms with thick walls. Signal disappears halfway up a stairwell. Whatever the reason for a missed call, the text-back ensures the caller still hears from your painting business within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Buys You Critical Time',
+    text: "The gap between a caller hanging up and dialling the next decorating contractor is about 30 seconds. A text from your painting company resets that clock."
+  },
+  {
+    icon: '🚫',
+    title: 'Breaks the Competitor Habit',
+    text: "85% of callers who reach voicemail never try again. A text within seconds interrupts that pattern. They wait for your callback instead of calling the next painter."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for Decorating Realities',
+    text: "You cannot answer a phone on a ladder. Your hands are covered in paint. You are in a stairwell with no signal. This channel exists for exactly those moments in every painting and decorating business."
+  },
+  {
+    icon: '💬',
+    title: 'Customised to Your Business',
+    text: "The text uses your business name and a personalised message — not a generic auto-reply. It sounds like it came from your decorating company."
+  },
+  {
+    icon: '🔄',
+    title: 'Works Behind AI Phone Answering',
+    text: "If the AI answers, the text-back does not trigger. If the call slips through, the text catches it. Two layers of protection."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the text-back activate?",
+    answer: "When a call goes unanswered — caller hung up before the AI could answer, call dropped, or you were unavailable. Text sent within seconds."
+  },
+  {
+    question: "What does the text say?",
+    answer: "Customised with your business name. Example: 'Thanks for calling [Your Business]. Sorry we could not pick up — we are on a decorating job. We will call you back within the hour.' You approve the wording during setup."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "No — it sits behind it as a fallback. Phone Answering catches most calls. Text-Back catches the ones that slip through."
+  },
+  {
+    question: "What if the caller replies?",
+    answer: "If you have AI SMS active, the reply is handled by the AI. If not, the reply comes directly to you."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `£${pricing.addOn.price}/month. Same price for sole trader decorators, painting contractors, and larger painting and decorating companies.`
+  },
+  {
+    question: "Can I use it standalone?",
+    answer: `Yes. If you prefer answering your own calls, it works at £${pricing.addOn.price}/month as a standalone safety net.`
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text-Back for Painters & Decorators | Rapid Receptionist"
+  description="Missed call text-back for UK painters, decorators, painting businesses, and decorating contractors. Sends a professional text within seconds of a missed call. Stops customers calling the next painting company. £${pricing.addOn.price}/month."
+  canonicalUrl="/painters-decorators/missed-call-text-back/"
+  channelName="Missed Call Text-Back"
+  tradeName="Painter & Decorator"
+  tradeNamePlural="Painters & Decorators"
+  tradeSlug="painters-decorators"
+  headline="Missed Call Text-Back for Painters & Decorators"
+  accentWord="Painters"
+  subhead="You are rollering a ceiling when the phone rings. They hang up after two rings. Five seconds later, they get a text from your painting business: 'Sorry we missed your call — we are on a decorating job and will call you back within the hour.' They wait. The next painting contractor never gets the call."
+  scenario="It is 11:30am on a Tuesday. You are in a stairwell in Marple, painting the upper reaches from a ladder balanced on the half-landing. Your phone is in your coat pocket downstairs. A homeowner in Romiley calls — she wants her entire downstairs redecorated before her daughter's wedding reception in six weeks. That is at least two weeks of work — lounge, dining room, hallway, and downstairs cloakroom. Your phone rings twice downstairs and stops. Without the text-back, she assumes you are too busy and googles 'painter and decorator near me Romiley.' Two minutes later, she has called someone else and booked a walkthrough. With Missed Call Text-Back, her phone buzzes: 'Thanks for calling Johnson Decorating. Sorry we missed your call — we are on a job and will ring you back by lunchtime. If it is urgent, reply to this text.' She puts her phone down and waits. You call at 12:45, discuss the scope, and book a visit for Thursday evening. Two weeks of work — won by a five-second text."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/painters-decorators/ai-receptionist/"
+  ctaHeadline="Stop Missed Calls Becoming Missed Jobs"
+  ctaSubhead="One text. Five seconds. The difference between losing a decorating customer and keeping them. £${pricing.addOn.price}/month."
+/>

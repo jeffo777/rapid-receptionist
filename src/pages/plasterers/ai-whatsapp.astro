@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Photo Enquiries Are the Norm',
+    text: "Plastering customers love sending photos — a cracked ceiling, blown render, damp patches on a wall. The AI acknowledges the photos and includes them in your lead notification. You see the damage before you even call back."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Reply While You Skim',
+    text: "You cannot stop mid-coat to reply to a WhatsApp message. The AI handles it in seconds — a professional response that captures the lead while your plaster sets perfectly."
+  },
+  {
+    icon: '📱',
+    title: 'Preferred by Younger Homeowners',
+    text: "A growing number of customers under 40 prefer WhatsApp over calling — it feels less formal and they can send photos. If you are not responding to WhatsApp enquiries, you are invisible to this demographic."
+  },
+  {
+    icon: '🔒',
+    title: 'Business Number, Not Personal',
+    text: "WhatsApp messages come through your business line. Your personal number stays private, and your work-life boundaries stay intact."
+  },
+  {
+    icon: '🌙',
+    title: 'Evening and Weekend Coverage',
+    text: "WhatsApp enquiries peak in the evenings — homeowners messaging after work. The AI responds at 8pm, 10pm, midnight — whenever the message arrives."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional Tone, Every Time',
+    text: "Instead of a rushed reply typed on a dusty phone, your customers get a polished, professional response. It sets the right tone before you have even spoken to them."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI WhatsApp work for plasterers?",
+    answer: "When a customer WhatsApps your business number — whether with a question, a photo of damage, or a request for a quote — the AI reads the message and sends one professional reply within seconds. It acknowledges what they need, captures their details, and lets them know you will follow up. The lead, including any photos, is sent to you."
+  },
+  {
+    question: "Does the AI have a full WhatsApp conversation?",
+    answer: "No — it sends one professional reply per message. This is deliberate: it captures the lead and sets expectations without creating a long text thread. Full conversational AI is available through phone answering and website chat."
+  },
+  {
+    question: "What kind of plastering enquiries come through WhatsApp?",
+    answer: "Common ones include: photos of cracked or blown plaster with 'can you fix this?', availability checks for re-skimming projects, questions about whether you do rendering or just internal work, and follow-ups from leaflets or van signage. Many customers attach photos, which makes WhatsApp particularly useful for plastering."
+  },
+  {
+    question: "How much does AI WhatsApp cost for plasterers?",
+    answer: `AI WhatsApp is an add-on channel at £${pricing.addOn.price}/month. The pricing is the same for sole trader plasterers, plastering contractors, and rendering businesses. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat) or get everything with the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can I still reply to WhatsApp messages myself?",
+    answer: "Yes. The AI handles messages when you are unavailable. When you are free — between jobs, at lunch, after hours — you reply directly from WhatsApp Business as normal."
+  },
+  {
+    question: "How is customer data from WhatsApp protected?",
+    answer: "All data from WhatsApp messages — names, numbers, photos, addresses — is managed under UK GDPR. Data is encrypted, stored on UK and EU servers, and disclosed only to you. Full details in our privacy policy."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Plasterers | Rapid Receptionist"
+  description="AI WhatsApp for UK plasterers, plastering contractors, and rendering businesses. Responds instantly to WhatsApp enquiries with photos, captures lead details 24/7. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/plasterers/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Plasterer"
+  tradeNamePlural="Plasterers"
+  tradeSlug="plasterers"
+  headline="AI WhatsApp for Plasterers"
+  accentWord="Plasterers"
+  subhead="A homeowner WhatsApps your plastering business with a photo of cracked rendering on their gable wall. Instead of that message sitting unread while you finish a ceiling, your AI replies in seconds — capturing the lead and keeping the customer engaged. Works for plastering contractors, rendering companies, and sole trader plasterers alike."
+  scenario="It is Saturday afternoon. A landlord in Manchester is turning around a flat between tenancies. The previous tenant pulled shelves off the lounge wall and left a mess of raw plaster, filler, and old Rawlplugs. The landlord takes a photo and WhatsApps your number: 'Hi, how much roughly to sort this out? Need it done before next Friday when new tenants move in.' You are out with your family. Without AI WhatsApp, the message sits until Sunday evening when you check your phone. By then, the landlord has already messaged four other plasterers and booked the first one who replied. With AI WhatsApp, they get a reply within ten seconds: 'Thanks for your message and the photo. We can see the damage and will get back to you today with availability. Could you confirm whether it is just the lounge or if any other rooms need attention?' The landlord replies with extra details. Monday morning, you call them first."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/plasterers/ai-receptionist/"
+  ctaHeadline="Stop Ignoring WhatsApp Plastering Enquiries"
+  ctaSubhead="Every unread WhatsApp message is a job that goes to someone who replies faster. £${pricing.addOn.price}/month."
+/>

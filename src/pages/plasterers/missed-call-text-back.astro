@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '🛡️',
+    title: 'Your Safety Net When Everything Else Fails',
+    text: "Calls disconnect. Callers hang up after one ring. Signal drops in basements and loft conversions. Whatever the reason for a missed call, the text-back ensures the caller still hears from your business within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Buys You Critical Time',
+    text: "The gap between a caller hanging up and dialling the next plasterer is about 30 seconds. A well-timed text resets that clock. It tells them: 'I am real. I am busy on a job. I am coming back to you.'"
+  },
+  {
+    icon: '🚫',
+    title: 'Breaks the Competitor Call Habit',
+    text: "85% of callers who reach voicemail never try again — they call someone else. A text that arrives within seconds interrupts that pattern. They wait for your callback instead."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for Plastering Realities',
+    text: "You cannot answer a phone when you are mid-skim. Your hands are covered in plaster, you are on a hop-up, or you are in a room with no signal because the walls are three coats thick. This channel exists for exactly those moments."
+  },
+  {
+    icon: '💬',
+    title: 'Customised to Your Business',
+    text: "The text includes your business name and a personalised message — not a generic 'we missed your call.' It sounds like it came from you, because it was written for you during setup."
+  },
+  {
+    icon: '🔄',
+    title: 'Works Behind AI Phone Answering',
+    text: "If the AI picks up the call, the text-back does not trigger. If the call slips through — a one-ring hang-up, a signal drop — the text catches it. Two layers of protection."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text-back activate?",
+    answer: "It activates when a call to your business number goes unanswered — whether that is because you could not pick up, the caller hung up before the AI answered, or the call dropped due to poor signal. The text is sent within seconds."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "It is customised with your business name. A typical example: 'Thanks for calling [Your Business Name]. Sorry we could not pick up — we are currently on a plastering job. We will call you back within the hour. If it is urgent, reply to this text.' You approve the wording during setup."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "No — it sits behind it as a fallback. AI Phone Answering catches the vast majority of calls by answering them directly. Missed Call Text-Back catches the small number that slip through for any reason."
+  },
+  {
+    question: "What if the caller replies to the text?",
+    answer: "If you also have AI SMS active, the reply is handled by the AI. If not, the reply comes directly to you. Either way, the lead is captured."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `Missed Call Text-Back is an add-on at £${pricing.addOn.price}/month. Pair it with the Core plan (£${pricing.tiers.core.price}/month) or the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can I use it without AI Phone Answering?",
+    answer: `Yes. If you prefer to answer your own calls and just want a safety net for the ones you miss, Missed Call Text-Back works standalone at £${pricing.addOn.price}/month. It is the simplest way to stop missed calls becoming missed plastering jobs.`
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text-Back for Plasterers | Rapid Receptionist"
+  description="Missed call text-back for UK plasterers, plastering businesses, and rendering contractors. Sends a professional text within seconds of a missed call. Stops customers calling the next plastering company. £${pricing.addOn.price}/month."
+  canonicalUrl="/plasterers/missed-call-text-back/"
+  channelName="Missed Call Text-Back"
+  tradeName="Plasterer"
+  tradeNamePlural="Plasterers"
+  tradeSlug="plasterers"
+  headline="Missed Call Text-Back for Plasterers"
+  accentWord="Plasterers"
+  subhead="You are mid-skim when the phone rings. They hang up after two rings. Five seconds later, they get a text from your plastering business: 'Sorry we missed your call — we are on a plastering job and will call you back within the hour.' They wait. The next plastering contractor never gets the call."
+  scenario="It is 11:20am on a Monday. You are in a bathroom in Altrincham, skimming around a newly installed shower niche — the kind of fiddly work that takes concentration and clean hands. Your phone rings once in the hallway and stops. The caller — a homeowner three miles away who needs their dining room ceiling replaced after a leak — decides you must be too busy and starts scrolling Google for the next plasterer. Then their phone buzzes: 'Thanks for calling Maxwell Plastering. Sorry we missed your call — we are currently on a job. We will ring you back by lunchtime. If it is urgent, reply to this text and we will prioritise.' They put their phone down and wait. You call them at 12:45 and book the job. Without the text-back, they would have called someone else at 11:21."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/plasterers/ai-receptionist/"
+  ctaHeadline="Stop Missed Calls Becoming Missed Jobs"
+  ctaSubhead="One text. Five seconds. The difference between losing a plastering customer and keeping them. £${pricing.addOn.price}/month."
+/>

@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Visitors Researching Bricklayers',
+    text: "Homeowners comparing bricklayers online often visit multiple websites. The chat widget engages them at the moment they land on yours — before they click away. A conversation that starts with 'do you do garden walls?' turns into a qualified lead."
+  },
+  {
+    icon: '📐',
+    title: 'Captures Brickwork-Specific Details',
+    text: "The AI asks the right questions for bricklaying enquiries — what type of work, property type, rough size, whether it is new build or repair, and the customer's timeline. You get a lead with substance, not just a name."
+  },
+  {
+    icon: '♾️',
+    title: 'Unlimited Conversations',
+    text: "No cap on chat sessions. Whether your website generates 2 leads or 20 a month, every visitor is engaged and captured without additional charges."
+  },
+  {
+    icon: '📱',
+    title: 'Works on Every Device',
+    text: "The widget loads fast on mobile and desktop. Most homeowners browse on their phones — particularly in the evening. The experience is clean and professional on any screen size."
+  },
+  {
+    icon: '🕐',
+    title: '24/7 Engagement',
+    text: "Website visitors do not keep office hours. Someone browsing bricklayers at 11pm on a Sunday evening gets the same instant engagement as someone browsing at 10am on a Tuesday."
+  },
+  {
+    icon: '🎨',
+    title: 'Branded to Your Business',
+    text: "The chat widget uses your business name and brand colours. It looks like a natural part of your website — not a generic bolt-on."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does website chat work for bricklayers?",
+    answer: "A chat widget appears on your website. When a visitor clicks it, the AI greets them and has a conversation about their brickwork needs — extension, wall, repointing, chimney, blockwork. It captures their name, phone number, location, and timeline, then sends you a lead summary."
+  },
+  {
+    question: "Do I need to monitor the chat myself?",
+    answer: "No. The AI handles every conversation autonomously. You review the lead summaries at your convenience — no need to sit watching a screen."
+  },
+  {
+    question: "What if a visitor asks for a quote through the chat?",
+    answer: "The AI does not quote jobs. Brickwork pricing depends on too many variables — brick type, bond, foundations, access. The AI captures the details and passes the lead for your personal assessment."
+  },
+  {
+    question: "Is website chat included in the base price?",
+    answer: `Yes. Unlimited website chat is included in the Core plan at £${pricing.tiers.core.price}/month alongside phone answering.`
+  },
+  {
+    question: "Will it slow my website down?",
+    answer: "No. The widget is lightweight and loads asynchronously. It has no impact on your page speed or search rankings."
+  },
+  {
+    question: "How is chat data protected?",
+    answer: "All data from chat conversations is encrypted, stored on UK and EU servers, and shared only with you. Fully compliant with UK GDPR."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Bricklayers | Rapid Receptionist"
+  description="AI website chat for UK bricklayers and bricklaying businesses. Engages visitors with brickwork-specific questions, captures lead details 24/7. Unlimited messages included."
+  canonicalUrl="/bricklayers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Bricklayer"
+  tradeNamePlural="Bricklayers"
+  tradeSlug="bricklayers"
+  headline="AI Website Chat for Bricklayers"
+  accentWord="Bricklayers"
+  subhead="A homeowner lands on your bricklaying business website after searching for brickwork contractors in their area. They want to know if you do garden walls. Instead of leaving with no answer, they chat with your AI and your bricklaying company wakes up to a fully qualified lead."
+  scenario="It is 10pm on a Wednesday. A couple in Didsbury are planning a rear extension and want to find a bricklayer who can match the existing 1930s facing brick on their semi. They google 'bricklayer Didsbury,' find your website, and see photos of a similar extension you completed last year. They want to ask whether you source the bricks or if they need to, and how far out your diary is booked. Without website chat, they bookmark the tab and forget about it. With AI Website Chat, the widget pops up: 'Hi, what brickwork are you looking for?' They describe the extension, the AI captures their postcode, the type of existing brick, their approximate start date, and their phone number. Thursday morning, the lead is in your inbox — complete with enough detail to have a meaningful first conversation."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/bricklayers/ai-receptionist/"
+  ctaHeadline="Stop Losing Website Visitors"
+  ctaSubhead="Your brickwork photos attracted them. The AI captures them. Included at £${pricing.tiers.core.price}/month."
+/>

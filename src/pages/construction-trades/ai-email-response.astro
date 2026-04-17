@@ -1,0 +1,102 @@
+﻿---
+import ChannelServiceLayout from '../../layouts/ChannelServiceLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const steps = [
+  {
+    number: 1,
+    title: 'An Enquiry Hits Your Inbox',
+    description: "A potential customer sends an email to your business address — a quote request, a project description, a follow-up from a site visit. They expect a professional reply."
+  },
+  {
+    number: 2,
+    title: 'Your AI Sends an Instant Acknowledgement',
+    description: "Within seconds, the AI reads the email, identifies what's being asked, and sends a professional reply acknowledging the enquiry. It confirms the key details, sets expectations for follow-up, and makes the customer feel heard."
+  },
+  {
+    number: 3,
+    title: 'You Follow Up With the Full Picture',
+    description: "The lead is sent to you with the customer's name, email, what they need, and the urgency level. You follow up with a personalised response when you're ready — with all the context in front of you."
+  }
+];
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Instant Acknowledgement',
+    text: "The biggest complaint customers have about emailing tradespeople is the silence. They send an email and hear nothing for days. AI Email breaks that pattern — every enquiry gets an immediate, professional acknowledgement."
+  },
+  {
+    icon: '📋',
+    title: 'Extracts Key Details',
+    text: "The AI reads the email content and identifies the critical information — what work is needed, where the property is, what timeline the customer has in mind. It captures everything and packages it as a structured lead."
+  },
+  {
+    icon: '🏢',
+    title: 'Handles Commercial Enquiries',
+    text: "Commercial and larger domestic projects often arrive by email — tender requests, project specs, quotation invitations. The AI handles these with the same professionalism, ensuring nothing falls through the cracks in a busy inbox."
+  },
+  {
+    icon: '⏰',
+    title: 'Out-of-Hours Coverage',
+    text: "Emails arrive at all hours. A commercial property manager sends a tender at 6pm on a Friday. A homeowner emails at midnight after discovering a leak. The AI acknowledges every one of them instantly — no wait until Monday morning."
+  },
+  {
+    icon: '🔄',
+    title: 'Prevents Inbox Black Holes',
+    text: "We've all done it — opened an email with good intentions, thought 'I'll reply later,' and never did. AI Email eliminates that risk. The customer gets their acknowledgement immediately; you get the lead flagged for follow-up."
+  },
+  {
+    icon: '✍️',
+    title: 'Professional Tone, Every Time',
+    text: "No more rushed one-line replies typed on a phone with plastered fingers. Every email response is polished, professional, and consistent — making your business look established and responsive regardless of how busy you are."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Email Response work?",
+    answer: "When a customer sends an email to your connected business email address, the AI reads the content, identifies what they need, and sends one professional acknowledgement within seconds. The reply confirms the key details of their enquiry and lets them know you'll follow up personally. The lead is then sent to you with the full email content and extracted details."
+  },
+  {
+    question: "Does the AI reply to every email, or just enquiries?",
+    answer: "The AI is configured to respond to inbound enquiries — new customer messages asking about work, quotes, or availability. It doesn't reply to spam, marketing emails, or internal communications. You can refine the filtering during setup."
+  },
+  {
+    question: "Can the AI compose detailed email replies?",
+    answer: "AI Email uses a one-reply acknowledgement model. It sends a professional first response confirming the enquiry was received and setting expectations. It doesn't draft detailed quotes or technical responses — that's your expertise. The goal is to bridge the gap between the customer's email and your personal follow-up."
+  },
+  {
+    question: "Does it work with Gmail, Outlook, and other email providers?",
+    answer: "Yes. We connect your AI to your existing business email address regardless of provider — Gmail, Outlook, Yahoo, or any custom domain email. The setup is handled by our team during onboarding."
+  },
+  {
+    question: "How much does AI Email Response cost?",
+    answer: `AI Email Response is an add-on channel at £${pricing.addOn.price}/month. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat) or add it standalone. The All Channels bundle at £${pricing.tiers.all.price}/month includes email alongside all seven other channels.`
+  },
+  {
+    question: "What if a customer replies to the AI's acknowledgement?",
+    answer: "Any replies go directly to you — the AI doesn't create an ongoing email thread. Its role is to send that crucial first acknowledgement so the customer knows their email was received. From that point, you handle the conversation personally."
+  }
+];
+---
+
+<ChannelServiceLayout
+  title="AI Email Response for UK Construction Trades | Rapid Receptionist"
+  description=`AI email response for 46 UK construction trades. Instantly acknowledges email enquiries, captures lead details, and works 24/7. £${pricing.addOn.price}/month add-on.`
+  canonicalUrl="/construction-trades/ai-email-response/"
+  channelName="AI Email Response"
+  channelSlugPrefix="ai-email-response"
+  headline="AI Email Response for UK Construction Trades"
+  accentWord="AI Email Response"
+  subhead=`A customer emails your business with a quote request. Instead of radio silence for 48 hours, they get an instant professional acknowledgement — and you get a structured lead. £${pricing.addOn.price}/month.`
+  speedStat="47% of customers expect an email reply within 4 hours. Only 12% of trade businesses achieve it."
+  speedText="The gap between customer expectation and trade business response time is enormous. AI Email closes that gap instantly. Every email enquiry gets an immediate, professional acknowledgement — no matter how many jobs you're juggling."
+  scenario="It's Thursday afternoon. A commercial property manager emails your business: 'We're refurbishing three retail units on the high street and need decorating contractors. The spec includes full prep, 2-coat emulsion throughout, and gloss to all woodwork. Estimated start date is 6th January. Could you provide a quote and confirm your availability?' Without AI Email, that sits in your inbox until Friday evening when you finally check. By then, they've already invited three other contractors to quote. With AI Email Response, they receive an immediate reply: 'Thank you for your enquiry. We've received the details regarding the three retail units and will review the specification and come back to you with availability and a quotation. If you'd like to discuss further in the meantime, please call us on [number].' The lead is captured. The property manager knows they've been heard. And you review the full email at your leisure with every detail in front of you."
+  steps={steps}
+  benefits={benefits}
+  pricingNote=`AI Email Response is available as an <strong>add-on channel at £${pricing.addOn.price}/month</strong>. Pair it with the Core plan (£${pricing.tiers.core.price}/month for phone + chat), use it standalone, or include it in the <strong>All Channels bundle at £${pricing.tiers.all.price}/month</strong>. <a href='/pricing/'>See full pricing →</a>`
+  faqs={faqs}
+  ctaHeadline="Stop Leaving Emails Unanswered"
+  ctaSubhead=`Every unanswered email is a customer assuming you're not interested. AI Email Response replies in seconds — £${pricing.addOn.price}/month.`
+/>

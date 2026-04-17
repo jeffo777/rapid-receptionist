@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Instant Acknowledgement',
+    text: "Builders and architects email detailed specifications and expect a prompt response. Your AI sends an immediate acknowledgement confirming your joinery business has received the brief — while other carpentry contractors leave the email unread for days."
+  },
+  {
+    icon: '📐',
+    title: 'Handles Complex Specifications',
+    text: "Joinery emails often include drawings, schedules, and material lists. The AI acknowledges the attachments, confirms receipt, and tells the sender you will review and respond — buying you time to assess properly."
+  },
+  {
+    icon: '🏗️',
+    title: 'Wins Builder Confidence',
+    text: "When a builder sends a first fix schedule to five carpentry contractors, the one who acknowledges first is the one they trust. An instant email reply puts your joinery company at the top of the list."
+  },
+  {
+    icon: '🕐',
+    title: 'Covers Out-of-Hours Emails',
+    text: "Architects and project managers send emails at 7am, 9pm, and on weekends. Your AI responds instantly regardless — no enquiry sits in silence."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional and Branded',
+    text: "The reply uses your business name and a professional tone. It tells the sender they are dealing with an organised joinery business — not someone who forgets to check email."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Data Logged',
+    text: "Every email exchange is summarised and sent to you as a lead. You review it when you are ready — no hunting through your inbox."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Email Response work for joinery businesses?",
+    answer: "When someone emails your business, the AI sends an instant, professional acknowledgement confirming receipt. It includes your business name and tells the sender when to expect a full response. This works for joinery contractors, carpentry businesses, and sole trader joiners."
+  },
+  {
+    question: "Does it reply to every email automatically?",
+    answer: "It acknowledges inbound enquiries — new project requests, specifications, quote requests. It does not reply to spam, marketing emails, or existing conversation threads."
+  },
+  {
+    question: "Can it handle emails with attachments?",
+    answer: "Yes. If a builder sends drawings or a material schedule, the AI acknowledges the attachments and confirms your joinery business will review them. It does not open or interpret drawings — it ensures the sender knows you have received everything."
+  },
+  {
+    question: "How much does AI Email Response cost?",
+    answer: `AI Email is an add-on at £${pricing.addOn.price}/month. Pair with the Core plan (£${pricing.tiers.core.price}/month) or get everything with the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Does it work with my existing email address?",
+    answer: "Yes. We configure email forwarding so enquiries sent to your existing address are picked up by the AI. Your email remains unchanged."
+  },
+  {
+    question: "Is email data handled securely?",
+    answer: "Yes. All email data is managed under UK GDPR, encrypted in transit and at rest, and stored on UK and EU servers."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Joiners & Carpenters | Rapid Receptionist"
+  description="AI email response for UK joiners, carpentry contractors, and joinery businesses. Instantly acknowledges joinery specifications and quote requests from builders, architects, and homeowners. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/joiners-carpenters/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Joiner"
+  tradeNamePlural="Joiners & Carpenters"
+  tradeSlug="joiners-carpenters"
+  headline="AI Email Response for Joiners & Carpenters"
+  accentWord="Joiners"
+  subhead="An architect emails your joinery company with drawings for a bespoke oak staircase — three flights, glass balustrade, and a curved handrail. Instead of that email sitting for three days, the architect gets an instant acknowledgement and your carpentry business reviews the drawings at the weekend."
+  scenario="It is Thursday at 5:30pm. An architect in Knutsford emails your business with a detailed brief for a residential project — full internal joinery package including bespoke doors, skirting profiles to match the existing Victorian detail, fitted study furniture, and understairs storage. The email includes three PDF drawings and a material specification. You are tidying the workshop and do not check email until Saturday. Without AI Email, the architect hears nothing for two days. She emails a second joinery contractor on Friday morning and they reply within the hour. With AI Email Response, the architect receives an immediate reply: 'Thank you for your enquiry regarding the residential joinery package. We have received the drawings and specification and will review them in detail. We will respond with availability and initial thoughts within 48 hours. If you need to discuss anything in the meantime, please call us on [number].' She relaxes, knowing the brief has landed. Saturday morning, you open the drawings, assess the scope, and reply with a considered response — first in the queue."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/joiners-carpenters/ai-receptionist/"
+  ctaHeadline="Stop Losing Email Enquiries"
+  ctaSubhead="An architect's brief deserves an immediate response. Your AI delivers it. £${pricing.addOn.price}/month."
+/>

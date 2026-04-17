@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Catches Builder Specifications',
+    text: "Builders and developers send brickwork specs by email — brick type, bond pattern, quantities, programme dates. The AI acknowledges receipt instantly so the builder knows you are in the running."
+  },
+  {
+    icon: '🏢',
+    title: 'Handles Commercial Tender Requests',
+    text: "Commercial brickwork tenders often arrive by email with detailed specifications. The AI confirms receipt and packages the details so you can review and price at your own pace."
+  },
+  {
+    icon: '⏰',
+    title: 'Out-of-Hours Coverage',
+    text: "Emails arrive at all hours. A builder sending a spec at 5:30pm on a Friday gets an instant acknowledgement rather than silence until Monday."
+  },
+  {
+    icon: '🔄',
+    title: 'Eliminates the Inbox Black Hole',
+    text: "Every bricklayer has opened an email, intended to reply later, and never did. The AI ends that problem — the customer hears back immediately; you get a flagged lead."
+  },
+  {
+    icon: '✍️',
+    title: 'Professional Tone',
+    text: "Every email acknowledgement is polished and professional — setting the right impression before you have even spoken."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Lead from Email Content',
+    text: "The AI extracts key details from the email and packages them as a lead. You review at your convenience without hunting through your inbox."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Email work for bricklayers?",
+    answer: "When someone emails your business, the AI reads the content, identifies the enquiry, and sends an instant professional acknowledgement. It captures the key details and sends you a structured lead. You follow up personally when ready."
+  },
+  {
+    question: "Does it write detailed quotes by email?",
+    answer: "No. It sends one acknowledgement per email. Brickwork quoting requires a site visit and proper assessment — the AI captures the lead so you can arrange that assessment."
+  },
+  {
+    question: "What kind of bricklaying emails does it handle?",
+    answer: "Quote requests from homeowners, specifications from builders, availability checks from property managers, and insurance repair briefs. It does not reply to spam or marketing emails."
+  },
+  {
+    question: "Does it work with my email provider?",
+    answer: "Yes — Gmail, Outlook, Yahoo, or any custom domain email. Setup is handled by our team during onboarding."
+  },
+  {
+    question: "How much does AI Email cost?",
+    answer: `It is an add-on at £${pricing.addOn.price}/month. Pair it with the Core plan or the All Channels bundle.`
+  },
+  {
+    question: "Is email data handled under GDPR?",
+    answer: "Yes. All email data is encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Bricklayers | Rapid Receptionist"
+  description="AI email response for UK bricklayers, bricklaying contractors, and brickwork businesses. Instantly acknowledges brickwork enquiries from builders and homeowners. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/bricklayers/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Bricklayer"
+  tradeNamePlural="Bricklayers"
+  tradeSlug="bricklayers"
+  headline="AI Email Response for Bricklayers"
+  accentWord="Bricklayers"
+  subhead="A builder emails with a specification for facing brickwork on a six-plot housing development. Instead of that email sitting in your inbox for three days, the builder gets an instant acknowledgement and you review the spec at your own pace."
+  scenario="It is Wednesday evening. The contracts manager for a regional developer emails you: 'We are looking for bricklaying contractors for phase 3 of our development in Knutsford. 12 detached plots, facing brick to all elevations, Flemish bond to front elevations, stretcher bond to rear and side. Blockwork to internal skin. Start date April, completion by October. Please confirm interest and provide day rates for a two-man gang.' You are at home and will not check email until the weekend. Without AI Email, the contracts manager hears nothing until Saturday. By then, four other bricklayers have confirmed interest. With AI Email Response, he receives an instant reply: 'Thank you for your enquiry regarding the Knutsford development. We have received the specification and will review the details and respond with rates and availability. If you need to discuss further, please call us on [number].' You review the email on Saturday, submit your rates Sunday morning, and your response is among the first three received."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/bricklayers/ai-receptionist/"
+  ctaHeadline="Stop Leaving Builder Emails Unanswered"
+  ctaSubhead="Every unanswered email is a development someone else will brick. £${pricing.addOn.price}/month."
+/>

@@ -2,11 +2,10 @@
 import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import SpeedBanner from '../components/SpeedBanner.astro';
-import ScenarioBlock from '../components/ScenarioBlock.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTASection from '../components/CTASection.astro';
 import CookieConsent from '../components/CookieConsent.astro';
+import pricing from '../data/pricing.json';
 
 export interface FAQItem {
   question: string;
@@ -26,17 +25,16 @@ export interface Props {
   channelName: string;
   tradeName: string;
   tradeNamePlural: string;
+  tradeSlug: string;
   headline: string;
   accentWord: string;
   subhead: string;
-  speedStat: string;
-  speedText: string;
   scenario: string;
   benefits: BenefitItem[];
   faqs: FAQItem[];
   channelPageUrl: string;
   tradePageUrl: string;
-  pricingNote: string;
+  pricingNote?: string;
   ctaHeadline?: string;
   ctaSubhead?: string;
 }
@@ -48,11 +46,10 @@ const {
   channelName,
   tradeName,
   tradeNamePlural,
+  tradeSlug,
   headline,
   accentWord,
   subhead,
-  speedStat,
-  speedText,
   scenario,
   benefits,
   faqs,
@@ -60,8 +57,15 @@ const {
   tradePageUrl,
   pricingNote,
   ctaHeadline = `${channelName} for ${tradeNamePlural} — Stop Missing Leads`,
-  ctaSubhead = `Join the UK ${tradeNamePlural.toLowerCase()} who capture every enquiry. £19/month, no contracts, 30-day money-back guarantee.`,
+  ctaSubhead = `Join the UK ${tradeNamePlural.toLowerCase()} who capture every enquiry. From £${pricing.tiers.starter.price}/month. No contracts.`,
 } = Astro.props;
+
+/* Auto-generate pricing note from central pricing data if not provided */
+const isCorePlan = channelName === 'AI Phone Answering' || channelName === 'AI Website Chat';
+const generatedPricingNote = isCorePlan
+  ? `${channelName} is included in the <strong>Starter plan at £${pricing.tiers.starter.price}/month</strong> (${pricing.tiers.starter.minutes} mins) or the <strong>Core plan at £${pricing.tiers.core.price}/month</strong> (${pricing.tiers.core.minutes} mins), both with unlimited website chat. Add extra channels at <strong>£${pricing.addOn.price}/month each</strong>. <a href='/pricing/'>Full pricing →</a>`
+  : `${channelName} is an <strong>add-on at £${pricing.addOn.price}/month</strong>. Pair with Starter (£${pricing.tiers.starter.price}/month) or Core (£${pricing.tiers.core.price}/month), or get everything for <strong>£${pricing.tiers.all.price}/month</strong>. <a href='/pricing/'>Full pricing →</a>`;
+const resolvedPricingNote = pricingNote || generatedPricingNote;
 
 const siteUrl = 'https://rapidreceptionist.co.uk';
 
@@ -90,18 +94,32 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": `${siteUrl}/` },
-    { "@type": "ListItem", "position": 2, "name": channelName, "item": `${siteUrl}${channelPageUrl}` },
+    { "@type": "ListItem", "position": 2, "name": "Construction Trades", "item": `${siteUrl}/construction-trades/` },
     { "@type": "ListItem", "position": 3, "name": `AI Receptionist for ${tradeNamePlural}`, "item": `${siteUrl}${tradePageUrl}` },
     { "@type": "ListItem", "position": 4, "name": `${channelName} for ${tradeNamePlural}` }
   ]
 };
 
-/* Append GDPR FAQ to the faqs array */
+/* FAQ schema */
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer.replace(/<[^>]*>/g, '')
+    }
+  }))
+};
+
+/* Append GDPR FAQ — unique version for channel pages, different wording from TradeHubLayout */
 const allFaqs = [
   ...faqs,
   {
-    question: `Is my customers' data safe when captured via ${channelName}?`,
-    answer: `Absolutely. Every piece of data captured through ${channelName} — whether it's a caller's name, phone number, email address, or job details — is protected under UK GDPR and the Data Protection Act 2018. All data is encrypted during transmission and storage, held on secure UK/EU-based servers, and accessible only to you. We never sell customer information or use it for any purpose beyond delivering your AI receptionist service. You can request deletion of any data at any time, and your customers have the same right under GDPR. As the business owner, you remain the data controller — Rapid Receptionist operates as your data processor, handling enquiries strictly according to our data processing agreement. Full details are in our <a href='/privacy/'>privacy policy</a>.`
+    question: `Is ${channelName} compliant with UK data protection law?`,
+    answer: `Yes — fully. Every piece of information captured through ${channelName} is protected under UK GDPR and the Data Protection Act 2018. Client names, contact details, site addresses, and project specifics are encrypted during transmission and while stored, and held exclusively on UK and EU-based servers. We never share, sell, or repurpose any data captured on your behalf. You maintain full control as the data controller, with the right to request deletion at any point. Your clients have the same right. Rapid Receptionist acts strictly as your data processor, operating under a formal data processing agreement. You can review our approach in detail in our <a href='/privacy/'>privacy policy</a>.`
   }
 ];
 ---
@@ -115,7 +133,7 @@ const allFaqs = [
       <nav aria-label="Breadcrumb">
         <ol class="ct-breadcrumb-list">
           <li><a href="/">Home</a></li>
-          <li><a href={channelPageUrl}>{channelName}</a></li>
+          <li><a href="/construction-trades/">Construction Trades</a></li>
           <li><a href={tradePageUrl}>AI Receptionist for {tradeNamePlural}</a></li>
           <li aria-current="page">{channelName} for {tradeNamePlural}</li>
         </ol>
@@ -136,12 +154,17 @@ const allFaqs = [
     </div>
   </section>
 
-  <SpeedBanner stat={speedStat} text={speedText} />
-
-  <ScenarioBlock text={scenario} />
+  <!-- Scenario -->
+  <section class="section section--alt" id="ct-scenario">
+    <div class="container">
+      <div class="ct-scenario-block">
+        <p>{scenario}</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Benefits -->
-  <section class="section section--alt" id="ct-benefits">
+  <section class="section" id="ct-benefits">
     <div class="container">
       <div class="section-header">
         <h2>Why {tradeNamePlural} Need <span class="text-accent">{channelName}</span></h2>
@@ -159,17 +182,17 @@ const allFaqs = [
   </section>
 
   <!-- Pricing Note -->
-  <section class="section" id="ct-pricing">
+  <section class="section section--alt" id="ct-pricing">
     <div class="container">
       <div class="ct-pricing-note">
         <span class="ct-pricing-note__icon">💷</span>
-        <p set:html={pricingNote} />
+        <p set:html={resolvedPricingNote} />
       </div>
     </div>
   </section>
 
   <!-- Cross-links -->
-  <section class="section section--alt" id="ct-related">
+  <section class="section" id="ct-related">
     <div class="container">
       <div class="ct-related-grid">
         <a href={channelPageUrl} class="ct-related-card">
@@ -182,9 +205,9 @@ const allFaqs = [
           <strong>{tradeNamePlural}</strong>
           <span class="ct-related-card__arrow">→</span>
         </a>
-        <a href="/ai-receptionist-for-tradesmen/" class="ct-related-card">
+        <a href="/construction-trades/" class="ct-related-card">
           <span class="ct-related-card__label">See all</span>
-          <strong>Channels & Trades</strong>
+          <strong>Construction Trades</strong>
           <span class="ct-related-card__arrow">→</span>
         </a>
       </div>
@@ -197,9 +220,10 @@ const allFaqs = [
 
   <CookieConsent />
 
-  <!-- Service + Breadcrumb Schema -->
+  <!-- Schema Markup -->
   <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <Footer slot="footer" />
 </BaseLayout>
@@ -262,6 +286,20 @@ const allFaqs = [
     justify-content: center;
     gap: var(--space-4);
     flex-wrap: wrap;
+  }
+
+  /* Scenario Block */
+  .ct-scenario-block {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-8);
+    background: var(--color-surface);
+    border-left: 4px solid var(--color-accent);
+    border-radius: var(--radius-lg);
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+    font-style: italic;
   }
 
   /* Benefits Grid */

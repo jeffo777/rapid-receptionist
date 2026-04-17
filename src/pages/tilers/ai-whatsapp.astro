@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Customers Send Bathroom Photos',
+    text: "Homeowners photograph the cracked tiles, the bare plaster, or the tile samples they have chosen and WhatsApp them directly. The AI acknowledges the photos and captures the context — giving your tiling business a head start before you call back."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Response',
+    text: "WhatsApp users expect fast replies. When someone messages a tiling contractor and hears nothing for two days, they message the next one. Your AI replies in seconds — keeping the customer engaged while you finish the job."
+  },
+  {
+    icon: '🔧',
+    title: 'Built for Tilers on Site',
+    text: "You are on your knees setting tiles with adhesive drying. Checking WhatsApp between cuts is not realistic. The AI handles messages so your tiling company never misses an opportunity."
+  },
+  {
+    icon: '📋',
+    title: 'Structured Lead Capture',
+    text: "The AI asks follow-up questions — which rooms, tile type, substrate condition, timeline. Each conversation becomes a usable lead for your tile fitting business."
+  },
+  {
+    icon: '🕐',
+    title: 'Evening and Weekend Coverage',
+    text: "WhatsApp messages from homeowners peak after showroom visits — evenings and weekends. The AI captures them in real time while you are off the tools."
+  },
+  {
+    icon: '🔗',
+    title: 'Complements Phone and Chat',
+    text: "Some customers prefer WhatsApp to calling. Offering it alongside phone answering means your tiling business captures leads from every communication style."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI WhatsApp work for tilers?",
+    answer: "Customers message your WhatsApp business number. The AI responds instantly, asks about the tiling work needed, captures their details, and sends you a lead summary. It handles text messages, photos, and voice notes."
+  },
+  {
+    question: "Can the AI handle photo messages of tiling work?",
+    answer: "Yes. When a customer sends photos of damaged tiles, bare walls, or tile samples they have chosen, the AI acknowledges them and continues the conversation to capture the full brief."
+  },
+  {
+    question: "How much does AI WhatsApp cost for tilers?",
+    answer: `AI WhatsApp is an add-on at £${pricing.addOn.price}/month. Same price for sole trader tilers, tiling contractors, and larger tiling companies. Pair with the Core plan or get the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can I still reply to messages myself?",
+    answer: "Yes. When you are free, you take over. The AI handles initial engagement — you step in when ready."
+  },
+  {
+    question: "Do I need WhatsApp Business already?",
+    answer: "No. We set up the integration during onboarding. If you already have WhatsApp Business, we connect to it."
+  },
+  {
+    question: "How is WhatsApp data protected?",
+    answer: "All messages and customer data are managed under UK GDPR. Encrypted, stored on UK and EU servers, shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Tilers | Rapid Receptionist"
+  description="AI WhatsApp for UK tilers, tiling contractors, tile fitters, and tiling businesses. Responds instantly to WhatsApp enquiries with photos of tiling work needed. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/tilers/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Tiler"
+  tradeNamePlural="Tilers"
+  tradeSlug="tilers"
+  headline="AI WhatsApp for Tilers"
+  accentWord="Tilers"
+  subhead="A homeowner photographs their crumbling shower tiles and WhatsApps your tiling business. Instead of that message sitting unread while you finish a kitchen floor, your AI replies in seconds — capturing room details, tile choices, and timeline. Built for tiling contractors and tile fitters who cannot check their phone between cuts."
+  scenario="It is Sunday afternoon. A couple in Stockport have spent the morning at a tile showroom and chosen a grey marble-effect porcelain for their bathroom floor and walls. They are excited and want to get the job booked in. They take a photo of the tile sample, a photo of their existing bathroom, and WhatsApp your number: 'Hi, we have just chosen our tiles for a full bathroom retile. Can you give us a rough idea of cost and availability? Photos attached.' You are having lunch with family and will not check your phone until the evening. Without AI WhatsApp, the message sits for six hours. They message two other tilers and the first to reply books the measure-up. With the AI, they get a response in under ten seconds: 'Thanks for the photos — those tiles will look fantastic. Could you let me know the rough bathroom dimensions and your postcode? We will arrange a call to discuss the job properly.' They reply with measurements. Monday morning, you call — first in the queue with a fully qualified lead."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/tilers/ai-receptionist/"
+  ctaHeadline="Stop Losing WhatsApp Leads"
+  ctaSubhead="Homeowners send tile photos and want a fast reply. Your AI delivers it. £${pricing.addOn.price}/month."
+/>

@@ -1,0 +1,106 @@
+---
+export interface ScenarioPair {
+  without: string;
+  with: string;
+}
+
+export interface Props {
+  tradeName: string;
+  scenarios: ScenarioPair[];
+}
+
+const { tradeName, scenarios } = Astro.props;
+---
+
+<section class="section" id="without-with">
+  <div class="container">
+    <div class="section-header">
+      <h2>Without vs <span class="text-accent">With</span> Rapid Receptionist</h2>
+      <p class="section-header__sub">See the difference for a typical {tradeName.toLowerCase()} business.</p>
+    </div>
+    <div class="ww-table">
+      <div class="ww-header">
+        <div class="ww-header__col ww-header__col--without">❌ Without</div>
+        <div class="ww-header__col ww-header__col--with">✅ With Rapid Receptionist</div>
+      </div>
+      {scenarios.map((pair) => (
+        <div class="ww-row fade-in">
+          <div class="ww-cell ww-cell--without">{pair.without}</div>
+          <div class="ww-cell ww-cell--with">{pair.with}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .ww-table {
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .ww-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ww-header__col {
+    padding: var(--space-4) var(--space-5);
+    font-weight: var(--font-bold);
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .ww-header__col--without {
+    background: rgba(239, 68, 68, 0.08);
+    color: #ef4444;
+    border-right: 1px solid var(--color-border-subtle);
+  }
+
+  .ww-header__col--with {
+    background: rgba(34, 197, 94, 0.08);
+    color: #22c55e;
+  }
+
+  .ww-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .ww-cell {
+    padding: var(--space-4) var(--space-5);
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+    color: var(--color-text-secondary);
+  }
+
+  .ww-cell--without {
+    border-right: 1px solid var(--color-border-subtle);
+  }
+
+  .ww-cell--with {
+    color: var(--color-text-primary);
+  }
+
+  @media (max-width: 640px) {
+    .ww-header,
+    .ww-row {
+      grid-template-columns: 1fr;
+    }
+
+    .ww-header__col--without,
+    .ww-cell--without {
+      border-right: none;
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    .ww-cell {
+      padding: var(--space-3) var(--space-4);
+    }
+  }
+</style>

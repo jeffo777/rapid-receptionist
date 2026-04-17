@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Portfolio Posts Drive Enquiries',
+    text: "You post a reel of a completed wet room or a herringbone kitchen floor. The likes come in — and so do the DMs. Your AI replies to every one while your tiling business focuses on the next job."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant DM Response',
+    text: "Instagram rewards fast replies. When someone DMs a tiling contractor and gets a response in seconds, they feel valued. Silence for two days loses them to the next tile fitter."
+  },
+  {
+    icon: '🎨',
+    title: 'Visual Enquiries Handled',
+    text: "DMs about tiling often reference specific posts — 'I want this exact shower' or 'Can you do the floor from your last reel?' The AI acknowledges the reference and captures project details."
+  },
+  {
+    icon: '🔧',
+    title: 'Designed for Tilers on Site',
+    text: "You cannot respond to DMs while cutting tiles on a wet saw. The AI handles every message so your tiling company never loses a lead to delayed replies."
+  },
+  {
+    icon: '🌙',
+    title: 'After-Hours Lead Capture',
+    text: "Instagram browsing peaks between 7pm and 11pm. Homeowners see your tiling work, get inspired, and DM. The AI captures them immediately."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Delivered to You',
+    text: "Every DM conversation is summarised as a structured lead alongside your phone, chat, and other channel leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Instagram DMs work for tilers?",
+    answer: "The AI monitors your Instagram business account. When someone DMs about tiling work, it responds instantly, captures their needs and details, and sends you a lead summary."
+  },
+  {
+    question: "Can the AI handle messages referencing my posts?",
+    answer: "Yes. When someone says 'I want a bathroom like your last post,' the AI acknowledges it and asks follow-up questions about their space, tile preferences, and timeline."
+  },
+  {
+    question: "Is this good for tilers who post before-and-after content?",
+    answer: "Absolutely. Before-and-after content drives the most engagement and DMs. The AI handles the surge so your tiling business captures every interested follower."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI Instagram DMs is £${pricing.addOn.price}/month. Same price for sole trader tilers, tiling contractors, and larger tiling companies.`
+  },
+  {
+    question: "Do I need an Instagram business account?",
+    answer: "Yes. Switching from personal to business is free and takes two minutes."
+  },
+  {
+    question: "How is DM data protected?",
+    answer: "All data is encrypted, stored on UK and EU servers, and managed under UK GDPR."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Tilers | Rapid Receptionist"
+  description="AI Instagram DMs for UK tilers, tiling contractors, and tile fitters. Responds instantly to Instagram messages about bathroom, kitchen, and floor tiling. Ideal for tiling businesses showcasing portfolios. £${pricing.addOn.price}/month."
+  canonicalUrl="/tilers/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Tiler"
+  tradeNamePlural="Tilers"
+  tradeSlug="tilers"
+  headline="AI Instagram DMs for Tilers"
+  accentWord="Tilers"
+  subhead="You post a timelapse of a wet room tiling transformation. It gets 6,000 views and ten DMs asking about similar work. Your AI replies to every one — capturing room sizes, tile preferences, and postcodes — while your tiling business gets on with the next bathroom. Built for tiling contractors who showcase their craft online."
+  scenario="It is Wednesday evening. You posted a reel on Tuesday showing a complete bathroom transformation — floor-to-ceiling marble-effect porcelain, a floating vanity with a tiled surround, and a walk-in shower with a full-height feature wall in a contrasting mosaic. It has 6,200 views. At 8:45pm, a DM arrives: 'This is gorgeous. We are renovating our main bathroom and want exactly this look. Do you cover the Cheshire area? Roughly what does a full bathroom retile cost?' Without AI Instagram DMs, you are putting the kids to bed and do not see it until 10pm. You start typing but decide to reply properly tomorrow — and forget until Friday. With the AI, they get an instant response: 'Thank you — glad you liked the bathroom! We would love to discuss your renovation. Could you share the room dimensions, your postcode, and whether you have chosen your tiles yet? We will arrange a call to go through the options.' They reply with sizes and their Alderley Edge postcode. Thursday morning, you call them first."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/tilers/ai-receptionist/"
+  ctaHeadline="Turn Instagram Followers into Tiling Customers"
+  ctaSubhead="Your bathroom photos inspire them. Your AI captures them. £${pricing.addOn.price}/month."
+/>

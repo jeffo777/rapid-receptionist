@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Visitors Who Need Groundwork Explained',
+    text: "Many homeowners do not fully understand groundwork — they know they need 'something done with the foundations' or 'the garden keeps flooding.' The AI chat guides them through the conversation, capturing enough detail for you to assess the job."
+  },
+  {
+    icon: '📐',
+    title: 'Captures Technical Details',
+    text: "The chat asks relevant questions — what type of work, property size, whether it is a new build or existing structure, ground conditions if known, and the project timeline. You receive a lead with substance."
+  },
+  {
+    icon: '♾️',
+    title: 'Unlimited Conversations',
+    text: "No limit on the number of chat sessions. Whether your website gets 3 enquiries or 30 a month, every visitor gets engaged."
+  },
+  {
+    icon: '📱',
+    title: 'Mobile-Friendly for On-Site Browsing',
+    text: "Builders and homeowners often browse on mobile. The chat widget loads quickly and works smoothly on any device."
+  },
+  {
+    icon: '🕐',
+    title: 'Round-the-Clock Engagement',
+    text: "Visitors do not keep site hours. Someone researching drainage solutions at 11pm on a Sunday gets the same instant engagement as someone browsing at 9am on a Tuesday."
+  },
+  {
+    icon: '🎨',
+    title: 'Branded to Your Business',
+    text: "The widget uses your business name and colours — it feels like a natural part of your website."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does website chat work for groundworkers?",
+    answer: "A chat widget appears on your website. When a visitor clicks it, the AI engages them in conversation about their groundwork needs — foundations, drainage, excavation, landscaping. It captures their contact details, location, and project scope, then sends you a lead summary."
+  },
+  {
+    question: "What if someone asks technical questions about foundations?",
+    answer: "The AI is a receptionist, not a structural engineer. If someone asks about load-bearing capacity or foundation depth requirements, the AI explains that a site assessment is needed and captures their details for your follow-up. It never gives technical advice."
+  },
+  {
+    question: "Do I need to monitor the chat?",
+    answer: "No. Everything is automated. You review lead summaries at your convenience — no screen monitoring required."
+  },
+  {
+    question: "Is website chat included in the base plan?",
+    answer: `Yes. Unlimited website chat is included in the Core plan at £${pricing.tiers.core.price}/month alongside phone answering.`
+  },
+  {
+    question: "Will it work on my website?",
+    answer: "Yes — WordPress, Wix, Squarespace, custom builds. We install a small code snippet during setup."
+  },
+  {
+    question: "How is chat data protected?",
+    answer: "All data is encrypted, stored on UK and EU servers, and shared only with you. Fully GDPR compliant."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Groundworkers | Rapid Receptionist"
+  description="AI website chat for UK groundworkers and groundwork businesses. Engages visitors with groundwork-specific questions, captures lead details 24/7. Ideal for groundwork contractors. Unlimited messages included."
+  canonicalUrl="/groundworkers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Groundworker"
+  tradeNamePlural="Groundworkers"
+  tradeSlug="groundworkers"
+  headline="AI Website Chat for Groundworkers"
+  accentWord="Groundworkers"
+  subhead="A homeowner lands on your website searching for someone to sort their waterlogged garden. They have no idea what a soakaway is. Your AI chat explains nothing — but it asks the right questions, captures their details, and by morning you have a qualified lead."
+  scenario="It is 9pm on a Monday. A homeowner in Bramhall has water pooling across their entire back garden every time it rains. They have tried googling 'garden drainage solutions' and eventually found your website through a search for 'groundworkers near me.' They can see from your photos that you do drainage work, but they are not sure whether they need a French drain, a soakaway, or something else entirely. Without website chat, they look at your phone number, decide it is too late to call, and move on. With AI Website Chat, the widget greets them: 'Hi, what groundwork are you looking for?' They type: 'Our garden floods every time it rains — not sure what we need.' The AI asks about the garden size, the property type, how long the problem has been happening, and captures their postcode and phone number. Tuesday morning, you call them — and you already know it is a mid-terrace with clay soil and no existing drainage."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/groundworkers/ai-receptionist/"
+  ctaHeadline="Stop Losing Website Visitors"
+  ctaSubhead="They found your groundwork website. The AI keeps them there. Included at £${pricing.tiers.core.price}/month."
+/>

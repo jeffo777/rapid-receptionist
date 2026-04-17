@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Portfolio Posts Generate Leads',
+    text: "You post a reel of a hand-cut dovetail drawer or a finished fitted kitchen. The likes roll in — and so do the DMs. Your AI replies to every one while your joinery business focuses on the next commission."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant DM Response',
+    text: "Instagram rewards fast replies. When someone DMs a carpentry contractor and gets a response in seconds, they feel valued. When they hear nothing for two days, they DM the next joinery company."
+  },
+  {
+    icon: '🎨',
+    title: 'Visual Enquiries Handled',
+    text: "DMs about joinery often reference specific posts — 'I want this exact staircase' or 'Can you do the shelving from your last reel?' The AI acknowledges the reference and captures project details."
+  },
+  {
+    icon: '🔧',
+    title: 'Designed for Joiners on the Tools',
+    text: "You cannot respond to Instagram DMs while operating a table saw. The AI handles every message throughout the day so your carpentry business never loses a lead to delayed replies."
+  },
+  {
+    icon: '🌙',
+    title: 'After-Hours Lead Capture',
+    text: "Instagram browsing peaks between 7pm and 11pm. Homeowners see your work, get inspired, and DM you. The AI captures them in real time — not the next morning."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Delivered to You',
+    text: "Every DM conversation is summarised as a structured lead. You review them alongside phone, chat, and email leads — everything in one place."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Instagram DMs work for joiners?",
+    answer: "The AI monitors your Instagram business account for direct messages. When someone DMs about joinery or carpentry work, the AI responds instantly, captures their needs and contact details, and sends you a lead summary."
+  },
+  {
+    question: "Can the AI handle messages that reference specific posts?",
+    answer: "Yes. When someone says 'I want shelves like the ones in your last post,' the AI acknowledges the reference and asks follow-up questions about their space, dimensions, and timeline."
+  },
+  {
+    question: "Does this work for joiners who post videos and reels?",
+    answer: "Absolutely. Video content drives the most engagement and DMs. The AI handles the surge in messages after popular posts so your joinery business captures every interested follower."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI Instagram DMs is an add-on at £${pricing.addOn.price}/month. Same price for sole trader joiners, carpentry contractors, and larger joinery firms.`
+  },
+  {
+    question: "Do I need an Instagram business account?",
+    answer: "Yes. The integration requires an Instagram business or creator account. If you have a personal account, switching to business is free and takes two minutes."
+  },
+  {
+    question: "How is DM data protected?",
+    answer: "All data from Instagram conversations is encrypted, stored on UK and EU servers, and managed under UK GDPR."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Joiners & Carpenters | Rapid Receptionist"
+  description="AI Instagram DMs for UK joiners and carpentry contractors. Responds instantly to Instagram messages about bespoke joinery and carpentry work. Ideal for joinery businesses showcasing portfolios. £${pricing.addOn.price}/month."
+  canonicalUrl="/joiners-carpenters/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Joiner"
+  tradeNamePlural="Joiners & Carpenters"
+  tradeSlug="joiners-carpenters"
+  headline="AI Instagram DMs for Joiners & Carpenters"
+  accentWord="Joiners"
+  subhead="You post a timelapse of a hand-cut dovetailed blanket chest. It gets 5,000 views and eight DMs asking about commissions. Your AI replies to every one — capturing names, dimensions, and budgets — while your joinery business gets on with the next project. Built for carpentry contractors who showcase their work online."
+  scenario="It is Thursday evening. You posted a reel on Wednesday showing the install of a floor-to-ceiling fitted wardrobe in a period bedroom — frame built from tulipwood, painted in Farrow and Ball Pavilion Grey, with brass knob handles and soft-close drawers. It has 5,400 views and climbing. At 9:15pm, a DM arrives: 'This is exactly what we want for our master bedroom. We have two alcoves either side of the chimney breast. Do you cover South Manchester? What sort of price would a pair of fitted wardrobes be?' Without AI Instagram DMs, you are watching a film and do not check until Friday morning. You start typing a reply at lunchtime but get called to a job. By Saturday, they have messaged another joiner. With the AI, they get an instant response: 'Thank you — glad you liked the wardrobe! We would love to discuss fitted wardrobes for your bedroom alcoves. Could you share the approximate alcove sizes and your postcode? We will arrange a call to go through options and pricing.' They reply with rough measurements. Friday morning, you call and book a home visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/joiners-carpenters/ai-receptionist/"
+  ctaHeadline="Turn Instagram Followers into Joinery Customers"
+  ctaSubhead="Your portfolio inspires them. Your AI captures them. £${pricing.addOn.price}/month."
+/>

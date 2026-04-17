@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import pricing from '../data/pricing.json';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
@@ -15,12 +16,12 @@ const faqs = [
     answer: "Nothing complicated. Know which services you offer, your main service area, and how you'd like urgent calls handled. If you want messaging channels like WhatsApp or Facebook, have your login details handy. We guide you through everything during onboarding — there's no technical setup on your end."
   },
   {
-    question: "What does the £299 setup fee actually cover?",
-    answer: "Everything needed to get your AI receptionist live. That includes training the AI on your specific trade, your services, and your business name. It covers phone number routing, chat widget installation, and connecting any messaging accounts you want covered. It also includes a full test of every channel before going live. The setup fee is fully refundable within the first 30 days — if you're not happy, you get it back along with your monthly fee."
+    question: `What does the £${pricing.setup.price} setup fee actually cover?`,
+    answer: "The complete configuration of your AI receptionist for your specific construction trade. That includes training the AI on your services, your trade terminology, and your business name. It covers phone number routing, chat widget installation, and connecting any messaging accounts you want covered. Everything is tested across every channel before going live. The setup fee is fully refundable within the first 30 days — if it doesn't work for your trade, you get it back along with your monthly fee."
   },
   {
     question: "Can I start with just the Core plan and add channels later?",
-    answer: "Absolutely — that's how most tradesmen start. The Core plan gives you phone answering and website chat, which covers the two biggest sources of missed leads. Once you're up and running, you can see where your other enquiries are coming from and add channels one at a time. Adding a new channel takes less than 24 hours to configure."
+    answer: "Absolutely — that's how most construction businesses start. The Core plan gives you phone answering and website chat, which covers the two biggest sources of missed leads. Once you're up and running, you can see where your other enquiries are coming from and add channels one at a time. Adding a new channel takes less than 24 hours to configure."
   },
   {
     question: "Is there really no contract?",
@@ -32,14 +33,14 @@ const faqs = [
   },
   {
     question: "How does Rapid Receptionist handle data protection and GDPR?",
-    answer: "Rapid Receptionist is fully compliant with UK GDPR and the Data Protection Act 2018. All customer data captured by your AI receptionist — names, phone numbers, locations, job details — is encrypted in transit and at rest, stored on secure UK/EU-based servers, and shared only with you. We never sell, trade, or use personal data for marketing. Both you and your customers can request data deletion at any time. As the tradesman, you remain the data controller for your customer data; we act as your data processor, handling it strictly according to our data processing agreement. Our full privacy policy is available at <a href='/privacy/'>rapidreceptionist.co.uk/privacy</a>."
+    answer: "We are fully compliant with UK GDPR and the Data Protection Act 2018. All client data captured by your AI receptionist — names, contact numbers, property details, project descriptions — is encrypted during transmission and storage, held on secure UK and EU servers, and accessible only to you. We never sell, distribute, or repurpose personal data. You remain the data controller; Rapid Receptionist operates as your data processor under a formal processing agreement. Our full <a href='/privacy/'>privacy policy</a> is available on our website."
   }
 ];
 ---
 
 <BaseLayout
-  title="Get Started with Rapid Receptionist — AI Receptionist for UK Tradesmen"
-  description="Sign up for Rapid Receptionist. AI receptionist for UK tradesmen covering up to 8 channels. Live within 48 hours. £99/mo, £299 setup, 30-day money-back guarantee."
+  title="Get Started with Rapid Receptionist — AI Receptionist for UK Construction Trades"
+  description=`Sign up for Rapid Receptionist. The rapid response AI receptionist for 46 UK construction trades. Live within 48 hours. £${pricing.tiers.core.price}/mo, £${pricing.setup.price} setup, 30-day money-back guarantee.`
   canonicalUrl="/get-started/"
 >
   <Header slot="header" />
@@ -48,8 +49,8 @@ const faqs = [
   <section class="section gs-hero" id="get-started-hero">
     <div class="container">
       <span class="badge badge--accent">Get Started</span>
-      <h1>Stop Missing Leads. <span class="text-accent">Start Today.</span></h1>
-      <p class="gs-hero__sub">Fill in the form below and we'll have your AI receptionist configured, tested, and live within 48 hours. No technical knowledge needed — we do everything for you.</p>
+      <h1>Respond First. <span class="text-accent">Start Today.</span></h1>
+      <p class="gs-hero__sub">Fill in the form below and we'll have your AI receptionist configured for your construction trade, tested, and live within 48 hours. No technical knowledge needed — we do everything for you.</p>
 
       <div class="gs-hero__trust">
         <div class="gs-hero__trust-item">
@@ -112,23 +113,28 @@ const faqs = [
           <div class="gs-pricing-summary">
             <h3>Quick Pricing Reminder</h3>
             <div class="gs-pricing-item">
+              <span class="gs-pricing-item__label">Starter Plan</span>
+              <span class="gs-pricing-item__price">£{pricing.tiers.starter.price}<span>/mo</span></span>
+              <span class="gs-pricing-item__detail">Phone answering ({pricing.tiers.starter.minutes} mins) + unlimited website chat</span>
+            </div>
+            <div class="gs-pricing-item">
               <span class="gs-pricing-item__label">Core Plan</span>
-              <span class="gs-pricing-item__price">£99<span>/mo</span></span>
-              <span class="gs-pricing-item__detail">Phone answering (300 mins) + unlimited website chat</span>
+              <span class="gs-pricing-item__price">£{pricing.tiers.core.price}<span>/mo</span></span>
+              <span class="gs-pricing-item__detail">Phone answering ({pricing.tiers.core.minutes} mins) + unlimited website chat</span>
             </div>
             <div class="gs-pricing-item">
               <span class="gs-pricing-item__label">Additional Channels</span>
-              <span class="gs-pricing-item__price">£19<span>/mo each</span></span>
+              <span class="gs-pricing-item__price">£{pricing.addOn.price}<span>/mo each</span></span>
               <span class="gs-pricing-item__detail">WhatsApp, SMS, Email, Facebook, Instagram, Missed Call Text-Back</span>
             </div>
             <div class="gs-pricing-item gs-pricing-item--highlight">
               <span class="gs-pricing-item__label">All Channels Bundle</span>
-              <span class="gs-pricing-item__price">£179<span>/mo</span></span>
-              <span class="gs-pricing-item__detail">Everything — saves £34/mo vs individual pricing</span>
+              <span class="gs-pricing-item__price">£{pricing.tiers.all.price}<span>/mo</span></span>
+              <span class="gs-pricing-item__detail">Everything — saves £{pricing.tiers.core.price + (6 * pricing.addOn.price) - pricing.tiers.all.price}/mo vs individual pricing</span>
             </div>
             <div class="gs-pricing-item">
               <span class="gs-pricing-item__label">Setup Fee</span>
-              <span class="gs-pricing-item__price">£299<span> one-time</span></span>
+              <span class="gs-pricing-item__price">£{pricing.setup.price}<span> one-time</span></span>
               <span class="gs-pricing-item__detail">Fully refundable within 30 days</span>
             </div>
           </div>

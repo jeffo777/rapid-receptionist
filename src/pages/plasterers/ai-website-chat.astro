@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Late-Night Browsers',
+    text: "Homeowners researching plasterers tend to browse in the evening — after dinner, comparing portfolios and reviews. Your AI chat widget engages them at that exact moment, before they close the tab and forget your name by morning."
+  },
+  {
+    icon: '📐',
+    title: 'Asks Plastering-Relevant Questions',
+    text: "The chat is configured for plastering enquiries. It asks about the type of work — re-skim, rendering, repair, Artex removal — the number of rooms, the property type, and their timeline. You get a lead with real detail, not just a name and number."
+  },
+  {
+    icon: '♾️',
+    title: 'Unlimited Conversations',
+    text: "There is no cap on the number of chat sessions your AI handles. Whether your website attracts 3 enquiries a month or 30, every single one is engaged and captured — no extra charges."
+  },
+  {
+    icon: '📱',
+    title: 'Mobile-Friendly Widget',
+    text: "Most homeowners browse on their phones. The chat widget loads fast and works perfectly on mobile — no awkward scrolling, no tiny buttons. A smooth experience that matches the professionalism of your plastering work."
+  },
+  {
+    icon: '🎨',
+    title: 'Matches Your Website Design',
+    text: "The widget is styled to complement your site. It uses your brand colours and business name, so it feels like a natural part of your online presence — not a bolted-on chatbot."
+  },
+  {
+    icon: '🔗',
+    title: 'Turns Portfolio Views into Leads',
+    text: "If you have photos of your finished plasterwork on your website, visitors are already impressed. The chat widget converts that admiration into an actual enquiry — capturing their details before they drift away."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does website chat work for a plastering business?",
+    answer: "A chat widget appears on your website. When a visitor clicks it, the AI greets them and has a conversation about what work they need. For plastering visitors, it asks about the type of job, the number of rooms, the property location, and their timeline. It captures their name and phone number and sends you a lead summary. It works 24/7 and handles multiple conversations at once."
+  },
+  {
+    question: "Do I need a fancy website for this to work?",
+    answer: "No. The chat widget works on any website — WordPress, Wix, Squarespace, a simple one-pager, even a site you built yourself. We install a small code snippet during setup. Whether you are a sole trader plasterer with a basic page or a plastering contractor with a full portfolio site, the chat widget works."
+  },
+  {
+    question: "What if I do not have a website yet?",
+    answer: "If you do not have a website, the chat widget will not apply to you — but the other channels (phone, WhatsApp, SMS, Facebook, Instagram, email, and missed call text-back) all work independently of a website. Many plasterers start with phone answering and add website chat later when they build their online presence."
+  },
+  {
+    question: "Is website chat included in the base price?",
+    answer: `Yes. Unlimited website chat is included in the Core plan at £${pricing.tiers.core.price}/month alongside AI phone answering with 300 minutes. These two channels together are the biggest lead sources for plastering businesses.`
+  },
+  {
+    question: "Can the chat widget quote jobs for me?",
+    answer: "No — and intentionally so. The AI is a receptionist, not an estimator. It captures the details of what the customer needs and passes the lead to you. You handle the quoting. This keeps customer expectations accurate and ensures they get a proper assessment from a qualified plasterer."
+  },
+  {
+    question: "How is my customers' data protected through website chat?",
+    answer: "All data captured via the chat widget is encrypted in transit and at rest, stored on UK and EU servers, and shared only with you. We comply fully with UK GDPR and the Data Protection Act 2018. You remain the data controller; we operate as your data processor."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Plasterers | Rapid Receptionist"
+  description="AI website chat for UK plasterers and plastering businesses. Engages visitors with plastering-specific questions, captures lead details 24/7. Unlimited messages included in the Core plan."
+  canonicalUrl="/plasterers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Plasterer"
+  tradeNamePlural="Plasterers"
+  tradeSlug="plasterers"
+  headline="AI Website Chat for Plasterers"
+  accentWord="Plasterers"
+  subhead="A homeowner finds your plastering business website at 9pm, loves your photos, but wants to know if you cover their area. Instead of bouncing, they chat with your AI — and by morning, your plastering company has a qualified lead with room count, postcode, and timeline."
+  scenario="It is 9:45pm on a Thursday. A couple in Harrogate have just ripped out their old kitchen and discovered the plaster behind the units is completely blown. They google 'plasterer Harrogate,' find your website, and see your gallery of kitchen re-plasters. They like what they see but want to know if you are available next week and whether you can handle the whole ground floor while the kitchen is already stripped. Without website chat, they bookmark your site, forget about it overnight, and google again tomorrow — finding someone else. With AI Website Chat, the widget greets them: 'Hi, thanks for visiting! What plastering work are you looking for?' They describe the blown plaster and the opportunity to do the full ground floor. The AI captures the address, scope, and timeline. Friday morning, you call them before they have even had breakfast."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/plasterers/ai-receptionist/"
+  ctaHeadline="Stop Losing Website Visitors"
+  ctaSubhead="Your plastering portfolio attracts them. AI Website Chat captures them. Included at £${pricing.tiers.core.price}/month."
+/>

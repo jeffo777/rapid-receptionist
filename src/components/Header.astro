@@ -14,6 +14,14 @@ const currentPath = Astro.url.pathname;
     <!-- Desktop Nav -->
     <nav class="header__nav" aria-label="Main navigation" id="main-nav">
       <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a
+            href="/construction-trades/"
+            class:list={['header__nav-link', { active: currentPath.startsWith('/construction-trades') }]}
+          >
+            Construction Trades
+          </a>
+        </li>
         <li class="header__nav-item header__dropdown" id="features-dropdown-wrap">
           <button
             class="header__nav-link header__dropdown-trigger"
@@ -21,7 +29,7 @@ const currentPath = Astro.url.pathname;
             aria-haspopup="true"
             id="features-dropdown-btn"
           >
-            Features
+            Services
             <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -29,7 +37,7 @@ const currentPath = Astro.url.pathname;
           <div class="header__dropdown-menu" id="features-dropdown" role="menu">
             <div class="header__dropdown-grid">
               <a
-                href="/ai-receptionist-for-tradesmen/"
+                href="/construction-trades/"
                 class="header__dropdown-item"
                 role="menuitem"
               >
@@ -100,15 +108,16 @@ const currentPath = Astro.url.pathname;
   <div class="header__mobile-menu" id="mobile-menu" aria-hidden="true">
     <nav aria-label="Mobile navigation">
       <ul class="header__mobile-list">
+        <li><a href="/construction-trades/" class="header__mobile-link">Construction Trades</a></li>
         <li>
           <button class="header__mobile-dropdown-trigger" id="mobile-features-btn" aria-expanded="false">
-            Features
+            Services
             <svg class="header__dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
           <div class="header__mobile-dropdown" id="mobile-features-dropdown" aria-hidden="true">
-            <a href="/ai-receptionist-for-tradesmen/" class="header__mobile-dropdown-item">
+            <a href="/construction-trades/" class="header__mobile-dropdown-item">
               <span>🤖</span>
               <span>AI Receptionist</span>
             </a>

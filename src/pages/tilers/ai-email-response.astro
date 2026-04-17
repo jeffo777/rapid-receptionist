@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Instant Acknowledgement',
+    text: "Builders and designers email tiling specifications and expect a prompt response. Your AI sends an immediate acknowledgement confirming your tiling business has received the brief — while other tiling contractors leave the email unread."
+  },
+  {
+    icon: '📐',
+    title: 'Handles Detailed Specifications',
+    text: "Tiling emails often include room schedules, tile specifications, and layout drawings. The AI acknowledges the attachments and confirms receipt — buying your tiling company time to assess properly."
+  },
+  {
+    icon: '🏗️',
+    title: 'Wins Builder Confidence',
+    text: "When a builder sends a bathroom schedule to five tile fitters, the one who acknowledges first gets the trust. An instant reply puts your tiling contractor operation at the front."
+  },
+  {
+    icon: '🕐',
+    title: 'Out-of-Hours Coverage',
+    text: "Architects and project managers email at all hours. Your AI responds instantly — no enquiry sits in silence overnight or over a weekend."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional and Branded',
+    text: "The reply uses your business name and a professional tone. It shows the sender they are dealing with an organised tiling business."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Data Logged',
+    text: "Every email exchange is summarised and sent to you as a lead. No hunting through your inbox."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI Email Response work for tiling businesses?",
+    answer: "When someone emails your business, the AI sends an instant, professional acknowledgement. It includes your business name and tells the sender when to expect a full response. Works for tiling contractors, tile fitters, and tiling companies of all sizes."
+  },
+  {
+    question: "Does it reply to every email?",
+    answer: "It acknowledges inbound enquiries — new tiling requests, specifications, and quote requests. It does not reply to spam, marketing, or existing threads."
+  },
+  {
+    question: "Can it handle emails with tile schedules and drawings?",
+    answer: "Yes. If a builder sends room schedules or drawings, the AI acknowledges receipt and confirms your tiling business will review them."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI Email is an add-on at £${pricing.addOn.price}/month. Pair with the Core plan (£${pricing.tiers.core.price}/month) or get everything at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Does it work with my existing email?",
+    answer: "Yes. Email forwarding is configured so enquiries to your existing address are picked up by the AI."
+  },
+  {
+    question: "Is email data secure?",
+    answer: "Yes. All email data is managed under UK GDPR, encrypted, and stored on UK and EU servers."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Tilers | Rapid Receptionist"
+  description="AI email response for UK tilers, tiling contractors, tile fitters, and tiling businesses. Instantly acknowledges tiling specifications and quote requests from builders and designers. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/tilers/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Tiler"
+  tradeNamePlural="Tilers"
+  tradeSlug="tilers"
+  headline="AI Email Response for Tilers"
+  accentWord="Tilers"
+  subhead="A builder emails your tiling company with a bathroom schedule for eight new-build plots — wall tiles, floor tiles, and wet room specifications. Instead of that email sitting unread, the builder gets an instant acknowledgement and your tiling business reviews the schedule at the weekend."
+  scenario="It is Wednesday at 4pm. A site manager for a regional housebuilder emails your business: 'We need tiling subcontractors for phase 3 of a 16-unit development in Warrington. Full bathroom tiling — wall and floor — to all units, plus en-suite wet rooms to the four-bed plots. Tile schedule attached. Could you confirm availability and day rate?' You are on a domestic job and will not check email until Friday. Without AI Email, the site manager hears nothing for two days. She emails three other tiling contractors on Thursday morning. With AI Email Response, she gets an immediate reply: 'Thank you for your enquiry regarding the Warrington development. We have received the tile schedule and will review the specification. We will respond with availability and rates within 48 hours. If you need to discuss sooner, please call us on [number].' She marks you as responsive. Friday evening, you review the schedule, calculate your rates, and reply Saturday morning — first in the queue."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/tilers/ai-receptionist/"
+  ctaHeadline="Stop Losing Email Enquiries"
+  ctaSubhead="A builder's specification deserves an immediate acknowledgement. Your AI delivers it. £${pricing.addOn.price}/month."
+/>

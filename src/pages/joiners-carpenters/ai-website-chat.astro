@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Visitors Researching Joiners',
+    text: "Homeowners comparing joinery businesses online visit multiple websites before choosing. The chat widget engages them the moment they land on yours — before they click away to the next carpentry contractor."
+  },
+  {
+    icon: '📐',
+    title: 'Captures Joinery-Specific Details',
+    text: "The AI asks the right questions for carpentry and joinery enquiries — what type of work, the room or area, timber preferences, rough dimensions, and the customer's timeline. You receive a lead with genuine substance."
+  },
+  {
+    icon: '♾️',
+    title: 'Unlimited Conversations',
+    text: "No cap on chat sessions. Whether your joinery business website generates 2 leads or 25 a month, every visitor is engaged without additional charges."
+  },
+  {
+    icon: '📱',
+    title: 'Works on Every Device',
+    text: "The widget loads fast on mobile and desktop. Most homeowners browse on their phones — particularly in the evening when they are planning renovations. The experience is clean on any screen."
+  },
+  {
+    icon: '🕐',
+    title: '24/7 Engagement',
+    text: "Visitors do not keep workshop hours. Someone browsing joinery contractors at 11pm on a Sunday gets the same instant engagement as someone browsing at 10am on a Tuesday."
+  },
+  {
+    icon: '🎨',
+    title: 'Branded to Your Business',
+    text: "The chat widget uses your business name and brand colours. It looks like a natural part of your carpentry company website — not a generic bolt-on."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does website chat work for joiners and carpenters?",
+    answer: "A chat widget appears on your website. When a visitor clicks it, the AI greets them and has a conversation about their joinery needs — fitted wardrobes, doors, staircases, shelving, first fix, second fix. It captures their name, phone number, location, and timeline, then sends you a lead summary."
+  },
+  {
+    question: "Do I need to monitor the chat myself?",
+    answer: "No. The AI handles every conversation autonomously. You review the lead summaries at your convenience — no need to sit watching a screen."
+  },
+  {
+    question: "What if a visitor asks for a quote through the chat?",
+    answer: "The AI does not quote jobs. Joinery pricing depends on materials, complexity, finish, and installation time. The AI captures the details and passes the lead for your personal assessment."
+  },
+  {
+    question: "Is website chat included in the base price?",
+    answer: `Yes. Unlimited website chat is included in the Core plan at £${pricing.tiers.core.price}/month alongside phone answering. The same price whether you are a sole trader joiner or a larger joinery company.`
+  },
+  {
+    question: "Will it slow my website down?",
+    answer: "No. The widget is lightweight and loads asynchronously. It has no impact on your page speed or search rankings."
+  },
+  {
+    question: "How is chat data protected?",
+    answer: "All data from chat conversations is encrypted, stored on UK and EU servers, and shared only with you. Fully compliant with UK GDPR."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Joiners & Carpenters | Rapid Receptionist"
+  description="AI website chat for UK joiners, carpenters, and joinery businesses. Engages visitors with carpentry-specific questions, captures lead details 24/7. Unlimited messages included."
+  canonicalUrl="/joiners-carpenters/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Joiner"
+  tradeNamePlural="Joiners & Carpenters"
+  tradeSlug="joiners-carpenters"
+  headline="AI Website Chat for Joiners & Carpenters"
+  accentWord="Joiners"
+  subhead="A homeowner lands on your joinery business website at 9pm, impressed by your portfolio of bespoke staircases. They want to know if you cover their area and whether you work with reclaimed oak. Instead of leaving, they chat with your AI — and by morning your carpentry company has a fully qualified lead."
+  scenario="It is 10pm on a Thursday. A couple in Wilmslow are renovating their Edwardian semi and want a joiner who can build floor-to-ceiling fitted bookcases for the alcoves either side of their chimney breast. They have spent the evening browsing joiners' websites and yours stands out — the portfolio shows exactly the kind of work they want. They need to know whether you can match the existing skirting profile and if you work with American black walnut. Without website chat, they bookmark the tab and plan to call tomorrow — but tomorrow comes and they forget. With AI Website Chat, the widget greets them: 'Hi, what joinery work are you looking for?' They describe the alcove units, mention the walnut, and ask about matching profiles. The AI captures the room dimensions, their postcode, and phone number. Friday morning, you call them before they have even started their second search."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/joiners-carpenters/ai-receptionist/"
+  ctaHeadline="Stop Losing Website Visitors"
+  ctaSubhead="Your joinery portfolio attracted them. The AI captures them. Included at £${pricing.tiers.core.price}/month."
+/>

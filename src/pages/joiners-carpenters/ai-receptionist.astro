@@ -1,0 +1,106 @@
+﻿---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A homeowner calls about fitting a bespoke oak staircase in their Victorian terrace renovation. You are routing a window board on the other side of town and cannot hear over the router. They get voicemail, decide you are too busy, and call the next joinery business on Google.",
+    with: "Your AI receptionist answers: 'Good morning, thank you for calling. How can I help?' It captures the staircase style, the property type, the customer's renovation timeline, and their contact details. By the time you switch off the router, the lead is in your inbox with everything you need."
+  },
+  {
+    without: "A builder emails asking if your carpentry business can price first and second fix on a four-bedroom new build — door linings, skirting, architraves, kitchen carcasses, and loft boarding. You are on site all week and do not check email until Saturday. Two other carpentry contractors have already submitted prices.",
+    with: "The builder gets an instant acknowledgement confirming you have received the specification. You review the drawings Saturday morning, run your measurements, and submit your price before any other joinery contractor has even opened the email."
+  },
+  {
+    without: "A previous customer recommends your carpentry company in a local Facebook group. Someone messages your page asking about a fitted wardrobe with sliding doors. The message sits unread for four days.",
+    with: "The Facebook message gets an instant reply capturing the enquirer's room dimensions, finish preferences, and postcode. You follow up with a call the next morning — before they have had time to message another joinery business."
+  }
+];
+
+const specialisms = [
+  {
+    category: "First & Second Fix Carpentry",
+    items: ["Stud walls and partitions", "Door hanging and lining installation", "Skirting, architrave, and dado rail", "Window board fitting", "Loft boarding and hatch installation", "Stair installation and balustrade fitting"]
+  },
+  {
+    category: "Bespoke Joinery",
+    items: ["Fitted wardrobes and storage solutions", "Bespoke shelving and alcove units", "Custom staircases and handrails", "Kitchen and utility carcasses", "Window seats and bay window joinery", "Bespoke doors — internal, external, and bi-fold"]
+  },
+  {
+    category: "Specialist & Restoration",
+    items: ["Period property restoration", "Sash window repair and draught-proofing", "Heritage joinery and conservation work", "Timber frame repairs", "Shopfitting and commercial joinery", "Timber cladding and external carpentry"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Domestic Homeowners",
+    description: "Homeowners looking for a joiner, a carpentry contractor, or a local joinery business to handle fitted furniture, new doors, staircases, or renovation work. They want someone skilled, reliable, and responsive — and they often call several carpentry companies before choosing."
+  },
+  {
+    icon: "🏗️",
+    title: "Builders & Main Contractors",
+    description: "Site managers sourcing carpentry subcontractors for first fix, second fix, or both on new builds and extensions. They need fast availability confirmations from reliable joinery contractors and work to tight programme schedules."
+  },
+  {
+    icon: "🏢",
+    title: "Architects & Interior Designers",
+    description: "Architects and designers specifying bespoke joinery — custom staircases, feature panelling, built-in furniture. They want a joinery business that communicates professionally and can interpret detailed drawings."
+  },
+  {
+    icon: "🏛️",
+    title: "Heritage & Conservation Projects",
+    description: "Conservation officers, period property owners, and architects needing specialist joinery for listed buildings — sash window restoration, period door reproduction, heritage timber repairs. These enquiries require a carpentry business with proven restoration credentials."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI understand joinery and carpentry terminology?",
+    answer: "During setup, your AI receptionist is configured with joinery-specific vocabulary — first fix, second fix, door linings, architrave, skirting, window boards, stud walls, softwood, hardwood, MDF, tongue-and-groove, mortise-and-tenon, and more. When a homeowner says 'the door frame has dropped and the door is sticking,' the AI understands and captures the issue correctly. Whether they call you a joiner, a carpenter, a joinery contractor, or a carpentry business, the AI handles the conversation."
+  },
+  {
+    question: "Can the AI handle enquiries for both carpentry and bespoke joinery?",
+    answer: "Yes. Whether the caller needs a door hanging, first fix on a new build, a bespoke staircase, or a fitted wardrobe designed and installed, the AI captures the details. It does not differentiate between a quick second fix job and a six-week bespoke joinery commission — it records what the customer describes and sends the full summary to you."
+  },
+  {
+    question: "What happens if someone calls about an emergency — like a broken door or security boarding?",
+    answer: "The AI recognises urgent language. If a caller describes a front door that will not close, a broken lock, or a property that needs emergency boarding after a break-in, the AI escalates immediately — trying your mobile first, then passing to our human operators if you are unreachable. Routine joinery and carpentry enquiries are captured as standard leads."
+  },
+  {
+    question: "How much does it cost for a joinery business or carpentry contractor?",
+    answer: `The Core plan is £${pricing.tiers.core.price}/month and includes AI phone answering (300 minutes) plus unlimited website chat. Additional channels — WhatsApp, SMS, Facebook, Instagram, email, and missed call text-back — are £${pricing.addOn.price}/month each. The All Channels bundle is £${pricing.tiers.all.price}/month. The pricing is the same whether you are a sole trader joiner, a carpentry contractor with employees, or a joinery company handling commercial work. There is a one-time setup fee of £${pricing.setup.price} (refundable within 30 days).`
+  },
+  {
+    question: "Is this suitable for a small carpentry business or sole trader joiner?",
+    answer: "Absolutely. Whether you are a one-man joinery business working from a home workshop, a carpentry contractor with an apprentice, or a larger joinery firm handling new-build contracts — this was built for you. Sole trader joiners and carpenters are exactly who this was designed for. You are on site all day with sawdust in your ears. You cannot answer the phone. The AI catches every call."
+  },
+  {
+    question: "Can the AI quote joinery work?",
+    answer: "No — and that is deliberate. Joinery pricing depends on materials (softwood vs hardwood vs MDF), complexity, finish, and installation time. The AI captures the details and passes the lead to you. You handle the quoting based on your expertise and a proper assessment of what is needed."
+  },
+  {
+    question: "How does Rapid Receptionist protect my customers' personal data?",
+    answer: "All data captured — names, numbers, addresses, job details — is managed under UK GDPR and the Data Protection Act 2018. Data is encrypted in transit and at rest, stored on UK and EU servers, and shared only with you. We never sell, share, or repurpose enquiry data. You remain the data controller; we act as your data processor under a formal agreement."
+  }
+];
+---
+
+<TradeHubLayout
+  title="Rapid Response AI Receptionist for Joiners & Carpenters | Rapid Receptionist"
+  description="AI receptionist for UK joiners, carpenters, joinery businesses, and carpentry contractors. Answers calls, captures leads from chat, WhatsApp, Facebook and more — while you are on the tools. From £${pricing.tiers.core.price}/month."
+  canonicalUrl="/joiners-carpenters/ai-receptionist/"
+  tradeName="Joiner"
+  tradeNamePlural="Joiners & Carpenters"
+  tradeSlug="joiners-carpenters"
+  headline="The Rapid Response AI Receptionist for Joiners & Carpenters"
+  accentWord="Joiners"
+  subhead="Whether you run a one-man joinery business or a carpentry contractor with a full team, you cannot answer the phone while the router is running. Your AI receptionist answers every call, captures every lead from chat, WhatsApp, and social media, and sends you the details while your carpentry company keeps building. From £${pricing.tiers.core.price}/month."
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="Stop Losing Joinery Jobs to Missed Calls"
+  ctaSubhead="Every call your carpentry business misses is a customer calling the next joinery contractor. From £${pricing.tiers.core.price}/month — respond first, win the work."
+/>

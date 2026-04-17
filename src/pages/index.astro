@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import pricing from '../data/pricing.json';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
@@ -7,7 +8,7 @@ import SpeedBanner from '../components/SpeedBanner.astro';
 import StepsGrid from '../components/StepsGrid.astro';
 import FeatureGrid from '../components/FeatureGrid.astro';
 import TrustSection from '../components/TrustSection.astro';
-import TestimonialSlider from '../components/TestimonialSlider.astro';
+import StatisticsSection from '../components/StatisticsSection.astro';
 import FAQAccordion from '../components/FAQAccordion.astro';
 import CTASection from '../components/CTASection.astro';
 import CookieConsent from '../components/CookieConsent.astro';
@@ -17,18 +18,18 @@ import trades from '../data/trades.json';
 const steps = [
   {
     number: 1,
-    title: 'We Set Everything Up',
-    description: "Tell us your trade, your business name, and the services you offer. We configure your AI receptionist across your chosen channels — fully done for you. You don't lift a finger."
+    title: 'Tell Us About Your Trade',
+    description: "Share your trade, your business name, and the services you provide. Whether you're a plasterer doing domestic skims or a steelworker handling commercial contracts — we configure your AI receptionist to match. Fully done for you."
   },
   {
     number: 2,
     title: 'Your AI Goes Live',
-    description: "From the moment we switch it on, every call, message, and enquiry is handled instantly. Your AI answers with your business name, captures lead details, and triages urgent jobs — 24/7/365."
+    description: "From the moment we switch it on, every call, message, and enquiry gets an instant, professional response. Your AI answers with your business name, captures lead details, and triages urgent work — 24/7/365, weekends and bank holidays included."
   },
   {
     number: 3,
     title: 'You Win More Work',
-    description: "Every lead is captured and sent straight to you with full details. No more missed calls, no more voicemail, no more customers calling competitors while you're on a job."
+    description: "Every lead is captured and sent straight to you with full details. No more missed calls while you're tiling a bathroom, no more voicemails from customers who'll never call back, no more lost revenue from leads that went to a competitor."
   }
 ];
 
@@ -40,72 +41,79 @@ const features = channels.map(ch => ({
   href: ch.pageUrl,
 }));
 
+/* Group trades by category for the directory section */
+const tradesByCategory = trades.reduce((acc: Record<string, typeof trades>, trade) => {
+  if (!acc[trade.category]) acc[trade.category] = [];
+  acc[trade.category].push(trade);
+  return acc;
+}, {} as Record<string, typeof trades>);
+
 const faqs = [
   {
     question: "What exactly is Rapid Receptionist?",
-    answer: "Rapid Receptionist is an AI-powered answering service built specifically for UK tradesmen. It answers your calls, messages, and enquiries across up to 8 channels — phone, website chat, WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back. It captures lead details, understands the nature of the work, assesses urgency, and escalates emergencies. Available 24/7/365, including bank holidays and weekends. Start with phone and chat at £99/month, then add any extra channels you need at £19/month each."
+    answer: `Rapid Receptionist is an AI-powered answering service engineered for UK construction trades. It handles calls, messages, and enquiries across up to 8 channels — phone, website chat, WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back. The AI captures lead details, understands the nature of the work, distinguishes between a re-render and a patch repair, and escalates genuine emergencies. It runs 24/7/365, including bank holidays, weekends, and those dark January mornings when the phone rings at 6am. Core plan starts at £${pricing.tiers.core.price}/month with phone and chat; add extra channels at £${pricing.addOn.price}/month each.`
   },
   {
     question: "How is this different from voicemail or a virtual receptionist?",
-    answer: "Voicemail is where leads go to die — 85% of callers who reach voicemail will never call back, and 80% won't even leave a message. A traditional virtual receptionist costs £200-500/month, works limited hours, and only covers phone. Rapid Receptionist answers instantly across up to 8 channels, 24/7, from just £99/month. It captures more detail than most human receptionists, never takes a sick day, and never puts a caller on hold."
+    answer: `Voicemail is where leads go to die — 85% of callers who reach voicemail never call back, and 80% won't even leave a message. A traditional virtual receptionist costs £200-500/month, works limited hours, and only covers phone. Rapid Receptionist answers instantly across up to 8 channels, 24/7, from £${pricing.tiers.core.price}/month. It captures more detail than most human receptionists, never takes a sick day, and never puts your caller on hold while they deal with another client.`
   },
   {
-    question: "Which trades do you support?",
-    answer: `We serve 13 UK trades: ${trades.map(t => t.name).join(', ')}. Each trade gets a custom-configured AI receptionist that speaks the trade's language — it knows the difference between a rewire and a socket addition, a boiler service and a gas leak. The AI is trained with trade-specific vocabulary so your customers get a professional, knowledgeable first response.`
+    question: "Which construction trades does Rapid Receptionist cover?",
+    answer: `We serve 46 construction trades across the UK — from groundworkers and bricklayers through to plasterers, tilers, roofers, and specialist trades like asbestos removal and fire protection. Each trade gets a custom-configured AI receptionist that speaks the trade's specific language. It knows the difference between a skim and a render, between first fix and second fix, between a GRP flat roof and a torch-on felt system. Your customers get a knowledgeable, professional first response every time.`
   },
   {
     question: "What does the AI actually say when someone calls my business?",
-    answer: "Your AI receptionist answers with your business name — 'Good afternoon, thank you for calling Smith's Plumbing, how can I help you today?' It then has a natural conversation to capture the caller's name, contact details, location, and the nature of the work. It assesses whether the job is urgent or routine, and either escalates emergencies to you directly or lets the caller know you'll be in touch when you're free. It never provides quotes, diagnoses faults, or books appointments — those decisions stay with you."
+    answer: "Your AI receptionist answers with your business name — 'Good afternoon, thank you for calling Marshall Brickwork, how can I help you today?' It then has a natural conversation to understand the caller's name, contact details, location, the nature of the work, and its urgency. It distinguishes between a homeowner wanting a garden wall quoted and a site manager needing brickies for a housing plot starting Monday. Emergencies are escalated immediately; routine enquiries are captured in full and sent straight to you."
   },
   {
     question: "What about channels other than phone — WhatsApp, email, social media?",
-    answer: "Phone and website chat are fully conversational — the AI has a real back-and-forth exchange. The other channels (WhatsApp, SMS, email, Facebook Messenger, and Instagram DMs) operate on a one-reply model: the AI captures details from the customer's message, sends one professional response acknowledging the enquiry, and lets them know you'll be in touch. Each messaging channel is available at £19/month — pick just the ones your customers actually use."
+    answer: `Phone and website chat are fully conversational — the AI has a real back-and-forth exchange, just like a human receptionist. The other channels (WhatsApp, SMS, email, Facebook Messenger, and Instagram DMs) use a one-reply model: the AI reads the customer's message, captures the details, sends one professional response acknowledging the enquiry, and confirms you'll be in touch. Each messaging channel costs £${pricing.addOn.price}/month — choose only the ones your customers actually use, or grab everything for £${pricing.tiers.all.price}/month with the All Channels bundle.`
   },
   {
     question: "What happens if a caller has a genuine emergency?",
-    answer: "The AI assesses urgency during every interaction. If it detects an emergency — like a gas leak, burst pipe, electrical hazard, or a vulnerable person in danger — it escalates immediately. First, it tries to reach you directly on your mobile. If you can't be reached, it's passed to our dedicated Rapid Receptionist human operators who take over the call. Your customers never get stuck in a loop. When it matters most, a real person steps in."
+    answer: "The AI assesses urgency during every interaction. If it detects an emergency — a burst pipe flooding a kitchen, a gas smell in a boiler room, an electrical fault in a consumer unit, a collapsed ceiling — it escalates immediately. First, it tries to reach you directly on your mobile. If you can't be reached, the call is passed to our dedicated Rapid Receptionist human operators who take over. Your customers never get stuck in a loop. When it matters most, a real person steps in."
   },
   {
-    question: "How much does it cost and what's the catch?",
-    answer: "The Core plan is £99/month and covers AI phone answering with 300 minutes of talk time plus unlimited website chat — the two channels where you lose the most leads. Need WhatsApp, SMS, email, Facebook, or Instagram too? Each extra channel is £19/month, or grab everything for £179/month with the All Channels bundle. One-time £299 setup fee covers the full done-for-you configuration. No contracts — cancel anytime. And everything is covered by a 30-day money-back guarantee."
+    question: "How much does Rapid Receptionist cost?",
+    answer: `The Core plan is £${pricing.tiers.core.price}/month and covers AI phone answering (300 minutes of talk time) plus unlimited website chat — the two channels where construction businesses lose the most leads. Need WhatsApp, SMS, email, Facebook, or Instagram too? Each extra channel is £${pricing.addOn.price}/month, or get everything for £${pricing.tiers.all.price}/month with the All Channels bundle. There's a one-time £${pricing.setup.price} setup fee that covers your full done-for-you configuration. No contracts, cancel anytime, and a 30-day money-back guarantee covers the lot.`
   },
   {
     question: "Why should I trust an AI to answer my business calls?",
-    answer: "Because the alternative is worse. Research shows that 62% of calls to trade businesses go unanswered, and the average tradesman loses around £24,000 a year from missed calls alone. Your customers aren't leaving voicemails — they're calling your competitor. Rapid Receptionist answers every single call, instantly, professionally, with your business name. And if the AI ever reaches its limits, a real human steps in. You're not replacing yourself — you're covering the gaps when you can't get to the phone."
+    answer: "Because the alternative is worse. Industry data shows that 62% of calls to construction businesses go unanswered, and the average contractor loses around £24,000 a year from missed calls alone. Your customers aren't leaving voicemails — they're calling the next tradesperson on Google. Rapid Receptionist answers every single call, instantly, professionally, with your business name. And if the AI ever reaches its limits, a real human steps in. You're not replacing yourself — you're covering the gaps when you can't get to the phone because you're fitting a kitchen, boarding a loft, or managing three subcontractors on a rear extension."
   },
   {
     question: "How long does setup take?",
-    answer: "Most businesses are fully live within 48 hours. We handle everything — connecting your channels, configuring the AI with your business details and services, testing every response. You tell us about your business, and we do the rest. It's a genuine done-for-you setup, not a 'here's your login, good luck' situation."
+    answer: "Most construction businesses are fully live within 48 hours. We handle everything — connecting your channels, configuring the AI with your business details, trade-specific terminology, and services, then testing every response across every channel. You tell us about your business, and we do the rest. This is a genuine done-for-you setup, not a DIY chatbot builder with a login and a blank screen."
   },
   {
     question: "Can I try it before I commit?",
-    answer: "We don't offer a free trial — and here's why. A trial gives you a watered-down version with limited features, which doesn't show you what the service actually does. Instead, we give you the full service from day one, configured properly for your trade, with a 30-day money-back guarantee. If you don't see a benefit within 30 days, we refund everything — the £99 monthly fee and the £299 setup fee. You see the real thing, properly set up, with zero risk."
+    answer: `We don't offer a free trial — and here's why. A trial gives you a stripped-down version with limited capability, which doesn't show you what the service actually does when it's configured for your trade. Instead, we give you the full service from day one, properly configured for your specific construction trade, with a 30-day money-back guarantee. If you don't see a benefit within 30 days, we refund everything — the £${pricing.tiers.core.price} monthly fee and the £${pricing.setup.price} setup fee. You see the real thing, properly set up, with zero risk.`
   },
   {
     question: "How does Rapid Receptionist handle data protection and GDPR?",
-    answer: "Rapid Receptionist is fully compliant with UK GDPR and the Data Protection Act 2018. All customer data captured by your AI receptionist — names, phone numbers, locations, job details — is encrypted in transit and at rest, stored on secure UK/EU-based servers, and shared only with you. We never sell, trade, or use personal data for marketing. Both you and your customers can request data deletion at any time. As the tradesman, you remain the data controller for your customer data; we act as your data processor, handling it strictly according to our data processing agreement. Our full privacy policy is available at <a href='/privacy/'>rapidreceptionist.co.uk/privacy</a>."
+    answer: "Rapid Receptionist operates in full compliance with UK GDPR and the Data Protection Act 2018. All client data captured by your AI receptionist — names, contact numbers, property addresses, project specifics — is encrypted in transit and at rest, held on secure UK/EU-based servers, and shared only with you. We never sell, trade, or repurpose personal data. Both you and your clients can request data deletion at any point. You remain the data controller for all client information; we act as your data processor under a formal data processing agreement. Our full privacy policy is available at <a href='/privacy/'>rapidreceptionist.co.uk/privacy</a>."
   }
 ];
 ---
 
 <BaseLayout
-  title="AI Receptionist for UK Tradesmen — Never Miss a Job | Rapid Receptionist"
-  description="AI receptionist for UK tradesmen. Answers calls and website chat 24/7 from £99/mo. Add WhatsApp, SMS, email and social channels from £19/mo each. 30-day money-back guarantee."
+  title="Rapid Response AI Receptionist for UK Construction Trades | Rapid Receptionist"
+  description=`The rapid response AI receptionist built for 46 UK construction trades. Answers calls and website chat 24/7 from £${pricing.tiers.core.price}/mo. Add WhatsApp, SMS, email and social channels from £${pricing.addOn.price}/mo each. 30-day money-back guarantee.`
   canonicalUrl="/"
 >
   <Header slot="header" />
 
   <!-- Hero -->
   <HeroSection
-    headline="The AI Receptionist Built for UK Tradesmen. Always On."
-    accentWord="Always On"
-    subhead="Up to 8 channels. 24/7/365. Every call answered, every message captured, every lead secured — while you're on the tools. Built for UK tradesmen who can't afford to miss work."
+    headline="The Rapid Response AI Receptionist for UK Construction Trades"
+    accentWord="Rapid Response"
+    subhead="Your phone rings while you're mid-job. Your competitor answers theirs. Unless Rapid Receptionist answers yours first. 46 construction trades. Up to 8 channels. 24/7/365."
   />
 
   <!-- Speed-to-Lead Banner -->
   <SpeedBanner
-    stat="78% of customers hire the first business to respond."
-    text="When you're up a ladder, under a boiler, or inside a consumer unit — Rapid Receptionist makes sure that first responder is still you."
+    stat="78% of customers hire the first contractor to respond."
+    text="Whether you're skimming a ceiling, wiring a consumer unit, or laying block paving in the rain — Rapid Receptionist makes sure that first responder is always you."
   />
 
   <!-- How It Works -->
@@ -114,11 +122,41 @@ const faqs = [
   <!-- What's Included — Channels -->
   <FeatureGrid features={features} columns={3} />
 
+  <!-- Construction Industry Statistics -->
+  <StatisticsSection />
+
+  <!-- Trade Directory Preview -->
+  <section class="section section--alt" id="trades-served">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge--trust section-header__badge">46 Construction Trades</span>
+        <h2>Built for <span class="text-accent">Every Construction Trade</span></h2>
+        <p>From groundworkers to glaziers, every trade gets a bespoke AI receptionist configured with trade-specific vocabulary and scenarios.</p>
+      </div>
+
+      {Object.entries(tradesByCategory).map(([category, categoryTrades]) => (
+        <div class="trade-category">
+          <h3 class="trade-category__title">{category}</h3>
+          <div class="trades-grid">
+            {categoryTrades.map((trade) => (
+              <a href={`/construction-trades/${trade.slug}/ai-receptionist/`} class="trade-link-card fade-in">
+                <span class="trade-link-card__icon">{trade.icon}</span>
+                <span class="trade-link-card__name">{trade.name}</span>
+                <span class="trade-link-card__arrow">→</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <div class="trade-cta">
+        <a href="/construction-trades/" class="btn btn--outline btn--lg">View All 46 Construction Trades</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Trust Section -->
   <TrustSection />
-
-  <!-- Testimonials -->
-  <TestimonialSlider />
 
   <!-- FAQs -->
   <FAQAccordion faqs={faqs} />
@@ -131,3 +169,81 @@ const faqs = [
 
   <Footer slot="footer" />
 </BaseLayout>
+
+<style>
+  .trade-category {
+    margin-bottom: var(--space-8);
+  }
+
+  .trade-category__title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--color-accent);
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .trades-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-3);
+  }
+
+  .trade-link-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    transition: border-color var(--transition-fast), color var(--transition-fast), background var(--transition-fast);
+  }
+
+  .trade-link-card:hover {
+    border-color: var(--color-border-accent);
+    color: var(--color-text-primary);
+    background: var(--color-accent-subtle);
+  }
+
+  .trade-link-card__icon {
+    font-size: var(--text-lg);
+    flex-shrink: 0;
+  }
+
+  .trade-link-card__name {
+    flex: 1;
+  }
+
+  .trade-link-card__arrow {
+    color: var(--color-accent);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+  }
+
+  .trade-link-card:hover .trade-link-card__arrow {
+    opacity: 1;
+  }
+
+  .trade-cta {
+    text-align: center;
+    margin-top: var(--space-8);
+  }
+
+  @media (max-width: 768px) {
+    .trades-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .trades-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

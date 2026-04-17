@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📸',
+    title: 'Photo Enquiries Are Common for Brickwork',
+    text: "Cracked pointing, spalling bricks, leaning walls — customers love sending photos of the problem. The AI acknowledges them and includes everything in your lead. You see the damage before picking up the phone."
+  },
+  {
+    icon: '⚡',
+    title: 'Instant Reply From a Dusty Site',
+    text: "You cannot type a WhatsApp reply with cement-covered hands. The AI handles the response in seconds — professional, detailed, and ready to go while you keep laying."
+  },
+  {
+    icon: '📱',
+    title: 'Where Property Managers Message',
+    text: "Commercial property managers and letting agents increasingly use WhatsApp for trade enquiries. It is quick, informal, and lets them attach photos. If you are not responding, they move on."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Weekend and Evening Messages',
+    text: "WhatsApp enquiries peak outside working hours. A homeowner messaging at 8pm about a crumbling garden wall is a genuine lead that deserves an instant response."
+  },
+  {
+    icon: '🔒',
+    title: 'Business Number, Personal Life',
+    text: "Messages come through your business line, not your personal mobile. Work stays separate from your evenings and weekends."
+  },
+  {
+    icon: '🔔',
+    title: 'No Message Goes Unread',
+    text: "Every WhatsApp message gets an instant reply — 7am, 11pm, bank holiday Monday. No more waking up to a string of unread messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does AI WhatsApp work for bricklayers?",
+    answer: "When a customer WhatsApps your business number, the AI reads the message, identifies the enquiry, and sends one professional reply within seconds. It captures the caller's details and what they need, and sends you the full lead including any photos."
+  },
+  {
+    question: "What kind of brickwork enquiries come through WhatsApp?",
+    answer: "Photos of cracked pointing, leaning garden walls, spalling brick, damaged chimney stacks, and boundary walls are the most common. Many customers also send availability checks and follow-ups from van signage or recommendations."
+  },
+  {
+    question: "Does the AI have a full WhatsApp conversation?",
+    answer: "No — one professional reply per message. It captures the lead and sets expectations. Full conversational AI is available on phone and website chat."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `AI WhatsApp is an add-on at £${pricing.addOn.price}/month. Pair it with the Core plan (£${pricing.tiers.core.price}/month) or the All Channels bundle at £${pricing.tiers.all.price}/month.`
+  },
+  {
+    question: "Can I reply to WhatsApp messages myself when free?",
+    answer: "Yes. The AI handles messages when you are on site. When you are free, you respond directly from WhatsApp Business as normal."
+  },
+  {
+    question: "Is WhatsApp data handled under GDPR?",
+    answer: "Yes. All data including photos is encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Bricklayers | Rapid Receptionist"
+  description="AI WhatsApp for UK bricklayers and bricklaying contractors. Responds instantly to WhatsApp enquiries with photos of brickwork damage. Ideal for bricklaying businesses. £${pricing.addOn.price}/month add-on."
+  canonicalUrl="/bricklayers/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Bricklayer"
+  tradeNamePlural="Bricklayers"
+  tradeSlug="bricklayers"
+  headline="AI WhatsApp for Bricklayers"
+  accentWord="Bricklayers"
+  subhead="A homeowner spots crumbling pointing on their Victorian terrace and WhatsApps your bricklaying business with three photos. Instead of that message sitting unread, your AI replies in seconds — acknowledging the photos and capturing the lead. Designed for bricklaying contractors and brickwork companies who are too busy on site to check messages."
+  scenario="It is Sunday morning. A retired couple in Altrincham notice that several bricks on their front garden wall have cracked after the frost. They take four photos — two close-ups of the cracked bricks, one of the whole wall, one showing how the coping stones have shifted. They find your number on a local Facebook recommendation and WhatsApp you: 'Hi, can you have a look at this? The wall has been like it since the frost. Do you do repairs or would the whole thing need rebuilding?' Without AI WhatsApp, that message sits until Monday evening when you finally check your phone. By then, they have had a reply from another bricklayer who quoted over text. With AI WhatsApp, they get a response in seconds: 'Thanks for your message and the photos. We can see the frost damage and will review properly. Could you confirm your postcode and whether you have off-street parking for access? We will arrange a call today.' They reply with the details. Monday morning, you call and book a site visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/bricklayers/ai-receptionist/"
+  ctaHeadline="Stop Ignoring WhatsApp Brickwork Enquiries"
+  ctaSubhead="Every unread message is a wall someone else will repair. £${pricing.addOn.price}/month."
+/>

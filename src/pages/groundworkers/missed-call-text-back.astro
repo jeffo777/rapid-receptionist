@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '🛡️',
+    title: 'Catches What the AI Misses',
+    text: "No system catches every call. One-ring hangups, signal drops in trenches, callers who disconnect before the AI picks up — the text-back catches them all within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Resets the Competition Clock',
+    text: "A caller who hangs up will try the next groundworker within thirty seconds. A text that arrives immediately stops that behaviour dead."
+  },
+  {
+    icon: '🚫',
+    title: 'Keeps Callers From Moving On',
+    text: "Most people who reach voicemail never call back. A professional text tells them: we are real, we are busy, and we are coming back to you."
+  },
+  {
+    icon: '🏗️',
+    title: 'Built for Site Conditions',
+    text: "Deep trenches, noisy plant, safety-restricted zones — there are a hundred reasons you cannot answer a call on a groundwork site. This channel exists for every one of them."
+  },
+  {
+    icon: '💬',
+    title: 'Your Business, Your Message',
+    text: "The text includes your business name and a personalised message you approved during setup."
+  },
+  {
+    icon: '🔄',
+    title: 'Backup to AI Phone Answering',
+    text: "If the AI picks up, the text-back does not fire. If the call slips through, the text catches it. Two layers of protection."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the text-back activate?",
+    answer: "It fires when a call goes unanswered — whether the caller hung up too quickly, signal dropped, or you were unable to answer. The text is sent within seconds."
+  },
+  {
+    question: "What does the text say?",
+    answer: "It is customised with your business name. Example: 'Thanks for calling [Your Business]. Sorry we missed you — we are on a groundwork site. We will call back within the hour. Reply to this text if urgent.' You approve the wording."
+  },
+  {
+    question: "Does it replace phone answering?",
+    answer: "No — it sits behind it. AI Phone Answering catches most calls. The text-back catches the few that slip through."
+  },
+  {
+    question: "What if they reply to the text?",
+    answer: "If you have AI SMS, the reply is handled. If not, it comes to you directly."
+  },
+  {
+    question: "How much does it cost?",
+    answer: `Missed Call Text-Back is an add-on at £${pricing.addOn.price}/month.`
+  },
+  {
+    question: "Can I use it standalone?",
+    answer: `Yes. If you prefer to answer calls yourself and want a safety net for the ones you miss, it works on its own at £${pricing.addOn.price}/month.`
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text-Back for Groundworkers | Rapid Receptionist"
+  description="Missed call text-back for UK groundworkers, groundwork contractors, and groundworks businesses. Sends a professional text within seconds of a missed call. Stops builders calling the next groundwork company. £${pricing.addOn.price}/month."
+  canonicalUrl="/groundworkers/missed-call-text-back/"
+  channelName="Missed Call Text-Back"
+  tradeName="Groundworker"
+  tradeNamePlural="Groundworkers"
+  tradeSlug="groundworkers"
+  headline="Missed Call Text-Back for Groundworkers"
+  accentWord="Groundworkers"
+  subhead="You are at the controls of a six-tonne excavator when a builder calls about foundations for a new build. They hang up after two rings. Five seconds later, they get a text: 'Sorry we missed your call — we are on site. Back to you within the hour.' They wait. The next groundworker never gets the call."
+  scenario="It is 9:15am on a Tuesday. You are loading a dumper on a ten-plot development in Wigan — reversing up a ramp with a full bucket of spoil and both hands on the levers. A builder from a different firm calls about subcontract groundwork on a single-storey extension in Leigh — they need someone next Monday, just a day-and-a-half of foundation work with a quick drain connection. Your phone rings twice in the cab and goes to voicemail. The builder does not leave a message — he has five other groundworkers in his phone and starts calling down the list. Then his phone buzzes: 'Thanks for calling Greenfield Groundworks. Sorry we missed your call — we are operating plant on site. We will ring you back by 10:30. If it is urgent, reply to this text.' He puts his phone down and waits. At 10:15, you call him back from the site cabin. He describes the Leigh job. You confirm Monday availability. Job booked — from a call you never even answered."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/groundworkers/ai-receptionist/"
+  ctaHeadline="Stop Missed Calls Becoming Missed Jobs"
+  ctaSubhead="One text. Five seconds. The difference between losing a groundwork customer and keeping them. £${pricing.addOn.price}/month."
+/>

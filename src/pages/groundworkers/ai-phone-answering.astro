@@ -1,0 +1,84 @@
+﻿---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '⚡',
+    title: 'Answers Over the Noise of Plant',
+    text: "Between the digger engine, the dumper, and the compactor, you cannot hear your phone ring — let alone have a conversation. The AI answers every call with your business name while you keep the machine running."
+  },
+  {
+    icon: '🧠',
+    title: 'Understands Groundwork Enquiries',
+    text: "When a builder says 'we need the founds digging for a double-storey rear extension — strip foundations, stepped trench, sloping site,' the AI captures every detail. It knows the difference between a foundation query and a drainage job."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Emergencies Immediately',
+    text: "A collapsed sewer under a driveway. A retaining wall giving way after heavy rain. Flooding that needs urgent pumping. The AI recognises these as emergencies and escalates to your mobile, then to our human team if you are unreachable."
+  },
+  {
+    icon: '🕐',
+    title: 'Covers Early Starts and Late Finishes',
+    text: "Groundwork days often start at 7am and finish at 6pm. The AI covers the calls that come in while you are travelling to site, during setup, and after you have left — catching the homeowners who call outside builder hours."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Details That Save You Time',
+    text: "Every call is logged with caller name, number, site address, type of work, access details, and urgency. When you call back, you already know whether it is a domestic soakaway or foundations for a twelve-plot scheme."
+  },
+  {
+    icon: '🎯',
+    title: 'Professional First Impression',
+    text: "The AI answers as your business: 'Good morning, thank you for calling Hartley Groundworks, how can I help?' It tells callers you run an organised outfit — even when you are knee-deep in clay."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI say when a groundwork customer calls?",
+    answer: "It greets the caller with your business name and has a natural conversation. It asks about the work needed — foundations, drainage, excavation, hard landscaping — the site location, the timeline, and captures their contact details. The summary is sent to you as a structured lead."
+  },
+  {
+    question: "Can the AI handle calls from builders as well as homeowners?",
+    answer: "Yes. Builders calling about subcontract work, homeowners asking about garden drainage, developers needing foundation pricing — the AI captures them all. Every caller gets a professional experience and every lead reaches you with full details."
+  },
+  {
+    question: "How many talk minutes do I get?",
+    answer: "The Core plan includes 300 minutes of AI phone conversation time per month. For most groundwork firms, this covers the volume. Additional minutes are 20p each with no cap."
+  },
+  {
+    question: "Does the AI work with my existing business number?",
+    answer: "Yes. Call forwarding is set up from your existing number during onboarding. Your customers dial the same number — nothing changes for them."
+  },
+  {
+    question: "Can I still take calls myself?",
+    answer: "Yes. The AI only activates when you are unavailable. When you are free, calls come through to you as normal."
+  },
+  {
+    question: "How is caller data protected?",
+    answer: "All data is managed under UK GDPR. Names, numbers, site addresses, and job details are encrypted, stored on UK and EU servers, and shared only with you."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Groundworkers | Rapid Receptionist"
+  description="AI phone answering for UK groundworkers, groundwork contractors, and groundworks businesses. Answers every call with your business name, captures foundation and drainage enquiry details. 300 minutes included. From £${pricing.tiers.core.price}/month."
+  canonicalUrl="/groundworkers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Groundworker"
+  tradeNamePlural="Groundworkers"
+  tradeSlug="groundworkers"
+  headline="AI Phone Answering for Groundworkers"
+  accentWord="Groundworkers"
+  subhead="You are operating a three-tonne digger in a foundation trench when a builder calls about groundwork for a loft conversion with underpinning. Your AI answers, captures the site details and start date, and the lead is waiting when you park up."
+  scenario="It is 8:30am on a Wednesday. You are loading the mini digger off the trailer at a domestic site in Cheadle — the homeowner needs a soakaway dug in the back garden to solve persistent flooding. Your phone is in the cab and you are strapping down the machine. A site manager from a building firm calls: they need a groundwork gang for a two-storey side extension in Wilmslow — strip foundations on a sloping site, foul drain connection, and a new manhole. Start date is next Monday. Without AI Phone Answering, they hear your voicemail, assume you are already booked, and call the next groundworker on their list. With the AI: 'Good morning, thank you for calling, how can I help?' It captures the extension details, the sloping site issue, the drainage requirement, the Wilmslow postcode, and the Monday start date. You call the site manager at lunchtime with all the information in front of you and confirm availability."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/groundworkers/ai-receptionist/"
+  ctaHeadline="Stop Missing Groundwork Jobs"
+  ctaSubhead="Every missed call is a foundation that someone else will dig. From £${pricing.tiers.core.price}/month."
+/>
