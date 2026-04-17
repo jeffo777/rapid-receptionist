@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Handles Quick Availability Texts',
+    text: "Homeowners text to test the water — 'are you free to do a driveway in the next month?' A fast reply locks in the conversation. A half-day silence while you are on the compactor loses it. The AI responds within seconds, confirms your interest, and asks about the driveway size and postcode."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Briefs from Short Texts',
+    text: "A text saying 'need block paving driveway, 3 cars, dropped kerb, Didcot' is enough for the AI to work with — and it asks follow-ups about the current surface, colour preference, and available dates. Your lead summary is a complete brief, not a fragmented text chain."
+  },
+  {
+    icon: '🔔',
+    title: 'Catches Referral Texts',
+    text: "A neighbour who has just watched you install a driveway texts rather than calls — 'saw what you did across the road, brilliant job, can you come and measure ours?' Referral texts are the warmest leads in the driveway trade. The AI captures them instantly."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Hours',
+    text: "Driveway decisions happen in the evening — a couple agrees over dinner to finally replace the gravel. He texts three companies from the sofa. The AI responds to your message immediately, capturing the lead while the decision is fresh."
+  },
+  {
+    icon: '📋',
+    title: 'Consolidates Multi-text Threads',
+    text: "People text in bursts — 'want a new drive' then 'block paving' then 'about 45sqm' then 'in Bicester.' The AI waits for the thread to settle, processes everything, and sends one consolidated lead with the full scope."
+  },
+  {
+    icon: '📱',
+    title: 'Uses Your Business Number',
+    text: "AI SMS operates through your business number. Customers text your professional line and receive a professional response. Your personal phone stays private."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI respond to a driveway enquiry text?",
+    answer: "When a driveway enquiry arrives by text, the AI recognises the request and sends a professional reply — confirming interest and asking focused follow-ups. A detailed text like 'need resin driveway, 50sqm, OX14' gets logged immediately. A vague text like 'do you do drives?' prompts the AI to ask about materials, size, and location to build a useful lead summary."
+  },
+  {
+    question: "Will the sender realise it is an AI?",
+    answer: "The reply reads like a professional driveway company responding efficiently between jobs. It uses your business name, not 'AI.' Homeowners texting a tradesperson care about getting a fast, relevant answer — and a response within seconds that asks the right questions about their driveway creates immediate confidence."
+  },
+  {
+    question: "What if someone texts about a driveway emergency?",
+    answer: "Surface collapses, large cracks from subsidence, or drainage failures under a driveway sometimes generate urgent texts. The AI captures the problem description, flags the lead as urgent in your summary, and the notification reaches you as a priority alert. You can triage and call back the most pressing situations first."
+  },
+  {
+    question: "What does AI SMS cost for a driveway contractor?",
+    answer: `SMS is an add-on at £${pricing.addOn.price}/month alongside the Core plan. For driveway companies whose customers — especially younger homeowners — routinely text to check availability before committing to a detailed phone conversation, this channel captures enquiries that would otherwise disappear during your busiest on-site hours.`
+  },
+  {
+    question: "Can I text back myself when I am free?",
+    answer: "Replying directly to a text thread causes the AI to step aside. Between jobs, at the yard, or at home in the evening, you handle texts personally. On site with pavers to lay and screed to level, the AI covers the channel seamlessly."
+  },
+  {
+    question: "Are text messages stored securely?",
+    answer: "All SMS conversations — driveway specifications, property addresses, material preferences, and contact numbers — are encrypted and stored on UK and EU servers under UK GDPR. No data is shared with third parties or used for any purpose beyond delivering your lead summaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Driveway Contractors | Rapid Receptionist"
+  description={`AI SMS for UK driveway and paving companies. Responds to availability texts, neighbour referrals, and material enquiries while you are laying block paving. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/driveway-paving/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Driveway Contractor"
+  tradeNamePlural="Driveway & Paving Contractors"
+  tradeSlug="driveway-paving"
+  headline="AI SMS for Driveway Contractors"
+  accentWord="Driveway Contractors"
+  subhead="A neighbour four doors down texts: 'Just walked past the driveway you are doing — looks incredible. Ours is a disaster. Can you measure ours when you finish?' You are on your knees cutting border pavers with a diamond blade, dust flying, safety glasses on. Without AI SMS, the text sits unread for three hours. By 5pm the neighbour has texted another company who responded in ten minutes. With it, the reply goes back instantly, the neighbour confirms the address, and you walk down the street at 4:30pm to measure a second driveway."
+  scenario="It is 7:15pm on a Tuesday. A homeowner in Kidlington has spent the evening looking at driveways on Instagram and has decided to finally replace his gravel front drive with block paving. He texts three companies: 'Hi, looking for block paving driveway, about 40sqm, currently gravel. In OX5. Can you do a site visit this week?' Without AI SMS, you are at home bathing the kids and do not check your work phone until 9pm. Two other companies replied at 7:30 and 7:45 with friendly responses and offered visits. The homeowner has already confirmed a Thursday visit with one of them. With AI SMS, the response arrives at 7:16pm: 'Thank you for your message. Block paving over gravel is something we do regularly. Could you share your full address and confirm if weekday mornings or evenings work better for a visit?' He replies with the address and says Thursday evening works. Wednesday morning you see the lead — 40sqm gravel-to-block, OX5, Thursday evening visit confirmed — and add it to your schedule."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/driveway-paving/ai-receptionist/"
+  ctaHeadline="Respond to Every Driveway Text Before the Next Contractor"
+  ctaSubhead={`Neighbours text while you are four doors down laying pavers. The AI replies before you put down the mallet. Add-on at £${pricing.addOn.price}/month.`}
+/>

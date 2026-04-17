@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Responds to Photo Enquiries Instantly',
+    text: "Homeowners WhatsApp photos of their existing driveway — cracked tarmac, weedy gravel, sunken block paving — and ask 'can you sort this out?' You are laying pavers with a screed bed setting. The AI responds within seconds, acknowledges the photos, asks about their preferred material and timeline, and captures the full enquiry before the homeowner messages a second company."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Before Photos and Inspiration Shots',
+    text: "Homeowners share two types of images: photos of their current driveway showing what needs replacing, and screenshots of driveways they like from Instagram or Pinterest. The AI acknowledges both, asks about the driveway area and their postcode, and packages everything into a lead with the photos attached."
+  },
+  {
+    icon: '⚡',
+    title: 'Wins the Three-Quote Race',
+    text: "Homeowners typically WhatsApp three driveway companies the same photo and message. The first to reply professionally secures the site visit. While you are on the compactor, the AI ensures your response arrives in seconds — beating the contractors who check their phones at lunchtime."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Weekend Planning Messages',
+    text: "Saturday and Sunday are when homeowners walk their driveways and think 'enough is enough.' They take a photo, send it to a couple of driveway companies, and expect a quick response. The AI handles the weekend messages and delivers structured leads for Monday morning."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Informal Messages',
+    text: "A WhatsApp saying 'can u do a resin driveway, about 40sqm, OX14?' becomes a structured lead: material (resin-bound), area (40sqm), postcode (OX14). The AI adds timeline, current surface, and contact details through follow-up questions."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Number',
+    text: "AI WhatsApp connects to your business line. Clients message a professional number, receive professional responses, and your personal WhatsApp stays separate."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI understand photos of damaged driveways?",
+    answer: "The AI acknowledges photos and asks the right follow-up questions — what material do they want as a replacement, what is the approximate area, do they need a dropped kerb. It does not interpret the photos themselves, but it ensures every image is logged against the lead summary for your review. Many driveway contractors find that seeing the before photo helps them prepare materials and give a more accurate initial estimate on the callback."
+  },
+  {
+    question: "What if a homeowner sends inspiration photos from Pinterest?",
+    answer: "Driveway inspiration photos — screenshots of herringbone block paving, golden resin-bound finishes, or natural stone borders — are increasingly common over WhatsApp. The AI acknowledges the images, asks the homeowner about their driveway dimensions and postcode, and attaches the inspiration images to your lead summary. You see exactly what the customer envisions before your site visit."
+  },
+  {
+    question: "How much does AI WhatsApp cost for a driveway company?",
+    answer: `WhatsApp is available at £${pricing.addOn.price}/month as an add-on to the Core plan. For driveway and paving companies where homeowners increasingly message photos and questions via WhatsApp rather than calling, this captures an enquiry channel that grows every year. One driveway job secured through a fast WhatsApp reply covers the add-on cost for the foreseeable future.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Jumping into a WhatsApp thread by typing your own reply causes the AI to step aside immediately. Most driveway contractors prefer the AI to capture the initial details — material, area, postcode — then follow up personally to discuss options, give a rough indication, and book a site survey."
+  },
+  {
+    question: "Is WhatsApp data kept private?",
+    answer: "All WhatsApp messages, photos, property addresses, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data is shared only with you and is never repurposed, sold, or accessed by third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Driveway Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK driveway and paving companies. Responds to driveway photo enquiries, material questions, and dropped kerb requests while you are on the compactor. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/driveway-paving/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Driveway Contractor"
+  tradeNamePlural="Driveway & Paving Contractors"
+  tradeSlug="driveway-paving"
+  headline="AI WhatsApp for Driveway and Paving Contractors"
+  accentWord="Driveway and Paving"
+  subhead="A homeowner WhatsApps three photos of her crumbling tarmac driveway and a Pinterest screenshot of a honey-coloured resin-bound finish: 'Can you do something like this? About 55 square metres. Want it done before Christmas.' You are mid-pour on a resin-bound job with a twenty-minute pot life, trowel in hand. Without AI WhatsApp, the message sits for five hours. With it, the homeowner gets an instant reply, shares her postcode, and by teatime you have a complete lead with driveway photos, area, material preference, and a deadline."
+  scenario="It is 2:15pm on a Sunday. A homeowner in Thame is standing on his driveway looking at the cracked pattern imprinted concrete that was laid when the house was built fifteen years ago. The colour has faded, the sealant has worn through, and there is a crack running across the middle where a tree root pushed the sub-base up. He takes four photos — the crack, the faded colour, the joint damage at the garage apron, and the overall view from the street — and WhatsApps them to three driveway companies: 'PIC driveway is done for. About 65sqm. Want block paving. Can you have a look?' Without AI WhatsApp, you see the message at 6pm Sunday. By then, one of the other companies responded at 3pm, asked the right questions, and booked a Tuesday evening visit. With AI WhatsApp, the reply arrives at 2:16pm: 'Thank you for the photos — we can see the PIC has seen better days. Block paving is a great upgrade. Could you share your postcode and availability for a site visit?' He replies with his address and says weekday evenings work best. Monday morning you open the lead: 65sqm PIC-to-block conversion, four damage photos, Thame postcode, weekday evening availability. You call at 8:30am and book a Wednesday visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/driveway-paving/ai-receptionist/"
+  ctaHeadline="Respond to Driveway Photos Before Competitors See Them"
+  ctaSubhead={`Homeowners WhatsApp driveway photos to three companies simultaneously. The first to reply books the survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

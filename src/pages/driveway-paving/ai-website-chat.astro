@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Comparing Materials',
+    text: "Driveway decisions involve research — block paving vs resin-bound, tarmac vs pattern imprinted concrete, natural stone vs porcelain. Homeowners browsing your website want answers before they pick up the phone. A chat widget lets them ask 'what is the difference between resin-bound and resin-bonded?' or 'do you install permeable driveways?' and the AI responds instantly, keeping them on your site."
+  },
+  {
+    icon: '📐',
+    title: 'Answers Service and Coverage Questions',
+    text: "The most common website chat questions for driveway companies are: 'do you cover my area?', 'how long does a block paving driveway take?', and 'can you do a dropped kerb as well?' The AI responds from your service profile, keeping the visitor engaged and capturing their contact details and driveway requirements."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Researchers',
+    text: "Most driveway purchases start with evening research — scrolling through galleries, comparing prices, reading reviews. When a couple lands on your site at 9pm and sees a chat bubble, they type their question rather than bookmarking and forgetting. The AI captures their driveway size, material preference, and contact details while the research momentum is strong."
+  },
+  {
+    icon: '📊',
+    title: 'Pre-qualifies Before Your Callback',
+    text: "The chat naturally captures what you need to assess the job — driveway area, current surface, materials they are interested in, whether they need a dropped kerb, vehicle count, their postcode, and timeline. When you open the lead, you know whether you are looking at a two-car tarmac overlay or a 100sqm block paving transformation."
+  },
+  {
+    icon: '🔗',
+    title: 'Complements Your Gallery Pages',
+    text: "Driveway contractors with before-and-after galleries generate the most website interest. When a visitor is admiring a completed block paving driveway in your portfolio and sees the chat widget, the step from 'that looks great' to 'can you do this for me?' happens in a single click."
+  },
+  {
+    icon: '✅',
+    title: 'No Additional Charge',
+    text: `Website chat is included at no extra cost with the Core plan at £${pricing.tiers.core.price}/month. Adding it requires a short JavaScript snippet pasted into your site. It works across WordPress, Squarespace, Wix, and custom-built websites. There are no limits on conversations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add the chat to my driveway company website?",
+    answer: "We provide a JavaScript snippet during your onboarding. Paste it into your website's header or footer code — or add it via a WordPress, Squarespace, or Wix plugin. The chat bubble appears on every page within minutes, styled to match your site's branding. If you are not confident editing your website, we walk you through the process or work with your web designer."
+  },
+  {
+    question: "Can the AI tell visitors about different driveway materials?",
+    answer: "During setup, you tell us which materials you work with — block paving, resin-bound, tarmac, natural stone, porcelain, pattern imprinted concrete — and the AI uses this to answer visitor questions. If someone asks 'do you do resin driveways?' and you do, the AI confirms and asks about their driveway size. If you only do block paving, the AI responds accordingly. It engages the visitor with accurate information without overstepping into detailed technical advice."
+  },
+  {
+    question: "What details does the chat capture from visitors?",
+    answer: "Through natural conversation, the AI gathers the driveway size (in square metres, car spaces, or dimensions), the current surface, the material they want, whether a dropped kerb is needed, any additional work (paths, patios, walls), the property postcode, availability for a site visit, and their contact details. This pre-qualification means you know the job scope before your callback — saving time for both you and the homeowner."
+  },
+  {
+    question: "Will the chat slow down my website?",
+    answer: "The chat script loads asynchronously after your page content has fully rendered. Your driveway gallery images — which are typically the largest files on the page — display at full speed before the chat widget appears. The impact on page load time is negligible, even on image-heavy portfolio sites."
+  },
+  {
+    question: "Is website chat charged separately from phone answering?",
+    answer: `Both channels are bundled under the Core plan at £${pricing.tiers.core.price}/month. For driveway companies, phone answering and website chat are the two primary routes homeowners use to make contact — calling your number after seeing your van, and browsing your website after finding you online. Having both covered by a single plan simplifies your costs.`
+  },
+  {
+    question: "How is visitor data from chat handled?",
+    answer: "All chat data — driveway measurements, property addresses, material preferences, and visitor contact details — is encrypted and stored on UK and EU servers under UK GDPR. Lead summaries are shared exclusively with you. No information is ever sold to advertisers, shared with third parties, or used for any purpose beyond delivering your enquiry leads."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Driveway Contractors | Rapid Receptionist"
+  description={`AI website chat for UK driveway and paving companies. Engages visitors comparing block paving, resin-bound, and natural stone — captures driveway leads 24/7. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/driveway-paving/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Driveway Contractor"
+  tradeNamePlural="Driveway & Paving Contractors"
+  tradeSlug="driveway-paving"
+  headline="AI Website Chat for Driveway & Paving Businesses"
+  accentWord="Driveway & Paving Businesses"
+  subhead="A homeowner in Witney has been browsing driveway company websites for an hour. She is comparing block paving, resin-bound, and tarmac — weighing up cost, durability, and appearance. She finds your site, admires a charcoal herringbone block paving gallery, and sees the chat widget. She types: 'How much roughly for a 4-car block paving driveway?' Without chat, she bookmarks the page along with three others and forgets. With AI Website Chat, the AI responds instantly, asks about her current surface and postcode, and captures her contact details. Monday morning you have a qualified lead with driveway size, material preference, and address."
+  scenario="It is 10pm on a Thursday. A couple in Abingdon is sitting on the sofa researching driveway options on a tablet. Their crumbling tarmac driveway is an eyesore and they have agreed to spend up to £10,000 on a replacement. They have spent forty-five minutes browsing — comparing resin-bound colours on one company's site, looking at natural stone options on another, and now scrolling through your block paving gallery. Your Marshalls-accredited badge catches their eye. The wife types into the chat: 'We have a tarmac drive that is breaking up — about 50sqm. Interested in block paving but also considering resin-bound. Can you do both and advise which is better for our situation? We do need a dropped kerb too.' Without AI Website Chat, they close the tab and plan to call on Saturday, but Saturday gets busy and they only follow up next Wednesday. With AI Website Chat, the AI replies: 'We install both block paving and resin-bound driveways and we are happy to discuss the pros and cons for your specific driveway. Could you share your postcode and preferred days for a site visit?' They share their address, say weekday evenings work, and mention the existing dropped kerb might need widening. Friday morning you see the lead: 50sqm, tarmac replacement, block or resin-bound, dropped kerb, Abingdon OX14, weekday evening visit preferred. You call at 9am and book a Tuesday evening survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/driveway-paving/ai-receptionist/"
+  ctaHeadline="Turn Driveway Research into Site Visit Bookings"
+  ctaSubhead={`Homeowners comparing materials on your website are minutes from a decision. A chat widget captures the lead before they close the tab. Included at £${pricing.tiers.core.price}/month.`}
+/>

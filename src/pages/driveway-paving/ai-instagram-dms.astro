@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Portfolio Admiration into Leads',
+    text: "Driveways are visual — aerial drone shots of completed herringbone layouts, sunset photos of resin-bound finishes glowing amber, and time-lapse reels of block paving installations. When a follower DMs after seeing your work, the AI responds instantly, captures their driveway details, and turns admiration into a measurable lead."
+  },
+  {
+    icon: '🎯',
+    title: 'Engages Design-Focused Homeowners',
+    text: "Instagram attracts homeowners who value aesthetics — they save your posts, follow your before-and-afters, and DM when they are ready. A message saying 'love the silver-grey block paving with the black border — can you do that for a semicircular driveway?' is a premium lead. The AI captures the style, dimensions, and contact details instantly."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Varied DM Sources',
+    text: "DMs come from homeowners, architects specifying external surfacing, property developers seeking show-home driveway finishes, and commercial clients wanting car park upgrades. The AI adapts its questions to each, capturing domestic dimensions and preferences for residential leads, and scope, specification, and programme for commercial ones."
+  },
+  {
+    icon: '🌙',
+    title: 'Responds During Peak Scrolling Hours',
+    text: "Driveway inspiration peaks after 7pm — homeowners scrolling through beautifully photographed driveways, saving posts, and eventually DM'ing the contractor whose work they like most. The AI ensures that 9pm DM gets an instant response rather than waiting until tomorrow morning."
+  },
+  {
+    icon: '📋',
+    title: 'Structures DM Threads into Briefs',
+    text: "DMs arrive in pieces — a question about colour, a photo of the existing drive, a reference to a post. The AI consolidates the thread into a complete lead: material, area, current surface, colour preference, postcode, and timeline."
+  },
+  {
+    icon: '🔗',
+    title: 'Closes Content-to-Revenue Gap',
+    text: "Drone shots and time-lapses earn followers. AI Instagram DMs converts those followers into paying customers. Every DM is a potential driveway project — and the AI makes sure none are missed."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "You need an Instagram Business or Creator account linked to a Facebook Business page — this is what enables the DM integration. The upgrade from a personal account is free and takes a couple of minutes in your settings. Most driveway companies posting project content already have Business accounts for the insights and promotion tools. If yours is still personal, we switch it during onboarding."
+  },
+  {
+    question: "What driveway enquiries arrive through Instagram DMs?",
+    answer: "Instagram DMs for driveway companies come primarily from homeowners inspired by your visual content. They have seen a specific driveway — a colour, pattern, material, or layout they like — and want something similar. These leads tend to be higher-quality because the customer has already chosen your style. You also occasionally see DMs from architects, developers, and house-flippers looking for external surfacing contractors."
+  },
+  {
+    question: "How quickly does the AI respond?",
+    answer: "Responses arrive within seconds. Instagram displays typing indicators and read receipts, so the sender sees the conversation is active. For driveway DMs triggered by visual inspiration — someone sees your charcoal herringbone driveway and pictures it on their own house — the speed of response determines whether that inspiration becomes an enquiry or fades by morning."
+  },
+  {
+    question: "What is the pricing for this channel?",
+    answer: `Instagram DMs costs £${pricing.addOn.price}/month as an add-on to the Core plan. For driveway contractors investing time in aerial photography, time-lapse videos, and before-and-after content, this channel ensures the audience that content builds actually generates revenue. One captured driveway project from an Instagram DM pays for the add-on many times over.`
+  },
+  {
+    question: "Can I reply to DMs personally?",
+    answer: "Typing a reply directly into any DM thread through the Instagram app causes the AI to step aside. You continue the conversation — sharing material suggestions, previous project photos, and pricing indications. The follower sees one continuous, professional exchange."
+  },
+  {
+    question: "How is DM data handled?",
+    answer: "All Instagram DM data — messages, shared images, driveway specifications, and contact details — is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No data is repurposed or accessed by third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Driveway Contractors | Rapid Receptionist"
+  description={`AI Instagram DMs for UK driveway and paving companies. Converts followers inspired by your driveway portfolio into site survey bookings — block paving, resin-bound, and natural stone leads. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/driveway-paving/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Driveway Contractor"
+  tradeNamePlural="Driveway & Paving Contractors"
+  tradeSlug="driveway-paving"
+  headline="AI Instagram DMs for Driveway & Paving Specialists"
+  accentWord="Driveway & Paving Specialists"
+  subhead="A homeowner watches your Instagram reel — a drone shot tracking across a freshly completed charcoal block paving driveway with a granite sett border, shot at golden hour. She DMs: 'This looks absolutely stunning. We are in OX4 with a 60sqm tarmac driveway that needs replacing. Can you do the same?' You are on site operating a plate compactor. Without AI Instagram DMs, the message waits until tonight. With it, she gets an instant reply, shares photos of her existing drive, and your lead summary arrives with a premium domestic project ready to price."
+  scenario="It is 9:30pm on a Saturday. A couple in Henley-on-Thames is browsing Instagram on the sofa. The husband follows several driveway companies and has been saving posts for months. He comes across your latest reel — a time-lapse of a natural sandstone driveway installation at a large detached property, from excavation to completion, with the final shot showing the drive at dusk with pillar lights either side of the entrance. He sends a DM: 'This is incredible. We have a large double-width tarmac driveway at our place in Henley — probably 100sqm. We have been wanting to replace it with natural stone for years. Can we get a quote?' Without AI Instagram DMs, you see the message Monday afternoon after a day on site. The couple has also DM'd two other companies — one replied Sunday morning, had a detailed conversation about stone options, and booked a midweek site visit. With AI Instagram DMs, the AI replies at 9:31pm: 'Thank you — that sandstone project is one we are really proud of. A natural stone driveway at your property in Henley sounds like a fantastic project. Could you share your postcode and some photos of the current drive, and we will arrange a site visit to discuss stone options?' He replies with the address, two photos of the tarmac, and mentions they want to incorporate a turning area. Monday morning you have a lead: 100sqm tarmac-to-sandstone conversion, Henley, photos, turning area, high-intent enquiry from a design-conscious homeowner. You call at 8:30am and book a Thursday afternoon visit for what could be a £25,000+ project."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/driveway-paving/ai-receptionist/"
+  ctaHeadline="Turn Drone Shots and Time-Lapses into Booked Surveys"
+  ctaSubhead={`Your Instagram driveway content inspires homeowners. The AI converts every DM into a lead with area, material, and postcode. Add-on at £${pricing.addOn.price}/month.`}
+/>

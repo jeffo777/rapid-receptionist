@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A homeowner across the road walks over while you are laying block paving on her neighbour's driveway — she has been watching the work all morning and wants the same thing. You are on your knees with a rubber mallet, tapping pavers into a herringbone pattern, string line tight, kiln-dried sand ready for jointing. You cannot stop mid-row — the screed will dry out and the pattern will not align. You tell her to call the office. She does, gets voicemail, and calls a driveway company whose van she saw in the next village last week.",
+    with: "The neighbour calls your number. Your AI receptionist answers, captures the enquiry — block paving driveway, similar to her neighbour's installation, approximate area, her address — and confirms you will call back. At lunchtime you walk across the road, measure the driveway, and give her a quote on the spot."
+  },
+  {
+    without: "A property developer calls about surfacing the shared driveways and parking areas for a development of fourteen houses near Reading — a mixture of block paving for individual driveways, tarmac for the access road, and permeable paving for the SuDS drainage requirements stipulated by planning. You are operating a plate compactor on a sub-base, vibration through your arms, ear defenders on, dust in the air. The developer needs a tender by Friday and moves on to the next contractor when you do not answer.",
+    with: "Your AI captures the full scope — fourteen-house development, block paving, tarmac access road, permeable paving for SuDS compliance, Reading area, Friday tender deadline — and your lead summary reads like a tender brief. You call the developer at close of play with informed questions and secure a place on the shortlist."
+  },
+  {
+    without: "A homeowner messages on Saturday about her front driveway — the pattern imprinted concrete laid eight years ago is cracking and fading, and she wants to replace it with natural stone before her daughter's wedding in twelve weeks. You are laying a resin-bound driveway at another property with the resin pot life ticking down — you cannot stop once the mix is poured. The message sits unread until Sunday evening. By then she has contacted two other driveway companies who responded within the hour.",
+    with: "The Saturday message gets an instant AI response. The AI captures the project — PIC replacement with natural stone, front driveway, wedding deadline in twelve weeks — and the homeowner shares photos of the existing drive. Sunday morning you open the lead with the full brief and call to book a Monday site visit."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Driveway Surfacing",
+    items: ["Block paving (clay and concrete)", "Resin-bound and resin-bonded surfacing", "Tarmac and asphalt driveways", "Pattern imprinted concrete (PIC)", "Natural stone paving and setts", "Permeable and SuDS-compliant paving"]
+  },
+  {
+    category: "Patio & Hard Landscaping",
+    items: ["Natural stone patios (sandstone, limestone, granite)", "Porcelain paving", "Concrete slab patios", "Steps, edging, and kerb work", "Retaining walls and raised areas", "Drainage and soakaway installation"]
+  },
+  {
+    category: "Additional Services",
+    items: ["Dropped kerb applications and installation", "Commercial and car park surfacing", "Path and walkway construction", "Driveway cleaning and sealing", "Sub-base preparation and groundworks", "Boundary walls and pillars"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏡",
+    title: "Homeowners & Residential Clients",
+    description: "The core market for driveway and paving contractors. Homeowners wanting new driveways, driveway replacements, front garden conversions, and patio installations. These clients research online, compare materials, request multiple quotes, and often decide based on who responds first and gives the best first impression. A prompt, professional phone response is frequently the deciding factor."
+  },
+  {
+    icon: "🏗️",
+    title: "Property Developers & Housebuilders",
+    description: "New-build developers needing driveway packages across multiple plots — block paving to individual driveways, shared access roads, visitor parking, and permeable surfacing to satisfy SuDS planning conditions. These contracts involve formal tenders, tight programmes, and specification compliance. Being first to acknowledge the tender email often determines whether you make the pricing shortlist."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial & Public Sector Clients",
+    description: "Shopping centres, business parks, schools, councils, and healthcare sites needing car park resurfacing, pedestrian walkways, and hard landscaping. These projects are larger, specification-driven, and often procured through competitive tender. A fast, professional response to an initial enquiry signals capacity and reliability."
+  },
+  {
+    icon: "🏘️",
+    title: "Neighbour Referrals & Street Jobs",
+    description: "The most valuable lead source in driveway work — a neighbour who has watched you transform the driveway next door and wants the same. These referrals are warm, high-conversion, and time-sensitive. A neighbour who calls while you are on their street and gets voicemail will cool off by tomorrow. Answering that call — or having the AI answer it — secures a second job on the same road."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI recognise driveway and paving terminology?",
+    answer: "Every material, method, and product name your clients and contractors use is understood — block paving, herringbone, stretcher bond, resin-bound, resin-bonded, tarmac, asphalt, pattern imprinted concrete, natural stone, sandstone, limestone, granite setts, porcelain, permeable paving, SuDS, sub-base, MOT Type 1, kiln-dried sand, polymeric jointing sand, and dropped kerb. When a developer calls about 'permeable block paving to Interpave standards for SuDS compliance on a fourteen-plot residential scheme,' the AI records the specification accurately."
+  },
+  {
+    question: "Can the AI handle both a small patio quote and a development-wide surfacing contract?",
+    answer: "A retiree calling about a 3m x 3m patio extension generates a very different lead from a QS calling about surfacing forty driveways, an access road, and a SuDS-compliant parking court. The AI adjusts its questioning naturally: domestic callers are asked about area, materials, and access. Commercial callers about plot counts, surfacing specifications, programme dates, and tender deadlines. Each lead arrives clearly categorised and appropriately detailed."
+  },
+  {
+    question: "What about urgent calls — a driveway failing or drainage backing up?",
+    answer: "Surface collapses, blocked drainage under driveways, and washout after heavy rain are rare but real emergencies. The AI identifies urgency from the caller's language, captures the situation and location, and escalates to your mobile immediately. If you are mid-pour on a resin job and cannot answer, the call routes to our human operators who continue trying. Standard quote requests and material enquiries queue as normal leads."
+  },
+  {
+    question: "How much does this cost for a driveway company?",
+    answer: `Driveway and paving contractors — from a one-crew resin-bound specialist to a multi-team block paving operation — fit comfortably within the Core plan at £${pricing.tiers.core.price}/month. That includes ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. Additional channels like WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and Missed Call Text Back cost £${pricing.addOn.price}/month each. Setup is a one-time £${pricing.setup.price} fee with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this useful for a sole trader driveway installer?",
+    answer: "A sole trader laying driveways cannot answer the phone for hours at a stretch — you are on the compactor, screeding, laying pavers, or pouring resin with a ticking pot life. Every missed call during a busy spring or summer week is a driveway going to another contractor. The AI captures every enquiry with full project details while you keep working. A single captured driveway job typically covers two or three years of the service cost."
+  },
+  {
+    question: "Do I keep control over my own calls?",
+    answer: "Between jobs — driving to site, picking up materials, doing paperwork at home — calls ring through to you as normal. The AI only steps in when you are genuinely unreachable: operating a compactor, pouring resin, laying pavers, or outside your hours. You control the schedule and can adjust it instantly from your dashboard."
+  },
+  {
+    question: "How is my customers' data handled?",
+    answer: "Driveway enquiries include property addresses, driveway dimensions, sometimes budget indications, and access details. All information is encrypted during transmission and at rest, stored on UK and EU servers under UK GDPR and the Data Protection Act 2018, and shared only with you. Client data is never sold, shared with third parties, or repurposed."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Driveway & Paving Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK driveway and paving companies — block paving, resin-bound, tarmac, natural stone, and commercial surfacing. Never miss a call while laying pavers. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/driveway-paving/ai-receptionist/"
+  tradeName="Driveway Contractor"
+  tradeNamePlural="Driveway & Paving Contractors"
+  tradeSlug="driveway-paving"
+  headline="The AI Receptionist Built for Driveway & Paving Contractors"
+  accentWord="Driveway & Paving"
+  subhead={`You cannot answer the phone when you are laying block paving in a herringbone pattern, operating a plate compactor on a sub-base, or pouring resin-bound surfacing with a pot life measured in minutes. Your AI receptionist captures every call, every message, and every enquiry — from homeowners wanting a new front drive to developers needing forty plots surfaced by handover. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Neighbour Across the Road Will Not Wait for Voicemail"
+  ctaSubhead={`She has watched you transform the drive next door all week. She calls, ready to book. The AI answers before she changes her mind. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

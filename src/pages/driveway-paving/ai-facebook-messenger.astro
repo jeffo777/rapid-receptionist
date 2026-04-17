@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Before-and-After Gallery Views',
+    text: "Driveway transformations make stunning Facebook content — gravel to herringbone block paving, cracked tarmac to golden resin-bound, mud to natural stone. When a follower sees a before-and-after post and messages 'can you do this to ours?', the AI responds instantly, captures their driveway details, and converts the interest into a qualified lead."
+  },
+  {
+    icon: '📸',
+    title: 'Processes Driveway Photo Messages',
+    text: "Homeowners send Messenger photos of their existing drive — cracked concrete, weedy gravel, sunken pavers. The AI acknowledges the images, asks about the replacement material they prefer and the driveway area, and delivers photos alongside a structured lead summary."
+  },
+  {
+    icon: '⚡',
+    title: 'Beats Competitors to the Response',
+    text: "Homeowners messaging driveway companies through Facebook expect quick replies. A professional response in seconds signals a well-run business. A 24-hour wait signals someone too busy — or too disorganised — to handle their project."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Weekend Browsing',
+    text: "Homeowners browse Facebook on Saturday afternoons and Sunday evenings — prime time for garden and driveway inspiration. A Messenger enquiry at 4pm on Saturday is a high-intent lead. The AI captures it and the lead is ready for Monday morning."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Casual Messenger Chats',
+    text: "Messenger conversations drift — a comment about the neighbours' drive, a question about cost, a mention of the dropped kerb. The AI tracks the thread and delivers a structured lead: material, area, location, timeline, and contact details."
+  },
+  {
+    icon: '🔗',
+    title: 'Makes Your Content Profitable',
+    text: "Posting driveway transformations earns likes and shares. AI Messenger converts that audience into paying customers. Every before-and-after post can generate leads, and every lead can become a site survey."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page?",
+    answer: "A Facebook Business page with Messenger active is needed — personal profiles do not support the integration. Most driveway companies have a Facebook page for posting project photos and reviews. Even if you post infrequently, the AI ensures that every incoming Messenger enquiry gets an immediate, professional response."
+  },
+  {
+    question: "What driveway enquiries arrive through Messenger?",
+    answer: "The majority are domestic — homeowners who have been inspired by your project photos, recommended by a friend, or found your page while searching for local driveway companies on Facebook. Requests typically involve driveway replacements, material upgrades (gravel to block, tarmac to resin), dropped kerb additions, and sometimes patio extensions. These leads convert well because the homeowner has already seen your work and chosen your style."
+  },
+  {
+    question: "How fast does the AI respond?",
+    answer: "Within seconds of the message arriving. Facebook shows active status and read receipts, so the homeowner sees immediate engagement. For driveway enquiries where three or four contractors are messaged simultaneously, the first professional response almost always secures the site visit — making speed the single biggest conversion factor."
+  },
+  {
+    question: "What does AI Facebook Messenger cost?",
+    answer: `Messenger is an add-on at £${pricing.addOn.price}/month alongside the Core plan. For driveway companies where before-and-after Facebook posts consistently generate Messenger enquiries, this channel converts the engagement your content creates into booked surveys. A single driveway project captured from a Messenger lead pays for years of the add-on.`
+  },
+  {
+    question: "Can I handle conversations myself?",
+    answer: "Replying directly in any Messenger thread transfers control to you. The AI steps aside and the homeowner sees a continuous conversation. Many contractors let the AI capture the initial enquiry and then follow up with material suggestions, ballpark pricing, and site visit availability."
+  },
+  {
+    question: "How is Messenger data protected?",
+    answer: "All conversations, images, driveway specifications, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data is shared exclusively with you and is never used for advertising, sold, or accessed by third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Driveway Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK driveway and paving companies. Responds to before-and-after enquiries, material upgrade requests, and dropped kerb questions through your page. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/driveway-paving/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Driveway Contractor"
+  tradeNamePlural="Driveway & Paving Contractors"
+  tradeSlug="driveway-paving"
+  headline="AI Facebook Messenger for Driveway Companies"
+  accentWord="Driveway Companies"
+  subhead="You post a before-and-after of a herringbone block paving driveway — left side showing the old cracked tarmac, right side showing charcoal pavers with a natural stone border. It gets 47 likes and 8 shares. Three homeowners send Messenger enquiries by Tuesday. You are on site laying a resin-bound driveway, hands covered in aggregate. Without AI Messenger, those three enquiries sit in your inbox until Thursday. With it, all three get instant replies, share their driveways, and your lead queue has three qualified enquiries by lunchtime."
+  scenario="It is 5:45pm on a Friday. A homeowner in Woodstock is scrolling Facebook. She sees your post — a completed natural stone driveway (Indian sandstone setts with a granite border) at a Cotswolds property, photographed in afternoon sunlight. Her own driveway is tired gravel that turns to mud every winter. She sends a Messenger message: 'This is exactly what I want. We have a detached house with a circular drive — probably about 80 square metres. The gravel is hopeless. How much would natural stone setts cost?' Without AI Facebook Messenger, you see the message Saturday afternoon while cleaning tools. By then she has also messaged two other companies — one responded at 9am Saturday, discussed the circular layout, and offered a Monday morning site visit. With AI Messenger, the AI replies at 5:46pm: 'Thank you — that Cotswolds driveway is one of our favourites. Natural stone setts on a circular drive would look stunning. Could you share your postcode and a day that works for a site visit? We will come and discuss stone options and give you a detailed quote.' She replies with her address, says weekday mornings work, and mentions she has seen a honey-coloured sandstone she likes. Saturday morning you see the lead: 80sqm gravel-to-sandstone sett conversion, circular drive, Woodstock, weekday morning availability, honey colour preference. You call at 9am and book a Wednesday visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/driveway-paving/ai-receptionist/"
+  ctaHeadline="Convert Before-and-After Engagement into Driveway Surveys"
+  ctaSubhead={`Your Facebook driveway photos inspire homeowners. AI Messenger turns that inspiration into booked site visits. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Developer Surfacing Tenders',
+    text: "Developers and main contractors send driveway and surfacing package tenders by email — plot layouts, surfacing specifications, SuDS requirements, and programme charts. The contractor who acknowledges first and demonstrates understanding of the scope earns the most attention during pricing. AI Email Response sends a professional acknowledgement within sixty seconds."
+  },
+  {
+    icon: '📐',
+    title: 'Recognises Surfacing Specification Language',
+    text: "When a tender references 'Marshalls Drivesett Argent block paving in herringbone to individual driveways, permeable block paving to SuDS requirements, and tarmac binder and surface course to the access road,' the AI captures the specification accurately. Your acknowledgement shows the sender that their email reached a contractor who understands paving language."
+  },
+  {
+    icon: '🕒',
+    title: 'Bridges Your On-Site Email Gap',
+    text: "Driveway contractors rarely check email during the working day — you are laying pavers, pouring resin, or operating a compactor. A local authority surfacing tender arriving at 10am that goes unacknowledged until 7pm has lost nine hours. The AI acknowledges immediately, keeping you competitive."
+  },
+  {
+    icon: '🗂️',
+    title: 'Sorts Enquiries By Type',
+    text: "Commercial tenders, homeowner website form submissions, dropped kerb application enquiries, and maintenance requests all arrive via email. The AI identifies each type and delivers the lead summary with clear context, so you know what needs a formal tender response and what needs a quick callback."
+  },
+  {
+    icon: '🤝',
+    title: 'Strengthens Builder Relationships',
+    text: "Developers and main contractors who repeatedly use you expect responsive communication. A thirty-second acknowledgement reinforces trust and signals capacity. For driveway companies building pipeline with housebuilders, this consistency protects recurring work."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Attached Drawings and Specs',
+    text: "Surfacing tenders arrive with plot layouts, surfacing specifications, drainage drawings, and programme charts. The AI notes the attachments in the acknowledgement and your lead summary, confirming what arrived and what you need to review."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI write a complete tender response?",
+    answer: "The AI sends an initial acknowledgement only — confirming receipt of the tender, noting the project scope and any deadline mentioned, and assuring the sender you will submit a full response. The detailed pricing, methodology, and accreditation information that win tenders remain entirely in your hands."
+  },
+  {
+    question: "Will it reply to irrelevant emails?",
+    answer: "The system filters out supplier promotions, material catalogues, newsletter subscriptions, and spam during setup configuration. It responds to genuine business enquiries — tenders, project briefs, homeowner contact form submissions, and commercial specifications. The parameters are refined during onboarding."
+  },
+  {
+    question: "How does it handle dropped kerb enquiry emails?",
+    answer: "Dropped kerb requests often arrive by email — homeowners asking whether you can handle the council application alongside the driveway installation. The AI acknowledges the enquiry and captures the details: property address, existing kerb situation, and the driveway surfacing they want. Your lead summary flags the dropped kerb requirement so you can discuss the process and council fees on your callback."
+  },
+  {
+    question: "What does AI Email Response cost for a driveway business?",
+    answer: `Email response is priced at £${pricing.addOn.price}/month as a channel add-on to the Core plan. For driveway companies that receive developer surfacing tenders, local authority resurfacing contracts, and commercial parking enquiries by email — all of which arrive while you are physically laying driveways — this channel protects a pipeline of work that would otherwise go unacknowledged until evening.`
+  },
+  {
+    question: "Can I compose my own follow-up emails?",
+    answer: "The AI handles only the initial receipt acknowledgement. All subsequent emails — your tender submission, pricing schedules, material specifications, and programme proposals — are composed and sent by you in your own time."
+  },
+  {
+    question: "How is email content kept confidential?",
+    answer: "Tender documents, site plans, surfacing specifications, and client communications are commercially sensitive. All email content processed by the AI is encrypted, held on UK and EU servers under UK GDPR, and shared exclusively with you. Tender pricing and project details are never accessed for any purpose beyond generating your lead summary."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Driveway Contractors | Rapid Receptionist"
+  description={`AI email response for UK driveway and paving companies. Acknowledges surfacing tenders, dropped kerb enquiries, and commercial paving specifications within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/driveway-paving/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Driveway Contractor"
+  tradeNamePlural="Driveway & Paving Contractors"
+  tradeSlug="driveway-paving"
+  headline="AI Email Response for Driveway & Paving Companies"
+  accentWord="Driveway & Paving"
+  subhead="A housebuilder's QS emails you a driveway surfacing tender for Phase 2 of a development in Banbury — twenty-two plots needing individual block paving driveways, permeable paving to the visitor parking court, and tarmac to the access road. The submission deadline is next Thursday. You are operating a plate compactor on a sub-base, phone in the van. Without AI Email Response, the tender sits unread until tonight while two competitors acknowledge by midday. With it, your acknowledgement arrives in under a minute and you start reviewing the drawings at your evening desk."
+  scenario="It is 9:45am on a Monday. You are pouring a resin-bound driveway at a detached property in Woodstock — the resin and aggregate are mixed, the pot life clock is ticking, and you are spreading the material across a prepared sub-base with a float trowel. Your phone is in the van cab. A council highways department emails you about resurfacing the car park at a community centre — approximately 800 square metres of tarmac, including white lining, drainage work, and a new pedestrian crossing. The tender deadline is two weeks away. Without AI Email Response, you see the email at 5pm, open the attachments at 7pm, and spend Tuesday evening starting your pricing — one working day behind the three contractors who acknowledged on Monday morning and started reviewing immediately. With AI Email Response, the acknowledgement is sent at 9:46am: 'Thank you for the car park resurfacing tender. We have received the specification and drawings and will review them today. We look forward to submitting our tender by the deadline.' The highways officer marks you as responsive. At lunchtime, the resin is cured and you check your phone — the lead summary shows the scope, the council contact, and the deadline. You download the documents and begin pricing that evening with the full two-week window."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/driveway-paving/ai-receptionist/"
+  ctaHeadline="Acknowledge Every Surfacing Tender Before Your Competitors"
+  ctaSubhead={`Developer and council tenders have deadlines. An acknowledgement in sixty seconds gives you the full pricing window. Add-on at £${pricing.addOn.price}/month.`}
+/>

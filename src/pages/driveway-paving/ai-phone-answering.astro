@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Are Mid-Lay',
+    text: "Block paving demands concentration — string lines, screed levels, pattern alignment, and cutting-in around manholes and drainage channels. Stopping mid-row disrupts the screed and the bond pattern. The AI answers every call while your hands are on the mallet, captures the full enquiry, and delivers a lead summary you can read at your break."
+  },
+  {
+    icon: '🏘️',
+    title: 'Captures Neighbour Referrals Instantly',
+    text: "The most valuable call a driveway contractor receives is from the neighbour watching the work. She sees the transformation, walks inside, and calls your number. If voicemail answers, she will call tomorrow — maybe. The AI answers, captures her driveway dimensions, material preference, and address, and you walk across the road after the job to give a quote."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Urgent Calls',
+    text: "A driveway subsiding into a collapsed drain, block paving heaving after frost damage, or a resin surface delaminating within weeks of installation — these urgent calls need fast responses. The AI identifies the urgency, captures the problem description, and escalates to your mobile. Standard quote requests queue as regular leads."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Quote Requests',
+    text: "Homeowners research driveways in the evening — comparing block paving to resin-bound online, browsing galleries, then calling for a quote before bed. These 7pm and 8pm calls are high-intent leads from people ready to commit. The AI captures them while you are at home with the family."
+  },
+  {
+    icon: '📋',
+    title: 'Lead Summaries You Can Price From',
+    text: "Each call produces a lead with the details you need: driveway dimensions if given, material preference (block, resin, tarmac, stone), current surface, access situation, vehicle count, dropped kerb requirements, property postcode, and timeline. Experienced driveway contractors can often give a ballpark price on the callback."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional First Contact',
+    text: "Driveway work is a considered purchase — homeowners spend thousands and want confidence in the contractor. A professional AI greeting with your company name, followed by knowledgeable questions about their driveway, sets the tone. It signals a proper business, not a one-man band who cannot answer the phone."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask homeowners calling about a new driveway?",
+    answer: "The conversation flows naturally from what the caller describes. The AI asks about the type of driveway they want (block paving, resin-bound, tarmac, natural stone), the approximate size in square metres or car spaces, the current surface if there is one to replace, whether they need a dropped kerb, the property location, and when they would like the work done. The caller feels heard rather than interrogated."
+  },
+  {
+    question: "Can the AI tell whether someone wants a small patio or a multi-plot driveway package?",
+    answer: "A pensioner describing a small patio extension produces a different lead summary from a site manager describing forty driveways on a housing development. The AI captures what the caller describes without assumptions — domestic leads include area, materials, and access, while commercial leads capture plot counts, surfacing specifications, programme dates, and tender requirements. You see the distinction immediately in the summary."
+  },
+  {
+    question: "What if someone calls while I am pouring resin?",
+    answer: "Resin-bound surfacing has a strict pot life — once mixed, you typically have twenty to thirty minutes before the resin begins to cure. Stopping to answer the phone is not an option. The AI handles the call completely, asks the right questions, and your lead summary is waiting when the pour is complete and the surface is trowelled. You never sacrifice a pour for a phone call."
+  },
+  {
+    question: "How many call minutes are included each month?",
+    answer: `Each month you receive ${pricing.tiers.core.minutes} minutes of AI phone answering as part of the Core plan at £${pricing.tiers.core.price}/month. A driveway company receiving fifteen to thirty enquiry calls monthly — domestic quotes, neighbour referrals, and occasional commercial tenders — sits well within this allowance. If a busy spring generates extra calls, overage is charged at 20p per minute with no penalty.`
+  },
+  {
+    question: "Can I still answer my own phone between jobs?",
+    answer: "When you are available — driving between sites, at the yard, or at home pricing up quotes — calls come directly to your mobile. The AI activates only when you are genuinely unavailable: operating the compactor, laying pavers, pouring resin, or after hours. The schedule is controlled from your dashboard and takes seconds to adjust."
+  },
+  {
+    question: "How is customer data kept secure?",
+    answer: "Driveway enquiries involve property addresses, sometimes property valuations, driveway measurements, and contact details. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers under UK GDPR, and accessible only to you. We never share, sell, or repurpose client information for any purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Driveway Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK driveway and paving companies. Captures every call while you are laying block paving, pouring resin, or compacting a sub-base. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/driveway-paving/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Driveway Contractor"
+  tradeNamePlural="Driveway & Paving Contractors"
+  tradeSlug="driveway-paving"
+  headline="AI Phone Answering for Driveway & Paving Companies"
+  accentWord="Driveway & Paving Companies"
+  subhead="A homeowner calls at 10am wanting a block paving driveway to replace her crumbling tarmac — four car spaces, herringbone pattern, charcoal with a natural stone border. You are across town on your knees laying pavers into a screed bed, mallet in hand, levels checked every row. Without AI phone answering, she hears voicemail and calls a competitor whose ad she saw on Facebook. With it, the AI captures the driveway size, material preference, pattern choice, and postcode — and your lead summary reads like a site survey brief."
+  scenario="It is 11:45am on a Wednesday in May. You are operating a plate compactor on a freshly laid MOT Type 1 sub-base for a 60 square-metre resin-bound driveway in Cheltenham. Vibration through your arms, ear defenders on, dust everywhere. Your phone is on the dashboard of the van parked in the client's drive. A homeowner in Cirencester calls. He has a large detached property with a gravel driveway that turns to mud every winter — he wants to convert it to block paving with decorative edging, incorporate a turning circle, and add a pedestrian path from the drive to the front door. The estimated area is around 90 square metres. He has had three other quotes and wants one more before deciding this weekend. Without AI Phone Answering, your voicemail answers. He does not leave a message — he has already heard two voicemails today and is done waiting. He books one of the three companies who answered. With AI Phone Answering, the call is answered on the second ring. The AI captures: large gravel-to-block conversion, turning circle, pedestrian path, approximately 90sqm, Cirencester, deciding this weekend, three existing quotes. At 12:30pm you turn off the compactor, check your phone, and see the lead summary. You call the homeowner, arrange a 5pm site visit on the way home, and submit a detailed quotation that evening — beating his weekend deadline and landing a £12,000 job."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/driveway-paving/ai-receptionist/"
+  ctaHeadline="Never Lose a Driveway Quote to an Unanswered Call"
+  ctaSubhead={`A homeowner comparing three driveway companies calls the fourth. If voicemail answers, she sticks with three. The AI makes sure you are always in the race. From £${pricing.tiers.core.price}/month.`}
+/>
