@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Loss Adjuster Instructions',
+    text: "Loss adjusters email underpinning instructions with claim packs, engineer reports, and tender deadlines. The underpinning firm that acknowledges first — referencing the claim, the underpinning method, and the programme — stays on the loss adjuster's preferred supplier panel."
+  },
+  {
+    icon: '📐',
+    title: 'References Foundation Specifications',
+    text: "When a loss adjuster emails specifying 'mass concrete sequence underpinning to three elevations, 1-metre bays, 2.4-metre depth to Oxford Clay bearing stratum, with BRE 251 monitoring for twelve months,' the AI acknowledgement references the elevations, depth, bearing stratum, and monitoring duration."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Excavation Hours',
+    text: "Underpinning specialists spend entire days in confined excavations. A loss adjuster's claim instruction arriving at 9am sits unopened until you climb out of the trench at 5pm. The instant acknowledgement places your firm ahead of every competing specialist."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Claims from Operations',
+    text: "Your inbox mixes loss adjuster instructions, concrete supplier confirmations, shoring hire invoices, monitoring equipment calibration certificates, and structural engineer correspondence. The AI identifies genuine claim instructions and project enquiries."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Loss Adjuster Panel Position',
+    text: "Loss adjusters managing subsidence portfolios need reliable underpinning contractors. Consistent instant acknowledgements across multiple claims establish your firm as a preferred panel contractor who responds professionally and delivers to programme."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Report Attachments',
+    text: "Claim instructions include structural engineer reports, trial pit logs, monitoring data, site photographs, and programme requirements. The AI notes these attachments in both the acknowledgement and your claim lead summary."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce underpinning quotes from claims?",
+    answer: "No pricing is generated — only a professional receipt acknowledgement confirming you have received the claim instruction, referencing the underpinning method and foundation specification, and indicating your site survey and detailed quotation will follow. Your underpinning pricing — excavation, shoring, concrete, labour, monitoring, reinstatement, and programme scheduling — is calculated by you from your site investigation and the structural engineer's specification."
+  },
+  {
+    question: "Will it respond to supplier and hire company emails?",
+    answer: "You specify during onboarding which email categories trigger the acknowledgement. Concrete delivery confirmations, shoring equipment hire invoices, skip collection schedules, pump hire availability, monitoring instrument calibration certificates, and CITB training notifications are excluded. Only genuine loss adjuster instructions, engineer referrals, and client project enquiries trigger the professional response."
+  },
+  {
+    question: "How does it handle homeowner emails about cracks?",
+    answer: "Homeowner emails via your contact form — 'we have cracks in our 1930s semi and our neighbour had subsidence, can you come and look?' — receive a professional reply explaining that a specialist assessment is the first step, asking about the crack location and direction, whether the property is insured for subsidence, and confirming your availability for a site visit."
+  },
+  {
+    question: "What does email response cost for underpinning firms?",
+    answer: `Email response is £${pricing.addOn.price}/month as an add-on. Underpinning contracts range from £3,000 single-elevation domestic mass concrete work to £80,000 complex multi-elevation piled schemes. Acknowledging a loss adjuster's three-elevation claim instruction within sixty seconds — while you vibrated concrete into a bay on a different claim — regularly determines whether your firm receives the next instruction in her portfolio.`
+  },
+  {
+    question: "Can all follow-up claim correspondence come from me?",
+    answer: "From the moment the acknowledgement is sent, every subsequent piece of correspondence is yours. Your site survey report, method statement, risk assessment, monitoring proposal, quotation, programme schedule, and contractual correspondence are authored and submitted by you and your engineering team."
+  },
+  {
+    question: "How is underpinning claim data secured?",
+    answer: "Insurance instructions contain property addresses, claim references, structural engineer reports, foundation details, monitoring data, and commercially confidential pricing. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No claim data is disclosed to competing underpinning firms or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Underpinning Specialists | Rapid Receptionist"
+  description={`AI email response for UK underpinning specialists. Acknowledges loss adjuster subsidence claims and structural engineer referrals within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/underpinning-specialists/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Underpinning Specialist"
+  tradeNamePlural="Underpinning Specialists"
+  tradeSlug="underpinning-specialists"
+  headline="AI Email Response for Underpinning Specialist Companies"
+  accentWord="Underpinning"
+  subhead="A loss adjuster emails a comprehensive subsidence claim instruction for a detached Edwardian villa in North Oxford — a substantial five-bedroom property with bay windows to the front, a two-storey rear addition, and stepped diagonal cracking visible on three elevations. The structural engineer's investigation found existing foundations at 800mm on highly plastic Oxford Clay, with mature horse chestnut trees within the influencing distance on the adjacent college grounds. Level monitoring over twelve months confirmed 18mm of progressive downward movement at the rear corner. The engineer specifies mass concrete sequence underpinning to the rear, flank, and front bay window elevations — thirty-two one-metre bays excavated to 3.2 metres, with post-underpinning monitoring for a further twelve months. The claim pack includes the engineer's report, trial pit logs, level monitoring data, tree survey, and a programme bar chart. Tender return in three weeks. You are on another claim in Abingdon — hand-excavating beneath the party wall of a Victorian terrace, the hydraulic shoring straining under the load, your labourer winching spoil buckets up through the trench mouth. Your phone is locked in the site office. Without AI Email Response, the Edwardian villa instruction sits until the evening. Two competing specialists acknowledged within the hour. With it, your acknowledgement arrives within sixty seconds, referencing the five-bedroom Edwardian villa, three-elevation underpinning, thirty-two bays, 3.2-metre depth, Oxford Clay, horse chestnut trees, eighteen months monitoring, and the three-week tender return."
+  scenario="It is 7am on a Monday. Your inbox accumulated over the weekend: a loss adjuster from Zurich emailing a new claim instruction — a 1980s detached in Witney with subsidence confirmed by tree root desiccation, mass concrete underpinning to the rear elevation specified, a structural engineer referring a private client — a listed Georgian cottage in Woodstock with differential settlement requiring mini-pile underpinning because conventional mass concrete cannot achieve the required depth to stable bearing stratum, a builder asking through your contact form about underpinning a party wall before excavating a basement next door — 'the structural engineer says we need to underpin to 3 metres before we can dig,' and a monitoring instrument supplier confirming next week's calibration visit. Without AI Email Response, you scan subjects while driving. The Edwardian villa claim sits until Tuesday. Two competitors responded Monday morning. With AI Email Response, the Zurich claim receives an immediate acknowledgement referencing the tree root desiccation and rear elevation, the Georgian cottage referral is acknowledged with mini-pile depth requirements noted, the basement party wall enquiry is handled, and the supplier email is filtered. At lunch you prioritise the Edwardian villa — estimated value £38,000 — and begin planning the site survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/underpinning-specialists/ai-receptionist/"
+  ctaHeadline="Acknowledge the 32-Bay Edwardian Villa While You Shore the Victorian Terrace"
+  ctaSubhead={`A loss adjuster's three-week tender return for 3.2-metre underpinning starts when the email lands. Your sixty-second acknowledgement secures the instruction. Add-on at £${pricing.addOn.price}/month.`}
+/>

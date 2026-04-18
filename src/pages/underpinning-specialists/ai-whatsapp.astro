@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Crack Photos for Assessment',
+    text: "Homeowners and surveyors WhatsApp photos of cracks — diagonal stepping through brickwork, horizontal fractures along DPC lines, and interior plaster cracking. The AI responds within seconds, asks about the crack progression and building age, and attaches every photo to your lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Urgent Foundation Assessments',
+    text: "When a surveyor photographs severe cracking during a pre-purchase inspection, the first underpinning firm to respond gets the assessment booking. WhatsApp speed determines whether you conduct the investigation or a competitor does."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Loss Adjuster Instructions',
+    text: "Loss adjusters increasingly use WhatsApp for initial instructions — sending claim details, engineer reports, and site photos. The AI captures the claim reference, insurer name, and scope specification while you excavate on another site."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Homeowners photograph cracks in the evening — natural light reveals the full extent. Messages at 8pm with photos of widening diagonal cracks carry genuine urgency from worried property owners."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Assessments',
+    text: "A WhatsApp saying 'cracks on rear corner, 1930s semi, large tree next door, Oxford area, insured with Aviva' becomes a structured assessment lead with property type, crack location, suspected cause, insurer, and postcode."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp operates on your business number. Claim references, property addresses, and engineer correspondence stay separated from personal messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI diagnose subsidence from photos?",
+    answer: "The AI does not make structural diagnoses — only a qualified structural engineer can determine whether cracking indicates subsidence, settlement, or thermal movement. However, the AI responds effectively to crack photographs — acknowledging the visible damage and asking whether the cracks are widening, whether a structural engineer has inspected the property, and whether the homeowner has buildings insurance with subsidence cover. Every photograph attaches to your lead for your professional assessment."
+  },
+  {
+    question: "What about multi-message underpinning threads?",
+    answer: "Underpinning conversations evolve — a homeowner sends interior crack photos, then exterior shots, then the surveyor's report extract, then asks about insurance procedure. The AI maintains the complete thread history and compiles every message into one consolidated subsidence assessment lead with crack location, severity, property details, and insurance status."
+  },
+  {
+    question: "How much does AI WhatsApp cost for underpinning firms?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. Underpinning projects range from £3,000 single-elevation domestic mass concrete work to £80,000 multi-elevation mini-pile schemes on insurance claims. Securing a loss adjuster's instruction for a three-elevation subsidence job through a rapid WhatsApp reply — while you compacted a bay in a trench on another claim — justifies the channel cost many times over.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Reply once in any thread and the AI hands control to you permanently. It recognises your message and withdraws. Most underpinning firms let the AI capture the initial details — property type, crack pattern, suspected cause, insurance status, and engineer involvement — then follow up to discuss the site visit, investigation methodology, and commercial terms."
+  },
+  {
+    question: "How is WhatsApp data from underpinning enquiries protected?",
+    answer: "Every WhatsApp message — crack photographs, property locations, insurance claim references, structural reports, and sender contact details — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively with you. No claim information reaches competing underpinning firms, is disclosed to third-party insurers, or is repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Underpinning Specialists | Rapid Receptionist"
+  description={`AI WhatsApp for UK underpinning specialists. Responds to crack photos, loss adjuster instructions, and subsidence assessment requests while you dig. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/underpinning-specialists/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Underpinning Specialist"
+  tradeNamePlural="Underpinning Specialists"
+  tradeSlug="underpinning-specialists"
+  headline="AI WhatsApp for Underpinning Specialist Companies"
+  accentWord="Underpinning"
+  subhead="A loss adjuster WhatsApps at 11am with a site photograph and a claims pack extract. She is managing a subsidence portfolio for AXA — a 1970s detached house in Kidlington with horizontal cracking along the DPC line on the front elevation, separation between the front bay window and the main wall reaching 8mm, and a distorted front door frame that no longer closes. The structural engineer's investigation confirmed heave damage caused by removal of a large willow tree from the front garden eighteen months earlier — the clay subsoil is rehydrating and expanding upward. The engineer recommends mini-pile underpinning to the front elevation with a reinforced concrete needle beam connecting the pile heads, and monitoring of the heave movement for eighteen months post-piling. Her message: 'Good morning — AXA subsidence claim, ref AX-2025-207431. Heave damage following tree removal, Kidlington OX5. Engineer recommends mini-pile underpinning to front elevation — 150mm CFA piles to 9 metres, needle beam. Heave monitoring required 18 months. Site survey needed within 7 working days. Can you provide method statement and pricing?' You are on a dig in Eynsham — excavating beneath a cottage party wall, the shoring timbers braced, the formation being trimmed. Without AI WhatsApp, the instruction waits until the lunch break. Another specialist confirms within the hour. With it, the AI responds instantly, confirms your mini-piling capability, asks whether the piling rig access requires removal of the driveway surface, and captures the lead — AXA claim, Kidlington OX5, heave, willow removal, 150mm CFA piles, 9m depth, needle beam, 18-month monitoring, 7-day survey."
+  scenario="It is 7pm on a Tuesday. A homeowner in Woodstock has found diagonal cracks in his study — running from the top corner of the window frame upward toward the ceiling, wider at the top than the bottom. He has lived in the 1890s stone cottage for twenty years and has never seen cracking before. A neighbour mentioned their own subsidence experience and suggested an underpinning specialist. He WhatsApps three firms with four photos — the study crack, a matching exterior crack through the stonework, a photo showing a large ash tree about 4 metres from the house, and a photo of the front door which has recently started jamming. His message: 'Hi — worried about my stone cottage in Woodstock. Cracks appeared in the last few months. 1890s cottage, stone walls, on clay I think. Large ash tree near the house. Door is jamming too. Photos attached. Should we be worried? We have Aviva buildings insurance. What should we do?' Without AI WhatsApp, you see the message Wednesday morning. One firm replied at 7:30pm. With AI WhatsApp, the response arrives at 7:01pm: 'Thank you for the photos — the diagonal crack pattern and sticking door are consistent with foundation movement. The first step is a structural engineer assessment to determine the cause. Could you confirm whether the cracking is on one elevation or multiple, and whether the cottage has a cellar or crawl space? We can arrange a specialist inspection.' He confirms cracking on two elevations and no cellar. Wednesday you call: 1890s cottage, Woodstock, diagonal cracks two elevations, ash tree 4m, sticking door, Aviva insured, clay soil."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/underpinning-specialists/ai-receptionist/"
+  ctaHeadline="Respond to the AXA Heave Instruction While You Trim Formation in Eynsham"
+  ctaSubhead={`A loss adjuster sends a CFA mini-pile specification for a heave claim. The AI responds while you shore the trench. Add-on at £${pricing.addOn.price}/month.`}
+/>

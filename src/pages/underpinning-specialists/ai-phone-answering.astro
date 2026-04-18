@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Dig',
+    text: "Underpinning excavation is confined, physical, and continuous — trenching below existing foundations, installing hydraulic shoring, hand-trimming to formation, and pouring concrete into bays. The AI answers every call in your company name while you work safely in the trench."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Diverse Underpinning Briefs',
+    text: "When a loss adjuster calls about a three-elevation mass concrete underpinning scheme, the AI captures the claim reference, engineer's specification, foundation depth, and monitoring requirement. When a homeowner calls about a single crack, the AI captures the crack pattern, property age, and insurance status."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Urgent Structural Calls',
+    text: "A pre-purchase surveyor discovering severe foundation movement, a homeowner finding new cracks after rainfall, or a builder exposing crumbling foundations during excavation — these generate urgent calls needing immediate underpinning assessment. The AI captures the urgency and escalates."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Insurance Calls',
+    text: "Homeowners research subsidence in the evening — reading insurance policies, studying crack patterns, and calling underpinning firms after work. Loss adjusters review claims portfolios after hours. The AI captures every out-of-hours foundation enquiry."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Built for Pricing',
+    text: "Each lead specifies the property type, foundation issue, engineer's recommendation, claim reference if applicable, underpinning method, depth requirement, and programme timeline — everything you need to conduct the site survey and produce a method statement."
+  },
+  {
+    icon: '🏷️',
+    title: 'Specialist-Grade Professionalism',
+    text: "An underpinning company that answers professionally and asks about the crack pattern, foundation depth, and engineer's involvement signals the specialist expertise that loss adjusters and engineers need when authorising foundation remediation works."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their underpinning needs?",
+    answer: "Questions adapt to the caller's role. A loss adjuster is asked about the claim reference, the insurer, the structural engineer's report findings, the recommended underpinning method, the foundation depth specification, the monitoring requirements, and the tender return deadline. A homeowner is asked about the cracking pattern — diagonal or horizontal, wider at top or bottom, internal or external — whether a structural engineer has inspected the property, whether a buildings insurance claim has been submitted, the property age and construction type, and the postcode."
+  },
+  {
+    question: "Can the AI handle both insurance and private underpinning work?",
+    answer: "Insurance subsidence claims route through loss adjusters with claim references, engineer's specifications, and insurer authorisation. Private underpinning comes from homeowners, developers, and builders — basement conversions, preventive underpinning before extensions, or remediation outside insurance cover. The AI distinguishes between the two and generates appropriately structured leads for each."
+  },
+  {
+    question: "What about calls during active excavation?",
+    answer: "Underpinning excavation is the most physically demanding and safety-critical phase — confined trenching below load-bearing walls with hydraulic shoring overhead. You cannot pause mid-bay to take a call. The AI manages every call during dig days with the same specialist professionalism as during quiet office mornings, ensuring no loss adjuster instruction or engineer referral is missed."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `Your Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Underpinning firms receive a blend of loss adjuster instructions, structural engineer referrals, homeowner subsidence enquiries, and developer basement underpinning requests. The majority operate comfortably within the allowance. If a run of insurance authorisations generates additional calls, overage is billed at 20p per minute with no penalties or lock-in.`
+  },
+  {
+    question: "Can I answer calls during office and reporting time?",
+    answer: "When you are at your desk — writing method statements, producing monitoring reports, pricing claims, or coordinating with the structural engineer — take calls directly. Toggle to AI answering when you arrive on site and the shoring goes in. Switch back when the last bay is backfilled and you leave site."
+  },
+  {
+    question: "How is underpinning project data secured?",
+    answer: "Underpinning enquiries contain property addresses, insurance claim references, structural engineer reports, foundation specifications, and commercially sensitive pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No claim details are shared with competing underpinning specialists, disclosed to insurers other than the instructing party, or sold to lead services."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Underpinning Specialists | Rapid Receptionist"
+  description={`AI phone answering for UK underpinning specialists. Captures loss adjuster instructions, subsidence claims, and foundation repair bookings while you excavate. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/underpinning-specialists/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Underpinning Specialist"
+  tradeNamePlural="Underpinning Specialists"
+  tradeSlug="underpinning-specialists"
+  headline="AI Phone Answering for Underpinning Specialist Companies"
+  accentWord="Underpinning"
+  subhead="A loss adjuster calls at 10:15am. She is managing a subsidence claim portfolio for Aviva — a 1960s detached bungalow in Botley with significant stepped cracking to the rear elevation. The structural engineer's investigation has confirmed clay shrinkage subsidence caused by a row of Leyland cypress trees on the neighbour's boundary. Trial pits revealed existing foundations at only 700mm depth on highly plastic Oxford Clay. The engineer recommends mass concrete sequence underpinning to the rear and flank elevations — 1-metre bays, excavated to 2.8 metres to reach stable bearing stratum below the zone of seasonal moisture variation. Level monitoring is required for twelve months post-completion. She needs a site survey within five working days and a detailed quotation with method statement within three weeks. You are on another insurance job in Marston — physically hand-excavating beneath the flank wall of a Victorian end-terrace, the hydraulic props braced against the trench sides, your labourer removing spoil in buckets, and you trimming the formation level with a spade before the next concrete pour. Two metres below ground, hard hat on, visibility limited to the trench walls. Your phone is in the van. Without AI Phone Answering, the loss adjuster hears voicemail and instructs the next specialist. With it, the AI captures the complete brief — Aviva claim, 1960s bungalow, Botley, stepped cracking, clay shrinkage, Leyland cypress, 700mm foundations, Oxford Clay, mass concrete both elevations, 2.8m depth, twelve-month monitoring — and your lead waits in the van."
+  scenario="It is 3pm on a Wednesday. You are pouring the fifth underpinning bay on a Victorian terrace in Cowley — the C25 concrete flowing from the mixer truck's chute through a hopper into the narrow trench, your labourer vibrating with the poker while you check the level against the datum peg. Three calls come in between 1pm and 4pm. Without AI Phone Answering, two voicemails — 'calling about subsidence' and 'need underpinning priced' — one hang-up. By Thursday, two have contacted other firms. With AI Phone Answering, all three are answered. Lead one: a structural engineer in Summertown recommending your firm to a private client — a 1920s semi with progressive cracking caused by a mature willow on the front boundary, the engineer has specified mini-pile underpinning because the bearing stratum is at 10 metres due to the alluvial flood plain. Lead two: a loss adjuster from Zurich instructing underpinning on a 1970s semi in Kidlington — clay shrinkage confirmed, mass concrete to the front elevation, 1.5-metre bays, 2-metre depth. Lead three: a homeowner in Charlbury noticing cracks appearing in a recently renovated cottage — diagonal cracking above the front door, no insurance claim yet, wants a specialist assessment. At 4:30pm you check three leads — a mini-pile project, an insurance mass concrete job, and a private crack assessment — and schedule accordingly."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/underpinning-specialists/ai-receptionist/"
+  ctaHeadline="Bungalow Subsidence, Mini-Pile Flood Plain, and Cottage Crack Assessment — All in Three Hours"
+  ctaSubhead={`While you poured the fifth bay in Cowley, three underpinning opportunities called. The AI captured every claim reference, foundation depth, and engineer's specification. From £${pricing.tiers.core.price}/month.`}
+/>

@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A loss adjuster calls about a subsidence claim in Headington — a 1930s semi-detached with stepped diagonal cracking above the bay window, a structural engineer's report confirming clay shrinkage subsidence caused by a mature oak tree on the boundary, and the insurer authorising mass concrete underpinning to three elevations. The engineer's specification calls for traditional sequence underpinning in 1-metre bays to a depth of 2.4 metres, with BRE Digest 251 monitoring before and after the works. The loss adjuster needs a site survey, method statement, and pricing within ten days. You are on another subsidence job in Cowley — excavating under the flank wall of a Victorian terrace, working in a confined trench with hydraulic shoring in place, hand-pouring C25 concrete into the second underpinning bay. Both hands on the vibrating poker, head below ground level. Your phone is in your jacket on the spoil heap. The loss adjuster calls three underpinning firms. One answers and books a Monday site visit.",
+    with: "Your AI receptionist answers on the second ring. It captures the complete brief — 1930s semi, Headington, stepped cracking, clay shrinkage, oak tree, mass concrete underpinning to three elevations, 1-metre bays, 2.4m depth, BRE 251 monitoring, ten-day tender return, insurer-authorised — and confirms you will call back. At the tea break you review and phone the loss adjuster."
+  },
+  {
+    without: "A structural engineer emails on Wednesday with a specification for mini-pile underpinning to a listed Grade II Georgian townhouse in central Oxford — differential settlement has caused rotation in the front elevation, the existing foundations are only 600mm deep on soft alluvial clay, and the engineer has specified 150mm-diameter CFA mini piles to 8-metre depth with a reinforced concrete needle beam connecting the pile heads to the existing foundation. The sensitivity of the listed building requires specialist vibration monitoring throughout. The email sits until Sunday.",
+    with: "Your AI acknowledges the engineer's email within sixty seconds, referencing the Grade II townhouse, differential settlement, CFA mini piles, 8-metre depth, needle beam, and vibration monitoring. Sunday evening you confirm your mini-piling rig availability."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday with photos of cracks running through the rear corner of their house — visible from inside and out, wider at the top than the bottom, with wallpaper tearing at the ceiling junction. They message three underpinning firms. You are at home. By Monday, two have replied with availability.",
+    with: "The AI responds within seconds, asks whether a structural engineer has inspected the cracking, whether the property is insured for subsidence, and the postcode. Monday at 8am you have a structured subsidence lead with photos, insurance context, and location."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Traditional Underpinning",
+    items: ["Mass concrete sequence underpinning (hit-and-miss)", "Deep strip underpinning to bearing stratum", "Foundation widening and deepening", "Basement underpinning for additional depth", "Party wall underpinning under Section 6 notices", "Building control liaison and sign-off"]
+  },
+  {
+    category: "Piled Underpinning",
+    items: ["Mini pile (CFA) underpinning with needle beams", "Micro pile underpinning in restricted-access locations", "Resin injection stabilisation for minor settlement", "Pin pile underpinning for lightweight structures", "Beam and base underpinning systems", "Vibration monitoring for sensitive structures"]
+  },
+  {
+    category: "Structural Repair & Monitoring",
+    items: ["Crack stitching with helical bar reinforcement", "Tell-tale and level monitoring installation", "BRE Digest 251 monitoring programmes", "Superstructure crack repair and repointing", "Tree root barrier installation", "Insurance claim technical support and reporting"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Homeowners with Subsidence",
+    description: "Homeowners discovering cracks and fearing the worst — subsidence, settlement, or heave. Often dealing with insurance claims for the first time, coordinating between the insurer, the loss adjuster, and the structural engineer. They need reassurance, clear communication, and a specialist who can explain what underpinning involves and how long it takes."
+  },
+  {
+    icon: "📋",
+    title: "Loss Adjusters & Insurers",
+    description: "Loss adjusters managing subsidence portfolios for major insurers — Aviva, Zurich, AXA, and Lloyd's syndicates. They need underpinning firms that respond promptly, produce detailed method statements, price accurately, and complete works to programme. A reliable underpinning contractor becomes a preferred supplier across their entire claims book."
+  },
+  {
+    icon: "🏗️",
+    title: "Structural Engineers",
+    description: "Structural engineers specifying underpinning solutions and seeking contractors to execute their designs. They value firms that understand the engineering — foundation depth, bearing capacity, sequence methodology, and monitoring requirements — and can translate a specification into a safe, compliant installation."
+  },
+  {
+    icon: "🏡",
+    title: "Developers & Builders",
+    description: "Developers converting basements, lowering cellar floors, or building adjacent to existing structures under the Party Wall Act. Builders encountering unexpected settlement during renovation — cracked foundations, inadequate bearing capacity, or tree root damage discovered during excavation."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand underpinning terminology?",
+    answer: "The complete vocabulary of foundation remediation is built into the system — mass concrete underpinning, sequence underpinning (hit-and-miss), mini piles, micro piles, CFA piles, pin piles, resin injection, beam and base, needle beam, subsidence, settlement, differential settlement, heave, clay shrinkage, tree root damage, bearing stratum, foundation depth, BRE Digest 251, tell-tales, level monitoring, crack stitching, helical bar, superstructure repair, loss adjuster, party wall, Section 6 notice, and building control sign-off. When a loss adjuster describes 'mass concrete sequence underpinning to three elevations, 1-metre bays, 2.4-metre depth to London Clay bearing stratum, BRE 251 monitoring for twelve months,' the AI captures every detail."
+  },
+  {
+    question: "Can the AI distinguish a cracked wall from a subsidence claim?",
+    answer: "A homeowner calling about 'a crack above our kitchen window' generates an initial enquiry lead — the AI asks about the crack width, direction (diagonal or horizontal), whether it is wider at the top or bottom, and whether the property has a history of movement. A loss adjuster calling about 'authorised underpinning under claim reference AV-2024-118592 — clay shrinkage subsidence, engineer's report confirms mass concrete underpinning to the rear and flank elevations' generates a fully specified insurance works lead. The two produce entirely different lead profiles."
+  },
+  {
+    question: "What about urgent structural calls?",
+    answer: "Emergency calls arrive when a surveyor discovers severe foundation movement during a pre-purchase survey, when a homeowner notices sudden new cracking after heavy rainfall, or when a contractor exposes failed foundations during renovation excavation. The AI identifies the structural urgency, captures the property details, the nature of the movement, and the reporting engineer's involvement, and escalates for priority scheduling."
+  },
+  {
+    question: "How much does this cost for an underpinning firm?",
+    answer: `Underpinning specialists pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sole trader specialising in domestic mass concrete underpinning or a larger firm operating mini-piling rigs on commercial subsidence contracts, the talk-time allowance fits your enquiry volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a small underpinning team?",
+    answer: "Smaller underpinning firms — an owner-operator with a labourer working in confined excavations — benefit the most. When you are two metres below ground level, hand-excavating beneath a party wall with hydraulic shoring above your head, there is zero possibility of answering a phone call. The AI captures every loss adjuster tender, every engineer referral, and every homeowner panic call while you work safely in the trench."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Configure coverage from your dashboard to match underpinning workflows. During active dig days — excavating, shoring, concreting, and backfilling bays in sequence — route all calls to the AI. During pricing, report writing, and office administration — take calls yourself. Switch between modes from your phone at any point."
+  },
+  {
+    question: "How is underpinning project data protected?",
+    answer: "Underpinning enquiries contain property addresses, insurance claim references, structural engineer reports, foundation details, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project information is disclosed to competing underpinning firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Underpinning Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK underpinning specialists — mass concrete underpinning, mini piles, subsidence remediation, crack stitching, and foundation repair. Never miss a loss adjuster's call from the trench. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/underpinning-specialists/ai-receptionist/"
+  tradeName="Underpinning Specialist"
+  tradeNamePlural="Underpinning Specialists"
+  tradeSlug="underpinning-specialists"
+  headline="The AI Receptionist Built for Underpinning Specialists"
+  accentWord="Underpinning"
+  subhead={`You cannot answer the phone when you are two metres below ground in a confined excavation, hydraulic shoring above your head, hand-pouring concrete into the third underpinning bay of a Victorian terrace. Your AI receptionist captures every call, every message, and every tender — from loss adjusters authorising six-figure subsidence claims to homeowners noticing their first crack. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Subsidence Claim Calls While You Concrete the Third Bay"
+  ctaSubhead={`A loss adjuster with an authorised three-elevation mass concrete underpinning job needs a site survey booked today. If voicemail answers, they call the next specialist. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

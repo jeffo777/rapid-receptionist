@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls from the Trench',
+    text: "Excavating beneath load-bearing walls with hydraulic shoring overhead, pouring concrete into confined bays, compacting and trimming formation level — both hands occupied in a restricted trench. Missed Call Text Back sends a branded text to every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Loss Adjuster Attention',
+    text: "A loss adjuster instructing a subsidence claim gets voicemail from two firms and a text from yours: 'Thanks for calling — we are currently undertaking structural underpinning on site and will return your call this afternoon.' The loss adjuster holds your position on the tender list."
+  },
+  {
+    icon: '🏷️',
+    title: 'Specialist Professional Image',
+    text: "An instant branded text from a structural underpinning firm projects expertise and operational capacity — the kind of specialist foundation contractor that insurers, loss adjusters, and structural engineers trust with their most sensitive subsidence remediation projects."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During All-Day Digs',
+    text: "Underpinning dig days consume the entire crew — shoring installation, trench excavation, formation trimming, concrete placement, and curing. Every person wears PPE and works in confined conditions. Missed Call Text Back captures every commercial lead during your most physically demanding days."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Claim Details',
+    text: "Callers reply with scope — 'Aviva claim, 1950s semi, clay shrinkage, mass concrete 3 elevations, need site survey in 7 days.' Replies arrive on your dashboard with claim reference, property details, and programme before you climb out of the trench."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering conducts full subsidence conversations and builds detailed claim leads. Missed Call Text Back catches edge cases — calls during a critical concrete pour, signal lost in a deep trench, or one-ring disconnects. Together, no underpinning enquiry escapes."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "Within seconds of the unanswered call ending — before the loss adjuster instructs the next specialist. During full-day underpinning digs where your phone sits in the site office from dawn until the last bay is backfilled, this automatic branded text keeps your foundation repair business commercially active without interrupting a single excavation bay."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "The wording is entirely yours — crafted during initial setup and adjustable whenever you choose. A well-pitched underpinning message reads: 'Thank you for calling [company name]. We are currently undertaking structural underpinning on site. We will return your call at the earliest opportunity. Reply with your requirements for a faster response.' The message communicates active specialist capability."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "The two services work as complementary layers. Phone Answering conducts full conversations — identifying the crack pattern, foundation issue, engineer's recommendation, claim reference, and programme. Missed Call Text Back catches rare bypass situations — a call during a concrete pour when the AI line is engaged, a mobile signal failing inside a deep shored trench, or a caller disconnecting before the system picks up. Running both means no foundation remediation lead vanishes."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Underpinning projects range from £3,000 domestic single-elevation mass concrete work to £80,000 complex multi-elevation piled schemes. Recovering one missed call from a loss adjuster — who had a three-elevation insurance claim ready for instruction — through a timely branded text delivers a return that eclipses the channel cost for years.`
+  },
+  {
+    question: "Do callers actually reply to the text?",
+    answer: "Loss adjusters managing claim portfolios under time pressure reply readily with claim details. Homeowners worried about subsidence reply with crack descriptions and insurance status. Structural engineers reply with the specification and their client's contact details. These property-specific details arrive on your dashboard while the shoring holds, giving you priority callback context for the end of the dig day."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies featuring property addresses, claim references, foundation specifications, and crack descriptions are encrypted and held on UK and EU servers under UK GDPR. Only you access the data. Nothing reaches competing underpinning firms or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Underpinning Specialists | Rapid Receptionist"
+  description={`Missed Call Text Back for UK underpinning specialists. Automatically texts callers while you excavate beneath foundations — keeps loss adjuster claims and subsidence assessments warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/underpinning-specialists/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Underpinning Specialist"
+  tradeNamePlural="Underpinning Specialists"
+  tradeSlug="underpinning-specialists"
+  headline="Missed Call Text Back for Underpinning Specialist Companies"
+  accentWord="Underpinning"
+  subhead="It is 8am on a Tuesday. Your crew starts excavating the first bay on a mass concrete underpinning job beneath a Victorian end-terrace in Summertown — the hydraulic shoring is set, the breaker is cracking through the existing concrete floor slab, and your labourer begins hand-excavating beneath the gable wall to formation level at 2.6 metres. Three calls come in between 8am and noon. Your phone is in the site office inside the property. Without Missed Call Text Back, two voicemails — 'calling about foundation work' and 'morning, it is the loss adjuster' — and one hang-up. With it, all three receive texts within seconds. The first replies at 8:30am: 'Aviva loss adjuster — new claim, ref AV-2025-39872. 1960s detached in Botley, clay shrinkage confirmed, mass concrete underpinning to rear and flank elevations, the engineer specifies 1m bays to 2.4m depth. Party wall with the neighbour on the flank side. Need site survey within 7 working days and quotation within 3 weeks. Confirm availability.' At the tea break you read the reply. You phone the loss adjuster at lunch and confirm the survey for Thursday."
+  scenario="It is 1:30pm on a Friday in January. Your team has been underpinning a cottage in Charlbury since 7am — a tricky job beneath a rubble stone wall with limited headroom, each bay carefully hand-excavated and concreted to avoid disturbing the historic masonry above. By 1:30pm you have completed four of the six bays. Four missed calls between 9am and 1pm. Without Missed Call Text Back, you check at the end of the day: four unknowns, one voicemail — 'please call back about subsidence' — three permanently lost. With Missed Call Text Back, all four received texts. Reply one: 'structural engineer in Witney — recommending your firm to a client with mini-pile requirements beneath a listed cottage. SE has specified 12 CFA piles to 10 metres. Please call me to discuss.' Reply two: 'homeowner Oxford OX4 — diagonal cracks both sides of our 1930s semi, large willow 4m away on neighbour's land, Zurich insured, need assessment urgently.' Reply three: 'builder in Eynsham — underpinning a party wall before basement dig, structural engineer says 3m depth, can you price?' Reply four: 'developer — buying terraced pair at auction, survey flags settlement, need pre-purchase assessment within 2 weeks.' Four foundation leads. Four distinct underpinning scenarios. Friday evening you prioritise the listed cottage mini-pile project and the developer's auction deadline."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/underpinning-specialists/ai-receptionist/"
+  ctaHeadline="Recover Four Foundation Leads from One January Cottage Friday"
+  ctaSubhead={`While you completed the fourth bay beneath the Charlbury cottage, four callers missed you. Four texts went out. Four replied. Mini piles, diagonal cracks, a party wall, and an auction assessment. Add-on at £${pricing.addOn.price}/month.`}
+/>

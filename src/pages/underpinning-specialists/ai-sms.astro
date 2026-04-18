@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Loss Adjuster Texts',
+    text: "Loss adjusters text claim instructions between site visits — 'new subsidence claim, ref ZU-2025-44821, 1960s semi Botley, clay shrinkage, mass concrete underpinning front and flank, survey within 10 days.' The AI captures every specification instantly."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Assessment Leads from Short Messages',
+    text: "A text like 'cracks in back corner of house, 1930s semi, big tree, OX2, insured, need assessment' gives the AI enough. It asks about the crack direction and width. Your lead arrives with property type, suspected cause, insurance status, and crack detail."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Engineer Referral Texts',
+    text: "When a structural engineer recommends you to a homeowner, the homeowner texts about their cracks. The AI captures the subsidence concern while the referral confidence is fresh and the homeowner is actively seeking specialist help."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Loss adjusters process claims in the evening. Homeowners text crack photos after work. Engineers confirm instructions after hours. The AI captures every after-hours underpinning message."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Claims',
+    text: "Messages arrive in fragments — 'subsidence claim' then 'Aviva' then 'mass concrete underpinning' then 'rear elevation' then '2.4m deep.' The AI builds one cohesive insurance works instruction from every fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Claim references, property addresses, and engineer specifications stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound underpinning text?",
+    answer: "Every inbound text receives a branded reply in your company name within seconds. A loss adjuster's detailed text — 'Zurich claim ZU-2025-44821, 1960s bungalow Botley, clay shrinkage confirmed, mass concrete underpinning rear and flank, 1m bays, 2.4m depth, 12-month monitoring, survey within 10 days' — is acknowledged with every claim specification preserved. A homeowner's anxious text — 'got cracks in our house, think it might be subsidence' — prompts questions about the crack direction, property age, and whether an engineer has assessed the damage."
+  },
+  {
+    question: "Will the homeowner realise it is AI-generated?",
+    answer: "The reply reads like an underpinning specialist checking messages between excavation bays — measured, technically competent, and reassuring without overpromising. It uses your company name and asks about the crack characteristics and property details. Homeowners texting underpinning firms during their most worried moment need a response that demonstrates specialist knowledge and calm professionalism."
+  },
+  {
+    question: "How does it handle existing claim updates?",
+    answer: "Current insurance clients text about monitoring readings, crack progression updates, engineer visit confirmations, and programme changes. The AI captures these and categorises them separately from new enquiries. Your dashboard distinguishes a new loss adjuster instruction from an existing client confirming that the tell-tales show movement has stabilised."
+  },
+  {
+    question: "What does AI SMS cost for underpinning firms?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. Underpinning projects range from £3,000 single-elevation domestic mass concrete work to £80,000 multi-elevation piled schemes. Capturing a loss adjuster's three-elevation insurance instruction through a rapid text reply — while you poured concrete into the sixth bay on another claim — generates revenue that far exceeds the annual channel cost.`
+  },
+  {
+    question: "Can I text back personally?",
+    answer: "Reply in any thread and the AI hands control to you immediately. During office and reporting time — writing method statements, processing monitoring data, and pricing claims — manage texts yourself. During active excavation — shoring, digging, and concreting in confined trenches — let the AI handle commercial messages while you stay safe in the ground."
+  },
+  {
+    question: "How is text data from underpinning enquiries stored?",
+    answer: "Text messages containing property addresses, insurance claim references, structural engineer recommendations, foundation specifications, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing underpinning firms or repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Underpinning Specialists | Rapid Receptionist"
+  description={`AI SMS for UK underpinning specialists. Responds to loss adjuster claim texts, subsidence assessment requests, and homeowner crack messages while you dig. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/underpinning-specialists/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Underpinning Specialist"
+  tradeNamePlural="Underpinning Specialists"
+  tradeSlug="underpinning-specialists"
+  headline="AI SMS for Underpinning Specialist Companies"
+  accentWord="Underpinning"
+  subhead="You are on site at 7:30am, walking the trench line on a mass concrete underpinning job in Headington — checking the overnight weather has not flooded the open bays, inspecting the hydraulic shoring braces, and planning today's excavation sequence. Bay four needs excavating, shuttering, and concreting before 4pm. At 7:45am a loss adjuster texts: 'Morning — new RSA subsidence claim, ref RSA-2025-31827. 1950s end-terrace in Marston, significant stepped cracking rear corner and flank. Engineer confirms clay shrinkage — mature poplar 5m from rear corner on adjacent land. Existing foundations 600mm on Oxford Clay. Engineer recommends mass concrete underpinning rear and flank elevations, 1m bays, 2.6m depth. Need site survey within 5 working days and method statement with pricing by month end. Party wall notice needed for flank — adjoin neighbours. Can you confirm availability?' Your hands are adjusting a shoring brace in the trench and your phone is in your jacket on the scaffold board above. Without AI SMS, the text waits until the tea break at 9:30. She texts two other firms; one confirms at 8am. With it, the AI responds at 7:46am, confirms your mass concrete underpinning capability, asks whether the party wall surveyor has been appointed, and captures the lead — RSA claim, 1950s end-terrace, Marston, clay shrinkage, poplar, 600mm foundations, Oxford Clay, rear and flank elevations, 1m bays, 2.6m depth, party wall notice, 5-day survey."
+  scenario="It is 9pm on a Thursday. A homeowner in Faringdon has been watching her kitchen wall for three months. A hairline crack above the window has grown to 3mm, the grout line in the tiles behind the hob has split, and the back door now jams at the bottom. Her husband measured the crack with a ruler — definitely wider than last month. She has googled 'subsidence signs' and every symptom matches. She texts three underpinning firms: 'Hi — very worried about our house. Crack above kitchen window getting wider — about 3mm now, was hairline 3 months ago. Tiles cracking behind hob. Back door jams. House is 1970s detached, clay soil area. Large willow in neighbour's back garden about 8 metres away. We have Zurich buildings insurance. Should we make a subsidence claim? What do we do first? Faringdon, SN7.' Without AI SMS, you see the text Friday morning. One firm replied at 9:20pm reassuringly. With AI SMS, the response arrives at 9:01pm: 'Thank you for the details — progressive cracking with a jammed door is worth investigating. The first step is to contact your Zurich buildings insurance and report the cracking as potential subsidence. They will appoint a structural engineer to assess the cause. Could you confirm whether the cracking is visible on the exterior brickwork as well?' She confirms exterior cracks too. Friday you call: 1970s detached, Faringdon SN7, progressive cracking 3mm widening, tiles splitting, door jamming, willow 8m, Zurich insured, clay soil, exterior cracks confirmed."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/underpinning-specialists/ai-receptionist/"
+  ctaHeadline="Catch the RSA Claim Instruction While You Inspect the Shoring in Headington"
+  ctaSubhead={`A loss adjuster texts a mass concrete specification for a party wall subsidence claim. The AI replies while you check the braces. Add-on at £${pricing.addOn.price}/month.`}
+/>
