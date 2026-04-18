@@ -1,0 +1,42 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  { icon: '📧', title: 'Acknowledges Tender Emails Instantly', text: "Dry lining tenders arrive by email — a main contractor sends the partition schedule, board specification, and programme and expects a response. The AI acknowledges within sixty seconds, confirming receipt and marking you as responsive before rivals have opened their inbox." },
+  { icon: '📐', title: 'Recognises Dry Lining Specifications', text: "When an email references 'metal stud partitions to SFS framing with twin-layer fire-rated board and acoustic insulation quilts to party walls,' the AI captures the specification accurately in the acknowledgement and lead summary. Your reply reads like a firm that understands the scope, not a generic auto-responder." },
+  { icon: '🕒', title: 'Covers the Hours You Cannot Check Email', text: "Most dry liners check email once — in the evening after a full day of boarding. A tender invitation that arrives at 9am sits untouched for ten hours. The AI responds immediately so the QS knows you are interested while you are still cutting plasterboard." },
+  { icon: '🗂️', title: 'Structures Every Enquiry as a Lead', text: "Emails from main contractors, fit-out managers, and architects are distilled into actionable lead summaries — project type, location, board specification, programme dates, and the sender's role. You review the evening summary knowing exactly which tenders to price first." },
+  { icon: '🤝', title: 'Strengthens Subcontractor Relationships', text: "When a main contractor you have worked with before emails about a new project, a fast professional acknowledgement reinforces your reputation as a reliable subcontractor. The AI responds as your business within a minute, confirming you have received the brief and will follow up." },
+  { icon: '📎', title: 'Handles Drawing Attachments', text: "Partition layout drawings, reflected ceiling plans, and specification documents arrive as PDF or DWG attachments. The AI notes that attachments have been received in the acknowledgement and flags them in your lead summary so you know whether to expect a full tender package or a quick scope email." }
+];
+
+const faqs = [
+  { question: "Does the AI write my tender response or just acknowledge the email?", answer: "It sends a single professional acknowledgement — confirming receipt of the tender, noting the project details mentioned in the email, and letting the sender know you will review the specification and respond. It does not price work, commit to programme dates, or draft a detailed reply. The gap between the contractor's email and your personal response is bridged instantly, keeping you in contention for the work." },
+  { question: "Will the AI reply to every email my business receives?", answer: "Only genuine business enquiries trigger the acknowledgement — tender invitations, project enquiries, subcontractor availability checks, and scope change notifications. Plasterboard supplier confirmations, batten delivery notes, insulation merchant invoices, and CITB renewal emails are filtered out automatically. You configure the parameters during onboarding so the system distinguishes between dry lining enquiries and routine supply chain correspondence from day one." },
+  { question: "How does it handle emails with partition layout drawings attached?", answer: "When a QS sends a tender invitation with attached partition schedules, reflected ceiling plans, or specification documents, the AI acknowledges receipt and confirms the attachments have arrived. Your lead summary notes the attachment types — for example, 'two PDF drawing files and one partition schedule attached' — so you know the scope before opening the email yourself. The AI does not interpret drawings, but it ensures the sender knows their documents landed." },
+  { question: "How much does AI Email Response cost for dry liners?", answer: `Email response is an add-on channel at £${pricing.addOn.price}/month on top of the Core plan. For dry lining firms where tender invitations arrive primarily by email — which describes most subcontracting work in the sector — this channel protects your tender pipeline directly. One acknowledged tender that you win because you responded first pays for the add-on cost many times over.` },
+  { question: "Can I still reply to emails personally after the AI responds?", answer: "Absolutely. The AI sends the initial acknowledgement and then steps back. You follow up with your detailed response — reviewing the partition schedule, checking your gang's programme, and composing your tender return — in your own time. The AI does not interfere with your subsequent correspondence. Think of it as a professional receptionist confirming receipt of your post while you are hanging board on the third floor." },
+  { question: "Is the content of tender emails kept confidential?", answer: "Tender emails frequently contain commercially sensitive information — contract values, programme milestones, specification details, and competitive pricing structures. All email content processed by the AI is encrypted, stored on UK and EU servers under UK GDPR, and shared exclusively with you. Your tender communications remain as confidential as they would in a private inbox — no data is accessed for any purpose beyond generating your acknowledgement and lead summary." }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for UK Dry Liners | Rapid Receptionist"
+  description={`AI email response for UK dry liners and dry lining contractors. Acknowledges tender invitations, partition specifications, and project enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/dry-liners/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Dry Liner"
+  tradeNamePlural="Dry Liners"
+  tradeSlug="dry-liners"
+  headline="AI Email Response for UK Dry Lining Contractors"
+  accentWord="Dry Lining"
+  subhead="A main contractor emails the dry lining package for a 30-unit residential scheme — metal stud partitions, MF ceilings, and fire-rated board throughout. Your AI acknowledges while you fix track on the second floor."
+  scenario="It is 2:30pm on a Wednesday. You are fitting MF ceiling grid in a commercial office conversion in Nottingham — the hangers are set, the main tees are levelled, and you are clicking cross tees into place ahead of the tile fitters arriving on Friday. Your laptop is in the van and your phone is in your tool belt on silent. Meanwhile, a contracts manager at a regional fit-out company has emailed you about a new project — dry lining package for a three-storey dental surgery conversion in Derby. The scope includes metal stud partitions with acoustic-rated board to treatment rooms, moisture-resistant board to wet areas, MF ceilings with access panels throughout, and fire-rated enclosures to the riser shafts. He has copied three dry lining firms and wants availability for a site walk next Tuesday. Without AI Email Response, you check email at 7pm and reply at 9pm — but two other dry liners responded within the hour and the contracts manager has already pencilled them in for Tuesday morning slots. With AI Email Response, he receives a professional acknowledgement at 2:31pm confirming receipt of the project brief and noting the attached specification. When you check your phone at 5pm, the lead summary shows the dental surgery project, the partition and ceiling scope, the site walk request, and the contracts manager's direct number. You reply confirming Tuesday afternoon and secure your slot."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/dry-liners/ai-receptionist/"
+  ctaHeadline="Acknowledge Dry Lining Tenders Before the Programme Moves On"
+  ctaSubhead={`A QS emailed three dry liners at 10am. Two responded by lunchtime. The third checked email at 7pm. Do not be the third. Add-on at £${pricing.addOn.price}/month.`}
+/>
