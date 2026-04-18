@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Bathroom Renovation Reels',
+    text: "Bathroom time-lapses are mesmerising — the strip-out revealing corroded pipes, the new copper soldered in, the sanitaryware mounted, and the finished room revealed. When followers DM about their own bathroom, the AI captures the renovation lead."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Homeowners at Peak Inspiration',
+    text: "Instagram draws homeowners who research bathroom renovations visually — comparing walk-in showers, studying wall-hung WC installations, and imagining their own transformation. A DM is a pre-motivated renovation enquiry."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Emergency Leak DMs',
+    text: "Homeowners DM photos of dripping pipes, water-pooling floors, and overflowing cisterns after finding your profile. The AI asks about isolation status, water source, and access for emergency attendance."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Late Bathroom Inspiration',
+    text: "Homeowners scroll bathroom content at midnight — studying sanitaryware, visualising tile layouts, and dreaming about their own renovation. A DM at peak inspiration represents maximum buying intent."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Renovation DMs',
+    text: "DMs begin with 'love your bathrooms' or 'want exactly this in our house.' The AI asks about the existing bathroom, the room size, the sanitaryware preference, and the timeline — building a survey brief."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Copper Joint Close-Up',
+    text: "Every soldered manifold, every pressed Viega fitting, and every polished chrome fixture generates enquiries from homeowners who recognise quality plumbing craftsmanship."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "Navigate to your Instagram settings and switch to a Business or Creator profile at no cost. Plumbing firms posting bathroom renovation time-lapses, copper pipework close-ups, underfloor heating manifold installations, and Megaflo cylinder commissionings attract extraordinary engagement — the transformation from dated suite to designer bathroom is inherently compelling visual content."
+  },
+  {
+    question: "What plumbing DMs arrive through Instagram?",
+    answer: "Homeowners wanting bathroom refits, wetroom conversions, and en-suite additions. Self-builders planning manifold-fed UFH systems and unvented hot water. Builders seeking reliable plumbing subcontractors for extensions. Letting agents looking for portfolio maintenance plumbers. Each has examined your installation quality and pre-qualified your standard of work."
+  },
+  {
+    question: "How quickly does the AI respond to plumbing DMs?",
+    answer: "Replies land within seconds of receipt, and Instagram's read indicator shows your plumbing firm is actively monitoring messages. A homeowner who has spent an hour comparing plumber portfolios and finally messages the firm with the most impressive bathroom transformations expects immediate, specification-aware engagement."
+  },
+  {
+    question: "What do Instagram DMs cost for plumbing contractors?",
+    answer: `The Instagram DMs add-on is £${pricing.addOn.price}/month. A bathroom renovation generates £3,000 to £10,000. A single walk-in wetroom conversion — triggered by a follower's 'that is exactly the shower I want' DM and secured through an immediate AI response — covers the annual channel cost from one project.`
+  },
+  {
+    question: "Can I reply to DMs myself?",
+    answer: "Post one reply in any thread and the AI steps aside permanently. Most plumbers allow the AI to gather the opening scope — sanitaryware preference, room dimensions, existing system, and timeline — then engage directly to schedule the survey and discuss material selections face-to-face."
+  },
+  {
+    question: "Is DM data from plumbing queries private?",
+    answer: "Instagram DMs — leak photographs, property addresses, system details, sanitaryware preferences, and sender contact information — are encrypted and stored on UK and EU servers under UK GDPR. Nothing reaches competing plumbers, is shared with sanitaryware suppliers, or is disclosed to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Plumbing Contractors | Rapid Receptionist"
+  description={`AI Instagram DMs for UK plumbing contractors. Converts bathroom renovation time-lapses and copper pipework close-ups into refit bookings and wetroom enquiries. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/plumbing-contractors/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Plumbing Contractor"
+  tradeNamePlural="Plumbing Contractors"
+  tradeSlug="plumbing-contractors"
+  headline="AI Instagram DMs for Plumbing Contractor Companies"
+  accentWord="Plumbing"
+  subhead="Your latest reel is a forty-second time-lapse of a complete bathroom renovation in a 1930s semi in Kidlington. The camera captures the strip-out — smashing the old tiles, ripping out the avocado bath, cutting away the corroded copper behind the bath panel. Then the first fix — new 15mm copper supplies soldered from the airing cupboard manifold, a boss strap connection to the soil stack for the new WC position, PEX underfloor heating loops clipped to insulation. Then the second fix — a freestanding Victoria + Albert Amiata bath with floor-mounted Crosswater MPRO taps, a frameless walk-in shower with recessed Grohe Grohtherm SmartControl, a wall-hung Duravit Starck 3 WC on a Geberit Duofix frame, and a wall-mounted vanity with LED mirror. The final frame reveals the completed room — herringbone porcelain floor tiles, warm UFH, chrome fixtures gleaming against matt white sanitaryware. Eleven thousand views. A homeowner in Witney DMs: 'Incredible work. Our bathroom is from the 1980s — pink suite, leaking shower, terrible pressure. Want a complete refit like yours — freestanding bath, walk-in shower, wall-hung WC. Our room is about 3 by 2 metres. We have a combi boiler so no cylinder — is that a problem for a freestanding bath? We are in Witney. Can you come and measure up?' You are soldering a riser. Without AI DMs, the Witney message waits. With it, the AI confirms that a combi boiler can serve a freestanding bath and asks about the mains flow rate. She confirms gas combi, good flow. Monday you call: Witney 1980s pink suite strip-out, freestanding bath, walk-in shower, wall-hung WC, combi boiler, 3×2m, flow rate query, full refit."
+  scenario="It is 1am on a Saturday. A property developer has been scrolling through your Instagram studying your new-build first-fix and second-fix plumbing. He is building a luxury development — eight detached houses in the Cotswolds, each with four bathrooms and an en-suite plus two cloakrooms. He DMs: 'Very impressive installation standards. We are developing eight detached houses near Burford. Each has four bathrooms, an en-suite, and two cloakrooms — seven sanitaryware installations per house, fifty-six total. Specification: Duravit Me by Starck throughout, Hansgrohe RainSelect shower systems, freestanding baths in the master en-suites, Megaflo Eco Plus 300i unvented cylinders, manifold-fed PEX UFH on both floors. Copper carcass pipework only — no plastic. Need first and second fix plumbed. Phase one is four houses starting in twelve weeks. Can you handle this scale?' Without AI DMs, the fifty-six-room plumbing programme waits until Saturday afternoon. With AI DMs, the reply at 1:01am: 'Thank you — fifty-six sanitaryware installations across eight luxury houses is a programme we structure across phased completion. Could you confirm the programme gap between first-fix and second-fix, and whether the UFH will be screed or dry system?' He confirms screeded UFH, eight-week gap. Saturday you review: Burford Cotswolds 8 houses, 56 rooms, Duravit Me by Starck, Hansgrohe RainSelect, freestanding baths, Megaflo Eco Plus 300i, PEX UFH screed, copper only, phase 1 of 4 houses in 12 weeks."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/plumbing-contractors/ai-receptionist/"
+  ctaHeadline="Turn 11,000 Views on a Kidlington Bathroom into a Witney Full Refit"
+  ctaSubhead={`Forty seconds of herringbone tiles and Crosswater MPRO taps earns eleven thousand views. AI Instagram DMs converts a homeowner's 1980s pink suite story into a freestanding-bath renovation survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

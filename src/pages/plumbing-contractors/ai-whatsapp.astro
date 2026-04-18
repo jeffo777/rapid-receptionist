@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Leak and Damage Photos',
+    text: "Homeowners and letting agents WhatsApp photos of dripping joints, water-stained ceilings, burst pipe damage, and overflowing cisterns. The AI responds instantly, asks whether the water supply has been isolated, and attaches every photo to your emergency lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Developer Programme Slots',
+    text: "Main contractors WhatsApp plumbing requirements mid-build — 'first fix starts plot 12 Monday, need your team on site with copper and fittings.' The first plumber to confirm holds the programme position."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Builder Connection Requests',
+    text: "Builders WhatsApp plumbing requests from site — 'kitchen fitted, need waste and supply connections, can you come Thursday?' The AI captures the scope while you solder joints elsewhere."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Installation Hours',
+    text: "Main contractors confirm next-week programmes in the evening. Homeowners photograph bathroom leaks after dark. Landlords report tenant plumbing complaints out of hours. The AI captures every after-hours plumbing message."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Plumbing Briefs',
+    text: "A WhatsApp saying 'new bathroom, bath shower WC basin, 1930s semi, Cowley, want to start March' becomes a structured renovation lead with scope, property type, location, and timeline."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. Developer first-fix programmes, specification discussions, and merchant orders stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI triage emergency leak photos?",
+    answer: "The AI does not diagnose from images — only a qualified plumber on-site can assess joint integrity, pipe condition, and system pressure. It does respond constructively to every photo — acknowledging the visible water damage, asking whether the stopcock or isolation valve has been turned off, whether the water is from the mains or the heating system (clear vs discoloured), and the location of the leak relative to the property. Every photograph attaches to your emergency lead."
+  },
+  {
+    question: "What about multi-message plumbing threads?",
+    answer: "Plumbing conversations develop across several messages — a homeowner sends a photo of a dripping ceiling, then explains it started an hour ago, then confirms the upstairs bathroom tap was left on, then asks how quickly you can attend. The AI compiles every message into one consolidated emergency lead with the cause, location, duration, isolation status, and homeowner contact."
+  },
+  {
+    question: "How much does AI WhatsApp cost for plumbing contractors?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. A bathroom renovation generates £3,000 to £10,000. A new-build first-fix programme across twenty plots generates £40,000 to £100,000. Capturing one developer's weekly programme confirmation through a rapid WhatsApp reply — while you pressed Viega fittings on another site — secures recurring revenue that dwarfs the annual channel cost.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Post one message in any active thread and control shifts to you permanently. Most plumbers let the AI gather the initial brief — fixture list, system type, property details, and timeline — then step in directly to discuss the survey date, material preferences, and pricing."
+  },
+  {
+    question: "How is WhatsApp data from plumbing enquiries protected?",
+    answer: "Every WhatsApp message — leak photographs, property addresses, system specifications, developer programme details, and sender contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively with you. No plumbing project details reach competing firms or are used for any other purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Plumbing Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK plumbing contractors. Responds to leak photos, developer programme messages, and bathroom quote requests while you install. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/plumbing-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Plumbing Contractor"
+  tradeNamePlural="Plumbing Contractors"
+  tradeSlug="plumbing-contractors"
+  headline="AI WhatsApp for Plumbing Contractor Companies"
+  accentWord="Plumbing"
+  subhead="A builder WhatsApps at 7:30am on a Wednesday with a photo of finished kitchen units. He has completed a two-storey extension on a detached house in Botley — the kitchen is fitted, the units are in, the worktop is templated, and the tiler starts Friday. He needs the plumbing connected before the tiling. His message: 'Morning — extension kitchen in Botley is ready for plumbing. Need: Belfast sink with chrome monobloc mixer tap, waste disposal unit, dishwasher supply and waste, washing machine supply and waste in the utility behind the kitchen. Hot and cold supplies need extending from the existing kitchen — the builder has left chases in the wall for the pipework. Can your team do tomorrow or Friday before the tiler arrives? Photo showing the unit layout and the existing supply positions.' You are in the airing cupboard of a Victorian terrace in Marston — commissioning a new Megaflo Eco 210i unvented cylinder, checking the expansion vessel pre-charge, confirming the T&P relief valve discharge route through the tundish, and verifying the D1 and D2 pipe runs terminate visibly outside. Without AI WhatsApp, the kitchen connection waits until the cylinder is commissioned. The builder texts a second plumber. With it, the AI responds at 7:31am, confirms your connection capability, and asks about the mains pressure at the property. The builder confirms good mains. At 9am you review: Botley extension kitchen, Belfast sink monobloc, waste disposal, dishwasher and washing machine supply/waste, utility connections, chases ready, tomorrow or Friday pre-tiler."
+  scenario="It is 10pm on a Saturday. A letting agent in east Oxford manages forty rental properties. Her message: 'Evening — tenant in a ground-floor flat on Cowley Road reported a leak under the kitchen sink at 8pm. Water dripping from the bottle trap connection. I have asked the tenant to put a bowl under it and turn off the hot and cold isolation valves under the sink. Photos showing the bottle trap and the water on the kitchen floor. This is the third plumbing issue at this property this month — can we get the whole kitchen waste system checked? And can someone attend Monday to fix the trap first? We have a portfolio of 40 rental properties and need a reliable plumber on call.' Without AI WhatsApp, the letting agent message waits until Monday morning. With AI WhatsApp, the response at 10:01pm: 'Thank you — isolating the hot and cold valves and placing a bowl under the trap is the right immediate action. Could you confirm whether the existing waste pipe is plastic push-fit or compression, and whether any other kitchen connections (dishwasher, washing machine) are also showing signs of leaking?' She confirms plastic push-fit, dishwasher connection damp too. Monday you attend: Cowley Road ground-floor flat, bottle trap leak, push-fit waste, dishwasher connection damp, full kitchen waste check, portfolio of 40 rentals, ongoing plumber needed."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/plumbing-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the Botley Kitchen Connections While You Commission the Megaflo"
+  ctaSubhead={`A builder needs a Belfast sink, waste disposal, and appliance connections before Friday's tiler. The AI confirmed your capability while you checked the T&P relief valve discharge. Add-on at £${pricing.addOn.price}/month.`}
+/>

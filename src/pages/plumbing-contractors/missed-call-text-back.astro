@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Active Plumbing',
+    text: "Soldering a 22mm copper joint, pressing Viega fittings on a riser, routing PEX through floor joists, gluing a solvent-weld waste system, or commissioning an unvented cylinder — plumbing demands both hands and steady concentration. Missed Call Text Back texts every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Developer Programme Callers',
+    text: "A main contractor with the plasterer finishing plot 11 calls his plumber to confirm the second-fix start date. Voicemail? He calls the next plumbing gang. A branded text — 'Thanks for calling — we are fitting sanitaryware and will call back shortly' — holds your programme position."
+  },
+  {
+    icon: '🏷️',
+    title: 'Qualified Professional Image',
+    text: "An instant branded text from a plumbing contractor signals the organised professionalism that main contractors trust with programme-critical first-fix and second-fix across multi-plot estates."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Full Installation Days',
+    text: "Plumbing installation days fill from first-fix at dawn to second-fix sanitaryware at dusk. Every hour under floors, inside stud walls, or in airing cupboards. Missed Call Text Back captures every developer, homeowner, and architect enquiry during your most physically demanding days."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Plumbing Details',
+    text: "Callers reply with scope — 'bathroom refit, wall-hung WC, walk-in shower, 1930s semi, Headington, want to start June.' Replies arrive on your dashboard before you emerge from the underfloor void."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering conducts full plumbing conversations. Missed Call Text Back covers edge cases — a call during a critical soldered joint, a phone buried under pipe offcuts, or a single-ring hang-up. Together: zero lost plumbing leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "Your branded text arrives within seconds of the unanswered ring — before the main contractor reaches the next plumbing gang on his contacts list. During full-day first-fix installations where your entire team crawls through floor voids running copper and PEX, this automatic text maintains commercial responsiveness without a single person leaving the joists."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose the wording during onboarding and adjust it whenever you choose. A plumbing-specific message reads: 'Thank you for calling [company name]. We are currently installing plumbing and will return your call at the earliest opportunity. Reply with your plumbing requirements for a quicker response.' This conveys active installation capability and invites project specifications."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "The two channels defend your plumbing business as complementary systems. Phone Answering conducts complete conversations — capturing bathroom specifications, developer programmes, unvented cylinder requirements, and emergency leak details. Missed Call Text Back handles rare scenarios — a call while the blow torch heats a capillary joint that cannot be interrupted, a phone signal lost inside a stud wall, or a caller disconnecting before the AI picks up. Both together eliminate plumbing lead loss entirely."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This channel is £${pricing.addOn.price}/month as an add-on. A bathroom renovation generates £3,000 to £10,000. Recovering one missed call from a main contractor with a twelve-plot first-fix programme ready to award — through a branded text while you soldered a manifold tee in another airing cupboard — secures revenue that eclipses the channel cost for years.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Main contractors reply with programme requirements — 'need first-fix gang for 6 houses, copper carcass, Megaflo, UFH, start in 3 weeks, call me.' Homeowners reply with project outlines — 'bathroom refit, want walk-in shower and wall-hung WC, 1950s semi, Summertown.' Letting agents reply with maintenance requests — 'leaking kitchen tap in tenant flat, Cowley Road, need someone this week.' These plumbing leads arrive on your dashboard while the solder sets."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Caller details, text replies with property addresses, plumbing specifications, developer schedule information, and contact numbers are encrypted and held on UK and EU servers under UK GDPR. Only you can access the data. Nothing reaches competing plumbing firms or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Plumbing Contractors | Rapid Receptionist"
+  description={`Missed Call Text Back for UK plumbing contractors. Automatically texts callers while you solder joints, press fittings, and commission cylinders. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/plumbing-contractors/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Plumbing Contractor"
+  tradeNamePlural="Plumbing Contractors"
+  tradeSlug="plumbing-contractors"
+  headline="Missed Call Text Back for Plumbing Contractor Companies"
+  accentWord="Plumbing"
+  subhead="It is 10am on a Thursday. You are in the airing cupboard of a new-build house in Didcot — commissioning a Gledhill Stainlesslite Plus 210 unvented cylinder. The pre-charge on the expansion vessel reads 3 bar, the mains incoming pressure is 3.5 bar with the PRV set correctly, the T&P relief valve is connected through the tundish, and the D1 and D2 discharge pipes terminate visibly outside. You are filling the system, venting the air locks, and checking every joint for leaks before signing the G3 commissioning certificate. Four calls come in between 9am and noon. Your phone is in your jacket downstairs, the airing cupboard barely large enough for you and the cylinder. Without Missed Call Text Back, two voicemails — 'bathroom quote' and 'developer calling about first fix' — two hang-ups. With it, all four receive texts within seconds. The first replies at 10:20am: 'Hi — main contractor here, building 16 three-bed semis in Wantage. Need first-fix plumbing: 22mm and 15mm copper, SVP to two bathrooms per house, mains entry with PRV, PEX manifold UFH ground floor. Second fix: Megaflo Eco 210i, Ideal Standard sanitaryware, TMV2 on baths. Blockwork ready in five weeks. Can you price per plot and confirm you can do four per week? Call me when free.' At the lunch break you review. Friday you call: Wantage 16 semis, copper carcass, SVP×2, PRV, PEX UFH, Megaflo Eco 210i, Ideal Standard, TMV2, 4 plots/week, 5-week start."
+  scenario="It is 3pm on a wet February Monday. You have been under the ground floor of a Victorian terrace in Walton Street since 8am — replacing corroded lead water mains with 15mm barrier PEX, working in a 400mm crawl space with standing water from the rain seeping through the airbricks. Six missed calls between 8am and 3pm. Without Missed Call Text Back, you emerge at 3pm: six unknowns, one voicemail — 'need a plumber for a leak,' five gone forever. With Missed Call Text Back, all six received texts. Reply one: 'homeowner Botley — new en-suite in loft conversion, need hot/cold feeds, soil stack connection for WC, shower waste, and UFH, architect drawings ready.' Reply two: 'builder Abingdon — extension needs all plumbing connections, kitchen and utility, before the plasterer next Thursday.' Reply three: 'letting agent — burst pipe behind bath panel in tenant flat, Cowley, water isolated, ceiling below damp, need repair today.' Reply four: 'homeowner Summertown — want to replace gravity cylinder with Megaflo for better shower pressure, need survey and quote.' Reply five: 'architect — luxury basement bathroom, freestanding bath, walk-in shower, macerator drainage, North Oxford, send drawings.' Reply six: 'homeowner Witney — dripping kitchen tap, think it needs new cartridges, Bristan.' Six leads. Monday evening you prioritise — the burst pipe for immediate response, the Thursday builder connection, then the rest."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/plumbing-contractors/ai-receptionist/"
+  ctaHeadline="Recover Six Plumbing Leads from One Wet February Monday"
+  ctaSubhead={`While you replaced lead mains in a 400mm crawl space, six callers missed you. Six texts went out. A loft en-suite, a builder connection, a burst pipe, a Megaflo upgrade, a basement bathroom, and a dripping tap. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A main contractor calls about the plumbing package on a new-build housing development in Didcot — thirty-two plots across four phases. Each house needs full first-fix plumbing: mains water entry with stopcock and PRV, 22mm and 15mm copper carcass pipework through floor joists, soil vent pipe (SVP) to both en-suite and family bathroom, waste connections for kitchen, utility, and WC, and manifold-fed PEX underfloor heating on the ground floor. Second fix follows eight weeks later — unvented cylinder (Megaflo Eco 210), all sanitaryware, TMVs on bath and basin, and kitchen sink with waste disposal. He needs your measured price per plot and confirmation you can sustain four plots per week. You are under a bath on the first floor of a new-build in Bicester — soldering a 22mm copper feed to the unvented cylinder tee, the blow torch heating the joint, solder drawn into the capillary fitting. Both hands occupied, the flame steady, the phone in your tool bag on the landing. He calls three plumbing firms. One answers and books a Thursday walkover.",
+    with: "Your AI receptionist answers on the second ring. It captures the entire scope — thirty-two plots Didcot, four phases, first fix (mains entry, PRV, copper carcass, SVP, waste, PEX UFH manifolds), second fix (Megaflo Eco 210, sanitaryware, TMVs, kitchen), four plots per week — and confirms you will call back. At the tea break you review and schedule Thursday."
+  },
+  {
+    without: "A homeowner emails on Wednesday about converting their loft into a bedroom with en-suite — they need hot and cold feeds extended from the existing system, a new soil stack connection for the WC, waste pipework for the shower tray and basin, and underfloor heating in the en-suite. The email sits untouched until Saturday evening.",
+    with: "Your AI acknowledges within sixty seconds, referencing the loft conversion en-suite, hot/cold extension, new SVP connection, waste routing, and UFH specification. Saturday you schedule the Monday site survey."
+  },
+  {
+    without: "A facilities manager WhatsApps on Saturday evening about a commercial washroom refit — twelve WCs, eight basins, four urinals, and disabled-access sanitaryware across two floors of an office building in Oxford Business Park. TMVs on every basin. He messages three plumbing contractors. By Monday, two have replied.",
+    with: "The AI responds within seconds, asks about the existing pipework infrastructure, the demolition scope, and the building's hot water supply type. Monday at 8am you have a detailed commercial washroom lead."
+  }
+];
+
+const specialisms = [
+  {
+    category: "New-Build & Construction Plumbing",
+    items: ["First-fix carcass pipework — copper, PEX, and plastic systems", "Soil vent pipe (SVP) installation and waste rough-in", "Mains water connection with PRV and stopcock", "Manifold-fed PEX and push-fit distribution systems", "Underfloor heating (multi-zone, manifold, actuators)", "Unvented hot water cylinders — Megaflo, Gledhill, Telford (G3 qualified)"]
+  },
+  {
+    category: "Domestic Plumbing & Renovation",
+    items: ["Bathroom installation — bath, shower, WC, basin, and tiling interface", "Kitchen plumbing — sink, dishwasher, washing machine, waste disposal", "En-suite and wetroom plumbing with tanking coordination", "Pipe replacement — lead to copper/plastic upgrades", "Leak detection and burst pipe repair", "Stopcock, isolation valve, and PRV replacement"]
+  },
+  {
+    category: "Commercial & Multi-Unit Plumbing",
+    items: ["Commercial washroom fit-out — WCs, urinals, basins, and TMVs", "Multi-unit residential plumbing — flats, student accommodation, HMOs", "TMV (thermostatic mixing valve) installation and commissioning", "Boosted cold water systems and pressurisation sets", "Backflow prevention and RPZ valve installation", "Building Regulations Part G and Part H compliance"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Developers",
+    description: "Housebuilders and main contractors requiring first-fix and second-fix plumbing on new-build estates — programme-critical carcass pipework, SVP installation, and sanitaryware fitting that follows the carpenter and precedes the decorator. They need reliable gangs, consistent quality, and weekly plot throughput."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners needing bathroom renovations, kitchen plumbing, en-suite additions, and leak repairs. They value clear communication about timelines, disruption, and costs — especially for projects that disable their hot water or main bathroom during the work."
+  },
+  {
+    icon: "🏢",
+    title: "Facilities Managers & Commercial Clients",
+    description: "Facilities managers commissioning washroom refits, TMV installation programmes, and commercial plumbing maintenance. Office buildings, schools, healthcare facilities, and retail premises requiring compliant plumbing with minimal operational disruption."
+  },
+  {
+    icon: "📐",
+    title: "Architects & Interior Designers",
+    description: "Architects specifying plumbing layouts for high-end residential renovations and commercial fit-outs. Interior designers requiring precise waste and supply positioning for statement sanitaryware — wall-hung WCs, freestanding baths, and concealed-cistern installations."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand plumbing terminology?",
+    answer: "The complete plumbing vocabulary is configured — first fix (carcass, rough-in, dead leg, drop), second fix (sanitaryware, tap hole, waste trap, overflow, flexi connector), soil vent pipe (SVP, boss connection, strap boss, solvent weld), mains connection (stopcock, PRV, meter, MDPE, boundary box), manifold (PEX, push-fit, PB, zone valve, actuator), unvented cylinder (Megaflo, Gledhill, Telford, G3, expansion vessel, tundish, D1/D2 discharge, temperature-and-pressure relief valve), TMV (thermostatic mixing valve, TMV2, TMV3, HTM 04-01), underfloor heating (UFH, screed, manifold, flow rate, dT), pipe (copper, plastic push-fit, press-fit Viega/Geberit, solvent weld, PEX barrier pipe), trap (P-trap, bottle, McAlpine, Hep2O), leak (mains pipe, joint, pin hole, burst), and backflow prevention (RPZ, double-check valve). When a main contractor describes 'first fix — 22mm and 15mm copper carcass, SVP to both bathrooms, manifold-fed PEX UFH ground floor, mains entry with PRV,' the AI records every specification element."
+  },
+  {
+    question: "Can the AI differentiate a domestic bathroom from a commercial washroom programme?",
+    answer: "A homeowner asking about 'fitting a new bathroom — bath, shower over, WC, and basin' generates a domestic bathroom lead with scope, access, and timescale. A facilities manager describing 'washroom refit — twelve WCs, eight basins, four urinals, TMVs on every basin, two floors, Building Regs Part G compliance' generates a commercial programme lead with sanitaryware schedule, TMV specification, compliance standard, and operational constraints. The lead structures differ completely."
+  },
+  {
+    question: "What about emergency plumbing calls?",
+    answer: "Burst pipes flooding kitchens, unvented cylinders discharging through the tundish continuously, mains stopcock failures with water pouring from the boundary box, blocked soil stacks backing up into ground-floor WCs, and leaking joints behind tiled bathroom walls — plumbing emergencies create immediate property damage. The AI captures the emergency type, the water location, whether the supply has been isolated, and the property access for priority attendance."
+  },
+  {
+    question: "How much does this cost for a plumbing contractor?",
+    answer: `Plumbing contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sole-trader bathroom fitter or a multi-gang firm delivering new-build plumbing across housing estates, the allowance accommodates your call blend. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a sole-trader plumber?",
+    answer: "Solo plumbers benefit enormously. When you are soldering copper joints under a bath, connecting an unvented cylinder with the blow torch lit, or running PEX through floor joists in a crawl space — answering a phone risks the joint, the safety procedure, or the physical position. The AI captures every bathroom quote, every developer enquiry, and every emergency call while you complete the installation safely."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Configure coverage through your dashboard to match your plumbing day. During active first-fix — when you are under the floor running pipework — send every call to the AI. During site surveys and quoting visits — take calls directly. Toggle from your phone whenever your position changes."
+  },
+  {
+    question: "How is plumbing project data protected?",
+    answer: "Plumbing enquiries contain property addresses, system specifications, developer programme schedules, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing plumbers or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Plumbing Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK plumbing contractors — new-build first fix, bathroom installation, commercial washrooms, and emergency repairs. Never miss a call from under the bath. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/plumbing-contractors/ai-receptionist/"
+  tradeName="Plumbing Contractor"
+  tradeNamePlural="Plumbing Contractors"
+  tradeSlug="plumbing-contractors"
+  headline="The AI Receptionist Built for Plumbing Contractors"
+  accentWord="Plumbing"
+  subhead={`You cannot answer the phone when the blow torch is heating a 22mm copper joint, when you are crawling through floor joists running first-fix pipework, or when your arms are inside a bathroom stud wall connecting waste to the soil stack. Your AI receptionist captures every call, every message, and every tender — from main contractors commissioning thirty-two-plot estate plumbing to homeowners needing a leaking stopcock replaced. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Thirty-Two-Plot Plumbing Package Calls While You Solder in Bicester"
+  ctaSubhead={`A main contractor with four phases and a blockwork programme needs a plumber who answers. If voicemail picks up, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

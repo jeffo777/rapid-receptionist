@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Developer Programme Texts',
+    text: "Main contractors text plumbing gangs mid-build — 'plots 8-10 ready for first fix Monday, need your team on site 7am.' The first plumber to confirm maintains the programme slot."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Plumbing Briefs from Short Messages',
+    text: "A text like 'bathroom refit, bath shower WC basin, 1950s semi, Kidlington, start in 2 weeks' gives the AI the essentials. It asks about the existing system, the hot water source, and the room dimensions."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Referral Texts',
+    text: "When a satisfied customer recommends your plumbing to a friend, that friend texts about their own bathroom or kitchen. The AI captures the referral while the recommendation carries maximum trust."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Installation Hours',
+    text: "Main contractors confirm next-week first-fix slots in the evening. Homeowners text bathroom questions after dark. Landlords report tenant leaks overnight. The AI captures every after-hours plumbing text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Plumbing Details',
+    text: "Messages arrive in fragments — 'leaking pipe' then 'under the kitchen sink' then 'tenant flat' then 'Cowley' then 'can you come tomorrow.' The AI constructs one complete emergency lead from every piece."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Developer programmes, specification discussions, and plumbing merchant orders stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound plumbing text?",
+    answer: "Each text generates a branded response in your company name within seconds. A main contractor's programme text — 'first fix plots 14-17 starting Wednesday, copper carcass, SVPs both sides, PEX UFH ground floor, need your gang 7am' — is confirmed with the plot range, pipe system, SVP locations, UFH, and start time preserved. A homeowner's enquiry — 'dripping tap in the bathroom, can you come and fix it?' — receives a response asking about the tap type, whether it is hot or cold side, and the preferred visit day."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "The response reads like a plumber checking messages between joints — system-specific, fixture-aware, and practically focused. It references pipe types, cylinder models, sanitaryware brands, and programme schedules. Main contractors texting first-fix requirements expect a knowledgeable reply that confirms system capability and gang numbers."
+  },
+  {
+    question: "How does it handle existing client texts?",
+    answer: "Regular developer clients text programme changes — 'plot 15 delayed, plasterer not finished, push first fix to Thursday' or 'add an extra WC to the downstairs cloakroom on plot 18.' The AI captures every amendment and separates programme updates from new business enquiries on your dashboard."
+  },
+  {
+    question: "What does AI SMS cost for plumbing contractors?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A bathroom renovation generates £3,000 to £10,000. Confirming one developer's Monday first-fix start — while you soldered a supply riser in a bathroom on another site — locks in a week of programme revenue that far exceeds the annual channel cost.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Post one reply and the AI steps back from that thread permanently. During measurement days and quoting sessions — handle texts directly. During active plumbing — when the blow torch is lit, the press gun is clamped, or the PEX is being routed through joists — let the AI manage the incoming commercial messages."
+  },
+  {
+    question: "How is text data from plumbing enquiries stored?",
+    answer: "Text messages containing property addresses, system specifications, developer schedule details, fixture selections, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing plumbing firms or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Plumbing Contractors | Rapid Receptionist"
+  description={`AI SMS for UK plumbing contractors. Responds to developer first-fix texts, bathroom quote requests, and emergency leak notifications while you install. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/plumbing-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Plumbing Contractor"
+  tradeNamePlural="Plumbing Contractors"
+  tradeSlug="plumbing-contractors"
+  headline="AI SMS for Plumbing Contractor Companies"
+  accentWord="Plumbing"
+  subhead="You are at 8am on a Tuesday, crawling through the underfloor void in a new-build plot in Grove — running 22mm copper hot flow and return through drilled joists to the manifold position for the ground-floor underfloor heating. The void is 500mm, head-torch lit, pipe clips in your belt pouch. At 8:25am a main contractor texts: 'Morning — new phase starting on our Carterton site. Twelve 3-bed semis. Need first-fix plumbing: copper carcass 22/15, SVP to bathroom and en-suite each house, mains entry with PRV, PEX manifold UFH ground floor, and cold water feeds to kitchen and utility. Second fix in 10 weeks — Gledhill Stainlesslite Plus 180 unvented cylinders, all sanitaryware standard spec, TMV2 on baths. Can you price per plot and confirm you can run three plots per week alongside your current work? Need response by Thursday for our site meeting.' Your elbows are on the joists, the pipe cutter in your hand. Without AI SMS, the twelve-house tender waits until the void work finishes at lunch. He texts two other plumbing firms. With it, the AI responds at 8:26am, confirms your new-build capability, and asks whether the houses have integral garages requiring frost-protection pipework. He confirms no garages. At noon you review: Carterton 12 semis, copper 22/15, SVP bath + en-suite, PRV, PEX UFH, Gledhill Stainlesslite Plus 180, TMV2, 3 plots/week, response Thursday."
+  scenario="It is 7:15pm on a Thursday. A homeowner in Woodstock texts about her en-suite shower — the pressure has been dropping steadily for months and is now barely a trickle. She suspects the shower valve is failing but isn't sure. Her text: 'Hi — our en-suite shower has almost no pressure. It used to be great but has been getting weaker for months. Now it is barely a dribble. We have a Megaflo cylinder and the bathroom taps are fine. The shower is a thermostatic bar valve — about 8 years old. Is it the valve or something else? Can someone come and look? We are in Woodstock.' Without AI SMS, the text waits until Friday morning. With AI SMS, the reply at 7:16pm: 'Thank you — with strong pressure at the taps but weak at the shower, the thermostatic cartridge in the bar valve is likely the cause. Could you confirm the valve manufacturer and model if visible, and whether the shower hose or head has been changed recently?' She confirms Bristan Artisan, original hose and head. Friday you call: Woodstock, en-suite, Bristan Artisan thermostatic bar valve 8 years old, pressure dropping months, Megaflo system, taps fine, likely cartridge, original hose/head."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/plumbing-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the Carterton 12-Semi Programme While You Run Copper in Grove"
+  ctaSubhead={`A main contractor needs first-fix plumbing across twelve semis with Gledhill Stainlesslite cylinders priced by Thursday. The AI confirmed your capability while you crawled through the 500mm void. Add-on at £${pricing.addOn.price}/month.`}
+/>

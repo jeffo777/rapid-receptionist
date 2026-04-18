@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Developer Plumbing Tenders',
+    text: "Main contractors and QSs email plumbing subcontract packages with pipe specifications, cylinder types, sanitaryware schedules, and programme milestones. The plumbing firm that acknowledges first — referencing the system and plot count — stays on the tender shortlist."
+  },
+  {
+    icon: '📐',
+    title: 'References System Specifications',
+    text: "When a QS emails specifying '22mm and 15mm copper carcass, SVP to two bathrooms per plot, Megaflo Eco 300i unvented, manifold UFH ground floor, eighteen plots across two phases,' the AI acknowledgement references the pipe system, cylinder, UFH, plot count, and phasing."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Installation Hours',
+    text: "Plumbing days absorb every hour — crawling through voids running first-fix, soldering riser pipework, commissioning unvented cylinders, and fitting sanitaryware. A QS's tender email at 9am sits unread until the tools are packed. Your sixty-second acknowledgement preserves the tender position."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Merchant Orders',
+    text: "Your inbox combines QS tenders, plumbing merchant delivery confirmations, cylinder manufacturer warranty registrations, TMV supplier invoices, and CIPHE membership correspondence. The AI identifies genuine project tenders from operational emails."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Contractor Loyalty',
+    text: "Developers with multi-phase estates need reliable plumbing gangs. Consistent instant acknowledgements across housing phases build the trust that programmes your firm into every plot from first-fix to handover."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Plumbing tenders include floor plans with supply and waste positions, riser diagrams, sanitaryware schedules, and programme bar charts. The AI notes these attachments and includes them in your lead."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce plumbing quotes from tenders?",
+    answer: "The system generates no pricing whatsoever — only a professional receipt referencing the plumbing specification and project scope. Your quotation — pipe material, fitting quantities, cylinder cost, sanitaryware schedule, TMVs, UFH manifolds, labour, and programme — is prepared by you from the measured floor plans and specification documents."
+  },
+  {
+    question: "Will it respond to merchant and supplier emails?",
+    answer: "Onboarding configuration defines which email senders and subject lines trigger the acknowledgement. Plumbing merchant delivery confirmations, cylinder supplier dispatch notes, TMV manufacturer invoices, and CIPHE renewal notices are excluded. Only genuine project tenders and client enquiries receive the professional sixty-second response."
+  },
+  {
+    question: "How does it handle homeowner plumbing emails?",
+    answer: "Homeowner submissions from your website contact form — 'we want a new bathroom, can you come and quote?' — receive a professional response asking about the existing bathroom layout, the sanitaryware they have in mind, the property age, and their preferred start date."
+  },
+  {
+    question: "What does email response cost for plumbing contractors?",
+    answer: `Email response is £${pricing.addOn.price}/month as an add-on. A new-build first-fix programme across twenty plots generates £40,000 to £100,000 in subcontract value. Acknowledging a QS's twenty-plot tender within sixty seconds — while your team fitted sanitaryware in plot seven — frequently determines whether your firm receives the formal ITT and the pre-tender walkover invitation.`
+  },
+  {
+    question: "Can subsequent tender correspondence come from me?",
+    answer: "After the initial acknowledgement, every communication is authored entirely by you. Your measured survey, pipe schedule, sanitaryware take-off, cylinder specification, method statement, programme, and warranty documentation are prepared and submitted by you and your estimating team."
+  },
+  {
+    question: "How is plumbing tender data secured?",
+    answer: "Plumbing tenders contain site plans, pipe specifications, sanitaryware schedules, cylinder models, and commercially sensitive cost information. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender details reach competing plumbing contractors or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Plumbing Contractors | Rapid Receptionist"
+  description={`AI email response for UK plumbing contractors. Acknowledges developer first-fix tenders, commercial washroom specifications, and bathroom renovation enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/plumbing-contractors/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Plumbing Contractor"
+  tradeNamePlural="Plumbing Contractors"
+  tradeSlug="plumbing-contractors"
+  headline="AI Email Response for Plumbing Contractor Companies"
+  accentWord="Plumbing"
+  subhead="A QS emails a plumbing subcontract tender for a new-build retirement living development in Wallingford — forty-two apartments across three blocks, each with a bathroom and kitchen requiring first-fix and second-fix plumbing. The specification calls for 15mm copper carcass pipework (no plastic permitted under the employer's requirements), SVPs serving each bathroom riser, hot water from a centralised plant room with secondary return circulation, individual apartment isolation valves, TMV3 valves on every bath and basin (HTM 04-01 compliant for the assisted-living units), and Armitage Shanks Contour 21 sanitaryware throughout. Each kitchen requires a stainless steel sink with lever taps (DDA compliant). Phase one is fourteen apartments in block A, with plumbing to follow the M&E riser installation by four weeks. Tender return in three weeks with a mandatory pre-tender walkover next Tuesday. You are fitting sanitaryware in a new-build house in Didcot — hanging a wall-mounted WC on the concealed-cistern frame, the spirit level on the pan, the fixings tightened sequentially. Without AI Email Response, the forty-two-apartment retirement tender sits unread until the sanitaryware is complete. Two competing plumbing firms acknowledged within the hour. With it, your acknowledgement arrives within sixty seconds, referencing the forty-two apartments, copper carcass, centralised hot water with secondary return, TMV3 (HTM 04-01), Armitage Shanks Contour 21, DDA lever taps, three phases, three-week tender, Tuesday walkover."
+  scenario="It is 7am on a Monday. Your inbox accumulated over the weekend: a main contractor requesting first-fix plumbing on a new cul-de-sac of six detached houses in Eynsham — 'copper carcass, Megaflo 250i, PEX UFH, blockwork ready in 4 weeks,' a homeowner requesting a full bathroom refit in their terraced house in Botley — 'want to move the WC to the opposite wall, need to know if the soil pipe can be re-routed,' a property developer wanting three en-suites plumbed in a six-flat conversion in Cowley — 'wall-hung WCs, concealed cisterns, shower trays with glass screens, everything needs to look high-end for rental,' and a plumbing merchant confirming Wednesday's delivery of Hep2O push-fit fittings. Without AI Email Response, the six houses, the soil-pipe reroute, and the conversion en-suites wait until Tuesday. With AI Email Response, the Eynsham houses reference copper/Megaflo/UFH, the Botley soil reroute notes the WC relocation, the Cowley conversion references wall-hung and concealed-cistern en-suites, and the merchant email is filtered."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/plumbing-contractors/ai-receptionist/"
+  ctaHeadline="Acknowledge the 42-Apartment Retirement Living Tender While You Fit Sanitaryware"
+  ctaSubhead={`A QS's three-week tender for copper carcass, TMV3-compliant bathrooms, and centralised hot water across forty-two apartments starts when the email lands. Your sixty-second acknowledgement secures the Tuesday walkover. Add-on at £${pricing.addOn.price}/month.`}
+/>

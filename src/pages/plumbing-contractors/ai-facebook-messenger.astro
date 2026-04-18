@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Bathroom Transformation Content',
+    text: "Bathroom renovations are visually striking — a dated avocado suite replaced with a walk-in wetroom, freestanding bath, and wall-hung WC. When a homeowner messages about their own bathroom, the AI captures a renovation lead."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Emergency Leak Messages',
+    text: "Homeowners and letting agents message photos of dripping pipes, water-stained ceilings, and flooding kitchens — 'can someone come urgently?' The AI asks about the water source, isolation status, and property access."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Builder Connection Requests',
+    text: "Builders browse your portfolio and message from site — 'need a plumber for kitchen and bathroom connections on a house extension.' The AI captures the scope while you fit sanitaryware elsewhere."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Evening Bathroom Planning',
+    text: "Homeowners design bathrooms in the evening — comparing sanitaryware, studying layout options, and scrolling plumber portfolios. Messages about 'the wetroom in your latest post' arrive after 8pm."
+  },
+  {
+    icon: '📋',
+    title: 'Qualifies Plumbing Project Scale',
+    text: "Messenger conversations begin with 'how much to fit a bathroom?' The AI asks about the room dimensions, sanitaryware selection, existing system, and timeline — building a specification before your first survey."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Before-and-After',
+    text: "Every dated bathroom stripped and reborn, every wetroom with linear drain precision, and every freestanding bath installation generates enquiries from homeowners who imagine their own bathroom transformed."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my plumbing firm?",
+    answer: "Messenger operates through a Business page exclusively. Plumbing firms posting bathroom renovation before-and-afters, wetroom installation sequences, and underfloor heating manifold close-ups generate exceptional local engagement — homeowners tag partners and friends planning renovations, builders save your work for future referrals."
+  },
+  {
+    question: "What plumbing enquiries come through Messenger?",
+    answer: "Homeowners wanting bathroom renovations, kitchen replumbing, and en-suite additions after viewing your completed projects. Builders needing plumbing connections for extensions and conversions. Letting agents seeking reliable plumbers for tenant maintenance across property portfolios. Architects studying your installation quality for specification decisions."
+  },
+  {
+    question: "How fast does the AI reply to plumbing messages?",
+    answer: "Every Messenger enquiry generates a response within seconds. Facebook's active indicator confirms that your plumbing firm monitors messages. A homeowner who has spent an evening comparing plumber portfolios and finally messages their top choice expects a prompt, knowledgeable reply — not an abandoned inbox that suggests limited capacity."
+  },
+  {
+    question: "What does Messenger cost for plumbing contractors?",
+    answer: `Messenger is £${pricing.addOn.price}/month as a channel add-on. A bathroom renovation generates £3,000 to £10,000. A single full bathroom strip-and-refit — secured through a prompt Messenger reply to a before-and-after post while you pressed fittings on another site — justifies the channel cost immediately.`
+  },
+  {
+    question: "Can I continue Messenger conversations personally?",
+    answer: "Reply once in any thread and the AI yields that conversation permanently. Most plumbers let the AI extract the initial details — fixture list, room size, system type, and timeline — then engage to discuss the site survey, material choices, and pricing in person."
+  },
+  {
+    question: "How is Messenger data from plumbing queries protected?",
+    answer: "All Messenger conversations, leak photographs, property addresses, system specifications, and sender contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. No plumbing project details reach competitors, merchants, or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Plumbing Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK plumbing contractors. Converts bathroom renovation photos into refit enquiries and builder connection bookings. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/plumbing-contractors/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Plumbing Contractor"
+  tradeNamePlural="Plumbing Contractors"
+  tradeSlug="plumbing-contractors"
+  headline="AI Facebook Messenger for Plumbing Contractor Companies"
+  accentWord="Plumbing"
+  subhead="You post four photos of a complete bathroom renovation in a Victorian terrace in Jericho. Photo one: the before — a cramped bathroom with a plastic bath panel, a pedestal basin blocking the doorway, a close-coupled WC with a stained cistern, and a gravity shower over the bath barely producing a stream. Photo two: the strip-out — bare plaster removed behind the bath revealing corroded copper pipework and a crumbling cast-iron soil connection. Photo three: the rough-in — new 15mm copper supplies soldered to a Megaflo Eco 210i unvented cylinder in the airing cupboard, a new 110mm PVC soil connection boss-strapped to the existing stack, and PEX underfloor heating loops laid on insulation across the concrete floor. Photo four: the complete bathroom — a walk-in shower with frameless glass screen and Hansgrohe iBox thermostatic valve, wall-hung Villeroy & Boch Subway 2.0 WC with in-wall Geberit Sigma cistern, a wall-mounted vanity basin with a chrome monobloc mixer, underfloor heating beneath large-format porcelain tiles. One hundred and twelve likes, twenty-seven shares. A homeowner in Summertown messages: 'Our bathroom looks exactly like your before — 1930s terrace, same plastic panel, same terrible shower. Want everything the same as your after — walk-in shower, wall-hung WC, vanity basin, underfloor heating. About the same room size. We would also need the old pipework replaced. Can you come and survey? Available most evenings.' You are in an airing cupboard commissioning a cylinder. Without AI Messenger, the message waits. With it, the AI asks about the existing hot water system and whether the mains pressure is adequate for an unvented cylinder. She confirms a gravity system and good mains. Wednesday you call: Summertown 1930s terrace, full strip-and-refit, walk-in shower Hansgrohe, wall-hung WC Geberit, vanity, UFH, old pipe replacement, gravity to unvented upgrade, evening survey."
+  scenario="It is 11pm on a Friday. A facilities manager for a prep school in North Oxford messages about a summer holiday washroom project: 'Evening — head teacher wants the boys' and girls' washrooms fully refitted during the six-week summer holiday. Each washroom has four WCs, three basins, and an accessible cubicle. Current sanitaryware is 1990s and failing. Need modern Armitage Shanks sanitaryware, sensor taps, TMV2 on every basin, new waste runs, and redecoration. Total of two washrooms. Can you do the plumbing in weeks one and two so the decorator follows? Building Regs Part G and safeguarding-compliant specification required. Budget approved.' Without AI Messenger, the school project waits until Monday. With AI Messenger, the reply at 11:01pm: 'Thank you — a six-week summer holiday programme for two washrooms is a typical school refurbishment timeline. Could you confirm the existing pipework material and whether the hot water source is a centralised boiler or individual water heaters?' He confirms copper and centralised boiler. Saturday you review: North Oxford prep school, 2 washrooms, 4 WCs + 3 basins + accessible each, Armitage Shanks, sensor taps, TMV2, Part G, weeks 1-2, decorator follows, centralised boiler, budget approved."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/plumbing-contractors/ai-receptionist/"
+  ctaHeadline="Turn 112 Likes on a Jericho Bathroom into a Summertown Strip-and-Refit"
+  ctaSubhead={`Four photos of a Victorian terrace reborn — Hansgrohe, Geberit, Villeroy & Boch, and underfloor heating — earn a hundred and twelve likes. AI Messenger converts the neighbour's message into a full renovation survey. Add-on at £${pricing.addOn.price}/month.`}
+/>
