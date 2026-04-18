@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Developer Programme Texts',
+    text: "Main contractors text electrical gangs mid-build — 'plots 5-8 ready for first fix Wednesday, need containment and carcass wiring, your gang plus two.' The electrician confirming first holds the programme."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Electrical Briefs from Short Messages',
+    text: "A text like 'need EICR on 4-bed detached, Botley, selling, solicitor needs cert by month end' gives the AI the compliance context. It asks about the current certificate age and board type."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Referral Texts',
+    text: "When a satisfied customer recommends your electrical work to a colleague, that person texts about their own rewire or consumer unit upgrade. The AI captures the referral while credibility is highest."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Installation Hours',
+    text: "Main contractors schedule next-week containment runs in the evening. Homeowners text EICR questions after dark. Landlords forward tenant electrical complaints overnight. The AI captures every after-hours text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Electrical Details',
+    text: "Messages arrive in stages — 'lights flickering' then 'kitchen downlights' then 'worse when the oven is on' then '1960s house' then 'Kidlington.' The AI joins every fragment into one diagnostic lead."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Developer first-fix programmes, EICR scheduling, and electrical wholesaler orders stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound electrical text?",
+    answer: "Each text receives a branded response in your company name within seconds. A main contractor's programme text — 'first fix plots 19-22 Thursday, containment in conduit, twin-and-earth carcass, consumer units pre-wired RCBOs + SPD, smoke/heat to each bedroom and landing' — is confirmed with the plot range, containment type, consumer unit spec, and fire detection schedule preserved. A homeowner's concern — 'socket in the kitchen sparking when I plug in the kettle' — receives a safety-conscious response asking whether the socket is isolated and the consumer unit type."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "The text reads like an electrician checking messages between board terminations — cable-type aware, board-specification fluent, and testing-terminology precise. It references twin-and-earth, SWA grades, RCBO manufacturers, EICR observation codes, and BS 7671 compliance. Main contractors texting first-fix requirements expect a reply that demonstrates certified competence."
+  },
+  {
+    question: "How does it handle existing client texts?",
+    answer: "Returning developer clients text programme amendments — 'plot 15 delayed, skip to plot 16 for containment run' or 'add external SWA armoured cable for the garden office on plot 9.' The AI captures each amendment and separates programme updates from new business on your dashboard."
+  },
+  {
+    question: "What does AI SMS cost for electrical contractors?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A full rewire generates £3,000 to £8,000. Confirming one developer's Thursday first-fix start — while you torqued terminals at the distribution board on another project — locks in a week of programme revenue that exceeds the annual channel cost from a single text exchange.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Reply once and the AI withdraws from that thread permanently. During EICR inspections and quoting sessions — handle texts directly. During active wiring — when you are pulling cable through voids, stripping conductors at the board, or testing circuits with the Megger — let the AI manage the incoming bookings."
+  },
+  {
+    question: "How is text data from electrical enquiries stored?",
+    answer: "Text messages containing property addresses, EICR codes, circuit schedules, consumer unit specifications, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. Nothing is shared with competing electrical firms or repurposed for any other use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Electrical Contractors | Rapid Receptionist"
+  description={`AI SMS for UK electrical contractors. Responds to developer first-fix texts, EICR booking requests, and consumer unit upgrade queries while you wire. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/electrical-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Electrical Contractor"
+  tradeNamePlural="Electrical Contractors"
+  tradeSlug="electrical-contractors"
+  headline="AI SMS for Electrical Contractor Companies"
+  accentWord="Electrical"
+  subhead="You are at 9am on a Wednesday, in the ceiling void of a Victorian terrace in Jericho — pulling a new 6mm² twin-and-earth radial for an oven circuit from the consumer unit position in the hallway to the kitchen. The void is tight, the cable feeds through drilled joists, and your arms stretch forward guiding the cable past water pipes and existing lighting circuits. At 9:20am a main contractor texts: 'Morning — new care home project in Wallingford, three-storey, fifty-two bedrooms. Electrical package: first-fix containment in galvanised trunking, SWA submains from the main switch room to three distribution boards per floor, twin-and-earth final circuits, Cat6a structured data to every bedroom and nurses' station, nurse call system containment, fire alarm containment for addressable BS 5839 Cat L1, emergency lighting to BS 5266. Consumer units Schneider Acti 9 with RCBOs throughout. Second fix follows plastering by six weeks. Can you survey and tender? Site walkover next Tuesday.' Your hands grip the cable. Without AI SMS, the fifty-two-bedroom care home tender waits until lunch. He texts two more electrical firms. With it, the AI responds at 9:21am, confirms your commercial electrical capability, and asks whether the fire alarm and emergency lighting installation is within your scope or subcontracted. He confirms full scope. At noon you review: Wallingford care home, 52 bedrooms, 3 storeys, galvanised trunking, SWA submains, 3 DBs per floor, Cat6a, nurse call, addressable BS 5839 L1, BS 5266 emergency lighting, Schneider Acti 9 RCBOs, Tuesday walkover."
+  scenario="It is 6:45pm on a Monday. A homeowner in Eynsham texts about installing an EV charger: 'Hi — just ordered a Volkswagen ID.4 and need a home charger installed. We have a detached house with a driveway. The consumer unit is in the garage — Hager with MCBs, about 8 years old. I think I need a dedicated 32A circuit and an earth rod? The charger is a Zappi from Myenergi — want the one with solar divert. Is there a grant for the charger? And do I need to upgrade the consumer unit? Happy to WhatsApp photos of the board.' Without AI SMS, the EV installation waits until Tuesday morning. With AI SMS, the reply at 6:46pm: 'Thank you — a Zappi with solar divert on a dedicated 32A radial is a common EV installation for us. Could you confirm whether your board has any spare ways, and whether you have solar panels already installed?' He confirms two spare ways and existing 4kW solar array. Tuesday you call: Eynsham detached, Zappi Myenergi solar divert, VW ID.4, Hager MCB board 8yr, garage location, 2 spare ways, existing 4kW solar, 32A radial, earth rod, grant query."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/electrical-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the 52-Bedroom Care Home Tender While You Pull Cable in Jericho"
+  ctaSubhead={`A main contractor needs SWA submains, addressable fire alarms, and fifty-two Cat6a bedroom drops surveyed by Tuesday. The AI confirmed your scope while the 6mm² fed through the Victorian joists. Add-on at £${pricing.addOn.price}/month.`}
+/>

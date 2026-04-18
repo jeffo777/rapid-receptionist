@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Live Wiring',
+    text: "Pulling twin-and-earth through ceiling voids, terminating RCBOs at the consumer unit, testing insulation resistance at 500V, pressing Wago connectors in a junction box — electrical work demands both hands. Missed Call Text Back texts every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Developer Programme Callers',
+    text: "A main contractor with the plasterer finishing calls his electrician to schedule second fix. Voicemail? He confirms a competitor. A branded text — 'Thanks for calling — we are wiring on site and will call back shortly' — holds your programme slot."
+  },
+  {
+    icon: '🏷️',
+    title: 'NICEIC-Registered Image',
+    text: "An instant branded text from an electrical contractor signals the registered professionalism that developers trust with programme-critical first-fix and second-fix across estate builds."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Full Wiring Days',
+    text: "Electrical installation days fill from containment at dawn to testing at dusk. Every hour in ceiling voids, behind distribution boards, or inside trunking. Missed Call Text Back captures every enquiry during your most concentrated working days."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Electrical Details',
+    text: "Callers reply with scope — 'EICR on 3-bed rental, Cowley, tenancy renewal next month.' Replies arrive on your dashboard before you descend the ladder."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering conducts full electrical conversations. Missed Call Text Back covers edge scenarios — a call during a critical termination, a phone at the bottom of a loft ladder, or a single-ring disconnect. Together: zero lost electrical leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "Within seconds of the unanswered ring ending — before the main contractor scrolls to the next NICEIC electrician in his contact list. During full-day containment and cabling runs where your entire team works in ceiling voids and wall cavities, this automatic text keeps your firm commercially visible without anyone descending from the running position."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You draft the wording at onboarding and change it at any time. An electrician-specific message reads: 'Thank you for calling [company name]. We are currently wiring on site. We will return your call at the earliest opportunity. Reply with your electrical requirements for a faster response.' This conveys active installation capability while inviting specifications."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "Both channels defend your electrical business as complementary layers. Phone Answering holds detailed conversations — diagnosing EICR failures, capturing first-fix specifications, and recording commercial fit-out requirements. Missed Call Text Back handles uncommon edge cases — a call during a critical consumer unit termination where breaking concentration risks cross-wiring, a phone in the van while you test circuits inside, or a caller disconnecting before the AI connects. Running both eliminates electrical lead loss completely."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. A full rewire generates £3,000 to £8,000. Recovering one missed call from a facilities manager with twelve-property EICR compliance programme — through a branded text while you verified RCD trip times on another board — initiates a revenue pipeline that surpasses the channel cost for years.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Main contractors reply with programme details — 'first fix 8 plots Carterton, containment + carcass, consumer units with RCBOs, start next Monday, call me.' Homeowners reply with project summaries — 'rewire 1930s semi, old fuse box, 3 beds, Summertown.' Landlords reply with compliance needs — 'EICR on 6 rentals, certificates expiring, Cowley.' These electrical leads arrive on your dashboard while the Megger finishes the test sequence."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "All caller details, text replies with property addresses, EICR requirements, circuit specifications, and contact numbers are encrypted on UK and EU servers under UK GDPR. Only you access the data. Nothing reaches competing electrical contractors or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Electrical Contractors | Rapid Receptionist"
+  description={`Missed Call Text Back for UK electrical contractors. Automatically texts callers while you terminate circuits, test boards, and pull cable. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/electrical-contractors/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Electrical Contractor"
+  tradeNamePlural="Electrical Contractors"
+  tradeSlug="electrical-contractors"
+  headline="Missed Call Text Back for Electrical Contractor Companies"
+  accentWord="Electrical"
+  subhead="It is 10:30am on a Tuesday. You are terminating a new Schneider Acti 9 iC60 consumer unit in a detached house in Wantage — sixteen circuits, each conductor stripped to the correct length, sleeved where required, and torqued into the RCBO terminals with a calibrated torque screwdriver. The busbar clicks are verified, the neutral bar connections checked, and the incoming supply tails are the last to be connected. Three calls come in between 10am and noon. Your phone is on the kitchen worktop, the consumer unit is in the hallway cupboard, and your hands hold stripped conductors. Without Missed Call Text Back, one voicemail — 'need an electrician' — two hang-ups. With it, all three receive texts within seconds. The first replies at 10:45am: 'Hi — property developer, converting a Victorian pub in Wallingford into six flats plus a ground-floor restaurant. Need full electrical design and install: three-phase incoming supply, main switchroom, submains to seven distribution boards, individual flat consumer units with RCBOs and pre-payment meter tails, restaurant commercial kitchen electrics (three-phase oven, combi, extraction), fire alarm BS 5839 Cat L1, emergency lighting BS 5266, structured Cat6a data and CCTV containment. Design-and-build preferred. Conversion starts in ten weeks. Call when you can — this is a priority.' At the lunch break you review. Wednesday you call: Wallingford Victorian pub to 6 flats + restaurant, three-phase, main switchroom, 7 DBs, RCBO flat boards, pre-payment tails, commercial kitchen three-phase, BS 5839 L1, BS 5266, Cat6a, CCTV, D&B, 10-week start."
+  scenario="It is 4pm on a rainy November Wednesday. You have been in the ceiling void of a three-storey office in the city centre since 8am — running 175 metres of Cat6a structured data cabling through cable basket containment, each blue cable dressed neatly in the basket and labelled at both ends. Six missed calls between 8am and 4pm. Without Missed Call Text Back, you emerge at 4pm: six unknowns, one voicemail — 'EICR needed urgently' — five gone permanently. With Missed Call Text Back, all six received texts. Reply one: 'homeowner Headington — EICR failed with C1 and C2s, solicitor demanding remediation for house sale, exchange in 5 weeks.' Reply two: 'main contractor Didcot — 20 houses need first-fix starting January, can you tender?' Reply three: 'letting agent — rewire needed on a 1940s HMO, 6 bedrooms, old rubber cable.' Reply four: 'homeowner Botley — want EV charger installed, 7kW Easee One, driveway, need dedicated circuit.' Reply five: 'architect — lighting design for a barn conversion near Bampton, LED throughout, DALI dimming, external landscape lighting.' Reply six: 'facilities manager — fire alarm BS 5839 L2 upgrade, 4-storey office, conventional to addressable.' Six leads. Wednesday evening you triage — the C1 house sale first, the 20-house tender second."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/electrical-contractors/ai-receptionist/"
+  ctaHeadline="Recover Six Electrical Leads from One Rainy November Wednesday"
+  ctaSubhead={`While you ran 175 metres of Cat6a through basket containment, six callers missed you. Six texts went out. A C1 house sale, a 20-house tender, an HMO rewire, an EV charger, a barn lighting design, and a fire alarm upgrade. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Researching Rewires',
+    text: "Homeowners discover they need a rewire after a failed EICR, a house purchase survey, or a tripping consumer unit. Chat captures them during their most anxious research — comparing electricians while the C1 code looms."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies Electrical Project Scope',
+    text: "Through conversation, the AI distinguishes a full rewire from a consumer unit upgrade, an EICR from a new circuit, and a domestic socket addition from a commercial three-phase installation. You receive a categorised lead."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening EICR Concern',
+    text: "Homeowners receive Unsatisfactory EICR reports from solicitors at 5pm. By 9pm they are on your website searching for an electrician who can remediate C1 and C2 codes before exchange. Chat captures that urgency."
+  },
+  {
+    icon: '📊',
+    title: 'Explains Electrical Safety Concepts',
+    text: "Visitors ask 'what is a C1 code?', 'do I need RCDs?', 'should I upgrade my fuse box?' The AI responds from your profile knowledge, explaining EICR categories and consumer unit technology while gathering the property age and wiring type."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Electrical Portfolios',
+    text: "Your website shows consumer unit upgrades, rewired rooms with neat cable routing, and LED lighting installations. Chat converts visitors studying your installation quality into booked surveys."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat is part of phone answering at £${pricing.tiers.core.price}/month. Unlimited electrical conversations — from socket additions to multi-property EICR programmes.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my electrical website?",
+    answer: "A single JavaScript snippet arrives during your onboarding. Paste it into your website header through WordPress, Squarespace, or your platform's HTML settings. The branded chat widget appears across every page. Electrical firms with consumer unit upgrade galleries and EICR case studies find that visitors engage with chat directly from pages showing modern Hager or Schneider boards replacing old Wylex fuse boxes."
+  },
+  {
+    question: "Can the AI explain EICR findings to visitors?",
+    answer: "The AI is configured from your company profile with your diagnostic preferences and approach. When a visitor types 'our EICR came back Unsatisfactory with C2 codes — what does that mean?' the AI responds with context about observation categories and remedial urgency, while capturing the specific codes, the property age, the number of circuits affected, and the visitor's contact information."
+  },
+  {
+    question: "What does chat capture from electrical visitors?",
+    answer: "The AI gathers the electrical need (rewire, upgrade, EICR, new circuit, or emergency), the property age and cable type if known, the consumer unit details, any EICR findings, the room and floor count for rewires, the compliance deadline if applicable, and visitor contact information for your follow-up."
+  },
+  {
+    question: "Does chat slow my electrical website?",
+    answer: "Consumer unit photography, EICR case study content, NICEIC accreditation badges, and certification logos load at their existing speed before chat activates. The lightweight widget initialises only after all page content has rendered completely. No impact on performance or search ranking."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Chat is included with phone answering at £${pricing.tiers.core.price}/month — no additional fee. Electrical contractors benefit from dual-channel coverage: daytime phone calls from developers booking first-fix programmes and landlords scheduling EICRs, paired with evening website conversations from homeowners alarmed by Unsatisfactory EICR reports and researching rewire options after receiving their solicitor's email.`
+  },
+  {
+    question: "How is visitor data from electrical queries handled?",
+    answer: "Chat conversations containing property addresses, EICR findings, circuit schedules, fire alarm specifications, and visitor contact information are encrypted and stored on UK and EU servers under UK GDPR. Lead summaries go exclusively to you. No electrical project details reach competitors or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Electrical Contractors | Rapid Receptionist"
+  description={`AI website chat for UK electrical contractors. Engages homeowners researching rewires and landlords booking EICRs. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/electrical-contractors/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Electrical Contractor"
+  tradeNamePlural="Electrical Contractors"
+  tradeSlug="electrical-contractors"
+  headline="AI Website Chat for Electrical Contractor Companies"
+  accentWord="Electrical"
+  subhead="A homeowner finds your website at 10pm on a Tuesday. Her solicitor emailed at 5pm — the EICR on the house she is buying in Botley came back Unsatisfactory with two C2 codes: inadequate bonding to the gas and water incoming services, and absence of RCD protection on the socket circuits. The vendor's electrician cannot remediate before her exchange deadline in four weeks, and her solicitor has advised that she commission her own NICEIC electrician to scope the work and provide a firm quote by Friday. She types: 'Good evening — I am buying a house in Botley and the EICR has come back Unsatisfactory. Two C2 codes — bonding and no RCDs. My solicitor needs me to get a quote for the remedial work by Friday. The house is a 1960s 3-bed semi. The vendor says the consumer unit is an old MEM Memera with MCBs but no RCDs. Can someone come and inspect this week? I need to know if it is just the bonding and the consumer unit or if there are bigger problems. Exchange is in four weeks.' Without chat, she bookmarks and emails Friday morning. With AI Website Chat, the AI explains that bonding and RCD protection can typically be resolved with a consumer unit upgrade and supplementary bonding, asks about the floor count and whether any cabling is visible in the loft, and captures: Botley 1960s 3-bed semi, Unsatisfactory EICR, C2 bonding, C2 no RCDs, MEM Memera MCB board, consumer unit upgrade likely, inspection this week, solicitor quote Friday, exchange 4 weeks."
+  scenario="It is midnight on a Thursday. A facilities manager for a chain of dental practices types: 'Hi — need EICRs on six dental surgeries across Oxfordshire. Current certificates expire in August. Each surgery has around forty circuits including dental chair supplies, X-ray units, autoclaves, and compressor circuits. Some surgeries are from the 1990s and may need remedial work. Need all six surveyed and certified before renewal. Can you do electrical testing in dental surgeries without disrupting patient appointments? We would need weekend or evening testing. Also need emergency lighting checks to BS 5266 at the same time. Can you quote for the full programme?' Without chat, he emails Friday. With AI Website Chat, the AI confirms your EICR and emergency lighting capability, asks about archive circuit schedules, and captures: 6 dental surgeries Oxfordshire, ~40 circuits each, dental chair/X-ray/autoclave circuits, August deadline, weekend/evening testing, BS 5266 emergency lighting, programme quote."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/electrical-contractors/ai-receptionist/"
+  ctaHeadline="Win the Botley EICR Remedial While Her Solicitor Waits for Friday's Quote"
+  ctaSubhead={`A homebuyer needs bonding and RCD protection scoped before exchange in four weeks. Chat captures the C2 codes, the MEM consumer unit, and the Friday deadline. Included at £${pricing.tiers.core.price}/month.`}
+/>

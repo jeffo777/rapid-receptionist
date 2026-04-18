@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Developer Electrical Tenders',
+    text: "Main contractors and QSs email electrical subcontract packages with containment schedules, cable specifications, consumer unit types, and programme milestones. The electrical firm acknowledging first — referencing the specification — stays on the shortlist."
+  },
+  {
+    icon: '📐',
+    title: 'References Circuit Specifications',
+    text: "When a QS emails specifying 'galvanised trunking containment, SWA submains to three distribution boards per floor, Schneider Acti 9 RCBOs, Cat6a structured data, addressable fire alarm BS 5839 L1,' the AI acknowledgement references every element."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Wiring Hours',
+    text: "Electrical days absorb every hour — pulling cable through containment, terminating circuits, testing, and commissioning. A QS's tender email at 9am waits unread until the instruments are packed. Your sixty-second acknowledgement preserves the tender position."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Wholesaler Orders',
+    text: "Your inbox combines QS tenders, electrical wholesaler delivery confirmations, cable supplier dispatch notes, test instrument calibration reminders, and NICEIC scheme correspondence. The AI identifies genuine project enquiries from operational messages."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Contractor Confidence',
+    text: "Developers with multi-phase estates need reliable electrical gangs who maintain programme. Consistent instant acknowledgements across phases build the trust that schedules your firm into every plot from containment to handover."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing and Schedule Attachments',
+    text: "Electrical tenders include floor plans with containment routes, circuit schedules, luminaire layouts, fire alarm zone plans, and programme bar charts. The AI notes these documents and references them in your lead."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce electrical quotes from tender emails?",
+    answer: "The system produces no pricing — only a professional acknowledgement referencing the electrical specification and project scope. Your quotation — cable quantities, containment schedules, consumer unit costs, luminaire counts, testing hours, and certification fees — is prepared by you from the measured drawings and specification documents."
+  },
+  {
+    question: "Will it respond to wholesaler and supplier emails?",
+    answer: "Configuration during onboarding defines which email patterns trigger acknowledgement. Electrical wholesaler delivery receipts, cable manufacturer dispatch notes, test instrument calibration invoices, and NICEIC membership renewal notices are automatically excluded. Only genuine client enquiries and project tenders receive the professional response."
+  },
+  {
+    question: "How does it handle homeowner electrical emails?",
+    answer: "Contact form submissions from homeowners — 'need a full rewire, 1930s house, old fuse box' — receive a professional response asking about the property age, the current consumer unit type, the wiring condition, whether an EICR has been carried out, and the preferred survey date."
+  },
+  {
+    question: "What does email response cost for electrical contractors?",
+    answer: `The email channel is £${pricing.addOn.price}/month as an add-on. A new-build first-fix programme across twenty plots generates £60,000 to £150,000 in subcontract value. Acknowledging a QS's tender within sixty seconds — while you terminated a distribution board on another site — frequently determines whether your firm receives the formal invitation to tender and the pre-tender site walkover.`
+  },
+  {
+    question: "Can subsequent tender correspondence come from me?",
+    answer: "After the initial acknowledgement, all communications are authored by you. Your measured survey, cable schedule, luminaire take-off, containment drawings, fire alarm zone plan, method statement, programme, and Part P notification are prepared and submitted entirely by your team."
+  },
+  {
+    question: "How is electrical tender data secured?",
+    answer: "Electrical tenders contain site plans, circuit schedules, fire alarm designs, containment routes, and commercially sensitive pricing. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No details reach competing electrical contractors or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Electrical Contractors | Rapid Receptionist"
+  description={`AI email response for UK electrical contractors. Acknowledges developer first-fix tenders, EICR programme requests, and commercial fit-out specifications within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/electrical-contractors/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Electrical Contractor"
+  tradeNamePlural="Electrical Contractors"
+  tradeSlug="electrical-contractors"
+  headline="AI Email Response for Electrical Contractor Companies"
+  accentWord="Electrical"
+  subhead="A QS emails a full electrical subcontract tender for a new-build primary school in Witney — two storeys, fourteen classrooms, a hall, a kitchen, staff rooms, and administration offices. The specification calls for galvanised steel trunking containment throughout, SWA submains from the main switchroom to six distribution boards across two floors, Schneider iC60 MCBs with RCCB incomer boards (the school's M&E consultant requires separate RCD and MCB rather than RCBOs for maintenance simplicity), LED panel luminaires with emergency conversion packs in every classroom, addressable Hochiki fire alarm system to BS 5839 Category L1, emergency lighting to BS 5266 with central battery backup, structured Cat6a data cabling to every classroom and office, interactive whiteboard power and data provisions, and external LED bollard and floodlight circuits on photocell and timer control. Phase one is the teaching block — eight classrooms, the hall, and the kitchen. Tender return in four weeks with a mandatory pre-tender walkover next Friday. You are running twin-and-earth through trunking on a commercial unit in Abingdon, cable after cable fed into the metal raceway. Without AI Email Response, the primary school tender sits until the trunking run finishes. Two NICEIC firms acknowledged within the hour. With it, your acknowledgement arrives within sixty seconds, referencing the fourteen classrooms, Schneider iC60 with RCCB, Hochiki addressable BS 5839 L1, BS 5266 central battery, Cat6a, LED panels, interactive whiteboard provisions, external lighting, four-week tender, Friday walkover."
+  scenario="It is 6:30am on a Monday. Your inbox accumulated over the weekend: a developer requesting first-fix electrics on twelve new-build houses in Carterton — 'containment, carcass wiring, consumer units with RCBOs and SPD, Cat6a, EV charger pre-wires to each garage,' a homeowner requesting a full rewire on a 1950s bungalow in Woodstock — 'rubber cable in the loft, old fuse box, failed EICR,' a facilities manager wanting fire alarm upgrade to BS 5839 L2 on a three-storey office building — 'existing conventional system unreliable, need addressable replacement,' and an electrical wholesaler confirming Tuesday's delivery of Schneider boards. Without AI Email Response, the twelve houses, the bungalow rewire, and the fire alarm upgrade wait until Tuesday. With AI Email Response, the Carterton houses reference containment/RCBOs/Cat6a/EV pre-wires, the Woodstock bungalow notes rubber cable and failed EICR, the fire alarm upgrade references BS 5839 L2 addressable, and the wholesaler email is filtered."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/electrical-contractors/ai-receptionist/"
+  ctaHeadline="Acknowledge the 14-Classroom School Tender While You Run Trunking in Abingdon"
+  ctaSubhead={`A QS's four-week tender for Hochiki fire alarms, BS 5266 central battery emergency lighting, and Cat6a to every classroom starts when the email lands. Your sixty-second acknowledgement secures the Friday walkover. Add-on at £${pricing.addOn.price}/month.`}
+/>

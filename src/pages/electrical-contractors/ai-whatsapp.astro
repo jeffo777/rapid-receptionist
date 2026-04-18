@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives EICR & Defect Photos',
+    text: "Homeowners and letting agents WhatsApp photos of scorched consumer units, melted socket faces, tripping switches, and flickering lights. The AI responds instantly, asks whether the circuit is isolated, and builds an emergency lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Developer Programme Slots',
+    text: "Main contractors WhatsApp electrical requirements mid-build — 'first fix starts plot 22 Monday, need your gang with containment and cable.' The electrical firm confirming first maintains the programme position."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Builder Requests from Site',
+    text: "Builders WhatsApp electrical requests mid-project — 'extension ready for second fix, need sockets, downlights, and extractor connected before the decorator Thursday.' The AI captures the scope while you terminate circuits elsewhere."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Installation Hours',
+    text: "Main contractors schedule next-week first-fix in the evening. Homeowners discover tripping RCDs after dark. Landlords forward tenant electrical complaints overnight. The AI captures every after-hours message."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Electrical Briefs',
+    text: "A WhatsApp saying 'need EICR on 3-bed rental, Cowley, tenancy renewal in 3 weeks' becomes a structured compliance lead with property type, location, and regulatory deadline."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. Developer programmes, EICR schedules, and wholesaler orders stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess electrical faults from photos?",
+    answer: "Electrical fault diagnosis requires on-site testing with calibrated instruments — a visual photograph cannot determine insulation resistance, loop impedance, or RCD trip functionality. The AI does respond constructively to every image — acknowledging the visible damage (scorching, melting, discolouration), asking whether the affected circuit is isolated, whether other circuits are functioning, and the consumer unit type. Every photograph attaches to your priority lead for on-site investigation."
+  },
+  {
+    question: "What about multi-message electrical threads?",
+    answer: "Electrical conversations develop across several messages — a landlord sends a photo of a tripping consumer unit, then explains the tenant reports it happens when the oven and kettle run together, then confirms there are no RCDs on the board, then asks about EICR requirements. The AI accumulates every message into one comprehensive lead with fault description, trigger conditions, board configuration, and compliance questions."
+  },
+  {
+    question: "How much does AI WhatsApp cost for electrical contractors?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. A full rewire generates £3,000 to £8,000. A consumer unit upgrade generates £600 to £1,200. Securing a landlord's recurring EICR programme across ten rental properties — through a rapid WhatsApp reply confirming your NICEIC registration — provides annual recurring revenue that significantly exceeds the channel cost.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Send a single reply in any active thread and the AI transfers control to you. Most electricians let the AI extract the initial project brief — property type, wiring age, consumer unit details, EICR status, and urgency — then step in directly to discuss the survey schedule, pricing, and certification timeline."
+  },
+  {
+    question: "How is WhatsApp data from electrical enquiries protected?",
+    answer: "Every WhatsApp message — consumer unit photographs, property addresses, EICR reports, circuit schedules, fire alarm specifications, and sender contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively with you. No project details reach competing electrical firms or are repurposed in any way."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Electrical Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK electrical contractors. Responds to EICR report photos, developer programme messages, and consumer unit upgrade queries while you wire. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/electrical-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Electrical Contractor"
+  tradeNamePlural="Electrical Contractors"
+  tradeSlug="electrical-contractors"
+  headline="AI WhatsApp for Electrical Contractor Companies"
+  accentWord="Electrical"
+  subhead="A letting agent WhatsApps at 7:45am on a Monday with a photo of a consumer unit in a rental flat on Cowley Road. The board is an old Wylex rewirable fuse box — rewirable fuses in ceramic holders, no RCDs, and a handwritten label on the inside of the cover reading 'tested 2009.' Her message: 'Morning — this is the consumer unit in one of our rental flats on Cowley Road. We need an EICR for the tenancy renewal. The current certificate is from 2009. The board looks ancient — rewirable fuses, no RCD. The tenant has been complaining about the ring main tripping when the washing machine runs. Can you EICR and quote for a consumer unit upgrade if needed? We have nine more rentals that all need EICRs before October. If you can handle all ten, we would like a programme price.' You are in the loft of a 1930s semi in Headington — routing twin-and-earth for a new upstairs lighting circuit, the cable draped over joists, the drill probing the wall plate for a drop to the new switch position. Without AI WhatsApp, the ten-property EICR programme waits until the loft work finishes at noon. Another NICEIC firm quotes by 9am. With it, the AI responds at 7:46am, confirms your EICR and upgrade capability, and asks whether all ten properties are flats or a mix of houses and flats. She confirms seven flats and three houses. At noon you review: Cowley Road rental flat, Wylex rewirable 2009 test, no RCD, ring main trips on washing machine, EICR + consumer unit upgrade, 9 more properties (7 flats + 3 houses), October deadline, programme price."
+  scenario="It is 9:30pm on a Thursday. A homeowner in Marston WhatsApps a video of her kitchen lights flickering intermittently — the LED downlights in the kitchen flash on and off randomly, with the flicker worsening when the oven runs. Her message: 'Hi — our kitchen downlights have been flickering for weeks. Getting worse. They flash randomly and it is worse when the oven is on. Our consumer unit is about 15 years old — Schneider with MCBs. Is this dangerous? Could it be a loose connection or something more serious? We have three small children and I am worried about electrical fire. Can someone come and look this week? We are in Marston.' Without AI WhatsApp, the flickering query waits until Friday. With AI WhatsApp, the reply at 9:31pm: 'Thank you — intermittent flickering that worsens under load is a symptom that needs investigation. Could you confirm whether the lights are on the same circuit as the oven, or a separate lighting circuit, and whether you have noticed any warmth or discolouration around the consumer unit or any sockets?' She confirms separate circuit, no warmth noticed. Friday you call: Marston, kitchen LED downlights flickering, worsens with oven load, Schneider MCB board 15 years, separate circuits, 3 children, fire concern, this week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/electrical-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the 10-Property EICR Programme While You Route Cable in the Loft"
+  ctaSubhead={`A letting agent with a Wylex rewirable from 2009 needs EICRs across ten rentals before October. The AI confirmed your NICEIC capability while you drilled through the wall plate. Add-on at £${pricing.addOn.price}/month.`}
+/>

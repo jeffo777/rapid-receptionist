@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Consumer Unit Upgrade Content',
+    text: "Consumer unit before-and-afters are compelling — old Wylex rewirables with ceramic fuses replaced by modern Schneider or Hager boards with neat RCBO rows. When a homeowner messages about their own ancient fuse box, the AI captures an upgrade lead."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Electrical Fault Messages',
+    text: "Homeowners message photos of scorched sockets, tripping boards, and flickering lights — 'this happened today, is it dangerous?' The AI asks about isolation status, the consumer unit type, and whether other circuits are affected."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Builder Requests',
+    text: "Builders see your electrical work and message — 'need an electrician for second fix on a house extension, sockets, downlights, and extractor.' The AI captures the scope while you terminate circuits elsewhere."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Evening EICR Panic',
+    text: "Solicitors email EICR failures at 5pm. By 8pm the homebuyer is on Facebook searching for an electrician who can remediate C2 codes before exchange. They find your page and message. The AI captures compliance urgency."
+  },
+  {
+    icon: '📋',
+    title: 'Qualifies Electrical Project Category',
+    text: "Messenger conversations start with 'how much for a rewire?' The AI distinguishes a full rewire from a partial, a consumer unit upgrade from additional circuits, and an EICR from a new installation — building the correct specification before your survey."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Board Photo',
+    text: "Every neat RCBO consumer unit, every rewired room with tidy containment, and every LED downlight installation generates enquiries from homeowners who recognise their own wiring's age."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my electrical firm?",
+    answer: "Messenger operates exclusively through a Business page connection. Electrical contractors posting consumer unit upgrade photos, rewire progress sequences, and EICR before-and-after comparisons generate exceptional local engagement — homeowners photograph their own ancient fuse boxes and share your posts with comments like 'ours looks worse than the before photo.'"
+  },
+  {
+    question: "What electrical enquiries come through Messenger?",
+    answer: "Homeowners alarmed by Unsatisfactory EICRs needing remedial work before house sales. Landlords seeking EICR programmes across rental portfolios. Builders wanting second-fix electricians for extension completions. Self-builders requiring full electrical packages for their new homes. Each sender has examined your installation quality through your Facebook portfolio."
+  },
+  {
+    question: "How fast does the AI reply to electrical messages?",
+    answer: "Messenger enquiries receive responses within seconds of arrival. Facebook's active status indicator confirms your electrical firm is immediately available. A homeowner who has discovered a C1 observation on their EICR — meaning an immediate danger exists — expects instant engagement from a firm that can attend urgently, not an inactive page suggesting limited availability."
+  },
+  {
+    question: "What does Messenger cost for electrical contractors?",
+    answer: `Messenger is £${pricing.addOn.price}/month as a channel add-on. A full rewire generates £3,000 to £8,000. One homeowner's complete rewire — secured through a prompt Messenger reply to a scorched consumer unit photo while you tested circuits on another property — covers the annual channel cost from a single project.`
+  },
+  {
+    question: "Can I continue Messenger conversations personally?",
+    answer: "Send one message in any thread and the AI yields that conversation permanently. Most electricians let the AI capture the initial brief — property type, wiring age, consumer unit details, EICR findings, and compliance deadline — then engage personally to discuss survey scheduling, pricing, and certification."
+  },
+  {
+    question: "How is Messenger data from electrical queries protected?",
+    answer: "All Messenger conversations, consumer unit photographs, property addresses, EICR observations, circuit details, and sender contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. No electrical project details reach competitors, wholesalers, or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Electrical Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK electrical contractors. Converts consumer unit photos into rewire leads and EICR remedial bookings. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/electrical-contractors/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Electrical Contractor"
+  tradeNamePlural="Electrical Contractors"
+  tradeSlug="electrical-contractors"
+  headline="AI Facebook Messenger for Electrical Contractor Companies"
+  accentWord="Electrical"
+  subhead="You post three photos of a consumer unit upgrade on a 1970s detached house in Kidlington. Photo one: the before — an old MEM Memera 2000 consumer unit with sixteen rewirable fuses in white ceramic holders, no RCDs, a tangle of non-compliant brown and blue cables entering through knockout holes with no bushes, and a handwritten label reading 'tested 2006.' Photo two: the work in progress — the old board removed, the cables stripped back and identified with circuit markers, new containment trunking fitted to the wall, and a Schneider Acti 9 iC60 dual-RCD split-load board mounted and drilled for entry. Photo three: the complete upgrade — sixteen RCBOs neatly installed, every circuit labelled with a printed schedule, SPD fitted to the incoming supply, cables entering through brass bushes into the trunking, and a fresh NICEIC Minor Works Certificate visible beside the board. Ninety-three likes, fourteen shares. A homeowner in Headington messages: 'Our consumer unit looks exactly like your before photo — same white fuses, same handwritten label, it says tested 2004. The ring main trips every time we use the tumble dryer. Two kids in the house — is this dangerous? Can you upgrade ours to something like your after photo? What would that cost roughly? We are in Headington.' You are testing circuits. Without AI Messenger, the message waits. With it, the AI asks whether any other circuits trip simultaneously, whether there is warmth around the fuse box, and confirms you will provide a survey and quote. She confirms the ring main is the only circuit affected, no warmth. Wednesday you call: Headington, MEM Memera 2000 tested 2004, rewirable fuses, ring main trips on tumble dryer, 2 children, upgrade to Schneider RCBOs, survey and quote."
+  scenario="It is 11:30pm on a Friday. A landlord with a portfolio of fourteen rental properties in east Oxford messages: 'Evening — I have just received a letter from my insurance company. They require current EICRs on all properties as a condition of renewal. Some certificates are from 2017 and 2018 — I think they are meant to be every five years. Fourteen properties, mix of flats and houses, all in Cowley and Iffley. Can you do a programme of EICRs and fix any problems found? Insurance renewal is in ten weeks. Also, some of the houses still have old Wylex fuse boxes — will those fail the EICR? I imagine so. If you can handle the full programme I would like to appoint one firm for everything.' Without AI Messenger, the fourteen-property programme waits until Monday. With AI Messenger, the reply at 11:31pm: 'Thank you — Wylex rewirable fuse boxes without RCD protection will typically generate C2 observations on an EICR. Could you confirm approximately how many of the fourteen properties still have Wylex boards, and whether any have had electrical work done since the original installation?' He confirms eight still have Wylex, six upgraded. Saturday you review: east Oxford 14 properties, Cowley/Iffley, insurance EICR mandate, 10-week deadline, 8 Wylex boards, 6 upgraded, programme + remedials, single appointment."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/electrical-contractors/ai-receptionist/"
+  ctaHeadline="Turn 93 Likes on a Kidlington Board Upgrade into a Headington Survey"
+  ctaSubhead={`Three photos of an MEM Memera reborn as a Schneider Acti 9 with RCBOs earn ninety-three likes. AI Messenger converts the Headington parent's tumble-dryer trip into a consumer unit survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

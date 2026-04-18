@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Pull Cable',
+    text: "Pulling SWA through duct, threading twin-and-earth through ceiling joists, terminating circuits at the consumer unit, testing insulation resistance with a Megger — electrical work demands both hands and unbroken focus. The AI answers every call in your company name."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Electrical Briefs at Every Scale',
+    text: "When a main contractor calls about first-fix electrics on a forty-plot estate, the AI captures the containment type, cabling specification, and programme. When a homeowner calls about a tripping RCD, the AI captures the circuit, the trip frequency, and the consumer unit age."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Electrical Emergency Calls',
+    text: "Burning smell from a consumer unit, tripping RCDs that will not reset, exposed live conductors during renovation, sparking sockets, and partial power loss — electrical emergencies are immediately dangerous. The AI captures the hazard, the isolation status, and the property access."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Rewire Enquiries',
+    text: "Homeowners research rewires in the evening — alarmed by an Unsatisfactory EICR, a tripping fuse box, or an estate agent demanding electrical certification. The AI captures every evening call at peak urgency."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Electrical Pricing',
+    text: "Each lead specifies the electrical scope (new install, rewire, EICR, upgrade, or emergency), the circuit count, the consumer unit type, the property dimensions, and access — everything required for accurate electrical pricing."
+  },
+  {
+    icon: '🏷️',
+    title: 'NICEIC-Grade Professionalism',
+    text: "An electrical firm that answers professionally and asks about the consumer unit configuration, EICR findings, and BS 7671 compliance signals certified expertise that main contractors and homeowners trust for their most critical installations."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their electrical project?",
+    answer: "Questions adapt to the enquiry category. A homeowner wanting a rewire hears questions about the property age, the existing cable type (rubber, lead-sheathed, or modern PVC), the current consumer unit (rewirable fuses, old MCBs, or modern RCBOs), the number of floors and rooms, and whether an EICR has been conducted. A main contractor requesting first-fix on an estate is asked about the plot count, the containment type (trunking, conduit, or cable tray), the consumer unit specification, and the programme relative to the plasterer's start."
+  },
+  {
+    question: "Can the AI handle both domestic and commercial electrical calls?",
+    answer: "Domestic rewires — replacing rubber-insulated cable, upgrading Wylex fuse boxes, and adding sockets — require different qualification details than commercial fit-outs with three-phase distribution, fire alarm systems to BS 5839, emergency lighting to BS 5266, and structured Cat6a data networks. The AI generates completely separate lead structures with appropriate compliance references, preventing any mixing between a homeowner's consumer unit upgrade and a commercial tenant's office fit-out."
+  },
+  {
+    question: "What about calls during live testing?",
+    answer: "Electrical testing demands absolute concentration — applying 500V insulation resistance with a Megger, measuring earth loop impedance at the furthest point, verifying RCD trip times within the 300ms window, and recording prospective fault current at the origin. Interrupting a test sequence wastes time, corrupts readings, and requires the entire sequence to restart. The AI captures every call while you maintain the testing discipline that valid certification demands."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `The Core plan includes ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Electrical contractors receive a diverse call blend — homeowner rewire quotes, landlord EICR bookings, developer first-fix tenders, commercial fit-out specifications, and EV charger installation requests. The combination of short domestic calls and detailed commercial specifications sits comfortably within the allowance. Overage is 20p per minute with no lock-in commitment.`
+  },
+  {
+    question: "Can I take calls during quoting?",
+    answer: "During site surveys, EICR inspections where the test instruments are momentarily idle, and quotation preparation at your desk — manage calls directly. The instant your hands are occupied — pulling cable, terminating a board, or testing circuits — route to the AI. Toggle from your dashboard whenever your task changes."
+  },
+  {
+    question: "How is electrical project data secured?",
+    answer: "Electrical enquiries contain property addresses, circuit schedules, EICR observations, fire alarm designs, and commercially sensitive tender pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No details reach competing electrical firms, are shared with wholesalers, or are sold to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Electrical Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK electrical contractors. Captures developer first-fix programmes, homeowner rewire quotes, and EICR bookings while you pull cable. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/electrical-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Electrical Contractor"
+  tradeNamePlural="Electrical Contractors"
+  tradeSlug="electrical-contractors"
+  headline="AI Phone Answering for Electrical Contractor Companies"
+  accentWord="Electrical"
+  subhead="A homeowner calls at 11am. Her 1930s semi in Summertown has been flagged by the estate agent — the EICR came back Unsatisfactory with three C2 codes and one C1. The C1 observation is a lack of earthing on the incoming supply — the original installation predates PME, and the service cable has no earth conductor. The C2s include deteriorated rubber-insulated cabling in the loft (crumbling insulation exposing copper conductors), absence of RCD protection across every circuit, and a Wylex rewirable fuse box that trips on the 30A ring main when the washing machine runs. She needs a full rewire, a modern consumer unit with RCBOs and SPD, and a valid EIC to satisfy the solicitor handling her house sale. Exchange is in six weeks. You are in the ceiling void of a new build in Kidlington — clipping twin-and-earth to joists for the lighting circuit, the cable staple gun in one hand and the cable in the other, the loft insulation pushed aside. Without AI Phone Answering, the rewire call goes to voicemail. The homeowner calls two more NICEIC electricians. With it, the AI captures: Summertown 1930s semi, Unsatisfactory EICR (C1 — missing earth, C2 — rubber cable loft, C2 — no RCDs, C2 — Wylex rewirable trips on ring main), full rewire needed, consumer unit with RCBOs + SPD, valid EIC for house sale, exchange in 6 weeks."
+  scenario="It is 2pm on a Monday. Three calls between noon and 2pm. You are terminating a Hager RCBO consumer unit in a detached house in Abingdon — stripping, sleeving, and torquing each conductor into the RCBO terminals, every circuit systematically connected from the incoming supply through to the final circuit. Without AI Phone Answering, one voicemail and two hang-ups. With it, all three are answered. Lead one: a main contractor in Wantage — 'first fix starting on sixteen 4-bed detacheds next month, need your team for containment, carcass, consumer units with RCBOs, Cat6a structured data to every room, LED downlight circuits, extractor fan connections, smoke and heat alarms to Building Regs.' Lead two: a letting agent in Cowley — 'need EICRs on eight rental properties before June for landlord certificate compliance, some from the 1960s.' Lead three: a homeowner in Headington — 'want an EV charger installed, have off-street parking, need a dedicated 32A radial from the consumer unit plus earth rod.' At 3pm you check leads — a sixteen-plot first-fix programme, an eight-property EICR compliance programme, and an EV charger installation — and plan the week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/electrical-contractors/ai-receptionist/"
+  ctaHeadline="Capture the Summertown C1 Rewire While You Clip Cable in Kidlington"
+  ctaSubhead={`A homeowner with a C1 earth deficiency and crumbling rubber cable needs a full rewire for her house sale in six weeks. The AI captured every EICR code while the staple gun worked the ceiling joists. From £${pricing.tiers.core.price}/month.`}
+/>

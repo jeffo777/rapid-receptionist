@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A main contractor calls about the electrical package on a new-build housing development in Bicester — forty-eight plots across four phases. Each house needs full first-fix electrics: containment (trunking and conduit through the stud walls), carcass wiring in twin-and-earth and SWA for the external circuits, back boxes for sockets, switches, and data points, consumer unit pre-wired with RCBOs and SPD, and structured data cabling (Cat6a to every room). Second fix follows the decorator: face plates, sockets, switches, LED downlight luminaires, extractor fan connections, and smoke/heat alarm commissioning. He needs your measured price per plot and confirmation you can sustain six plots per week. You are pulling SWA cable through ducting across a car park on a retail unit fit-out in Didcot — the cable drum spinning on the stand, the armoured cable threading through pre-laid duct, and both hands on the cable pulling grip. He calls three electrical firms. One answers and books a walkover.",
+    with: "Your AI receptionist answers on the second ring. It captures the scope — forty-eight plots Bicester, four phases, first fix (containment, twin-and-earth, SWA external, consumer unit with RCBOs and SPD, Cat6a data), second fix (face plates, LED downlights, extractors, smoke/heat alarms), six plots per week — and confirms you will call back. At the break you review and schedule the walkover."
+  },
+  {
+    without: "A homeowner emails on Wednesday about a full house rewire on their 1930s semi — the existing wiring is original rubber-insulated cable, the fuse box is an old Wylex with rewirable fuses, there are no RCDs, and the EICR report from their house sale survey came back Unsatisfactory with C1 and C2 observations. The email sits until Sunday.",
+    with: "Your AI acknowledges within sixty seconds, referencing the rubber cable, Wylex fuse box, missing RCDs, and Unsatisfactory EICR with C1/C2s. Sunday you schedule the Monday survey."
+  },
+  {
+    without: "A facilities manager WhatsApps on Saturday about an EICR programme across a portfolio of twelve commercial properties — each requiring testing and inspection, certification, and remedial work scheduling for any C1/C2 codes before the insurance renewal deadline. He messages three electrical firms. By Monday, two have replied.",
+    with: "The AI responds within seconds, asks about the property types, typical circuit counts, and the insurance deadline date. Monday at 8am you have a structured twelve-property EICR tender."
+  }
+];
+
+const specialisms = [
+  {
+    category: "New-Build & Construction Electrics",
+    items: ["First-fix containment — trunking, conduit, cable tray, and basket", "Carcass wiring — twin-and-earth, SWA, MICC, and SY flex", "Consumer unit and distribution board installation (RCBOs, RCDs, MCBs, SPD)", "Three-phase and submains distribution for commercial and large residential", "Structured data cabling — Cat6, Cat6a, Cat7, and fibre optic backbone", "LED lighting design, installation, and DALI/DMX commissioning"]
+  },
+  {
+    category: "Domestic Electrics & Rewires",
+    items: ["Full and partial house rewires — BS 7671 18th Edition compliant", "Consumer unit upgrades — modern RCBO boards replacing Wylex/MEM fuse boxes", "EICR testing and inspection with C1/C2/C3 remedial programming", "Additional sockets, circuits, and lighting points", "EV charger circuit installation (dedicated 32A radial, earth rod)", "Smart home wiring — lighting control, multi-room audio, and home automation"]
+  },
+  {
+    category: "Commercial & Industrial Electrics",
+    items: ["Commercial fit-out electrics — offices, retail, hospitality, and healthcare", "Fire alarm installation and commissioning — Category L1/L2/M, BS 5839", "Emergency lighting — maintained and non-maintained, BS 5266 compliant", "Three-phase motor and machinery connections", "Periodic testing and EICR certification for landlord compliance", "Building Regulations Part P notification and certification"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Developers",
+    description: "Housebuilders and main contractors requiring first-fix and second-fix electrics on new-build estates — programme-critical containment and wiring that precedes the plasterer, and face plate installation that follows the decorator. They need reliable gangs, NICEIC registration, and consistent weekly plot throughput."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners needing rewires, consumer unit upgrades, additional circuits, EV charger installations, and EICR-driven remedial work. They value clear communication about disruption timelines, because a rewire affects every room while the electrician lifts floorboards and routes cables through ceilings."
+  },
+  {
+    icon: "🏢",
+    title: "Facilities Managers & Commercial Clients",
+    description: "Facilities managers commissioning commercial fit-out electrics, EICR testing programmes, fire alarm installations, and emergency lighting compliance. Office buildings, retail units, schools, and healthcare facilities requiring certified electrical work with minimal operational disruption."
+  },
+  {
+    icon: "📐",
+    title: "Architects & Interior Designers",
+    description: "Architects specifying lighting designs for high-end residential and commercial projects. Interior designers requiring precise socket and switch positions, concealed wiring, and feature lighting — linear LED profiles, pendant arrangements, and accent wall washing."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand electrical terminology?",
+    answer: "The full electrical vocabulary is embedded — first fix (containment, trunking, conduit, cable tray, basket, back boxes, carcass wiring), second fix (face plates, sockets, switches, luminaires, accessories), SWA (steel wire armoured), distribution board (consumer unit, RCBO, RCD, MCB, SPD, main switch, three-phase, busbar, submains), EICR (Electrical Installation Condition Report, C1/C2/C3/FI codes, satisfactory/unsatisfactory), Part P (Building Regulations notification), BS 7671 (18th Edition IET Wiring Regulations), testing (continuity, insulation resistance, Zs, Ze, polarity, loop impedance, RCD trip time, prospective fault current), certification (EIC, MEIWC, minor works), fire alarm (Category L1/L2/L3/M, BS 5839, addressable/conventional), emergency lighting (maintained/non-maintained, BS 5266), data cabling (Cat6/6a/7, patch panel, structured wiring), NICEIC, NAPIT, ELECSA, and ECS card. When a main contractor describes 'first fix — containment in trunking, twin-and-earth carcass, consumer unit with RCBOs and SPD, Cat6a data to every room,' the AI records every specification."
+  },
+  {
+    question: "Can the AI differentiate a rewire from a commercial fit-out?",
+    answer: "A homeowner describing 'old rubber wiring, Wylex fuse box, failed EICR with C1s' generates a domestic rewire lead with cable condition, fuse box type, and EICR findings. A facilities manager requesting 'electrical fit-out for a 5,000 sq ft office — distribution boards, LED lighting, Cat6a data, fire alarm BS 5839 Category L2, emergency lighting BS 5266' generates a commercial programme lead with entirely different scope, certification requirements, and compliance standards. Each produces a fundamentally different lead structure."
+  },
+  {
+    question: "What about urgent electrical calls?",
+    answer: "Burning smell from a consumer unit, a tripping RCD that will not reset, exposed live conductors discovered during renovation, sparking at a socket, and complete power loss across multiple circuits — electrical emergencies create immediate safety risks. The AI captures the hazard type, whether the circuit has been isolated, the distribution board condition, and the property access for priority attendance."
+  },
+  {
+    question: "How much does this cost for an electrical contractor?",
+    answer: `Electrical contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sole-trader domestic electrician handling rewires and consumer unit upgrades or a multi-team firm delivering new-build estate electrics, fire alarms, and commercial fit-outs, the allowance covers your call mix. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a sole-trader electrician?",
+    answer: "Solo electricians gain enormous value. When you are threading cables through ceiling voids, terminating circuits at the consumer unit, or testing insulation resistance on a rewire — answering the phone risks the test sequence, the termination, or the physical position in a cramped loft. The AI captures every homeowner's rewire query, every landlord's EICR request, and every developer's first-fix enquiry while you complete the installation safely."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Adjust coverage from your dashboard to match your electrical day. During active first-fix — pulling cables through containment, terminating distribution boards — route every call to the AI. During site surveys, EICR inspections where you can take calls between circuits, and quoting visits — manage calls directly. Switch from your phone as conditions change."
+  },
+  {
+    question: "How is electrical project data protected?",
+    answer: "Electrical enquiries contain property addresses, circuit schedules, EICR findings, fire alarm system designs, and commercially sensitive tender information. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing electricians or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Electrical Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK electrical contractors — new-build first fix, rewires, EICRs, fire alarms, and commercial fit-outs. Never miss a call while you pull cable. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/electrical-contractors/ai-receptionist/"
+  tradeName="Electrical Contractor"
+  tradeNamePlural="Electrical Contractors"
+  tradeSlug="electrical-contractors"
+  headline="The AI Receptionist Built for Electrical Contractors"
+  accentWord="Electrical"
+  subhead={`You cannot answer the phone when you are pulling SWA through containment, terminating a distribution board with live busbars, testing insulation resistance at 500V, or threading twin-and-earth through ceiling joists in a dusty loft. Your AI receptionist captures every call, every message, and every tender — from main contractors commissioning forty-eight-plot estate electrics to homeowners needing Unsatisfactory EICRs remediated. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next 48-Plot Electrical Package Calls While You Pull SWA in Didcot"
+  ctaSubhead={`A main contractor with RCBOs and Cat6a across four phases needs an electrician who answers. If voicemail picks up, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>
