@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Welding Process Reels',
+    text: "Welding reels are mesmerising — the arc glowing, the weld pool rippling, filler rod feeding, sparks cascading. And the reveal of a finished stainless balustrade or a polished handrail generates DMs from people wanting the same craftsmanship applied to their own projects."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Design-Led Clients',
+    text: "Instagram attracts homeowners, architects, and designers who value aesthetics. A DM saying 'the staircase in your latest post is exactly what we want — can you make something similar?' is a pre-qualified commission from someone who already appreciates your fabrication quality."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Visual Reference DMs',
+    text: "Followers DM with screenshots, sketches, and design references — 'can you make something like this but in stainless instead of mild steel?' The AI asks about dimensions, location, and finish, converting visual inspiration into a structured fabrication brief."
+  },
+  {
+    icon: '🌙',
+    title: 'Captures Late-Night Design Planning',
+    text: "Homeowners plan metalwork projects after dinner — scrolling fabrication portfolios, saving design ideas, and messaging workshops at 11pm. The AI captures every late-night design conversation."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Aspirational DMs',
+    text: "Design DMs start with aspiration — 'we want something really dramatic for our entrance.' The AI channels that enthusiasm into specific questions about opening size, material, finish, and budget range."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Workshop Reel',
+    text: "Every weld close-up, finished product reveal, and installation time-lapse can generate a bespoke metalwork commission from a follower with a project in mind."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "Switch to a Business or Creator profile through your Instagram settings — it is a free change that takes under two minutes. Link it to your Facebook page for full integration. Fabrication workshops showcasing welding reels, workshop progress, and installed project carousels benefit from the professional analytics and promoted post tools that a Business account unlocks."
+  },
+  {
+    question: "What metalwork DMs arrive through Instagram?",
+    answer: "Design-conscious homeowners, architects, and interior designers. Typical DMs include 'love the balustrade in your gallery — can you quote for something similar?', 'how much for a pair of contemporary gates?', and 'we need a fabricator for a feature staircase — can you design and build one?' These enquiries carry strong conversion potential because the sender has already reviewed your visual portfolio."
+  },
+  {
+    question: "How fast does the AI reply to fabrication DMs?",
+    answer: "The response appears within seconds of the DM arriving. Instagram read indicators show your workshop responding immediately. Design-led clients who DM multiple fabricators simultaneously typically select the workshop that responds first with an informed question about their specific material preferences, dimensions, or design direction."
+  },
+  {
+    question: "What does Instagram DMs cost for fabrication workshops?",
+    answer: `Instagram DMs is £${pricing.addOn.price}/month as a channel add-on. Fabrication workshops with compelling visual portfolios — showing polished welds, dramatic installations, and bespoke designs — attract high-value commissions. A single staircase or gate package secured through a prompt Instagram DM typically ranges from £3,000 to £30,000.`
+  },
+  {
+    question: "Can I reply to DMs personally?",
+    answer: "Send a single message in any DM thread and the AI transfers control to you permanently. Most fabricators let the AI gather the initial scope — metalwork type, material preference, key dimensions, finish, installation location — then follow up personally to share design concepts, discuss construction methodology, and book the site survey."
+  },
+  {
+    question: "Is DM data from metalwork queries handled securely?",
+    answer: "All Instagram DM content — design references, property photographs, project dimensions, material preferences, and contact information — is encrypted and stored on UK and EU servers under UK GDPR. No data is shared with competing fabricators, used for advertising, or disclosed to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Welders & Fabricators | Rapid Receptionist"
+  description={`AI Instagram DMs for UK welders and fabricators. Converts welding reels and portfolio posts into bespoke metalwork commissions. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/welders-fabricators/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Welder / Fabricator"
+  tradeNamePlural="Welders & Fabricators"
+  tradeSlug="welders-fabricators"
+  headline="AI Instagram DMs for Welders and Fabrication Workshops"
+  accentWord="Fabricators"
+  subhead="Your latest reel is a sixty-second sequence — raw 316 stainless tube arriving at the workshop, the mitre cut on the bandsaw, the joint set against a welding jig, the TIG torch touching down and a perfect bead flowing along the joint, grinding and polishing stages blurring past, and the final reveal: a mirror-finish stainless balustrade with glass-infill panels installed on a contemporary balcony overlooking a garden. Eighteen thousand views. An architect in North Oxford DMs: 'That balustrade is exactly what we need for a project — a first-floor terrace on a new-build. About 8 metres of 316 stainless with glass panels. Can you quote?' You are in the workshop. Without AI DMs, the message waits. With it, the architect confirms the run length, mounting surface, and handrail profile. Your lead is captured with project context and material specification."
+  scenario="It is 11:30pm on a Saturday. A young couple in Bicester are renovating a 1930s semi and want to replace the existing boxed-in staircase with an open-plan feature — exposed steel stringers, oak treads, a minimal wire-rope balustrade, and hidden LED lighting under each tread. They have been scrolling through fabrication workshop Instagram accounts for hours, comparing designs and welding quality. They find your account and see a carousel of a similar staircase project — from initial sketch to finished installation. The wife DMs: 'Hi — we are renovating our 1930s semi and want to completely open up the staircase. We love the exposed steel stringer look with timber treads and wire rope. Your work is exactly the style we are after. The existing stairs are straight, about 2.7m rise, and we want to add under-tread LED lighting. Can you design and build this? What sort of budget are we looking at?' Without AI Instagram DMs, you see the DM Sunday morning. She has DM'd two other workshops; one responded at midnight with a breakdown of their own staircase process showing similar projects at various price points. With AI DMs, the reply arrives at 11:31pm: 'Thank you — open-tread staircases with exposed stringers and wire-rope balustrades are one of our signatures. The LED integration works beautifully with the open-riser design. Could you confirm the staircase width, whether any turns are needed, and the type of timber you prefer for the treads? We will prepare an initial design proposal.' She replies with measurements. Sunday you open the lead: 1930s semi renovation, Bicester, open-plan staircase, steel stringers, oak treads, wire rope, LED under-tread, 2.7m rise, straight flight, measurements provided. You call Monday at 9am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/welders-fabricators/ai-receptionist/"
+  ctaHeadline="Turn Mirror-Finish Balustrade Reels into Architect Commission DMs"
+  ctaSubhead={`A TIG stainless polishing reel earns eighteen thousand views. AI Instagram DMs converts every architect and homeowner message into a design consultation. Add-on at £${pricing.addOn.price}/month.`}
+/>

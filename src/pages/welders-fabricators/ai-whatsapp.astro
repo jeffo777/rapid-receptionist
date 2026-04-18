@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Design Reference Photos',
+    text: "Homeowners WhatsApp photos of metalwork they admire — Pinterest screenshots, hotel staircase shots, café railing close-ups — alongside photos of their own space. The AI responds instantly, asks about dimensions and material preferences, and attaches every image to your lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins the Design Inspiration Moment',
+    text: "A homeowner photographs a beautiful handrail in a restaurant and immediately WhatsApps fabricators: 'Can you make something like this?' The first workshop to respond with intelligent questions about materials and dimensions secures the consultation."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Contractor Subcontract Messages',
+    text: "Main contractors WhatsApp fabrication requirements: 'Need 4 RSJs and connection plates for a loft conversion — mild steel, S275, CE marked. Can you quote?' The AI captures the steel specification and programme while you weld in the workshop."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Workshop Hours',
+    text: "Homeowners plan metalwork projects in the evening — measuring door openings for gates, photographing spaces for railings, and sending design references. Architects forward specifications after leaving the office. The AI catches every after-hours message."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Fabrication Requests',
+    text: "A WhatsApp saying 'need stainless balustrade for decking, about 6m run, 1100mm high, glass panels, brushed finish' becomes a structured lead with material, dimensions, infill type, and finish specified."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Workshop Channel',
+    text: "AI WhatsApp uses your business number. Conversations about metalwork design, structural specifications, and project pricing stay professional and separated from personal messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI interpret metalwork design reference photos?",
+    answer: "The AI does not produce design assessments from photographs, but it responds effectively — acknowledging that the images show the styles and finishes the client is interested in — and asks the questions fabricators need: the intended location, the material preference, key dimensions (height, length, width), the desired finish, and any fixings or automation requirements. Every reference image is attached to your lead for your own design review."
+  },
+  {
+    question: "What about evolving WhatsApp design conversations?",
+    answer: "Metalwork design conversations develop through WhatsApp — a homeowner sends a gate photo, then questions about automation, then asks about matching railings for the front path, then sends a sketch of what they are imagining. The AI maintains the complete thread and your lead summary consolidates every message, photo, and design evolution into one comprehensive brief."
+  },
+  {
+    question: "How much does AI WhatsApp cost for fabrication workshops?",
+    answer: `WhatsApp is available at £${pricing.addOn.price}/month as a channel add-on. Bespoke fabrication commissions range from £800 gate sets to £25,000 feature staircases. Capturing one architect's balustrade specification or one homeowner's staircase inquiry through a rapid WhatsApp response — while your visor was down and both hands held the torch — pays for the channel many times over.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Type your own message in any thread and the AI transfers the conversation to you instantly. Most fabricators let the AI handle the initial capture — metalwork type, material, dimensions, finish preference, location — then take over personally to discuss design options, share similar completed projects, and arrange the site survey or workshop consultation."
+  },
+  {
+    question: "How is WhatsApp data from fabrication enquiries kept secure?",
+    answer: "All WhatsApp messages — design references, property addresses, architectural specifications, dimension details, and contact information — are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you and is never shared with competing fabricators or used for any other purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Welders & Fabricators | Rapid Receptionist"
+  description={`AI WhatsApp for UK welders and fabricators. Responds to design photos, structural steel queries, and bespoke metalwork messages while you weld. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/welders-fabricators/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Welder / Fabricator"
+  tradeNamePlural="Welders & Fabricators"
+  tradeSlug="welders-fabricators"
+  headline="AI WhatsApp for Welders and Fabrication Workshops"
+  accentWord="Fabricators"
+  subhead="A homeowner WhatsApps at 6:30pm with three photos — a Pinterest screenshot of a contemporary floating staircase with steel mono-stringer construction, a photo of the space in her hallway where the staircase will go, and a close-up of the floor finish showing engineered oak boards that she wants the treads to match. Her message: 'Hi — we love this staircase style! Our hallway is about 2.5m wide and we need to go up about 2.9m to the first floor. We want the same floating look with matching oak treads. Can you do something like this? What sort of budget should we be thinking?' You are in the workshop grinding weld spatter off a set of driveway gate frames — angle grinder screaming, sparks flying, ear defenders on. Without AI WhatsApp, the message waits until you finish and clean up. She messages two other workshops; one replies with a portfolio of similar mono-stringer staircases by 7pm. With it, the AI responds instantly, asks about the number of treads, whether the staircase is straight or has a turn, and the wall construction for stringer mounting. She replies with measurements. Tomorrow morning you open the lead with three reference images, hallway dimensions, oak tread preference, and a £15-20k project scope."
+  scenario="It is Saturday afternoon. A restaurant owner in East Oxford is refurbishing his premises — the interior designer has specified a full package of bespoke metalwork for the fit-out: a 12-metre run of industrial-style bar railings in blackened mild steel with brass cap rail, four wall-mounted shelving units fabricated from 20mm square bar with welded mesh shelves, a steel-framed entrance door with Crittall-style glazing bars, and external seating barriers in matching blackened steel with laser-cut branding panels. He WhatsApps three fabrication workshops with photos of the designer's mood board: 'Hi — refurbing our restaurant and need a full metalwork package. Bar railings, shelving, entrance door, and external barriers. All in a blackened industrial style. Designer has drawings but we need a fabricator who can interpret and deliver the whole thing. Fit-out starts in 8 weeks. Can you handle all of it?' Without AI WhatsApp, you see the message Sunday. One workshop replied Saturday evening with relevant restaurant metalwork examples. With AI WhatsApp, the response arrives within seconds, asks about access for delivery, whether the blackened finish is wax or lacquer, and requests the designer's drawings. He sends the mood board spread. Sunday you open the lead: restaurant fit-out, East Oxford, full metalwork package, bar rail/shelving/door/barriers, blackened mild steel with brass, designer drawings available, 8-week start. You call Monday at 9am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/welders-fabricators/ai-receptionist/"
+  ctaHeadline="Respond to the Floating Staircase Photos While You Grind the Gate Frames"
+  ctaSubhead={`A homeowner sends three design references with hallway dimensions. The AI responds while your grinder screams. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Design-Conscious Visitors',
+    text: "Homeowners visit fabrication websites with design aspirations — 'can you make a staircase like this?', 'what material would work for garden railings?', 'how much for automated gates?' The chat responds from your profile, discusses materials and finishes, and captures the project scope."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Project Type and Material',
+    text: "Through conversation, the AI identifies whether the visitor needs structural steelwork, architectural metalwork, domestic gates/railings, or commercial fabrication. You receive a lead categorised by project type with material preferences and dimensions noted."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Design Research',
+    text: "Homeowners plan bespoke metalwork projects in the evening — browsing Pinterest for gate designs, staircase styles, and railing ideas. At 10pm she types: 'love the spiral staircase on your gallery — can you do something similar for our barn conversion?' The chat captures the brief before she closes the laptop."
+  },
+  {
+    icon: '📊',
+    title: 'Discusses Materials and Finishes',
+    text: "Visitors ask about material choices — mild steel vs stainless, galvanised vs powder-coated, brushed vs mirror-polished. The AI answers from your profile and captures the visitor's preference alongside the project dimensions."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Your Portfolio Gallery',
+    text: "Fabrication portfolios sell on craftsmanship — close-up welds, finished handrails, installed staircases. The chat converts visual admiration into commissioned metalwork while visitors browse your best projects."
+  },
+  {
+    icon: '✅',
+    title: 'Included Free',
+    text: `Website chat comes bundled with AI phone answering at £${pricing.tiers.core.price}/month. A single JavaScript snippet, unlimited design conversations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add chat to my fabrication website?",
+    answer: "A compact JavaScript snippet is supplied at onboarding. Insert it into your website header — through direct code editing, WordPress settings, or your Squarespace/Wix admin panel. The chat bubble appears on every page. Most fabrication workshop websites are live with chat in under three minutes."
+  },
+  {
+    question: "Can the AI discuss metalwork materials with visitors?",
+    answer: "Your profile tells the AI about your materials, processes, and capabilities. When a visitor asks 'what is the difference between mild steel and stainless for outdoor railings?' the AI explains from your profile — covering corrosion resistance, finish options, and price positioning — while capturing their specific railing requirements. It provides informed guidance without overpromising on technical specifications."
+  },
+  {
+    question: "What project details does the chat capture?",
+    answer: "The AI gathers the metalwork type (gates, railings, staircase, structural steel, bespoke), the material preference, key dimensions, the desired finish (galvanised, powder-coated, brushed, patinated), whether installation is required, the property type and location, the visitor's timeline, and their contact details. This tells you whether you are pricing a pair of garden gates or designing a three-storey feature staircase."
+  },
+  {
+    question: "Does the chat slow my portfolio website?",
+    answer: "The script loads asynchronously after all your gallery images, project photos, and workshop videos have rendered. Fabrication websites — typically image-heavy with close-up weld details and installed project shots — display at full speed. The chat appears once your visual portfolio has loaded completely."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Phone answering and website chat operate under the same Core plan at £${pricing.tiers.core.price}/month — no additional cost. For fabrication workshops, these two channels cover the primary enquiry routes: phone calls during working hours from architects and contractors, and evening website chats from homeowners researching bespoke metalwork.`
+  },
+  {
+    question: "How is visitor data from metalwork queries handled?",
+    answer: "Chat conversations containing project descriptions, design preferences, dimensions, property addresses, and visitor contact information are encrypted and stored on UK and EU servers compliant with UK GDPR. Lead summaries go exclusively to you. No design concepts or project details are shared with competing fabrication workshops."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Welders & Fabricators | Rapid Receptionist"
+  description={`AI website chat for UK welders and fabricators. Engages homeowners and architects researching bespoke metalwork, gates, railings, and staircases. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/welders-fabricators/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Welder / Fabricator"
+  tradeNamePlural="Welders & Fabricators"
+  tradeSlug="welders-fabricators"
+  headline="AI Website Chat for Welders and Fabrication Workshops"
+  accentWord="Fabricators"
+  subhead="A homeowner finds your website at 10:15pm. She and her partner have just purchased a barn conversion and they want a feature staircase as the centrepiece of the open-plan ground floor — something industrial yet refined, with raw steel stringers, oak treads, and a minimal wire-rope balustrade. She types: 'Hi — we have just bought a barn conversion and want an incredible staircase. Something structural and industrial but elegant. We love the look of raw steel with warm timber treads. Can you design and make something bespoke? The staircase runs from ground to first floor — about 2.8m rise, quarter turn, and we want it to be the first thing people see when they walk in.' Without chat, she bookmarks and continues scrolling Pinterest. With AI Website Chat, the AI discusses your similar staircase projects, asks about tread width, riser height, the barn's ceiling height, and your lead — complete with design direction, dimensions, and property context — waits for Monday morning."
+  scenario="It is midnight on a Saturday. A property developer in Witney is planning the external metalwork for a block of six luxury apartments — each unit needs a Juliet balcony (1100mm high, full-width, 316 stainless horizontal bar), a communal entrance canopy (3m projection, mild steel frame with glass roof), communal railings to the external staircase, and a set of secure automated entrance gates with video intercom provisions. He finds your website while reviewing the architect's elevations and types: 'Planning a 6-apartment development. Need Juliet balconies for all 6 units (stainless), entrance canopy, communal staircase railings, and automated gates. Can you handle the full external metalwork package? Budget circa £35-40k for the metalwork. Programme starts September.' Without chat, he sends a contact form. With AI Website Chat, the AI responds, asks about balcony widths, gate dimensions, and canopy design, and he shares the architect's elevation drawing. Monday you open the lead: 6-apartment block, Witney, six Juliet balconies, entrance canopy, staircase railings, automated gates, £35-40k budget, September start, elevation PDF attached. You call at 9am and book a Wednesday meeting with the developer and architect."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/welders-fabricators/ai-receptionist/"
+  ctaHeadline="Capture the Barn Conversion Staircase Commission at 10pm"
+  ctaSubhead={`A homeowner is designing her dream staircase on your website right now. Your chat captures the dimensions, design direction, and budget before she closes the browser. Included at £${pricing.tiers.core.price}/month.`}
+/>

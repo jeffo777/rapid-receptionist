@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Architect Metalwork Specifications',
+    text: "Architects and designers email bespoke metalwork specifications — balustrade detail drawings, staircase design briefs, gate elevation sketches, and railing schedules. The fabrication workshop that acknowledges first, referencing the specification, demonstrates professionalism and availability."
+  },
+  {
+    icon: '📐',
+    title: 'References Steel Specifications',
+    text: "When a structural engineer emails a fabrication schedule specifying '4nr 254x146 UB Grade S275 beams with 200x200x10 base plates, M24 holding-down bolts, and connection cleats to BS EN 1090 EXC2,' the AI acknowledgement references the beam sizes, steel grade, and CE marking standard."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Workshop Email Gap',
+    text: "Fabricators spend entire days welding, cutting, and grinding — visor down, hands occupied, ears defended. An architect's balustrade specification arriving at 10am sits unopened until the workshop closes. The sixty-second acknowledgement keeps your name ahead of every competing workshop."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Commissions from Suppliers',
+    text: "Your inbox mixes architect specifications, homeowner enquiries, steel stockholder price lists, powder-coating collection notices, and gas supplier delivery confirmations. The AI identifies genuine metalwork commissions and delivers them as leads."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Architect Relationships',
+    text: "Architects who find a reliable, design-literate fabrication workshop return repeatedly — every project requiring bespoke metalwork generates another commission. Consistent sixty-second acknowledgements position your workshop as a trusted specification partner."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Metalwork specifications include elevation drawings, detail sections, material schedules, and finish specifications. The AI references these attachments in both the acknowledgement and your lead summary."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI fabricate quotes from specifications?",
+    answer: "Your acknowledgement is the only automated element — it confirms receipt to the architect or engineer, references the metalwork type and key specification details, and indicates that your full quotation follows. Your material takeoff, fabrication hours, finishing costs, installation pricing, and programme are prepared by you from your own workshop assessment of the drawings."
+  },
+  {
+    question: "Will it respond to steel supplier and gas delivery emails?",
+    answer: "The system learns during setup to distinguish genuine metalwork commissions from operational correspondence. Steel stockholder price updates, argon gas delivery notifications, powder-coating collection schedules, and abrasive supplier promotions are filtered out. Only project enquiries and specification tenders trigger the automatic response."
+  },
+  {
+    question: "How does it handle homeowner contact-form enquiries?",
+    answer: "When a homeowner enquires through your contact form — 'interested in a pair of wrought-iron style gates for our driveway, approximately 3m opening, would like to discuss design options' — the AI sends a professional response confirming your capability, asking about gate style, material, and automation, and separating the lead from architect technical specifications in your dashboard."
+  },
+  {
+    question: "What does email response cost for fabrication workshops?",
+    answer: `This channel add-on costs £${pricing.addOn.price}/month. Bespoke fabrication commissions range from £1,000 railing sets to £30,000 feature staircase projects. Acknowledging an architect's staircase specification within sixty seconds — before the competing workshop even opens the email — keeps you on the design team's shortlist for a project that could define your portfolio.`
+  },
+  {
+    question: "Can I write all follow-up correspondence myself?",
+    answer: "Every subsequent email is composed and sent by you. Your design proposals, fabrication drawings, material selections, finish samples, pricing schedules, and programme commitments are your own professional work. The AI's involvement ends with the receipt confirmation."
+  },
+  {
+    question: "How is metalwork specification data secured?",
+    answer: "Architect specifications contain project addresses, design details, structural calculations, material schedules, and commercially sensitive pricing. All email data is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No specification details are disclosed to competing fabrication workshops."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Welders & Fabricators | Rapid Receptionist"
+  description={`AI email response for UK welders and fabricators. Acknowledges architect metalwork specifications and structural steel tenders within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/welders-fabricators/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Welder / Fabricator"
+  tradeNamePlural="Welders & Fabricators"
+  tradeSlug="welders-fabricators"
+  headline="AI Email Response for Welders and Fabrication Workshops"
+  accentWord="Fabricators"
+  subhead="An architect emails a specification for a glazed entrance screen at a new restaurant — a Crittall-style steel frame in mild steel with a hot-rolled finish, double doors with sidelights and a transom panel, all glazed with 6.4mm laminated safety glass, the frame sections 40x40mm hollow section with welded tee-bar glazing beads, and the whole assembly hot-dip galvanised before a satin black powder-coat finish. She needs fabrication drawings, a sample weld finish, and a budget price within three weeks. You are in the workshop MIG welding box-section frames for a set of security grilles — wire feeding, arc popping, the workshop fan pulling fumes through the extraction hood. Without AI Email Response, the restaurant screen specification sits until Friday evening. Two competing workshops acknowledged by Wednesday. With it, your acknowledgement arrives within sixty seconds, referencing the Crittall-style frame, the 40x40 hollow section, the galvanised-and-powder-coated finish, and the laminated glass requirement."
+  scenario="It is 7:15am on a Monday. Your inbox has accumulated over the weekend: an interior designer forwarding a mood board and specification for a bespoke reception desk frame — mild steel flat bar and angle construction with a brushed brass-effect lacquer finish, a structural engineer requesting a quote for a mezzanine floor structure — four columns, eight primary beams (305x165 UB), secondary beams at 1200mm centres, and chequer plate decking, a homeowner asking about stainless-steel garden railings via your contact form, and an argon gas supplier confirming Wednesday cylinder delivery. Without AI Email Response, you scan subjects while unlocking the workshop, note the mezzanine, and start cutting steel. The mezzanine quote sits until Tuesday evening. Two competitors acknowledged Monday morning. With AI Email Response, the mezzanine tender receives an immediate acknowledgement referencing the 305x165 beams, column positions, and chequer plate specification, the reception desk brief gets a professional response, the garden railing enquiry is handled, and the gas email is filtered. At lunch you prioritise the mezzanine — estimated value £22,000 — and begin reviewing the beam schedule."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/welders-fabricators/ai-receptionist/"
+  ctaHeadline="Acknowledge the Crittall Screen Specification While You Weld the Grilles"
+  ctaSubhead={`An architect's three-week tender for a glazed entrance screen starts when the email lands. Your sixty-second acknowledgement keeps your workshop on the shortlist. Add-on at £${pricing.addOn.price}/month.`}
+/>

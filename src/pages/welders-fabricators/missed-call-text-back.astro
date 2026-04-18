@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls Under the Helmet',
+    text: "Welding, grinding, cutting, drilling — fabrication work requires hearing protection, welding helmets, and both hands. Missed Call Text Back sends a branded text the instant a call goes unanswered in the workshop."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Design-Conscious Callers',
+    text: "A homeowner calling three fabrication workshops about a bespoke gate or staircase gets voicemail from two and a text from one: 'Thanks for calling — I am in the workshop fabricating and will return your call this afternoon.' That caller waits."
+  },
+  {
+    icon: '🏷️',
+    title: 'Workshop Professionalism',
+    text: "Bespoke metalwork is a high-value, trust-driven service. A prompt, branded text response from a workshop signals the organised professionalism that design-conscious clients are looking for."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Busy Fabrication Phases',
+    text: "Large projects keep you in the workshop for weeks — welding, fitting, finishing. Missed Call Text Back ensures no new commission enquiry escapes during intensive fabrication periods."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Specifications',
+    text: "Callers reply with metalwork details — 'need a pair of gates, 3m opening, automated, oak infill panels, contemporary design.' These specifications arrive in your lead summary before you call back."
+  },
+  {
+    icon: '🔄',
+    title: 'Complements AI Phone Answering',
+    text: "Phone Answering conducts full conversations and builds detailed metalwork briefs. Missed Call Text Back catches the rare calls that slip past — a caller disconnecting after one ring, or a signal dead spot deep in the workshop. Combined, zero commissions escape."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text go out?",
+    answer: "The branded text reaches the caller's phone within seconds of the unanswered call — before they have scrolled to the next fabricator on Google. During busy workshop phases when you are welding gate frames, grinding staircase stringers, or assembling balustrade sections, this instant response keeps you on every potential client's shortlist."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose the text during setup and update it at any time. A typical fabrication workshop message reads: 'Thank you for calling [workshop name]. I am currently in the workshop and will return your call shortly. Reply with details of your metalwork project for a faster response.' The wording reflects your workshop's personality and professionalism."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They operate as complementary layers. Phone Answering conducts full design conversations — gathering metalwork type, material, dimensions, finish preference, and timeline. Missed Call Text Back catches the edge cases — a caller who hangs up before the AI connects, or a mobile signal dropping inside the steel-framed workshop. Both together mean every metalwork enquiry is retained."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Bespoke fabrication ranges from £600 simple railing sets to £30,000 architectural staircase commissions. Recovering one missed call through a timely text — a homeowner who would have commissioned the next workshop she found — and converting it into a gate or staircase project transforms a small monthly outlay into major workshop revenue.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Frequently — especially homeowners with a clear project in mind. Typical replies include the metalwork type, approximate dimensions, material preference, design style, and postcode. These descriptive replies arrive in your lead dashboard before you return the call, allowing you to discuss design options with informed preparation."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing project descriptions, dimensions, material preferences, and contact details are encrypted and held on UK and EU servers under UK GDPR. Only you can access the data. Nothing is shared with competing fabrication workshops, sold to lead platforms, or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Welders & Fabricators | Rapid Receptionist"
+  description={`Missed Call Text Back for UK welders and fabricators. Automatically texts callers while you weld, cut, and fabricate — keeps gate, staircase, and metalwork leads warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/welders-fabricators/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Welder / Fabricator"
+  tradeNamePlural="Welders & Fabricators"
+  tradeSlug="welders-fabricators"
+  headline="Missed Call Text Back for Welders and Fabrication Workshops"
+  accentWord="Fabricators"
+  subhead="It is 11am on a Tuesday. You are in the workshop plasma-cutting 10mm mild steel plate — the torch tracing a CAD-guided pattern for a decorative garden screen, the metal glowing orange along the cut line, the extraction fan roaring above you. Two calls come in at 11:15 and 11:45. Your phone is on the bench behind the plasma table — unreachable while the cut is running. Without Missed Call Text Back, both callers hear voicemail. One leaves a message — 'calling about some gates' — the other hangs up and calls the next fabrication workshop on Google. With it, both receive texts within seconds. The first replies: 'Hi — want a pair of estate-style driveway gates in wrought-iron, about 3.8m opening, with matching pedestrian gate and railings either side. Automation too. OX15.' The second: 'We are an architect practice — need a fabricator for a bespoke steel and glass staircase in a residential new-build. Happy to share drawings.' At noon you pause the plasma and check. Two leads — a £12,000 gate and railing package and a potentially £25,000 staircase commission — both with contact details and project context."
+  scenario="It is 3pm on a Saturday. You have been in the workshop since 8am fabricating a large security grille set for a commercial unit — MIG welding box-section frames, fitting hinges, and drilling fixing holes. Your phone shows five missed calls between noon and 3pm. Without Missed Call Text Back, you scroll: three unknowns, one voicemail — 'hi, wondering about getting a Juliet balcony made' — and one from a number you recognise as a regular builder. Five calls, one vaguely useful voicemail, three unrecoverable. With Missed Call Text Back, all five received texts. The first at 12:10: 'homeowner in Eynsham — need stainless Juliet balcony for new French doors, 1100mm high, contemporary horizontal bar.' The second at 12:45: 'builder here — need 2 RSJ beams for a knock-through, 4m each, S275, CE marked, need them Wednesday.' The third at 1:20: 'landscaper — want 3 Corten planters, various sizes, for a garden project in Charlbury.' The fourth at 2:15: 'hi — want some matching railings done for front and back garden, mild steel, about 20m total, ornamental design.' The fifth — your builder — at 2:50: 'mate, can you also fab me a connection plate for those beams?' At 3:30 you open five leads — Juliet balcony, RSJ beams, Corten planters, 20m ornamental railings, and a connection plate add-on — each with materials and dimensions ready for quoting."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/welders-fabricators/ai-receptionist/"
+  ctaHeadline="Recover Five Metalwork Leads from One Workshop Saturday"
+  ctaSubhead={`While you MIG welded the security grilles, five callers missed you. Five texts went out. Five replied. Five projects quoted by Monday. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Weld',
+    text: "Welding requires total concentration and both hands — one on the torch, one on the filler rod, visor down, arc running. The AI answers every call in your company name while you maintain the weld pool and produce clean, consistent beads."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Varied Metalwork Briefs',
+    text: "When an architect calls about a cantilevered Corten steel canopy, the AI captures the material, span, and fixings. When a main contractor describes a CE-marked steel frame for a two-storey extension, the AI captures beam sizes, connection types, and the construction programme. Every lead reflects the project's technical scope."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Urgent Repair Calls',
+    text: "Broken fire escapes, fractured structural connections, damaged security shutters, and collapsed access platforms generate urgent calls. The AI identifies the emergency, captures the location and repair scope, and escalates the lead for immediate mobile welding response."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Design Enquiries',
+    text: "Homeowners research bespoke metalwork in the evening — scrolling gate designs, staircase styles, and railing options after work. The 8:30pm call about 'a pair of automated driveway gates in a contemporary design' is a genuine commission from someone ready to proceed."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Quoting',
+    text: "Each lead specifies the metalwork type, material (mild steel, stainless, aluminium, Corten), dimensions or sizes, finish required (galvanised, powder-coated, brushed, mirror-polished), installation location, and the client's timeline."
+  },
+  {
+    icon: '🏷️',
+    title: 'Workshop Credibility',
+    text: "A professional AI greeting that asks relevant questions about materials, finishes, and specifications signals a serious fabrication workshop — not a man with a buzz box. Design-conscious clients and structural engineers instruct fabricators who communicate professionally from the outset."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their metalwork project?",
+    answer: "The questions adapt to the caller's description. A homeowner wanting gates is asked about the opening width, single or double leaf, material preference, automation requirements, and design style. An architect specifying a bespoke staircase is asked about the staircase type (straight, spiral, helical), the material and finish, the number of risers, balustrade infill, and the project programme. A structural engineer tendering a steel frame is asked about beam sizes, connection types, CE marking requirements, and site delivery access."
+  },
+  {
+    question: "Can the AI handle calls about both structural steel and decorative metalwork?",
+    answer: "Fabrication workshops typically serve both markets — heavy structural work for builders and engineers alongside bespoke architectural metalwork for designers and homeowners. The AI recognises the distinction and adjusts its questioning. A call about 'RSJ beams for a loft conversion' captures beam sizes, connection plates, and building control requirements. A call about 'a contemporary stainless-steel balustrade for a glass landing' captures material grade, handrail profile, fixing method, and design references."
+  },
+  {
+    question: "What about calls when the workshop is running noisy equipment?",
+    answer: "Grinding, plasma cutting, hammering, and the din of workshop extraction make phone conversations impossible even when your hands are free. The AI handles every call during noisy fabrication phases so you do not have to shout over the angle grinder or step outside mid-cut."
+  },
+  {
+    question: "How many call minutes are included?",
+    answer: `The Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Fabrication workshops receive a mix of homeowner design enquiries, architect specifications, structural engineer tenders, and commercial repair requests. Most workshops operate comfortably within the allowance. If a portfolio feature or trade show generates a spike, overage is billed at 20p per minute without penalties.`
+  },
+  {
+    question: "Can I answer calls during office and quoting time?",
+    answer: "When you are at the desk — drawing fabrication details, pricing material lists, ordering stock, or preparing CE documentation — answer calls yourself. Toggle between AI and personal answering from your dashboard instantly. During welding, cutting, and fabrication phases in the workshop, route all calls to the AI."
+  },
+  {
+    question: "How is fabrication project data secured?",
+    answer: "Fabrication enquiries contain project addresses, structural drawings, architectural specifications, material schedules, and commercially sensitive pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details are shared with competing fabricators, disclosed to clients' other suppliers, or sold to third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Welders & Fabricators | Rapid Receptionist"
+  description={`AI phone answering for UK welders and fabricators. Captures structural steel, railings, gates, staircase, and bespoke metalwork enquiries while you weld. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/welders-fabricators/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Welder / Fabricator"
+  tradeNamePlural="Welders & Fabricators"
+  tradeSlug="welders-fabricators"
+  headline="AI Phone Answering for Welders and Fabrication Workshops"
+  accentWord="Fabricators"
+  subhead="An architect calls at 11am. She is designing a double-height entrance lobby for a new-build office in Summertown — a statement staircase rising through the atrium. She wants a helical staircase fabricated from 15mm mild steel plate with cut-string construction, 316 stainless-steel tube handrails, toughened glass balustrade panels on stainless standoff fixings, and LED strip lighting recessed into the underside of the handrail. Twelve treads, 3.6 metre rise, 1800mm diameter. She needs fabrication drawings within three weeks. You are in the workshop TIG welding a stainless-steel balustrade section — mask down, pedal pressed, tungsten glowing, the weld pool flowing along a mirror-finish tube joint. Without AI Phone Answering, the architect hears voicemail and tries the next fabrication workshop in her contacts. With it, the AI captures the full brief — helical staircase, mild steel plate, 316 stainless handrails, glass balustrades, standoff fixings, LED lighting, twelve treads, 3.6m rise, 1800mm diameter, three-week drawing deadline — and your lead waits for the afternoon tea break."
+  scenario="It is 2pm on a Wednesday. You are in the workshop fabricating a set of automated driveway gates — MIG welding the frame sections together, clamping the mitres, tacking the hinge positions, checking plumb and square at every joint. Three calls come in between 1:30 and 3:45pm. Without AI Phone Answering, one leaves a voicemail — 'need some railings made' — two hang up. By Thursday, two have spoken to competitors. With AI Phone Answering, all three are answered. Lead one: homeowner in Headington wanting a pair of Juliet balconies for two new French doors — 316 stainless steel, horizontal bar design, 1100mm high to match building regulations. Lead two: main contractor needing emergency repair to a fire escape staircase at a commercial building in Cowley — two treads corroded through, the handrail section cracked, building control requires urgent certification. Lead three: landscape architect specifying Corten steel planters and a privacy screen for a contemporary garden — five planters (1200x600x500mm) and a 3-metre freestanding screen with a geometric laser-cut pattern. At 4pm you check three leads — two bespoke commissions and an urgent structural repair — and begin prioritising."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/welders-fabricators/ai-receptionist/"
+  ctaHeadline="Helical Staircase, Juliet Balconies, Fire Escape Repair — All in Two Hours"
+  ctaSubhead={`While you MIG welded the gate frames, three metalwork opportunities called. The AI captured every material, dimension, and deadline. From £${pricing.tiers.core.price}/month.`}
+/>

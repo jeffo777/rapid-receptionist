@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "An interior designer calls about a bespoke spiral staircase for a barn conversion — mild steel stringers with glass-infill balustrades and a stainless-steel handrail, three-storey open plan, each tread laser-cut from 10mm chequer plate. She needs fabrication drawings, a site survey, and installation within fourteen weeks. You are TIG welding a stainless-steel handrail in your workshop — welding mask down, argon flowing at 12 litres per minute, tungsten electrode positioned, both hands guiding the filler rod along the joint. Your phone is on the bench six feet away. The designer calls two other fabrication workshops. One walks her through the design process on the phone.",
+    with: "Your AI receptionist answers on the second ring. It captures the full brief — spiral staircase, barn conversion, mild steel and stainless, glass balustrades, three storeys, chequer plate treads, fourteen-week programme — and confirms you will call back. At the next break you read the lead and call. You book a Thursday site survey."
+  },
+  {
+    without: "A structural engineer emails fabrication drawings for a steel-frame extension — six RSJ beams, four stanchions, a ring beam at first-floor level, and connection plates with M20 bolts. CE marking required for building control sign-off. Tender return in two weeks. You are MIG welding roof purlins on a portal frame structure at a farm — wire feeding, arc crackling, visor down, sparks showering around you. The email sits in your inbox until Sunday evening.",
+    with: "Your AI acknowledges the structural engineer's email within sixty seconds, referencing the RSJ beams, stanchions, ring beam, connection plates, and CE marking requirement. Sunday evening you begin reviewing the fabrication drawings with twelve days ahead."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday with photos of corroded wrought-iron railings outside a Georgian terraced house — sections of the balcony railings have rusted through, rivets have failed, and the landlord wants like-for-like reproduction in mild steel with a hot-dip galvanised finish and powder coating. She messages three fabricators. You are at home with your family. By Monday, two have replied with portfolios of heritage railing work.",
+    with: "The AI responds to the WhatsApp within seconds, asks about the railing length, pattern detail, the number of sections requiring replacement, and whether listed building consent is needed. Monday at 8am you have a structured lead with corrosion photos and reproduction scope."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Structural Steel Fabrication",
+    items: ["RSJ beams, stanchions, and portal frames", "Ring beams and connection plates", "Steel staircases and fire escapes", "Mezzanine floor structures", "CE-marked structural steelwork (BS EN 1090)", "Structural steel erection and bolted connections"]
+  },
+  {
+    category: "Architectural & Bespoke Metalwork",
+    items: ["Spiral and helical staircases", "Balustrades, handrails, and Juliet balconies", "Gates, railings, and entrance canopies", "Bespoke furniture and sculptural metalwork", "Corten steel garden features and screens", "Heritage restoration and wrought-iron reproduction"]
+  },
+  {
+    category: "Welding & Specialist Processes",
+    items: ["TIG welding (stainless steel, aluminium, titanium)", "MIG welding (mild steel, stainless, aluminium)", "MMA/stick welding (structural steel, site work)", "Coded welding to BS EN ISO 9606", "Plasma cutting and profile burning", "On-site welding and mobile fabrication"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Homeowners & Self-Builders",
+    description: "Homeowners commissioning bespoke metalwork — railings, gates, Juliet balconies, staircases, garden features, and fire pits. Design-conscious clients who value craftsmanship and want to discuss finish, material, and design before committing. They research extensively and expect a professional first impression."
+  },
+  {
+    icon: "📐",
+    title: "Architects & Interior Designers",
+    description: "Architects and designers specifying bespoke metalwork for residential and commercial projects — spiral staircases, feature balustrades, sculptural screens, and entrance canopies. They tender to fabrication workshops with proven portfolios and expect prompt, design-literate responses."
+  },
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Developers",
+    description: "Main contractors subcontracting structural steelwork — RSJ beams, portal frames, mezzanine structures, and fire escapes. CE marking and coded welding certification are prerequisites. A fabricator who answers and confirms capability gets included in the construction programme."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial & Industrial Clients",
+    description: "Businesses needing access platforms, security grilles, industrial guarding, tank fabrication, pipe work, and structural repairs. These clients often need site welding with short lead times and reliable availability."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand welding and fabrication terminology?",
+    answer: "Every welding process and fabrication term is recognised — MIG, TIG, MMA, flux-cored, submerged arc. Material grades including mild steel (S275, S355), stainless steel (304, 316), aluminium (6082-T6), and Corten weathering steel. Structural specifications like RSJ sizes (152x89, 203x133), connection types (bolted, welded, pinned), and CE marking requirements under BS EN 1090. When an architect describes a bespoke helical staircase in 316 stainless with glass-infill balustrades and LED-lit handrails, the AI captures the scope precisely."
+  },
+  {
+    question: "Can the AI distinguish between a garden gate and a structural steel contract?",
+    answer: "A homeowner calling about 'a new pair of driveway gates in wrought-iron style' generates a fundamentally different lead from a structural engineer describing 'a CE-marked steel frame with six beams, four stanchions, and braced connections for a rear extension.' The AI adjusts its questions — domestic work captures design preference, finish, dimensions, and access, while structural projects capture beam sizes, connection details, CE marking requirements, and programme milestones."
+  },
+  {
+    question: "What about urgent on-site welding calls?",
+    answer: "Broken access platforms, fractured structural connections, failed security grilles, and damaged vehicle barriers generate urgent calls needing a mobile welder on site. The AI identifies the urgency, captures the repair scope and material type, the site location, and any health-and-safety access requirements, then escalates for your immediate attention."
+  },
+  {
+    question: "How much does this cost for a fabrication workshop?",
+    answer: `Welders and fabricators pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you run a one-person mobile welding service or a full fabrication workshop with plasma cutters and overhead cranes, the allowance covers your call patterns. Each additional channel is £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a solo coded welder?",
+    answer: "Solo coded welders — one person with a van, a welding set, and BS EN ISO 9606 certification — are ideally positioned to benefit. When you are under a helmet with an arc running, you physically cannot answer the phone. The AI captures the structural engineer's call while your hands hold the torch and filler rod."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Your dashboard lets you schedule AI coverage precisely. During active welding, fabrication, and on-site installation — route all calls to the AI. During office-based work like quoting, drawing, and ordering materials — take calls directly. Override the schedule with one tap from your phone."
+  },
+  {
+    question: "How is fabrication project data protected?",
+    answer: "Fabrication enquiries contain site addresses, structural drawings, architectural specifications, client budgets, and commercially sensitive tender information. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR and the Data Protection Act 2018, and shared exclusively with you. No project information is disclosed to competing fabricators or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Welders & Fabricators | Rapid Receptionist"
+  description={`AI receptionist for UK welders and fabricators — structural steelwork, railings, gates, staircases, and bespoke metalwork. Never miss an enquiry under the helmet. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/welders-fabricators/ai-receptionist/"
+  tradeName="Welder / Fabricator"
+  tradeNamePlural="Welders & Fabricators"
+  tradeSlug="welders-fabricators"
+  headline="The AI Receptionist Built for Welders and Fabricators"
+  accentWord="Fabricators"
+  subhead={`You cannot answer the phone with a welding torch in one hand and a filler rod in the other, sparks cascading off the workpiece, visor locked down, argon hissing from the TIG cup. Your AI receptionist captures every call, every message, and every enquiry — from interior designers specifying bespoke spiral staircases to structural engineers tendering CE-marked steel frames. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Spiral Staircase Commission Arrives While You Run the Bead"
+  ctaSubhead={`An interior designer with a fourteen-week barn conversion will call three fabrication workshops today. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

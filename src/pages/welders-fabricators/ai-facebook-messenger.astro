@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Workshop Portfolio Posts',
+    text: "Metalwork portfolios are visually striking on Facebook — sparks cascading during a weld, a finished stainless balustrade catching the light, a pair of powder-coated gates installed at a grand entrance. When a follower messages wanting similar work, the AI captures their project scope."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Design Reference Messages',
+    text: "Homeowners message with design ideas — screenshots of gates they like, photos of staircases in magazines, and images of their own space. The AI responds with informed questions about dimensions and materials while saving every reference image."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Local Recommendation Traffic',
+    text: "When you install a stunning set of gates or a feature staircase, the homeowner posts photos on Facebook. Friends and neighbours message: 'That staircase is incredible — can they do something for our house?' The AI converts every referral into a qualified lead."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Evening Browsing',
+    text: "Homeowners browse fabrication portfolios after work, imagining metalwork for their own homes and gardens. DMs at 9pm about 'gates like the ones in your latest post' are genuine commissions waiting to be captured."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Design Inspiration Messages',
+    text: "Messenger conversations about bespoke metalwork often start with aspiration — 'we want something really special for our entrance.' The AI grounds the conversation with questions about opening widths, material preferences, and automation."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Workshop Photo',
+    text: "Every weld close-up, finished installation photo, and workshop progress video posted on Facebook can generate a bespoke metalwork commission from a follower."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my fabrication workshop?",
+    answer: "The Messenger integration connects through a Business page — personal profiles are not compatible. Fabrication workshops use Facebook Business pages to showcase portfolio projects, workshop progress, and finished installations. The AI adds professional message handling so no design enquiry goes unanswered while you weld."
+  },
+  {
+    question: "What metalwork enquiries come through Messenger?",
+    answer: "Predominantly design-conscious homeowners and renovation clients. Common messages include 'love the railings in your last post — can you do something similar?', 'how much for a pair of driveway gates?', and 'we are looking for a fabricator for a bespoke staircase in our new extension.' These leads convert reliably because the sender has already assessed your craftsmanship through your portfolio."
+  },
+  {
+    question: "How quickly does the AI reply on Messenger?",
+    answer: "Instantly upon receipt. Messenger's active status shows your workshop engaging immediately. Homeowners comparing two or three fabrication workshops — all of whom produce visually impressive metalwork — often award the consultation to the company that responds first with intelligent questions about their specific project."
+  },
+  {
+    question: "What does Messenger cost for fabrication workshops?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Bespoke metalwork ranges from £800 pedestrian gates to £25,000 feature staircases. One homeowner's gate and railing package, secured through a prompt Messenger reply while two competitors' messages sat unanswered over the weekend, pays for the add-on for years.`
+  },
+  {
+    question: "Can I continue Messenger conversations myself?",
+    answer: "Send your own reply in any thread and the conversation transfers to you permanently. The AI recognises your message and withdraws. Most fabricators let the AI capture the initial brief — metalwork type, material, key dimensions, finish, and location — then follow up personally to discuss design concepts, share relevant portfolio pieces, and schedule the consultation."
+  },
+  {
+    question: "How is Messenger data from fabrication queries protected?",
+    answer: "All Messenger conversations, design reference images, property addresses, project dimensions, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. No design concepts or project details are shared with competing fabrication workshops."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Welders & Fabricators | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK welders and fabricators. Converts portfolio posts and workshop progress photos into bespoke metalwork commissions. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/welders-fabricators/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Welder / Fabricator"
+  tradeNamePlural="Welders & Fabricators"
+  tradeSlug="welders-fabricators"
+  headline="AI Facebook Messenger for Welders and Fabrication Workshops"
+  accentWord="Fabricators"
+  subhead="You post a video of a finished project — a pair of bespoke driveway gates being installed at a stone-pillared entrance to a country house. The gates are mild steel with a forged scroll design at the top rail, vertical bars tapering to spear-point finials, hot-dip galvanised and powder-coated in heritage green. The video shows the gates swinging open on underground automation, the intercom panel illuminating, and the matching pedestrian gate closing smoothly beside them. Two hundred and thirty likes, forty-one shares. A homeowner two villages away messages: 'Those gates are absolutely stunning. We have a similar entrance with stone pillars — 3.4m opening. We want something equally impressive but in a more contemporary style. Can you design something for us?' You are in the workshop. Without AI Messenger, the message waits. With it, the homeowner shares photos of her pillars and entrance, and your lead — with property photos, pillar dimensions, and contemporary design direction — is captured."
+  scenario="It is 10pm on a Thursday. A couple in Woodstock have been planning their garden renovation for months. They want a package of Corten steel features — a freestanding privacy screen (3m wide, 2m tall, laser-cut with a botanical leaf pattern), four planters in varying sizes, a fire pit bowl on a steel pedestal, and sculptural garden edging running along the main path. They find your Facebook page through a search for 'Corten steel garden features Oxfordshire' and message: 'Hi — we are redesigning our garden and want a full package of Corten steel features. Privacy screen with laser-cut pattern, planters, a fire pit, and edging. We love the weathered steel look. Can you fabricate all of this? Garden project starts in Spring. Our landscaper wants to coordinate with a fabricator early.' Without AI Messenger, you see the message Friday morning. One competitor replied at 10:20pm with photos of their own Corten garden installations. With AI Messenger, the reply arrives at 10:01pm: 'Thank you — Corten steel garden packages are a speciality of ours. The natural weathering process creates a unique finish on every piece. Could you share photos of the garden space and the approximate sizes you are imagining for the screen and planters? We will prepare a design overview showing how the pieces work together.' They send garden photos and a rough sketch. Friday morning you open the lead: full Corten garden package, Woodstock, privacy screen/planters/fire pit/edging, laser-cut botanical pattern, Spring programme, landscaper coordination, garden photos and sketch attached. You call at 9am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/welders-fabricators/ai-receptionist/"
+  ctaHeadline="Turn Heritage Gate Installations into Contemporary Commission Enquiries"
+  ctaSubhead={`A country house gate video earns two hundred and thirty likes. AI Messenger converts every homeowner message into a design consultation with dimensions and style direction. Add-on at £${pricing.addOn.price}/month.`}
+/>

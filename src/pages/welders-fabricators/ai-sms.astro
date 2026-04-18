@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Quick Availability Checks',
+    text: "Contractors text to check capacity — 'hi, can you fabricate and deliver 3 RSJs by next Friday?' A prompt professional reply secures your slot in their programme. Silence means they call the next workshop."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Fabrication Briefs from Short Texts',
+    text: "A text like 'need stainless handrail, about 4m, wall mounted, brushed finish, OX2' gives the AI enough to start. It asks about the tube diameter, bracket centres, and whether end caps are needed. Your lead arrives with quoting-ready detail."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Architect Referral Texts',
+    text: "Architects recommend fabrication workshops to colleagues by text. When the referred architect texts, the AI captures the metalwork specification while the recommendation is fresh."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Workshop Hours',
+    text: "Homeowners measure spaces and text in the evening. Contractors review subcontract requirements after site hours. The AI catches every after-hours message from people planning metalwork projects."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Descriptions',
+    text: "Texts arrive in fragments — 'need a gate' then 'wrought iron style' then 'about 3m wide' then 'automated if poss.' The AI assembles one structured brief from all the fragments."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Workshop Number',
+    text: "AI SMS uses your business number. Metalwork design discussions, structural specifications, and project pricing stay professional."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a fabrication enquiry text?",
+    answer: "It reads the message and responds using your workshop name within seconds. A detailed text — 'need a pair of automated driveway gates in mild steel, contemporary horizontal bar design, 3.5m opening, powder-coated anthracite grey, with underground motors' — is captured with every specification. A brief text — 'can you make some railings?' — prompts questions about the material, length, height, design style, and installation location."
+  },
+  {
+    question: "Will the sender know it is AI?",
+    answer: "The reply reads like a fabricator responding between workshop tasks — material-aware, dimensionally precise, and commercially relevant. It uses your workshop name and asks pertinent questions about the metalwork specification. Homeowners and contractors texting fabrication workshops expect concise, knowledgeable responses — the AI delivers exactly that."
+  },
+  {
+    question: "What about texts from existing project clients?",
+    answer: "Current clients text about collection times, drawing approvals, finish colour confirmations, and delivery arrangements. The AI captures these and categorises them distinctly from new fabrication enquiries. Your dashboard separates a new £8,000 staircase commission from a current client confirming RAL 7016 for their gate powder-coat."
+  },
+  {
+    question: "What does AI SMS cost for fabrication workshops?",
+    answer: `AI SMS is priced at £${pricing.addOn.price}/month as a channel add-on. Fabrication projects range from £600 railing sets to £30,000 architectural staircase commissions. Securing one architect's balustrade specification through a rapid text reply — while the angle grinder drowned out your phone in the workshop — generates returns far exceeding the annual channel cost.`
+  },
+  {
+    question: "Can I text back personally?",
+    answer: "Your own reply in any thread transfers the conversation to you immediately. During drawing and quoting hours, handle texts yourself. During welding and fabrication time, let the AI keep your workshop responsive while both hands hold the torch."
+  },
+  {
+    question: "How is text data from metalwork enquiries stored?",
+    answer: "Text messages containing project addresses, metalwork specifications, design preferences, dimensions, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you and is never shared with competing fabricators or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Welders & Fabricators | Rapid Receptionist"
+  description={`AI SMS for UK welders and fabricators. Responds to structural steel, railing, gate, and bespoke metalwork text enquiries while you weld in the workshop. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/welders-fabricators/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Welder / Fabricator"
+  tradeNamePlural="Welders & Fabricators"
+  tradeSlug="welders-fabricators"
+  headline="AI SMS for Welders and Fabrication Workshops"
+  accentWord="Fabricators"
+  subhead="You are at the welding bench running a TIG bead along a 316 stainless tube joint — the weld pool bright and fluid, the filler rod feeding at a precise angle, the pedal controlling the amperage, the gas lens directing the argon shield. At 2pm a main contractor texts: 'Hi — need 4 RSJs fabricated and delivered for a loft conversion. 203x133 UB, S275, two at 3.6m, two at 2.4m. Need connection plates welded both ends with 4x M20 holes each. CE marking needed. Can you deliver in 3 weeks?' Your phone is out of reach on the workshop bench and your hands will not leave the torch for another twenty minutes. Without AI SMS, the text waits until you de-mask and read messages. He texts two other workshops; one responds in ten minutes with stock availability and delivery confirmation. With it, the AI responds at 2:01pm, confirms your CE marking capability under BS EN 1090, and asks about the connection plate thickness and weather-exposed finish requirements. He confirms 15mm plates and hot-dip galvanised. At 3pm you read the lead and call. You confirm stock and offer delivery Friday week."
+  scenario="It is 9pm on a Sunday. A homeowner in Abingdon has been measuring her front garden and sketching gate ideas all weekend. She wants a pair of driveway gates — 3.2 metre opening, mild steel, a modern horizontal slatted design, automated with underground motors, powder-coated in anthracite grey RAL 7016, with matching pedestrian gate and intercom provision. She texts three fabrication workshops: 'Hi — want a pair of automated driveway gates. 3.2m opening, modern horizontal slat design, mild steel powder coated anthracite. Need underground automation with intercom. Plus a matching pedestrian gate. Can you design and fit? OX14.' Without AI SMS, you see the text Monday morning alongside workshop emails. She has two replies by Sunday evening — one offering a design consultation. With AI SMS, the response arrives at 9:01pm: 'Thank you — automated driveway gates with matching pedestrian gate are one of our most popular commissions. Could you confirm the pillar centres, height preference, and whether the automation needs to be compatible with an existing intercom system? We will prepare a design proposal.' She replies with pillar measurements. Monday you open the lead: driveway gates, 3.2m opening, horizontal slat, RAL 7016, underground automation, intercom, matching pedestrian gate, Abingdon OX14, pillar dimensions confirmed. You call at 9am and book a Thursday site survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/welders-fabricators/ai-receptionist/"
+  ctaHeadline="Catch the RSJ Fabrication Text While You Run the Stainless TIG Bead"
+  ctaSubhead={`A main contractor texts about four RSJs with CE marking and a three-week deadline. The AI responds while your pedal controls the arc. Add-on at £${pricing.addOn.price}/month.`}
+/>
