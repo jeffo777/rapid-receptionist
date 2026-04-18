@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Cable Termination',
+    text: "Terminating thirty-two Cat6 cables at an NVR patch panel, programming Texecom Premier Elite zone labels and response types, commissioning Paxton Net2 access levels and time profiles, or mounting cameras at height on scaffold towers — security installation demands focus and clean hands. Missed Call Text Back texts every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Post-Crime Callers',
+    text: "A homeowner whose house was burgled last night calls for an urgent alarm and CCTV installation. Voicemail? She calls the next NSI firm. A branded text — 'Thanks for calling — we are commissioning a security system and will call back shortly' — holds the most urgent, high-conversion lead."
+  },
+  {
+    icon: '🏷️',
+    title: 'NSI Approved Image',
+    text: "An instant branded text from an NSI Gold approved security contractor signals the accredited professionalism that insurers require and facilities managers trust with property protection."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Full Installation Days',
+    text: "Security installation days — cable runs from 7am, camera mounting and aiming from 10am, panel programming until 3pm, and system commissioning with ARC registration until 5pm — consume every hour. Missed Call Text Back captures every lead during your most technically concentrated days."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Security Details',
+    text: "Callers reply with scope — 'need CCTV and alarm after break-in, shop on Cowley Road, four cameras minimum, monitored alarm, NSI required for insurance.' Replies arrive on your dashboard before the panel powers down."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering conducts full security conversations. Missed Call Text Back covers edge cases — a call during the precise moment a camera aims at its final position, a phone in the van while you program in the comms room, or a single-ring disconnect. Together: zero lost security leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "The text fires within seconds of the missed ring ending — before the burglary victim with smashed windows and a police crime number dials the next NSI-approved firm from the insurer's recommended list. During full-day installations where cable termination, camera commissioning, and panel programming occupy every minute, this automatic text sustains your commercial responsiveness without breaking any technical procedure."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose the wording at setup and update it whenever convenient. A security-specific message reads: 'Thank you for calling [company name]. We are currently commissioning a security system on site and will return your call at the earliest opportunity. Reply with your security requirements for a faster response.' This demonstrates current NSI-approved installation activity while inviting requirement details."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "The two systems safeguard your security business through complementary coverage. Phone Answering holds complete conversations — establishing the crime context, recording existing system details, capturing camera count requirements, and discussing monitoring grades. Missed Call Text Back covers uncommon edge cases — a call arriving the instant you solder a joint on a Cat6 connector, a phone in the van while you program a Texecom panel in the server room, or a caller disconnecting before the AI picks up. Running both together eliminates security lead loss completely."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This channel is £${pricing.addOn.price}/month as an add-on. A domestic alarm and CCTV system generates £1,500 to £4,000. A commercial integrated security upgrade generates £10,000 to £50,000. Recovering one missed call from a facilities manager with a thirty-two-camera campus upgrade — through a six-second branded text while you commissioned a Paxton controller — initiates a project pipeline that dwarfs the annual channel cost.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Homeowners reply with urgency — 'burgled last night, need alarm and cameras immediately, 3-bed semi Summertown, police crime number 43/xxxxx.' Facilities managers reply with programme briefs — 'need annual maintenance quote on Texecom alarm and 24 Hikvision cameras across two buildings.' Developers reply with specifications — 'forty-two new-build houses need pre-wired alarm conduits and video doorbells.' These security leads arrive on your dashboard while the NVR firmware updates."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Caller details, text replies with premises addresses, alarm configurations, CCTV requirements, vulnerability descriptions, police crime references, and contact numbers are encrypted on UK and EU servers under UK GDPR. Access is exclusive to you. Nothing reaches competing security contractors or lead-generation intermediaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Security System Contractors | Rapid Receptionist"
+  description={`Missed Call Text Back for UK security system contractors. Automatically texts callers while you terminate Cat6, program Texecom panels, and commission Paxton access control. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/security-system-contractors/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Security System Contractor"
+  tradeNamePlural="Security System Contractors"
+  tradeSlug="security-system-contractors"
+  headline="Missed Call Text Back for Security System Contractor Companies"
+  accentWord="Security"
+  subhead="It is 11am on a Tuesday in October. You are in the comms room of a law firm in central Oxford — terminating twenty-four Cat6 cables at the NVR patch panel. Each cable stripped, the four pairs untwisted to the correct length, punched down to T568B, and the RJ45 connector crimped and tested for continuity and crosstalk. The PoE switch powers each camera link as it connects. Sixteen cameras are online and recording — eight more to terminate. Five calls come in between 9am and 1pm. Your phone is on the server rack shelf, your hands hold the punch-down tool and stripped cable. Without Missed Call Text Back, two voicemails — 'need a quote for cameras' and 'alarm keeps going off' — three hang-ups. With it, all five receive texts within seconds. The first replies at 11:20am: 'Hi — I am the estates manager for a group of four independent schools across south Oxfordshire. We need a complete security review and upgrade across all four campuses. Current systems are a mix of old analogue CCTV, standalone intruder alarms with no monitoring, and no access control. After an incident at one school involving an unauthorised person on site during school hours, the governors have mandated a comprehensive security upgrade. We need IP CCTV across all four sites, intruder alarms with ARC monitoring, access control on all external doors and reception areas with visitor management integration, and video intercoms at all main entrances. Everything must be NSI Gold approved. Budget is allocated. Can you survey all four sites next week?' At 1pm the patch panel is complete. Five leads on your dashboard — including the four-campus school estates project."
+  scenario="It is 3pm on a freezing December Wednesday. You have been installing a Hikvision 4K CCTV system at a farm shop complex near Woodstock since 7am — mounting eight external ColorVu cameras on galvanised poles across the car park, farm shop entrance, café terrace, and goods-in area, plus four internal domes covering the shop floor and till area. Six missed calls between 7am and 3pm. Without Missed Call Text Back, you descend the ladder to six unknowns and one voicemail. With Missed Call Text Back, all six received texts. Reply one: 'homeowner Eynsham — garage broken into last night, tools stolen, need CCTV and alarm urgently, police crime number provided.' Reply two: 'hotel manager Woodstock — sixteen-room boutique, guest corridor cameras failed, NVR showing hard drive error, brand is Dahua.' Reply three: 'architect Bicester — new veterinary practice needs CCTV, access control, and intercom, fit-out starts in six weeks.' Reply four: 'warehouse manager Didcot — forklift struck camera three on the loading bay, need replacement and re-aim, Hikvision DS-2CD2T86.' Reply five: 'letting agent Summertown — need communal CCTV and intercom for block of thirty flats.' Reply six: 'shop owner Wallingford — shoplifting increasing, need internal cameras and a monitor behind the counter.' Six leads. Wednesday evening you triage — the Eynsham burglary and the Woodstock NVR failure first."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/security-system-contractors/ai-receptionist/"
+  ctaHeadline="Recover a Four-Campus School Estates Upgrade from One Tuesday Morning"
+  ctaSubhead={`While you terminated twenty-four Cat6 cables for a law firm, five callers missed you. Five texts went out. An estates manager with four independent schools, governors demanding NSI Gold, and budget allocated for CCTV, alarms, and access control replied within twenty minutes. Add-on at £${pricing.addOn.price}/month.`}
+/>

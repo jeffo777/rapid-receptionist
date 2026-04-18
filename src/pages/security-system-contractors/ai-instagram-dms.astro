@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Night Vision Reels',
+    text: "CCTV night footage reels — full-colour faces at the entrance, number plates in the car park, foxes crossing the perimeter — mesmerise audiences. When followers DM about their own grainy cameras, the AI captures an upgrade lead."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Crime-Aware Homeowners',
+    text: "Instagram draws homeowners comparing camera brands, studying alarm panel features, and deciding to finally invest in security. A DM from a homeowner whose Ring doorbell missed a porch pirate represents genuine upgrade intent."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Alarm Emergency DMs',
+    text: "Facilities managers DM photos of flashing alarm panels, triggered bell boxes, and CCTV screens showing faults. The AI responds immediately, asks about the system manufacturer and the fault display, and builds a priority service lead."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Late Security Concerns',
+    text: "Security concerns peak at night — homeowners hear noises after a neighbouring burglary, facilities managers discover CCTV gaps on late inspections, and keyholders receive 3am ARC notifications. The AI captures every nocturnal security enquiry."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Security DMs',
+    text: "DMs begin with 'how much for cameras?' or 'need an alarm after the break-in.' The AI asks about the property type, the entry point count, the existing security, and the monitoring requirement — building a survey-ready specification."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Comms Cabinet Photo',
+    text: "Every labelled patch panel, every colour-coded Cat6 run, and every crisp 4K comparison generates DMs from building managers whose own comms cupboards contain tangled BNC cables and flickering monitors."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "Use the app to switch to a Business or Creator profile — no cost and activates instantly. Security firms posting CCTV before-and-after comparisons, structured cabling close-ups, and 4K night footage samples attract exceptional engagement — property managers immediately recognise the upgrade their own grainy analogue systems need when they see crystal-clear number plates at midnight."
+  },
+  {
+    question: "What security DMs arrive through Instagram?",
+    answer: "Homeowners wanting cameras after porch theft or attempted break-ins. Shop owners needing CCTV evidence after shoplifting incidents. Facilities managers comparing your commercial installations with their own underperforming systems. Property developers studying your show home security packages. Pub landlords needing cameras after violence or anti-social behaviour. Each follower has pre-evaluated your NSI-approved standard."
+  },
+  {
+    question: "How quickly does the AI respond to security DMs?",
+    answer: "Every DM receives a response within seconds. Instagram's read indicator confirms your security firm actively monitors. A warehouse manager whose site was broken into last night — pallets of stock stolen, police saying existing cameras produced unusable footage — demands an immediate, knowledgeable reply from an NSI-approved installer, not an account showing last activity from three weeks earlier."
+  },
+  {
+    question: "What do Instagram DMs cost for security contractors?",
+    answer: `Instagram DMs are an add-on at £${pricing.addOn.price}/month. A domestic CCTV and alarm installation generates £1,500 to £4,000. A commercial integrated security system generates £10,000 to £50,000. One facilities manager's twenty-four-camera IP upgrade — initiated by a DM after watching your veterinary hospital ColorVu reel — returns the annual channel investment from one project.`
+  },
+  {
+    question: "Can I reply to DMs myself?",
+    answer: "Post one message in any thread and the AI withdraws permanently. Most security installers let the AI gather the initial scope — property type, existing security, crime trigger, camera count, alarm grade, and monitoring preference — then engage personally to discuss camera positions, zone configurations, and the survey date."
+  },
+  {
+    question: "Is DM data from security queries private?",
+    answer: "Instagram DMs — alarm fault photos, premises images, camera position queries, vulnerability descriptions, and sender contact information — are encrypted and stored on UK and EU servers under UK GDPR. Nothing reaches competing security firms, equipment distributors, or third-party lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Security System Contractors | Rapid Receptionist"
+  description={`AI Instagram DMs for UK security system contractors. Converts 4K night footage reels and alarm installation content into survey bookings and monitoring contracts. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/security-system-contractors/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Security System Contractor"
+  tradeNamePlural="Security System Contractors"
+  tradeSlug="security-system-contractors"
+  headline="AI Instagram DMs for Security System Contractor Companies"
+  accentWord="Security"
+  subhead="Your latest reel is a forty-five-second split-screen comparison of a commercial CCTV upgrade at a car dealership in Witney. The left side: the old system — four grainy analogue cameras producing 352×288 resolution footage where number plates are unreadable beyond two metres and faces are pixelated blobs, fed through corroded BNC cables to a failing DVR with a three-day recording capacity. The right side: the new system — twelve Hikvision DS-2CD2T87G2-L ColorVu 4K cameras producing full-colour footage day and night without IR, with number plates legible at twenty-five metres, facial features identifiable at fifteen metres, and ANPR at both entrance and exit barriers capturing every vehicle registration. The NVR records at 4K for sixty days. The access control — Paxton Net2 proximity readers on the showroom entrance, the key safe room, and the workshop — shows each staff member's badge time on the audit trail. The final frame: a midnight screenshot showing a full-colour image of a vehicle and driver passing the ANPR camera, registration clearly readable, compared to the old system's grey blur at the same position. Nine thousand views. A fleet manager in Carterton DMs: 'Incredible difference. We run a commercial vehicle depot — forty-eight vans parked overnight in an open yard. We have eight old cameras but the footage is terrible — we had two catalytic converter thefts last month and the police said the camera quality was not sufficient for prosecution. We need what you showed — proper cameras that can actually identify people and read number plates at night. We also want an intruder alarm connected to monitoring covering the workshop and the fuel store. The yard is about 100 metres by 60 metres. Can you design a system and quote?' You are programming a Texecom panel. Without AI DMs, the fleet depot waits. With it, the AI confirms your commercial CCTV and ANPR capability, asks about the yard lighting and whether the perimeter is fenced, and captures: Carterton fleet depot 48 vans, 8 old cameras useless, 2 cat converter thefts last month, police said insufficient quality, 4K upgrade + ANPR, intruder alarm monitoring workshop + fuel store, yard 100m × 60m, day and night identification, quote."
+  scenario="It is 4am on a Sunday. A letting agent DMs after a property emergency: 'Hi — we manage a block of sixty flats in Headington. Tonight a resident reported an intruder in the car park who was trying car door handles. The block has no CCTV at all — the previous management company never installed any. We need a comprehensive system urgently: CCTV covering the car park, all entrance lobbies, stairwells, bin stores, and the cycle shelter. Also need the old audio intercom at the main entrance replaced with a video intercom — flat residents cannot see who is buzzing. Access control on the underground car park entrance. Our management company budget for the upgrade has already been approved by the freeholder — we just need an NSI-approved firm to design, install, and maintain. Sixty flats, four storeys, two stairwells, underground car park, two lifts. Can you survey this week?' Without AI DMs, the sixty-flat block waits until Sunday afternoon. With AI DMs, the reply at 4:01am confirms your NSI approval and multi-site residential capability, asks about the existing network infrastructure and the car park lighting, and captures: Headington 60 flats 4 storeys 2 stairwells 2 lifts underground car park, intruder tonight car door handles, no existing CCTV, cameras car park + lobbies + stairwells + bin stores + cycle shelter, video intercom replacement, access control underground car park, freeholder approved budget, NSI approved, design + install + maintain, survey this week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/security-system-contractors/ai-receptionist/"
+  ctaHeadline="Turn 9,000 Views on a Witney ANPR Upgrade into a Carterton Fleet Depot Survey"
+  ctaSubhead={`Forty-five seconds of grainy blobs replaced by full-colour number plates at midnight earns nine thousand views. AI Instagram DMs converts the fleet manager's catalytic converter theft frustration into a 4K and ANPR design consultation. Add-on at £${pricing.addOn.price}/month.`}
+/>

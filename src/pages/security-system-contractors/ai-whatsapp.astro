@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Alarm Fault Photos',
+    text: "Clients WhatsApp photos of flashing keypad error codes, triggered bell boxes, and CCTV screens showing no signal — 'what does this mean?' The AI responds instantly, references your NSI capability, and builds a diagnostic lead with the fault code and system manufacturer."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Commercial Maintenance Contracts',
+    text: "Facilities managers WhatsApp maintenance requests — 'annual service due on our Texecom alarm and sixteen Hikvision cameras, want to switch to your firm.' The first NSI-approved contractor responding holds the annual contract."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Post-Crime Urgency',
+    text: "After a break-in, homeowners WhatsApp security firms urgently — 'burgled last night, need alarm and CCTV installed this week.' The AI captures the crime date, the property vulnerability, and the urgency level."
+  },
+  {
+    icon: '🌙',
+    title: 'Active When Alarms Trigger',
+    text: "Alarm activations peak at night. Keyholders receive ARC notifications and WhatsApp their installer in panic. Bell boxes sound at 3am. The AI captures every after-hours security concern while you are off duty."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Security Briefs',
+    text: "A WhatsApp saying 'need CCTV for my shop, four cameras, want to see footage on my phone, Abingdon' becomes a structured commercial CCTV lead with camera count, remote viewing requirement, premises type, and location."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. ARC signalling discussions, alarm programming notes, and police URN correspondence stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI diagnose alarm faults from photos?",
+    answer: "Remote diagnosis requires engineer site attendance with the panel programming tools and diagnostic software. The AI contributes constructively: identifying the alarm manufacturer from the keypad styling, noting the displayed fault code or zone error, asking whether the system was recently serviced, whether a power cut occurred, and whether any zones were added or modified — building a pre-diagnostic lead so you arrive with the correct panel programming lead, firmware version, and likely replacement components."
+  },
+  {
+    question: "What about multi-message security threads?",
+    answer: "Security conversations build across multiple messages — a shop owner sends a photo of her damaged roller shutter, then explains the police recommended CCTV, then confirms the shop has no existing system, then asks about remote viewing costs, then adds 'also want an alarm with monitoring.' The AI constructs one integrated security lead from every fragment: break-in damage, police recommendation, no existing system, CCTV with remote access, and monitored intruder alarm."
+  },
+  {
+    question: "How much does AI WhatsApp cost for security contractors?",
+    answer: `WhatsApp costs £${pricing.addOn.price}/month as a channel add-on. A domestic alarm and CCTV installation generates £1,500 to £4,000. A commercial integrated security system generates £10,000 to £50,000. Securing one facilities manager's annual maintenance contract through a rapid WhatsApp response — while you terminated Cat6 at a patch panel — generates recurring revenue surpassing the channel cost for years.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Reply once in any thread and the AI steps aside permanently. Most security engineers let the AI establish the initial scope — system type, property size, existing security, monitoring requirement, and trigger event — then take over to discuss camera positions, alarm zoning strategy, and the survey date."
+  },
+  {
+    question: "How is WhatsApp data from security enquiries protected?",
+    answer: "Every WhatsApp message — alarm fault photographs, premises addresses, CCTV layouts, access control credentials, ARC references, police URN numbers, and sender contact details — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively yours. No security project details reach competing installers or third-party lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Security System Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK security system contractors. Responds to alarm fault photos, CCTV maintenance requests, and post-burglary emergency messages. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/security-system-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Security System Contractor"
+  tradeNamePlural="Security System Contractors"
+  tradeSlug="security-system-contractors"
+  headline="AI WhatsApp for Security System Contractor Companies"
+  accentWord="Security"
+  subhead="A school business manager WhatsApps at 7:45am on a Monday with a photo of a shattered window in the ICT suite — overnight break-in, four laptops stolen, and the existing CCTV showing only a blurred figure because the cameras are ten-year-old analogue domes with IR that barely reaches the nearest desk. Her message: 'Morning — we had a break-in overnight. ICT suite window forced. Four laptops stolen. Police are here now — crime scene team coming at 10am. Our CCTV is useless — old analogue cameras, low resolution, police say the footage is unusable for identification. We have fifteen cameras across the site but only eight actually work. No intruder alarm at all — the school relied on the caretaker checking the premises each evening. The governors have authorised an immediate security upgrade: new IP CCTV across the entire campus, an intruder alarm with ARC monitoring, access control on all external doors, and a video intercom at the main reception. This must be NSI or SSAIB approved for our insurance claim and the governors require the work completed before term starts in three weeks. Can you survey this week?' You are programming a Texecom Premier Elite 64 in a retail unit in Witney — labelling zones, setting entry and exit times, configuring detector response types. Without AI WhatsApp, the school security upgrade waits until the panel programs. With it, the AI responds at 7:46am, confirms your NSI Gold approval, and asks about the site size and the number of buildings. She confirms three buildings. Monday afternoon you survey: school campus 3 buildings, break-in overnight, 15 analogue cameras 8 working useless footage, no alarm, IP CCTV upgrade entire campus, intruder alarm ARC monitoring, access control all external doors, video intercom reception, NSI/SSAIB insurance, governors authorised, 3 weeks before term."
+  scenario="It is 10:30pm on a Thursday. A warehouse manager in Didcot WhatsApps: 'Hi — our Paxton Net2 access control system has gone offline. Door readers on all four entrances showing continuous red LED — nobody can badge in or out. Night shift started at 10pm and we had to manually override the magnetic locks to let staff in, which means the building is now unsecured. Forty staff on the night shift. The Paxton server is showing a database error that we cannot clear. Our usual security firm is not answering. Can someone remote in tonight to fix the database or attend first thing to get the readers back online? Also — while you are here — we want to add ANPR to the vehicle barrier, three PTZ cameras for the loading bay, and upgrade the NVR to 60-day retention. Currently on 14-day and our insurers want 30 minimum.' Without AI WhatsApp, the access control failure and the upgrade opportunity wait. With AI WhatsApp, the reply at 10:31pm: 'Thank you — a Paxton Net2 database error causing all readers to fail typically indicates server-side corruption. Could you confirm the Paxton software version and whether the server has had any recent Windows updates?' He confirms version 6.05, Windows update ran yesterday. Friday 7am you attend: Didcot warehouse, Paxton Net2 database error, 4 doors all offline, 40 night shift, manual override unsecured, server v6.05 Windows update, ANPR vehicle barrier, 3 PTZ loading bay, NVR upgrade 14-day to 60-day, insurer requires 30 minimum."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/security-system-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the School Campus Security Upgrade While You Program Texecom in Witney"
+  ctaSubhead={`A school business manager with a break-in, useless analogue footage, and governors demanding NSI-approved CCTV, alarms, and access control before term — needs your survey this week. The AI confirmed while zones labelled. Add-on at £${pricing.addOn.price}/month.`}
+/>

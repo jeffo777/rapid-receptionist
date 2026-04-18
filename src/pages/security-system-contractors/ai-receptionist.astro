@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A facilities manager calls about upgrading the security systems across a three-building office campus on the outskirts of Oxford — the existing intruder alarm is a fifteen-year-old wired Honeywell Galaxy Dimension Grade 2 with over sixty zones, the CCTV is analogue with sixteen cameras producing grainy footage, and the access control is a standalone proximity card system with no audit trail. She needs a complete replacement: a new Texecom Premier Elite 168 Grade 2 intruder alarm with dual-tech PIR detectors throughout, a Hikvision 4K IP CCTV system with thirty-two cameras across all three buildings recording to a centralised NVR with thirty-day retention, a Paxton Net2 access control system with proximity readers on every external door and lift lobby, and video intercom at the main entrance. The system must be NSI Gold monitored with dual-path signalling to a Grade 2 ARC. You are in a server room in Banbury — programming a Paxton Net2 door controller, your laptop connected via Ethernet, configuring time profiles and access levels for a sixty-employee office. Both hands occupied. She calls three NSI-approved firms. One answers and books the survey.",
+    with: "Your AI receptionist answers on the second ring. It captures the scope — three buildings, Honeywell Galaxy 60+ zones to Texecom Premier Elite 168, analogue CCTV to Hikvision 4K 32 cameras NVR 30-day, standalone access to Paxton Net2 all doors and lifts, video intercom main entrance, NSI Gold ARC dual-path — and confirms callback. At the break you review and schedule the survey."
+  },
+  {
+    without: "A homeowner emails on Wednesday about installing a home security system after a burglary attempt — smashed side window, ring doorbell captured footage of two people but the quality was too poor for the police. She wants a professional wired system. The email sits until Friday.",
+    with: "Your AI acknowledges within sixty seconds, referencing the burglary attempt, the poor Ring footage, and the desire for a professional wired system. Friday you schedule the Monday security survey."
+  },
+  {
+    without: "A construction manager WhatsApps on Saturday about security for three show homes on a new-build estate — intruder alarms, smart doorbells, and CCTV. He needs them operational before the marketing launch. He messages three firms. By Monday, two have responded.",
+    with: "The AI responds within seconds, asks about the alarm grade requirement and the camera count per property, and builds a structured show home security lead. Monday at 8am you have the site, the timeline, and the specification."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Intruder Alarms",
+    items: ["Grade 2 and Grade 3 wired, wireless, and hybrid intruder alarm systems", "Texecom Premier Elite, Honeywell Galaxy, Pyronix Enforcer, HKC SecureWatch", "PIR, dual-tech, magnetic contact, vibration, and glass-break detectors", "NSI Gold and SSAIB approved monitoring to Grade 2 ARC", "Dual-path signalling — RedCare, Dualcom, CSL", "Police URN registration and keyholder management"]
+  },
+  {
+    category: "CCTV & Video Surveillance",
+    items: ["IP CCTV systems — Hikvision, Dahua, Axis, Hanwha Vision", "4K, 5MP, and 2MP dome, bullet, turret, and PTZ cameras", "PoE network switches and structured cabling for IP cameras", "NVR recording with 30, 60, and 90-day retention options", "Remote viewing apps — Hik-Connect, DMSS, AXIS Companion", "ANPR (automatic number plate recognition) for car parks and gated sites"]
+  },
+  {
+    category: "Access Control & Door Entry",
+    items: ["Paxton Net2, ACT, Inner Range, Gallagher access control platforms", "Proximity card, key fob, mobile credential, and biometric readers", "Magnetic locks, electric strikes, and automated gate integration", "Video intercom and door entry — BPT, Comelit, Hikvision", "Time-and-attendance integration and audit trail reporting", "Multi-site and cloud-managed access control systems"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏢",
+    title: "Commercial & Facilities",
+    description: "Facilities managers commissioning intruder alarm upgrades, CCTV system replacements, and access control rollouts across commercial buildings. They need NSI or SSAIB approved contractors, Grade 2 monitoring, and integration between alarm, CCTV, and access control on a unified platform."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners wanting professional security after burglary attempts, break-ins, or neighbourhood crime spikes. They need intruder alarms with police response, CCTV with remote viewing, and smart doorbell integration — installed by an NSI or SSAIB approved firm for insurance compliance."
+  },
+  {
+    icon: "🏗️",
+    title: "Developers & Construction",
+    description: "Developers requiring security packages for new-build homes and show homes — pre-wired intruder alarms, CCTV, and smart doorbells. Construction managers needing temporary site security during the build phase — tower cameras, PIR-activated alarms, and fencing alerts."
+  },
+  {
+    icon: "🏪",
+    title: "Retail & Hospitality",
+    description: "Shop owners, pub landlords, and hotel managers needing CCTV for crime deterrence and evidence, access control for staff-only areas, and intruder alarm monitoring for out-of-hours protection. Retail CCTV combines loss prevention with staff safety."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand security system terminology?",
+    answer: "The complete security vocabulary is configured — intruder alarm (Grade 2, Grade 3, wired, wireless, hybrid, PIR passive infrared, dual-tech detector, magnetic contact, vibration sensor, glass-break detector, shock sensor, bell box, LED keypad, LCD keypad, control panel, zone, expander, Texecom Premier Elite 48/64/88/168/640, Honeywell Galaxy Dimension 48/264/520, Pyronix Enforcer, HKC SecureWatch 1232), CCTV (IP camera, analogue, HD-TVI, HD-CVI, PoE power over ethernet, NVR network video recorder, DVR digital video recorder, 4K 8MP, 5MP, 2MP, dome, bullet, turret, PTZ pan-tilt-zoom, IR infrared night vision, varifocal, fixed lens, WDR wide dynamic range, ANPR, Hikvision, Dahua, Axis, Hanwha Vision), access control (proximity reader, key fob, mobile credential, biometric fingerprint, facial recognition, magnetic lock maglock, electric strike, door controller, Paxton Net2, ACT, Inner Range Inception, Gallagher), intercom (audio intercom, video intercom, door entry panel, handset, monitor, SIP, IP, BPT, Comelit, Hikvision KV series), monitoring (ARC alarm receiving centre, dual-path signalling, RedCare BT, Dualcom CSL, Grade 2 ARC, police URN, unique reference number, keyholder), NSI Gold, NSI Silver, SSAIB, BSIA, ECS card, and fire detection integration. When a facilities manager describes 'Texecom Premier Elite 168 Grade 2 with sixty-three zones, dual-tech PIRs, Paxton Net2, thirty-two Hikvision 4K cameras, NVR, and NSI Gold monitoring with RedCare,' the AI records every detail."
+  },
+  {
+    question: "Can the AI distinguish a domestic alarm from a commercial security upgrade?",
+    answer: "A homeowner saying 'want an alarm system after the break-in, need it monitored with police response' generates a domestic security lead with property type, crime context, monitoring requirement, and insurance specification. A facilities manager requesting 'three-building campus upgrade — Texecom Elite 168, Hikvision 4K thirty-two cameras, Paxton Net2, NSI Gold ARC' generates a commercial programme lead with system specifications, camera count, access control scope, and monitoring grade. The AI produces structurally distinct leads for each."
+  },
+  {
+    question: "What about emergency security calls?",
+    answer: "A smashed shop window triggering the intruder alarm at 3am, a CCTV system failure leaving premises unmonitored overnight, an access control lockout trapping staff inside a building, and a bell box sounding continuously after a power surge — security emergencies combine immediate vulnerability with crime risk. The AI captures the system type, the failure symptom, the premises status, and whether the police or ARC have been notified."
+  },
+  {
+    question: "How much does this cost for a security contractor?",
+    answer: `Security system contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a domestic alarm installer or a multi-team firm delivering integrated CCTV, access control, and intruder alarm systems across commercial estates, the allowance covers your call blend. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a specialist CCTV installer?",
+    answer: "CCTV-focused firms benefit enormously. When you are running Cat6 cable through ceiling voids, terminating RJ45 connectors at the NVR patch panel, configuring IP addresses on a thirty-two-camera Hikvision system, or aiming PTZ cameras for optimal car park coverage — answering the phone disrupts the cable termination, the camera configuration, or the network addressing. The AI captures every commercial CCTV tender, every homeowner wanting cameras after a break-in, and every developer needing show home packages."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Configure coverage from your dashboard to match your security work. During access control programming — when the laptop connects to the Paxton controller and time profiles need precise configuration — route every call to the AI. During office hours, quotation writing, and monitoring contract reviews — take calls directly. Toggle from your phone as each task changes."
+  },
+  {
+    question: "How is security project data protected?",
+    answer: "Security enquiries contain premises addresses, alarm system configurations, CCTV camera positions, access control credentials, ARC account numbers, police URN references, and commercially sensitive information about property vulnerabilities. All data is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing security firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Security System Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK security system contractors — intruder alarms, CCTV, access control, and monitoring. Never miss a call while you program Paxton controllers. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/security-system-contractors/ai-receptionist/"
+  tradeName="Security System Contractor"
+  tradeNamePlural="Security System Contractors"
+  tradeSlug="security-system-contractors"
+  headline="The AI Receptionist Built for Security System Contractors"
+  accentWord="Security"
+  subhead={`You cannot answer the phone when you are programming a Paxton Net2 door controller in a server room, running Cat6 cable through ceiling voids to thirty-two IP cameras, or commissioning a Texecom Premier Elite intruder alarm across sixty-three zones. Your AI receptionist captures every call, every message, and every tender — from facilities managers commissioning three-building campus upgrades to homeowners who need an alarm installed after a burglary attempt. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Campus Security Upgrade Calls While You Program Paxton in Banbury"
+  ctaSubhead={`A facilities manager with sixty zones of Honeywell Galaxy, sixteen grainy analogue cameras, and no access control audit trail needs an NSI Gold contractor who answers. If voicemail picks up, she confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

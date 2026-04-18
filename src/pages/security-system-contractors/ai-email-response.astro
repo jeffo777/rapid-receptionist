@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Commercial Security Tenders',
+    text: "M&E consultants and facilities teams email security subcontract tenders with CCTV schedules, intruder alarm specifications, access control door schedules, and ARC monitoring requirements. The NSI-approved firm acknowledging first stays on the tender shortlist."
+  },
+  {
+    icon: '📐',
+    title: 'References System Specifications',
+    text: "When a consultant emails specifying 'Texecom Premier Elite 168 Grade 2, sixty-three zones, dual-tech PIRs, Hikvision 4K thirty-two cameras, Paxton Net2 eight readers, NSI Gold ARC dual-path RedCare,' the AI acknowledgement references every component."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Installation Hours',
+    text: "Security installation days fill with cable pulling, camera mounting, panel programming, and system commissioning. A facilities manager's tender email at 9am sits unread until the last camera aims at 5pm. Your rapid acknowledgement maintains the tender position."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Supplier Orders',
+    text: "Your inbox combines M&E tenders, Hikvision distributor invoices, Texecom technical bulletins, NSI audit notifications, and ARC monitoring invoices. The AI identifies genuine installation tenders from operational correspondence."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Consultant Confidence',
+    text: "M&E consultants specifying security systems for commercial buildings need NSI-approved contractors who deliver technically compliant installations and pass insurance inspections. Consistent instant acknowledgements build the confidence that earns preferred-contractor status."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Security tenders include CCTV camera schedules with field-of-view calculations, intruder alarm zone plans, access control door schedules, and cable containment routes. The AI notes every attachment and references them in your lead."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce security quotes from tender emails?",
+    answer: "Absolutely no pricing is generated — only a professional acknowledgement referencing the security specification. Your quotation — camera hardware costs, alarm panel pricing, access control reader quantities, cable lengths, installation labour, ARC monitoring annual fees, and NSI inspection charges — is calculated from the equipment schedule, the measured site survey, and distributor trade pricing."
+  },
+  {
+    question: "Will it respond to distributor emails?",
+    answer: "Configuration during onboarding distinguishes genuine project tenders from operational correspondence. Hikvision and Dahua distributor delivery confirmations, Texecom firmware update notifications, Paxton software release notes, NSI audit date reminders, and ARC monitoring invoices are automatically excluded. Only project tenders and client security enquiries generate the professional acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner security emails?",
+    answer: "Contact form submissions from homeowners — 'need an alarm and cameras after a break-in attempt, 4-bed detached, no existing security, insurance demanding NSI approved' — receive a professional response asking about the property layout, the number of entry points, the insurance company's specific grade requirement, and their preferred survey date."
+  },
+  {
+    question: "What does email response cost for security contractors?",
+    answer: `Email response is £${pricing.addOn.price}/month as a channel add-on. A commercial integrated security system generates £10,000 to £50,000. Acknowledging a consultant's thirty-two-camera campus tender within sixty seconds — while you programmed a Texecom panel on another site — regularly determines whether your NSI firm receives the formal invitation and the mandatory pre-tender site survey.`
+  },
+  {
+    question: "Can subsequent tender correspondence come from me?",
+    answer: "After the AI's initial acknowledgement, every subsequent communication is yours. Your measured site survey, CCTV camera schedule, intruder alarm zone plan, access control door schedule, cable containment route, method statement, programme, and NSI compliance documentation are prepared and submitted entirely by your team."
+  },
+  {
+    question: "How is security tender data secured?",
+    answer: "Security tenders contain premises layouts, camera positions showing vulnerability coverage, alarm zone plans, access control credential schedules, and commercially sensitive pricing. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender details reach competing security contractors or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Security System Contractors | Rapid Receptionist"
+  description={`AI email response for UK security system contractors. Acknowledges CCTV tenders, intruder alarm specifications, and access control upgrade packages within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/security-system-contractors/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Security System Contractor"
+  tradeNamePlural="Security System Contractors"
+  tradeSlug="security-system-contractors"
+  headline="AI Email Response for Security System Contractor Companies"
+  accentWord="Security"
+  subhead="An M&E consultant emails a security subcontract tender for a new-build NHS community health centre in Bicester — single storey, approximately 2,000 square metres, with consulting rooms, a walk-in clinic, a pharmacy dispensary, staff offices, and a public waiting area. The specification calls for a Texecom Premier Elite 168 Grade 2 intruder alarm with dual-tech PIRs in every room, magnetic contacts on all ground-floor windows and external doors, and vibration sensors on the pharmacy controlled-drugs cabinets. CCTV: twenty-four Hikvision DS-2CD2T86G2-4I 4K bullet cameras externally covering the car park, ambulance bay, and all entrances, plus twelve internal Hikvision DS-2CD2186G2-I 4K dome cameras covering reception desks, waiting areas, and the dispensary — recording to a 36-channel NVR with ninety-day NHS retention. Paxton Net2 access control on all external doors, staff-only corridors, the dispensary, and the controlled-drugs room — with biometric fingerprint readers on the dispensary and drugs room. Video intercom at the main entrance and the ambulance delivery entrance. The entire system must be NSI Gold approved with dual-path monitoring to a Grade 2 ARC. Tender return in five weeks with a pre-tender walkover next Thursday. You are in a residential loft space in Headington — running alarm cables from PIR detector positions back to the Texecom panel location in the under-stairs cupboard. Without AI Email Response, the NHS health centre tender sits unread until the domestic alarm completes. With it, your acknowledgement arrives within sixty seconds, referencing the twenty-four external and twelve internal cameras, ninety-day NHS retention, Paxton Net2 biometric dispensary, Grade 2 ARC dual-path, the five-week tender, and Thursday walkover."
+  scenario="It is 6am on a Monday. Your inbox over the weekend: a retail chain needing CCTV upgrades across eight stores — 'Hikvision 4K, minimum six cameras per store, NVR with cloud backup, remote viewing for head office, NSI approved,' a homeowner wanting cameras after package theft — 'parcels keep getting stolen from the doorstep, want video doorbell plus two external cameras with phone alerts,' a letting agent needing common-area CCTV for a block of flats — 'twelve flats, communal entrance and car park, intercom replacement,' and a Hikvision distributor confirming Tuesday's camera delivery. Without AI Email Response, the eight stores, the doorbell, and the flats wait until Tuesday. With AI Email Response, the retail chain references eight stores and cloud backup, the doorstep theft notes two external cameras plus doorbell, the flat block captures intercom and communal CCTV, and the distributor email is filtered."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/security-system-contractors/ai-receptionist/"
+  ctaHeadline="Acknowledge the NHS Health Centre Security Tender While You Cable in Headington"
+  ctaSubhead={`An M&E consultant's five-week tender for 36 Hikvision 4K cameras with 90-day NHS retention, Paxton biometric dispensary access, and NSI Gold ARC monitoring starts when the email lands. Your sixty-second acknowledgement secures the Thursday walkover. Add-on at £${pricing.addOn.price}/month.`}
+/>

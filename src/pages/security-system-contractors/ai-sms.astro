@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Facilities Manager Schedule Texts',
+    text: "Facilities managers text security firms mid-week — 'annual alarm and CCTV service due on our three sites, need scheduling before insurance renewal.' The first NSI-approved firm confirming holds the annual contract."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Security Briefs from Short Messages',
+    text: "A text like 'alarm keeps going off, Texecom, zone 4 fault, office in Banbury, can you come this week?' gives the AI the fault detail. It asks about the detector type on zone 4 and whether the alarm is still monitoring."
+  },
+  {
+    icon: '🔔',
+    title: 'Captures Post-Crime Urgency Texts',
+    text: "Homeowners text security firms after break-ins — 'burgled last night, no alarm, need system urgently, police crime number 43/xxxxx.' The AI captures the crime context, the urgency, and the police reference."
+  },
+  {
+    icon: '🌙',
+    title: 'Active When Alarms Sound',
+    text: "Bell boxes activate at 2am. Keyholders receive ARC texts and forward them to their installer. Homeowners hear the sounder and text for help. The AI captures every after-hours alarm event."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Security Details',
+    text: "Messages arrive in stages — 'alarm fault' then 'zone 7' then 'PIR in the hallway' then 'Texecom panel' then 'office in Didcot.' The AI constructs one complete service lead from every text fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. ARC monitoring correspondence, alarm programming notes, and police URN discussions stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound security text?",
+    answer: "Each inbound text generates an instant branded reply carrying your company name. A facilities manager's maintenance text — 'annual service due on Texecom Elite 88, fifty-two PIRs, twelve mag contacts, sixteen Hikvision cameras need cleaning, Paxton Net2 firmware update, three sites, need completing before March' — is confirmed with the system components, camera count, service scope, and deadline intact. A homeowner's panic text — 'alarm going off, cannot silence it, Pyronix Enforcer, neighbours complaining' — triggers a response asking which zone is showing and whether the tamper indicator is lit."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "Texts read like a security engineer reviewing messages between panel programming sessions — alarm-grade fluent, camera-resolution aware, and ARC-monitoring precise. References to Texecom zones, Hikvision NVR retention, Paxton access levels, Grade 2 monitoring, and police URN registration convey the NSI-approved knowledge that facilities managers and keyholder contacts expect."
+  },
+  {
+    question: "How does it handle existing client texts?",
+    answer: "Returning maintenance clients text system updates — 'zone 14 keeps triggering false alarms after hours, think it is the PIR near the heating vent' or 'new starter needs Paxton card adding to the access database.' The AI separates maintenance requests and user administration queries from prospective new installation enquiries on your dashboard."
+  },
+  {
+    question: "What does AI SMS cost for security contractors?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A domestic alarm and CCTV package generates £1,500 to £4,000. Confirming one facilities manager's three-site annual service — while you commissioned a Paxton Net2 system in another building — secures recurring contract revenue that vastly exceeds the annual channel cost.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send one reply and the AI withdraws from that conversation. During ARC paperwork, quotation writing, and office administration — handle texts yourself. During active panel programming, cable termination, and camera commissioning — when the laptop connects to the Texecom panel and zone labels need entering — let the AI manage the incoming messages."
+  },
+  {
+    question: "How is text data from security enquiries stored?",
+    answer: "Text messages containing premises addresses, alarm zone configurations, CCTV camera positions, access control credentials, ARC account details, police URN references, and contact numbers are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. Nothing reaches competing security firms or third-party platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Security System Contractors | Rapid Receptionist"
+  description={`AI SMS for UK security system contractors. Responds to alarm fault texts, CCTV maintenance requests, and post-burglary urgency messages. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/security-system-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Security System Contractor"
+  tradeNamePlural="Security System Contractors"
+  tradeSlug="security-system-contractors"
+  headline="AI SMS for Security System Contractor Companies"
+  accentWord="Security"
+  subhead="You are at 10am on a Thursday, in the comms room of a serviced office building in Bicester — commissioning a 32-channel Hikvision NVR. Thirty-two Cat6 cables terminate at the patch panel, each connected to a PoE switch port feeding a Hikvision DS-2CD2386G2-ISU/SL 8MP AcuSense turret camera. You are configuring each camera's IP address, adjusting the detection zones for human and vehicle classification, setting the recording schedule to continuous with motion-triggered high-quality snapshots, and verifying the WDR settings for cameras covering the car park entrance where headlights cause severe backlight. At 10:20am a property manager texts: 'Morning — I manage twelve commercial units in a business park in Abingdon. Our current security is terrible — each unit has a separate standalone alarm with no monitoring, and CCTV is four old analogue cameras on the car park that barely record in daylight let alone at night. We had three van break-ins in the car park last month — tools stolen, van windows smashed, police said our CCTV was useless. The landlord has approved a full security upgrade: centralised IP CCTV across the entire business park with ANPR at both vehicle entrances, individual intruder alarms on each unit with centralised ARC monitoring, and access control on the main pedestrian gates and the car park barrier. NSI approved mandatory for the landlord's insurance. Can you survey next week?' Your hands configure IP addresses. Without AI SMS, the twelve-unit business park waits. With it, the AI responds at 10:21am, confirms your NSI Gold approval, and asks about the existing cable infrastructure. She confirms Cat5e runs to some camera positions. At noon you review: Abingdon business park 12 units, standalone alarms no monitoring, 4 old analogue cameras useless, 3 van break-ins last month, centralised IP CCTV ANPR 2 entrances, intruder alarms ARC monitored, access control gates + barrier, Cat5e partial, NSI insurance, landlord approved, survey next week."
+  scenario="It is 8pm on a Saturday. A jeweller in central Oxford texts: 'Hi — I need to upgrade our security before we move to a new shop on the High Street next month. Current shop has a basic Honeywell alarm with no monitoring and two old dome cameras. The new shop will have higher-value stock — engagement rings, watches, Rolex and Omega. Our insurer requires Grade 3 intruder alarm with NSI Gold monitoring, CCTV covering the entire shop floor with facial recognition capability, a time-delay safe lock, and a fog cannon. Also need panic buttons behind the counter and a mantrap entrance lobby with electric lock. The fit-out starts in two weeks and I want security installed first before any stock moves across. Budget is whatever it takes — cannot risk the stock without proper security. Can you survey the new shop Monday?' Without AI SMS, the jewellery shop Grade 3 requirement waits until Monday. With AI SMS, the reply at 8:01pm: 'Thank you — Grade 3 with NSI Gold monitoring, fog cannon, and mantrap requires specific equipment sourcing. Could you confirm the approximate shop floor area and the number of display counters requiring individual protection?' He confirms 85 square metres, six display counters plus window display. Monday you survey: Oxford High Street jeweller, Grade 3 alarm NSI Gold monitored, CCTV facial recognition, fog cannon, time-delay safe, panic buttons, mantrap electric lock entrance, Rolex/Omega, 85m² 6 counters + window, fit-out 2 weeks, stock transfer after security, budget unlimited."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/security-system-contractors/ai-receptionist/"
+  ctaHeadline="Capture the 12-Unit Business Park while You Commission Hikvision in Bicester"
+  ctaSubhead={`A property manager with three van break-ins, useless analogue footage, and a landlord demanding NSI-approved CCTV with ANPR and centralised ARC monitoring needs your survey next week. The AI confirmed while IP addresses configured. Add-on at £${pricing.addOn.price}/month.`}
+/>

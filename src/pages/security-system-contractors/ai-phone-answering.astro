@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Wire and Program',
+    text: "Running Cat6 cable to IP cameras, terminating RJ45 connectors at the NVR patch panel, programming Texecom Premier Elite zone configurations, or commissioning Paxton Net2 access levels — security installation demands precise technical focus. The AI answers every call in your company name."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Security Briefs at Every Scale',
+    text: "When a facilities manager calls about a thirty-two-camera CCTV upgrade with Paxton access control across three buildings, the AI captures camera positions, access points, and monitoring requirements. When a homeowner calls wanting an alarm after a break-in, the AI captures the crime context, the property layout, and the insurance requirements."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Security Emergency Calls',
+    text: "CCTV system failure leaving a warehouse unmonitored, intruder alarm keypad showing fault codes, access control lockout during office hours, and a bell box sounding continuously — security emergencies create immediate vulnerability. The AI captures the system type, failure symptoms, and premises status for priority attendance."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Security Enquiries',
+    text: "Homeowners research security systems in the evening — after a neighbourhood crime spike, a near-miss burglary, or discovering their insurance requires a monitored alarm. The AI captures every evening enquiry at peak security awareness."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Security Quoting',
+    text: "Each lead identifies the security category (intruder alarm, CCTV, access control, intercom, or integrated), the property type and size, the existing system if any, the monitoring requirement, and the trigger event — everything needed for accurate system design."
+  },
+  {
+    icon: '🏷️',
+    title: 'NSI/SSAIB Approved Professionalism',
+    text: "A security firm that answers professionally and asks about the alarm grade, camera resolution, and monitoring requirement signals the accredited expertise that facilities managers and insurers trust with property protection."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their security requirements?",
+    answer: "Questioning adapts to the caller's security need with precision. A homeowner wanting an alarm after a burglary attempt hears questions about the property type, the number of entry points, whether they need police-response monitoring, and their insurance requirements. A facilities manager requesting a CCTV upgrade is asked about the building count, the camera quantity and type, the recording retention period, the NVR location, and whether integration with existing access control or intruder alarms is required."
+  },
+  {
+    question: "Can the AI handle both residential and commercial security calls?",
+    answer: "A homeowner wanting a Pyronix Enforcer wireless alarm with Hikvision cameras generates a domestic security lead with property layout, monitoring preference, and insurance specification. A facilities manager commissioning Texecom Premier Elite 168 with thirty-two Hikvision 4K IP cameras, Paxton Net2 across four buildings, and NSI Gold ARC monitoring generates a commercial programme lead with zone count, camera schedule, reader positions, and monitoring grade. The AI creates structurally distinct leads for each category."
+  },
+  {
+    question: "What about calls during cable installation?",
+    answer: "Running Cat6 cable through ceiling voids and risers involves pulling cable through containment, drilling through fire-rated walls with intumescent sealing, and maintaining bend radius to prevent signal degradation. At the NVR end, terminating thirty-two RJ45 connectors to T568B standard, patching to the PoE switch, and verifying link integrity requires focus and clean hands. Stopping mid-termination risks crosstalk, failed connections, and hours of fault-finding. The AI handles every call while the structured cabling installs cleanly."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `The Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Security contractors receive a varied call blend — homeowner alarm enquiries triggered by crime, facilities manager CCTV and access control tenders, developer show home security packages, retail loss prevention consultations, and ARC monitoring contract discussions. The mix of urgent domestic calls and detailed commercial specifications sits comfortably within the allocation. Overage is 20p per minute with no contract lock-in.`
+  },
+  {
+    question: "Can I take calls during certain work?",
+    answer: "During quotation preparation, monitoring contract administration, and office work — manage calls directly. When Cat6 cable pulls through the ceiling void, when the Texecom panel programs with zone labels and response types, or when the Paxton controller configures door schedules — route calls to the AI. Toggle from your dashboard as each task changes."
+  },
+  {
+    question: "How is security project data protected?",
+    answer: "Security enquiries contain premises addresses, alarm configurations, CCTV camera positions, access control credentials, ARC monitoring account numbers, police URN references, and details about property vulnerabilities. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No security project details are shared with competing installers or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Security System Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK security system contractors. Captures CCTV tenders, alarm installation bookings, and access control upgrades while you wire and program. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/security-system-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Security System Contractor"
+  tradeNamePlural="Security System Contractors"
+  tradeSlug="security-system-contractors"
+  headline="AI Phone Answering for Security System Contractor Companies"
+  accentWord="Security"
+  subhead="A facilities manager calls at 9:30am on a Tuesday. Her logistics warehouse in Didcot — 5,000 square metres with loading bays, offices, a car park, and perimeter fencing — was broken into over the weekend. The existing CCTV is analogue — eight cameras producing low-resolution footage that the police have described as unusable for identification. The intruder alarm is a twenty-year-old Grade 1 system with no ARC monitoring — it sounded the bell box but nobody responded. She needs a complete security overhaul: a Hikvision 4K IP CCTV system with twenty-four cameras covering loading bays, car park, perimeter, and internal warehouse aisles, a 32-channel NVR with sixty-day retention, ANPR at the vehicle entrance gate, a new Texecom Premier Elite 88 Grade 2 intruder alarm with dual-tech PIRs and magnetic contacts on every roller shutter, NSI Gold monitoring with dual-path signalling via RedCare and Dualcom, and Paxton Net2 access control on all pedestrian entrances and the office floor. She needs the police URN registered for confirmed alarm response. You are in a ceiling void in an Abingdon office — pulling Cat6 cable for a sixteen-camera IP CCTV installation, three cables in one hand, the cable pulling tool in the other, threading through cable tray above the suspended ceiling tiles. Without AI Phone Answering, the warehouse break-in upgrade goes to voicemail. She calls two more NSI firms. With it, the AI captures: Didcot warehouse 5,000m², weekend break-in, analogue CCTV unusable footage, 20yr Grade 1 alarm no ARC, upgrade to Hikvision 4K 24 cameras NVR 60-day ANPR, Texecom Elite 88 Grade 2 dual-tech PIR + magnetic contacts roller shutters, NSI Gold RedCare + Dualcom, Paxton Net2 all entrances + office, police URN registration."
+  scenario="It is 2pm on a Wednesday. Three calls between noon and 2pm. You are commissioning a Paxton Net2 access control system in a medical centre in Headington — programming forty proximity card holders into access levels, restricting the dispensary and controlled drugs cupboard to pharmacists only, setting time profiles for weekend on-call surgeries, and configuring the anti-passback on the car park barrier. Without AI Phone Answering, one voicemail and two hang-ups. With it, all three answered. Lead one: a pub landlord in Wallingford — 'had two break-ins in three months, police say CCTV is essential, need cameras covering the bar, beer garden, and car park, plus an alarm with monitoring.' Lead two: a developer in Carterton — 'forty-two new-build houses need security packages — intruder alarms, video doorbells, and CCTV pre-wiring.' Lead three: a school business manager in Witney — 'access control on all external doors, intercom at reception, and CCTV upgrade across the campus — twenty cameras needed.' At 3pm the Paxton commissioning finishes. Three leads — a pub, forty-two houses, and a school campus."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/security-system-contractors/ai-receptionist/"
+  ctaHeadline="Capture the Didcot Warehouse Break-In Upgrade While You Cable in Abingdon"
+  ctaSubhead={`A facilities manager with unusable analogue footage, a 20-year alarm, and a weekend break-in needs NSI Gold monitoring and 24 Hikvision 4K cameras. The AI captured the ANPR, the Paxton, and the police URN while you pulled Cat6. From £${pricing.tiers.core.price}/month.`}
+/>
