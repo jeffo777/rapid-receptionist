@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Urgent Survey Availability Texts',
+    text: "Contractors and property managers text to check survey availability — 'need R&D survey this week, 1970s commercial unit, can you do it?' A prompt reply confirms capacity. Silence means the survey goes to a competitor."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Survey Briefs from Short Texts',
+    text: "A text like 'asbestos survey needed, school, 1960s, management survey, OX2' gives the AI enough context. It asks about the number of buildings, the last survey date, and any planned refurbishment. Your lead arrives with scheduling detail."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Contractor Referral Texts',
+    text: "Main contractors recommend asbestos firms to colleagues by text when they find a reliable licensed operator. When the referred contractor texts, the AI captures the survey or removal requirement while the recommendation is fresh."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Contractors plan next-week programmes in the evening. Property managers text compliance queries after office hours. The AI catches every after-hours asbestos message."
+  },
+  {
+    icon: '📋',
+    title: 'Consolidates Fragmented Messages',
+    text: "Texts arrive in pieces — 'got asbestos issue' then 'ceiling tiles in office' then '1960s building' then 'need it surveyed before refurb.' The AI assembles all fragments into one structured survey lead."
+  },
+  {
+    icon: '📱',
+    title: 'Dedicated Compliance Line',
+    text: "AI SMS uses your business number. Conversations about hazardous material surveys, licensed removal, and regulatory compliance stay professional and separated."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an asbestos enquiry text?",
+    answer: "The AI reads the inbound text and responds using your company name within seconds. A detailed text — 'need R&D survey for 1960s factory in Bicester before demolition, suspected lagging and cement sheets, demo starts in 3 weeks' — is acknowledged with the full scope preserved. A brief text — 'think I have got asbestos' — triggers follow-up questions about the material location, building age, and whether it has been disturbed."
+  },
+  {
+    question: "Will the sender know it is automated?",
+    answer: "The reply reads like a licensed asbestos professional responding between site visits — technically informed, regulatory-aware, and commercially appropriate. It uses your company name. Contractors and property managers texting about R&D surveys expect a concise, knowledgeable response that demonstrates understanding of their compliance deadline — the AI delivers precisely that."
+  },
+  {
+    question: "What about texts from existing survey clients?",
+    answer: "Current clients text about survey appointment confirmations, report collection dates, and follow-up sampling arrangements. The AI captures these and flags them separately from new enquiries. Your dashboard clearly distinguishes a new contractor's R&D survey request from an existing client confirming Thursday morning access."
+  },
+  {
+    question: "What does AI SMS cost for asbestos companies?",
+    answer: `This channel add-on costs £${pricing.addOn.price}/month. Asbestos work spans from £150 domestic sampling visits to £50,000 major licensed removal contracts. Securing one demolition contractor's R&D survey through a prompt text reply — while your phone sat in the DCU clean end — often converts into a five-figure removal contract when the survey identifies licensable ACMs.`
+  },
+  {
+    question: "Can I text back personally?",
+    answer: "Your own reply in any conversation transfers the thread to you immediately. During report-writing and office time, handle texts yourself. During surveys and enclosed removal work, let the AI maintain professional communication while you remain focused on health-and-safety-critical operations."
+  },
+  {
+    question: "How is text data from asbestos enquiries stored?",
+    answer: "Text messages containing building addresses, suspected ACM descriptions, compliance deadlines, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you and is never shared with competing asbestos firms, disclosed to building occupants, or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Asbestos Removal Specialists | Rapid Receptionist"
+  description={`AI SMS for UK asbestos removal specialists. Responds to R&D survey requests, licensed removal enquiries, and domestic asbestos sampling texts while you work on site. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/asbestos-removal/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Asbestos Removal Specialist"
+  tradeNamePlural="Asbestos Removal Specialists"
+  tradeSlug="asbestos-removal"
+  headline="AI SMS for Asbestos Removal Specialist Companies"
+  accentWord="Asbestos Removal"
+  subhead="You are in the clean end of a decontamination unit, changing into a fresh set of coveralls for the afternoon removal session — the morning's waste bagged, labelled, and staged for collection, the enclosure integrity tested, the air monitor running its background clearance period. At 1:15pm a main contractor texts: 'Hi — starting a refurb on a 1975 office block in Abingdon. The architect says we need an R&D survey before we strip out. Building is 3 floors, about 1,200 sqm. Suspected ceiling tiles, floor tiles, window putty, and boiler room lagging. Can you survey next week? Strip-out starts in 18 days.' Your phone is in your coat pocket in the van, forty metres from the DCU access point. Without AI SMS, the text waits until the afternoon session finishes at 4pm. He texts two other licensed firms; one responds in fifteen minutes. With it, the AI responds at 1:16pm, confirms your R&D survey capability, and asks whether the building is fully vacant and whether services are isolated. He confirms vacant with services live. At 4pm you open the lead and call. You book a next-Monday survey."
+  scenario="It is 8pm on a Sunday. A landlord in Headington manages three rental properties — all built in the 1970s. He has received a Section 19 improvement notice from the local authority regarding suspected asbestos-containing materials in one of the properties. He needs a management survey of all three properties urgently to satisfy the enforcement notice and demonstrate compliance with the Control of Asbestos Regulations 2012. He texts three asbestos firms: 'Urgent — council have served a Section 19 on one of my rental properties for suspected asbestos. Need management surveys on 3 properties (all 1970s, residential). Need to demonstrate compliance quickly. OX3 area. Can you survey this week?' Without AI SMS, you see the text Monday morning. He has two replies by Sunday evening, one offering a Wednesday assessment. With AI SMS, the response arrives at 8:01pm: 'Thank you — Section 19 improvement notices require urgent attention. Management surveys will identify, record, and assess the condition of all ACMs across your properties. Could you confirm the three property addresses and whether all tenants can provide access through the week? We will schedule surveys as early as possible.' He confirms addresses. Monday you open the lead: three 1970s residential properties, OX3, Section 19 enforcement notice, management surveys needed urgently, addresses confirmed, tenant access required. You call at 8am and schedule all three surveys for Wednesday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/asbestos-removal/ai-receptionist/"
+  ctaHeadline="Catch the Contractor's R&D Survey Text While You Suit Up in the DCU"
+  ctaSubhead={`A main contractor texts about an eighteen-day strip-out deadline while you change coveralls. The AI replies while you prepare for the afternoon session. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Worried Property Owners',
+    text: "Property owners and managers visit asbestos websites with anxiety — 'is this asbestos?', 'do I need a survey?', 'how much does removal cost?' The chat responds from your profile with informed guidance while capturing the building details and material description."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Work Category',
+    text: "Through conversation, the AI identifies whether the visitor needs a management survey, an R&D survey, licensed removal, non-licensed removal, or a domestic sample test. You receive a lead pre-categorised by regulatory work category."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Asbestos Anxiety',
+    text: "A homeowner discovers something suspicious during weekend renovation and researches asbestos at 11pm. She types: 'I found some grey boards behind the bathroom cabinet — could this be asbestos? The house was built in 1975.' The chat captures the material description, building age, and location before the anxiety fades by morning."
+  },
+  {
+    icon: '📊',
+    title: 'Answers Regulatory Questions',
+    text: "Visitors ask about duty holder obligations, the difference between management and R&D surveys, and whether their material requires licensed or non-licensed removal. The AI responds from your profile with educational guidance while gathering their specific situation."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Your Accreditation Content',
+    text: "Asbestos websites emphasise credentials — HSE licence, ARCA membership, UKATA training, UKAS-accredited analysts. The chat converts visitors' regulatory research into qualified survey and removal leads."
+  },
+  {
+    icon: '✅',
+    title: 'Bundled at No Extra Cost',
+    text: `Website chat is included with phone answering at £${pricing.tiers.core.price}/month. A single JavaScript snippet covers every page of your site — from survey services to removal capabilities.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add chat to my asbestos company website?",
+    answer: "At onboarding we provide a small JavaScript code snippet. Insert it into your website header — via direct HTML editing, WordPress settings, or your CMS admin panel. The branded chat widget goes live across every page immediately. Asbestos company websites are typically live with chat within five minutes of pasting the snippet."
+  },
+  {
+    question: "Can the AI discuss asbestos regulations with visitors?",
+    answer: "Your profile informs the AI about your services, licence status, and accreditations. When a visitor asks 'do I need a management survey or an R&D survey?' the AI explains the distinction from your profile — management surveys for properties remaining in use, R&D surveys required before any refurbishment or demolition work. It then captures the visitor's building type, construction date, and planned works to determine which survey applies."
+  },
+  {
+    question: "What details does the chat capture from asbestos enquiries?",
+    answer: "The AI gathers the type of work needed (survey, removal, sampling, encapsulation), the building type and construction era, the suspected ACM types and locations within the building, the condition of the material (intact, damaged, disturbed), the client's role (property owner, contractor, facilities manager), any compliance deadline or programme constraint, and the property postcode and contact details."
+  },
+  {
+    question: "Does the chat affect my website's performance?",
+    answer: "The chat script loads asynchronously after your pages have fully rendered. Asbestos company websites — often featuring accreditation logos, project case studies, and regulatory information — display at full speed. The chat widget appears only after all your existing content has loaded. Its data footprint is negligible."
+  },
+  {
+    question: "Is website chat charged separately?",
+    answer: `Phone answering and chat operate under the same Core plan at £${pricing.tiers.core.price}/month — no separate charge. For asbestos firms, these two channels address the main enquiry patterns: phone calls from demolition contractors and property managers during working hours, and website chats from anxious homeowners researching suspected asbestos in the evening.`
+  },
+  {
+    question: "How is visitor data from asbestos queries handled?",
+    answer: "Chat conversations involving building addresses, suspected ACM descriptions, survey reports, health-and-safety information, and visitor contact details are encrypted and stored on UK and EU servers compliant with UK GDPR. Lead summaries go exclusively to you. No asbestos survey data is shared with competing firms or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Asbestos Removal Specialists | Rapid Receptionist"
+  description={`AI website chat for UK asbestos removal specialists. Engages property managers and homeowners researching asbestos surveys, licensed removal, and ACM management. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/asbestos-removal/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Asbestos Removal Specialist"
+  tradeNamePlural="Asbestos Removal Specialists"
+  tradeSlug="asbestos-removal"
+  headline="AI Website Chat for Asbestos Removal Specialist Companies"
+  accentWord="Asbestos Removal"
+  subhead="A facilities manager finds your website at 9:45pm. He manages a portfolio of twelve commercial properties across Oxfordshire built between 1960 and 1985. The most recent fire risk assessment noted that the asbestos registers for several buildings are either missing or have not been re-inspected in over five years. His compliance officer has flagged the gap. He types: 'Hi — I manage 12 commercial properties, most built in the 1960s-80s. Our asbestos registers are out of date and some buildings have never had a proper management survey. We need a programme of surveys across the whole portfolio with updated registers and management plans. Can you handle a portfolio of this size? We need to start immediately.' Without chat, he sends a contact form and waits. With AI Website Chat, the AI asks about the building types, approximate sizes, the last survey dates, and whether any refurbishment is planned. He confirms a mix of offices and light industrial units. Thursday morning you call with a structured lead — twelve properties, 1960s-80s, management surveys needed across the portfolio, registers missing or expired, compliance urgency — and you book a planning meeting."
+  scenario="It is midnight on a Sunday. A homeowner in Witney has been renovating her 1970s bungalow. She pulled up the old carpet in the hallway and found grey-green vinyl floor tiles underneath, some cracked, with a dark adhesive residue. She searches 'are old vinyl floor tiles asbestos' and finds your website. She types: 'Just found old vinyl floor tiles under the carpet in our hallway — grey-green, 9 inch squares, with dark sticky stuff underneath. The house is 1970s. Some tiles are cracked. Are these asbestos? We have stopped all work. What should we do? We have young children.' Without chat, she worries all night and calls Monday morning — if she remembers. With AI Website Chat, the AI responds: 'Nine-inch vinyl floor tiles with dark bitumen adhesive from a 1970s property are one of the most commonly identified asbestos-containing materials. The good news is that intact tiles pose very low risk. Cracked tiles should not be disturbed further until tested. We can collect a sample and have laboratory results within 48 hours. Could you confirm the postcode and approximately how many rooms have these tiles?' She confirms three rooms. Monday you call at 9am, collect samples Tuesday, and deliver results Thursday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/asbestos-removal/ai-receptionist/"
+  ctaHeadline="Capture the Facilities Manager Auditing Twelve Properties at 10pm"
+  ctaSubhead={`A property portfolio with expired asbestos registers needs surveying immediately. Your chat captures the compliance gap before the browser closes. Included at £${pricing.tiers.core.price}/month.`}
+/>

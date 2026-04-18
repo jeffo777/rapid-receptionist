@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Suspected ACM Photos',
+    text: "Homeowners, builders, and property managers WhatsApp photos of materials they suspect may contain asbestos — corrugated roof sheets, textured ceiling coatings, pipe insulation, floor tiles, cement panels. The AI responds immediately, asks critical questions about the material condition, and attaches every photo to your lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins the Discovery Panic Response',
+    text: "When a builder uncovers suspected asbestos mid-refurbishment — tools downed, the site cleared — the first licensed firm to respond with professional guidance secures the emergency sampling and potential removal contract."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Contractor Survey Requests',
+    text: "Demolition and main contractors WhatsApp R&D survey requests with urgency: 'Need R&D survey on a 1970s commercial unit — demo starts in 2 weeks, can you survey Thursday?' The AI captures the scope and deadline while you are inside an enclosure."
+  },
+  {
+    icon: '🌙',
+    title: 'Active During Evening Worry',
+    text: "Homeowners photograph suspected asbestos in daylight and message in the evening. Property managers forward fire risk assessment asbestos findings after hours. The AI catches every anxious evening and weekend WhatsApp."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Urgent Compliance Messages',
+    text: "A WhatsApp saying 'builder found something behind the wall, looks like it could be asbestos, work has stopped' becomes a structured lead with material description, property type, condition assessment, and site status."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Compliance Channel',
+    text: "AI WhatsApp uses your business number. Conversations about hazardous materials, building safety, and regulatory compliance stay professional and separate from personal messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess whether a material is asbestos from photos?",
+    answer: "No material identification is possible from photographs alone — only laboratory analysis of a bulk sample can confirm whether a material contains asbestos. The AI clearly communicates this while responding usefully. It acknowledges the photos, asks about the building's construction date, whether the material is damaged or intact, whether it has been disturbed, and how large an area is affected. Every photo is saved to your lead for your own visual pre-assessment before visiting the property."
+  },
+  {
+    question: "What about multi-message waste and compliance threads?",
+    answer: "Asbestos conversations evolve — a contractor sends a photo of suspected lagging, then asks about licensing requirements, then queries waste disposal procedures, then requests a quote for the removal. The AI maintains the thread and consolidates every message into one comprehensive compliance lead."
+  },
+  {
+    question: "How much does AI WhatsApp cost for asbestos firms?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. Asbestos work ranges from £150 domestic sampling visits to £50,000 licensed removal contracts. Capturing one demolition contractor's R&D survey request through a rapid WhatsApp reply — while you were suited up behind three airlocks — secures survey fees and often leads to the removal contract itself.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Type a reply in any thread and the AI hands control to you on the spot. It recognises your response and steps away. Most asbestos firms let the AI handle the initial capture — suspected material description, building type, material condition, programme deadline — then take over personally to explain the sampling procedure, discuss survey methodology, or outline the plan of work."
+  },
+  {
+    question: "How is WhatsApp data from asbestos enquiries protected?",
+    answer: "All WhatsApp messages — suspected ACM photographs, building addresses, survey findings, compliance-sensitive information, and contact details — are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. No health-and-safety-sensitive material is shared with competing asbestos firms, disclosed to building occupants, or used for any other purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Asbestos Removal Specialists | Rapid Receptionist"
+  description={`AI WhatsApp for UK asbestos removal specialists. Responds to suspected ACM photos, R&D survey requests, and emergency disturbance notifications. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/asbestos-removal/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Asbestos Removal Specialist"
+  tradeNamePlural="Asbestos Removal Specialists"
+  tradeSlug="asbestos-removal"
+  headline="AI WhatsApp for Asbestos Removal Specialist Companies"
+  accentWord="Asbestos Removal"
+  subhead="A builder WhatsApps at 11:30am with three photos — close-ups of a material he has uncovered during a kitchen refurbishment in a 1970s semi. The photos show what appears to be asbestos insulating board behind the boiler cupboard — grey, flat, fibrous-looking panels with a slightly textite surface. His message: 'Mate — just exposed these panels behind the boiler in a 1970s kitchen. Looks like it could be AIB. We have stopped work and cleared the room. The homeowner is worried sick. Can you get someone out to sample it today or tomorrow? The whole kitchen reno is on hold.' You are inside a licensed enclosure in an industrial unit, scraping sprayed asbestos limpet coating from a steel beam — full-face RPE, Type H vacuum running, shadow vacuum positioned. Your phone is in the clean end of the DCU. Without AI WhatsApp, the builder's message sits until the decontamination cycle finishes mid-afternoon. He WhatsApps two other licensed firms; one responds in twenty minutes and offers a next-day sample visit. With it, the AI responds instantly, asks about the panel size, quantity, and whether any material is broken or powdering, and confirms that the room should remain sealed with the area undisturbed. By 3pm when you shower out, the lead — complete with three photos, the property address, and the builder's contact — is waiting. You call and arrange sample collection for 8am tomorrow."
+  scenario="It is Saturday evening. A property developer in Banbury has exchanged contracts on a 1965 warehouse to convert into residential apartments. His architect has flagged that no asbestos survey exists for the building. The developer needs an R&D survey completed before any design work can proceed — the architect will not finalise layouts until ACMs have been identified and quantified. The building likely contains asbestos cement roof sheets, pipe lagging in the heating system, textured coatings to office areas, and potentially sprayed coatings in the boiler room. He WhatsApps three ARCA-member firms: 'Hi — just bought a 1965 warehouse for resi conversion. No asbestos survey on record. My architect needs a full R&D survey before design starts. Building is about 2,000 sqm, 2 storeys, mix of warehouse, offices, and boiler room. Suspected cement sheets, lagging, textured coatings, possible sprayed coatings. Can you survey week after next?' Without AI WhatsApp, you see the message Sunday. One firm replied Saturday evening with an outline of their R&D survey methodology. With AI WhatsApp, the response arrives within seconds, asks about access arrangements and whether the building services are still live, and your lead — warehouse conversion, Banbury, 2,000 sqm, full R&D survey, suspected cement/lagging/coatings/sprayed, design programme dependent — is captured. Monday you call and book a Wednesday survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/asbestos-removal/ai-receptionist/"
+  ctaHeadline="Respond to the Builder's AIB Discovery While You Strip the Limpet Coating"
+  ctaSubhead={`A builder sends three photos of suspected AIB with a kitchen renovation on hold. The AI responds while you scrape the industrial enclosure. Add-on at £${pricing.addOn.price}/month.`}
+/>

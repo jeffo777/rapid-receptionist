@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls Inside the Enclosure',
+    text: "Licensed removal means hours behind sealed airlocks — disposable PPE, RPE sealed, carefully stripping ACMs in a controlled negative-pressure environment. Missed Call Text Back sends a branded text the moment a call goes unanswered."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Urgent Compliance Callers',
+    text: "A demolition contractor calling about an R&D survey with a two-week programme gets voicemail from two licensed firms and a text from one: 'Thanks for calling — I am on a licensed removal and will return your call this afternoon.' That contractor waits for your callback."
+  },
+  {
+    icon: '🏷️',
+    title: 'Licensed Operator Professionalism',
+    text: "Asbestos removal demands regulatory trust. A prompt, branded text from a licensed specialist signals the organised, compliance-focused operator that contractors and property managers need."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Large Projects',
+    text: "Multi-day licensed removals keep your entire team inside enclosures for the duration. Missed Call Text Back ensures no new clients or survey instructions are lost during your most intensive removal phases."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Details',
+    text: "Callers reply with project specifics — 'R&D survey needed, 1970s office block, Abingdon, demo in 3 weeks.' These replies arrive in your lead summary with building details and deadlines before you return the call."
+  },
+  {
+    icon: '🔄',
+    title: 'Complements Phone Answering',
+    text: "AI Phone Answering conducts full conversations and builds detailed survey leads. Missed Call Text Back catches edge cases — a caller disconnecting immediately, or a mobile signal blocked by the enclosure sheeting. Combined, every asbestos enquiry is retained."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text go out?",
+    answer: "Within seconds of the unanswered call ending. The caller's phone buzzes with your branded message before they have typed the next licensed firm's name into Google. During multi-day enclosure projects where every operative is behind RPE from morning to mid-afternoon, this near-instant text keeps your company commercially active without interrupting safety-critical removal work."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose it during setup and revise it whenever needed. An effective asbestos firm message reads: 'Thank you for calling [company name]. We are currently on a licensed removal site. We will return your call at the earliest opportunity. Reply with details of your survey or removal requirement for a faster response.' The message reflects your licensed credentials and professionalism."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They serve as paired safety nets. Phone Answering conducts full regulatory conversations — identifying the survey type, building construction era, suspected ACMs, deadline constraints, and client role. Missed Call Text Back catches the rare calls that bypass the system — a one-ring hang-up, a mobile signal drop inside the enclosure, or a call arriving during the switchover between AI and personal answering. Together, no asbestos lead escapes."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Asbestos surveys range from £150 domestic samplings to £5,000 large commercial R&D surveys. Licensed removal contracts regularly reach £10,000 to £50,000. Recovering one missed call through a timely text — a contractor who needed an R&D survey for next week — and converting it into both the survey fee and the subsequent removal contract transforms a modest monthly investment into your most profitable lead source.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Regularly — particularly contractors with programme pressure. Typical replies include the building type, construction date, suspected ACM types, programme deadline, and postcode. These replies arrive in your dashboard before you exit the enclosure, giving you complete context for a priority return call."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing building addresses, ACM descriptions, compliance deadlines, and contact details are encrypted and held on UK and EU servers under UK GDPR. Only you can access the data. Nothing is shared with competing asbestos firms, disclosed to building occupants, or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Asbestos Removal Specialists | Rapid Receptionist"
+  description={`Missed Call Text Back for UK asbestos removal specialists. Automatically texts callers while you work inside licensed enclosures — keeps R&D survey and removal leads warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/asbestos-removal/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Asbestos Removal Specialist"
+  tradeNamePlural="Asbestos Removal Specialists"
+  tradeSlug="asbestos-removal"
+  headline="Missed Call Text Back for Asbestos Removal Specialist Companies"
+  accentWord="Asbestos Removal"
+  subhead="It is 10:30am on a Thursday. You and your team are three hours into a licensed removal of asbestos insulating board from internal partition walls in a disused council office building. The enclosure is sealed, the negative pressure unit running, the UKAS analyst monitoring air quality at the boundary. Your two operatives are inside — wetting AIB panels, carefully unscrewing fixings, and double-bagging each sheet. You are supervising through the viewing panel and logging panel numbers on the waste manifest. Two calls arrive at 10:45 and 11:20. Your phones are sealed in plastic bags in the van, sixty metres and three airlocks from the nearest operative. Without Missed Call Text Back, both callers hear voicemail. One leaves a message — 'need an asbestos survey' — the other hangs up and calls another ARCA firm. With it, both receive texts within seconds. The first replies: 'Hi — school business manager here. We need management surveys on 2 primary school buildings, both 1960s. Need reports before summer holidays start. Can you survey during half-term in 3 weeks? OX4.' At the lunch break you check and call. You book both school surveys for half-term week."
+  scenario="It is 2pm on a Friday in January. Your team has been removing lagging from a heating system in a hospital plant room since 7am — a three-day licensed project, the enclosure constructed around the boiler and pipework, each section of chrysotile lagging soaked, stripped, bagged, and staged. Your phone shows four missed calls between 10am and 2pm. Without Missed Call Text Back, you check on the drive home: four unknowns, one voicemail — 'got asbestos in the roof, need it removing' — three lost permanently. With Missed Call Text Back, all four received texts. The first at 10:15: 'demolition contractor — need R&D survey on a 1965 warehouse, 3,000 sqm, demo starts in 4 weeks, Banbury.' The second at 11:30: 'homeowner in Woodstock, grey corrugated garage roof, cracking, want it removed and replaced.' The third at 12:45: 'facilities manager — need re-inspection surveys on 5 commercial properties, registers need updating, Oxfordshire.' The fourth at 1:50: 'builder doing a kitchen extension — found suspect pipe lagging behind the wall, work stopped, need sampling today if possible, OX2.' Friday evening you review four leads — a £4,000 warehouse R&D survey, a domestic garage removal, a five-property re-inspection programme, and an emergency sampling — and schedule your Monday morning calls."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/asbestos-removal/ai-receptionist/"
+  ctaHeadline="Recover Four Asbestos Leads from One Hospital Plant Room Friday"
+  ctaSubhead={`While your team stripped lagging in the plant room, four callers missed you. Four texts went out. Four replied. Four projects scheduled by Monday. Add-on at £${pricing.addOn.price}/month.`}
+/>

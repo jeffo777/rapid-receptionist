@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges R&D Survey Tenders',
+    text: "Demolition contractors and main contractors email R&D survey requests with programme deadlines. The asbestos firm that acknowledges first — referencing the building type, suspected ACMs, and demolition start date — demonstrates capacity and professionalism."
+  },
+  {
+    icon: '📐',
+    title: 'References Survey Specifications',
+    text: "When a principal contractor emails specifying 'R&D survey required for a 1968 secondary school, approximately 3,200 sqm, three blocks, suspected pipe lagging, textured coatings, floor tiles, and cement roof sheets,' the AI acknowledgement references the school blocks, ACM types, and survey scope."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your On-Site Email Gap',
+    text: "Licensed asbestos operatives spend entire days inside enclosures, on surveys, and in decontamination. A contractor's R&D survey email arriving at 9am sits until late afternoon. The sixty-second acknowledgement ensures your firm responds faster than every competing licensed operator."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Survey Leads from Operations',
+    text: "Your inbox mixes contractor survey requests, waste carrier licence renewals, lab analytical results, UKATA training course confirmations, and HSE correspondence. The AI identifies genuine survey and removal enquiries."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Contractor Relationships',
+    text: "Demolition and main contractors who find a reliable licensed asbestos firm instruct them repeatedly — every new demolition or refurbishment project generates another R&D survey. Consistent rapid acknowledgements establish your firm as the go-to licensed operator."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Pre-Survey Documentation',
+    text: "Contractor emails often include building plans, previous survey extracts, and CDM documentation. The AI notes these attachments in both the acknowledgement and your lead summary for pre-survey preparation."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI write asbestos survey reports?",
+    answer: "The AI generates exclusively the initial receipt acknowledgement — confirming you have received the survey or removal instruction and referencing the building type and scope. Your HSG264-compliant survey reports, plans of work, risk assessments, analytical certificates, and clearance documentation are prepared entirely by your qualified surveyors and analysts based on on-site inspection and laboratory results."
+  },
+  {
+    question: "Will it respond to lab results and HSE correspondence?",
+    answer: "The system distinguishes project enquiries from operational emails during setup. UKAS laboratory analytical certificates, HSE licence correspondence, ARCA membership communications, waste consignment confirmations, and training provider notifications are filtered out. Only genuine survey instructions and removal tender requests trigger the automatic acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner contact-form submissions?",
+    answer: "Homeowner form submissions — 'worried about asbestos in our ceiling, the house was built in 1972, can someone come and check?' — receive a professional and reassuring reply confirming your capability, explaining the sampling process, and gathering the building age, material description, and property location as a categorised domestic lead."
+  },
+  {
+    question: "What does email response cost for asbestos companies?",
+    answer: `Email response costs £${pricing.addOn.price}/month as a channel add-on. R&D surveys range from £400 for small properties to £5,000 for large commercial complexes. Licensed removal contracts can exceed £50,000. Acknowledging a demolition contractor's R&D survey email within sixty seconds — while you suited up for the afternoon enclosure session — often secures both the survey instruction and the subsequent removal contract.`
+  },
+  {
+    question: "Can I draft all subsequent correspondence personally?",
+    answer: "All subsequent correspondence is composed and sent by your team. Survey appointment confirmations, the HSG264-compliant survey report, plans of work, risk assessments, analyst clearance certificates, and controlled waste consignment documentation are produced exclusively by your qualified surveyors and operatives."
+  },
+  {
+    question: "How is asbestos survey data secured?",
+    answer: "Contractor tenders contain building addresses, previous survey findings, demolition programmes, sensitively classified ACM information, and commercially confidential pricing. All email data is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No survey data, ACM locations, or client details are disclosed to competing firms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Asbestos Removal Specialists | Rapid Receptionist"
+  description={`AI email response for UK asbestos removal specialists. Acknowledges R&D survey tenders and management survey instructions within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/asbestos-removal/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Asbestos Removal Specialist"
+  tradeNamePlural="Asbestos Removal Specialists"
+  tradeSlug="asbestos-removal"
+  headline="AI Email Response for Asbestos Removal Specialist Companies"
+  accentWord="Asbestos Removal"
+  subhead="A demolition contractor emails an R&D survey tender for a former NHS clinic built in 1958 — a two-storey building with suspected asbestos insulating board to walls and ceiling tiles, chrysotile pipe lagging to the heating system, textured coatings to corridor ceilings, asbestos rope seals around boiler doors, and suspected sprayed coating to the service ducts. Demolition is scheduled for six weeks. He needs the survey report issued within ten working days. You are on site conducting a management survey at a primary school — inspecting ceiling tiles, checking pipe insulation in the boiler room, and logging sample locations on the building plan. Both hands hold the clipboard and torch, and your phone is zipped into your surveyor's bag. Without AI Email Response, the NHS clinic tender sits until you return to the office at 4pm. Two competing licensed firms acknowledged by 2pm. With it, your acknowledgement arrives within sixty seconds, referencing the 1958 NHS clinic, the suspected AIB, chrysotile lagging, textured coatings, rope seals, and the ten-day report deadline."
+  scenario="It is 7am on a Monday. Your inbox has accumulated over the weekend: a principal contractor requesting an R&D survey for a 1970s council housing block before window replacement — twelve flats across four floors, suspected asbestos-containing putty in the existing window frames and textured coatings throughout, a commercial landlord commissioning management surveys for three industrial units built in the 1980s — needing updated asbestos registers for insurance renewal, a homeowner asking via your contact form about testing artex ceilings in a 1975 bungalow before a rewire, and a UKAS laboratory emailing last week's bulk sample analytical results. Without AI Email Response, you scan subjects while loading the van for a morning survey. The council housing R&D survey sits until Tuesday. Two competitors acknowledged Monday morning. With AI Email Response, the housing block tender receives an immediate acknowledgement referencing the twelve flats, window putty, and textured coatings, the landlord's insurance-driven surveys are acknowledged, the artex enquiry is handled, and the lab email is filtered. At lunch you prioritise the housing block — twelve flats, likely £3,500 in survey fees — and begin planning the access schedule."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/asbestos-removal/ai-receptionist/"
+  ctaHeadline="Acknowledge the NHS Clinic Demolition Survey While You Inspect the School"
+  ctaSubhead={`A demolition contractor's ten-day report deadline starts when the email lands. Your sixty-second acknowledgement secures the R&D survey instruction. Add-on at £${pricing.addOn.price}/month.`}
+/>

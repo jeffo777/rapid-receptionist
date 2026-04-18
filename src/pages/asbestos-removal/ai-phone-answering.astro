@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Work Inside the Enclosure',
+    text: "Licensed asbestos removal means hours inside sealed enclosures — full RPE, disposable PPE, both hands occupied removing AIB panels, stripping lagging, or scraping textured coatings. The AI answers every call in your company name while you work in the controlled environment."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Varied Asbestos Enquiries',
+    text: "When a demolition contractor calls about an R&D survey for a 1960s factory, the AI captures the building type, suspected ACMs, and demolition date. When a homeowner describes grey sheets on a garage ceiling, the AI captures the material condition, approximate area, and property type. Each lead matches the project's complexity and urgency."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Emergency Discoveries',
+    text: "A builder disturbs suspected asbestos during a refurbishment — loose fibres visible, work stopped, HSE notification potentially required. The AI identifies the emergency, captures the material type, property address, and whether the area has been sealed, then escalates for your immediate guidance."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches After-Hours Survey Requests',
+    text: "Property managers review building records after hours and realise their asbestos register is overdue for re-inspection. Demolition contractors plan the next week's programme on Sunday evening. The AI captures every after-hours survey request."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Scheduling',
+    text: "Each lead specifies the survey or removal type, the building type and location, suspected ACM types, approximate quantities, the programme or compliance deadline, and the client's role (contractor, property manager, homeowner)."
+  },
+  {
+    icon: '🏷️',
+    title: 'Licensed Credibility',
+    text: "Asbestos work demands trust — clients entrust you with health-and-safety-critical compliance. A professional AI greeting that asks about ACM types, building construction dates, and survey categories immediately communicates the expertise of a licensed operator."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their asbestos needs?",
+    answer: "The questions follow the caller's situation. A demolition contractor needing an R&D survey is asked about the building type, construction date, suspected ACM locations, the demolition start date, and the CDM notification status. A property manager commissioning a management survey is asked about the building type, number of floors, the last survey date, and the compliance deadline. A homeowner worried about suspected asbestos is asked about the material condition, whether it has been disturbed, the location within the property, and when they first noticed it."
+  },
+  {
+    question: "Can the AI handle calls about both surveys and removal?",
+    answer: "Many asbestos companies deliver both survey and removal services. A call about 'an R&D survey for a commercial building before refurbishment' generates a survey lead capturing the building type, construction era, and programme. A call about 'removing AIB from a partition wall in a school during half-term' generates a licensed removal lead capturing the material type, quantity, access constraints, and the school's closure dates. The AI adjusts automatically."
+  },
+  {
+    question: "What about calls when the team is in decontamination?",
+    answer: "Decontamination procedures — the transit through the DCU, the shower sequence, the air monitoring period — take time and cannot be interrupted. The AI handles every incoming call during the entire decontamination process so no team member needs to rush through safety-critical procedures to answer the phone."
+  },
+  {
+    question: "How many call minutes are included?",
+    answer: `The Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Asbestos companies receive a mix of contractor R&D survey requests, property manager compliance calls, homeowner domestic enquiries, and occasional emergency disturbance notifications. Most firms operate within the allowance. If a major local demolition project generates increased survey demand, overage is billed at 20p per minute without penalties.`
+  },
+  {
+    question: "Can I answer calls during office and report-writing time?",
+    answer: "When you are in the office writing survey reports, preparing plans of work, submitting HSE notifications, or arranging waste consignment — answer calls yourself. Toggle between AI and personal answering from your dashboard at any time. During on-site surveys and enclosed removal phases, route all calls to the AI."
+  },
+  {
+    question: "How is asbestos survey data secured?",
+    answer: "Asbestos enquiries contain building addresses, ACM types and locations, survey reports, health-and-safety-sensitive information, and commercially confidential tender data. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No survey findings are shared with competing asbestos firms, disclosed to building occupants, or sold to third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Asbestos Removal Specialists | Rapid Receptionist"
+  description={`AI phone answering for UK asbestos removal specialists. Captures R&D survey requests, licensed removal enquiries, and management survey commissions while you work in the enclosure. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/asbestos-removal/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Asbestos Removal Specialist"
+  tradeNamePlural="Asbestos Removal Specialists"
+  tradeSlug="asbestos-removal"
+  headline="AI Phone Answering for Asbestos Removal Specialist Companies"
+  accentWord="Asbestos Removal"
+  subhead="A demolition contractor calls at 10:45am. He has secured a contract to demolish a 1960s factory complex in Kidlington — three interconnected buildings, approximately 4,500 square metres. He needs a Refurbishment and Demolition survey before any work begins. The buildings contain suspected asbestos cement roof sheets, pipe lagging in the boiler house, textured coatings throughout the offices, and floor tiles in the corridors. His demolition programme starts in fourteen days. He needs the survey completed and the report issued within eight working days. You are inside a full enclosure on a commercial building, removing sprayed asbestos coating from structural steelwork — the limpet asbestos wetted, carefully scraped into double-lined bags, the negative pressure unit humming, the UKAS analyst monitoring air quality outside the enclosure. Your phone is sealed in a plastic bag in the clean end of the DCU, six metres and three airlocks away. Without AI Phone Answering, the demolition contractor hears voicemail and calls the next ARCA-member firm on his list. With it, the AI captures the full brief — 1960s factory complex, Kidlington, 4,500 sqm, suspected cement sheets, lagging, textured coatings and floor tiles, fourteen-day demolition start, eight-day report turnaround — and your lead waits for the decontamination shower."
+  scenario="It is 2pm on a Thursday. You are conducting an R&D survey in a vacant 1970s office building — ladder set up, inspection hatch open, torch beam sweeping through the ceiling void looking for textured coatings on the soffit, AIB to partition heads, and debris from previous refurbishment work. Three calls come in between 1:30 and 3:30. Without AI Phone Answering, one voicemail — 'need some asbestos removed' — two hang up. By Friday, two have booked other firms. With AI Phone Answering, all three are answered. Lead one: school business manager needing a management survey of a 1958 primary school — pipe lagging in the boiler room, textured coatings in halls and classrooms, vinyl floor tiles throughout, asbestos register needs updating before the September term. Lead two: homeowner in Headington renovating a kitchen — discovered what appears to be AIB behind the boiler cupboard, work stopped, builder has downed tools until it is tested. Lead three: main contractor on a residential conversion needing licensed removal of lagging from heating pipework in the basement — fourteen radiator drops of pipe lagging, each approximately 1.5 metres, the refurbishment programme starting in three weeks. At 4pm you check three leads — a school management survey, a domestic emergency sample, and a licensed removal subcontract — and begin prioritising."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/asbestos-removal/ai-receptionist/"
+  ctaHeadline="School Survey, Kitchen Emergency, and Pipe Lagging Removal — All in Two Hours"
+  ctaSubhead={`While you surveyed the ceiling void, three asbestos opportunities called. The AI captured every ACM type and deadline. From £${pricing.tiers.core.price}/month.`}
+/>

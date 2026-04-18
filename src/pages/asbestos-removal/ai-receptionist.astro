@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A demolition contractor calls about an urgent Refurbishment and Demolition survey for a 1970s office building in Cowley — demolition starts in ten days and no asbestos survey has been conducted. He suspects textured coatings throughout, floor tiles in the corridors, AIB panels in the suspended ceiling void, and lagging to the boiler room pipework. He needs the R&D survey report within five working days to satisfy the CDM requirements. You are inside a decontamination enclosure on another site — full RPE, disposable overalls, carefully removing asbestos insulating board panels from a partition wall, each sheet wetted and double-bagged. Your phone is sealed in a plastic bag in the clean end of the DCU. The demolition contractor calls two other licensed firms. One answers and schedules a Thursday survey.",
+    with: "Your AI receptionist answers on the second ring. It captures the full brief — 1970s office, Cowley, suspected textured coatings, floor tiles, AIB panels, boiler room lagging, R&D survey needed, five-day turnaround, ten-day demolition start — and confirms you will call back. At the decontamination shower you check your lead and call. You book a Wednesday morning survey."
+  },
+  {
+    without: "A commercial property manager emails about a management survey for a school built in 1965 — the local authority requires an asbestos register and management plan before term starts in September. The school has pipe lagging in the boiler room, textured ceiling coatings in classrooms, vinyl floor tiles in corridors, and suspected asbestos cement roof sheets on the outbuildings. You are in a transit van driving between removal sites, PPE bags in the back, consignment notes from the morning's waste transfer on the passenger seat. The email sits until Sunday evening.",
+    with: "Your AI acknowledges the property manager's email within sixty seconds, referencing the 1965 school, the management survey scope, the asbestos register requirement, and the September deadline. Sunday evening you begin reviewing the school's building layout with full context already captured."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday afternoon with photos of what she thinks might be asbestos in her garage ceiling — grey corrugated sheets, some cracked and deteriorating, exposing fibrous material beneath. She is concerned about her children playing in the garden near the garage. She messages three asbestos firms. You are at home. By Monday, two have replied and one has offered a Tuesday sample collection.",
+    with: "The AI responds to the WhatsApp within seconds, asks whether the material is damaged or intact, whether anyone has disturbed it, the approximate area, and the postcode. Monday at 8am you have a structured lead with photos showing the garage ceiling condition and the level of deterioration."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Asbestos Surveys",
+    items: ["Management surveys (HSG264)", "Refurbishment and Demolition surveys", "Re-inspection surveys and register updates", "Asbestos sampling and bulk analysis", "Domestic asbestos surveys and reports", "Pre-purchase and due-diligence surveys"]
+  },
+  {
+    category: "Licensed Asbestos Removal",
+    items: ["Asbestos insulating board (AIB) removal", "Pipe lagging and thermal insulation removal", "Sprayed asbestos coating (limpet) removal", "Full enclosure construction with DCU", "UKAS-accredited 4-stage clearance testing", "HSE notification and plan of work"]
+  },
+  {
+    category: "Non-Licensed & Notifiable Work",
+    items: ["Textured coating removal (Artex)", "Asbestos cement sheet removal (roofing, cladding)", "Vinyl floor tile and bitumen adhesive removal", "Asbestos gasket and rope seal removal", "Encapsulation and sealing of ACMs", "Controlled waste packaging, labelling, and disposal"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Demolition & Main Contractors",
+    description: "Demolition and refurbishment contractors need R&D surveys before breaking ground — a regulatory prerequisite under CDM 2015. A licensed asbestos firm that answers immediately, confirms survey availability within days, and delivers the report on time keeps the demolition programme on track. Delays cost the contractor thousands per week."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial Property & Facilities Managers",
+    description: "Property managers commissioning management surveys for office buildings, retail units, and mixed-use properties. Maintaining an up-to-date asbestos register and management plan is a legal duty under the Control of Asbestos Regulations 2012. Responsiveness signals a firm that understands compliance timelines."
+  },
+  {
+    icon: "🏫",
+    title: "Schools, Local Authorities & Public Bodies",
+    description: "Schools and public buildings often contain extensive asbestos installations — pipe lagging, ceiling tiles, floor tiles, and boiler room insulation. DfE guidance requires robust asbestos management. These clients commission surveys, removals, and ongoing re-inspections."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners & Domestic Clients",
+    description: "Homeowners discovering suspected asbestos during renovation — garage roof sheets, textured coatings, old floor tiles, and flue gaskets. Often anxious and seeking reassurance. A professional AI greeting that asks informed questions calms the caller and builds trust."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand asbestos terminology?",
+    answer: "Every term across the full scope of asbestos work is recognised — management surveys, R&D surveys (HSG264), asbestos-containing materials (ACMs), asbestos insulating board (AIB), pipe lagging, sprayed coatings (limpet asbestos), textured decorative coatings, asbestos cement products, chrysotile, amosite, crocidolite, licensed and non-licensed removal categories, notifiable non-licensed work (NNLW), full enclosures, decontamination units, 4-stage clearance, UKAS-accredited air monitoring, HSE notifications, controlled waste consignment notes, and duty holder obligations under the Control of Asbestos Regulations 2012. When a demolition contractor describes 'needing an R&D survey for a 1960s industrial unit with suspected lagging, AIB, and asbestos cement roof sheets,' the AI captures the scope precisely."
+  },
+  {
+    question: "Can the AI distinguish between a domestic garage roof and a licensed removal project?",
+    answer: "A homeowner calling about 'what looks like asbestos on the garage ceiling' generates a fundamentally different lead from a demolition contractor describing 'licensed removal of AIB and lagging from a six-storey commercial building requiring a full enclosure and 14-day HSE notification.' The AI adjusts its questions — domestic calls capture the material type, condition, location within the property, and the homeowner's level of concern, while commercial licensed projects capture the building type, ACM types, approximate quantities, programme dates, and whether the R&D survey has already been completed."
+  },
+  {
+    question: "What about urgent R&D survey calls?",
+    answer: "Demolition programmes are derailed when asbestos surveys are delayed — every day of slippage costs the main contractor money and disrupts downstream trades. The AI identifies the programme urgency from the caller's language, captures the building type, suspected ACM locations, and the demolition start date, and escalates the lead for priority scheduling."
+  },
+  {
+    question: "How much does this cost for an asbestos company?",
+    answer: `Asbestos removal specialists pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a survey-only consultancy or a fully HSE-licensed removal contractor, the allowance covers your call patterns. Each additional channel is £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a small licensed removal team?",
+    answer: "Small licensed teams — two or three operatives suited up inside enclosures for hours at a time — benefit the most. When every person in the company is behind RPE removing AIB in a controlled environment, no one can touch a phone. The AI captures every survey request and removal enquiry during your most productive working hours."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Set your AI coverage schedule from the dashboard to match your working patterns exactly. During on-site licensed removals, enclosed operations, and field surveys — route all calls to the AI. During office time when you write survey reports, prepare plans of work, and submit HSE notifications — take calls directly. A single tap from your phone overrides the schedule instantly."
+  },
+  {
+    question: "How is asbestos project data protected?",
+    answer: "Asbestos enquiries contain building addresses, survey findings, ACM types and locations, health-and-safety-sensitive information, and commercially sensitive tender data. All information captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No survey data or client details are disclosed to competing asbestos firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Asbestos Removal Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK asbestos removal specialists — licensed removal, R&D surveys, management surveys, and safe disposal. Never miss an enquiry inside the enclosure. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/asbestos-removal/ai-receptionist/"
+  tradeName="Asbestos Removal Specialist"
+  tradeNamePlural="Asbestos Removal Specialists"
+  tradeSlug="asbestos-removal"
+  headline="The AI Receptionist Built for Asbestos Removal Specialists"
+  accentWord="Asbestos Removal"
+  subhead={`You cannot answer the phone when you are suited up inside a decontamination enclosure, RPE sealed, carefully removing asbestos insulating board from a partition wall and double-bagging every panel. Your AI receptionist captures every call, every message, and every enquiry — from demolition contractors needing urgent R&D surveys to property managers commissioning asbestos registers. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next R&D Survey Instruction Arrives While You Strip the Enclosure"
+  ctaSubhead={`A demolition contractor with a ten-day programme will call three licensed firms today. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>
