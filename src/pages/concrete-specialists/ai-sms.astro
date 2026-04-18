@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Contractor Pour Texts',
+    text: "Builders text to confirm concrete availability — 'can you pour 10m3 C25 into foundations Wednesday morning, OX3?' A fast confirmation keeps the bricklayers on programme. Silence and they text the next concrete team."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Concrete Briefs from Short Messages',
+    text: "A text like 'warehouse floor, 800 sqm, C35, fibre reinforced, power float, need pour date in 2 weeks' gives the AI enough. It asks about the bay layout and pump type. Your lead arrives with specification detail."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Builder Referral Texts',
+    text: "When a builder recommends you to a colleague, the referred builder texts about their own pour. The AI captures the concrete requirement while the referral is fresh and the builder is actively booking."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Builders confirm next week's pours in the evening. Groundworkers request foundation concrete after hours. Homeowners text about driveway and patio slabs at 9pm. The AI catches every after-hours concrete message."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Bookings',
+    text: "Messages arrive in fragments — 'need concrete' then '12 cubic metres' then 'C25' then 'strip foundation' then 'Tuesday morning.' The AI builds one cohesive pour request from every fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS operates on your business number. Pour scheduling, volume confirmations, and grade specifications stay separated from personal messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound concrete text?",
+    answer: "It reads the message and replies using your company name within seconds. A detailed text — 'need 35m3 C30 A252 mesh into raft foundation, boom pump required, Headington, pour Friday at 6am, 5 wagons at 30-minute intervals' — is acknowledged with every specification preserved. A vague text — 'how much for some concrete for a shed base?' — triggers questions about the slab dimensions, sub-base preparation, and access for the mixer truck."
+  },
+  {
+    question: "Will the builder realise it is AI-generated?",
+    answer: "The reply reads like a concrete contractor checking messages between pours — practically worded, specification-aware, and schedule-focused. It uses your company name and asks about the grade, volume, and placement method. Builders texting concrete firms expect a swift, competent reply that demonstrates you understand the difference between chute access and boom pump placement."
+  },
+  {
+    question: "What about volume adjustment texts from existing clients?",
+    answer: "Current clients text about volume changes, grade adjustments, pour date movements, and additional orders. The AI captures these and categorises them separately from new bookings. Your dashboard distinguishes a new builder's 20-cubic-metre foundation booking from a current client adding 4 cubic metres to Friday's slab pour."
+  },
+  {
+    question: "What does AI SMS cost for concrete firms?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. Concrete projects range from £250 domestic shed bases to £80,000 commercial floor contracts. Capturing a developer's multi-bay warehouse floor through a timely text — while you tamped a foundation pour on another site — generates revenue that exceeds the channel cost for years.`
+  },
+  {
+    question: "Can I text back personally?",
+    answer: "Drop a reply into any thread and the conversation transfers to you instantly. During office hours — scheduling wagons, coordinating pumps, and pricing pours — manage texts yourself. During active concrete placement — wagons arriving, concrete flowing, and the float running — let the AI keep bookings coming while your hands stay on the slab."
+  },
+  {
+    question: "How is text data from concrete enquiries stored?",
+    answer: "Text messages containing site addresses, concrete specifications, pour schedules, volume requirements, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing concrete firms or repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Concrete Specialists | Rapid Receptionist"
+  description={`AI SMS for UK concrete specialists. Responds to foundation pour confirmations, warehouse slab tenders, and volume adjustment texts while you work the slab. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/concrete-specialists/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Concrete Specialist"
+  tradeNamePlural="Concrete Specialists"
+  tradeSlug="concrete-specialists"
+  headline="AI SMS for Concrete Specialist Companies"
+  accentWord="Concrete"
+  subhead="You are at the batching plant yard at 6:30am, loading your power float and finishing tools onto the van — bull float, magnesium hand floats, edging trowels, vibrating screed bar, and the walk-behind power float strapped to the tailgate. At 6:45am a builder texts: 'Morning — need concrete for a new-build garage floor. Semi-detached in Kidlington. 35 sqm, C25 GEN1, 150mm thick, A142 mesh already in. Tamped finish is fine, no need for power float. Can you pour and finish it? Need it Monday. Chute access no problem — wagon can reverse right to the slab.' Your phone is in the van cab and your hands are ratcheting the power float to the van floor. Without AI SMS, the text sits until you reach the first pour at 7:30. He texts another firm; they confirm at 7am. With it, the AI responds at 6:46am, confirms your domestic slab capability, and asks whether the sub-base is compacted and DPM laid. He confirms both ready. At 8am between loads you review the lead and call. You confirm Monday and order 6 cubic metres from the plant."
+  scenario="It is 7:30pm on a Wednesday. A property developer in Banbury is finalising the groundwork programme for a small residential development — four detached houses on a greenfield plot. The structural engineer has specified individual raft foundations for each plot — 110 sqm per raft, C35, 250mm thick with A252 mesh top and bottom, edge beams at 500mm x 300mm around the perimeter, and the top surface power floated smooth to receive the timber-frame sole plates. He texts three concrete firms: 'Evening — need raft foundations poured on a 4-house development in Banbury. C35, A252 mesh top and bottom, about 110 sqm per raft, power floated finish. 4 plots, one raft per week over 4 weeks. Boom pump needed — site access is fine for a 36m boom. Can you handle the programme? Need to start in 3 weeks.' Without AI SMS, you see the text Thursday morning. One competitor confirmed availability Wednesday evening. With AI SMS, the AI responds at 7:32pm: 'Thank you — we handle raft foundation programmes regularly with our power float crew. Could you confirm the edge beam reinforcement detail and whether the sub-bases will be inspected by building control before each pour? We will plan the weekly pour sequence accordingly.' He confirms edge beam cages specified and BC will inspect each raft morning of pour. Thursday you open the lead: 4-plot housing, Banbury, raft foundations, C35, A252 top and bottom, 110 sqm each, edge beams, power floated, 36m boom, one per week over four weeks, three-week start. You call at 8am and book a site meeting."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/concrete-specialists/ai-receptionist/"
+  ctaHeadline="Catch the Four-Plot Raft Foundation Text While You Load the Power Float"
+  ctaSubhead={`A developer texts about C35 raft foundations on a 4-house programme while you strap the float. The AI replies from the cab. Add-on at £${pricing.addOn.price}/month.`}
+/>

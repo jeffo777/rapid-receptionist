@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Pour the Concrete',
+    text: "Active pours demand total focus — wagons tipping into the pump hopper, the boom swinging across the slab, the placing gang spreading, the vibrator compacting, the finishers following with bull floats. The AI answers every call in your company name while the concrete flows."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Diverse Concrete Briefs',
+    text: "When a developer calls about a 3,000 sqm warehouse floor, the AI captures the grade, reinforcement, flatness spec, pump type, and bay pour schedule. When a homeowner calls about a driveway base, the AI captures the dimensions, vehicle loading, sub-base condition, and preferred pour date."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Urgent Pour Confirmations',
+    text: "Weather windows open unexpectedly. A main contractor calls at 2pm — 'the rain has cleared, can you pour tomorrow morning at 7am? Eight cubic metres of C25 into strip foundations.' The AI captures the site, volume, grade, and start time and escalates for same-day confirmation."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Booking Calls',
+    text: "Builders plan next week's pours in the evening. Homeowners call after work about shed bases and patio concrete. The AI captures every out-of-hours concrete booking before they call the next firm on Wednesday morning."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Built for Scheduling',
+    text: "Each lead specifies the concrete grade, volume, reinforcement type, placement method, finish required, pour date, site access constraints, and pump requirements — everything you need to order wagons, schedule the crew, and book the pump."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional First Contact',
+    text: "A concrete company that answers professionally and asks about the grade, volume, and placement method signals an organised operation that understands the difference between a C25 trench fill and a C40 superflat warehouse slab."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their concrete needs?",
+    answer: "The questioning adapts to the project. A main contractor commissioning a warehouse floor is asked about the slab area, concrete grade, reinforcement specification (mesh or fibre), flatness tolerance (FM1/FM2/SR), placement method (pump or direct), the number of bays, construction joint details, and the pour date within the programme. A builder ordering foundation concrete is asked about the foundation type (strip, trench-fill, raft), volume, grade, placement (chute, pump, or skip), and programme timing. A homeowner wanting a garden slab is asked about the dimensions, intended use, access for the mixer truck, and preferred date."
+  },
+  {
+    question: "Can the AI handle both domestic and commercial concrete enquiries?",
+    answer: "Concrete firms work the full range — from a 3-cubic-metre C20 shed base placed by wheelbarrow, through to a multi-bay C40 steel-fibre warehouse floor pumped by a 42-metre boom, power floated by a four-man crew working through the night. The AI adjusts its questioning accordingly. Domestic leads gather simple dimensions and access details; commercial leads gather specifications, flatness tolerances, reinforcement schedules, pump requirements, and programme milestones."
+  },
+  {
+    question: "What about calls during active pours?",
+    answer: "Concrete pours are the single most time-critical operation in construction. Once the first wagon tips, the clock starts — every minute matters. The AI handles calls during the pour window with the same professionalism as a quiet morning in the office, ensuring no opportunity is lost while every member of your crew focuses on placing, vibrating, and finishing the slab."
+  },
+  {
+    question: "How many call minutes are included?",
+    answer: `The Core plan includes ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Concrete firms receive a blend of main contractor subcontract calls, builder foundation bookings, homeowner domestic slab requests, and urgent pour confirmation calls. Most concrete companies operate within the allowance. If a large warehouse project generates a surge of coordination calls, overage is billed at 20p per minute with no lock-in or penalties.`
+  },
+  {
+    question: "Can I answer calls during quoting and office time?",
+    answer: "When you are at your desk — calculating volumes, ordering wagons, scheduling pumps, or coordinating with the ready-mix plant — answer calls directly. Toggle to AI answering when the first wagon leaves the batching plant. Switch back when the last bay is finished and your crew leaves site."
+  },
+  {
+    question: "How is concrete project data secured?",
+    answer: "Concrete enquiries contain site addresses, structural drawings, reinforcement schedules, pour programmes, and commercially sensitive subcontract pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details are shared with competing concrete firms, disclosed to other site trades, or sold to lead services."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Concrete Specialists | Rapid Receptionist"
+  description={`AI phone answering for UK concrete specialists. Captures warehouse floor tenders, foundation pour bookings, and urgent concrete placements while you finish the slab. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/concrete-specialists/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Concrete Specialist"
+  tradeNamePlural="Concrete Specialists"
+  tradeSlug="concrete-specialists"
+  headline="AI Phone Answering for Concrete Specialist Companies"
+  accentWord="Concrete"
+  subhead="A logistics developer calls at 6:45am. He is building a 40,000-square-foot distribution centre on a business park outside Witney — the structural steel frame is up, the mezzanine deck is in, and the ground-floor slab pour is next on the programme. He needs 4,200 square metres of C35 steel-fibre-reinforced concrete, placed by a 52-metre boom pump, power floated to FM2 tolerance with superflat aisles in the racking zones, poured in eight bays over four consecutive nights between 10pm and 6am to avoid disrupting the adjacent operating units. He needs your crew, your float equipment, and a start date in three weeks. You are on a different site — a residential development in Headington where your crew is pouring C25 oversite concrete into the prepared sub-base of plot twelve. The mixer truck is reversing, your labourer is directing the chute, and you are raking the concrete level before tamping. Your phone is in the van cab. Without AI Phone Answering, the logistics developer hears voicemail and calls the next concrete firm. With it, the AI captures the entire brief — distribution centre, Witney, 4,200 sqm, C35 steel-fibre, 52m boom, FM2 superflat aisles, eight bays, four nights, three-week start — and your lead waits in the van."
+  scenario="It is 2pm on a Thursday. You are power floating a freshly placed office floor slab in Abingdon — 380 square metres of C30 mesh-reinforced concrete placed that morning, the surface moisture evaporating, the timing window for floating narrowing by the minute. You are running a walk-behind power float, producing a smooth, dense finish while your labourer edges the perimeter with a hand trowel. Three calls come in between 1pm and 4pm. Without AI Phone Answering, one voicemail — 'need some concrete done' — two hang up. By Friday, two have booked other firms. With AI Phone Answering, all three are answered. Lead one: a builder in Charlbury needing 22 cubic metres of C25 placed into raft foundation formwork for a new-build bungalow — pump required because the access is too narrow for the wagon's chute, pour date next Wednesday. Lead two: a groundworker in Eynsham needing 8 cubic metres of C20 blinding concrete placed into strip foundation trenches — two wagons, chute placement, pour tomorrow if available. Lead three: a homeowner in Botley needing a 60-square-metre concrete base for a double garage — reinforced with A142 mesh, tamped finish, access from the driveway. At 5pm you check three leads — a raft foundation with pump, urgent blinding concrete, and a domestic garage base — and schedule all three."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/concrete-specialists/ai-receptionist/"
+  ctaHeadline="Distribution Centre, Raft Foundation, and Double Garage Base — All in Three Hours"
+  ctaSubhead={`While you power floated the office slab, three concrete opportunities called. The AI captured every grade, volume, and pump requirement. From £${pricing.tiers.core.price}/month.`}
+/>

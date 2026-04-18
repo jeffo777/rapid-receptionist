@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Site Photos for Quoting',
+    text: "Builders and homeowners WhatsApp photos of excavations, sub-bases, formwork, and prepared areas. The AI responds within seconds, asks about the concrete grade and volume, and attaches every photo to your lead for pricing."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Urgent Pour Slots',
+    text: "When a builder's original concrete crew cancels the morning of the pour, the first replacement firm to respond keeps the wagons rolling. Speed of WhatsApp response directly determines whether cement hardens in the mixer or on the slab."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Builder Pour Requests',
+    text: "Builders WhatsApp concrete orders daily: 'need 6 cubic metres C25 into trench fill tomorrow at 8am, site in Marston, chute access fine.' The AI captures the volume, grade, placement, and timing while you are knee-deep in wet concrete on another site."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Builders confirm concrete requirements in the evening — 'can you add 2 cubic metres to Wednesday's order? The architect changed the retaining wall detail.' The AI captures every adjustment and addition."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Concrete Requests',
+    text: "A WhatsApp saying 'concrete base needed, about 8m x 5m, for a garden office, 100mm thick, mesh reinforced, Woodstock area' becomes a structured lead with dimensions, specification, reinforcement, and location."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp uses your business number. Pour schedules, volume confirmations, and subcontract pricing stay professional and separated from personal messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess concrete requirements from site photos?",
+    answer: "The AI does not calculate volumes or specify grades from images, but it responds effectively — acknowledging the excavation or prepared area — and asks the questions you need for quoting: the area or length, the required concrete depth, the grade specified by the engineer, the reinforcement type, whether a pump is needed, the placement date, and any curing requirements. Every photo is attached to your lead for your own assessment."
+  },
+  {
+    question: "What about multi-message pour threads?",
+    answer: "Concrete orders evolve — a builder messages about a foundation pour, then sends the engineer's specification, then asks about adding a ground-floor oversite to the same delivery, then confirms the pour date. The AI maintains the complete thread and consolidates every message into one structured concrete booking."
+  },
+  {
+    question: "How much does AI WhatsApp cost for concrete firms?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. Concrete projects range from £300 domestic shed bases to £80,000 warehouse floor contracts. Securing a developer's 2,000 sqm floor slab through a rapid WhatsApp response — while you vibrated rebar cages on a foundation pour — pays for the channel cost many times over.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Reply once in any thread and the AI hands control to you immediately. It detects your message and withdraws. Most concrete firms let the AI handle the initial capture — volume, grade, reinforcement, pump requirement, placement method, and pour date — then follow up to confirm wagon delivery times and crew logistics."
+  },
+  {
+    question: "How is WhatsApp data from concrete enquiries protected?",
+    answer: "Every WhatsApp message — site photographs, pour locations, concrete specifications, delivery schedules, and contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data goes exclusively to you. No pour details are shared with competing concrete firms, disclosed to ready-mix suppliers, or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Concrete Specialists | Rapid Receptionist"
+  description={`AI WhatsApp for UK concrete specialists. Responds to excavation photos, pour confirmations, and foundation concrete bookings while you finish the slab. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/concrete-specialists/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Concrete Specialist"
+  tradeNamePlural="Concrete Specialists"
+  tradeSlug="concrete-specialists"
+  headline="AI WhatsApp for Concrete Specialist Companies"
+  accentWord="Concrete"
+  subhead="A builder WhatsApps at 11:30am with three photos — freshly excavated strip foundations for a pair of semi-detached houses in Cowley. Trenches clean, formation inspected, building control signed off, rebar starter bars in place. His message: 'Mate — foundations are ready. Need 28 cubic metres of C25 GEN3 with 75mm slump into these strip foundations. Two semis, pumped because the access track is 80 metres from the road. Need the pour Thursday morning, 7am start, all in one day. Bricklayers starting Monday. Can you do it? Going to need 3 wagons minimum, maybe 4.' You are on a commercial site in Abingdon — the placing gang has just started a 450-cubic-metre suspended slab pour on a multi-storey car park. The boom pump is swinging, concrete is flowing through the line, the vibrator gang is compacting around the rebar cages, and you are coordinating wagon arrivals with the batching plant by radio. Your phone is on the edge of the formwork. Without AI WhatsApp, the builder's message waits until the lunch break. He messages two other firms; one confirms by noon. With it, the AI responds instantly, confirms your pump availability, asks about the trench depth and whether the pour includes any ground beams or pile caps, and captures the lead — two semis, Cowley, 28m3, C25, 75mm slump, pumped, 80m access, Thursday 7am, 3–4 wagons. At the break you review and confirm."
+  scenario="It is Sunday evening. A landscape gardener in Woodstock has been commissioned to build a large outdoor entertaining area for a client — a 75-square-metre patio using exposed aggregate concrete with a decorative stone finish. The sub-base is prepared, the formwork is set, and he needs a concrete team to place and finish the slab with the exposed aggregate technique. He WhatsApps three concrete firms: 'Hi — I am a landscaper and need a concrete team for an exposed aggregate patio. About 75 sqm, formwork is done, sub-base is down. Need the concrete placed and finished with the exposed aggregate wash. client wants a golden Cotswold stone aggregate. Is this something you do? Site is Woodstock, good access. Want to pour next week if possible.' Without AI WhatsApp, you see the message Monday morning. One firm replied Sunday night with photos of similar exposed aggregate work. With AI WhatsApp, the response arrives within seconds, asks about the slab thickness, whether reinforcement mesh is required, and the preferred pour day. He confirms 100mm thick, A142 mesh, and Thursday if available. Monday you open the lead: exposed aggregate patio, Woodstock, 75 sqm, 100mm, A142 mesh, Cotswold stone aggregate, landscape contractor, Thursday pour. You call at 8am and confirm the crew."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/concrete-specialists/ai-receptionist/"
+  ctaHeadline="Respond to the Foundation Photos While You Coordinate the Suspended Slab Pour"
+  ctaSubhead={`A builder sends three photos of excavated strip foundations needing 28 cubic metres Thursday morning. The AI responds while the boom pump swings. Add-on at £${pricing.addOn.price}/month.`}
+/>

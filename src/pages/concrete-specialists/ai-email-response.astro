@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Contractor Concrete Tenders',
+    text: "Main contractors email concrete subcontract tenders with programme deadlines. The concrete firm that acknowledges first — referencing the slab area, grade, and pour schedule — demonstrates the capacity and professionalism that keeps them on approved subcontractor lists."
+  },
+  {
+    icon: '📐',
+    title: 'References Technical Specifications',
+    text: "When a developer emails specifying '3,500 sqm warehouse floor, C40 steel-fibre, boom pumped, FM1 superflat in racking zones, twelve bays over six nights,' the AI acknowledgement references the grade, fibre type, flatness tolerance, bay schedule, and night pour requirement."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your On-Site Pour Gap',
+    text: "Concrete specialists spend entire shifts pouring, vibrating, and floating. A developer's tender arriving at 9am sits unopened until the float stops running. The sixty-second acknowledgement puts your firm ahead of every competing concrete contractor."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Operations',
+    text: "Your inbox mixes contractor tenders, ready-mix plant delivery confirmations, pump hire invoices, rebar supplier quotes, admixture data sheets, and concrete testing lab reports. The AI identifies genuine subcontract tenders and project enquiries."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Contractor Loyalty',
+    text: "Main contractors who find a reliable concrete team use them on every project. Consistent instant acknowledgements keep your firm as the default concrete subcontractor across their development programme."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Concrete tenders regularly include structural drawings, reinforcement schedules, floor flatness specifications, and pour programme bar charts. The AI notes these attachments in both the acknowledgement and your lead summary."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce concrete quotes from tenders?",
+    answer: "No quotes are produced by the AI — only a professional receipt acknowledgement referencing the concrete specification, slab area, and programme timeline. Your concrete pricing — material costs, pump hire, crew labour, float equipment, reinforcement supply, and pour programme scheduling — is calculated by you from your own assessment of the structural drawings and site conditions."
+  },
+  {
+    question: "Will it respond to ready-mix plant and pump hire emails?",
+    answer: "During onboarding you specify which email types trigger the auto-acknowledgement. Concrete delivery confirmations from the batching plant, pump hire invoices, rebar supplier delivery notes, admixture product sheets, cube test results from the concrete lab, and CITB training notifications are excluded. Only genuine subcontract tenders and client project enquiries receive the professional acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner concrete enquiries?",
+    answer: "Domestic enquiries via your contact form — 'we need a concrete base for a garden room, the carpenter said to arrange the slab separately' — receive a professional reply confirming your domestic concreting capability, asking about the slab dimensions, intended use, sub-base condition, mixer truck access, and preferred pour date, and categorising the lead separately from commercial tenders."
+  },
+  {
+    question: "What does email response cost for concrete companies?",
+    answer: `This channel is £${pricing.addOn.price}/month as an add-on. Concrete contracts range from £250 domestic bases to £100,000 multi-bay commercial programmes. Acknowledging a developer's warehouse floor tender within sixty seconds — while you operated the ride-on float on a different slab — secures a shortlist position for a five-figure contract.`
+  },
+  {
+    question: "Can all follow-up correspondence come from me?",
+    answer: "From the second email onwards, every piece of correspondence is yours. Your concrete quotation, method statement, pour programme, pump specification, crew schedule, and contractual terms are authored, calculated, and submitted by you and your team without AI involvement."
+  },
+  {
+    question: "How is concrete tender data secured?",
+    answer: "Concrete tenders contain structural drawings, reinforcement schedules, floor specifications, pour programmes, and competitively sensitive pricing. All email data is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender information is disclosed to competing concrete firms, discussed with ready-mix suppliers, or distributed to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Concrete Specialists | Rapid Receptionist"
+  description={`AI email response for UK concrete specialists. Acknowledges warehouse floor tenders and structural concrete subcontracts within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/concrete-specialists/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Concrete Specialist"
+  tradeNamePlural="Concrete Specialists"
+  tradeSlug="concrete-specialists"
+  headline="AI Email Response for Concrete Specialist Companies"
+  accentWord="Concrete"
+  subhead="A main contractor emails a structural concrete subcontract tender for a multi-storey student accommodation building in central Oxford — reinforced concrete frame, six storeys, with C40 concrete placed into steel-reinforced formwork for the columns, transfer beams, and suspended floor slabs. The structural engineer's reinforcement schedule specifies T25 bars at 150-millimetre centres in the beams, A393 mesh in the slabs, and stainless steel dowels at the construction joints. The pour programme runs eighteen weeks with floor-by-floor progression — columns on Monday, beams on Wednesday, slab pour Friday. He needs the tender returned within two weeks. You are on a commercial site in Witney, supervising a ground-floor slab pour — 14 cubic metres of C30 flowing through a line pump into steel formwork, the vibrating gang compacting around the beam reinforcement, the finishers screeding the surface level to the formwork edge. Your phone is in the site office. Without AI Email Response, the student accommodation tender sits until 6pm. Two competing concrete firms acknowledged by 10am. With it, your acknowledgement arrives within sixty seconds, referencing the six-storey RC frame, C40, T25 beams, A393 slab mesh, stainless dowels, and the eighteen-week floor-by-floor programme."
+  scenario="It is 6:30am on a Monday. Your inbox accumulated over the weekend: a residential developer requesting prices for foundations and ground-floor slabs on a twelve-plot housing estate — strip foundations in C25, oversite slabs in C25 with A142 mesh, twelve houses poured sequentially over eight weeks, a commercial client needing a 200-square-metre loading yard in C35 fibre-reinforced concrete with a power-floated finish to the internal bay and a tamped finish to the external area, a homeowner asking through your website about a driveway in patterned concrete — approximately 50 sqm with integral colour, and a concrete testing lab emailing cube test results from last week's warehouse pour. Without AI Email Response, you scan subjects in the van. The housing estate tender sits until Tuesday. Two competitors responded Monday morning. With AI Email Response, the twelve-plot estate receives an immediate acknowledgement referencing the sequential foundation programme and oversite specification, the loading yard specification is acknowledged with internal/external finish split noted, the domestic patterned driveway is handled, and the lab email is filtered. At lunch you prioritise the twelve-plot estate — estimated value £45,000 — and begin pricing."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/concrete-specialists/ai-receptionist/"
+  ctaHeadline="Acknowledge the Six-Storey RC Frame Tender While the Line Pump Flows"
+  ctaSubhead={`A main contractor's eighteen-week structural programme starts with the email landing. Your sixty-second acknowledgement secures the shortlist for T25 beams and A393 slabs. Add-on at £${pricing.addOn.price}/month.`}
+/>

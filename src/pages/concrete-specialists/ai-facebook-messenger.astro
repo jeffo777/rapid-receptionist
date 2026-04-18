@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Power Float and Pour Videos',
+    text: "Concrete finishing videos are mesmerising on Facebook — ride-on floats gliding across warehouse slabs, boom pumps swinging concrete into formwork, freshly floated surfaces gleaming under floodlights. When a contractor messages about their own slab, the AI captures the project."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Site Photo Messages',
+    text: "Builders message with photos of prepared sub-bases and excavated trenches — 'can you pour this foundation next week?' The AI asks about the concrete volume, grade, and placement method, converting the visual enquiry into a pour booking."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Local Contractor Referrals',
+    text: "When you pour a neighbour's driveway or a builder's extension slab and they tag your company, their colleagues message: 'Can you do a similar slab for my project?' The AI converts every referral into a concrete lead."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Evening Planning',
+    text: "Builders browse Facebook after site hours, confirming concrete requirements for upcoming pours. Messages at 8pm about 'concrete for a foundation next Tuesday' carry genuine booking intent from contractors who have already seen your work."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Pour Requests',
+    text: "Messenger conversations about concrete start simply — 'how much to concrete my driveway?' The AI asks about the area, current surface, sub-base condition, desired finish, and access for the mixer."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Pour Video',
+    text: "Every power float time-lapse, boom pump placement sequence, and polished floor reveal posted to Facebook can generate a concrete booking from a contractor or homeowner with a similar project."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my concrete company?",
+    answer: "A Business page is required for the Messenger connection — personal Facebook profiles cannot integrate. Concrete companies posting pour progress time-lapses, power float sequences, and finished floor close-ups attract strong engagement from builders and developers who assess the surface quality visually. The AI turns that visual engagement into actionable concrete bookings."
+  },
+  {
+    question: "What concrete enquiries arrive through Messenger?",
+    answer: "Predominantly builders and homeowners. Builders message about upcoming foundation pours, floor slabs, and oversite concrete — 'can you pour 15 cubic metres into strip foundations next week?' Homeowners ask about domestic slabs — 'how much to concrete my back garden for a patio?' Both are pre-qualified leads from people who have reviewed your work and need concrete for a specific project with a real timeline."
+  },
+  {
+    question: "How quickly does the AI reply on Messenger?",
+    answer: "Your reply reaches the sender within seconds of their message landing. Facebook displays your company as actively responding. Builders comparing concrete firms for a programme-critical pour — where a one-day slip pushes the bricklayers back a week — award the booking to the team that confirms availability first."
+  },
+  {
+    question: "What does Messenger cost for concrete companies?",
+    answer: `Messenger is £${pricing.addOn.price}/month as a channel add-on. Concrete projects span from £250 domestic shed bases to £80,000 multi-bay warehouse floor programmes. A single developer's warehouse floor booking, secured through a prompt Messenger reply while two competitors sat unanswered overnight, generates revenue that eclipses the channel cost for the foreseeable future.`
+  },
+  {
+    question: "Can I continue Messenger conversations myself?",
+    answer: "Post your own reply in any Messenger thread and the AI yields control permanently. It recognises your response and steps back. Most concrete firms let the AI gather the initial pour scope — volume, grade, reinforcement, pump requirement, finish, and date — then follow up to discuss wagon scheduling, pump logistics, and pricing."
+  },
+  {
+    question: "How is Messenger data from concrete queries protected?",
+    answer: "All Messenger conversations, site photographs, pour locations, concrete specifications, delivery details, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. No pour details are disclosed to competing concrete firms, shared with ready-mix suppliers, or sold to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Concrete Specialists | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK concrete specialists. Converts power float videos and pour showcases into foundation and slab bookings. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/concrete-specialists/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Concrete Specialist"
+  tradeNamePlural="Concrete Specialists"
+  tradeSlug="concrete-specialists"
+  headline="AI Facebook Messenger for Concrete Specialist Companies"
+  accentWord="Concrete"
+  subhead="You post a ninety-second time-lapse of a night pour — the boom pump silhouetted against sodium floodlights, concrete flowing from the boom tip into a 1,600-square-metre warehouse bay, your placing gang spreading and vibrating, then the ride-on power float circling at 3am producing a mirror-smooth surface that reflects the overhead lights. One hundred and ninety likes, fifty-two shares. A logistics developer in North Oxford messages: 'That floor finish is exactly what we need. We are building a new distribution hub near Begbroke — 2,800 sqm floor, C40 steel-fibre, needs to be FM2 minimum because we are installing automated pallet racking. The structural engineer wants 200mm thick slab on 150mm sub-base. Can you achieve that level of finish consistently across 2,800 sqm? We need to pour in 6 bays over 3 weekends to avoid disrupting the adjacent warehouse.' You are on site. Without AI Messenger, the distribution hub message waits until the portakabin. With it, the AI asks about the racking layout, whether joint positions need coordinating with the rack legs, and the target pour start date. The developer confirms anti-crack joints aligned to racking, start in five weeks. Your lead — distribution hub, Begbroke, 2,800 sqm, C40 steel-fibre, FM2, 200mm slab, 6 bays, 3 weekends, racking coordination, five-week start — is captured."
+  scenario="It is 9pm on a Thursday. A builder in Eynsham has just been awarded a contract to build four garages at the rear of a terrace of Victorian houses — one double garage and three singles. Each garage needs a 150mm C25 ground-bearing slab with A142 mesh, tamped finish, and a fall to the front for drainage. Access is through a shared rear lane wide enough for a mixer truck. He finds your Facebook page through a local builders' group recommendation and messages: 'Hi — need concrete for 4 garage floors at the back of some terraced houses in Eynsham. 1 double garage and 3 singles. C25, mesh reinforced, tamped finish with a fall to the front doors. Access is through a back lane — wagon access fine. Want to pour all 4 in one day if possible. Can you do it in about 3 weeks? What volume would you estimate roughly?' Without AI Messenger, you see the message Friday morning. One competitor replied at 9:30pm with a volume calculation. With AI Messenger, the response arrives at 9:01pm: 'Thank you — four garage slabs in a single day is a standard domestic pour for us. Could you confirm the approximate dimensions of each garage and the slab thickness so we can calculate volumes and wagon numbers? We will plan the pour sequence to work through all four in one visit.' He sends dimensions. Friday you calculate volumes and call at 8am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/concrete-specialists/ai-receptionist/"
+  ctaHeadline="Turn Night Pour Time-Lapses into Distribution Hub Floor Bookings"
+  ctaSubhead={`A ninety-second night pour reel earns one hundred and ninety likes. AI Messenger converts every logistics developer message into a slab booking with FM2 tolerance and racking coordination. Add-on at £${pricing.addOn.price}/month.`}
+/>

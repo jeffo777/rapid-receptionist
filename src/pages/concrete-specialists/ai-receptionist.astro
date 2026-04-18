@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A main contractor calls about a ground-floor slab pour for a new-build warehouse in Bicester — 2,400 square metres of C35 fibre-reinforced concrete, placed by boom pump, power floated to FM2 tolerance, poured in six bays over three days with construction joints at the bay lines. He needs your crew, your pump, and a pour date that aligns with the structural steelwork programme — the steel erectors arrive the following Monday. You are on another warehouse floor in Kidlington, power floating a 600-square-metre bay — the concrete has been down for ninety minutes, the surface moisture is lifting, and you are running a ride-on power float in slow circles, producing a dense, polished finish. Both hands on the float, ear defenders on, eyes tracking the steel blade across the surface. Your phone is in your coat pocket by the loading door. The main contractor calls three concrete firms. One answers and books a Friday site meeting.",
+    with: "Your AI receptionist answers on the second ring. It captures the complete brief — C35 fibre-reinforced, 2,400 sqm, Bicester warehouse, boom pump, FM2 power float, six bays over three days, construction joints, steelwork programme Monday — and confirms you will call back. At the tea break you review the lead and phone. You confirm the pour date."
+  },
+  {
+    without: "A builder emails on Thursday about foundation concrete for a rear extension — four-bedroom detached in Summertown, strip foundations already excavated by the groundworker, 12 cubic metres of C25 with 50mm slump needed, placed by chute from the mixer truck into the trench, tamped and levelled by your crew. He needs the pour Monday morning before the bricklayers arrive Tuesday. You are on a multi-storey pour in Oxford, placing C30 into rebar cages on a second-floor suspended slab — the pump line running, the placing gang spreading and vibrating, the finishers following with bull floats. The email sits until Sunday.",
+    with: "Your AI acknowledges the builder's email within sixty seconds, referencing the Summertown extension, strip foundations, 12 cubic metres C25, chute placement, and the Monday pour date. Sunday evening you confirm the crew and wagons."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday with photos of a muddy back garden where he wants a 40-square-metre concrete base for a large garden room. He messages three concrete firms. You are at home. By Monday, two have replied and one has visited the site.",
+    with: "The AI responds to the WhatsApp within seconds, asks whether the base needs reinforcement mesh, the required concrete thickness, whether he has planning permission, and the postcode. Monday at 8am you have a structured domestic slab lead with photos and dimensions."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Floor Slabs & Power Floating",
+    items: ["Warehouse and industrial floor slabs to FM1/FM2", "Power floating with ride-on and walk-behind machines", "Fibre-reinforced and mesh-reinforced ground-bearing slabs", "Bay pour planning with construction joints", "Superflat floors for automated warehouse systems", "Coloured and polished concrete finishes"]
+  },
+  {
+    category: "Structural Concrete",
+    items: ["Strip, trench-fill, and raft foundations", "Suspended slabs and beam-and-block floors", "Pile caps and ground beams", "Retaining walls and basement construction", "Formwork and shuttering to structural drawings", "Rebar fixing and reinforcement detailing"]
+  },
+  {
+    category: "Specialist Concrete Services",
+    items: ["Pumped concrete via boom and line pumps", "Volumetric on-site mixed concrete", "Liquid screed and traditional sand-cement screed", "Exposed aggregate and decorative finishes", "Concrete repair and patch-back work", "Core drilling and concrete cutting"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Developers",
+    description: "Main contractors subcontracting concrete packages on commercial and residential developments — warehouse floors, structural frames, foundations, and suspended slabs. Programme-critical pours where a one-day delay to the concrete pushes the follow-on trades back by a week. The concrete crew that answers and confirms a pour date fast keeps the programme on track."
+  },
+  {
+    icon: "🏠",
+    title: "Builders & Groundworkers",
+    description: "House builders and groundwork contractors ordering foundation concrete, oversite slabs, and garage floors. They coordinate excavation, rebar, and concrete across tight domestic programmes. A concrete team that confirms a Monday pour by Thursday keeps the bricklayers on schedule."
+  },
+  {
+    icon: "🏭",
+    title: "Commercial & Industrial Clients",
+    description: "Warehouse operators, logistics companies, and factory owners commissioning new floor slabs, repaired floors, and loading yard concrete. Industrial floors need FM-tolerance power floating — they want a concrete firm that understands loadings, joint layouts, and flatness specifications."
+  },
+  {
+    icon: "🏡",
+    title: "Homeowners & Domestic Clients",
+    description: "Homeowners needing concrete bases for garden rooms, driveways, shed bases, and patios. Often their first experience of ordering concrete — they appreciate clear communication about quantities, access for the mixer, curing times, and what preparation they need to do."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand concrete terminology?",
+    answer: "The complete vocabulary of commercial and domestic concreting is built into the system — ready-mix, volumetric, C20/C25/C30/C35/C40 grades, slump test, fibre-reinforced, mesh-reinforced (A142/A252), rebar, shuttering, formwork, tamping, vibrating, bull floating, power floating (walk-behind and ride-on), FM1/FM2 flatness, bay pours, construction joints, day joints, DPM, blinding, boom pump, line pump, skip and chute placement, screed, oversite, strip foundations, raft foundations, pile caps, ground beams, suspended slabs, and curing. When a contractor describes 'a 1,200 sqm C35 fibre-reinforced floor, boom pumped, power floated FM2, poured in four bays with doweled construction joints,' the AI captures every specification."
+  },
+  {
+    question: "Can the AI distinguish a shed base from a warehouse floor?",
+    answer: "A homeowner calling about 'a concrete base for a shed, about 3 metres by 2 metres' generates a completely different lead profile from a logistics developer describing 'a 5,000 square metre warehouse floor slab — C40 steel-fibre reinforced, boom pumped, power floated to FM1, superflat specification for automated racking, poured in twelve bays over two weeks with a detailed joint layout.' The AI adjusts — domestic projects capture dimensions, access, and preparation, while commercial tenders capture the concrete grade, reinforcement specification, flatness tolerance, pour schedule, and pump requirements."
+  },
+  {
+    question: "What about urgent pour confirmations?",
+    answer: "Concrete work is entirely weather and programme dependent — a main contractor calls at 3pm needing confirmation that your crew and pump are available for a 7am foundation pour tomorrow because the forecasted rain window has shifted. The AI captures the urgency, the pour scope, the site location, and the required start time, and escalates the lead for same-day confirmation."
+  },
+  {
+    question: "How much does this cost for a concrete company?",
+    answer: `Concrete specialists pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat included. Whether you are a two-person domestic concreting team or a large commercial concrete contractor running multiple crews and pumps, the talk-time allowance accommodates your call patterns. Each additional channel is £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a small concreting firm?",
+    answer: "Small concrete teams — a concrete finisher with a labourer and a power float — benefit most directly. When the finisher is on the slab with a bull float in hand and the surface is going off, there is absolutely no opportunity to answer a phone. The AI captures foundation pours, domestic slab bookings, and commercial floor enquiries while the trowel keeps moving."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Coverage is configured from your dashboard and adapts to concrete workflows. During active pours — when the wagons are tipping, the pump is running, and the vibrator is compacting — route all calls to the AI. During quoting, batching schedules, and plant maintenance — take calls yourself. Override from your phone at any moment."
+  },
+  {
+    question: "How is concrete project data protected?",
+    answer: "Concrete tenders contain site plans, structural drawings, reinforcement schedules, pour programmes, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No tender details are disclosed to competing concrete firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Concrete Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK concrete specialists — power floating, foundations, structural concrete, screeding, and pumped concrete. Never miss a pour booking from the slab. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/concrete-specialists/ai-receptionist/"
+  tradeName="Concrete Specialist"
+  tradeNamePlural="Concrete Specialists"
+  tradeSlug="concrete-specialists"
+  headline="The AI Receptionist Built for Concrete Specialists"
+  accentWord="Concrete"
+  subhead={`You cannot answer the phone when you are running a ride-on power float across a warehouse floor at 4am, the concrete setting under your blades, the finish developing with every pass. Your AI receptionist captures every call, every message, and every tender — from developers commissioning 5,000 sqm superflat floors to homeowners wanting a garden room base. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next 2,400 sqm Warehouse Floor Calls While You Power Float the Current One"
+  ctaSubhead={`A main contractor with a steelwork programme waiting needs his slab confirmed today. If voicemail answers, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

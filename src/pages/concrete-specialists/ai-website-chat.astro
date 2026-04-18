@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Contractors Researching Concrete Services',
+    text: "Builders and contractors visit concrete company websites to check capabilities — power floating equipment, pump sizes, commercial floor experience, and domestic slab portfolios. The chat responds from your profile with relevant information while capturing the project scope."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Pour Scale',
+    text: "Through conversation, the AI identifies whether the visitor needs a 4-cubic-metre shed base, a 200 sqm domestic oversite, or a 3,000 sqm warehouse floor. You receive a lead pre-categorised by project complexity and concrete volume."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Programme Planning',
+    text: "Builders finalise next week's concrete orders in the evening. At 9:30pm a groundworker types: 'need 14 cubic metres of C25 into strip foundations on Monday morning — site in Marston, pump access fine.' The chat captures the pour booking before he closes the laptop."
+  },
+  {
+    icon: '📊',
+    title: 'Discusses Concrete Specifications',
+    text: "Visitors ask about specs — 'what grade do I need for a garage floor?', 'do you power float domestic slabs?', 'can you pump through a 150mm line?' The AI responds from your profile while capturing their project requirements."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Project Photos',
+    text: "Concrete websites showcase finished floors — mirror-polished warehouse slabs, exposed aggregate driveways, and coloured concrete patios. The chat converts impressed visitors into pour bookings."
+  },
+  {
+    icon: '✅',
+    title: 'Included Free',
+    text: `Website chat is bundled with phone answering at £${pricing.tiers.core.price}/month. A single code snippet, unlimited concrete enquiry conversations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my concrete company website?",
+    answer: "You receive a compact JavaScript snippet at onboarding. Drop it into your website header — through WordPress, Wix, Squarespace, or direct HTML. The branded chat widget loads on every page within moments. Installation on any platform your concrete company website uses takes under five minutes with no developer required."
+  },
+  {
+    question: "Can the AI discuss concrete grades and specifications?",
+    answer: "Your profile tells the AI about your capabilities, equipment, and typical project range. When a visitor asks 'what grade of concrete do I need for a garage floor that will hold a car and a workbench?' the AI responds from your profile — recommending your standard domestic specification — and captures the garage dimensions, sub-base condition, mixer access, and preferred pour date."
+  },
+  {
+    question: "What project details does chat capture from concrete enquiries?",
+    answer: "The AI gathers the concrete application (foundation, floor slab, oversite, driveway, base), the approximate area or volume, the required grade and reinforcement, the placement method (pump, chute, wheelbarrow), the finish (tamped, floated, polished, exposed aggregate), the pour date, and the visitor's role and contact details."
+  },
+  {
+    question: "Does the chat slow my concrete website?",
+    answer: "The widget loads asynchronously — meaning your existing page content renders first at full speed. Project portfolios, equipment photos, and testimonial sections display before the chat appears. The additional data overhead is negligible and introduces no perceptible delay to your concrete company's page load performance."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Chat operates under the same Core plan as phone answering at £${pricing.tiers.core.price}/month. For concrete companies, these two channels cover the primary enquiry routes: daytime phone calls from main contractors and builders confirming pour dates, and evening website conversations from builders and homeowners planning upcoming concrete work.`
+  },
+  {
+    question: "How is visitor data from concrete queries handled?",
+    answer: "Chat conversations containing site locations, slab specifications, reinforcement requirements, pour schedules, and visitor contact details are encrypted and stored on UK and EU servers compliant with UK GDPR. Lead summaries go exclusively to you. No project information is shared with competing concrete firms or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Concrete Specialists | Rapid Receptionist"
+  description={`AI website chat for UK concrete specialists. Engages builders and developers researching power floating, structural concrete, and pumped placements. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/concrete-specialists/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Concrete Specialist"
+  tradeNamePlural="Concrete Specialists"
+  tradeSlug="concrete-specialists"
+  headline="AI Website Chat for Concrete Specialist Companies"
+  accentWord="Concrete"
+  subhead="A warehouse fit-out contractor finds your website at 8:15pm. He is managing the interior works on a new cold-store facility near Bicester — insulated panel walls installed, racking layout designed, and the floor slab specification just confirmed by the structural engineer. He needs 1,800 square metres of C40 steel-fibre-reinforced concrete, placed by boom pump, power floated to FM1 superflat tolerance in the racking aisles with FM2 for the general floor area. The pour programme splits into five bays over five consecutive nights to maintain the cold-store temperature during installation. He types: 'Hi — we need a superflat warehouse floor for a cold-store facility in Bicester. C40 steel-fibre, about 1,800 sqm, FM1 in the racking aisles. We need night pours — 5 bays over 5 nights. Can your crew handle FM1 tolerance? What power float equipment do you run?' Without chat, he submits a contact form and waits. With AI Website Chat, the AI confirms your FM1 capability, asks about the slab thickness, sub-base specification, and the target pour start date, and captures a detailed lead — cold-store, Bicester, 1,800 sqm, C40 steel-fibre, FM1/FM2 split, five night bays, boom pump — before he finishes his evening planning."
+  scenario="It is midnight on a Sunday. A self-builder in Carterton is designing the foundation for his timber-frame house. The structural engineer has specified a raft foundation — 140 square metres of C30 concrete, 300mm deep, with A252 mesh top and bottom, edge thickening to 450mm around the perimeter, and the surface power floated to receive the sole plate. He has been watching YouTube videos about raft foundations and finds your website through a Google search. He types: 'Hello — I am building my own house and need a raft foundation pouring. About 140 sqm, C30, 300mm thick, mesh reinforced top and bottom. The structural engineer wants the top surface power floated smooth for the timber frame sole plates. I have never ordered concrete before — how does it work? Do you supply the pump and the concrete? Site is in Carterton, good access on a wide road.' Without chat, he bookmarks your site and emails a question on Monday. With AI Website Chat, the AI explains the process steps — sub-base preparation, formwork, mesh placement, concrete delivery, pumping, vibrating, and power floating — asks about the edge beam detail and the target pour date, and captures the full raft foundation brief with dimensions and specification. Monday you call with clear context and schedule a site visit."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/concrete-specialists/ai-receptionist/"
+  ctaHeadline="Capture the Cold-Store Superflat Tender While the Fit-Out Manager Plans at 8pm"
+  ctaSubhead={`A cold-store contractor needs 1,800 sqm of FM1 superflat floor poured over five nights. Your chat captures the racking aisle tolerance and bay schedule before the browser closes. Included at £${pricing.tiers.core.price}/month.`}
+/>

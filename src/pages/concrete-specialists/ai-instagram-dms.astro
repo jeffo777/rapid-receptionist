@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Power Float Reels',
+    text: "Power float reels are hypnotic — the machine circling, the blade tilting, the wet concrete surface transforming into a dense polished finish under the float pans. When followers DM about their own floor project, the AI captures the booking instantly."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Quality-Focused Contractors',
+    text: "Instagram attracts builders and developers who value craftsmanship. A developer DM-ing after watching your float technique is a pre-qualified lead from someone who already trusts your finish standard and wants that quality on their project."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Slab Photo DMs',
+    text: "Builders DM photos of prepared sub-bases and formwork — 'ready for concrete, can you pour this?' The AI asks about the volume, grade, reinforcement, and placement method, converting a visual enquiry into a structured pour booking."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Late-Night Builder Planning',
+    text: "Builders scroll through concrete portfolios after hours, shortlisting firms for upcoming pours. DMs at 11pm about 'foundation concrete for a house extension next month' are genuine bookings from contractors actively scheduling their programme."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Casual DMs',
+    text: "DMs about concrete begin brief — 'how much for a concrete patio?' The AI asks about the area, sub-base condition, desired finish (tamped, floated, exposed aggregate), and access — channelling casual interest into a quotable specification."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Pour Post',
+    text: "Every power float sequence, boom pump placement, exposed aggregate reveal, and polished floor close-up generates potential bookings from contractors and homeowners with a similar project in mind."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "A Business or Creator profile linked to your Facebook page — converted from your settings at no cost in under two minutes. Concrete companies producing visual pour content gain professional audience insights and reach tools that amplify every power float video and finished slab showcase across a wider contractor audience."
+  },
+  {
+    question: "What concrete DMs come through Instagram?",
+    answer: "Primarily builders planning upcoming pours and homeowners wanting driveways, patios, and bases. Common DMs include 'can you pour a foundation next week?', 'how much for a polished concrete floor in my extension?', and 'do you do exposed aggregate driveways?' Each sender has already viewed your work portfolio and has a specific project with a real timeline in mind."
+  },
+  {
+    question: "How quickly does the AI reply to concrete DMs?",
+    answer: "The response lands in the sender's inbox within seconds of the DM arriving. Instagram read receipts confirm your company is engaged and responding. Builders comparing concrete teams for a programme-critical pour — where delaying the slab delays the entire build — book the firm that responds first with relevant specification questions."
+  },
+  {
+    question: "What does Instagram DMs cost for concrete companies?",
+    answer: `Instagram DMs is £${pricing.addOn.price}/month as a channel add-on. Concrete values range from £250 domestic bases to £100,000 warehouse floor contracts. One developer's multi-bay commercial floor, secured through a rapid DM while competing firms' messages sat unread overnight, transforms the monthly outlay into your strongest lead channel.`
+  },
+  {
+    question: "Can I reply to DMs personally?",
+    answer: "Drop one reply into any DM thread and the conversation becomes yours permanently. The AI detects your message and steps aside. Most concrete firms let the AI capture the opening details — slab area, grade, reinforcement, finish type, pump requirement, and pour date — then engage directly to discuss wagon scheduling, crew availability, and pricing."
+  },
+  {
+    question: "Is DM data from concrete queries private?",
+    answer: "All Instagram DM content — site photographs, pour locations, slab specifications, delivery schedules, and sender contact details — is encrypted and stored on UK and EU servers under UK GDPR. Nothing is shared with competing concrete firms, passed to ready-mix suppliers, or made available to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Concrete Specialists | Rapid Receptionist"
+  description={`AI Instagram DMs for UK concrete specialists. Converts power float reels and polished floor showcases into pour bookings from builders and developers. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/concrete-specialists/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Concrete Specialist"
+  tradeNamePlural="Concrete Specialists"
+  tradeSlug="concrete-specialists"
+  headline="AI Instagram DMs for Concrete Specialist Companies"
+  accentWord="Concrete"
+  subhead="Your latest reel is a sixty-second sequence shot at dawn — a 42-metre boom pump swinging across a 900-square-metre commercial floor slab, the concrete arcing from the boom tip into the formwork bay, the placing gang raking and vibrating, and the final shot revealing your walk-behind float producing a butter-smooth C30 surface as the morning sun catches the sheen. Twelve thousand views. An architect in Summertown DMs: 'Beautiful finish — we are designing a contemporary house extension in North Oxford with a polished concrete floor as the finished surface. The floor will be the living space flooring — no tiles or carpet over it. About 85 sqm, ground-bearing slab. We want a smooth, dense, grey polished finish straight from the float. Is this something you specialise in? The client is very particular about the surface quality.' You are on a pour. Without AI DMs, the message waits. With it, the AI asks about the slab thickness, the polish level (burnished, semi-polished, high-gloss), and the architect's programme timeline. Your lead is captured — polished concrete floor, North Oxford, 85 sqm, ground-bearing, exposed finish living space, architect client, quality-critical."
+  scenario="It is 1am on a Saturday. A young farmer near Charlbury is converting a stone barn into a holiday let under Class Q permitted development. The structural engineer has specified a 120-square-metre ground-floor slab — C30, 150mm thick, A252 mesh, with underfloor heating pipes cast into the concrete and the surface power floated to receive a resin coating. The farmer has been scrolling concrete Instagram accounts looking for a team that understands working in rural barns with limited headroom and confined access. He DMs: 'Hi — I am converting a stone barn into a holiday let. Need a concrete floor slab with underfloor heating pipes in it. About 120 sqm, the barn has low headroom so no boom pump — will need a line pump through the door. Stone walls on 3 sides so formwork only needed at the barn opening. C30, mesh reinforced, power floated for a resin finish. Can you pour in a barn? Access is a farm track but a mixer can get down it. Charlbury area.' Without AI DMs, you see the DM Saturday afternoon. One competitor replied at 1:30am with barn conversion experience photos. With AI DMs, the response arrives at 1:01am: 'Thank you — we pour barn conversion slabs regularly. Could you confirm the headroom at the lowest point and the barn opening width for the line pump setup? We will plan the pour around the confined space.' He confirms 2.4m headroom and 3m opening. Saturday you review and call."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/concrete-specialists/ai-receptionist/"
+  ctaHeadline="Turn Dawn Boom Pump Reels into Polished Concrete Extension DMs"
+  ctaSubhead={`A dawn pour reel earns twelve thousand views. AI Instagram DMs converts every architect message into a pour booking with polish level and flatness spec. Add-on at £${pricing.addOn.price}/month.`}
+/>
