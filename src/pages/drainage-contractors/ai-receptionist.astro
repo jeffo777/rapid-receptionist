@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A developer calls about the foul and surface water drainage package for a new-build estate in Didcot — forty-two houses across three phases. Each plot requires 110mm uPVC foul drainage from the SVP to the inspection chambers, 110mm surface water runs from the downpipes to the attenuation crate system, inspection chambers at every change of direction and junction, a communal attenuation tank sized for a 1-in-100-year storm event with 40% climate change allowance, and a hydrobrake flow control device limiting discharge to the agreed greenfield runoff rate. The entire network must be built to adoptable standard under a Section 104 agreement with Thames Water. He needs your fixed price per plot with programme phased to follow the groundworkers. You are in a trench on a housing site in Wantage — laying a 150mm diameter foul sewer run at a 1:80 gradient, the laser level set in the pipe, granular bedding compacted beneath, and the next pipe length being lowered into the trench with the correct spigot-and-socket alignment. Both hands on the pipe. He calls three drainage firms. One answers and schedules a Thursday walkover.",
+    with: "Your AI receptionist answers on the second ring. It captures the scope — forty-two plots Didcot, three phases, 110mm foul and surface water, inspection chambers, attenuation crate system 1-in-100+40%, hydrobrake, Section 104 Thames Water, adoptable standard, follow groundworkers — and confirms you will call back. At the break you review and book Thursday."
+  },
+  {
+    without: "A homeowner emails on Tuesday about a blocked drain — sewage backing up through the ground-floor WC and a foul smell in the kitchen. The drain has blocked three times in the past year. She suspects tree roots from the large oak in the front garden. The email sits until the weekend.",
+    with: "Your AI acknowledges within sixty seconds, referencing the recurrent blockage, the suspected root ingress from the front garden oak, and the sewage backflow through the WC. Weekend you schedule the Monday CCTV survey and jetting."
+  },
+  {
+    without: "A commercial property manager WhatsApps on Friday about a failed CCTV survey on a retail park — the drainage report shows a collapsed pipe under the car park, displaced joints on the main run, and root ingress at two manholes. He needs a remediation quote before his building insurance renewal. He messages three firms. By Monday, two have replied.",
+    with: "The AI responds within seconds, asks about the pipe material and diameter shown on the CCTV footage and whether the collapse is under a trafficked area, and builds a structured remediation lead. Monday at 8am you have the site details, the CCTV findings, and the insurance deadline."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Drainage Installation & New Build",
+    items: ["Foul drainage — 110mm, 150mm, and 225mm uPVC to adoptable standards", "Surface water drainage — attenuation crates, soakaways, and swales", "Inspection chambers, manholes, and backdrop manholes with benching", "Section 104 adoption agreements — Thames Water, Anglian, Severn Trent", "Building Regulations Part H compliance — gradients, cover depth, bedding", "Build-over agreements and lateral sewer connections"]
+  },
+  {
+    category: "CCTV Surveys & Diagnostics",
+    items: ["Push-rod CCTV camera surveys for domestic properties", "Crawler unit surveys with pan-and-tilt for commercial and adoptable sewers", "WRc coding and condition grading reports", "Pre-purchase drainage surveys for homebuyers and solicitors", "Defect mapping — root ingress, displaced joints, fractures, deformation", "Drainage reports for building control and water authority submissions"]
+  },
+  {
+    category: "Remediation & Repair",
+    items: ["High-pressure jetting — 3000 PSI with root-cutting nozzles", "CIPP (cured-in-place pipe) structural lining — UV cure and ambient cure", "Patch lining for localised defects", "Excavation and pipe replacement — trench support, granular bedding", "Soakaway installation — BRE 365 percolation testing, crate systems", "Interceptor installation — petrol/oil separators, Environment Agency compliance"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Developers & Main Contractors",
+    description: "Housebuilders and main contractors requiring complete drainage packages for new-build estates — foul and surface water networks, inspection chambers, attenuation systems, and Section 104 adoption. Programme-critical work that must be completed before the groundworkers hand over to bricklayers."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners with blocked drains, collapsed pipes, root ingress, and sewage backflow problems. They need fast attendance, CCTV diagnosis, and clear communication about whether the defect requires jetting, lining, or excavation — especially during active sewage emergencies inside the property."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial & Facilities",
+    description: "Commercial property managers, retail park operators, and facilities teams needing CCTV surveys, drainage remediation, interceptor compliance, and planned maintenance programmes. Failed drainage surveys trigger insurance concerns, Environment Agency scrutiny, and tenant disruption."
+  },
+  {
+    icon: "⚖️",
+    title: "Solicitors & Surveyors",
+    description: "Conveyancing solicitors and building surveyors commissioning pre-purchase CCTV drainage surveys before house sales complete. Exchange deadlines create non-negotiable time pressure — the survey must be booked, conducted, and reported before the buyer's solicitor withdraws."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand drainage terminology?",
+    answer: "The full drainage vocabulary is configured — CCTV survey (push-rod camera, crawler unit, pan-and-tilt head, WRc coding, condition grading, defect classification), jetting (high-pressure water jetting, 3000 PSI, root-cutting nozzle, rotating head, chain flail), root ingress (tree root penetration, crack infiltration, displaced joint, open joint), collapsed drain (fractured pipe, bellied pipe, deformation, loss of shape), soakaway (percolation test, BRE 365, infiltration crate system, stone-filled, geotextile wrap), manhole (inspection chamber, backdrop manhole, benching, channel, half-round invert, step irons, cover and frame, Class B/D loading), interceptor (petrol/oil interceptor, Class 1 full retention bypass, separator, Environment Agency discharge consent), lining (CIPP cured-in-place pipe, structural lining, UV cure, ambient cure, resin impregnation, patch lining), Part H (gradient 1:40/1:60/1:80, minimum cover depth, bedding factor, pipe diameter 110mm/150mm/225mm, SVP ventilation stack, rodding access, access fitting), adoption (Section 104 agreement, Section 106, build-over agreement, lateral connection, water authority approval), excavation (trench support, timber shoring, hydraulic frames, granular bedding, pea gravel surround, haunching, selected backfill), and connection (saddle connection, Y-junction, Sewer Adoption Agreement). When a developer describes 'forty-two plots, 110mm foul to adoptable standard, attenuation crate system with hydrobrake, Section 104 Thames Water,' the AI records every specification."
+  },
+  {
+    question: "Can the AI distinguish a blocked drain from a new-build drainage package?",
+    answer: "A homeowner saying 'the drain is blocked, sewage coming up through the downstairs toilet, happened three times this year' generates a reactive emergency lead with blockage history, sewage location, and suspected cause. A developer requesting 'foul and surface water drainage for forty-two plots under Section 104 adoption' generates a new-build programme lead with plot count, pipe specification, attenuation design, and water authority requirements. The lead structures are fundamentally different in urgency, scope, and commercial value."
+  },
+  {
+    question: "What about emergency drainage calls?",
+    answer: "Sewage flooding through a ground-floor WC into a kitchen, a collapsed drain causing a sinkhole in a car park, a blocked lateral connection backing up into a restaurant kitchen, and a petrol interceptor alarm triggering at a filling station — drainage emergencies combine health hazards, property damage, and regulatory urgency. The AI captures the contamination type, the affected area, the property access, and whether the emergency services or Environment Agency have been contacted."
+  },
+  {
+    question: "How much does this cost for a drainage contractor?",
+    answer: `Drainage contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a two-person jetting and CCTV team or a multi-crew firm delivering adoptable drainage networks on housing estates, the allowance accommodates your call volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a solo drainage engineer?",
+    answer: "One-person drainage operations gain enormous value. When you are in a trench laying pipe at gradient, operating a jetting unit at 3000 PSI with the hose feeding into a manhole, or guiding a CCTV crawler through a sewer run — answering the phone compromises the gradient alignment, the jetting procedure, or the survey footage. The AI captures every blocked drain emergency, every CCTV survey booking, and every developer programme enquiry while you complete the work safely."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Set coverage from your dashboard to match your drainage schedule. During active trench work — when pipes are being laid at gradient with the laser level — send every call to the AI. During office hours, quotation preparation, and CCTV report writing — take calls directly. Switch from your phone as your working conditions change."
+  },
+  {
+    question: "How is drainage project data protected?",
+    answer: "Drainage enquiries contain property addresses, CCTV survey reports, Section 104 adoption details, water authority correspondence, and commercially sensitive tender pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing drainage firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Drainage Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK drainage contractors — CCTV surveys, jetting, pipe lining, new-build drainage, and Section 104 adoption. Never miss a call while you lay pipe at gradient. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/drainage-contractors/ai-receptionist/"
+  tradeName="Drainage Contractor"
+  tradeNamePlural="Drainage Contractors"
+  tradeSlug="drainage-contractors"
+  headline="The AI Receptionist Built for Drainage Contractors"
+  accentWord="Drainage"
+  subhead={`You cannot answer the phone when you are in a trench laying 150mm foul drainage at 1:80 gradient, when the jetting unit runs at 3000 PSI feeding the root-cutting nozzle through a blocked lateral, or when the CCTV crawler navigates a collapsed section of Victorian clay pipe under a car park. Your AI receptionist captures every call, every message, and every booking — from developers commissioning forty-two-plot adoptable drainage networks to homeowners with sewage flooding their kitchens. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next 42-Plot Drainage Package Calls While You Lay Pipe in Wantage"
+  ctaSubhead={`A developer with Section 104 adoption, attenuation crates, and a hydrobrake across three phases needs a drainage contractor who answers. If voicemail picks up, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

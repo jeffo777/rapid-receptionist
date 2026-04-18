@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Work in Trenches',
+    text: "Laying 150mm foul drainage at 1:80 gradient with the laser level, operating a jetting unit at 3000 PSI, guiding a CCTV crawler through a Victorian clay run, or excavating around a collapsed pipe with shoring in place — drainage work keeps you in trenches and at manholes. The AI answers every call in your company name."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Drainage Briefs at Every Scale',
+    text: "When a developer calls about adoptable drainage across forty plots, the AI captures the pipe specification, attenuation design, and Section 104 requirements. When a homeowner calls about sewage flooding the kitchen, the AI captures the contamination location, the blockage history, and the access."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Drainage Emergency Calls',
+    text: "Sewage backing up through internal drains, a sinkhole appearing over a collapsed sewer, a petrol interceptor alarm at a filling station, and flood water overwhelming a soakaway — drainage emergencies combine health hazards with property damage. The AI captures the contamination type and urgency for priority attendance."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Blocked Drain Calls',
+    text: "Drains block in the evening — the kitchen waste backs up after dinner, the toilet overflows at bath time, the manhole lid lifts with rising sewage levels. Homeowners search for emergency drainage engineers after dark. The AI captures every evening emergency."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Drainage Pricing',
+    text: "Each lead identifies the drainage category (blocked drain, CCTV survey, new installation, lining, excavation, or soakaway), the pipe material and diameter if known, the property type, the defect history, and access — everything needed for accurate drainage quotations."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional Drainage Image',
+    text: "A drainage firm that answers professionally and asks about the blockage location, the pipe material, and the drainage history signals the specialist competence that developers and homeowners trust with underground infrastructure."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their drainage problem?",
+    answer: "Questioning adapts precisely to the drainage category. A homeowner reporting a blocked drain hears questions about which fixtures are affected, whether sewage is visible inside or outside the property, how many times the drain has blocked previously, whether there are trees near the drains, and the property age. A developer requesting a new-build drainage package is asked about the plot count, the pipe specification (foul and surface water diameters), the attenuation design, the water authority for Section 104 adoption, and the programme phasing."
+  },
+  {
+    question: "Can the AI handle both emergency and planned drainage calls?",
+    answer: "A homeowner with sewage flooding the kitchen at 9pm demands immediate prioritisation — isolation advice, contamination assessment, and emergency attendance scheduling. A developer requiring adoptable drainage across three phases demands programme coordination — plot sequencing, pipe specifications, and water authority submission timelines. The AI produces fundamentally different lead structures for each, ensuring a domestic blockage emergency never blends with a forty-plot adoption tender."
+  },
+  {
+    question: "What about calls during active jetting?",
+    answer: "High-pressure jetting at 3000 PSI involves feeding a specialised nozzle through a manhole into the drain run, monitoring the pressure gauge and water flow, advancing and retracting the hose to clear the obstruction, and switching between root-cutting and flushing nozzles. The operator controls the foot pedal, the hose reel, and the nozzle position simultaneously. Stepping away mid-procedure wastes time, leaves equipment running unattended, and risks the nozzle lodging in the pipe. The AI manages every incoming call while the jetting procedure completes."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `The Core plan includes ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Drainage firms receive a distinctive call blend — panicked blocked drain emergencies requiring rapid triage, solicitor CCTV survey bookings with exchange deadlines, developer adoptable drainage tenders with detailed specifications, and commercial interceptor maintenance enquiries. The mixture of urgent short calls and detailed tender conversations fits within the allowance. Overage at 20p per minute without contract commitment.`
+  },
+  {
+    question: "Can I take calls during report writing?",
+    answer: "During CCTV report preparation, quotation writing, and office administration — manage calls directly. The moment you descend into a trench, connect the jetting hose, or feed the CCTV camera into a manhole — route calls to the AI. Toggle from your dashboard whenever your working environment changes."
+  },
+  {
+    question: "How is drainage project data secured?",
+    answer: "Drainage enquiries contain property addresses, CCTV survey footage references, Section 104 adoption correspondence, water authority submission details, and commercially sensitive tender pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details reach competing drainage firms or third-party lead generators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Drainage Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK drainage contractors. Captures developer adoptable drainage tenders, CCTV survey bookings, and emergency blocked drain calls while you work in trenches. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/drainage-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Drainage Contractor"
+  tradeNamePlural="Drainage Contractors"
+  tradeSlug="drainage-contractors"
+  headline="AI Phone Answering for Drainage Contractor Companies"
+  accentWord="Drainage"
+  subhead="A homeowner calls at 7:45am on a Monday. Sewage is backing up through the ground-floor WC and the shower tray in the en-suite — raw sewage pooling on the bathroom floor tiles, a foul smell spreading through the house, and her two children refusing to use the downstairs rooms. The drain has blocked four times in the past eighteen months. The previous jetting cleared it temporarily but the blockage returned within three months. She suspects the large willow tree in the back garden — the surveyor mentioned root risk when they bought the house. She needs a drainage engineer today for jetting and a CCTV survey to identify the root cause. She found your WRc-approved listing and called immediately. You are at the bottom of a two-metre trench on a housing development in Carterton — laying a 150mm diameter foul sewer main at a 1:60 gradient on a compacted granular bed, the laser level set in the pipe invert, the next six-metre pipe length being lowered in by the excavator operator, timber shoring either side of the trench. Without AI Phone Answering, the sewage emergency goes to voicemail. She calls two more drainage firms. With it, the AI captures: sewage backflow through WC and en-suite, floor pooling, 4 blockages in 18 months, suspected willow root ingress, surveyor root risk noted, today attendance, jetting + CCTV diagnostic, 2 children in house."
+  scenario="It is 2pm on a Wednesday. Three calls between noon and 2pm. You are operating a CCTV crawler unit in a 225mm diameter concrete sewer under a retail car park in Abingdon — the camera feeding live footage to the surface monitor showing two displaced joints, a crack with active root ingress, and a partial collapse where the pipe crown has fractured and soil is visible above. Without AI Phone Answering, one voicemail and two hang-ups. With it, all three answered. Lead one: a solicitor — 'need a pre-purchase drainage CCTV survey on a Victorian terrace in Jericho, exchange is in three weeks, need WRc-coded report for the buyer's solicitor.' Lead two: a developer — 'thirty-six houses in Bicester, need foul and surface water drainage to adoptable standard, Section 104 with Thames Water, attenuation with vortex flow control, start in eight weeks.' Lead three: a restaurant owner in Wallingford — 'grease trap overflowing, kitchen drain backing up during service, need emergency jetting and a grease management solution.' At 3pm the CCTV survey finishes. Three leads on your dashboard — a solicitor survey, a thirty-six-plot adoption, and a restaurant grease emergency."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/drainage-contractors/ai-receptionist/"
+  ctaHeadline="Capture the Sewage Emergency While You Lay Pipe in Carterton"
+  ctaSubhead={`A mother with two children, raw sewage on the bathroom floor, and a willow tree attacking the lateral needs a drainage engineer today. The AI captured the four-blockage history while you aligned the 150mm at gradient. From £${pricing.tiers.core.price}/month.`}
+/>

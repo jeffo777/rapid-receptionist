@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts CCTV Survey Content',
+    text: "CCTV survey footage — root ingress cleared, collapsed pipes exposed, and new drainage installed — generates exceptional Facebook engagement. When a follower messages about their own drainage problem, the AI captures a diagnostic lead."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Emergency Drain Messages',
+    text: "Homeowners message with photos of overflowing manholes, sewage-soaked gardens, and flooded kitchens — desperate for attendance. The AI responds immediately, asks about internal drain performance, and builds a priority emergency lead."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Solicitor CCTV Requests',
+    text: "Solicitors and surveyors browse your CCTV survey portfolio on Facebook and message — 'need a pre-purchase drainage survey with WRc report before Friday exchange.' The AI captures the property, the deadline, and the access."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Heavy Rainfall',
+    text: "Every prolonged rainfall event triggers drainage enquiries — blocked drains, flooded gardens, and failed soakaways. Homeowners message drainage firms on Facebook during and after storms. The AI captures every weather-triggered emergency."
+  },
+  {
+    icon: '📋',
+    title: 'Qualifies Drainage Category',
+    text: "Messenger conversations start with 'our drain is blocked.' The AI distinguishes between a simple blockage needing jetting, a recurrent problem needing CCTV survey, a collapsed drain needing excavation, and a failed soakaway needing replacement — qualifying each appropriately."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Before-and-After Post',
+    text: "Every CCTV still of roots cleared, every excavated collapsed pipe replaced, and every new inspection chamber built generates messages from homeowners whose drains display the same symptoms."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my drainage firm?",
+    answer: "Messenger operates through a connected Facebook Business page. Drainage firms posting CCTV survey footage stills — root masses extracted from clay pipes, displaced joints repaired with patch lining, and collapsed drains excavated and replaced — generate outstanding engagement from homeowners who recognise the same symptoms in their own properties and message directly."
+  },
+  {
+    question: "What drainage enquiries come through Messenger?",
+    answer: "Homeowners with blocked drains studying your CCTV footage for matching symptoms. Letting agents needing emergency jetting for rental properties with sewage backflow. Solicitors requiring pre-purchase drainage reports before exchange deadlines. Property developers wanting adoptable drainage tenders for new-build estates. Each has examined your WRc-approved drainage capability."
+  },
+  {
+    question: "How fast does the AI reply to drainage messages?",
+    answer: "Messenger responses arrive within seconds. Facebook's activity status confirms your drainage firm monitors actively. A homeowner with sewage flooding her kitchen at 9pm — children in the house, towels across the floor — demands instant acknowledgement from a drainage specialist, not a dormant Facebook page suggesting the company checks messages weekly."
+  },
+  {
+    question: "What does Messenger cost for drainage contractors?",
+    answer: `Facebook Messenger costs £${pricing.addOn.price}/month as a channel add-on. Emergency jetting generates £150 to £350. A CCTV survey generates £250 to £500. One homeowner's root ingress investigation — initiated by a Messenger enquiry after she recognised the same displaced joint pattern in your CCTV footage — leads to patch lining at £1,200 and annual maintenance at £150, covering the channel cost from a single diagnosis.`
+  },
+  {
+    question: "Can I continue Messenger conversations personally?",
+    answer: "Respond once in any thread and the AI withdraws permanently. Most drainage engineers let the AI establish the emergency scope — blockage location, overflow severity, internal contamination, property type, and previous history — then take over to confirm the attendance time, the equipment being dispatched, and the approximate cost."
+  },
+  {
+    question: "How is Messenger data from drainage queries protected?",
+    answer: "All Messenger conversations — drain overflow photographs, property addresses, CCTV survey references, Section 104 correspondence, and sender contact details — are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. No drainage project details reach competitors or third-party lead aggregators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Drainage Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK drainage contractors. Converts CCTV survey footage into diagnostic bookings and emergency jetting callouts. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/drainage-contractors/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Drainage Contractor"
+  tradeNamePlural="Drainage Contractors"
+  tradeSlug="drainage-contractors"
+  headline="AI Facebook Messenger for Drainage Contractor Companies"
+  accentWord="Drainage"
+  subhead="You post four photos of a drainage remediation in Witney. Photo one: the CCTV footage still — a push-rod camera image showing a mass of fine tree roots filling the entire pipe bore at a displaced joint in a 100mm clay drain, the roots dense enough to trap fat and tissue and create a complete blockage. Photo two: the excavation — a two-metre trench exposing the fractured Victorian clay pipe with root ingress from a nearby cherry tree, the clay pipe fragments removed and the root ball cut back to the soil face. Photo three: the repair — a new 110mm uPVC pipe section with rubber ring joints bedded on compacted pea gravel, connected to the existing clay pipe with flexible couplings either side of the repair. Photo four: the CCTV verification — a clear push-rod camera image of the repaired section showing a smooth bore, aligned joints, and no root residue. Two hundred and thirty-four likes, eighteen shares. A homeowner in Carterton messages: 'Our drain blocks every few months — we keep getting it jetted but it comes back. Your photo looks exactly like what might be happening to ours — we have a cherry tree about two metres from where we think the drain runs. House is 1960s semi, original clay drains as far as we know. Last jetting was three weeks ago and it is already draining slowly again. Can you do a CCTV survey to see if the roots are the problem? If it looks like yours we would want the same repair — dig it up and replace with plastic. We are in Carterton, happy for you to come any weekday.' You are operating the jetter. Without AI Messenger, the Carterton root cause repeater waits. With it, the AI confirms your CCTV diagnostic capability, asks whether the blockage affects all fixtures or just the kitchen, and captures: Carterton 1960s semi, clay drains, recurrent blockage every few months, jetted 3 weeks ago already slow, cherry tree 2m from run, CCTV survey + excavation repair if roots confirmed, weekday access."
+  scenario="It is midnight on a Friday after heavy rainfall. A pub landlord in Wallingford messages with a video of the beer garden — sewage bubbling up through two drain gullies, tables and chairs standing in contaminated water, and the downstairs toilet in the pub overflowing: 'URGENT — pub beer garden is flooding with sewage after the rain. Two drain gullies overflowing. Downstairs customer toilet is backing up too. We have a wedding reception booked here tomorrow lunchtime for 80 guests — this MUST be fixed by 10am. The pub is a 200-year-old coaching inn and the drains are ancient. Last year the same thing happened and the drainage company found a collapsed section under the courtyard. They patched it but clearly it has failed again. I will pay whatever it takes to get this sorted overnight or first thing. Can anyone come now or at 6am?' Without AI Messenger, the wedding sewage emergency waits. With AI Messenger, the reply at 12:01am: 'Thank you — a recurrent collapse under the courtyard following a previous patch repair typically indicates a more extensive structural failure. Could you confirm whether the collapsed section was re-lined or temporarily patched, and whether the internal toilets on the upper floors are still functioning?' He confirms temporary patch only, upper floor toilets working. You dispatch at 6am: Wallingford 200yr coaching inn, beer garden sewage flooding 2 gullies, WC backing up, wedding 80 guests 10am tomorrow, previous collapse under courtyard temporary patch failed, heavy rain, upper floors functional, jetting + CCTV + emergency excavation."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/drainage-contractors/ai-receptionist/"
+  ctaHeadline="Turn 234 Likes on a Witney Root Removal into a Carterton Survey Booking"
+  ctaSubhead={`Four photos of cherry tree roots cleared and Victorian clay replaced with uPVC earn two hundred thirty-four likes. AI Messenger converts the neighbour's identical recurrent blockage into a CCTV diagnostic booking. Add-on at £${pricing.addOn.price}/month.`}
+/>

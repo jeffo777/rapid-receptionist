@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Trench Work',
+    text: "Laying pipe at gradient with the laser level, excavating around a collapsed section with shoring in place, operating the jetting unit at 3000 PSI, or guiding a CCTV crawler through a sewer — drainage work demands both hands underground. Missed Call Text Back texts every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Developer Programme Callers',
+    text: "A main contractor with groundworks complete on eight plots calls to confirm Monday's drainage start. Voicemail? He schedules a competitor. A branded text — 'Thanks for calling — we are laying drainage and will call back shortly' — holds your programme position."
+  },
+  {
+    icon: '🏷️',
+    title: 'WRc Approved Image',
+    text: "An instant branded text from a WRc-approved drainage contractor signals the accredited professionalism that developers trust with adoptable drainage networks and solicitors trust with pre-purchase CCTV surveys."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Full Excavation Days',
+    text: "Drainage excavation days fill from the first trench cut at 7am to the last backfill compaction at 5pm. Every hour consumed by pipe laying, bedding, jointing, and gradient verification. Missed Call Text Back captures every lead during your most physically demanding working days."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Drainage Details',
+    text: "Callers reply with scope — 'blocked drain, sewage backing up, 1930s terrace in Jericho, happened three times, cherry tree near the drains.' Replies arrive on your dashboard before the laser level comes out of the trench."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering holds full drainage conversations. Missed Call Text Back covers edge cases — a call during the critical jetting procedure when the foot pedal controls the pressure, a phone in the van while you work in the manhole, or a single-ring disconnect. Together: zero lost drainage leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "The branded text fires within seconds of every unanswered ring concluding — before the homeowner with sewage flooding her kitchen and two children in the house dials the next drainage company from Google. During full-day excavation and pipe-laying where trench work, bedding, and gradient alignment consume every minute, this automatic text preserves commercial responsiveness without interrupting a single trench procedure."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You write the text during setup and revise it whenever convenient. A drainage-specific message reads: 'Thank you for calling [company name]. We are currently working in a drainage trench and will return your call at the earliest opportunity. Reply with your drainage requirements for a faster response.' This signals active on-site drainage capability while encouraging project details."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "The two systems protect your drainage business through complementary mechanisms. Phone Answering conducts complete conversations — diagnosing blockage symptoms, recording CCTV survey requirements, capturing developer plot counts, and scheduling solicitor pre-purchase surveys. Missed Call Text Back handles rare edge situations — a call while you operate the jetting foot pedal and the hose feeds into the manhole, a phone in the van while you lay pipe in a trench, or a caller disconnecting before the AI answers. Both running eliminates drainage lead loss entirely."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on channel is £${pricing.addOn.price}/month. Emergency jetting generates £150 to £350. A new-build drainage package generates £2,000 to £6,000 per plot. Recovering one missed call from a developer with a forty-two-plot adoptable drainage programme — through a six-second branded text while you connected a lateral on another site — initiates programme revenue that dwarfs the channel cost for years.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Homeowners reply with blockage emergencies — 'drain blocked, sewage in garden, Headington, 1930s semi, two children, need someone today.' Solicitors reply with survey deadlines — 'pre-purchase CCTV needed, Summertown, exchange next Friday, WRc report required.' Developers reply with programme updates — 'groundworks clear plots 20-28 Monday, need drainage following immediately.' These drainage leads arrive on your dashboard while the backfill compacts."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Caller details, text replies with property addresses, blockage descriptions, CCTV survey requirements, Section 104 references, and contact numbers are encrypted on UK and EU servers under UK GDPR. Access is exclusive to you. Nothing reaches competing drainage contractors or lead-generation intermediaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Drainage Contractors | Rapid Receptionist"
+  description={`Missed Call Text Back for UK drainage contractors. Automatically texts callers while you lay pipe at gradient, operate the jetter, and guide the CCTV crawler. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/drainage-contractors/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Drainage Contractor"
+  tradeNamePlural="Drainage Contractors"
+  tradeSlug="drainage-contractors"
+  headline="Missed Call Text Back for Drainage Contractor Companies"
+  accentWord="Drainage"
+  subhead="It is 9:15am on a Monday in November after a weekend of heavy rain. You are in a two-metre trench on a housing development in Wantage — laying a 110mm foul drainage run from an inspection chamber to a new manhole, the laser pipe level set at 1:60 gradient, granular bedding compacted beneath, each three-metre pipe length lowered in, jointed with rubber ring seals, and the pipe surround being hand-placed with pea gravel. Five calls come in between 8am and noon. Your phone is on the spoil pile, your hands in the trench with pipes and bedding material. Without Missed Call Text Back, two voicemails — 'our drain is flooding' and 'need a drainage quote' — three hang-ups. With it, all five receive texts within seconds. The first replies at 9:30am: 'Hi — I am a property manager for a portfolio of thirty-two rental properties across Oxford and the surrounding villages. After the weekend rain, seven properties are reporting drainage problems — three with blocked drains, two with slow-draining toilets, one with a flooded garden from a failed soakaway, and one with a displaced manhole cover. I need a reliable drainage firm to attend all seven this week — jetting where needed, CCTV survey on the worst ones, and a quote for any repairs. I also need to set up an annual drainage maintenance contract across the full portfolio. Can you handle this volume? Call me when free — I need to report back to the landlords by end of today.' At noon the pipe run connects. Five leads on your dashboard — including the thirty-two-property portfolio with seven immediate interventions."
+  scenario="It is 2pm on a freezing January Wednesday. You have been operating a CCTV crawler in a 225mm concrete sewer under a supermarket car park in Abingdon since 8am — mapping 340 metres of drainage with pan-and-tilt footage, cataloguing fourteen defects including three displaced joints, two areas of root ingress, a bellied section, and a circumferential crack with active infiltration. Six missed calls between 8am and 2pm. Without Missed Call Text Back, you emerge to six unknowns and one voicemail. With Missed Call Text Back, all six received texts. Reply one: 'homeowner Charlbury — drain blocked, sewage in front garden, 1970s semi, happened twice before, large oak near drain, need jetting + CCTV.' Reply two: 'developer Carterton — twenty-four houses need drainage, 110mm foul + surface water, soakaways, Part H, start six weeks.' Reply three: 'solicitor Oxford — pre-purchase CCTV survey on Victorian terrace in Jericho, exchange ten days, WRc report.' Reply four: 'restaurant Wallingford — grease trap overflowing, kitchen drain backing up during service, need emergency attendance.' Reply five: 'letting agent Kidlington — manhole cover collapsed in tenant's garden, exposed open hole, health and safety concern, urgent.' Reply six: 'architect Woodstock — drainage design for barn conversion, soakaway percolation test needed, Part H compliance.' Six leads. Wednesday evening you triage — the collapsed manhole and the grease trap first, the blocked drain Thursday morning."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/drainage-contractors/ai-receptionist/"
+  ctaHeadline="Recover a 32-Property Portfolio from One Rainy November Monday"
+  ctaSubhead={`While you laid 110mm at gradient in Wantage, five callers missed you. Five texts went out. A property manager with seven immediate drainage problems and thirty-two properties awaiting an annual contract replied within fifteen minutes. Add-on at £${pricing.addOn.price}/month.`}
+/>

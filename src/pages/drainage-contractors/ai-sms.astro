@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Developer Drainage Programme Texts',
+    text: "Main contractors text drainage firms mid-build — 'groundworkers clear on plots 8-14 Monday, need foul and surface water runs following immediately.' The first drainage contractor confirming holds the programme-critical slot."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Drainage Briefs from Short Messages',
+    text: "A text like 'drain blocked, sewage in garden, 1930s terrace, Jericho, can you come today?' gives the AI the emergency essentials. It asks about internal drain performance and whether previous blockages have occurred."
+  },
+  {
+    icon: '🔔',
+    title: 'Captures Solicitor Survey Requests',
+    text: "Conveyancing solicitors text CCTV bookings with exchange deadlines — 'drainage survey needed before Friday, property in Botley, WRc report required.' The AI captures the address, deadline, and access."
+  },
+  {
+    icon: '🌙',
+    title: 'Active When Drains Overflow',
+    text: "Heavy rainfall triggers drainage emergencies overnight. Manholes overflow, gardens flood, and ground-floor drains back up. Homeowners text drainage engineers at midnight. The AI captures every after-hours emergency."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Drainage Details',
+    text: "Messages arrive in stages — 'drain blocked' then 'sewage in garden' then '1960s semi' then 'happened before' then 'we are in Kidlington.' The AI constructs one complete emergency lead from every fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Developer drainage programmes, CCTV survey scheduling, and pipe supplier orders stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound drainage text?",
+    answer: "Every incoming text triggers a branded response within seconds under your company name. A developer's programme text — 'plots 20-28 groundworks complete, need foul drainage starting Monday at 1:60 gradient, 110mm to adoptable spec, inspection chambers at each junction, connect to existing 150mm sewer run' — is confirmed with the plot range, gradient, specification, and connection detail preserved. A homeowner's emergency — 'drain overflowing in garden, sewage everywhere, house stinks' — receives a safety-conscious response asking whether sewage is entering the house internally and whether children or elderly occupants are present."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "Texts read like a drainage engineer checking messages between manhole inspections — pipe-size aware, gradient-fluent, and WRc-terminology precise. References to 110mm foul runs, 1:60 gradients, inspection chambers, displaced joints, root ingress, and CCTV survey coding convey specialist drainage knowledge that developers and solicitors expect."
+  },
+  {
+    question: "How does it handle existing client texts?",
+    answer: "Returning developer clients text programme amendments — 'swap plots 15 and 16 drainage sequence, groundworkers delayed on 15' or 'add a soakaway to plot 22, BRE 365 perc test passed.' The AI logs each amendment and separates programme changes from new enquiries on your dashboard."
+  },
+  {
+    question: "What does AI SMS cost for drainage contractors?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. Emergency jetting generates £150 to £350. A developer's adoptable drainage package generates £2,000 to £6,000 per plot. Confirming one developer's Monday drainage start — while you connected a lateral to the adopted sewer on another site — secures programme revenue that vastly exceeds the annual channel cost.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send one reply and the AI steps back from that conversation entirely. During CCTV report writing, office hours, and quotation preparation — handle texts yourself. During active trench work — when the laser level guides the gradient and the pipe lengths lower into position — let the AI manage the incoming bookings."
+  },
+  {
+    question: "How is text data from drainage enquiries stored?",
+    answer: "Text messages containing property addresses, blockage details, CCTV survey references, Section 104 correspondence, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. Nothing reaches competing drainage firms or third-party platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Drainage Contractors | Rapid Receptionist"
+  description={`AI SMS for UK drainage contractors. Responds to developer programme texts, solicitor CCTV bookings, and emergency blocked drain notifications. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/drainage-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Drainage Contractor"
+  tradeNamePlural="Drainage Contractors"
+  tradeSlug="drainage-contractors"
+  headline="AI SMS for Drainage Contractor Companies"
+  accentWord="Drainage"
+  subhead="You are at 9am on a Thursday, in a three-metre-deep trench on a commercial development in Bicester — installing a 225mm diameter surface water sewer main at 1:100 gradient. The trench has hydraulic shoring frames either side, the laser level is set in the pipe invert, and each six-metre pipe length is lowered in by the excavator, bedded on compacted granular material, and jointed with a rubber ring seal. The pipe surround is pea gravel hand-placed around the haunch and compacted in 150mm layers. At 9:20am a facilities manager at a business park in Abingdon texts: 'Morning — we have a petrol interceptor at our vehicle maintenance depot that needs inspecting and possibly replacing. The Environment Agency visited last month and noted that the interceptor appears to be a Class 2 bypass type rather than the required Class 1 full retention. We need a Class 1 full retention interceptor installed to replace it, with coalescence plates, an alarm system, and compliant discharge to the surface water sewer. Also need the existing oil separator decommissioned and removed. Can you survey, design, and install? EA have given us 90 days to comply. Budget is available — this is a compliance enforcement.' Your hands guide a pipe joint. Without AI SMS, the interceptor enforcement waits until the sewer main is connected. With it, the AI responds at 9:21am, confirms your interceptor installation capability, and asks about the depot's vehicle count and daily throughput for sizing. She confirms forty vehicles daily. At noon you review: Abingdon business park, petrol interceptor Class 2 to Class 1 full retention replacement, coalescence plates, alarm, EA enforcement 90 days, 40 vehicles daily, oil separator decommission, survey + design + install."
+  scenario="It is 7:30pm on a Sunday in January. A homeowner in Charlbury texts: 'Hi — our soakaway has failed. The back garden is waterlogged after every rainfall and water pools around the patio. The house is a 1980s detached, four bedrooms. The soakaway was original — just a hole filled with rubble as far as I can tell. We had a percolation test done by another company last year and they said the ground percolation is poor and we might need a different solution. Surface water currently has nowhere to go — the garden floods and water sits for days. Can you design and install a new soakaway or drainage solution? We want to fix this before summer. Also, our neighbour is having the same problem — she would like a quote too.' Without AI SMS, the failed soakaway and the neighbour referral wait until Monday. With AI SMS, the reply at 7:31pm: 'Thank you — with poor percolation results, an alternative surface water solution such as an attenuation crate system with controlled discharge may be more appropriate than a traditional soakaway. Could you confirm whether there is a surface water sewer or watercourse nearby that could accept a controlled discharge?' He confirms a ditch at the bottom of the garden. Monday you review: Charlbury 1980s 4-bed detached, failed rubble soakaway, waterlogged garden, poor percolation, original 1980s, ditch available, attenuation crate option, neighbour referral, fix before summer."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/drainage-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the EA Interceptor Enforcement While You Lay 225mm in Bicester"
+  ctaSubhead={`A facilities manager with Environment Agency enforcement, 90 days to replace a Class 2 interceptor with Class 1 full retention, and forty vehicles daily needs a drainage contractor who responds. The AI confirmed while you jointed the sewer main. Add-on at £${pricing.addOn.price}/month.`}
+/>
