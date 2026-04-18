@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Developer Gas Tenders',
+    text: "Main contractors and QSs email gas installation subcontract packages with boiler specifications, flue requirements, gas pipework schedules, and programme milestones. The Gas Safe firm acknowledging first — referencing the boiler model and plot count — remains on the tender shortlist."
+  },
+  {
+    icon: '📐',
+    title: 'References Boiler Specifications',
+    text: "When a QS emails specifying 'Vaillant ecoTEC exclusive Green 30kW combi with horizontal concentric flue, CSEP connection, 22mm copper gas supply, condensate to internal waste, MagnaClean Pro2, Benchmark commissioning, thirty-two plots across four phases,' the AI acknowledgement references every element."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Commissioning Hours',
+    text: "Gas installation days are consumed by boiler fitting, pipe connecting, tightness testing, and flue gas analysis. A QS's tender email at 9am sits unread until the last commissioning certificate is signed at 5pm. Your sixty-second acknowledgement preserves the tender opportunity."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Merchant Invoices',
+    text: "Your inbox combines QS tenders, plumbing merchant boiler delivery confirmations, Gas Safe Register correspondence, manufacturer warranty registrations, and Benchmark certificate copies. The AI identifies genuine project tenders and separates them from operational correspondence."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Developer Confidence',
+    text: "Developers with multi-phase estates need Gas Safe engineers who maintain programme without fail. Consistent instant acknowledgements across housing phases establish the reliability that books your firm into every plot from first fix to Benchmark handover."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Specification Attachments',
+    text: "Gas tenders include mechanical drawings with boiler positions, flue terminal locations, gas pipe routing, condensate discharge points, and programme schedules. The AI notes attached documents and includes them in your lead."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce gas installation quotes from tenders?",
+    answer: "Absolutely no pricing is generated — the system provides only a professional acknowledgement referencing the gas specification and project scale. Your quotation — boiler unit costs, flue materials, gas pipe quantities, commissioning time per plot, MagnaClean units, and Benchmark registration fees — is calculated by you from the mechanical drawings and boiler manufacturer trade pricing."
+  },
+  {
+    question: "Will it respond to Gas Safe Register emails?",
+    answer: "Onboarding configuration defines which senders and subject patterns trigger the acknowledgement. Gas Safe Register ID renewal reminders, manufacturer warranty registration confirmations, Benchmark certificate copies, plumbing merchant delivery notes, and analyser calibration invoices are excluded automatically. Only genuine project tenders and client enquiries generate the professional response."
+  },
+  {
+    question: "How does it handle homeowner boiler emails?",
+    answer: "Website contact form submissions from homeowners — 'our boiler is 15 years old and keeps breaking down, want a quote for a new Worcester or Vaillant' — receive a professional response asking about the current boiler model, the property size, the number of radiators, the system type, and the preferred replacement brand."
+  },
+  {
+    question: "What does email response cost for gas engineers?",
+    answer: `The email add-on is £${pricing.addOn.price}/month. A new-build gas installation package across twenty plots generates £40,000 to £80,000 in subcontract value. Acknowledging a QS's twenty-plot boiler tender within sixty seconds — while you commissioned a Vaillant on plot nine — frequently determines whether your Gas Safe firm receives the formal ITT and the pre-tender site walkover invitation.`
+  },
+  {
+    question: "Can subsequent tender correspondence come from me?",
+    answer: "Once the AI acknowledges, every subsequent communication is authored by you. Your measured survey, boiler comparison schedule, flue routing plan, gas pipe specification, method statement, programme, and Gas Safe notification plan are prepared and submitted entirely by your team."
+  },
+  {
+    question: "How is gas tender data secured?",
+    answer: "Gas tenders contain mechanical layouts, boiler specifications, flue routing drawings, and commercially sensitive cost schedules. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender details reach competing Gas Safe firms or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Gas Installation Engineers | Rapid Receptionist"
+  description={`AI email response for UK Gas Safe registered engineers. Acknowledges developer boiler tenders, commercial gas specifications, and CP12 programme requests within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/gas-installation-engineers/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Gas Installation Engineer"
+  tradeNamePlural="Gas Installation Engineers"
+  tradeSlug="gas-installation-engineers"
+  headline="AI Email Response for Gas Installation Engineer Companies"
+  accentWord="Gas"
+  subhead="A QS emails a gas installation subcontract tender for a new-build retirement village in Wallingford — sixty-four apartments across four blocks, each requiring a Vaillant ecoTEC plus 832 combi boiler, vertical concentric flue through the roof void, 22mm gas supply from the block's central gas riser, condensate to the internal waste stack, MagnaClean Micro2 filter, Nest Learning Thermostat 3rd Gen, and full Benchmark commissioning with Gas Safe notification. The specification requires Part J compliance documentation for every flue termination, combustion air ventilation calculations for the plant cupboards, and a commissioning programme that delivers four apartments per week per block to match the decorator's handover schedule. Tender return in three weeks with a pre-tender walkover next Wednesday. You are in the utility room of a detached house in Eynsham — connecting the gas supply to a newly installed Viessmann Vitodens 100-W 30kW combi, the 15mm copper gas pipe already tightness-tested, and the analyser warming up for the commissioning check. Without AI Email Response, the sixty-four-apartment retirement village tender sits unread until the Viessmann is commissioned and the Benchmark signed. Two competing Gas Safe firms acknowledged within the hour. With it, your acknowledgement arrives within sixty seconds, referencing the sixty-four apartments, Vaillant ecoTEC plus 832, vertical flue, central gas riser, MagnaClean Micro2, Nest 3rd Gen, Part J documentation, ventilation calculations, four per week per block, three-week tender, Wednesday walkover."
+  scenario="It is 7am on a Monday. Your inbox accumulated over the weekend: a developer requesting gas packages on eight semi-detached houses in Grove — 'Worcester Bosch Greenstar 4000, horizontal flues, CSEP connections, gas hob supply, MagnaClean, Benchmark,' a homeowner in Botley wanting to convert from a back boiler to a modern combi — 'Potterton Netaheat behind the gas fire, fireplace closing up, new combi in the kitchen,' a letting agent needing thirteen CP12s across east Oxford before March — 'mix of combis and back boilers, two tenants haven't allowed access yet,' and a plumbing merchant confirming Wednesday's Vaillant delivery. Without AI Email Response, the eight houses, the back boiler conversion, and the CP12 programme wait until Tuesday. With AI Email Response, the Grove houses reference Worcester 4000/flues/MagnaClean, the Botley back boiler notes Potterton Netaheat and fireplace closure, the CP12 programme references thirteen properties and access issues, and the merchant email is filtered."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/gas-installation-engineers/ai-receptionist/"
+  ctaHeadline="Acknowledge the 64-Apartment Retirement Village Gas Tender While You Commission"
+  ctaSubhead={`A QS's three-week tender for Vaillant combis, Nest thermostats, and Part J flue documentation across sixty-four apartments starts when the email lands. Your sixty-second acknowledgement secures the Wednesday walkover. Add-on at £${pricing.addOn.price}/month.`}
+/>

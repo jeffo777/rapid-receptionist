@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Boiler Installation Reels',
+    text: "Boiler before-and-after reels magnetise engagement — a rusty old boiler replaced by a gleaming modern combi, neat copper pipework, and a fresh Benchmark sticker. When followers DM about their own dying boiler, the AI captures an installation lead."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Homeowners at Boiler Breaking Point',
+    text: "Instagram draws homeowners comparing boiler brands, studying installation photos, and deciding to finally replace the old system. A DM from a homeowner whose boiler is on its last winter is the highest conversion intent."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Emergency Gas DMs',
+    text: "Homeowners DM photos of fault codes, warning lights, and lockout screens — seeking reassurance and a Gas Safe engineer. The AI responds with safety guidance and builds a priority attendance lead."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Late Boiler Failures',
+    text: "Boilers fail after dark. Homeowners photograph the fault code and search Instagram for local Gas Safe engineers. A DM at 11pm from a cold house represents maximum willingness to book morning attendance."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Installation DMs',
+    text: "DMs begin with 'our boiler is dying' or 'want something like yours.' The AI asks about the current boiler, the property type, the radiator count, and the preferred brand — building a survey-ready specification."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Copper Pipework Close-Up',
+    text: "Every soldered manifold, every neat flue exit, and every labelled gas isolation valve generates enquiries from homeowners who compare their own boiler cupboard with your professional installations."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "Switch to a Business or Creator profile in your Instagram settings — free of charge and instant. Gas Safe firms posting boiler installation time-lapses, before-and-after back boiler conversions, and Benchmark commissioning close-ups attract outstanding engagement — the transformation from an ancient back boiler to a modern combi is inherently satisfying visual content that homeowners relate to immediately."
+  },
+  {
+    question: "What gas DMs arrive through Instagram?",
+    answer: "Homeowners with old boilers studying your installation quality and comparing brands. Landlords browsing your CP12 service history for portfolio reliability. Self-builders wanting complete gas packages for new homes. Property renovators seeking Gas Safe engineers for kitchen and bathroom heating integration. Each follower has pre-qualified your standard of Gas Safe workmanship."
+  },
+  {
+    question: "How quickly does the AI respond to gas DMs?",
+    answer: "DM responses arrive within seconds of receipt. Instagram's read indicator shows your Gas Safe firm is actively monitoring. A homeowner whose Vaillant has been showing intermittent fault codes for weeks and has finally decided to seek a replacement quote expects a knowledgeable, reassuring response — not a read receipt followed by days of silence."
+  },
+  {
+    question: "What do Instagram DMs cost for gas engineers?",
+    answer: `Instagram DMs are £${pricing.addOn.price}/month as an add-on. A boiler installation generates £2,000 to £4,500. One homeowner's combi replacement — initiated by a before-and-after reel of a boiler identical to her failing one — repays the channel cost from a single installation.`
+  },
+  {
+    question: "Can I reply to DMs myself?",
+    answer: "Send one message in any thread and the AI withdraws permanently. Most gas engineers let the AI gather the initial scope — existing boiler, age, fault codes, property size, radiator count, and brand preference — then take over to arrange the survey, discuss warranty options, and provide the written quotation."
+  },
+  {
+    question: "Is DM data from gas queries private?",
+    answer: "Instagram DMs — boiler fault code photographs, property addresses, Gas Safe references, manufacturer model details, and sender contact information — are encrypted and stored on UK and EU servers under UK GDPR. Nothing reaches competing gas firms, manufacturer reps, or third-party lead generators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Gas Installation Engineers | Rapid Receptionist"
+  description={`AI Instagram DMs for UK Gas Safe registered engineers. Converts boiler installation reels and back boiler conversion posts into replacement surveys and CP12 bookings. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/gas-installation-engineers/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Gas Installation Engineer"
+  tradeNamePlural="Gas Installation Engineers"
+  tradeSlug="gas-installation-engineers"
+  headline="AI Instagram DMs for Gas Installation Engineer Companies"
+  accentWord="Gas"
+  subhead="Your latest reel is a forty-five-second time-lapse of a complete boiler installation in a detached house in Abingdon. The camera captures the old boiler — a 20-year-old Baxi Solo 2 PF regular boiler with a separate header tank in the loft, a hot water cylinder in the airing cupboard, and a gravity-fed system producing barely sufficient hot water pressure. Then the removal — old boiler disconnected, header tank drained, hot water cylinder removed, redundant pipework capped. Then the new installation — a Vaillant ecoTEC exclusive Green iQ 835 combi mounted on the kitchen wall, horizontal concentric flue exiting through the brick, 22mm copper flow and return to the existing radiator circuit, 15mm gas supply from the capped meter position, condensate routed internally to the kitchen waste, MagnaClean Pro2 filter, Hive Active Heating thermostat on the hallway wall. The system is powerflushed with Adey MC3+ before commissioning. The final frame shows the Testo analyser: CO 24ppm, CO₂ 9.0%, efficiency 92.4%, and the Benchmark commissioning checklist signed. Eight thousand views. A homeowner in Marcham DMs: 'Amazing transformation. We have the same setup — Baxi Solo regular boiler, header tank in the loft, cylinder in the airing cupboard. Hot water pressure is terrible and the boiler is about 18 years old. Want a combi like your one — Vaillant or Worcester. House is detached, four bedrooms, two bathrooms, twelve radiators. Can you come and survey? We are in Marcham, about five minutes from Abingdon.' You are commissioning a boiler. Without AI DMs, the Marcham message waits. With it, the AI confirms your regular-to-combi conversion experience, asks whether the existing system has been powerflushed, and captures: Marcham detached, Baxi Solo regular 18yr, header tank + cylinder, poor hot water pressure, combi conversion Vaillant/Worcester, 4-bed 2-bath 12 rads, survey request."
+  scenario="It is 1:30am on a Sunday in November. A property investor has been studying your Gas Safe installation quality. He is developing three properties simultaneously — all purchased at auction — and needs gas work on each. He DMs: 'Very impressed with your Gas Safe work. I have three auction properties all needing gas installations. Property 1: Victorian terrace in Jericho — full back boiler removal, new combi, nine radiators, needs a powerflush. Property 2: 1960s semi in Cowley — boiler replacement, Vaillant ecoTEC or Worcester 8000, add two radiators for the loft conversion. Property 3: 1980s detached in Botley — oil-to-gas conversion, new gas supply from the road, combi boiler, fifteen radiators, gas hob. All three need completing before March for rental. Can you handle all three simultaneously with staggered starts?' Without AI DMs, the three-property portfolio waits until Sunday afternoon. With AI DMs, the reply at 1:31am confirms your multi-property capability and asks about the oil tank decommissioning status on the Botley property. He confirms tank still in place, needs removal. Sunday you review: Jericho Victorian back boiler removal combi 9 rads powerflush, Cowley 1960s semi boiler swap Vaillant/Worcester + 2 rads loft, Botley 1980s detached oil-to-gas new supply 15 rads hob oil tank removal, all before March for rental, staggered starts."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/gas-installation-engineers/ai-receptionist/"
+  ctaHeadline="Turn 8,000 Views on an Abingdon Conversion into a Marcham Survey"
+  ctaSubhead={`Forty-five seconds of a Baxi Solo reborn as a Vaillant ecoTEC exclusive with Hive Active earns eight thousand views. AI Instagram DMs converts the Marcham neighbour's identical setup into a regular-to-combi survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Developer Gas Programme Texts',
+    text: "Main contractors text Gas Safe firms mid-build — 'plots 14-18 plastered, boilers need fitting next week, horizontal flues, CSEP live.' The first gas engineer confirming holds the programme-critical commissioning slot."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Gas Briefs from Short Messages',
+    text: "A text like 'boiler broken, Worcester 30i, no heating, Kidlington, can you come tomorrow?' gives the AI the fundamentals. It asks about the fault code, the system pressure, and whether the pilot light is visible."
+  },
+  {
+    icon: '🔔',
+    title: 'Captures CP12 Renewal Texts',
+    text: "Letting agents text Gas Safe engineers when certificates approach expiry — 'three CP12s due next month, tenants confirmed access.' The AI captures property addresses and boiler types for your scheduling."
+  },
+  {
+    icon: '🌙',
+    title: 'Active When Boilers Lock Out',
+    text: "Boilers fail in the evening and overnight. Homeowners text their gas engineer at 10pm — 'boiler locked out, fault code showing, house getting cold.' The AI captures the fault and urgency while you sleep."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Gas Details',
+    text: "Messages arrive in stages — 'boiler broken' then 'it is a Vaillant' then 'about 10 years old' then 'keeps losing pressure' then 'we are in Eynsham.' The AI constructs one complete service lead from every fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Developer gas programmes, CP12 scheduling, and boiler manufacturer technical support discussions stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound gas text?",
+    answer: "Each text generates a branded response within seconds under your company name. A developer's programme text — 'plots 20-24 ready for boiler install next Wednesday, Worcester 8000 Life combis, horizontal flues, need your team 7:30am' — is confirmed with the plot range, boiler model, flue type, and attendance time preserved. A homeowner's concern — 'gas hob flame is yellow and leaving soot marks on the pans' — receives a safety-conscious response asking whether they can smell gas and recommending they open windows for ventilation."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "Texts read like a Gas Safe engineer checking messages between commissioning steps — manufacturer-aware, fault-code fluent, and safety-conscious. References to Worcester, Vaillant, Baxi, Ideal, Viessmann models, fault codes (F.28, F.75, EA, E1), and commissioning procedures signal registered competence."
+  },
+  {
+    question: "How does it handle existing client texts?",
+    answer: "Repeat landlord clients text CP12 updates — 'tenant at 44 Cowley Road confirmed Thursday 9am access' or 'add two more properties to the February programme.' The AI records each amendment and distinguishes existing client scheduling from new business leads on your dashboard."
+  },
+  {
+    question: "What does AI SMS cost for gas engineers?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A boiler installation generates £2,000 to £4,500. Confirming one developer's Monday boiler programme — while you recorded flue gas readings on another plot — locks revenue that far exceeds the annual cost of the channel.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send one reply and the AI steps back from that thread for good. During survey visits and office hours — handle texts directly. During active gas work — when the analyser is clamped, the tightness test manometer is zeroed, or you are purging a newly installed gas line — let the AI manage the commercial texts."
+  },
+  {
+    question: "How is text data from gas enquiries stored?",
+    answer: "Text messages containing property addresses, boiler serial numbers, fault codes, CP12 scheduling details, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. Nothing reaches competing Gas Safe firms or third-party lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Gas Installation Engineers | Rapid Receptionist"
+  description={`AI SMS for UK Gas Safe registered engineers. Responds to developer boiler programme texts, landlord CP12 renewals, and boiler fault notifications while you commission. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/gas-installation-engineers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Gas Installation Engineer"
+  tradeNamePlural="Gas Installation Engineers"
+  tradeSlug="gas-installation-engineers"
+  headline="AI SMS for Gas Installation Engineer Companies"
+  accentWord="Gas"
+  subhead="You are at 8:30am on a Thursday, in the kitchen of a mid-terrace house in Cowley — fitting a new Ideal Vogue Max 32 combi boiler to replace a 16-year-old Potterton Promax that has developed a cracked heat exchanger. The old boiler is disconnected, the new Ideal is hung on the wall bracket, and you are connecting the 22mm copper flow and return, the 15mm gas supply, the 15mm cold mains, the condensate trap, and the flue adapter — seven connections before the gas tightness test and commissioning sequence. At 8:45am a letting agent texts: 'Morning — CP12 programme for the new year. Twenty-two rental properties across Cowley, Iffley, and Littlemore. Mix of Worcester, Vaillant, Ideal, and Baxi combis, plus three system boilers with unvented cylinders. All certificates expire between January and March. Need Gas Safe certificates emailed to our property management system within 24 hours of each visit. Also, two properties have old Potterton boilers that I suspect will fail the CP12 — want replacement quotes for those. Previous engineer charged £65 per CP12 — can you match or beat? Call me when free.' Your hands grip pipework. Without AI SMS, the twenty-two-property CP12 programme waits until the Ideal is commissioned at noon. She texts another Gas Safe firm. With it, the AI responds at 8:46am, confirms your Gas Safe CP12 capability, and asks whether the properties have parking or permit requirements. She confirms six need visitor permits. At noon you review: 22 rentals Cowley/Iffley/Littlemore, Worcester/Vaillant/Ideal/Baxi combis + 3 system boilers, Jan-March CP12s, 24hr certificate email, 2 Potterton replacement quotes, £65 price match query, 6 visitor permits."
+  scenario="It is 7pm on a Sunday in February. A homeowner in Wantage texts about their heating — 'Hi — our boiler fires up but the radiators upstairs are cold. Downstairs are warm. Boiler is a Baxi Duo-tec 28, about 8 years old. Tried bleeding the upstairs radiators — some air came out but they are still cold after an hour. Thermostat is set to 21°C but upstairs rooms feel about 15°C. Is this a pump problem or do the radiators need balancing? We have a baby sleeping upstairs in a cold room. Can someone come tomorrow?' Without AI SMS, the cold upstairs waits until Monday morning. With AI SMS, the reply at 7:01pm: 'Thank you — cold upstairs radiators after bleeding can indicate a circulating pump issue, a system balance problem, or a motorised valve failure. Could you confirm whether the pump is making any unusual noise, and whether the upstairs towel rail (if fitted) is also cold?' She confirms quiet pump, towel rail also cold. Monday you attend: Wantage, Baxi Duo-tec 28, 8yr, upstairs radiators cold after bleeding, thermostat 21°C rooms 15°C, pump quiet, towel rail cold, baby upstairs, balancing/pump/valve investigation."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/gas-installation-engineers/ai-receptionist/"
+  ctaHeadline="Confirm the 22-Property CP12 Programme While You Fit the Ideal in Cowley"
+  ctaSubhead={`A letting agent needs twenty-two CP12s across three postcodes with 24-hour certificate delivery. The AI confirmed your capability while you connected seven pipes on the Ideal Vogue Max. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Researching Boilers',
+    text: "Homeowners spend days comparing boiler brands, reading efficiency ratings, and calculating payback periods. Chat captures them on your website — ready to commit but needing guidance on combi versus system, output size, and warranty length."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies Gas Project Scope Online',
+    text: "Through conversation, the AI determines whether the visitor needs a boiler replacement, a landlord CP12, an annual service, a full heating system, or a gas emergency. You receive a classified lead with the correct scope."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Boiler Failures',
+    text: "Boilers fail after the office closes — the heating cuts out at 8pm, the fault code appears at 10pm, the hot water stops at 11pm. Homeowners search your website for a Gas Safe engineer while the house cools around them. Chat captures their fault code and urgency."
+  },
+  {
+    icon: '📊',
+    title: 'Explains Boiler Choices to Visitors',
+    text: "Visitors ask 'combi or system?', 'what size boiler do I need?', 'is Worcester better than Vaillant?' The AI responds from your profile expertise — comparing flow rates, warranty terms, and system suitability — while capturing the property size and bathroom count."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Boiler Galleries',
+    text: "Your website shows installed boilers — neat flue exits, tidy pipework, and labelled gas connections. Chat converts visitors studying your Gas Safe workmanship into booked surveys."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat is bundled with phone answering at £${pricing.tiers.core.price}/month. Unlimited gas conversations — from annual service bookings to twenty-plot boiler installation tenders.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my gas engineering website?",
+    answer: "Onboarding delivers a single JavaScript snippet to paste into your website header through WordPress, Wix, Squarespace, or your HTML editor. The branded chat widget appears on every page immediately. Gas firms with boiler installation galleries and Gas Safe accreditation prominently displayed find that visitors engage with chat directly from pages showing neat Worcester Bosch installations with Benchmark certificates."
+  },
+  {
+    question: "Can the AI advise on boiler selections?",
+    answer: "Your Gas Safe company profile trains the AI with your preferred manufacturers, output sizing approach, and system recommendations. When a visitor types 'what combi is best for a 3-bed semi with 2 bathrooms?' the AI responds from your configured preferences — mentioning suitable output ranges, flow rates, and brands — while gathering the property type, the radiator count, and the current boiler details."
+  },
+  {
+    question: "What does chat capture from gas visitors?",
+    answer: "The AI collects the gas requirement (boiler replacement, service, CP12, new installation, or emergency), the existing boiler manufacturer and approximate age, the system type, the property size and bathroom count, the fault code if applicable, the urgency, and the visitor's contact information for your callback."
+  },
+  {
+    question: "Does chat slow my gas engineering website?",
+    answer: "Boiler installation photography, Gas Safe registration badges, manufacturer warranty logos, and Trustpilot review widgets load at their full speed before chat activates. The lightweight widget loads asynchronously after all existing page content renders. Zero impact on page performance or search ranking."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Chat comes included with phone answering at £${pricing.tiers.core.price}/month — zero extra. Gas engineers benefit from overlapping coverage: daytime phone calls from developers booking new-build gas packages and landlords scheduling CP12 programmes, paired with evening and weekend website chats from homeowners whose boilers have just failed and are searching desperately for a Gas Safe engineer before bedtime.`
+  },
+  {
+    question: "How is visitor data from gas queries handled?",
+    answer: "Chat conversations containing property addresses, boiler model numbers and serial numbers, fault codes, Gas Safe notification references, and visitor contact details are encrypted and stored on UK and EU servers under UK GDPR. Leads go exclusively to you. No gas project details reach competitors or third-party lead generators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Gas Installation Engineers | Rapid Receptionist"
+  description={`AI website chat for UK Gas Safe registered engineers. Engages homeowners comparing boilers and landlords booking CP12 certificates. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/gas-installation-engineers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Gas Installation Engineer"
+  tradeNamePlural="Gas Installation Engineers"
+  tradeSlug="gas-installation-engineers"
+  headline="AI Website Chat for Gas Installation Engineer Companies"
+  accentWord="Gas"
+  subhead="A homeowner finds your website at 9pm on a cold January Monday. His Worcester Bosch Greenstar 30i combi has been losing pressure steadily for three weeks — the pressure gauge drops from 1.5 bar to 0.3 bar within twenty-four hours of being topped up via the filling loop. He has been manually re-pressurising every morning, but tonight the boiler locked out on low pressure and will not restart. The house temperature is dropping to 12°C. He types: 'Evening — our Worcester 30i keeps losing pressure. Drops from 1.5 to 0.3 bar every day. Been topping it up through the filling loop for weeks but tonight it locked out completely and won't fire. No heating, no hot water. House is getting cold — two kids in bed. Boiler is about 9 years old. Is this the expansion vessel or is there a leak in the system? We are in Headington. Can someone come tomorrow morning? If it needs replacing rather than repairing, we would want quotes for a new Worcester or Vaillant — something reliable. Three beds, one bathroom, nine radiators.' Without chat, he bookmarks and calls in the morning. With AI Website Chat, the AI explains that pressure loss of that rate often indicates either an expansion vessel failure or a system leak requiring investigation, and asks whether he has noticed any damp patches near radiators or pipework. He confirms a small damp patch under the hall radiator. Tuesday you attend: Headington, Worcester 30i, 9 years old, pressure drop 1.5→0.3 bar daily, locked out, damp patch hall radiator, 3-bed 1-bath 9 rads, replacement quote if unrepairable."
+  scenario="It is midnight on a Thursday. A letting agent managing forty rental properties across east Oxford types: 'Hi — I manage forty rental properties and need a reliable Gas Safe engineer for our annual CP12 programme. Current engineer has retired. Properties are a mix of combi boilers (mostly Worcester, Vaillant, and Ideal), some older system boilers with cylinders, and two properties still on old Baxi back boilers. About thirty-five need CP12 renewal between February and April. Also need a price for the two back boiler conversions to modern combis — tenants are complaining about the noise and the pilot light going out. Can you handle a programme this size and maintain our three-year service history records? We need certificates uploaded to our property management portal within 48 hours of each visit.' Without chat, she emails Friday. With AI Website Chat, the AI confirms your Gas Safe registration and CP12 capability, asks about the geographic spread of properties and average radiator counts, and captures: 40 rentals east Oxford, 35 CP12s Feb-April, mix of Worcester/Vaillant/Ideal combis + system boilers + 2 Baxi back boilers, 2 back boiler conversions, service history, 48hr certificate upload to portal."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/gas-installation-engineers/ai-receptionist/"
+  ctaHeadline="Win the Headington Boiler Emergency While His Children Sleep in a Cold House"
+  ctaSubhead={`A homeowner's Worcester 30i is losing a bar of pressure daily and locked out at 9pm in January. Chat captures the fault, the damp patch under the hall radiator, and the replacement quote request. Included at £${pricing.tiers.core.price}/month.`}
+/>

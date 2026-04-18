@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Gas Commissioning',
+    text: "Commissioning a boiler — analyser clamped into the flue, CO and CO₂ readings stabilising, burner pressure adjusted through the gas valve port, gas rate measured against the data plate — is a procedure that cannot be interrupted safely. Missed Call Text Back texts every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Developer Programme Callers',
+    text: "A main contractor with plastered walls on plot 19 calls to confirm your Monday boiler installation. Voicemail? He schedules a competitor. A branded text — 'Thanks for calling — we are commissioning a boiler and will call back shortly' — preserves your programme position."
+  },
+  {
+    icon: '🏷️',
+    title: 'Gas Safe Registered Image',
+    text: "An instant branded text from a Gas Safe registered engineer signals the regulatory professionalism that developers trust with programme-critical boiler installations and Benchmark commissioning."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Full Installation Days',
+    text: "Gas installation days fill from the first boiler hang at 7:30am to the final Benchmark signature at 5pm. Every hour occupied with pipework, connections, tightness testing, and commissioning. Missed Call Text Back captures every lead during your most safety-critical working days."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Gas Details',
+    text: "Callers reply with scope — 'boiler replacement, Worcester 30i combi, 1970s semi, Headington, want to book before Christmas.' Replies arrive on your dashboard before the analyser probe is removed."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering conducts full gas conversations. Missed Call Text Back covers edge situations — a call during the critical tightness test three-minute hold, a phone in the van while you commission in the kitchen, or a single-ring disconnect. Together: zero lost gas leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "Your branded message dispatches within seconds of the unanswered ring concluding — before the homeowner with a cold house and a locked-out boiler dials the next Gas Safe number from Google. During full-day boiler installations where the tightness test, commissioning, and Benchmark paperwork consume every minute, this automatic text sustains your commercial responsiveness without breaking a single safety-critical procedure."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose the wording during onboarding and revise it whenever you choose. A gas-specific message reads: 'Thank you for calling [company name]. We are currently commissioning a gas boiler and will return your call at the earliest opportunity. Reply with your gas or heating requirements for a quicker response.' This demonstrates active Gas Safe capability while inviting project details."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "The two systems protect your gas business through complementary coverage. Phone Answering conducts complete conversations — diagnosing boiler symptoms, recording fault codes, capturing developer specifications, and scheduling CP12 programmes. Missed Call Text Back handles rare edge cases — a call during the three-minute gas tightness test where the manometer must remain undisturbed, a phone in the van while you work in the kitchen, or a caller hanging up before the AI connects. Both running together eliminates gas lead loss entirely."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This channel add-on is £${pricing.addOn.price}/month. A boiler installation generates £2,000 to £4,500. Recovering one missed call from a letting agent with a fifteen-property CP12 programme — through a six-second branded text while you verified flue gas readings on another installation — initiates recurring compliance revenue that dwarfs the annual channel cost.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Letting agents reply with CP12 requirements — 'need gas certs on eight rentals, mix of combis and back boilers, Cowley and Iffley, before March.' Homeowners reply with boiler summaries — 'Worcester 30i, 12 years old, keeps losing pressure, Headington, want replacement quote.' Developers reply with programme details — 'twelve plots need boilers next month, Vaillant ecoTEC, horizontal flues, Benchmark.' These gas leads arrive on your dashboard while the commissioning certificate prints."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Caller information, text replies with property addresses, boiler model numbers, Gas Safe references, fault codes, and contact numbers are encrypted on UK and EU servers under UK GDPR. Access is exclusive to you. Nothing reaches competing Gas Safe engineers or lead-generation platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Gas Installation Engineers | Rapid Receptionist"
+  description={`Missed Call Text Back for UK Gas Safe registered engineers. Automatically texts callers while you commission boilers, test gas tightness, and record flue readings. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/gas-installation-engineers/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Gas Installation Engineer"
+  tradeNamePlural="Gas Installation Engineers"
+  tradeSlug="gas-installation-engineers"
+  headline="Missed Call Text Back for Gas Installation Engineer Companies"
+  accentWord="Gas"
+  subhead="It is 11am on a Wednesday in December. You are in the airing cupboard of a 1990s detached house in Carterton — replacing a 22-year-old Glowworm Flexicom 30HX combi boiler. The old boiler is disconnected and removed, the wall bracket for the new Worcester Bosch Greenstar CDi Classic 36 is mounted, and you are connecting the 22mm flow and return, the 15mm gas supply (tightness tested), the 15mm cold mains, the condensate to the internal waste pipe, and the horizontal concentric flue through the cavity wall. Five calls come in between 9am and 1pm. Your phone is on the kitchen worktop, your hands inside the airing cupboard with pipework and fittings. Without Missed Call Text Back, two voicemails — 'need a boiler quote' and 'boiler stopped working' — three hang-ups. With it, all five receive texts within seconds. The first replies at 11:15am: 'Hi — I manage a portfolio of twenty-five rental properties across south and east Oxford. Need a new Gas Safe engineer for our annual CP12 programme — previous engineer relocated. Properties are a mix of Worcester, Vaillant, Ideal, and Baxi combis, plus four older system boilers with cylinders. All certificates need renewing between January and April. Also need two boiler replacements — a 16-year-old Ideal Icos that keeps locking out on an L1 fault, and a back boiler in a 1970s terrace. Need certificates emailed within 48 hours. Can you handle the full portfolio? Call me when free.' At 1pm the Worcester is commissioned and Benchmarked. Five leads on your dashboard — including a twenty-five-property portfolio."
+  scenario="It is 3pm on a freezing January Saturday. You have been installing a Viessmann Vitodens 050-W 29kW combi in a terraced house in Walton Street since 8am — removing the old Potterton Netaheat back boiler from behind the gas fire, closing up the fireplace, running new gas pipework from the meter to the kitchen, mounting and connecting the Viessmann, installing the flue with a plume management kit, powerflushing the system with Sentinel X400, fitting a MagnaClean Atom, and commissioning. Seven missed calls between 8am and 3pm. Without Missed Call Text Back, you surface to seven unknowns and two voicemails. With Missed Call Text Back, all seven received texts. Reply one: 'homeowner Eynsham — boiler stopped, Baxi Duo-tec 24, F.133 fan fault, no heating, 4-year-old twins, need someone today or tomorrow.' Reply two: 'developer Didcot — twenty-two houses need gas packages, Ideal Vogue Max 26, horizontal flues, gas hob, Benchmark, four per week starting February.' Reply three: 'landlord — CP12 on HMO in Cowley, six bedrooms, two boilers, certificate expired two weeks ago, urgent.' Reply four: 'homeowner Botley — want to upgrade from a system boiler with cylinder to a combi, 1980s semi, eight radiators.' Reply five: 'architect — barn conversion near Bampton, LPG combi required, no mains gas, need Gas Safe LPG registered.' Reply six: 'letting agent — annual boiler service on fourteen flats, need quotes.' Reply seven: 'homeowner Witney — radiators downstairs cold, boiler fires up but circulation seems stopped, pump noise changed.' Seven leads. Saturday evening you triage — the Baxi fan fault with twins for Sunday morning, the expired CP12 for Monday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/gas-installation-engineers/ai-receptionist/"
+  ctaHeadline="Recover Seven Gas Leads from One Freezing January Saturday"
+  ctaSubhead={`While you installed a Viessmann and powerflushed in Walton Street, seven callers missed you. Seven texts went out. A Baxi fan fault with twins, a 22-house developer, an expired CP12, a combi upgrade, an LPG barn, fourteen flat services, and cold radiators. Add-on at £${pricing.addOn.price}/month.`}
+/>

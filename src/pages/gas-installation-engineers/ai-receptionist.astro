@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A property developer calls about a gas installation package for a new-build estate in Didcot — twenty-eight houses across three phases. Each plot requires a Worcester Bosch Greenstar 8000 Life combi boiler with horizontal flue, gas meter connection from the CSEP, 22mm and 15mm copper gas pipework from the meter to the boiler, gas hob supply, gas fire supply in the lounge, condensate to the kitchen waste stack, MagnaClean Pro2 filter, and full Benchmark commissioning with Gas Safe notification. He needs your fixed price per plot and confirmation you can commission four boilers per week. You are in a plant room of a commercial property in Abingdon — checking flue gas readings on a newly installed Vaillant ecoTEC plus 48kW commercial cascade, the Testo 320 analyser clamped into the flue adapter, CO and CO₂ readings displaying, the burner pressure being adjusted to specification. Both hands occupied with the analyser and the adjustment tool. He calls three Gas Safe firms. One answers and books a Thursday walkover.",
+    with: "Your AI receptionist answers on the second ring. It captures the scope — twenty-eight plots Didcot, three phases, Worcester Bosch Greenstar 8000 Life combi, horizontal flue, CSEP connection, copper gas pipework, gas hob and fire supply, condensate to waste stack, MagnaClean Pro2, Benchmark commissioning, Gas Safe notification, four per week — and confirms you will call back. At the break you review and schedule Thursday."
+  },
+  {
+    without: "A homeowner emails on Tuesday about replacing their old boiler — a 20-year-old Potterton Suprima back boiler behind a gas fire. The flue is an open-flue terminal on the outside wall, there is no condensate drain, and the system has never been powerflushed. They want a modern combi boiler in the kitchen with a new horizontal flue. The email sits until Saturday.",
+    with: "Your AI acknowledges within sixty seconds, referencing the Potterton Suprima back boiler, the open-flue terminal, the kitchen relocation, and the condensate and powerflush requirements. Saturday you schedule the Monday survey."
+  },
+  {
+    without: "A letting agent WhatsApps on Friday evening about an expired CP12 on a tenant's property — the gas safety certificate lapsed three weeks ago, the tenant has reported a yellow flame on the hob, and the letting agent needs a Gas Safe engineer urgently for the LGSR and a safety inspection. She messages three firms. By Monday, two have replied.",
+    with: "The AI responds within seconds, asks about the boiler make and model, the last service date, and the tenant's access availability. Monday at 8am you have a structured urgent CP12 lead with yellow-flame observation."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Boiler Installation & Replacement",
+    items: ["Combi boiler installation — Worcester Bosch, Vaillant, Baxi, Ideal, Viessmann", "System boiler installation with unvented hot water cylinder (G3 qualified)", "Back boiler removal and modern combi/system conversion", "Flue installation — vertical, horizontal, concentric, plume management kits", "Condensate pipe routing, external lagging, and pump installation", "MagnaClean/Adey filter installation and system powerflush"]
+  },
+  {
+    category: "Gas Safety & Landlord Compliance",
+    items: ["CP12/LGSR (Landlord Gas Safety Record) — annual certification", "Gas safety inspections for domestic and commercial properties", "Gas tightness testing and let-by test procedures", "CO detector installation and testing", "Unsafe gas appliance identification — ID/AR/NCS classification", "Gas Safe notification for all notifiable work"]
+  },
+  {
+    category: "Commercial & New-Build Gas",
+    items: ["New-build gas installations — CSEP to boiler, hob, and fire", "Commercial boiler installation and cascade systems", "LPG installation for off-grid properties — propane conversions", "Gas pipework — copper, CSST (TracPipe/GasFlex), and steel", "Commercial catering gas installations — range, oven, fryer", "Building Regulations Part J compliance and ventilation calculations"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Developers",
+    description: "Housebuilders requiring Gas Safe registered engineers for new-build installations — CSEP connections, gas pipework, boiler installation, flue termination, and Benchmark commissioning. Programme-critical work that follows the plasterer and precedes handover to the homebuyer."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners needing boiler replacements, system upgrades, back boiler conversions, and central heating improvements. They value clear communication about boiler choices, efficiency ratings, warranty periods, and disruption timelines — especially when the old boiler fails mid-winter and the house has no heating."
+  },
+  {
+    icon: "🏢",
+    title: "Letting Agents & Landlords",
+    description: "Letting agents and landlords requiring annual CP12/LGSR certifications, emergency boiler repairs for tenants, and gas safety compliance across property portfolios. Expired gas certificates create immediate legal liability — Gas Safe compliance is non-negotiable."
+  },
+  {
+    icon: "🍽️",
+    title: "Commercial Clients",
+    description: "Restaurant owners, pub operators, and commercial kitchen managers needing gas appliance installations, commercial boiler services, and gas safety certifications. Commercial gas work demands specific Gas Safe categories and commercial catering knowledge."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand gas installation terminology?",
+    answer: "Every gas-specific term is configured — Gas Safe Register (registration categories, notification), boiler types (combi, system, regular/heat-only, back boiler), manufacturer models (Worcester Bosch Greenstar, Vaillant ecoTEC, Baxi 800, Ideal Vogue Max, Viessmann Vitodens), flue (vertical, horizontal, concentric, plume management kit, terminal guard, separation distances, Part J), condensate (trap, pipe, external lagging, internal route, condensate pump, soakaway), LPG (propane, butane, oil-to-gas conversion, cylinder storage), CP12/LGSR (Landlord Gas Safety Record, annual certificate, ID/AR/NCS classification for unsafe appliances), commissioning (gas rate, burner pressure, working pressure, standing pressure, flue gas analysis, CO/CO₂ readings, analyser), gas meter (CSEP, meter box, regulator, ECV emergency control valve), pipework (copper, CSST TracPipe, gas tightness test, purging, let-by test), ventilation (combustion air, air vent, room-sealed, open-flue, compartment ventilation), controls (Nest, Hive, tado°, programmer, room thermostat, TRV), and system maintenance (powerflush, MagnaClean, Adey, system balancing). A developer describing 'Worcester Bosch Greenstar 8000 Life combi with horizontal concentric flue, CSEP connection, copper gas pipe, condensate to waste stack, Benchmark' hears every element recorded."
+  },
+  {
+    question: "Can the AI tell the difference between a boiler replacement and a CP12?",
+    answer: "A homeowner saying 'the boiler has broken down, it is a 15-year-old Worcester combi, we need a replacement' generates a boiler replacement lead with the existing model, age, fault symptoms, and heating system type. A letting agent saying 'CP12 expired on three rentals, need annual gas safety certificates before the month end' generates a landlord compliance lead with property count, certificate status, and regulatory deadline. The lead formats, urgency classifications, and follow-up structures are entirely separate."
+  },
+  {
+    question: "What about emergency gas calls?",
+    answer: "A gas smell in a kitchen, a boiler producing carbon monoxide, a yellow flame on a hob with soot marks, a flue terminal blocked by bird nesting, and a tenant reporting headaches near a gas appliance — gas emergencies are life-threatening. The AI captures the hazard description, asks whether the gas has been turned off at the ECV, whether windows are open for ventilation, and records the property access for priority Gas Safe attendance."
+  },
+  {
+    question: "How much does this cost for a gas engineer?",
+    answer: `Gas installation engineers pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sole-trader boiler installer or a multi-van operation delivering new-build gas packages and commercial cascade systems, the allowance accommodates your call volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a one-person gas business?",
+    answer: "Solo Gas Safe engineers gain tremendous value. When you are commissioning a boiler with the flue analyser clamped in, adjusting burner pressure with both hands on the tool, or running gas pipe through a floor void — answering the phone compromises the commissioning sequence, the safety procedure, or the physical position. The AI captures every boiler quote, every CP12 booking, and every emergency gas call while you complete the work safely."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Set coverage from your dashboard to match your gas installation day. During boiler commissioning — when the analyser is running and the burner pressure requires precise adjustment — send every call to the AI. During van travel, quotation visits, and office administration — take calls directly. Switch from your phone as your task changes."
+  },
+  {
+    question: "How is gas installation data protected?",
+    answer: "Gas enquiries contain property addresses, boiler serial numbers, Gas Safe notification records, CP12 certificate details, and commercially sensitive tender pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing gas firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Gas Installation Engineers | Rapid Receptionist"
+  description={`AI receptionist for UK Gas Safe registered engineers — boiler installations, CP12 certifications, commercial gas, and emergency repairs. Never miss a call while you commission. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/gas-installation-engineers/ai-receptionist/"
+  tradeName="Gas Installation Engineer"
+  tradeNamePlural="Gas Installation Engineers"
+  tradeSlug="gas-installation-engineers"
+  headline="The AI Receptionist Built for Gas Installation Engineers"
+  accentWord="Gas"
+  subhead={`You cannot answer the phone when the Testo analyser is clamped into the flue, when you are adjusting burner pressure on a newly installed combi, or when you are crawling under floorboards running copper gas pipe from the meter to the new boiler position. Your AI receptionist captures every call, every message, and every booking — from developers commissioning twenty-eight-plot estate gas packages to letting agents needing urgent CP12 certificates on tenant properties with expired gas safety. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next 28-Plot Gas Package Calls While You Commission in Abingdon"
+  ctaSubhead={`A developer with Worcester Bosch Greenstar combis and Benchmark commissioning across three phases needs a Gas Safe engineer who answers. If voicemail picks up, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Commission Boilers',
+    text: "Commissioning a boiler demands unbroken focus — the Testo analyser clamped into the flue adapter, CO and CO₂ readings stabilising, burner pressure adjusted with a flat-blade screwdriver through the gas valve port, gas rate measured against the data plate specification. The AI answers every call in your company name."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Gas Briefs at Every Scale',
+    text: "When a developer calls about gas packages on a thirty-plot estate, the AI captures the boiler model, flue type, and CSEP requirement. When a homeowner calls about a broken boiler in January, the AI captures the fault code, the model, and the heating status."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Gas Emergency Calls',
+    text: "Gas smell in a kitchen, carbon monoxide alarm sounding, yellow flames on a hob with sooting, a boiler lockout with a fault code, and a tenant reporting headaches near an old back boiler — gas emergencies are immediately life-threatening. The AI captures the hazard, confirms ECV isolation, and builds an urgent attendance lead."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Boiler Enquiries',
+    text: "Homeowners discover boiler failures in the evening — the heating cuts out after dinner, the hot water stops at bath time, the radiators run cold on the first freeze. The AI captures every evening breakdown call at maximum urgency."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Gas Pricing',
+    text: "Each lead specifies the gas work type (boiler install, repair, service, CP12, or emergency), the existing boiler model and age, the system type, the property dimensions, and access — everything required for accurate gas installation pricing."
+  },
+  {
+    icon: '🏷️',
+    title: 'Gas Safe Professionalism',
+    text: "A Gas Safe registered firm that answers professionally and asks about the existing boiler, flue configuration, and system type signals the regulated competence that homeowners and developers trust with gas safety."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their gas project?",
+    answer: "Questioning adapts to the enquiry category precisely. A homeowner wanting a new boiler hears questions about the existing boiler make and age, the system type (combi, system with cylinder, or regular with header tank), the number of radiators and bathrooms, the property type, and whether they have a preferred replacement brand. A developer requesting new-build gas packages is asked about the plot count, the boiler specification, the flue type (horizontal or vertical concentric), the CSEP connection status, and the programme in relation to the plasterer's handover."
+  },
+  {
+    question: "Can the AI handle both domestic and commercial gas calls?",
+    answer: "Domestic boiler installations — selecting a combi, routing the flue, and commissioning with Benchmark — demand different qualification details than commercial gas work with cascade boiler systems, commercial catering installations (range, combi oven, deep-fat fryer), three-phase fan-assisted flues, and Gas Safe commercial categories. The AI produces entirely different lead formats, ensuring a homeowner's combi replacement enquiry never mixes with a restaurant's commercial kitchen gas tender."
+  },
+  {
+    question: "What about calls during active gas work?",
+    answer: "Gas installation involves safety-critical sequences that cannot be interrupted — purging a newly installed gas line to remove air, checking tightness with a manometer gauge over the required standing time, adjusting the gas valve to achieve the correct burner pressure, and recording flue gas readings with the analyser. Walking away mid-procedure compromises the safety test, wastes commissioning time, and risks an incomplete Gas Safe notification. The AI captures every call while you complete the procedure that valid certification requires."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `The Core plan delivers ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Gas engineers receive a distinctive call blend — emergency breakdown calls in winter, homeowner boiler replacement quotes, landlord CP12 bookings, developer new-build gas packages, and commercial catering installation tenders. The seasonal surge in winter breakdown calls is accommodated within the allowance. Overage runs at 20p per minute without contract commitment.`
+  },
+  {
+    question: "Can I take calls during quoting?",
+    answer: "During customer consultations, boiler survey visits, and quotation preparation — handle calls directly. The instant your hands are occupied — adjusting a gas valve, clamping the flue analyser, or tightness testing with the manometer — route calls to the AI. Toggle from your dashboard when your working conditions change."
+  },
+  {
+    question: "How is gas installation data secured?",
+    answer: "Gas enquiries contain property addresses, boiler serial numbers, Gas Safe registration details, CP12 records, flue gas readings, and commercially sensitive tender information. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details reach competing Gas Safe firms or third-party lead generators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Gas Installation Engineers | Rapid Receptionist"
+  description={`AI phone answering for UK Gas Safe registered engineers. Captures developer gas packages, homeowner boiler replacements, and landlord CP12 bookings while you commission. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/gas-installation-engineers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Gas Installation Engineer"
+  tradeNamePlural="Gas Installation Engineers"
+  tradeSlug="gas-installation-engineers"
+  headline="AI Phone Answering for Gas Installation Engineer Companies"
+  accentWord="Gas"
+  subhead="A homeowner calls at 9:30am on a Wednesday. Her Vaillant ecoTEC pro 28 combi boiler is showing fault code F.28 — ignition failure. The boiler is seven years old, never serviced since installation, and the heating and hot water have stopped completely. It is late November, the temperature outside is 2°C, and she has two young children in the house. She needs a Gas Safe engineer today — either to repair the boiler or to quote for a replacement if the heat exchanger has failed. She found your Gas Safe Register listing and called immediately. You are in the loft of a Victorian terrace in Summertown — running 22mm copper gas pipe from the existing meter position in the hallway to the new boiler location in the kitchen below, threading the pipe through drilled joists, the pipe cutter in one hand and the Yorkshire fitting in the other. Without AI Phone Answering, the Vaillant F.28 emergency goes to voicemail. She calls two more Gas Safe engineers. With it, the AI captures: Vaillant ecoTEC pro 28, fault code F.28 ignition failure, 7 years old, never serviced, no heating or hot water, late November, 2°C outside, 2 young children, today if possible, repair or replacement quote."
+  scenario="It is 1pm on a Friday. Three calls between 11am and 1pm. You are commissioning a newly installed Worcester Bosch Greenstar 8000 Life 30 combi in a detached house in Wantage — the Testo 310 analyser clamped into the flue, CO reading at 28ppm, CO₂ at 9.1%, the gas rate measured at 2.78 m³/hr matching the data plate, burner pressure verified at 13.5 mbar, and the Benchmark checklist being completed. Without AI Phone Answering, one voicemail and two hang-ups. With it, all three are answered. Lead one: a letting agent — 'need CP12s on twelve rental properties before the end of January, certificates expiring, mix of combis and system boilers across Cowley and Iffley.' Lead two: a homeowner in Botley — 'want to replace our old Baxi back boiler behind the gas fire with a modern combi in the kitchen, house is a 1970s semi, eight radiators.' Lead three: a developer in Carterton — 'eighteen new-build houses, need Vaillant ecoTEC exclusive Green 30kW combis, horizontal concentric flues, CSEP connections, gas hob supplies, MagnaClean Pro2, Benchmark commissioning, four per week starting March.' At 2pm the Benchmark is signed. Three leads on your dashboard — a CP12 programme, a back boiler conversion, and an eighteen-plot gas package."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/gas-installation-engineers/ai-receptionist/"
+  ctaHeadline="Capture the Vaillant F.28 Emergency While You Commission in Wantage"
+  ctaSubhead={`A mother with two children, no heating at 2°C, and a Vaillant showing ignition failure needs a Gas Safe engineer today. The AI captured the fault code while your analyser read 28ppm CO. From £${pricing.tiers.core.price}/month.`}
+/>

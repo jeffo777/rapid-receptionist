@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Boiler Installation Content',
+    text: "Boiler installations are visually reassuring — a dated back boiler ripped out, a sleek modern combi mounted on the wall, neat copper pipework, and a fresh Benchmark certificate. When a homeowner messages about their own failing boiler, the AI captures an installation lead."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Emergency Gas Messages',
+    text: "Homeowners message about gas smells, boiler lockouts, and carbon monoxide alarm activations — 'is this dangerous?' The AI responds immediately, asks whether the ECV has been turned off and windows opened, and builds a priority safety lead."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Landlord CP12 Requests',
+    text: "Letting agents see your Gas Safe work on Facebook and message — 'need a reliable gas engineer for our rental portfolio, previous one retired.' The AI captures the portfolio size and certificate schedule."
+  },
+  {
+    icon: '🕐',
+    title: 'Active When Boilers Fail',
+    text: "Boilers break down in the evening. Homeowners search Facebook for Gas Safe engineers while the house cools. A message about a flashing fault code at 9pm represents a customer willing to pay premium for morning attendance."
+  },
+  {
+    icon: '📋',
+    title: 'Qualifies Gas Project Category',
+    text: "Messenger conversations begin with 'how much to replace a boiler?' The AI asks about the existing boiler, the property size, the system type, and the replacement brand preference — building a survey-ready specification."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Before-and-After',
+    text: "Every old back boiler removed, every modern combi installed with neat copper pipework, and every Benchmark certificate displayed generates enquiries from homeowners whose boilers are approaching end-of-life."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my gas firm?",
+    answer: "Messenger requires a Business page link. Gas Safe firms posting boiler installation before-and-afters, back boiler conversion sequences, and neat flue termination close-ups generate strong local engagement — homeowners tag friends with old boilers, and letting agents save posts for their preferred-supplier lists."
+  },
+  {
+    question: "What gas enquiries come through Messenger?",
+    answer: "Homeowners with failing boilers seeking replacement quotes after viewing your installations. Landlords needing CP12 programmes for rental portfolios. Builders requiring gas connections on house extensions. Restaurant owners needing commercial gas installation for kitchen equipment. Each has studied your Gas Safe work quality through your Facebook presence."
+  },
+  {
+    question: "How fast does the AI reply to gas messages?",
+    answer: "Gas Messenger enquiries generate responses within seconds of arrival. Facebook's activity status shows your gas firm is immediately available. A homeowner whose boiler has failed on a freezing evening — searching Facebook frantically for a local Gas Safe engineer — requires instant engagement, not an abandoned inbox that implies the firm is no longer active."
+  },
+  {
+    question: "What does Messenger cost for gas engineers?",
+    answer: `Messenger is £${pricing.addOn.price}/month as a channel add-on. A boiler installation generates £2,000 to £4,500. One homeowner's Worcester Greenstar installation — triggered when she messaged about her back boiler matching your before photo — covers the annual channel cost from a single job.`
+  },
+  {
+    question: "Can I continue Messenger conversations personally?",
+    answer: "Reply once in any thread and the AI transfers control to you permanently. Most gas engineers let the AI extract the initial specification — existing boiler model, system type, property size, and urgency — then step in to discuss manufacturer preferences, warranty tiers, and the survey date."
+  },
+  {
+    question: "How is Messenger data from gas queries protected?",
+    answer: "All Messenger conversations, boiler fault code photos, property addresses, Gas Safe references, CP12 schedules, and sender contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. No gas project details reach competitors or third-party lead generators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Gas Installation Engineers | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK Gas Safe registered engineers. Converts boiler installation photos into replacement quotes and CP12 programme bookings. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/gas-installation-engineers/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Gas Installation Engineer"
+  tradeNamePlural="Gas Installation Engineers"
+  tradeSlug="gas-installation-engineers"
+  headline="AI Facebook Messenger for Gas Installation Engineer Companies"
+  accentWord="Gas"
+  subhead="You post four photos of a back boiler conversion in a 1970s semi in Kidlington. Photo one: the before — a Baxi Bermuda Inset 2 back boiler behind a gas fire in the lounge, the open-flue terminal barely visible behind the fireplace surround, the ancient programmer wired into the dining room wall. Photo two: the strip-out — back boiler disconnected and removed, the fireplace opening visible showing the old asbestos rope seal and crumbling firebrick, gas supply capped at the meter, flue liner removed from the chimney. Photo three: the new installation — a Worcester Bosch Greenstar 8000 Style 30 combi mounted in the kitchen utility cupboard, horizontal concentric flue exiting through the external wall with a plume management kit, 22mm copper flow and return to the existing radiator circuit, MagnaClean Pro2 filter on the return, condensate to the kitchen waste trap, tado° Wireless Smart Thermostat mounted in the hallway. Photo four: the completed kitchen — boiler neatly enclosed in the cupboard, pipework boxed in, the tado° displaying 21°C, and the Benchmark certificate on the worktop beside a cup of tea. Seventy-eight likes, nine shares. A homeowner in Botley messages: 'We have the exact same Bermuda back boiler behind our gas fire! It is from 1978. The pilot light goes out every week and the heating barely works. We want a modern combi like yours in our kitchen. Our house is a 1970s semi, three bedrooms, one bathroom, ten radiators. The gas fire is original — we will close the fireplace up. What would this cost roughly? Can you come and look?' You are commissioning a boiler. Without AI Messenger, the Bermuda conversion waits. With it, the AI confirms your back boiler conversion experience, asks about the chimney condition and whether the fireplace is structural, and captures: Botley 1970s 3-bed semi, Baxi Bermuda Inset 2 from 1978, pilot out weekly, kitchen combi conversion, fireplace closure, 10 radiators, survey request."
+  scenario="It is 10:30pm on a Friday in January. A homeowner in Witney messages: 'Evening — our boiler just stopped. Vaillant ecoTEC pro 24 showing an F.75 fault code — we looked it up and it says something about the water pressure sensor. No heating, no hot water. House temperature dropping — it is freezing outside. We have a 6-month-old baby. Can someone come first thing Saturday morning? If the boiler needs replacing it is 12 years old and we have been thinking about it anyway — want quotes for a Vaillant or Worcester around 28-30kW. Three beds, one bathroom, eight radiators.' Without AI Messenger, the freezing family waits until Saturday morning calls. With AI Messenger, the response at 10:31pm: 'Thank you — F.75 is typically a water pressure sensor fault which can sometimes be resolved with a sensor replacement. Could you confirm the pressure gauge reading and whether the boiler has lost pressure recently?' She confirms pressure at 1.2 bar, no pressure loss. Saturday 8am you attend: Witney, Vaillant ecoTEC pro 24, F.75 pressure sensor, 12yr, 3-bed 1-bath 8 rads, baby, repair or replacement quote Vaillant/Worcester 28-30kW."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/gas-installation-engineers/ai-receptionist/"
+  ctaHeadline="Turn 78 Likes on a Kidlington Back Boiler Conversion into a Botley Survey"
+  ctaSubhead={`Four photos of a 1978 Bermuda reborn as a Worcester 8000 Style with tado° earn seventy-eight likes. AI Messenger converts the Botley neighbour's weekly pilot light failure into a full conversion survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

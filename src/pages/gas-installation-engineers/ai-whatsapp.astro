@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Boiler Fault Code Photos',
+    text: "Homeowners WhatsApp photos of flashing fault codes, error displays, and warning lights on their boiler — 'what does this mean?' The AI responds instantly, references your Gas Safe capability, and captures the manufacturer, model, and fault code for your diagnostic preparation."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Developer Gas Slots',
+    text: "Main contractors WhatsApp gas installation requirements mid-build — 'plots 9-12 ready for boiler fit, flue termination, and gas connection Monday.' The first Gas Safe firm responding maintains the programme position."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Landlord CP12 Requests',
+    text: "Letting agents WhatsApp Certificate requests — 'three CP12s expiring next week, tenants confirmed access Wednesday and Thursday.' The AI captures the property addresses and boiler details while you commission elsewhere."
+  },
+  {
+    icon: '🌙',
+    title: 'Active When Boilers Fail',
+    text: "Boilers rarely fail conveniently. They lockout after midnight in December, lose pressure on Christmas Eve, and produce strange noises at 3am. Homeowners WhatsApp fault code photos in panic. The AI captures every after-hours gas emergency."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Gas Briefs',
+    text: "A WhatsApp saying 'boiler keeps cutting out, Vaillant ecoTEC, 12 years old, Kidlington, can you come this week?' becomes a structured service lead with manufacturer, age, symptom, location, and urgency timeline."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. Developer gas packages, CP12 scheduling, and boiler manufacturer warranty discussions stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI diagnose boiler faults from photos?",
+    answer: "Only a Gas Safe registered engineer on site with proper instruments can diagnose a boiler fault — a photograph of a fault code display cannot determine gas pressure, flue integrity, or component condition. The AI does respond constructively, identifying the manufacturer from the display style, noting the fault code characters, asking whether there is any gas smell, unusual noise, or water leak visible around the boiler, and building a pre-diagnostic lead that prepares you with the correct manual and likely parts before you arrive."
+  },
+  {
+    question: "What about multi-message gas threads?",
+    answer: "Gas conversations build across messages — a homeowner sends a photo of the fault code, then explains the boiler was making a banging noise before it locked out, then confirms the pressure gauge reads zero, then asks if it is safe to use the gas hob while the boiler is faulty. The AI compiles every message into one comprehensive lead with the fault code, symptoms, pressure reading, safety concern, and the gas hob question flagged for your attention."
+  },
+  {
+    question: "How much does AI WhatsApp cost for gas engineers?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. A boiler installation generates £2,000 to £4,500. A landlord CP12 programme across twenty properties generates £1,200 to £2,000 annually. Capturing one letting agent's annual portfolio through a rapid WhatsApp reply — while you adjusted burner pressure on a commissioning — secures recurring compliance revenue that vastly exceeds the channel cost.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Post one message in any active thread and the AI yields permanently. Most gas engineers let the AI gather the initial brief — boiler make, model, fault code, system type, and urgency — then step in to discuss the likely diagnosis, the parts availability, and the attendance time."
+  },
+  {
+    question: "How is WhatsApp data from gas enquiries protected?",
+    answer: "Every WhatsApp message — boiler fault code photographs, property addresses, Gas Safe notification references, CP12 records, and sender contact details — is encrypted and stored on UK and EU servers under UK GDPR. Your data remains exclusively with you. No gas project details reach competing firms or are sold to third-party lead generators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Gas Installation Engineers | Rapid Receptionist"
+  description={`AI WhatsApp for UK Gas Safe registered engineers. Responds to boiler fault code photos, developer gas packages, and landlord CP12 requests while you commission. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/gas-installation-engineers/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Gas Installation Engineer"
+  tradeNamePlural="Gas Installation Engineers"
+  tradeSlug="gas-installation-engineers"
+  headline="AI WhatsApp for Gas Installation Engineer Companies"
+  accentWord="Gas"
+  subhead="A letting agent WhatsApps at 8am on a Monday morning with a photo of a boiler displaying a red warning light. The boiler is an Ideal Logic Plus 30 combi in a ground-floor rental flat on Iffley Road — the tenant called at 7:30am reporting no heating, no hot water, and an 'F1' fault code on the display (low water pressure). The letting agent's message: 'Morning — tenant in Iffley Road flat reports no heating since last night. Boiler showing F1 error. Photo attached. She says the pressure gauge shows zero. This is the third callout this year — the expansion vessel was replaced in March and the pressure relief valve in July. I think the boiler needs replacing rather than repairing again. It is 11 years old. Can you attend today, diagnose, and if it needs replacing, quote for a new Ideal or Worcester combi? Also — I have five other rental properties in east Oxford that need CP12 renewal in February. If you can handle the replacement and the CP12 programme, I would like to appoint one firm.' You are in a kitchen in Marston commissioning a Baxi 800 Platinum 30 — the analyser probe in the flue, the gas rate check underway, CO reading stabilising at 32ppm. Without AI WhatsApp, the six-property letting agent waits until the commissioning is complete. With it, the AI responds at 8:01am, confirms your Gas Safe capability, and asks whether the other five properties are all combis or a mix of system types. She confirms four combis and one system boiler with cylinder. At noon you review: Iffley Road flat, Ideal Logic Plus 30, F1 low pressure, expansion vessel replaced March, PRV replaced July, 11 years old, replacement quote, plus 5 CP12s east Oxford Feb (4 combis, 1 system), single appointment."
+  scenario="It is 11pm on a Saturday in December. A homeowner in Woodstock WhatsApps a video of their boiler — a Vaillant ecoTEC plus 832 making a loud kettling noise, the sound like a kettle boiling, accompanied by intermittent banging from the heat exchanger. Her message: 'Hi — our boiler started making a horrible noise about an hour ago. It sounds like it is boiling inside. Video attached. It is a Vaillant ecoTEC plus, about 14 years old. The heating is still working but the noise is frightening — our two-year-old woke up crying. Is this dangerous? Should we turn it off? We are in Woodstock. The radiators feel very hot at the top but cold at the bottom — the system was never powerflushed. Can someone come Monday?' Without AI WhatsApp, the kettling Vaillant waits until Monday morning. With AI WhatsApp, the response at 11:01pm: 'Thank you — a kettling noise from the heat exchanger is a common symptom in systems that have not been powerflushed, caused by sludge restricting water flow through the exchanger. It is safe to reduce the central heating temperature to its minimum setting for now. Could you confirm whether the pressure gauge is within the normal 1-1.5 bar range?' She confirms 1.8 bar, slightly high. Monday you attend: Woodstock, Vaillant ecoTEC plus 832, 14 years old, kettling, banging, never powerflushed, radiators hot top cold bottom, 1.8 bar pressure, 2-year-old woken, powerflush and possible heat exchanger assessment."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/gas-installation-engineers/ai-receptionist/"
+  ctaHeadline="Confirm the Iffley Road Replacement and CP12 Programme While You Commission"
+  ctaSubhead={`A letting agent with an 11-year-old Ideal showing F1 and five more CP12s needs one Gas Safe firm. The AI confirmed your capability while the Baxi 800 analyser reading stabilised. Add-on at £${pricing.addOn.price}/month.`}
+/>
