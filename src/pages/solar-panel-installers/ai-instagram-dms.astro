@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Rooftop Array Reels',
+    text: "Solar installation reels are captivating — bare roof to mounting rails, rails to panels, panels to inverter, inverter to monitoring dashboard showing kilowatt-hours climbing. When followers DM about their own roof, the AI captures a survey lead."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Homeowners at Decision Point',
+    text: "Instagram draws homeowners comparing panel brands, studying generation yields, and deciding which MCS-certified installer to contact. A DM from a homeowner who has spent three evenings reviewing solar content represents maximum purchase intent."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Inverter Fault DMs',
+    text: "Existing clients DM screenshots of red fault indicators on their GivEnergy or SolarEdge app — 'generation stopped, what is wrong?' The AI asks about the fault code and the weather conditions, building a priority service lead."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Late Solar Research',
+    text: "Homeowners browse solar Instagram in the evening after checking their smart meter — seeing 40kWh imported today while the sun shone on their empty roof. The AI captures every nocturnal solar decision."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Solar DMs',
+    text: "DMs begin with 'how much for solar?' or 'can you fit panels on my roof?' The AI asks about orientation, tile type, shading, electricity spend, and battery interest — building a survey-ready specification."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Monitoring Screenshot',
+    text: "Every GivEnergy dashboard showing 35kWh on a sunny June day, every before-and-after bill comparison, and every rooftop drone shot generates DMs from homeowners who want their own version."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "Open your Instagram app and switch to a Business or Creator profile — completely free and activates immediately. Solar installers posting rooftop timelapse reels, generation monitoring dashboards, and bill-saving comparisons produce outstanding engagement because every homeowner with a south-facing roof immediately calculates what those savings would mean for their own electricity costs."
+  },
+  {
+    question: "What solar DMs arrive through Instagram?",
+    answer: "Homeowners wanting panels after seeing a neighbour's system generating on a sunny day. Existing solar owners frustrated by low export rates wanting battery storage. Landlords needing solar for EPC compliance before rental regulations tighten. Developers studying your new-build installations for per-plot solar packages. Each follower has pre-evaluated your MCS-certified installation quality and panel brand choices."
+  },
+  {
+    question: "How quickly does the AI respond to solar DMs?",
+    answer: "Every DM receives a reply within seconds. Instagram's read indicator confirms active monitoring. A homeowner who has spent three evenings comparing Jinko versus Longi, GivEnergy versus Tesla, and calculating payback periods — finally ready to commit — sends a DM and needs an immediate, knowledgeable response from an MCS-certified installer rather than an account that last posted a completed array two months ago."
+  },
+  {
+    question: "What do Instagram DMs cost for solar installers?",
+    answer: `Instagram DMs cost £${pricing.addOn.price}/month as an add-on channel. A domestic 14-panel system with 9.5kWh GivEnergy battery generates £9,000 to £14,000. One homeowner's complete solar, battery, and EV charger package — initiated by a DM after she watched your fourteen-panel Headington timelapse — returns the annual channel investment from a single project.`
+  },
+  {
+    question: "Can I reply to DMs myself?",
+    answer: "Type a single response in any DM thread and the AI stands down from that conversation permanently. Most solar installers let the AI gather the initial scope — roof orientation, tile type, shading, consumption, battery preference, and EV ownership — then engage personally to discuss panel layout options, inverter brand selection, and the survey date."
+  },
+  {
+    question: "Is DM data from solar queries private?",
+    answer: "Instagram DMs — roof photographs, property addresses, energy consumption data, inverter preferences, battery specifications, and sender contact information — are encrypted and stored on UK and EU servers under UK GDPR. Nothing reaches competing solar firms, panel distributors, or third-party lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Solar Panel Installers | Rapid Receptionist"
+  description={`AI Instagram DMs for UK solar panel installers. Converts rooftop array reels and generation dashboard screenshots into domestic surveys and battery retrofits. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/solar-panel-installers/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Solar Panel Installer"
+  tradeNamePlural="Solar Panel Installers"
+  tradeSlug="solar-panel-installers"
+  headline="AI Instagram DMs for Solar Panel Installer Companies"
+  accentWord="Solar"
+  subhead="Your latest reel is a sixty-second timelapse of a complete domestic solar and battery installation in Summertown. Scene one: the bare south-facing roof — dark slate tiles, no shading, chimney stack to the left. Scene two: the scaffold erected, stainless steel roof hooks sliding under the slates and bolting to the rafters. Scene three: K2 SpeedRail aluminium mounting rails fixed to the hooks, the silver rails running in parallel rows across the south face. Scene four: sixteen Longi Hi-Mo 6 Explorer 425W panels being lifted and clamped one at a time — the all-black appearance striking against the slate. Scene five: the garage interior — a GivEnergy Gen3 6kW hybrid inverter mounted on the wall, a 13.5kWh battery stacked beside it, DC and AC isolators, generation meter, and a new consumer unit with dedicated solar circuit. Scene six: the GivEnergy monitoring dashboard on the homeowner's phone — day one, 12pm, system generating 4.2kW, battery at 68%, house consuming 1.1kW, excess exporting to grid. The reel ends with the homeowner's quote: 'We generated 34kWh yesterday — our bill has dropped from £210 a month to £45.' Seven thousand four hundred views. A homeowner in Marston DMs: 'That is exactly what we want. We have a Victorian end-terrace in Marston — south-facing slate roof, about 5 metres across by 4 metres deep. Small chimney in the corner. We currently spend about £170 a month on electricity. We want panels and a battery but we have heard that Victorian roofs can be tricky with the slate and the rafter spacing. Is that true? How many panels would fit on a roof that size? We have been quoted by two other firms but neither was MCS certified. We want to use the Smart Export Guarantee and we want the EPC improved from E to C. We also have a Nissan Leaf — can we charge it from solar? Happy to survey any weekday.' You are commissioning a battery. Without AI DMs, the Marston Victorian terrace waits. With it, the AI confirms your MCS certification and Victorian roof experience, asks about the rafter spacing if known and whether the chimney is on the south or north side, and captures: Marston Victorian end-terrace, south slate 5m×4m, small chimney corner, £170/month, panels + battery, Victorian rafter concern, 2 non-MCS quotes received, SEG, EPC E-to-C, Nissan Leaf solar charging, weekday survey."
+  scenario="It is 3am on a Sunday. A farm owner near Charlbury DMs: 'Hello — we operate a mixed arable and livestock farm on 800 acres. Our electricity costs are £32,000 a year — grain drying, milking parlour, cold storage, and workshop. We have a large south-facing field adjacent to the farm buildings that is currently set aside. We want a ground-mounted solar array — thinking 200-250kWp — to offset the farm electricity and eventually power a grain drying system directly. Three-phase supply already in place. We would also like battery storage for overnight cold storage operation. I understand we need G99 for this size. Planning permission — we have spoken to the local planning authority and they are supportive of agricultural renewable energy. Can you design a system this size? We would want MCS certification for every phase. What is the typical timeline from survey to energisation for 200kWp ground-mount?' Without AI DMs, the farm's 200-250kWp project waits until Sunday afternoon. With AI DMs, the reply at 3:01am confirms your ground-mount capability and G99 experience, asks about the field gradient and the soil type for foundation design, and captures: Charlbury farm 800 acres, £32k/yr electricity, grain drying + milking + cold storage + workshop, south field set aside, 200-250kWp ground-mount, battery overnight cold storage, three-phase, G99, planning supportive, MCS every phase, timeline question."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/solar-panel-installers/ai-receptionist/"
+  ctaHeadline="Turn 7,400 Views on a Summertown Slate Array into a Marston Victorian Survey"
+  ctaSubhead={`Sixty seconds of slate hooks to GivEnergy dashboard — £210 to £45 monthly — earns 7,400 views. AI Instagram DMs converts the Marston neighbour's Victorian rafter concern and Nissan Leaf into an MCS-certified survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

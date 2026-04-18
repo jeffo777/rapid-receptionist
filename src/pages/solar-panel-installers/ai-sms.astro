@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Developer Programme Texts',
+    text: "Main contractors text solar firms mid-build — 'roofing complete plots 20-28, need PV rails and panels next week.' The first MCS-certified installer confirming holds the programme slot."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Solar Briefs from Short Messages',
+    text: "A text like 'want solar and battery, 3-bed semi, south-facing, Headington' gives the AI the essentials. It asks about the roof material, any shading, and the current electricity tariff."
+  },
+  {
+    icon: '🔔',
+    title: 'Captures Battery Retrofit Texts',
+    text: "Existing solar owners text — 'have panels from 2019 but no battery, want GivEnergy, can you install?' The AI asks about the existing inverter model and panel count to assess compatibility."
+  },
+  {
+    icon: '🌙',
+    title: 'Active During Bill Shock Hours',
+    text: "Energy bills trigger immediate action. Homeowners text solar firms at 8pm — 'electricity bill just arrived, £920, need solar urgently.' The AI captures every bill-shock text at maximum conversion intent."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Solar Details',
+    text: "Messages arrive in stages — 'want solar' then 'south-facing roof' then '4-bed detached' then 'also want a battery' then 'have an EV.' The AI constructs one complete survey lead from every text fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Developer solar programmes, MCS paperwork discussions, and panel supplier orders stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound solar text?",
+    answer: "Each incoming text produces an instant branded reply under your company name. A developer's programme text — 'plots 12-18 roofing done, need 8-panel PV system per plot, Jinko 420W, GivEnergy hybrid inverter, MCS for SAP Part L, scaffold still up' — is confirmed with the plot range, panel specification, inverter choice, and scaffold availability preserved. A homeowner's enquiry — 'interested in solar for my bungalow, south-facing, no shading, want battery too' — triggers a response asking about the roof material, the approximate area, and the current electricity consumption."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "Texts read like a solar engineer checking messages between panel installations — panel-wattage fluent, inverter-brand aware, and MCS-certification precise. References to Jinko Tiger Neo 420W, GivEnergy Gen3 hybrid, K2 CrossRail mounting, G98 DNO notification, and Smart Export Guarantee convey the technical knowledge that homeowners expect from an MCS-certified renewable energy specialist."
+  },
+  {
+    question: "How does it handle existing client texts?",
+    answer: "Returning clients text system updates — 'GivEnergy app showing inverter offline since yesterday' or 'generation seems low this month, can you check the monitoring?' or 'want to add another 4.8kWh battery module to expand our existing GivEnergy stack.' The AI logs each service request and separates system issues from new installation enquiries on your dashboard."
+  },
+  {
+    question: "What does AI SMS cost for solar installers?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A domestic 12-panel system with GivEnergy battery generates £8,000 to £14,000. Confirming one developer's per-plot solar programme — while you wired a hybrid inverter on another site — secures installation revenue across multiple plots that vastly exceeds the annual channel cost.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send one reply and the AI withdraws from that thread. During MCS paperwork, G98 applications, and quotation spreadsheets — handle texts yourself. During rooftop panel mounting, DC cable routing, and inverter commissioning — when the torque wrench tightens clamps and the multimeter checks string voltages — let the AI manage the incoming enquiries."
+  },
+  {
+    question: "How is text data from solar enquiries stored?",
+    answer: "Text messages containing property addresses, roof dimensions, energy consumption figures, inverter specifications, battery preferences, and contact numbers are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. Nothing reaches competing solar firms or third-party platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Solar Panel Installers | Rapid Receptionist"
+  description={`AI SMS for UK solar panel installers. Responds to developer programme texts, battery retrofit requests, and bill-shock enquiries. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/solar-panel-installers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Solar Panel Installer"
+  tradeNamePlural="Solar Panel Installers"
+  tradeSlug="solar-panel-installers"
+  headline="AI SMS for Solar Panel Installer Companies"
+  accentWord="Solar"
+  subhead="You are at 11am on a Thursday in July — on the roof of a barn conversion near Faringdon. The barn has a new slate roof with south-facing and west-facing elevations. You are installing twenty Canadian Solar HiKu6 410W panels on the south face using Van der Valk ValkPro+ mounting rails with stainless steel roof hooks clamped under the slates. The DC cables route through a dedicated conduit into the plant room below where a SolarEdge SE7K-RWS inverter connects to a BYD HVS 10.2kWh battery stack — three modules racked vertically. The SolarEdge optimisers are fitted to each panel for individual MPPT tracking and shade mitigation from the nearby oak canopy. At 11:20am a property developer texts: 'Morning — we are building a retirement village in Carterton, forty-two bungalows. Every bungalow needs a solar PV package for Part L SAP compliance — we are thinking six 420W panels per plot with a hybrid inverter ready for battery retrofit, MCS certification for each plot, and pre-wired conduit for future EV charger. Roofing starts phase one in four weeks. Need per-plot pricing and a programme that follows the roofers. Can you handle this volume alongside our programme?' Your hands hold a slate hook. Without AI SMS, the forty-two-bungalow retirement village waits until the slate hooks are all set. With it, the AI responds at 11:21am, confirms your new-build programme capability, and asks about the roof tile type and whether scaffold access continues after roofing. He confirms concrete interlocking tiles and scaffold remains for two weeks post-roofing. At noon you review: Carterton retirement village 42 bungalows, 6×420W per plot, hybrid inverter battery-ready, MCS per plot SAP Part L, EV pre-wire conduit, concrete tiles, scaffold 2 weeks post-roof, phase 1 in 4 weeks, per-plot pricing + programme."
+  scenario="It is 7:45pm on a Tuesday in January. A homeowner in Woodstock texts: 'Hi — our neighbours just had solar panels installed and they are raving about it. We have a 1970s detached bungalow with a large south-facing roof — I would guess about 50 square metres. No shading at all — we are on a hill with clear views south. We currently spend about £2,400 a year on electricity. We heat with an air source heat pump which uses a lot. We want maximum panels, the biggest battery you can put in, and we want to charge the car from solar too — we have a BMW iX3. We have been quoted £14,000 by one firm but they were not MCS certified. Are you MCS? What would your price be for a system this size? We are retired so we are home all day using the electricity — would that affect the battery sizing? Can you survey this week?' Without AI SMS, the bungalow survey waits until tomorrow. With AI SMS, the reply at 7:46pm: 'Thank you — with 50m² of unshaded south-facing roof you could accommodate 16-18 panels depending on the panel dimensions. Being home all day with a heat pump means self-consumption will be high, which is ideal for solar. Could you confirm the heat pump brand and the existing consumer unit type?' He confirms Vaillant Arotherm 7kW, Hager consumer unit with 4 spare ways. Survey booked: Woodstock 1970s bungalow, south 50m² unshaded hilltop, £2,400/yr, Vaillant Arotherm 7kW ASHP, max panels + max battery, BMW iX3 solar charging, not MCS-certified competitor quoted £14k, retired home all day, Hager CU 4 spare ways."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/solar-panel-installers/ai-receptionist/"
+  ctaHeadline="Secure the 42-Bungalow Retirement Village While You Set Slate Hooks in Faringdon"
+  ctaSubhead={`A developer with Part L SAP compliance, forty-two bungalows, and roofing starting in four weeks needs MCS-certified per-plot solar and a programme following the roofers. The AI confirmed while slate hooks clamped. Add-on at £${pricing.addOn.price}/month.`}
+/>

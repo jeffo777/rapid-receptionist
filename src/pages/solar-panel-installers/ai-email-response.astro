@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Commercial Solar Tenders',
+    text: "M&E consultants and asset managers email solar PV tenders with roof area calculations, structural loading assessments, DNO capacity reports, and generation modelling requirements. The MCS-certified firm acknowledging first stays on the tender shortlist."
+  },
+  {
+    icon: '📐',
+    title: 'References System Specifications',
+    text: "When an asset manager emails specifying '150kWp east-west ballasted on single-ply membrane, Huawei SUN2000-50KTL-M3 inverters, G99 SSEN, thirty-year PPA model,' the AI acknowledgement references every specification element."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Rooftop Hours',
+    text: "Solar installation days consume every hour — scaffold access at 7am, rail mounting until 10am, panel clamping until 2pm, DC cabling until 4pm, inverter commissioning until 5pm. A tender email at 9am sits unread until the roof clears. Your swift acknowledgement preserves the opportunity."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Supply Invoices',
+    text: "Your inbox combines commercial tenders, panel distributor delivery notes, inverter supplier invoices, MCS registration correspondence, and DNO application confirmations. The AI identifies project tenders from operational messages."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Asset Manager Confidence',
+    text: "Asset managers with commercial property portfolios need MCS-certified solar contractors who deliver generation-optimised systems and pass DNO commissioning inspections. Consistent instant acknowledgements build the confidence that earns preferred-contractor status across their portfolio."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Solar tenders include roof plans with available array areas, structural loading reports, electrical supply assessments, and DNO pre-application responses. The AI notes every attachment and references them in your lead."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce solar quotes from tender emails?",
+    answer: "Zero pricing is produced — exclusively a professional acknowledgement referencing the solar specification and project scope. Your quotation — panel quantities, inverter sizing, mounting hardware, cable lengths, generation modelling, DNO application fees, and installation labour — is calculated from the measured roof survey, shading analysis, structural assessment, and supplier trade pricing."
+  },
+  {
+    question: "Will it respond to panel supplier emails?",
+    answer: "Onboarding configuration separates genuine tenders from operational correspondence. Panel distributor delivery confirmations from Segen or Midsummer Energy, inverter firmware notifications from GivEnergy or Huawei, mounting bracket stock alerts from K2 or Renusol, and MCS annual renewal correspondence are excluded. Only project tenders and client enquiries generate the professional acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner solar emails?",
+    answer: "Website contact form submissions from homeowners — 'interested in solar panels and a battery for our 4-bed detached, south-facing roof, spend about £200 a month on electricity' — receive a professional response asking about the roof material, any visible shading, existing EV ownership, and their preferred survey date."
+  },
+  {
+    question: "What does email response cost for solar installers?",
+    answer: `Email response costs £${pricing.addOn.price}/month as a channel add-on. A commercial 100kWp rooftop system generates £60,000 to £100,000. Acknowledging an asset manager's 150kWp warehouse tender within sixty seconds — while you wired an inverter on a domestic installation — regularly determines whether your MCS firm receives the formal site survey invitation.`
+  },
+  {
+    question: "Can subsequent tender correspondence come from me?",
+    answer: "From the AI's first acknowledgement onward, every subsequent communication is yours. Your measured roof survey, shading analysis, string design, inverter sizing, structural assessment, generation model, DNO application, and commercial proposal are prepared and submitted entirely by your team."
+  },
+  {
+    question: "How is solar tender data secured?",
+    answer: "Solar tenders contain roof layouts with mounting areas, structural loading calculations, DNO capacity reports, generation projections, PPA financial models, and commercially sensitive pricing. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender details reach competing solar contractors or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Solar Panel Installers | Rapid Receptionist"
+  description={`AI email response for UK solar panel installers. Acknowledges commercial PV tenders, G99 applications, and battery storage specifications within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/solar-panel-installers/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Solar Panel Installer"
+  tradeNamePlural="Solar Panel Installers"
+  tradeSlug="solar-panel-installers"
+  headline="AI Email Response for Solar Panel Installer Companies"
+  accentWord="Solar"
+  subhead="An asset manager emails a solar PV tender for a portfolio of six industrial units on a business park in Bicester — each unit between 800 and 1,200 square metres with flat membrane roofs recently re-covered. The brief: design, supply, and install rooftop solar PV across all six buildings under a Power Purchase Agreement model. Estimated total capacity 350-450kWp depending on available roof area after excluding rooflights, AC plant, and ventilation terminals. East-west ballasted mounting on each roof to maximise generation density without membrane penetrations. Huawei SUN2000 three-phase string inverters with Huawei Smart Logger for centralised monitoring. G99 application to SSEN for the combined capacity. MCS certification for each building for carbon reporting compliance. Structural assessment to confirm loading on each roof — the membrane manufacturer requires no more than 15kg/m² additional loading. The asset manager needs generation modelling for the PPA financial model showing twenty-five-year projected output with degradation factor. Tender return in six weeks with a mandatory site survey of all six units before submission. You are on a domestic roof in Wantage — mounting the last four of sixteen Trina Vertex S+ 440W panels on K2 CrossRail, the DC string cables routed through a conduit into the loft void, and the final panel lifting into position. Without AI Email Response, the six-building business park tender sits unread until the roof clears. With it, your acknowledgement arrives within sixty seconds, referencing the 350-450kWp, Huawei three-phase with Smart Logger, east-west ballasted, G99 SSEN, MCS carbon reporting, 15kg/m² structural limit, PPA 25-year modelling, six-week tender, and site survey."
+  scenario="It is 6am on a Monday. Your inbox over the weekend: a church warden wanting solar on a Victorian church roof — 'listed building, need to check with the diocese and planning, south-facing slate roof, want to reduce electricity bills,' a farm manager requesting a 50kWp ground-mounted array — 'south-facing field behind the main barn, three-phase supply, want to offset milking parlour electricity costs,' a homeowner wanting a Tesla Powerwall retrofit — 'have twelve panels and SolarEdge inverter, want to add Powerwall 3, MCS certificate needed,' and a Segen distributor confirming Wednesday's panel delivery. Without AI Email Response, the church, the farm, and the Powerwall wait until Tuesday. With AI Email Response, the church references listed building and diocese, the farm notes 50kWp ground-mount and milking parlour, the Powerwall captures SolarEdge and MCS requirement, and the distributor email is filtered."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/solar-panel-installers/ai-receptionist/"
+  ctaHeadline="Acknowledge the Bicester Business Park PPA While You Mount Trina Panels in Wantage"
+  ctaSubhead={`An asset manager's six-week tender for 350-450kWp across six buildings with Huawei inverters and PPA financial modelling starts when the email lands. Your sixty-second acknowledgement secures the mandatory site survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

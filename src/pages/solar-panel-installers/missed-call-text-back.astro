@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Rooftop Work',
+    text: "Bolting rail systems onto roof hooks at height, lifting and clamping 420W panels into position, routing DC strings through roof voids, or commissioning hybrid inverters and battery systems — solar installation demands rooftop concentration. Missed Call Text Back texts every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Bill-Shock Callers',
+    text: "A homeowner who just opened a £900 electricity bill calls for a solar survey. Voicemail? She calls the next MCS firm on the list. A branded text — 'Thanks for calling — we are installing solar on a roof and will call back shortly' — holds the highest-conversion caller."
+  },
+  {
+    icon: '🏷️',
+    title: 'MCS Certified Image',
+    text: "An instant branded text from an MCS-certified solar installer signals the accredited professionalism that homeowners trust with a £10,000+ renewable energy investment and that qualifies their system for the Smart Export Guarantee."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Summer Peak',
+    text: "June and July solar installation days fill from scaffold access at 7am to inverter commissioning at 5pm. Meanwhile, enquiry volume peaks as long sunny days inspire homeowners watching electricity import on their smart meters. Missed Call Text Back catches every summer surge lead."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Solar Details',
+    text: "Callers reply with specifics — 'want solar and battery, 4-bed detached, south-facing, Abingdon, spend £180/month on electricity, have an EV.' Replies arrive on your dashboard before the last panel clamps down."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering holds full solar conversations. Missed Call Text Back covers edge situations — a call while you balance a panel on the mounting rail, a phone in the van while you wire the inverter in the garage, or a single-ring disconnect. Combined: zero lost solar leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "Your branded text fires within seconds of the unanswered ring concluding — before the homeowner with a £900 electricity bill and a south-facing roof calls the next MCS installer from Trustpilot. During summer installation days where panel mounting, cable routing, and inverter commissioning fill every hour of daylight, this automatic text maintains your commercial responsiveness without interrupting a single rooftop procedure."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "The message wording is yours — set at onboarding and adjustable whenever convenient. A solar-specific message reads: 'Thank you for calling [company name]. We are currently installing solar panels on a roof and will return your call at the earliest opportunity. Reply with your solar requirements for a faster response.' This signals active MCS-certified rooftop installation while encouraging system details."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "Both systems protect your solar business through complementary mechanisms. Phone Answering holds complete conversations — establishing the roof orientation, tile type, shading, electricity spend, battery preference, and EV integration. Missed Call Text Back covers uncommon edge cases — a call arriving the instant you lift a panel onto the rail, a phone in the van while you terminate DC strings at the inverter, or a caller hanging up before the AI engages. Running both together achieves zero solar lead loss."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. A domestic 12-panel system with battery generates £8,000 to £14,000. A commercial 100kWp rooftop generates £60,000 to £100,000. Recovering one missed call from a homeowner with a south-facing roof and a £900 quarterly bill — through a six-second branded text while you clamped the final panel in Wallingford — initiates an installation worth hundreds of times the annual channel cost.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Homeowners reply with enthusiasm — 'want solar and battery, 4-bed detached Carterton, south-facing concrete tiles, no shading, spend £200/month, have a Tesla Model 3, need MCS for SEG.' Developers reply with programmes — 'thirty-six new-build houses need 6-panel PV per plot, MCS for SAP, scaffold access continuing.' Battery retrofit clients reply — 'have 10 panels and Fronius inverter, want to add GivEnergy battery.' These solar leads arrive on your dashboard while the inverter commission completes."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Caller details, text replies with property addresses, roof orientations, energy consumption, inverter preferences, battery specifications, and contact numbers are encrypted on UK and EU servers under UK GDPR. Access is exclusive to you. Nothing reaches competing solar installers or lead-generation intermediaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Solar Panel Installers | Rapid Receptionist"
+  description={`Missed Call Text Back for UK solar panel installers. Automatically texts callers while you mount panels, route DC cables, and commission hybrid inverters. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/solar-panel-installers/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Solar Panel Installer"
+  tradeNamePlural="Solar Panel Installers"
+  tradeSlug="solar-panel-installers"
+  headline="Missed Call Text Back for Solar Panel Installer Companies"
+  accentWord="Solar"
+  subhead="It is 10am on a sunny Wednesday in June. You are on a slate roof in Charlbury — mounting twelve JA Solar DeepBlue 4 415W panels on Van der Valk ValkPitched+ hooks and rails. The stainless steel hooks slide under each slate, bolt to the rafter, and the aluminium rails lock into position. Each panel lifts onto the rail, slides into the mid-clamp, and torques to 12Nm. The DC optimisers from SolarEdge clip onto each panel frame. Six panels mounted, six to go. Your phone is in the van parked on the lane below. Five calls come in between 8am and noon. Without Missed Call Text Back, two voicemails — 'want a quote for solar' and 'our inverter has a fault' — three hang-ups. With it, all five receive texts within seconds. The first replies at 10:15am: 'Hello — we run a group of three care homes across Oxfordshire. Our electricity costs are £78,000 a year combined. The directors have approved a renewable energy programme — solar PV on all three buildings. One has a flat roof, approximately 600 square metres. The second has a south-facing pitched roof, about 400 square metres. The third is a listed Victorian manor house where we would need to check planning constraints. We are thinking 200kWp total across the three sites. We need MCS certification, Generation monitoring displayed in each reception for the CQC inspectors, and a maintenance contract. Can you survey all three sites? We want a proposal for the board in eight weeks.' At noon the last panel clamps. Five leads on your dashboard — including the three-care-home 200kWp programme."
+  scenario="It is 3pm on a scorching July Saturday. You have been commissioning a SolarEdge SE10K inverter and twelve optimisers in a detached house in Abingdon since 8am — verifying each panel's optimiser voltage, confirming string Voc within the inverter's MPPT window, testing the DC isolator, AC isolator, and earthing, registering the system on the SolarEdge monitoring portal, and filing the G98 notification to SSEN. Six missed calls between 8am and 3pm. Without Missed Call Text Back, you emerge to six unknowns and one voicemail. With Missed Call Text Back, all six received texts. Reply one: 'homeowner Witney — want panels and Tesla Powerwall, 3-bed semi, south-east facing, budget £12k.' Reply two: 'farmer Faringdon — 80kWp ground-mount for grain drying, south field, three-phase, G99.' Reply three: 'developer Carterton — twenty-four houses need per-plot solar for SAP Part L, MCS certificates each plot.' Reply four: 'homeowner Eynsham — existing 8 panels SMA inverter 2016, want GivEnergy battery retrofit, MCS needed.' Reply five: 'school bursar Bicester — flat roof sports hall and science block, want solar proposal for governors.' Reply six: 'letting agent Oxford — six rental properties EPC D/E, need minimum solar for EPC C, MCS per property.' Six leads. Saturday evening priorities: Faringdon farm 80kWp on Monday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/solar-panel-installers/ai-receptionist/"
+  ctaHeadline="Recover a 3-Care-Home 200kWp Programme from One Sunny June Wednesday"
+  ctaSubhead={`While you mounted JA Solar panels on slate hooks in Charlbury, five callers missed you. Five texts went out. Care home directors with £78,000 electricity, three buildings, and CQC monitoring requirements replied within fifteen minutes. Add-on at £${pricing.addOn.price}/month.`}
+/>

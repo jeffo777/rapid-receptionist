@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Solar Installation Content',
+    text: "Rooftop solar arrays on Facebook — before-and-after shots of south-facing panels, neat inverter installations, and generation monitoring dashboards — generate outstanding engagement. When followers message about their own roof, the AI captures a survey lead."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Bill-Shock Messages',
+    text: "Homeowners message after receiving energy bills — 'just paid £900 for the quarter, saw your solar installations, how much would panels cost for a 3-bed semi?' The AI responds immediately, asks about the roof orientation, and builds a pre-survey lead."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Battery Retrofit Interest',
+    text: "Existing solar owners browse your battery installation posts and message — 'have panels but no battery, want to store excess instead of exporting at 4p/kWh.' The AI captures the existing system details and compatibility requirements."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Energy Bill Season',
+    text: "Quarterly electricity bills trigger surges in solar enquiries. Homeowners message solar firms on Facebook after comparing their bill to a friend's solar generation savings. The AI captures every bill-triggered message."
+  },
+  {
+    icon: '📋',
+    title: 'Qualifies Solar Project Scale',
+    text: "Messenger conversations start with 'how much for solar?' The AI distinguishes between a four-panel starter system on a terraced house, a twelve-panel system with battery on a detached, and a commercial rooftop tender — qualifying each appropriately."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Generation Dashboard',
+    text: "Every GivEnergy monitoring screenshot showing 30kWh generated on a sunny day, every before-and-after electricity bill comparison, and every neat panel array generates messages from homeowners imagining the same savings."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my solar firm?",
+    answer: "A connected Facebook Business page enables Messenger functionality. Solar installers posting completed rooftop arrays — black monocrystalline panels in neat rows, colour-matched clamps, tidy cable management at the inverter, and GivEnergy app screenshots showing daily generation — produce exceptional engagement because every homeowner immediately visualises the same system on their own roof and wants to know the cost."
+  },
+  {
+    question: "What solar enquiries come through Messenger?",
+    answer: "Homeowners wanting panels after seeing a neighbour's installation. Existing solar owners wanting battery storage after discovering they export most of their generation. Landlords wanting solar to improve EPC ratings ahead of minimum energy efficiency requirements. Developers needing per-plot solar packages for new-build SAP compliance. Each has pre-assessed your MCS-certified installation quality."
+  },
+  {
+    question: "How fast does the AI reply to solar messages?",
+    answer: "Replies dispatch within seconds of every incoming message. Facebook's activity indicator confirms your solar firm actively monitors. A homeowner who has just opened a £900 quarterly electricity bill — calculating that solar would halve it — needs an instant, knowledgeable response from an MCS-certified installer, not a page that last posted a completed installation three months ago."
+  },
+  {
+    question: "What does Messenger cost for solar installers?",
+    answer: `Facebook Messenger is £${pricing.addOn.price}/month as a channel add-on. A domestic 12-panel system with GivEnergy battery generates £8,000 to £14,000. One homeowner's rooftop system — initiated by a Messenger enquiry after she saw your neighbour's array generating 28kWh on a summer day — covers the annual channel cost from a single installation.`
+  },
+  {
+    question: "Can I continue Messenger conversations personally?",
+    answer: "Respond once in any thread and the AI steps aside permanently. Most solar installers let the AI collect the initial specification — roof orientation, tile type, shading, consumption, battery preference, and EV ownership — then take over to discuss panel layout options, inverter selection, and the survey visit."
+  },
+  {
+    question: "How is Messenger data from solar queries protected?",
+    answer: "All Messenger conversations — roof photographs, property addresses, energy consumption figures, inverter preferences, battery specifications, and sender contact information — are encrypted and stored on UK and EU servers under UK GDPR. Data flows exclusively to you. No solar project details reach competitors or third-party lead aggregators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Solar Panel Installers | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK solar panel installers. Converts rooftop array posts into domestic surveys and battery retrofit bookings. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/solar-panel-installers/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Solar Panel Installer"
+  tradeNamePlural="Solar Panel Installers"
+  tradeSlug="solar-panel-installers"
+  headline="AI Facebook Messenger for Solar Panel Installer Companies"
+  accentWord="Solar"
+  subhead="You post five photos of a completed domestic solar and battery installation in Headington. Photo one: the south-facing roof — fourteen Jinko Tiger Neo N-type 420W all-black panels in two rows of seven on K2 CrossRail aluminium rails, the black frames and back sheets blending with the dark concrete tiles, mid-clamps and end-clamps anodised black. Photo two: the inverter and battery — a GivEnergy Gen3 5kW hybrid inverter wall-mounted in the garage beside a GivEnergy 9.5kWh battery module, the DC isolator above, the AC isolator to the left, and a consumer unit with the new 40A RCBO for the solar circuit. Photo three: a close-up of the cable management — the DC strings entering through a weatherproof roof vent tile, running through the loft void in protective conduit, and dropping through the garage ceiling to the inverter with labelled cable markers. Photo four: the GivEnergy monitoring app — a screenshot from the first sunny Saturday showing 32.4kWh generated, 18.7kWh consumed, 8.2kWh stored in the battery, and 5.5kWh exported to the grid. Photo five: the homeowner's electricity bill comparison — previous quarter £412, current quarter with solar £87, saving £325 in three months. Four hundred and eighteen likes, thirty-one shares. A homeowner three streets away messages: 'Wow — I know that house, it is on my road! I have the same type of roof. We have a four-bed detached, south-facing, dark concrete tiles, no shading. We spend about £180 a month on electricity. We have two EVs — a Tesla Model 3 and a VW ID.3 — and we want solar to charge both from the roof. Interested in the same setup as your photo — Jinko panels with GivEnergy battery. How many panels can we fit? What size battery — 9.5kWh or should we go bigger with 13.5kWh because of the two EVs? Do you offer finance? Can you survey next week?' You are wiring an inverter. Without AI Messenger, the neighbour's dual-EV system waits. With it, the AI confirms your GivEnergy partnership, asks about the available south-facing roof area and the EVs' daily mileage, and captures: Headington 4-bed detached same road, south dark concrete tiles no shading, £180/month electricity, 2 EVs Tesla Model 3 + VW ID.3, Jinko + GivEnergy, 9.5kWh vs 13.5kWh question, finance question, survey next week."
+  scenario="It is 11pm on a Friday. A letting agent managing twelve rental properties messages: 'Hi — new EPC regulations are coming and six of my landlords' properties are rated E or F. I have been told solar panels can improve the EPC to a C or D. Can you install basic solar systems — maybe four to six panels per property — on six houses across Oxford? They are all terraced or semi-detached, mixed orientations. I need MCS certificates for each for the EPC assessment. Budget is tight — landlords want the minimum spend for maximum EPC improvement. Can you do a bulk deal for six properties?' Without AI Messenger, the six-property EPC programme waits. With AI Messenger, the reply at 11:01pm confirms your MCS certification and EPC improvement experience, asks whether all six properties have south or south-west facing roof sections, and captures: Oxford 6 rental properties, EPC E/F need C/D, terraced/semi mixed orientations, 4-6 panels per property, MCS certificates, bulk deal, minimum spend maximum EPC, letting agent managing 12 total."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/solar-panel-installers/ai-receptionist/"
+  ctaHeadline="Turn 418 Likes on a Headington Array into a Neighbour's Dual-EV Survey"
+  ctaSubhead={`Five photos of Jinko panels, GivEnergy battery, and a £325 quarterly saving earn 418 likes. AI Messenger converts the neighbour's dual Tesla/VW ID.3 enquiry into a survey booking. Add-on at £${pricing.addOn.price}/month.`}
+/>

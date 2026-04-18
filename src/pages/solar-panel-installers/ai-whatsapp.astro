@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Roof Photos for Assessment',
+    text: "Homeowners WhatsApp photos of their roof — 'is this suitable for solar?' The AI responds instantly, asks about the orientation and any visible shading from trees or chimneys, and builds a pre-survey lead with the visual reference."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Battery Retrofit Opportunities',
+    text: "Existing solar owners WhatsApp their inverter model and panel count — 'have 10 panels and a Solis inverter, want to add a battery.' The first MCS-certified firm confirming compatibility holds the upgrade."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Developer Solar Slots',
+    text: "Main contractors WhatsApp solar requirements mid-build — 'roofing finishing plots 8-16 next week, need PV mounting rails and panels following on.' The first solar installer confirming holds the programme-critical slot."
+  },
+  {
+    icon: '🌙',
+    title: 'Active When Bills Shock',
+    text: "Energy bills arrive by email. Homeowners WhatsApp solar firms immediately — 'just got my electricity bill, £900 for the quarter, need solar urgently.' The AI captures every bill-shock enquiry at peak conversion intent."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Solar Briefs',
+    text: "A WhatsApp saying 'want solar panels, 3-bed semi, south-facing, Abingdon' becomes a structured domestic lead with property type, roof orientation, location, and initial assessment requirements."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. Developer solar programmes, MCS paperwork, and panel supplier communications stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess roofs from photos?",
+    answer: "A roof photograph shows tile type and general orientation but cannot determine precise azimuth, pitch angle, structural loading capacity, or hidden shading from trees at different times of day. The AI uses the photo constructively — identifying the tile material visible (concrete, clay, slate, flat membrane), noting chimney and dormer positions, and asking about compass orientation and any afternoon shading — building a pre-survey brief that helps you arrive with the correct mounting system and string design assumptions."
+  },
+  {
+    question: "What about multi-message solar threads?",
+    answer: "Solar conversations develop across multiple messages — a homeowner sends a roof photo, then confirms south-facing, then mentions they have an EV, then asks about battery brands, then provides their electricity spend, then requests a weekday survey. The AI assembles every fragment into one complete survey lead with the roof image, orientation, EV integration requirement, battery interest, consumption data, and scheduling preference."
+  },
+  {
+    question: "How much does AI WhatsApp cost for solar installers?",
+    answer: `The WhatsApp add-on is £${pricing.addOn.price}/month as a channel add-on. A domestic 12-panel system with battery generates £8,000 to £14,000. A commercial 100kWp system generates £60,000 to £100,000. Securing one homeowner's GivEnergy survey through a rapid WhatsApp response — while you mounted panels on another roof — covers the annual channel cost from a single installation.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Reply once in any thread and the AI relinquishes control permanently. Most solar installers let the AI gather the initial scope — roof orientation, tile type, shading, consumption, battery preference, and EV ownership — then take over to discuss panel layout, inverter selection, and the survey date."
+  },
+  {
+    question: "How is WhatsApp data from solar enquiries protected?",
+    answer: "Every WhatsApp message — roof photographs, property addresses, energy consumption figures, inverter specifications, battery preferences, and sender contact details — is encrypted and stored on UK and EU servers under UK GDPR. Your data remains exclusively yours. No solar project details reach competing installers or third-party lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Solar Panel Installers | Rapid Receptionist"
+  description={`AI WhatsApp for UK solar panel installers. Responds to roof photos, battery retrofit requests, and developer programme messages. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/solar-panel-installers/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Solar Panel Installer"
+  tradeNamePlural="Solar Panel Installers"
+  tradeSlug="solar-panel-installers"
+  headline="AI WhatsApp for Solar Panel Installer Companies"
+  accentWord="Solar"
+  subhead="A homeowner in Eynsham WhatsApps at 6:30pm on a Monday with four photos of her roof — two from the front garden showing the south-facing elevation with eighteen concrete interlocking tiles visible per row and a single Velux window in the centre, and two from the back garden showing the north-facing slope and a chimney stack offset to the right. Her message: 'Hi — we want solar panels. These are photos of our roof from the front and back. The house is a 1985 four-bed detached in Eynsham. The main roof faces south — I think about 7 metres across and 5 metres from gutter to ridge. The Velux window is in the middle which might cause a problem. There is a large oak tree in the neighbour's garden to the west that shades the right side of the roof from about 3pm in summer. We use about 4,500 kWh a year and pay 28p per unit. We want panels plus a battery — probably GivEnergy — and eventually an EV charger when we buy an electric car next year. We need MCS for the export guarantee. Can you survey this week and give us a quote? Our budget is around £10,000-£12,000.' You are on a roof in Grove — clamping the eleventh of fourteen JA Solar 415W panels onto the K2 SpeedRail system, the mid-clamp torqued to spec, the end clamp next in sequence. Without AI WhatsApp, the Eynsham survey request waits until the last panel mounts. With it, the AI responds at 6:31pm, references the Velux window and the afternoon oak shading, asks whether the garage has a separate east or west-facing roof section, and captures: Eynsham 1985 4-bed detached, south 7m×5m concrete tile, Velux centre, oak shading west side from 3pm, 4,500kWh/yr 28p/kWh, GivEnergy battery, future EV charger, MCS SEG, survey + quote, £10-12k budget."
+  scenario="It is 9pm on a Wednesday. A secondary school bursar WhatsApps: 'Good evening — our school in Witney has three flat-roofed buildings — the main block, the science block, and the sports hall. The governors want to explore solar PV to reduce our electricity costs, which are running at £45,000 a year. We are thinking about 80-100kWp across the three roofs using east-west ballasted mounting. The roofs were re-covered with single-ply membrane two years ago so they are in excellent condition. We have a three-phase supply. I understand we might need a G99 application for this size. We would want MCS certification and generation monitoring so the students can see the output as part of the sustainability curriculum. Can you survey the three buildings and provide options? The governors meet in six weeks and I need a proposal for that meeting.' Without AI WhatsApp, the school proposal waits. With AI WhatsApp, the reply at 9:01pm confirms your commercial capabilities, asks about the individual roof areas and whether any rooftop plant (AC units, extract fans) would obstruct panel placement, and captures: Witney secondary school 3 flat roofs main/science/sports hall, 80-100kWp east-west ballasted, single-ply membrane 2yr old, three-phase, G99, MCS, monitoring curriculum, £45k/yr electricity, governors 6 weeks, survey + proposal."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/solar-panel-installers/ai-receptionist/"
+  ctaHeadline="Book the Eynsham Survey While You Clamp Panels in Grove"
+  ctaSubhead={`A homeowner with south-facing tiles, a Velux complication, oak shading, and a £10-12k GivEnergy budget needs an MCS-certified survey this week. The AI captured the 4,500kWh consumption while you torqued the eleventh clamp. Add-on at £${pricing.addOn.price}/month.`}
+/>

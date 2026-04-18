@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Install on Rooftops',
+    text: "Bolting rail systems onto roof hooks at height, lifting and clamping 420W panels into position, routing DC cables through roof voids to the inverter, or commissioning a GivEnergy hybrid inverter and battery system — solar installation demands rooftop focus. The AI answers every call in your company name."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Solar Briefs at Every Scale',
+    text: "When a homeowner calls about twelve panels with a battery for a four-bed detached, the AI captures the roof orientation, tile type, shading, and battery preference. When a warehouse manager calls about 200kWp on a flat roof with G99, the AI captures the system size, roof type, and DNO requirements."
+  },
+  {
+    icon: '🔋',
+    title: 'Handles Battery Retrofit Enquiries',
+    text: "Existing solar owners calling about adding battery storage — 'we have panels but no battery, want to store excess instead of exporting' — generate high-conversion leads. The AI captures the existing panel count, inverter model, and whether the system is AC-coupled compatible."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Solar Research Calls',
+    text: "Homeowners research solar in the evening — studying payback calculators, comparing inverter brands, and checking MCS requirements. The AI captures every evening research call when purchase intent peaks."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Solar Quoting',
+    text: "Each lead identifies the property type, roof orientation and tile material, approximate roof area, shading conditions, existing electrical supply, battery requirement, EV charger integration, and MCS/SEG eligibility — everything needed for accurate solar system design."
+  },
+  {
+    icon: '🏷️',
+    title: 'MCS Certified Professionalism',
+    text: "A solar firm that answers professionally and asks about roof orientation, shading, and battery sizing signals the MCS-certified expertise that homeowners trust with a £10,000+ renewable energy investment."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their solar requirements?",
+    answer: "Questioning adapts precisely to the project scope. A homeowner wanting domestic PV hears questions about the property type, roof orientation and pitch, tile or slate material, visible shading from trees or neighbouring buildings, current electricity spend, battery storage interest, EV ownership or plans, and whether they want MCS certification for the Smart Export Guarantee. A commercial enquirer is asked about the roof area and construction type, the electrical supply phase count, the annual electricity consumption, and whether a G99 DNO application has been discussed."
+  },
+  {
+    question: "Can the AI handle both domestic and commercial solar calls?",
+    answer: "A homeowner wanting panels and a battery for a semi in Headington generates a domestic survey lead with roof details, consumption, and battery preference. A logistics manager requesting 150kWp on a distribution centre with standing seam roof and three-phase Huawei inverters generates a commercial engineering lead with structural assessment requirements, DNO application scope, and ROI modelling needs. The AI creates structurally distinct leads for each project category."
+  },
+  {
+    question: "What about calls regarding inverter faults?",
+    answer: "A GivEnergy inverter flashing red with zero generation on a sunny afternoon, a SolarEdge system reporting an optimiser communication failure, an Enphase microinverter going offline on the monitoring app, or a Huawei SUN2000 displaying a grid frequency error after a power cut — solar faults combine technical urgency with financial loss. The AI captures the inverter manufacturer, the fault display or error code, the system age, and whether generation has stopped completely or reduced."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `The Core plan delivers ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Solar installers receive a seasonal call pattern — spring and summer bring surging domestic survey requests as daylight hours increase and electricity bills arrive, while autumn and winter shift toward battery retrofit enquiries and commercial planning discussions. The seasonal variation balances within the monthly allocation. Overage runs at 20p per minute without contract commitment.`
+  },
+  {
+    question: "Can I take calls between installations?",
+    answer: "During quotation preparation, MCS paperwork, and G98/G99 applications — manage calls directly. The moment you ascend the scaffold, bolt the first rail, or connect the DC cables — route calls to the AI. Switch from your dashboard as your day moves between roof and office."
+  },
+  {
+    question: "How is solar project data protected?",
+    answer: "Solar enquiries contain property addresses, roof dimensions and orientations, electrical supply details, energy consumption figures, DNO application references, and commercially sensitive system pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details are shared with competing solar installers or third-party lead generators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Solar Panel Installers | Rapid Receptionist"
+  description={`AI phone answering for UK solar panel installers. Captures domestic PV surveys, battery retrofit enquiries, and commercial rooftop system tenders while you install on the roof. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/solar-panel-installers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Solar Panel Installer"
+  tradeNamePlural="Solar Panel Installers"
+  tradeSlug="solar-panel-installers"
+  headline="AI Phone Answering for Solar Panel Installer Companies"
+  accentWord="Solar"
+  subhead="A homeowner calls at 10:15am on a Tuesday in June. Her electricity bill has doubled in two years. The house is a 1990s four-bedroom detached in Didcot — south-facing concrete tile roof, approximately 8 metres by 5 metres of unshaded south-facing area, plus a smaller east-facing section above the garage. She wants the maximum panel count on the south face — she has been researching and wants Jinko Tiger Neo 420W or equivalent — a GivEnergy Gen3 hybrid inverter with a 9.5kWh battery expandable to 13.5kWh later, and an EV charger connected so excess solar charges her electric car during the day. She needs MCS certification for the Smart Export Guarantee with Octopus Energy. Her husband wants to understand the payback period, the annual generation estimate, and the EPC improvement from D to B. You are on a pitched tile roof in Wallingford — the scaffolding erected yesterday, K2 CrossRail aluminium rails bolted to stainless steel roof hooks through the concrete tiles, the first six panels clamped in position, and the DC cables running through a slate vent tile into the roof void. The seventh panel lifts onto the rail. Without AI Phone Answering, the Didcot GivEnergy system goes to voicemail. She calls two more MCS firms. With it, the AI captures: Didcot 1990s 4-bed detached, south-facing concrete tile 8m×5m unshaded + east garage, max panels Jinko Tiger Neo 420W, GivEnergy Gen3 hybrid + 9.5kWh expandable 13.5kWh, EV charger solar excess, MCS SEG Octopus, payback + generation + EPC D-to-B."
+  scenario="It is 2:30pm on a Wednesday. Three calls between noon and 2:30pm. You are in a garage in Abingdon — wiring a GivEnergy Gen3 5kW hybrid inverter to the consumer unit via a new 40A RCBO, connecting the DC strings from twelve rooftop panels through the DC isolator, programming the battery charge schedule to align with the homeowner's Octopus Intelligent Go tariff, and registering the system on the GivEnergy portal for remote monitoring. Without AI Phone Answering, one voicemail and two hang-ups. With it, all three answered. Lead one: a farmer near Faringdon — 'want a 50kWp ground-mounted array for the dairy barn, large south-facing field, three-phase supply, G99 needed.' Lead two: a homeowner in Summertown — 'already have eight panels and a Fronius Primo inverter from 2018, want to add a Tesla Powerwall battery and four more panels.' Lead three: a school business manager in Bicester — 'flat roof on the sports hall, want to explore solar for the school, need to reduce our electricity costs, governors want a proposal.' At 3pm the GivEnergy registers on the portal. Three leads — a 50kWp farm, a battery retrofit, and a school roof."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/solar-panel-installers/ai-receptionist/"
+  ctaHeadline="Capture the Didcot GivEnergy System While You Mount Panels in Wallingford"
+  ctaSubhead={`A homeowner with a south-facing roof, Jinko Tiger Neo 420W shortlist, and a GivEnergy 9.5kWh battery request needs an MCS-certified installer who answers. The AI captured the EPC, SEG, and EV charger detail while you clamped the seventh panel. From £${pricing.tiers.core.price}/month.`}
+/>

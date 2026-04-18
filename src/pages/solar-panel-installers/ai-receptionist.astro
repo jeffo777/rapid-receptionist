@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A homeowner calls about a solar and battery installation for a four-bedroom detached house in Abingdon. The roof is south-facing clay tile, approximately 45 square metres of usable area, with no shading. She wants maximum generation — as many 420W monocrystalline panels as the roof accommodates, a GivEnergy hybrid inverter with a 9.5kWh battery, an EV charger powered from excess solar generation, and a full G98 DNO notification with MCS certification for the Smart Export Guarantee. She also wants to understand payback calculations and the EPC rating improvement. You are on a roof in Wantage — bolting K2 CrossRail mounting rails onto stainless steel roof hooks through interlocking concrete tiles, the drill in one hand, the torque wrench in the other, DC cabling running through the roof void down to the hybrid inverter location in the garage. Both hands occupied. She calls three MCS-certified firms. One answers and books the survey.",
+    with: "Your AI receptionist answers on the second ring. It captures the scope — 4-bed detached Abingdon, south-facing clay tile 45m², no shading, maximum 420W panels, GivEnergy hybrid + 9.5kWh battery, EV charger integration, G98 MCS SEG, payback and EPC — and confirms you will call back. At the break you review and schedule Thursday's survey."
+  },
+  {
+    without: "A commercial property manager emails on Wednesday about a 100kWp roof-mounted system for a warehouse — thirty-year lease, south-facing standing seam metal roof, three-phase supply, and G99 application required. The email sits until Monday.",
+    with: "Your AI acknowledges within sixty seconds, referencing the 100kWp specification, the standing seam roof, the three-phase connection, and the G99 requirement. Monday you begin the site assessment."
+  },
+  {
+    without: "A developer WhatsApps on Saturday about solar packages for thirty-two new-build houses — PV panels pre-wired during the build, battery-ready inverters, and MCS certification for SAP calculations. He messages three firms. By Tuesday, one has responded.",
+    with: "The AI responds within seconds, asks about the panel wattage per plot and the inverter specification, and builds a structured new-build solar lead. Tuesday at 8am you have the site, the plot count, and the SAP requirement."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Domestic Solar PV",
+    items: ["Monocrystalline panels — Jinko Tiger Neo, JA Solar DeepBlue, Longi Hi-Mo 6, Canadian Solar HiKu, Trina Vertex S", "String inverters and hybrid inverters — GivEnergy, SolarEdge, Huawei SUN2000, Solis, Fronius, Growatt", "Microinverter systems — Enphase IQ8 with per-panel optimisation", "Roof mounting — K2, Renusol, Van der Valk rail systems on tile, slate, and flat roofs", "G98 DNO notification and MCS certification for Smart Export Guarantee", "EPC rating improvement calculations for homeowner value"]
+  },
+  {
+    category: "Battery Storage",
+    items: ["GivEnergy All-in-One and modular battery systems", "Tesla Powerwall 2 and Powerwall 3 installations", "Huawei LUNA2000 modular lithium-ion storage", "Fox ESS, BYD HVS/HVM, and Pylontech rack systems", "AC-coupled retrofit to existing PV installations", "DC-coupled integration with hybrid inverters for new systems"]
+  },
+  {
+    category: "Commercial Solar PV",
+    items: ["Roof-mounted systems — 50kWp to 500kWp on flat and pitched commercial roofs", "Ballasted flat roof mounting on membrane roofs — no penetrations", "G99 DNO application for systems above 16A per phase", "Three-phase inverter systems — Huawei SUN2000-100KTL, SolarEdge SE100K", "Power Purchase Agreements and lease model installations", "Bird proofing, monitoring platforms, and O&M contracts"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners wanting solar panels and battery storage to reduce electricity bills, achieve energy independence, and improve their EPC rating. They need MCS-certified installations for Smart Export Guarantee eligibility, clear payback calculations, and guidance on panel count, battery sizing, and EV charger integration."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial & Industrial",
+    description: "Warehouse operators, factory owners, and office building managers commissioning 50kWp to 500kWp roof-mounted systems. They need G99 DNO applications, three-phase inverter designs, structural assessments for roof loading, and ROI projections with Power Purchase Agreement options."
+  },
+  {
+    icon: "🏗️",
+    title: "Developers & New Build",
+    description: "Housebuilders requiring solar PV packages across new-build estates — panels pre-wired during construction, battery-ready inverters, and MCS certification for SAP Part L compliance. Programme-critical installations that must coordinate with roofing, electrical, and scaffolding trades."
+  },
+  {
+    icon: "🔋",
+    title: "Battery Retrofit",
+    description: "Existing solar panel owners wanting to add battery storage — GivEnergy, Tesla Powerwall, or Huawei LUNA2000 retrofitted to their current system. They need guidance on AC-coupled versus DC-coupled options and whether their existing inverter supports battery integration."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand solar terminology?",
+    answer: "The complete solar PV vocabulary is configured — panels (monocrystalline, polycrystalline, half-cut cell, bifacial, N-type TOPCon, Jinko Tiger Neo 420W/440W, JA Solar DeepBlue 4 415W, Longi Hi-Mo 6 425W, Canadian Solar HiKu6 410W, Trina Vertex S+ 440W, wattage Wp, efficiency percentage), inverter (string inverter, hybrid inverter, microinverter, Enphase IQ8+, SolarEdge SE-HD Wave, GivEnergy Gen3, Huawei SUN2000, Solis S6, Fronius Primo/Symo, Growatt MIN/MOD, MPPT tracker, Voc maximum input voltage, Isc maximum input current, MPPT voltage window, clipping), battery (GivEnergy All-in-One 5kWh/8.2kWh/9.5kWh/13.5kWh, Tesla Powerwall 2 13.5kWh/Powerwall 3 13.5kWh, Huawei LUNA2000 5/10/15kWh, Fox ESS ECS, BYD HVS/HVM, Pylontech US3000C/US5000, kWh capacity, depth of discharge DoD, charge rate kW, discharge rate kW, cycle life, AC-coupled, DC-coupled, hybrid), mounting (roof hooks, rail system, K2 CrossRail/SpeedRail, Renusol InterSole/FixGrid, Van der Valk ValkPro+, in-roof, on-roof, ballasted flat roof, east-west split, tilt angle, azimuth), certification (MCS Microgeneration Certification Scheme, MCS certificate, deemed export 50%, Smart Export Guarantee SEG, Feed-in Tariff FIT legacy, G98 DNO notification under 16A per phase, G99 DNO application over 16A per phase, export limitation, AC isolator, DC isolator, generation meter, Part P electrical notification, NAPIT, NICEIC, EPC rating), and design (string design, series configuration, parallel string, shading analysis, in-roof ventilation gap, fire barrier, DC cable routing, AC cable sizing, consumer unit upgrade). When a homeowner describes 'twelve Jinko Tiger Neo 420W panels, GivEnergy Gen3 hybrid inverter, 9.5kWh battery, K2 CrossRail on south-facing clay tiles, G98, MCS for SEG,' the AI records every specification."
+  },
+  {
+    question: "Can the AI distinguish a domestic PV installation from a commercial system?",
+    answer: "A homeowner wanting 'solar panels and a battery, four-bed detached, south-facing roof' generates a domestic lead with roof orientation, tile type, shading assessment requirement, and battery preference. A warehouse manager requesting '200kWp on a flat membrane roof with three-phase Huawei inverters and G99 application' generates a commercial programme lead with system size, roof type, structural loading requirement, inverter specification, and DNO application complexity. The AI structures fundamentally different project leads for each."
+  },
+  {
+    question: "What about urgent solar enquiries?",
+    answer: "A GivEnergy inverter showing a red fault light and the household losing all solar generation on a sunny July day. A battery system refusing to charge overnight on the cheap tariff. An EV charger that was drawing from solar excess but has stopped communicating with the inverter. A Smart Export Guarantee meter reading showing zero generation despite clear skies. Solar urgency often correlates with financial loss — every sunny hour without generation is lost revenue and increased grid consumption."
+  },
+  {
+    question: "How much does this cost for a solar installer?",
+    answer: `Solar installers pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a two-person domestic PV team or a multi-crew commercial operation delivering 200kWp warehouse systems, the allowance accommodates your enquiry volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a sole trader solar installer?",
+    answer: "One-person solar operations gain transformative value. When you are on a roof bolting K2 rail to stainless steel hooks, lifting panels onto the mounting system, routing DC cabling through the roof void, or wiring the hybrid inverter in the garage — answering the phone risks dropping a panel, losing the cable route, or disrupting the inverter commissioning sequence. The AI captures every domestic survey request, every battery retrofit enquiry, and every developer programme tender while you complete the installation safely at height."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Set coverage from your dashboard to match your solar schedule. During roof work — when panels mount, cables route, and rails align at height — send every call to the AI. During office hours, quotation preparation, and MCS paperwork — take calls directly. Toggle from your phone as your working environment changes between rooftop and desk."
+  },
+  {
+    question: "How is solar project data protected?",
+    answer: "Solar enquiries contain property addresses, roof dimensions, electrical supply details, DNO application references, battery specifications, energy consumption data, and commercially sensitive quotation pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing solar firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Solar Panel Installers | Rapid Receptionist"
+  description={`AI receptionist for UK solar panel installers — PV systems, battery storage, hybrid inverters, and MCS certification. Never miss a call while you mount panels on the roof. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/solar-panel-installers/ai-receptionist/"
+  tradeName="Solar Panel Installer"
+  tradeNamePlural="Solar Panel Installers"
+  tradeSlug="solar-panel-installers"
+  headline="The AI Receptionist Built for Solar Panel Installers"
+  accentWord="Solar"
+  subhead={`You cannot answer the phone when you are bolting K2 CrossRail mounting rails onto a south-facing roof, lifting 420W monocrystalline panels into position, routing DC cables through the roof void to the hybrid inverter, or commissioning a GivEnergy battery system in the garage. Your AI receptionist captures every call, every message, and every booking — from homeowners wanting twelve panels and a 9.5kWh battery to warehouse managers commissioning 200kWp commercial systems with G99 applications. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next 12-Panel GivEnergy System Calls While You Mount Rails in Wantage"
+  ctaSubhead={`A homeowner with a south-facing clay tile roof, no shading, and a GivEnergy 9.5kWh battery request needs an MCS-certified installer who answers. If voicemail picks up, she books a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>
