@@ -259,4 +259,15 @@ const allFaqs = [
   .th-breadcrumb-list a:hover {
     color: var(--color-accent);
   }
+
+  /* Hero — override HeroSection padding since breadcrumbs already account for header height */
+  :global(.hero) {
+    padding-top: var(--space-6) !important;
+  }
+
+  @media (min-width: 1024px) {
+    :global(.hero) {
+      padding-top: var(--space-8) !important;
+    }
+  }
 </style>

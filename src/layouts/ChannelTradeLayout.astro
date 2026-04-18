@@ -256,7 +256,17 @@ const allFaqs = [
     color: var(--color-accent);
   }
 
-  /* Hero */
+  /* Hero — override HeroSection padding since breadcrumbs already account for header height */
+  :global(.hero) {
+    padding-top: var(--space-6) !important;
+  }
+
+  @media (min-width: 1024px) {
+    :global(.hero) {
+      padding-top: var(--space-8) !important;
+    }
+  }
+
   .ct-hero {
     padding-top: var(--space-10);
     padding-bottom: var(--space-12);
