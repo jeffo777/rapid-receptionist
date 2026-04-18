@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Pre-Delivery Urgency Texts',
+    text: "New EV owners text with urgency — 'car arriving Friday, need charger before then, Easee or Ohme, house in Eynsham.' The first OZEV-approved installer confirming holds the pre-delivery booking."
+  },
+  {
+    icon: '📐',
+    title: 'Builds EV Briefs from Short Messages',
+    text: "A text like 'need EV charger, Tesla Model 3, semi in Abingdon, driveway at front' gives the AI the essentials. It asks about the cable run distance, the consumer unit condition, and whether the supply is PME."
+  },
+  {
+    icon: '🔔',
+    title: 'Captures Charger Fault Texts',
+    text: "Existing clients text — 'Zappi showing earth fault, red light, cannot charge.' The AI asks whether the RCD has tripped, whether an earth rod was installed, and captures a priority service lead."
+  },
+  {
+    icon: '🌙',
+    title: 'Active During Evening Research',
+    text: "EV buyers research chargers at night — comparing brands on forums, reading about smart tariffs, and checking grant eligibility. They text installers at 9pm when the decision crystallises. The AI captures every evening text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text EV Details',
+    text: "Messages arrive in stages — 'need charger' then 'Volkswagen ID.4' then '3-bed semi Witney' then 'driveway at side' then 'have solar panels.' The AI constructs one complete installation lead from every text."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Fleet depot programme discussions, OZEV applications, and charger distributor communications stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound EV charger text?",
+    answer: "Each incoming text generates a branded response under your company name within seconds. A fleet manager's depot text — 'need twenty-two 22kW three-phase chargers for delivery van fleet, Didcot depot, OCPP back-office, overnight scheduling, WCS grant, DNO upgrade may be needed' — is confirmed with the charger count, power rating, management system, grant intent, and DNO concern preserved. A homeowner's text — 'just ordered a Hyundai Ioniq 6, want Ohme Home Pro, budget £900 after grant' — triggers a response asking about the driveway position and the consumer unit location."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "Texts read like an EV charger engineer checking messages between installations — charger-brand fluent, cable-sizing aware, and earthing-regulation precise. References to Easee One 7.4kW, Ohme Home Pro dynamic scheduling, Zappi ECO mode solar integration, PME TT assessment, 10mm² SWA, Type A RCBO, and OZEV EVHS grant convey the OZEV-approved expertise that new EV owners require from their installer."
+  },
+  {
+    question: "How does it handle existing client texts?",
+    answer: "Returning charger clients text with service updates — 'charger firmware needs updating, Easee app showing notification' or 'want to add a second charger for our new car, same driveway' or 'load balancing not working since we changed energy tariff.' The AI separates maintenance requests and second-charger opportunities from new installation enquiries on your dashboard."
+  },
+  {
+    question: "What does AI SMS cost for EV charger installers?",
+    answer: `AI SMS costs £${pricing.addOn.price}/month as a channel add-on. A domestic charger installation generates £800 to £1,500. Confirming one new EV owner's pre-delivery installation — while you drove an earth rod at another property — secures installation revenue that exceeds the annual channel cost from a single job.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send one reply and the AI steps aside from that conversation. During OZEV grant applications, quotation spreadsheets, and Part P notification paperwork — manage texts yourself. During consumer unit work, SWA trenching, and earth rod installation — when the mains are isolated and the cable glands seal — let the AI handle incoming enquiries."
+  },
+  {
+    question: "How is text data from EV enquiries stored?",
+    answer: "Text messages containing property addresses, consumer unit details, vehicle models, electrical supply types, charger preferences, and contact numbers are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. Nothing reaches competing EV charger firms or third-party platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for EV Charger Installers | Rapid Receptionist"
+  description={`AI SMS for UK EV charger installers. Responds to pre-delivery urgency texts, charger fault messages, and fleet depot enquiries. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/ev-charger-installers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="EV Charger Installer"
+  tradeNamePlural="EV Charger Installers"
+  tradeSlug="ev-charger-installers"
+  headline="AI SMS for EV Charger Installer Companies"
+  accentWord="EV Charger"
+  subhead="You are at 10am on a Tuesday in March — at a new-build development in Bicester. The developer wants per-plot EV charger pre-wiring — a 10mm² SWA cable from each plot's consumer unit position to a back box on the garage wall, with a draw cord through the conduit for future charger connection. You are working on plot fourteen of thirty-six — drilling through the blockwork, fitting the external back box, pulling the SWA through the conduit, and sealing the entry with fire-rated mastic. At 10:25am a homeowner texts: 'Morning — I am collecting a Polestar 2 Single Motor on Saturday from Oxford. Our house is a Victorian mid-terrace in Jericho with no driveway — we park on the road outside. I have heard you can get chargers mounted on the front wall with a cable channel across the pavement to the car. Is that possible? We have a 60A single-phase supply and the consumer unit is in the front hallway, about 2 metres from the front wall. We want a 7kW smart charger with a retractable cable or some way to manage the cable across the pavement safely. Are there council permissions needed for Jericho? Does the OZEV grant apply to on-street solutions? Also — our consumer unit is an old rewireable fuse board that I think needs replacing. Budget up to £2,000 including the board upgrade.' Your hands hold the SWA and the cable gland. Without AI SMS, the Jericho on-street challenge waits. With it, the AI responds at 10:26am, notes the on-street pavement channel requirement, asks whether the council parking is residents-only or unrestricted, and captures: Jericho Victorian mid-terrace, no driveway on-street, Polestar 2 Saturday collection, front wall mount cable channel pavement, 60A single-phase, CU front hallway 2m, 7kW smart retractable cable, council permission question, OZEV on-street question, old rewireable fuse board upgrade, £2k budget."
+  scenario="It is 8:30pm on a Wednesday. A logistics company operations manager texts: 'Hi — we operate eighteen electric Renault Kangoo E-Tech vans from a depot in Didcot. We currently charge them using thirteen-amp three-pin sockets which takes all night and half the vans do not fully charge before the 6am shift. We need proper depot charging — at least eighteen 7kW charge points with overnight scheduling so all vans charge sequentially to avoid overloading the supply. The depot has a 200A three-phase supply. We also need a back-office system so we can see which van charged, how much energy each consumed, and calculate the electricity cost per vehicle. Can you survey the depot this week? The van fleet grows to thirty by September.' Without AI SMS, the eighteen-van depot waits. With AI SMS, the reply at 8:31pm: 'Thank you — with eighteen vans on a 200A three-phase supply, dynamic load management will be essential to maximise overnight charging within the available capacity. Could you confirm the van battery sizes and whether the depot has any existing EV infrastructure?' He confirms 45kWh batteries, no existing infrastructure. Survey booked: Didcot depot 18 Renault Kangoo E-Tech, three-pin 13A insufficient, 18×7kW sequential overnight scheduling, 200A three-phase, back-office per-vehicle consumption, fleet to 30 by September, 45kWh batteries, zero existing infrastructure."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/ev-charger-installers/ai-receptionist/"
+  ctaHeadline="Secure the Jericho On-Street Charger While You Pre-Wire Plots in Bicester"
+  ctaSubhead={`A Polestar 2 owner in a Victorian terrace with no driveway, an on-street pavement channel requirement, and a rewireable fuse board needs an OZEV-approved installer before Saturday collection. The AI confirmed while SWA sealed. Add-on at £${pricing.addOn.price}/month.`}
+/>

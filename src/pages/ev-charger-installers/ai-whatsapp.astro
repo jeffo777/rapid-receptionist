@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Driveway and Cable Run Photos',
+    text: "Homeowners WhatsApp photos of their driveway, garage wall, and consumer unit — 'can a charger go here?' The AI responds instantly, notes the visible cable run, and builds a pre-survey lead with the visual context."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Pre-Delivery Installations',
+    text: "New EV owners WhatsApp with urgency — 'car arrives in ten days, need charger installed, Easee or Ohme, which do you recommend?' The first OZEV-approved installer confirming holds the pre-delivery booking."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Fleet Transition Messages',
+    text: "Fleet managers WhatsApp depot charging requirements mid-week — 'replacing twelve diesel vans with electric, need charging infrastructure, deadline six weeks.' The first installer confirming fleet capability holds the fleet contract."
+  },
+  {
+    icon: '🌙',
+    title: 'Active When New Owners Research',
+    text: "New EV owners browse charger options in the evening — comparing smart features, checking tariff integration, and reading PME earthing articles. Excitement peaks after the test drive. The AI captures every nocturnal charger enquiry."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick EV Briefs',
+    text: "A WhatsApp saying 'want EV charger, Nissan Leaf, 3-bed semi, Headington, driveway at front' becomes a structured domestic lead with vehicle model, property type, mounting position, and location."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. Fleet depot discussions, OZEV grant paperwork, and charger distributor orders stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess installations from photos?",
+    answer: "A driveway photograph shows the mounting position and approximate cable route but cannot determine the supply type, consumer unit capacity, earth electrode resistance, or internal cable run through walls and floors. The AI uses photos constructively — noting the wall material for bracket fixing, the visible distance from the proposed charger position to the meter cupboard, and whether the driveway surface would require trenching — building a pre-survey brief so you arrive knowing the external layout and likely SWA route."
+  },
+  {
+    question: "What about multi-message EV threads?",
+    answer: "EV conversations develop across multiple messages — a homeowner sends a driveway photo, then confirms the car is a Mercedes EQA, then asks about Easee vs Wallbox, then mentions Octopus Agile tariff, then queries the OZEV grant, then requests Wednesday installation. The AI builds one integrated lead from every fragment: driveway layout, vehicle model, brand comparison, smart tariff, grant eligibility, and preferred installation date."
+  },
+  {
+    question: "How much does AI WhatsApp cost for EV installers?",
+    answer: `The WhatsApp channel costs £${pricing.addOn.price}/month as an add-on. A domestic charger installation generates £800 to £1,500. A workplace sixteen-point installation generates £15,000 to £30,000. Booking one fleet depot tender through a rapid WhatsApp response — while you terminated SWA at an Easee isolator on another driveway — initiates infrastructure revenue that dwarfs the annual channel cost.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Reply once in any thread and the AI relinquishes the conversation permanently. Most EV installers let the AI gather the initial scope — vehicle model, charger preference, mounting position, cable run, supply type, and grant interest — then take over to discuss the specific electrical requirements and confirm the installation date."
+  },
+  {
+    question: "How is WhatsApp data from EV enquiries protected?",
+    answer: "Every WhatsApp message — driveway photographs, property addresses, consumer unit images, vehicle models, electrical supply details, and sender contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data remains exclusively yours. No EV charger project details reach competing installers or third-party lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for EV Charger Installers | Rapid Receptionist"
+  description={`AI WhatsApp for UK EV charger installers. Responds to driveway photos, pre-delivery urgency, and fleet transition messages. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/ev-charger-installers/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="EV Charger Installer"
+  tradeNamePlural="EV Charger Installers"
+  tradeSlug="ev-charger-installers"
+  headline="AI WhatsApp for EV Charger Installer Companies"
+  accentWord="EV Charger"
+  subhead="A homeowner in Carterton WhatsApps at 7pm on a Thursday with three photos — the first showing a detached garage with a rendered wall beside the driveway, the second showing the consumer unit inside the house (a Wylex split-load board with two spare ways), and the third showing the external meter cupboard on the front wall. Her message: 'Hi — we have just ordered a Volvo EX30 arriving in three weeks. These photos show our garage and consumer unit. The house is a 2001 four-bed detached in Carterton. I think the cable run from the consumer unit to the garage is about ten metres — through the kitchen wall, along the side passage, and across to the garage. We want a Zappi v2 in black because we already have eight solar panels with a Solis inverter and we want to charge from excess solar during the day. We are also on Octopus Intelligent Go for overnight charging at 7.5p. The consumer unit has two spare ways but it is old — the electrician who serviced our boiler said it should be upgraded. Can you install the Zappi before the Volvo arrives? How much with the OZEV grant?' You are mounting a Wallbox Pulsar Plus on a garage wall in Grove — the SWA cable sealed in the cable gland, the 32A RCBO wired, and the charger app pairing through Bluetooth. Without AI WhatsApp, the Carterton Zappi solar integration waits until the Wallbox commissions. With it, the AI responds at 7:01pm, notes the Wylex board condition and the two spare ways from the photo, confirms your Myenergi-approved status, asks about the solar panel wattage and the inverter kW rating, and captures: Carterton 2001 4-bed detached, Zappi v2 black, 10m cable run kitchen-side passage-garage, Wylex split-load 2 spare ways needs upgrade, 8 solar panels Solis inverter excess solar, Octopus Intelligent Go 7.5p, Volvo EX30 3 weeks, OZEV grant, CU upgrade."
+  scenario="It is 11pm on a Saturday. A hotel operations director WhatsApps: 'Evening — we operate three boutique hotels across the Cotswolds. Each has twelve to twenty car parking spaces. Currently no EV charging at any of them and guests are increasingly requesting it — we have had negative reviews mentioning the lack of chargers. The board wants destination chargers at all three hotels: four 7kW chargers per hotel initially, with payment capability and branding in the hotels' colours. We need OCPP back-office so we can set guest pricing and provide usage reports. Two of the hotels have three-phase supplies, one is single-phase only. Can you survey all three? We want the first hotel operational within six weeks for the Christmas season. Budget approved for all three phases.' Without AI WhatsApp, the three-hotel Cotswolds programme waits until Monday. With the AI, the reply at 11:01pm confirms your commercial and destination charging capability, asks about the car park surfaces (tarmac, gravel, or cobbles) for post mounting, and captures: Cotswolds 3 boutique hotels 12-20 spaces each, no existing EV, negative reviews, 4×7kW per hotel payment branded, OCPP guest pricing usage reports, 2 three-phase 1 single-phase, survey 3 hotels, first operational 6 weeks Christmas, budget approved all phases."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/ev-charger-installers/ai-receptionist/"
+  ctaHeadline="Book the Carterton Zappi Solar Install Before the Volvo EX30 Arrives"
+  ctaSubhead={`A homeowner with eight solar panels, a Solis inverter, Octopus Intelligent Go, and a Volvo EX30 arriving in three weeks needs a Zappi v2 with excess solar charging. The AI confirmed while the Wallbox paired in Grove. Add-on at £${pricing.addOn.price}/month.`}
+/>

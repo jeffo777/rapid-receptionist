@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During SWA Termination',
+    text: "Stripping SWA armoured cable sheaths, securing cable glands in isolator enclosures, wiring 32A RCBOs into consumer units, driving earth rods for TT conversions, or commissioning smart chargers through Bluetooth — EV installation demands electrical precision. Missed Call Text Back texts every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Pre-Delivery EV Owners',
+    text: "A new EV owner collecting Saturday needs a charger by Friday. Voicemail? He calls the next OZEV firm. A branded text — 'Thanks for calling — we are installing an EV charger and will call back shortly' — holds the pre-delivery caller with the most urgent timeline."
+  },
+  {
+    icon: '🏷️',
+    title: 'OZEV Approved Image',
+    text: "An instant branded text from an OZEV-approved EV charger installer signals the government-endorsed expertise that new EV owners trust with their home charging infrastructure and grant application."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During March & September',
+    text: "Registration plate changes trigger EV delivery surges. March and September fill with collection dates, pre-delivery charger bookings, and frantic three-pin-cable owners. Missed Call Text Back captures every peak-season lead while you install on existing bookings."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply EV Details',
+    text: "Callers reply with specifics — 'need Easee charger, BMW iX, detached garage, Abingdon, car arrives Tuesday.' Replies arrive on your dashboard before the earth rod drives to 12 ohms."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering holds complete EV conversations. Missed Call Text Back covers the moments — a call as the cable gland tightens, a phone in the van while the consumer unit is open and isolated, or a single-ring disconnect. Together: zero lost EV charger leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "The automatic text fires the instant the unanswered ring concludes — before the new Jaguar I-PACE owner with a Friday collection date dials the next OZEV-approved installer from the manufacturer's recommended list. During March and September plate-change surges where back-to-back installations fill every working day, this instant text maintains your commercial responsiveness without interrupting a single electrical procedure."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You write the wording at setup and revise it whenever convenient. An EV-specific message reads: 'Thank you for calling [company name]. We are currently installing an EV charger and will return your call at the earliest opportunity. Reply with your vehicle and charger requirements for a faster response.' This signals active OZEV-approved installation activity while inviting pre-survey details."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "The two systems defend your EV business through complementary coverage. Phone Answering conducts complete conversations — establishing the vehicle model, charger preference, mounting position, cable run, supply type, grant eligibility, and smart tariff. Missed Call Text Back catches uncommon edge cases — a call arriving as you crimp the SWA gland, a phone in the van while the mains are isolated at the consumer unit, or a caller disconnecting before the system engages. Running both achieves zero EV charger lead loss."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This channel is £${pricing.addOn.price}/month as an add-on. A domestic charger installation generates £800 to £1,500. A workplace sixteen-point installation generates £15,000 to £30,000. Recovering one missed call from a fleet manager commissioning a twenty-four-point depot — through a six-second branded text while you tested earth loop impedance at another property — initiates infrastructure revenue that dwarfs the annual channel cost.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "New EV owners reply with enthusiasm — 'ordered a Hyundai Ioniq 5 arriving in 2 weeks, want Easee One tethered, 4-bed detached Witney, driveway at front, on Octopus Go.' Fleet managers reply with programme briefs — 'need twelve 22kW three-phase chargers for our electric van depot, OCPP back-office, overnight scheduling.' Workplace managers reply — 'eight chargers for staff car park, WCS grant, survey next week.' These EV leads arrive on your dashboard while the charger firmware updates."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Caller details, text replies with property addresses, vehicle models, charger preferences, electrical supply types, and contact numbers are encrypted on UK and EU servers under UK GDPR. Access is exclusive to you. Nothing reaches competing EV charger installers or lead-generation intermediaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for EV Charger Installers | Rapid Receptionist"
+  description={`Missed Call Text Back for UK EV charger installers. Automatically texts callers while you terminate SWA, drive earth rods, and commission smart chargers. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/ev-charger-installers/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="EV Charger Installer"
+  tradeNamePlural="EV Charger Installers"
+  tradeSlug="ev-charger-installers"
+  headline="Missed Call Text Back for EV Charger Installer Companies"
+  accentWord="EV Charger"
+  subhead="It is 9am on a Thursday in March — the first week of the new plate registrations. You are at a 1970s semi in Grove — the consumer unit is isolated, the old MK board removed, and a new Hager RCBO consumer unit being wired. The 10mm² SWA runs from the new board through a core-drilled hole in the kitchen wall, along the side passage in surface-mounted mini trunking, around the corner, and terminates at the Easee One isolator on the front wall. The earth rod drove yesterday — 8 ohms, well within tolerance for the TT system. You are wiring the seventh of twelve circuits back onto the new board — ring final, lighting, cooker, shower, immersion, boiler, and now the EV 32A RCBO. Five calls between 8am and noon. Your phone is on the worktop. The consumer unit is open and live testing imminent. Without Missed Call Text Back, three voicemails — 'need a charger quote', 'my charger has stopped working', 'calling about the workplace quote you gave us' — two hang-ups. With it, all five receive texts within seconds. The first replies at 9:20am: 'Hello — we run a chain of four dental practices across south Oxfordshire. We are transitioning our company pool vehicles to electric — eight Hyundai Kona Electrics — and we need chargers at each practice. Two chargers per practice, so eight total. They need to work with our fleet management app for reporting. Three practices have car parks but one is in a terraced high street location with rear access only. All single-phase supplies. We also want the Workplace Charging Scheme grant applied for each socket. Can you survey all four practices? The vehicles arrive in eight weeks.' At noon the board is complete. Five leads on your dashboard — including the four-dental-practice fleet charger programme."
+  scenario="It is 2pm on a scorching September Saturday. You have been installing a Zappi v2 in combination with a Myenergi Eddi hot water diverter at a property in Charlbury since 8am — the homeowner has twelve solar panels, a GivEnergy Gen3 inverter, and wants excess solar to charge the BMW iX3 during the day via the Zappi in ECO+ mode and heat the immersion tank via the Eddi when the car is absent. The Myenergi hub connects both devices, the CT clamp monitors grid import/export at the meter tails, and the system prioritises EV charging over hot water over export. Six missed calls between 8am and 2pm. Without Missed Call Text Back, you descend the ladder to six unknowns. With Missed Call Text Back, all six received texts. Reply one: 'homeowner Abingdon — MG4 arriving next month, want Ohme charger, have solar panels.' Reply two: 'hotel manager Burford — four destination chargers for guests, need by Easter.' Reply three: 'developer Carterton — phase two, twenty-eight plots need per-plot EV pre-wire.' Reply four: 'homeowner Eynsham — Zappi earth fault keeps tripping, installed by another firm.' Reply five: 'school bursar Witney — want staff car park chargers, six points, WCS grant.' Reply six: 'fleet manager Didcot — twenty electric vans arriving January, need depot infrastructure.' Six leads. Saturday evening you triage — the Burford hotel Easter deadline and the Didcot depot first."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/ev-charger-installers/ai-receptionist/"
+  ctaHeadline="Recover a 4-Practice Dental Fleet Programme from One March Thursday"
+  ctaSubhead={`While you wired twelve circuits onto a new Hager board in Grove, five callers missed you. Five texts went out. A dental chain with eight Hyundai Konas, four practices, and WCS grants replied within twenty minutes. Add-on at £${pricing.addOn.price}/month.`}
+/>

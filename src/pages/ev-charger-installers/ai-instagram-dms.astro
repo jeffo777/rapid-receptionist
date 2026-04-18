@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Charger Installation Reels',
+    text: "EV charger timelapse reels are captivating — old board to new RCBO, trench to SWA, bare wall to glowing Easee. When followers DM about their own vehicle delivery, the AI captures a survey lead."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches New EV Owners at Decision Point',
+    text: "Instagram draws new EV owners comparing charger brands, studying installation photos, and deciding which OZEV-approved installer to contact. A DM from someone who has spent a week reviewing your installations represents maximum purchase commitment."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Charger Fault DMs',
+    text: "Existing clients DM screenshots of charger error indicators — Easee showing amber, Zappi displaying fault codes, Wallbox app reporting connectivity loss. The AI asks about the error display and whether the RCD has tripped."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Late-Night EV Research',
+    text: "New EV owners research chargers late — scrolling installation photos, reading PME earthing guides, and comparing Easee versus Ohme on forums. When the decision to book crystallises at 11pm, the AI captures the DM."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Charging DMs',
+    text: "DMs begin with 'how much for a charger?' The AI asks about the vehicle, the mounting position, the cable run, and the supply type — building a survey-ready specification before you review the lead."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Green LED Glow',
+    text: "Every Easee glowing green at dusk, every neat SWA cable run with labelled glands, and every before-and-after consumer unit comparison generates DMs from EV owners still using granny chargers."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "Switch to a Business or Creator profile in the Instagram settings — free and instant. EV charger installers posting before-and-after installations — extension lead through the kitchen window replaced by an Easee with clean SWA run — produce outstanding engagement because every EV owner scrolling at 10pm with a granny charger plugged into the garage immediately visualises the professional alternative."
+  },
+  {
+    question: "What EV DMs arrive through Instagram?",
+    answer: "New EV owners wanting a charger before their vehicle collection date. Existing EV owners upgrading from three-pin to a 7kW smart charger. Solar panel owners wanting Zappi for excess solar charging. Dual-car households needing a second charger or load balancing. Fleet managers studying your workplace installations for their own car park. Each follower has pre-evaluated your OZEV-approved installation standard from your grid."
+  },
+  {
+    question: "How quickly does the AI respond to EV DMs?",
+    answer: "Every DM receives a reply within seconds. Instagram's read receipts confirm active monitoring. A new Porsche Taycan owner who has just confirmed a Friday collection — calculating that a three-pin socket will add 6 miles per hour while the car needs 250 miles by Monday — requires an immediate, knowledgeable response from an OZEV-approved installer, not an account whose last installation post was three weeks ago."
+  },
+  {
+    question: "What do Instagram DMs cost for EV installers?",
+    answer: `Instagram DMs are £${pricing.addOn.price}/month as an add-on. A domestic charger installation generates £800 to £1,500. A workplace sixteen-point project generates £15,000 to £30,000. One new EV owner's Easee installation — initiated by a DM after she watched your forty-five-second Headington timelapse — returns the annual channel investment from a single job.`
+  },
+  {
+    question: "Can I reply to DMs myself?",
+    answer: "Respond once in any DM thread and the AI hands over permanently. Most EV installers let the AI gather the initial scope — vehicle model, charger preference, mounting position, cable run, supply type, and grant interest — then engage personally to discuss the earthing arrangement, consumer unit capacity, and the installation date."
+  },
+  {
+    question: "Is DM data from EV queries private?",
+    answer: "Instagram DMs — driveway photographs, consumer unit images, property addresses, vehicle models, electrical supply details, and sender contact information — are encrypted and stored on UK and EU servers under UK GDPR. Nothing reaches competing EV charger firms, charger distributors, or third-party lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for EV Charger Installers | Rapid Receptionist"
+  description={`AI Instagram DMs for UK EV charger installers. Converts charger installation reels and consumer unit upgrades into domestic survey bookings. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/ev-charger-installers/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="EV Charger Installer"
+  tradeNamePlural="EV Charger Installers"
+  tradeSlug="ev-charger-installers"
+  headline="AI Instagram DMs for EV Charger Installer Companies"
+  accentWord="EV Charger"
+  subhead="Your latest reel is a forty-five-second timelapse of a complete domestic charger installation in Wallingford. Scene one: the existing consumer unit — a Crabtree Starbreaker with no spare ways, an ancient 30mA RCD protecting everything on one side. Scene two: the removal and replacement — the new Hager VML955RK 10-way dual-RCD board wired with a dedicated 32A Type A RCBO for the EV circuit, every circuit labelled with printed ferrules. Scene three: the SWA cable run — 6mm² twin and earth inside, transitioning to 10mm² SWA armoured cable at the external wall, running in surface-mounted galvanised conduit along the side of the house for 8 metres, turning the corner, and terminating at the Ohme Home Pro isolator on the front wall. Scene four: the Ohme Home Pro in white mounted at the optimal 1-metre height, the cable gland sealed, the tethered Type 2 cable coiled, and the display showing 'Connected — scheduled for 00:30 Intelligent Go.' Scene five: the homeowner's Octopus Energy app — the Intelligent Go schedule showing overnight slots at 7.5p per kWh, estimated full charge by 6:30am, cost £2.80 for 65kWh. Five thousand eight hundred views. A homeowner in Didcot DMs: 'This is brilliant — that is exactly what I need. I have a 2018 four-bed detached with a similar old Crabtree board that our electrician said should be replaced. We just ordered a BMW iX1 xDrive30 arriving in six weeks. We want an Ohme like yours — the scheduling on Intelligent Go looks amazing. Our garage is detached at the back of the garden — probably 15 metres from the house. Is that a problem? We have a PME supply and I have been reading about earth rods — do we definitely need one? Happy to book whenever you are free.' You are commissioning an Easee. Without AI DMs, the Didcot BMW iX1 installation waits. With it, the AI confirms your OZEV approval, notes the 15-metre detached garage cable run will likely need a larger SWA gauge, asks whether the garage has any existing electrical supply, and captures: Didcot 2018 4-bed detached, BMW iX1 xDrive30 6 weeks, Ohme Home Pro, old Crabtree CU upgrade, detached garage 15m, PME earth rod question, Octopus Intelligent Go, survey any time."
+  scenario="It is 2am on a Saturday. A restaurant owner in Woodstock DMs: 'Hello — we run a fine dining restaurant with a twenty-space car park. Increasingly our guests are arriving in electric vehicles and asking where they can charge. We want to install four destination chargers in the car park — two for dining guests and two for our boutique accommodation guests who stay overnight. We need contactless payment on the dining chargers and free charging for accommodation guests. The car park is gravel with low-level lighting — we want the chargers on powder-coated black posts that match the restaurant's aesthetic. Our supply is 100A single-phase — will that support four 7kW chargers? We are also interested in the hotel charging grant if it still exists. Can you design something that looks upmarket rather than industrial? Survey next week would be ideal.' Without AI DMs, the Woodstock restaurant destination project waits. With AI DMs, the reply at 2:01am confirms your destination and hospitality experience, asks about the gravel surface depth for post foundations and the distance from the distribution board to the car park, and captures: Woodstock fine dining restaurant 20 spaces, 4 destination chargers 2 dining contactless + 2 accommodation free, gravel car park low-level lighting, black powder-coated posts aesthetic, 100A single-phase capacity question, hotel grant question, upmarket design, survey next week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/ev-charger-installers/ai-receptionist/"
+  ctaHeadline="Turn 5,800 Views on a Wallingford Ohme Timelapse into a Didcot BMW iX1 Survey"
+  ctaSubhead={`Forty-five seconds of Crabtree board to Ohme on Intelligent Go — £2.80 for 65kWh overnight — earns 5,800 views. AI Instagram DMs converts the Didcot neighbour's 15-metre detached garage cable run into an OZEV-approved survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

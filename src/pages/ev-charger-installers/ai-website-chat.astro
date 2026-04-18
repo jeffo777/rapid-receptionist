@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages New EV Owners Researching Chargers',
+    text: "New EV owners spend evenings researching home chargers — comparing Easee versus Ohme versus Zappi, checking OZEV grants, and reading about smart tariffs. Chat captures them on your website at peak purchase momentum."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies Charging Scope Online',
+    text: "Through conversation, the AI determines whether the visitor needs a domestic 7kW charger, a workplace multi-point installation, a fleet depot setup, or a rapid charger for commercial premises. You receive a correctly categorised charging lead."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Vehicle Delivery Anticipation',
+    text: "EV buyers research chargers obsessively in the weeks before delivery — the handover date confirmed, the excitement building. Chat captures the enquiry during this peak anticipation window when installation booking feels urgent."
+  },
+  {
+    icon: '📊',
+    title: 'Explains Charger Options to Visitors',
+    text: "Visitors ask 'which charger is best for my car?', 'do I need an earth rod?', and 'will the OZEV grant cover this?' The AI responds from your configured expertise — comparing charger brands, explaining PME versus TT, and clarifying grant eligibility."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Installation Gallery',
+    text: "Your website shows neat charger mounts, clean SWA cable runs, and tidy consumer unit upgrades. Chat converts visitors who admire your Part P electrical workmanship into booked surveys."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat is bundled with phone answering at £${pricing.tiers.core.price}/month. Unlimited EV charging conversations — from domestic Easee queries to twenty-four-point fleet depot tenders.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my EV charger website?",
+    answer: "During onboarding you receive a JavaScript snippet for your website header — WordPress, Wix, Squarespace, or custom-built sites. The branded widget activates on every page instantly. EV charger firms with installation galleries showing neat SWA runs, consumer unit upgrades, and charger brand logos experience strong chat engagement from visitors who have already assessed your OZEV-approved credentials and want to discuss their specific vehicle and property."
+  },
+  {
+    question: "Can the AI explain charger differences to visitors?",
+    answer: "Your OZEV-approved company profile trains the AI with your charger expertise. When a visitor types 'Easee or Zappi — which is better for solar?' the AI explains that the Zappi integrates directly with Myenergi's CT clamp for ECO mode solar-excess charging, while the Easee works with a broader range of solar systems through its Easee Equalizer load balancing — all while capturing the visitor's solar system details, vehicle model, and contact information for your tailored recommendation."
+  },
+  {
+    question: "What does chat capture from EV charger visitors?",
+    answer: "The AI records the vehicle make and model (or expected delivery date), the charger brand preference if any, the mounting position (garage wall, driveway wall, rear of house, car park post), the approximate cable run, any known supply details (single-phase, three-phase, PME, TNS), the consumer unit condition, OZEV grant interest, smart tariff details, solar integration needs, and the visitor's contact details."
+  },
+  {
+    question: "Does chat slow my EV charger website?",
+    answer: "Charger brand comparison tables, installation gallery photographs, OZEV accreditation badges, and Trustpilot review feeds load at full speed before the chat component activates. The lightweight widget initialises asynchronously after all page content renders. No measurable impact on page speed or search engine positioning."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `No separate charge — chat is already included in the £${pricing.tiers.core.price}/month phone answering package. EV charger installers gain complementary coverage: weekday phone calls from fleet managers commissioning depot infrastructure, balanced with evening and weekend chats from homeowners whose new EV delivery date has just been confirmed and who need a charger installed before collection day.`
+  },
+  {
+    question: "How is visitor data from EV queries handled?",
+    answer: "Chat conversations containing property addresses, electrical supply specifications, vehicle models, consumer unit configurations, and visitor contact details are encrypted and stored on UK and EU servers under UK GDPR. Leads go exclusively to you. No EV charger project details reach competitors or third-party lead aggregators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for EV Charger Installers | Rapid Receptionist"
+  description={`AI website chat for UK EV charger installers. Engages new EV owners researching Easee, Ohme, and Zappi chargers during pre-delivery excitement. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/ev-charger-installers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="EV Charger Installer"
+  tradeNamePlural="EV Charger Installers"
+  tradeSlug="ev-charger-installers"
+  headline="AI Website Chat for EV Charger Installer Companies"
+  accentWord="EV Charger"
+  subhead="A homeowner finds your website at 10:15pm on a Wednesday in September. He collected his Kia EV6 GT-Line from the dealership this afternoon — his first electric vehicle. The charging cable provided reaches the three-pin socket in the garage, but after four hours it shows only 22 miles added. He has a 260-mile journey to Edinburgh on Saturday. He types: 'Evening — I just picked up my Kia EV6 today. The three-pin cable is painfully slow — four hours and only 22 miles. I have a long drive on Saturday and I need a proper charger installed before then. Our house is a 1990s three-bed semi in Wallingford. The garage is attached — the consumer unit is in the hall cupboard, probably 8 metres away through the internal wall. I have been looking at the Easee One or Ohme Home Pro — both seem good but I cannot decide. The house has a PME supply — I saw your FAQ about earth rods and I am confused about whether I need one. We are on Octopus Intelligent Go. Is there still an OZEV grant? Can you install by Friday? What would it cost with and without the grant?' Without chat, he charges on three-pin and emails Friday. With AI Website Chat, the AI confirms your OZEV approval, explains that PME supplies require a TT earthing assessment and asks whether the garage has an existing earth connection, and captures: Wallingford 1990s 3-bed semi, Kia EV6 GT-Line collected today, Easee One vs Ohme, 8m cable run hall to garage through wall, PME supply TT question, Octopus Intelligent Go, OZEV grant question, install by Friday, cost with/without grant, Edinburgh Saturday."
+  scenario="It is midnight on a Monday. A facilities manager types: 'Hello — I manage a business park with four office buildings in Didcot. We have eighty car parking spaces shared across the buildings. The tenant companies are requesting EV charging and it is becoming a retention issue — two tenants have threatened to leave for a park that offers charging. The board has approved a phased installation: Phase 1 is sixteen 7kW chargers with OCPP back-office and contactless payment across two buildings. Phase 2 adds another sixteen. We want load management across all points because the main supply is 200A three-phase and we cannot exceed it without a DNO upgrade. We need the Workplace Charging Scheme grant applied for each socket. Also want the chargers on steel posts with concrete bases in the car park, not wall-mounted. Can you survey the four buildings and design a phased plan? Budget is approved for Phase 1 to complete within eight weeks.' Without chat, the facilities manager sends an email Tuesday. With AI Website Chat, the AI confirms your commercial capability, asks about the cable containment routes from the distribution boards to the car park positions, and captures: Didcot business park 4 offices 80 spaces, tenant retention issue 2 threatening to leave, Phase 1 16×7kW OCPP contactless Phase 2 16 more, 200A three-phase load management DNO limit, WCS grant per socket, steel posts concrete bases, survey 4 buildings phased plan, 8 weeks Phase 1, budget approved."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/ev-charger-installers/ai-receptionist/"
+  ctaHeadline="Win the Wallingford Kia EV6 Before Saturday's Edinburgh Drive"
+  ctaSubhead={`A new EV owner with a three-pin cable adding 22 miles in four hours and Edinburgh on Saturday needs a charger by Friday. Chat captures the Easee vs Ohme decision, the PME earthing question, and the Octopus Go tariff. Included at £${pricing.tiers.core.price}/month.`}
+/>

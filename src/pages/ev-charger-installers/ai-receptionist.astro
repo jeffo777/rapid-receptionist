@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A homeowner calls about a 7kW EV charger installation for a Tesla Model 3. The house is a 1930s semi in Summertown with a PME supply, a dated consumer unit that needs upgrading, and a driveway at the front with a cable run of approximately fifteen metres from the consumer unit under the stairs to the charger position beside the garage. She wants an Easee One in anthracite with a tethered Type 2 cable. She also wants to know about the OZEV EVHS grant and whether her smart tariff — Octopus Intelligent Go — will work with the charger. You are at a property in Headington — halfway through a Zappi installation, the SWA cable trenched across the driveway, the armoured cable terminated in the isolator, and the consumer unit open with a new Type A RCD board being wired. Both hands occupied. She calls three OZEV-approved installers. One answers and books the survey.",
+    with: "Your AI receptionist answers on the second ring. It captures the scope — 1930s semi Summertown, PME supply, consumer unit upgrade, 15m cable run front driveway, Easee One anthracite tethered, OZEV EVHS, Octopus Intelligent Go, Tesla Model 3 — and confirms you will call back. At the break you review and schedule Wednesday's survey."
+  },
+  {
+    without: "A fleet manager emails on Monday about twelve 22kW three-phase chargers for a delivery depot — overnight charging for electric vans, OCPP back-office management, and Workplace Charging Scheme application. The email sits until Thursday.",
+    with: "Your AI acknowledges within sixty seconds, referencing the twelve 22kW three-phase chargers, the OCPP back-office, and the WCS grant application. Thursday you begin the site assessment."
+  },
+  {
+    without: "A hotel general manager WhatsApps on Saturday about destination chargers for guests — 'four 7kW chargers in the car park, need payment capability, want them branded with the hotel logo.' He messages three firms. By Tuesday, one has responded.",
+    with: "The AI responds within seconds, asks about the existing three-phase supply and the car park cable run distance, and builds a structured destination charging lead. Tuesday at 8am you have the hotel, the charger count, and the payment requirement."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Domestic EV Charging",
+    items: ["7kW single-phase smart chargers — Easee One, Ohme Home Pro, Zappi, Wallbox Pulsar Plus, Pod Point Solo, Hypervolt, Tesla Wall Connector", "Tethered and untethered Type 2 socket options", "PME earthing assessment — TT conversion with earth rod where required", "Consumer unit upgrades for dedicated EV circuit with Type A or EV-rated RCD", "SWA armoured cable runs — external, trenched, and surface-mounted", "OZEV EVHS grant applications and smart charger compliance"]
+  },
+  {
+    category: "Commercial & Workplace",
+    items: ["22kW three-phase AC destination chargers — Easee Charge, Wallbox Commander 2, Pod Point Twin", "Dynamic load management across multiple charge points", "OCPP back-office integration for billing and user management", "Workplace Charging Scheme grant applications — up to £350 per socket", "Simultaneous charging with CT clamp current monitoring", "Payment terminal and RFID access for public-facing installations"]
+  },
+  {
+    category: "Fleet & Rapid Charging",
+    items: ["Depot overnight charging for electric van and truck fleets", "DC rapid chargers — 50kW to 150kW CCS connectors", "Three-phase supply upgrades and DNO applications for high-power installations", "Load balancing across multiple depot charge points", "Telematics integration for fleet charge scheduling", "Solar PV integration for excess solar EV charging — Zappi, GivEnergy EV mode"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners who have just ordered or received their first electric vehicle and need a home charger installed. They need guidance on charger brand selection, cable run routing, consumer unit capacity, PME earthing assessment, and OZEV EVHS grant eligibility — plus smart tariff integration with Octopus Intelligent Go or Agile."
+  },
+  {
+    icon: "🏢",
+    title: "Workplace & Commercial",
+    description: "Business owners and facilities managers installing chargers for employees, customers, and visitors. They need multi-point installations with load balancing, OCPP back-office management, payment capability, and Workplace Charging Scheme grant applications covering up to £350 per socket."
+  },
+  {
+    icon: "🚐",
+    title: "Fleet Operators",
+    description: "Delivery companies, councils, and logistics firms transitioning van and truck fleets to electric. They need depot charging infrastructure — multiple 22kW or rapid DC charge points with overnight scheduling, load management across the fleet, and DNO supply upgrades for the additional electrical demand."
+  },
+  {
+    icon: "☀️",
+    title: "Solar PV Owners",
+    description: "Existing solar panel owners wanting to charge their EV from excess solar generation. They need a solar-compatible charger — Zappi with CT clamp for Myenergi ecosystem, or integration with GivEnergy or SolarEdge systems — maximising self-consumption and reducing grid dependence."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand EV charger terminology?",
+    answer: "The complete EV charging vocabulary is configured — charger types (Type 1, Type 2 socket, tethered cable, untethered socket, 3.6kW single-phase, 7kW single-phase, 22kW three-phase, 50kW DC rapid, 150kW DC ultra-rapid, CCS connector, CHAdeMO), charger brands (Easee One/Charge, Ohme Home Pro/ePod, Zappi v2, Wallbox Pulsar Plus/Pulsar Max/Commander 2, Anderson A2, Pod Point Solo 3/Twin, ABB Terra AC/DC, Hypervolt Home 3, Tesla Wall Connector Gen 3, Myenergi Zappi, Sync EV, EO Mini Pro 3, Project EV Pro), electrical requirements (SWA steel wire armoured cable, 6mm²/10mm²/16mm², consumer unit, spare way, RCBO, RCD Type A/Type B/Type EV, MCB rating 32A/40A, PME Protective Multiple Earthing, TT earthing system, earth rod, earth electrode, Ze measurement, loop impedance Zs, DNO notification, looped supply, dedicated radial circuit, BS 7671 18th Edition Amendment 2, load balancing, dynamic CT clamp, current transformer), grants (OZEV Office for Zero Emission Vehicles, EVHS Electric Vehicle Homecharge Scheme £350, Workplace Charging Scheme WCS £350 per socket, on-street residential charging scheme, Scottish Government interest-free loan), solar integration (excess solar charging, Zappi ECO/ECO+ mode, CT clamp grid monitoring, Myenergi hub, GivEnergy EV charging mode, SolarEdge inline EV charger, smart tariff Octopus Intelligent Go/Agile/Flux, scheduled charging), and commercial (destination charging, en-route rapid, OCPP Open Charge Point Protocol, OCPI roaming, payment terminal contactless, RFID card access, back-office management, simultaneous load management, DNO capacity assessment). When a homeowner describes 'Easee One 7kW tethered anthracite, PME supply, consumer unit upgrade needed, SWA trench across the drive, OZEV grant, Octopus Intelligent Go,' the AI records every specification."
+  },
+  {
+    question: "Can the AI tell the difference between a home charger and a fleet depot?",
+    answer: "A homeowner wanting 'a charger for my Tesla, 3-bed semi, need it on the driveway wall' generates a domestic 7kW lead with the vehicle model, mounting position, cable run estimate, and PME/TT assessment requirement. A depot manager requesting 'twenty-four 22kW three-phase charge points for our electric delivery vans with overnight scheduling and load management' generates a commercial infrastructure lead with DNO capacity assessment, three-phase supply upgrade, load balancing design, and fleet management integration. The AI constructs fundamentally different project specifications for each."
+  },
+  {
+    question: "What about urgent EV charger enquiries?",
+    answer: "A homeowner whose new EV arrives next Wednesday and has no home charger installed. A fleet depot taking delivery of twelve electric vans in three weeks with zero charging infrastructure. A hotel opening next month that promised guests destination charging. A Zappi showing an earth fault trip that prevents all charging. EV charger urgency comes from vehicle delivery deadlines, fleet transition timelines, and business opening dates — each with a hard deadline driving rapid decision-making."
+  },
+  {
+    question: "How much does this cost for an EV charger installer?",
+    answer: `EV charger installers pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you run a one-van domestic operation or a multi-crew team delivering workplace and fleet installations, the allowance accommodates your enquiry volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a sole trader EV installer?",
+    answer: "One-person EV charger businesses benefit enormously. When you are trenching SWA across a driveway, mounting the charger on the wall bracket, terminating the armoured cable in the isolator, upgrading the consumer unit with a dedicated 32A RCBO and Type A RCD, or driving the earth rod for a TT conversion — the phone cannot be safely answered. The AI captures every domestic survey request, every workplace charging enquiry, and every fleet depot tender while you complete the installation with safe isolation procedures."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Configure coverage from your dashboard to match your installation schedule. During active wiring — when the consumer unit is open, the SWA terminates, and the earth rod drives — send every call to the AI. During office hours, quotation preparation, and OZEV grant paperwork — take calls directly. Toggle from your phone as your working environment changes between installation site and desk."
+  },
+  {
+    question: "How is EV charger project data protected?",
+    answer: "EV charger enquiries contain property addresses, electrical supply details, consumer unit configurations, DNO references, vehicle models, charging patterns, fleet sizes, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing EV installers or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for EV Charger Installers | Rapid Receptionist"
+  description={`AI receptionist for UK EV charger installers — home chargers, workplace charging, fleet depots, and solar integration. Never miss a call while you install. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/ev-charger-installers/ai-receptionist/"
+  tradeName="EV Charger Installer"
+  tradeNamePlural="EV Charger Installers"
+  tradeSlug="ev-charger-installers"
+  headline="The AI Receptionist Built for EV Charger Installers"
+  accentWord="EV Charger"
+  subhead={`You cannot answer the phone when you are trenching SWA cable across a driveway, mounting an Easee One on a garage wall, terminating armoured cable in the DC isolator, upgrading a consumer unit with a 32A RCBO and Type A RCD, or driving an earth rod for a TT conversion on a PME supply. Your AI receptionist captures every call, every message, and every booking — from homeowners wanting a 7kW charger for their first EV to fleet managers commissioning twenty-four 22kW three-phase depot charge points. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Easee One Installation Calls While You Trench SWA in Headington"
+  ctaSubhead={`A homeowner with a Tesla arriving Wednesday and a PME supply needing TT conversion needs an OZEV-approved installer who answers. If voicemail picks up, she books a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

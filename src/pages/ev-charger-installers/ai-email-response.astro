@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Workplace Charging Tenders',
+    text: "Facilities managers and property consultants email workplace charging tenders with car park layouts, electrical supply assessments, and WCS grant applications. The OZEV-approved firm acknowledging first stays on the tender shortlist."
+  },
+  {
+    icon: '📐',
+    title: 'References Charger Specifications',
+    text: "When a property manager emails specifying 'twenty-four Easee Charge chargers with Easee Equalizer load balancing, OCPP 1.6J, contactless payment, steel post mounting,' the AI acknowledgement references every specification detail."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Active Installation Hours',
+    text: "EV charger installation days consume every hour — SWA trenching from 8am, cable termination and consumer unit upgrades until noon, charger mounting and commissioning until 4pm, OZEV paperwork until 5pm. A tender email at 10am sits unread until the earth rod tests. Your rapid acknowledgement preserves the opportunity."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Distributor Emails',
+    text: "Your inbox mixes workplace charging tenders, Easee distributor stock alerts, OZEV grant confirmations, DNO notification responses, and charger firmware update bulletins. The AI identifies genuine installation tenders from operational correspondence."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Property Manager Confidence',
+    text: "Facilities managers need OZEV-approved installers who deliver BS 7671 compliant installations with load management, OCPP integration, and WCS documentation. Consistent instant acknowledgements build the professional credibility that secures preferred-contractor status."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Workplace charging tenders include car park layouts with charge point positions, electrical supply single-line diagrams, cable containment routes, and WCS application forms. The AI notes every attachment and references them in your lead."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce EV charger quotes from tender emails?",
+    answer: "No pricing whatsoever is generated — only a professional acknowledgement referencing the charging specification and project scope. Your quotation — charger hardware costs, SWA cable quantities, containment materials, consumer unit upgrades, earth rod installations, commissioning labour, OCPP licence fees, and WCS grant deductions — is calculated from the measured site survey and supplier trade pricing."
+  },
+  {
+    question: "Will it respond to charger distributor emails?",
+    answer: "Onboarding configuration distinguishes genuine project tenders from operational correspondence. Easee and Ohme distributor delivery notifications, Zappi firmware release notes, OZEV grant approval confirmations, DNO G98 notification acknowledgements, and Part P registration correspondence are excluded from AI response. Only project tenders and client installation enquiries trigger the professional acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner EV emails?",
+    answer: "Website contact form submissions from homeowners — 'just ordered a Mercedes EQB, four-bed detached Charlbury, want 7kW charger on garage wall, PME supply, need before Christmas' — receive a professional response asking about the cable run distance from the consumer unit, the consumer unit age and spare way availability, and their preferred installation date."
+  },
+  {
+    question: "What does email response cost for EV installers?",
+    answer: `Email response is £${pricing.addOn.price}/month as a channel add-on. A workplace twenty-four-point installation generates £20,000 to £40,000. Acknowledging a facilities manager's phased car park tender within sixty seconds — while you commissioned an Easee at a domestic property — regularly determines whether your OZEV firm receives the formal site survey invitation.`
+  },
+  {
+    question: "Can all further tender emails come from me?",
+    answer: "Once the AI delivers its initial acknowledgement, every subsequent communication is yours. Your measured car park survey, cable containment design, load management calculation, OCPP configuration proposal, WCS grant paperwork, installation programme, and method statement are prepared and submitted entirely by your team."
+  },
+  {
+    question: "How is EV tender data secured?",
+    answer: "Workplace charging tenders contain car park layouts, electrical supply capacities, DNO connection details, WCS application data, and commercially sensitive pricing. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender details reach competing EV charger installers or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for EV Charger Installers | Rapid Receptionist"
+  description={`AI email response for UK EV charger installers. Acknowledges workplace charging tenders, fleet depot specifications, and destination charger projects within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/ev-charger-installers/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="EV Charger Installer"
+  tradeNamePlural="EV Charger Installers"
+  tradeSlug="ev-charger-installers"
+  headline="AI Email Response for EV Charger Installer Companies"
+  accentWord="EV Charger"
+  subhead="A facilities manager emails a workplace charging tender for a corporate headquarters in Abingdon — a four-storey office building with a 120-space car park. Employee survey shows sixty-two staff now drive or have ordered EVs. The brief: Phase 1 — thirty-two 7kW Easee Charge wall-mounted chargers on the ground-floor car park wall with Easee Equalizer dynamic load management across the 200A three-phase supply. Phase 2 — sixteen chargers on steel posts with concrete bases in the overflow car park. All chargers OCPP 1.6J connected to the ChargePoint back-office for employee billing, usage reporting, and access control via RFID cards. Contactless payment on four publicly accessible chargers for visitors. WCS grant application for all forty-eight sockets. The building landlord requires a structural assessment of the car park wall for bracket loading. Cable containment via galvanised cable tray from the main distribution board along the car park ceiling soffit to each charger position. Tender return in four weeks with a mandatory pre-tender car park survey. You are at a domestic property in Summertown — mounting an Ohme Home Pro on the garage wall, the 10mm² SWA running from the consumer unit through a core-drilled hole in the kitchen wall, along the side passage in a surface-mounted galvanised conduit, and across to the garage. The cable gland tightens, the isolator wires. Without AI Email Response, the forty-eight-point corporate headquarters tender sits unread until the Ohme commissions. With it, your acknowledgement arrives within sixty seconds, referencing the thirty-two Easee Charge Phase 1, Easee Equalizer, OCPP ChargePoint, WCS for forty-eight sockets, structural assessment, cable tray soffit, four-week tender, and car park survey."
+  scenario="It is early Saturday morning. Your inbox over the weekend: a car dealership wanting four destination chargers for the showroom forecourt — 'customers want to charge while browsing, need branded posts with dealer logo,' a homeowner wanting a Zappi installed before her Tesla Model Y arrives next Friday — 'have solar panels and Myenergi hub already,' a council estates team requesting a feasibility study for on-street residential charging across five streets — 'ORCS funding application, bollard-style chargers, pavement channels,' and an Easee distributor confirming Monday's charger delivery. Without AI Email Response, the dealership, the Zappi, and the council study wait until Monday. With AI Email Response, the dealership references branded posts and showroom, the Zappi notes existing Myenergi hub and solar, the council study captures ORCS and five streets, and the distributor email is filtered."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/ev-charger-installers/ai-receptionist/"
+  ctaHeadline="Acknowledge the 48-Point Corporate Tender While You Mount Ohme in Summertown"
+  ctaSubhead={`A facilities manager's four-week tender for 48 Easee Charge chargers with OCPP billing and WCS grants starts when the email lands. Your sixty-second acknowledgement secures the mandatory car park survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

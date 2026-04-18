@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Wire Consumer Units',
+    text: "Trenching SWA across driveways, terminating armoured cable in isolators, upgrading consumer units with 32A RCBOs and Type A RCDs, driving earth rods for TT conversions, or commissioning smart chargers on the app — EV charger installation demands electrical focus. The AI answers every call in your company name."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures EV Briefs at Every Scale',
+    text: "When a homeowner calls about a 7kW Easee One for a Tesla, the AI captures the vehicle model, driveway position, cable run, and supply type. When a fleet manager calls about twenty-four 22kW depot chargers with OCPP back-office, the AI captures the fleet size, charging schedule, and DNO requirements."
+  },
+  {
+    icon: '🔋',
+    title: 'Handles Solar EV Integration',
+    text: "Solar panel owners calling about Zappi installations — 'want to charge my EV from excess solar, have twelve panels and a GivEnergy inverter' — generate high-value leads. The AI captures the existing PV system, inverter model, and smart charging preference."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches New EV Owner Excitement',
+    text: "New EV owners research chargers in the evening — comparing brands, checking OZEV grants, and reading about smart tariffs. Their excitement peaks when the vehicle delivery date confirms. The AI captures every enthusiastic evening call."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for EV Quoting',
+    text: "Each lead identifies the vehicle model, charger brand preference, mounting position, cable run estimate, consumer unit status, supply type (PME or TT), earth rod requirement, OZEV grant eligibility, smart tariff, and solar integration need — everything for accurate quotation."
+  },
+  {
+    icon: '🏷️',
+    title: 'OZEV Approved Professionalism',
+    text: "An EV charger firm that answers professionally and asks about the supply type, cable run, and grant eligibility signals the OZEV-approved expertise that new EV owners trust with their home charging investment."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their charging needs?",
+    answer: "Conversation adapts to the project scope. A homeowner wanting a domestic charger hears questions about the vehicle make and model, the preferred charger brand, the mounting position (driveway wall, garage, or rear of house), the approximate cable run from the consumer unit, whether the supply is single-phase or three-phase, whether the consumer unit has spare ways, the off-street parking arrangement, and OZEV EVHS grant registration. A fleet manager is asked about the vehicle count, the required charging speed, the overnight scheduling needs, and the existing three-phase supply capacity."
+  },
+  {
+    question: "Can the AI handle both domestic and commercial EV calls?",
+    answer: "A homeowner wanting a 7kW Ohme Home Pro for a Volkswagen ID.4 on a front driveway generates a domestic lead with cable run, PME assessment, and grant eligibility. A hotel manager requesting four destination chargers with payment terminals for guests generates a commercial hospitality lead with car park layout, three-phase supply, OCPP back-office, and branding requirements. The AI produces structurally distinct leads for each project category."
+  },
+  {
+    question: "What about calls regarding charger faults?",
+    answer: "A Zappi showing a red earth fault indicator and refusing to charge. An Easee stuck in 'waiting' status despite being plugged in and scheduled. A Wallbox Pulsar Plus tripping the RCD every time charging begins above 20A. A Pod Point showing offline on the app after a power cut. EV charger faults prevent vehicle charging — every hour without a functioning charger costs the owner range, journey flexibility, and smart tariff savings. The AI captures the charger brand, the fault indicator, the vehicle model, and whether the issue is intermittent."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `The Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. EV charger enquiry patterns follow vehicle delivery cycles — spring and autumn registration plates trigger surges as new EV owners need chargers within days of collection. The seasonal wave structure balances naturally within the monthly allocation. Overage runs at 20p per minute without contract lock-in.`
+  },
+  {
+    question: "Can I take calls between installations?",
+    answer: "During quotation writing, OZEV grant applications, and BS 7671 certification paperwork — manage calls directly. The moment you open the consumer unit, strip the SWA sheath, or drive the earth rod — route calls to the AI. Switch from your dashboard as your day moves between safe isolation and administration."
+  },
+  {
+    question: "How is EV charger project data protected?",
+    answer: "EV charger enquiries contain property addresses, electrical supply configurations, consumer unit details, vehicle models, charging patterns, fleet sizes, and commercially sensitive pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details reach competing EV installers or third-party lead generators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for EV Charger Installers | Rapid Receptionist"
+  description={`AI phone answering for UK EV charger installers. Captures domestic charger surveys, workplace installations, and fleet depot tenders while you wire consumer units. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/ev-charger-installers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="EV Charger Installer"
+  tradeNamePlural="EV Charger Installers"
+  tradeSlug="ev-charger-installers"
+  headline="AI Phone Answering for EV Charger Installer Companies"
+  accentWord="EV Charger"
+  subhead="A homeowner calls at 11am on a Monday. His BMW iX has arrived three days early — it is sitting on the driveway in Witney with 180 miles of range and no home charger. The house is a 2010 four-bedroom detached with a double garage. The consumer unit is in the utility room at the back of the house — approximately twelve metres from the mounting position on the front garage wall. He wants an Ohme Home Pro 7kW tethered in black, with the OZEV EVHS grant applied. The house has a PME supply but he has read that some installations need a TT conversion with an earth rod. He is on Octopus Intelligent Go and wants the charger to schedule overnight charging automatically at the 7.5p rate. His wife is getting a Hyundai Ioniq 5 next month, so he wants to know whether one 7kW charger can serve both vehicles. You are at a workplace car park in Abingdon — installing eight Pod Point Twin 2x7kW chargers on steel posts with concrete foundations, running SWA from the three-phase distribution board in the building to each post position. The 10mm² armoured cable trenches across the car park, the cable glands seal, and the RCBO boards wire. Without AI Phone Answering, the Witney dual-vehicle household goes to voicemail. The iX sits with 180 miles. With it, the AI captures: Witney 2010 4-bed detached double garage, Ohme Home Pro 7kW black tethered, 12m cable run utility to front garage, PME supply TT question, OZEV EVHS, Octopus Intelligent Go 7.5p overnight, BMW iX + Hyundai Ioniq 5 next month, dual-vehicle question."
+  scenario="It is 2pm on a Thursday. Three calls between noon and 2pm. You are inside a consumer unit at a property in Eynsham — isolating the supply, fitting a Hager RCBO board with a dedicated 32A Type A RCBO for the EV circuit, terminating the 10mm² SWA twin and earth from the Zappi v2 on the outside wall, and testing the earth loop impedance on the new TT system after driving the earth rod to 12 ohms. Without AI Phone Answering, one voicemail and two hang-ups. With it, all three answered. Lead one: a property developer in Carterton — 'building sixty houses, need per-plot EV charger pre-wire with draw cord and back box, NHBC compliant, want pricing per plot.' Lead two: a Tesla Model Y owner in Didcot — 'just collected my car, want a Tesla Wall Connector Gen 3, my garage has power but I think the consumer unit is full.' Lead three: a pub landlord in Woodstock — 'want two destination chargers in the car park for customers, need contactless payment, will the 100A single-phase supply handle them or do I need a three-phase upgrade?' At 2:30pm the Ze reads 0.8 ohms. Three leads — a sixty-house developer, a Tesla garage install, and a pub destination project."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/ev-charger-installers/ai-receptionist/"
+  ctaHeadline="Capture the Witney Dual-BMW-Hyundai Household While You Wire Pod Points in Abingdon"
+  ctaSubhead={`A homeowner with a BMW iX on the driveway, a Hyundai Ioniq 5 arriving next month, and Octopus Intelligent Go at 7.5p needs an OZEV-approved installer who answers. The AI captured the Ohme preference while you trenched SWA. From £${pricing.tiers.core.price}/month.`}
+/>
