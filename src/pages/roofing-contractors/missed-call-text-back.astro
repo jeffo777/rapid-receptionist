@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls from the Ridge',
+    text: "Straddling a ridge line nailing dry ridge units, loading the tile hoist on the scaffold, cutting slates on the diamond grinder, and dressing lead valleys with a bossing mallet — every phase of roofing demands both hands. Missed Call Text Back sends a branded text to every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Storm Damage Callers',
+    text: "After a storm, homeowners call multiple roofers in rapid succession. A voicemail loses them instantly. A branded text — 'Thanks for calling — we are on an emergency roof repair and will return your call within the hour' — keeps them on your list while you tarp the current leak."
+  },
+  {
+    icon: '🏷️',
+    title: 'NFRC-Standard Professionalism',
+    text: "An instant branded text from a roofing contractor projects reliability and active capability — the kind of roofer that homeowners trust with their most critical weatherproofing investment."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Full-Day Re-Roofs',
+    text: "Re-roof days consume the entire crew from 7am scaffold climb to 4pm clean-up — stripping, membrane, battens, tiles, ridges, and lead. Every person works on the roof. Missed Call Text Back captures every enquiry during your most labour-intensive days."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Roof Details',
+    text: "Callers reply with scope — 're-roof needed, 1960s semi, concrete tiles, Summertown, two chimney stacks, need a quote.' Replies arrive on your dashboard with property type, tile details, and features before you descend the ladder."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering handles detailed roofing conversations and builds complete re-roof leads. Missed Call Text Back catches rare edge cases — a call during a critical lead dress, a mobile signal lost behind a chimney stack, or a one-ring hang-up. Together, no roofing lead vanishes."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "Within seconds of the unanswered call ending — before the homeowner dials the next roofer on their Google search results. During all-day re-roof shifts where your phone sits in the van from dawn until scaffold pack-down, this automatic text keeps your roofing firm commercially visible without you descending a single rung."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "The message is entirely your own — written during setup and adjustable whenever circumstances change. A well-crafted roofing message reads: 'Thank you for calling [company name]. We are currently on a roofing project and will return your call at the earliest opportunity. Reply with your roofing requirements for a faster response.' The wording communicates active on-site professionalism and encourages immediate detail sharing."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They operate as complementary safeguards for your roofing business. Phone Answering conducts full conversations — identifying the property type, tile specification, roof features, damage description, and insurance status. Missed Call Text Back covers infrequent bypass scenarios — a call during a critical lead-dressing moment on the scaffold, a mobile signal dropping behind a tall chimney stack, or a caller hanging up before the AI connects. Both running together means zero roofing enquiries disappear."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. A domestic re-roof generates £4,000 to £12,000 in revenue. Recovering one missed call from a homeowner — who had a full natural slate re-roof ready to commission — through a timely branded text delivers returns that dwarf the channel cost for years.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Homeowners with active leaks reply immediately — 'tiles missing, water coming in, 1970s semi, OX4, need someone tomorrow.' Developers reply with plot counts and specifications. Landlords reply with tenant complaints. These roof details arrive on your dashboard while your boots are still on the battens, providing full callback context for the end of the working day."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing property addresses, roof descriptions, tile specifications, storm damage details, and contact information are encrypted and held on UK and EU servers under UK GDPR. Only you access the data. Nothing reaches competing roofers or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Roofing Contractors | Rapid Receptionist"
+  description={`Missed Call Text Back for UK roofing contractors. Automatically texts callers while you tile the ridge — keeps re-roof quotes and storm damage repairs warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/roofing-contractors/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Roofing Contractor"
+  tradeNamePlural="Roofing Contractors"
+  tradeSlug="roofing-contractors"
+  headline="Missed Call Text Back for Roofing Contractor Companies"
+  accentWord="Roofing"
+  subhead="It is 9am on a Wednesday in March. Your crew is mid-strip on a full re-roof in Marston — the old Redland 49 tiles are coming off the front slope, your labourer is loading the skip from the scaffold, and you are pulling decayed 1F felt off the rafters before the forecast rain arrives at 2pm. The breathable membrane needs to be across the entire front slope, battened, and at least three courses of new Marley Modern tiled before the first drops fall. Every minute counts. Four calls come in between 9am and noon. Your phone is in the van cab under the scaffold. Without Missed Call Text Back, one voicemail — 'need a roofer please' — three hang-ups. With it, all four receive texts within seconds. The first replies at 9:20am: 'Hi — storm blew four ridge tiles off our bungalow in Witney last night. No leak yet but the mortar is crumbling on the rest of them. Do you do dry ridge conversions? The existing ridges are concrete, mortar bedded. Probably about 8 metres of ridge line. Can you come and have a look this week?' At the lunch break you read the reply. Friday you inspect the Witney bungalow and quote a dry ridge conversion."
+  scenario="It is 2:30pm on a Monday in November after a weekend of sustained wind and heavy rain. Your team has been emergency-tarping since 7am — three properties across east Oxford with missing tiles and active leaks. Between 7am and 2:30pm, eleven missed calls. Without Missed Call Text Back, you check at 4pm: eleven unknowns, two voicemails — 'roof leaking badly' and 'tiles in the garden' — nine permanently lost. With Missed Call Text Back, all eleven received texts. Reply one: 'landlord Cowley — three rental properties, two have lost tiles, one has a ceiling drip. Need all three patched this week.' Reply two: 'homeowner Headington — whole section of ridge gone, about six tiles, exposed felt. Aviva insured.' Reply three: 'builder Botley — two dormer cheeks leaking on a loft conversion, think the lead is wrong. Can you look at the dormer flashing?' Reply four: 'commercial — flat-to-pitch conversion on a shop in Summertown, old felt roof on the flat section has blown off in the wind. Need emergency cover and then a permanent solution.' Reply five: 'homeowner Abingdon — valley leak, been patched before, needs replacing. Not urgent but want to sort it before winter properly.' Six more replies with similar storm-related scope. Tuesday morning you have eleven roofing leads ranked by urgency — active leaks first, planned repairs second. You schedule a full week of post-storm work."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/roofing-contractors/ai-receptionist/"
+  ctaHeadline="Recover Eleven Storm Leads from One November Monday"
+  ctaSubhead={`While you tarped three properties across east Oxford, eleven callers missed you. Eleven texts went out. Eleven replied. A landlord's triple patch, blown ridges, dormer flashing, a shop flat roof, and a valley replacement. Add-on at £${pricing.addOn.price}/month.`}
+/>

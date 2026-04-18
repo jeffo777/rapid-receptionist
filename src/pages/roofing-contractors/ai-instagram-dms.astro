@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Drone and Scaffold Reels',
+    text: "Roofing reels command attention — a drone sweeping over a completed slate roof, a time-lapse of tile courses climbing a scaffold, lead flashing being dressed with a bossing mallet in the morning light. When followers DM about their own ageing roof, the AI captures the re-roof lead instantly."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Design-Conscious Homeowners',
+    text: "Instagram attracts homeowners who care about kerb appeal — the colour of their tiles, the profile of their ridge, and the clean lines of new fascias. A DM from someone who has studied your slate finishes and lead detailing is a pre-qualified lead willing to invest in premium roofing materials."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Damage Photo DMs',
+    text: "Homeowners DM photos of damaged roofs — slipped tiles, blown ridges, and mossy valleys. The AI asks about the leak status, roof access, and tile type, converting anxious photo messages into structured repair leads."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Late Planning Sessions',
+    text: "Homeowners plan improvements after dinner — researching slate versus tile, dry ridge versus mortar, and UPVC versus timber fascias. DMs at 11pm about 'wanting the same natural slate as the house you posted' represent design-conscious buyers ready to invest."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Vague Roof DMs',
+    text: "DMs about roofing start broadly — 'how much for a new roof?' The AI asks about the property type, existing covering, number of slopes, chimney count, and fascia condition — converting interest into a quotable re-roof specification."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Completion Shot',
+    text: "Every drone flyover, ridge line close-up, and lead flashing detail shot generates potential re-roof enquiries from homeowners scrolling through roofing portfolios on their evening commute."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "Convert to a Business or Creator profile in your Instagram settings — a quick, no-cost change linked to your Facebook Business page. Roofing firms producing drone completion shots, scaffold time-lapses, and material close-ups gain professional analytics and audience insights that help every post reach more homeowners actively considering re-roofing their property."
+  },
+  {
+    question: "What roofing DMs come through Instagram?",
+    answer: "Predominantly homeowners and occasionally builders or architects. Homeowners DM about re-roofs after viewing your transformation galleries. Builders DM about extension and dormer roofing availability. Architects DM about heritage and natural slate for conservation projects. Each sender has scrolled through your portfolio and identified your firm as capable of the specific roofing quality they require."
+  },
+  {
+    question: "How quickly does the AI respond to roofing DMs?",
+    answer: "The response reaches the sender within seconds of the DM landing. Instagram's read receipt shows your roofing firm is actively available. Homeowners who have spent thirty minutes scrolling through slate portfolios and finally DM their favourite firm respond best to an instant, knowledgeable reply that references tile types and roof features."
+  },
+  {
+    question: "What do Instagram DMs cost for roofing firms?",
+    answer: `Instagram DMs is £${pricing.addOn.price}/month as a channel add-on. A natural slate re-roof generates £8,000 to £15,000 in revenue. One design-conscious homeowner's premium slate re-roof, secured through a prompt midnight DM reply while two competitors' messages waited until morning, transforms the monthly cost into your most valuable lead source.`
+  },
+  {
+    question: "Can I reply to DMs myself?",
+    answer: "Post one reply into any DM thread and the AI withdraws for good. It recognises your message and stands down. Most roofers let the AI capture the initial scope — property type, existing covering, roof features, material preference, and timeline — then follow up personally to discuss the ladder inspection, material samples, and quotation."
+  },
+  {
+    question: "Is DM data from roofing queries private?",
+    answer: "All Instagram DM content — roof photographs, property descriptions, material preferences, insurance references, and sender contact details — is encrypted and stored on UK and EU servers under UK GDPR. Nothing reaches competing roofers, is shared with material merchants, or is made available to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for Roofing Contractors | Rapid Receptionist"
+  description={`AI Instagram DMs for UK roofing contractors. Converts drone completion shots and slate portfolio reels into re-roof bookings and repair leads. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/roofing-contractors/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="Roofing Contractor"
+  tradeNamePlural="Roofing Contractors"
+  tradeSlug="roofing-contractors"
+  headline="AI Instagram DMs for Roofing Contractor Companies"
+  accentWord="Roofing"
+  subhead="Your latest reel is a forty-five-second drone sequence over a completed natural slate re-roof on a detached Victorian villa in North Oxford — the camera ascending from garden level to reveal the full expanse of Cupa Heavy 3 slate in dark grey, each course aligned to the millimetre, copper nails invisible beneath the overlaps. The chimney stack gleams with fresh code 5 lead — stepped flashing, a back gutter formed to perfection, and an apron tray catching water at the front. New cast-iron-effect black aluminium gutters run along anthracite fascias, and the dry ridge system follows the contour without a visible fixing. Fifteen thousand views. An architect in Jericho DMs: 'Breathtaking slate work. We are designing a two-storey rear extension for a period property in Park Town — the conservation officer insists on natural slate to match the existing Delabole slate on the main house. The extension has a complex roof with two valleys, a change of pitch at the junction, and a flat section connecting to the existing ridge. Can you handle Delabole slate on a conservation-sensitive junction? About 45 square metres of roof. The build starts in 12 weeks.' You are on the scaffold. Without AI DMs, the architect's message waits. With it, the AI asks about the conservation officer's specific slate and fixing requirements, the junction detail drawings, and the lead specification for the valleys. Your lead — Park Town period extension, Delabole slate, conservation, two valleys, pitch change, flat junction, 45 sqm, 12-week start — is captured."
+  scenario="It is 2am on a Saturday. A homeowner in Summertown has been researching roofers for three weeks. His 1960s semi-detached has reached the point where the concrete interlocking tiles — original to the house — are porous, cracked, and leaking in multiple locations. He has measured the roof from Google Earth: approximately 80 square metres. He wants to upgrade to natural slate for the aesthetics and longevity. After comparing six roofers' Instagram portfolios, your drone shots convinced him. He DMs: 'Hi — been looking at your work for weeks. Our 1960s semi needs a complete re-roof. About 80 square metres. Two slopes, one chimney, bay window at the front. Current concrete tiles are done — cracked, porous, leaking. We want to go to natural slate like your North Oxford villa. New fascias and soffits too. Budget is flexible for the right quality. Can you come and have a look? Summertown, OX2. Ideally want it done spring.' Without AI DMs, the message waits until Saturday morning. Two competitors replied overnight. With AI DMs, the response arrives at 2:02am: 'Thank you — that is a significant upgrade and a project we specialise in. Could you confirm the roof pitch and whether the chimney has a back gutter on the ridge side? Also, any preference on slate colour — dark grey like our North Oxford project, blue-grey, or a green-grey?' He confirms steep pitch, chimney on the ridge, and dark grey preference. Saturday you review: 1960s semi, Summertown OX2, 80 sqm, natural slate upgrade from concrete, chimney, bay, new fascias, spring programme, flexible budget."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/roofing-contractors/ai-receptionist/"
+  ctaHeadline="Turn a Fifteen-Thousand-View Drone Reel into a Delabole Slate Conservation Project"
+  ctaSubhead={`A forty-five-second drone flyover of Cupa Heavy 3 earns fifteen thousand views. AI Instagram DMs converts every architect message into a conservation slate tender with valley specifications. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Storm Damage Photos Instantly',
+    text: "Homeowners WhatsApp photos of missing tiles, exposed felt, ceiling water stains, and fallen branches on roofs. The AI responds within seconds, asks about the leak severity and property access, and attaches every image to your emergency lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Emergency Repair Work',
+    text: "After a storm, the first roofer to respond gets the tarpaulin job. WhatsApp speed directly determines whether you cover the exposed roof or a competitor does. The AI response lands before the homeowner's phone returns to the pocket."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Re-Roof Material Queries',
+    text: "Homeowners WhatsApp tile samples, roof close-ups, and material questions — 'is this a Redland 49? Can you match it for a rear extension?' The AI captures the photo and tile identification query while you lay courses on another roof."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Scaffold Hours',
+    text: "Homeowners message roof problems after work — 'noticed water marks on the ceiling tonight' or 'ridge tiles look loose from the garden.' The AI captures every evening roofing message."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Repair Briefs',
+    text: "A WhatsApp saying 'three tiles missing on back slope, 1960s semi, Botley, leaking into bedroom, can you come this week?' becomes a structured emergency lead with damage count, property type, location, leak status, and urgency."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp operates on your business number. Storm damage photos, material specifications, and client communications stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess roof damage from photos?",
+    answer: "The AI does not perform roof condition assessments from photographs — only a qualified roofer with ladder access can determine the full extent of damage. However, the AI responds constructively to every photo — acknowledging the visible damage, asking whether water is entering the property, whether the damage appeared after a specific weather event, and whether the property is insured. Every photograph attaches to your lead for your own professional assessment during the ladder inspection."
+  },
+  {
+    question: "What about multi-message roofing threads?",
+    answer: "Roofing conversations build over multiple messages — a homeowner sends photos of the damaged area, then a wider shot showing the roof slope, then asks about tile matching, then confirms the insurance details. The AI maintains the complete thread and compiles every message into one consolidated roofing lead with damage description, property details, material requirements, and insurance status."
+  },
+  {
+    question: "How much does AI WhatsApp cost for roofing firms?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. A single re-roof typically generates £4,000 to £12,000 in revenue. Securing one planned re-roof through a rapid WhatsApp reply — while you dressed chimney flashing on another roof — delivers returns that make the channel cost negligible for years.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Reply once in any thread and the AI transfers the conversation to you permanently. It detects your message and steps aside. Most roofers let the AI gather the initial details — damage description, tile type, property access, leak severity, and insurance status — then engage directly to discuss the inspection date, material options, and quotation."
+  },
+  {
+    question: "How is WhatsApp data from roofing enquiries protected?",
+    answer: "Every WhatsApp message — roof damage photographs, property locations, tile specifications, insurance claim references, and sender contact details — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively with you. No property details reach competing roofing firms, are disclosed to scaffolding hire companies, or are used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Roofing Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK roofing contractors. Responds to storm damage photos, re-roof enquiries, and tile matching requests while you work on the scaffold. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/roofing-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Roofing Contractor"
+  tradeNamePlural="Roofing Contractors"
+  tradeSlug="roofing-contractors"
+  headline="AI WhatsApp for Roofing Contractor Companies"
+  accentWord="Roofing"
+  subhead="A homeowner WhatsApps at 6:45am on a Thursday morning with three photos. She woke at 5am to the sound of tiles sliding off her roof during overnight gales — two of the photos show a 2-metre strip of exposed breathable membrane on the front slope of her 1980s detached house in Eynsham, eight or nine concrete interlocking tiles missing from the courses above the front door, and the tiles lying smashed on the driveway below. The third photo shows a dark water stain spreading across the spare bedroom ceiling directly beneath the exposed area. Her message: 'Morning — woke up to tiles on the drive. Front slope lost about 8 or 9 tiles. You can see the felt. Water is already coming through the spare room ceiling. We have got guests arriving Saturday. Can someone come today or tomorrow to tarp it and then do a proper repair? 1980s detached, Eynsham. Insured with Aviva — probably need to claim.' You are loading the van at the yard — scaffold boards, tile battens, and twelve packs of Marley Edgemere for today's new-build plot at Didcot. Both hands stacking the van, your labourer securing the load. Without AI WhatsApp, the message sits until you arrive on site at 8:30. She WhatsApps two other firms; one confirms a tarp visit for 10am. With it, the AI responds at 6:46am, confirms your emergency tarp service, asks whether the rear slope is also affected, and captures the lead — 1980s detached, Eynsham, 8-9 interlocking tiles stripped, membrane exposed, active ceiling leak, guests Saturday, Aviva insured. At 7:15am you rearrange your day — your labourer starts the Didcot plot while you drive to Eynsham with a tarp, battens, and spare tiles."
+  scenario="It is 8pm on a Sunday. A retired couple in Charlbury are selling their Cotswold stone cottage. The buyer's surveyor has flagged the roof — noting 'significant moss growth, delaminating stone slates on the rear slope, and a valley in poor condition with evidence of previous patch repairs using cement.' The surveyor recommends 'a specialist roof assessment before exchange.' The husband WhatsApps three roofing firms: 'Evening — selling our stone cottage in Charlbury and the buyer's surveyor has flagged the roof. Says the stone slates are delaminating on the back, the valley needs replacing, and there is moss everywhere. We need a proper specialist to assess the roof and tell us what actually needs doing versus what the surveyor is exaggerating. Can you assess Cotswold stone slate roofs? Need it before exchange in 3 weeks. Happy to pay for a written report.' Without AI WhatsApp, you see the message Monday morning. One firm replied at 8:15pm. With AI WhatsApp, the response arrives at 8:01pm: 'Thank you — we work extensively with Cotswold stone slate roofs. Could you confirm the pitch of the rear slope and whether the valley is a lead-lined or cement type? A specialist report including the stone slate condition, valley integrity, and ventilation compliance will address the surveyor's concerns.' He confirms steep pitch and cement valley. Monday you call: stone cottage, Charlbury, stone slate delamination, cement valley, surveyor condition, pre-sale assessment, 3-week deadline."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/roofing-contractors/ai-receptionist/"
+  ctaHeadline="Respond to the 6:45am Storm Tiles While You Load the Didcot Van"
+  ctaSubhead={`Eight tiles on the driveway, membrane exposed, ceiling leaking, guests arriving Saturday. The AI responds while you stack the scaffold boards. Add-on at £${pricing.addOn.price}/month.`}
+/>

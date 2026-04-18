@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Developer Roofing Tenders',
+    text: "Housing developers email roofing subcontract packages with plot specifications, programme milestones, and tender return dates. The roofer that acknowledges first — referencing the tile type, plot count, and programme — stays on the shortlist."
+  },
+  {
+    icon: '📐',
+    title: 'References Material Specifications',
+    text: "When a developer emails specifying 'Marley Edgemere Smooth Grey at 345mm gauge, dry ridge with GRP roll, dry verge both sides, lead code 4 stepped flashing, Ubbink tile vents, twenty-four plots phased,' the AI acknowledgement references the tile, gauge, ridge system, and plot count."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Scaffold Hours',
+    text: "Roofers spend entire days on the scaffold — hands occupied with tiles, battens, membrane, and lead. A developer's tender arriving at 9am goes unread until 5pm. The sixty-second acknowledgement positions your firm ahead of every competing roofer."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Supply',
+    text: "Your inbox mixes developer tenders, merchant delivery confirmations, scaffold hire invoices, lead supplier data sheets, and NFRC membership correspondence. The AI identifies genuine project tenders and customer enquiries from operational emails."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Developer Loyalty',
+    text: "Developers with phased housing programmes need reliable roofing subcontractors. Consistent instant acknowledgements across multiple estate tenders establish your firm as the roofer they programme into every site."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Roofing tenders include elevation drawings, roof plan details, ventilation calculations, and programme bar charts. The AI notes these attachments in the acknowledgement and your lead summary."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce roofing quotes from tenders?",
+    answer: "No quotation is generated — only a professional receipt acknowledgement referencing the tile specification, roof features, and programme. Your roofing pricing — material costs from the merchant, scaffold hire, labour, lead and sundries, skip hire, and programme scheduling — is calculated by you from the roof survey and drawings."
+  },
+  {
+    question: "Will it respond to merchant and supplier emails?",
+    answer: "You configure during onboarding which senders and categories trigger the acknowledgement. Tile delivery confirmations from the merchant, scaffold erection schedules, lead supplier invoices, batten and felt delivery notes, and NFRC renewal notifications are excluded. Only genuine tenders and project enquiries receive the professional response."
+  },
+  {
+    question: "How does it handle homeowner re-roof enquiries by email?",
+    answer: "Homeowner emails through your contact form — 'our roof is about thirty years old and we think it needs replacing, can you come and have a look?' — receive a professional reply asking about the property type, the existing tile or slate, whether the roof is currently leaking, and their preferred timeframe for an inspection."
+  },
+  {
+    question: "What does email response cost for roofing firms?",
+    answer: `Email response is £${pricing.addOn.price}/month as an add-on. A new-build roofing package for a twenty-plot estate generates £80,000 to £200,000 in subcontract revenue. Acknowledging a developer's tender within sixty seconds — while you laid ridge tiles on the scaffold on another site — frequently determines whether your firm makes the tender shortlist for the next phase.`
+  },
+  {
+    question: "Can all follow-up tender correspondence come from me?",
+    answer: "Once the receipt acknowledgement is sent, every subsequent communication is composed by you. Your measured survey, quotation, method statement, material schedule, programme, scaffolding plan, and contractual correspondence are produced and submitted by you and your estimating team."
+  },
+  {
+    question: "How is roofing tender data secured?",
+    answer: "Roofing tenders contain site layouts, elevation drawings, tile specifications, ventilation calculations, and commercially sensitive pricing. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender information reaches competing roofers or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Roofing Contractors | Rapid Receptionist"
+  description={`AI email response for UK roofing contractors. Acknowledges developer roofing packages, re-roof enquiries, and storm damage claims within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/roofing-contractors/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Roofing Contractor"
+  tradeNamePlural="Roofing Contractors"
+  tradeSlug="roofing-contractors"
+  headline="AI Email Response for Roofing Contractor Companies"
+  accentWord="Roofing"
+  subhead="A housing developer emails a comprehensive roofing subcontract tender for a new seventy-two unit estate on the northern edge of Abingdon — a mix of detached, semi-detached, and terraced houses across five phases. The specification requires Russell Grampian interlocking tiles in Rustic, breathable roofing membrane, 25x50 treated battens at 340mm gauge, dry mechanically-fixed ridge systems, dry verge units with interlocking clips, lead code 4 stepped and apron flashing to all abutments, in-line tile vents to achieve Part F ventilation, and UPVC fascia and soffit installation to each plot. The programme demands first-phase completion of sixteen plots within twelve weeks, with subsequent phases staggered to follow bricklayer progression. The tender pack includes plot layouts, standard elevation details, and a programme bar chart. Tender return in two weeks. You are on a scaffold in Witney re-roofing a three-storey Victorian end-terrace with reclaimed Welsh slate — the most delicate and time-consuming work you do, each slate individually assessed, dressed, holed, and hung on copper nails. Your phone is out of reach inside the property. Without AI Email Response, the seventy-two unit estate tender sits until the evening. Two competing NFRC firms acknowledged within the hour. With it, your acknowledgement arrives within sixty seconds, referencing the seventy-two units, Russell Grampian Rustic, dry ridge and verge, code 4 lead, Part F ventilation, five phases, twelve-week first phase, and the two-week tender return."
+  scenario="It is 7am on a Monday. Your inbox accumulated over the weekend: a property management company requesting a re-roof quote for a block of four flats in Cowley — the existing concrete tiles are over forty years old, the ridge line is visibly sagging, and the communal loft has evidence of water ingress, a builder requesting a dormer roof price for a loft conversion in Headington — 'the dormer is already framed, I need a roofer to felt, batten, and tile it with matching Redland 49s, plus lead cheeks and a GRP front,' a homeowner via your contact form asking about a full re-roof for their thatched cottage — 'the thatch is at end of life and we want to convert to slate, the planning officer has approved natural slate,' and a tile merchant confirming Tuesday's delivery of 36 packs of Marley Edgemere. Without AI Email Response, you scan subjects while making coffee. The four-flat block tender sits until Tuesday evening. Two competitors responded Monday morning. With AI Email Response, the flat block receives an acknowledgement referencing the forty-year tiles and sagging ridge, the dormer is acknowledged with Redland 49 and GRP specifications noted, the thatch-to-slate conversion is handled professionally, and the merchant email is filtered. At the yard you prioritise the flat block — estimated value £18,000 — and the thatch-to-slate conversion."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/roofing-contractors/ai-receptionist/"
+  ctaHeadline="Acknowledge the 72-Unit Estate Tender While You Hang Reclaimed Welsh Slate"
+  ctaSubhead={`A developer's two-week tender return for Russell Grampian across five phases starts when the email lands. Your sixty-second acknowledgement secures the shortlist. Add-on at £${pricing.addOn.price}/month.`}
+/>

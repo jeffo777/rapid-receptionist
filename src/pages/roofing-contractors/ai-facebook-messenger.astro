@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Before-and-After Roof Transformations',
+    text: "Roofing before-and-after content draws strong engagement — a tired, moss-covered roof transformed into pristine slate courses with gleaming lead flashing and new UPVC trim. When a homeowner messages about their own ageing roof, the AI captures the re-roof lead."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Damage Photo Messages',
+    text: "Homeowners message with photos of missing tiles, cracked ridges, and ceiling stains — 'does this need a new roof?' The AI asks about the roof age, tile type, leak severity, and insurance status, converting worried photo messages into structured repair leads."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Street-Level Interest',
+    text: "When your scaffold goes up and the old tiles come off, neighbours watch the transformation. Messages from adjacent homeowners — 'you are next door at number 14, our roof looks the same age, can you look at ours too?' — convert proximity visibility into additional re-roof bookings."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Evening Rainfall',
+    text: "Homeowners discover roof problems during rain — drips appear, damp patches spread, and anxiety rises. Messages at 9pm about 'water coming through the ceiling during tonight's rain' carry genuine emergency urgency."
+  },
+  {
+    icon: '📋',
+    title: 'Qualifies Casual Roof Enquiries',
+    text: "Messenger conversations start vaguely — 'how much is a new roof?' The AI asks about the property type, existing tile or slate, number of slopes, chimney presence, and fascia condition, transforming curiosity into a quotable re-roof brief."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Transformation Post',
+    text: "Every scaffolded strip, tidy tile course, fresh lead flashing close-up, and aerial drone completion shot generates potential re-roof enquiries from homeowners comparing their own worn tiles to your pristine finished work."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my roofing firm?",
+    answer: "A Business page is essential for the Messenger connection — personal profiles do not support the integration. Roofing firms posting transformation content — scaffold time-lapses, slate laying sequences, and completed roof drone shots — generate exceptional engagement from homeowners who compare their own ageing tiles to your pristine finished work."
+  },
+  {
+    question: "What roofing enquiries come through Messenger?",
+    answer: "Primarily homeowners and landlords. Homeowners message about re-roofs, storm damage, ridge repairs, and fascia replacement. Landlords message about tenant leak complaints and multi-property roof programmes. Builders occasionally message about extension and dormer roofing availability. Each sender has reviewed your project gallery and selected your firm based on demonstrated roofing quality."
+  },
+  {
+    question: "How fast does the AI reply to roofing messages?",
+    answer: "Replies land in the sender's inbox within seconds of the message being sent. Facebook's online indicator shows your roofing firm is actively available. After a storm, when homeowners message multiple roofers simultaneously — some at midnight with ceiling drip photos — the firm that replies first with practical advice and a tarp offer captures the emergency work."
+  },
+  {
+    question: "What does Messenger cost for roofing firms?",
+    answer: `Messenger is £${pricing.addOn.price}/month as a channel add-on. A standard domestic re-roof generates £4,000 to £12,000 in revenue. One neighbour's re-roof, captured through a prompt Messenger reply while competing firms' messages sat overnight, covers the channel cost for the foreseeable future.`
+  },
+  {
+    question: "Can I continue Messenger conversations personally?",
+    answer: "Respond in any Messenger thread and the AI yields to you permanently. Most roofers let the AI capture the initial details — property type, roof problem, tile preference, access, and insurance status — then follow up to discuss the inspection date, material options, and quote."
+  },
+  {
+    question: "How is Messenger data from roofing queries protected?",
+    answer: "All Messenger conversations, damage photographs, property locations, insurance claim references, and sender contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. No property details are disclosed to competing roofers, shared with scaffolding companies, or sold to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Roofing Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK roofing contractors. Converts roof transformation content into re-roof bookings and storm damage repair leads. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/roofing-contractors/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Roofing Contractor"
+  tradeNamePlural="Roofing Contractors"
+  tradeSlug="roofing-contractors"
+  headline="AI Facebook Messenger for Roofing Contractor Companies"
+  accentWord="Roofing"
+  subhead="You post a four-photo carousel of a completed re-roof — the first photo shows a tired 1950s semi in Botley with moss-covered concrete tiles, crumbling mortar ridges, and peeling fascia boards. The second shows the scaffold up, the old tiles stripped to expose the original 1F felt and decaying battens. The third shows fresh Tyvek membrane, new treated battens, and the first courses of Cupa R12 Spanish natural slate being laid. The fourth — a drone shot — reveals the completed roof from above: immaculate slate courses, gleaming code 5 lead chimney flashing, new anthracite UPVC fascias, and a dry ridge system with hidden fixings. One hundred and forty-seven likes, fifty-two shares. A homeowner in Headington messages: 'That transformation is stunning. Our semi is similar vintage — 1950s, same type of concrete tiles, same crumbling ridges. We have always wanted natural slate. Can you do ours? About the same size roof. Two chimneys. The back slope faces south so it gets all the weather. We want exactly what you did there — slate, new fascias, dry ridge, the lot. How much would something like that cost?' You are on the scaffold on another re-roof. Without AI Messenger, the message waits. With it, the AI asks about the roof pitch, whether the south-facing back slope has valley features or dormers, and whether the existing felt is breathable or 1F. The homeowner provides details. Monday you call with full specification — 1950s semi, Headington, natural slate upgrade, two chimneys, south-facing rear, 1F felt requiring replacement, dry ridge, anthracite fascias."
+  scenario="It is 10:30pm on a Saturday in November. Storm Eleanor has produced sustained 50mph winds across Oxfordshire since Friday afternoon. A homeowner in Abingdon's message reads: 'Hi — I think we lost tiles tonight. There was a massive crash at about 8pm and when I shone a torch up from the garden I can see at least four or five tiles missing on the front slope above the porch. There is no leak yet but the forecast says rain all night. Can anyone come first thing tomorrow to tarp it? We are worried it will start leaking. Aviva insurance — do we need to claim for this? 1990s detached, OX14.' Without AI Messenger, the message has to compete with dozens of post-storm messages on Monday morning. With AI Messenger, the reply reaches him at 10:31pm: 'Thank you — missing tiles with rain forecast overnight is worth covering urgently. We provide emergency tarp cover for exactly this situation. Could you confirm whether the missing tiles are above a room with a loft void or directly over a living space? This helps us prioritise the morning schedule.' He confirms there is a loft void above. Sunday morning you tarp the Abingdon porch area first."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/roofing-contractors/ai-receptionist/"
+  ctaHeadline="Turn a 147-Like Slate Transformation into a Headington Re-Roof Booking"
+  ctaSubhead={`A four-photo carousel earns one hundred and forty-seven likes. AI Messenger converts every inspired homeowner message into a natural slate re-roof with chimney flashing and fascia specification. Add-on at £${pricing.addOn.price}/month.`}
+/>

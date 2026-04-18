@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Researching Roofers',
+    text: "Homeowners comparing roofing firms spend hours reading reviews, checking portfolios, and evaluating credentials. When they land on your website, chat provides immediate engagement from an NFRC-member firm while they evaluate your completed projects."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies Roof Project Scale',
+    text: "Through conversation, the AI identifies whether the visitor needs emergency tile replacement, a full strip and re-roof, or a new dormer for a loft conversion. You receive a pre-categorised lead structured for your estimating workflow."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Damage Discovery',
+    text: "A homeowner notices damp on the bedroom ceiling after evening rainfall. At 9pm they type: 'We have a wet patch on our ceiling that appeared tonight — our tiles look old and there are some missing on the back slope. 1970s detached. Can you come and have a look?' The chat captures the lead before they sleep on it and forget."
+  },
+  {
+    icon: '📊',
+    title: 'Discusses Roofing Materials and Methods',
+    text: "Visitors ask about options — 'should we use slate or tile?', 'what is a dry ridge system?', 'do you replace fascias as well?' The AI responds from your profile with helpful context while capturing their roof details and property information."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Project Galleries',
+    text: "Roofing websites showcase completed re-roofs — before-and-after transformations, natural slate heritage work, and new-build plots with pristine tile courses. Chat converts impressed visitors browsing your gallery into booked roof inspections."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat is bundled with phone answering at £${pricing.tiers.core.price}/month. Unlimited roofing enquiry conversations — from emergency leaks to planned re-roofs.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my roofing website?",
+    answer: "A single JavaScript snippet is provided at onboarding. Embed it into your website header through WordPress, Wix, or your site builder's code injection area. The branded chat widget appears across every page of your roofing company website within moments. No web developer needed — the installation completes in under five minutes on any platform."
+  },
+  {
+    question: "Can the AI discuss tile types and roofing options?",
+    answer: "Your company profile informs the AI about your preferred materials, specialisms, and service area. When a visitor asks 'we want a natural slate re-roof for our Victorian terrace — can you do Welsh slate?' the AI responds from your profile — confirming your natural slate capability — and captures the property type, roof area, chimney count, and timeline."
+  },
+  {
+    question: "What does chat capture from roofing visitors?",
+    answer: "The AI gathers the property type and construction era, the roof problem or project (leak, re-roof, new dormer, extension), the existing tile or slate type if known, the number of roof slopes and features (chimneys, Velux, dormers), whether fascias and gutters need attention, and contact details for your follow-up inspection."
+  },
+  {
+    question: "Does chat slow my roofing website?",
+    answer: "The widget initialises after your existing pages have fully rendered — project photos, before-and-after galleries, testimonials, and accreditation badges display at their standard speed before the chat interface appears. The script footprint is minimal and introduces no visible delay."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Website chat is bundled with phone answering under the same Core plan at £${pricing.tiers.core.price}/month. For roofing contractors, these channels address the two primary enquiry routes: daytime phone calls from homeowners seeking urgent repairs, and evening website conversations from property owners planning re-roofs and comparing material options.`
+  },
+  {
+    question: "How is visitor data from roofing queries handled?",
+    answer: "Chat conversations containing property addresses, roof details, damage descriptions, insurance claim references, and visitor contact information are encrypted and stored on UK and EU servers under UK GDPR. Lead summaries reach you exclusively. No property data reaches competing roofers or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Roofing Contractors | Rapid Receptionist"
+  description={`AI website chat for UK roofing contractors. Engages homeowners researching re-roofs, storm repairs, and slate or tile options on your website. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/roofing-contractors/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Roofing Contractor"
+  tradeNamePlural="Roofing Contractors"
+  tradeSlug="roofing-contractors"
+  headline="AI Website Chat for Roofing Contractor Companies"
+  accentWord="Roofing"
+  subhead="A homeowner finds your website at 8pm on a Tuesday. She has been getting quotes for a full re-roof on her 1920s bay-fronted semi in Cowley — the existing hand-made clay tiles are over a hundred years old, many are delaminating and absorbing water, and the felt beneath has completely perished. She has had two quotes already — one for concrete interlocking tiles and one for artificial slate — but she wants to keep the character of the house with natural clay plain tiles. She types: 'Good evening — we have a 1920s semi in Cowley and want a full re-roof. The current handmade clay tiles are original and falling apart. We love the look and want to keep it — can you re-roof with new handmade clay plain tiles? Approximately 70 square metres of roof area. Two chimney stacks, one front bay, UPVC fascias already in reasonable condition. Lead flashing will need replacing on both chimneys and the bay. Do you do this type of work? What would it cost roughly?' Without chat, she emails and waits. With AI Website Chat, the AI confirms your handmade clay tile capability, asks about the roof pitch, whether the front bay has its own hip tiles, and whether the chimneys need scaffolding on both sides. She provides details. Wednesday you call with full context — 1920s semi, Cowley, 70 sqm, handmade clay plain tiles, two chimneys, bay window, lead replacement — and book the ladder inspection for Thursday."
+  scenario="It is 11pm on a Sunday in October. A landlord in Kidlington manages eight rental properties and needs three roofs assessed before winter. One property has visible moss growth and cracked ridge tiles. Another has a damp patch in the loft. The third lost verge tiles in last month's wind. He finds your website through a property management forum and types: 'Hi — I manage rental properties in Kidlington and need three roofs looked at before winter. Property 1 has heavy moss and cracked ridges. Property 2 has damp in the loft — think it might be the felt. Property 3 lost verge tiles in the wind last month. Can you do all three surveys and give me a price for each? I need them done within two weeks ideally. All three are within half a mile of each other.' Without chat, he bookmarks you and emails Monday. With AI Website Chat, the AI asks about the tile types on each property, whether the properties are currently tenanted, and whether access requires tenant notification. He provides details. Monday you schedule all three inspections for Thursday morning — grouped for efficiency."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/roofing-contractors/ai-receptionist/"
+  ctaHeadline="Win the Handmade Clay Tile Re-Roof While She Compares Quotes at 8pm"
+  ctaSubhead={`A homeowner who loves her 1920s character wants natural clay plain tiles — not concrete. Your chat confirms the capability and books the inspection. Included at £${pricing.tiers.core.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Tile the Ridge',
+    text: "Roofing demands total physical commitment — battening rafters on a scaffold, loading tiles up the hoist, cutting slates on the grinder, and dressing lead flashing with a bossing mallet. The AI answers every call in your company name while you stay safely on the roof."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Roofing Briefs at Every Scale',
+    text: "When a developer calls about a twenty-plot new-build package, the AI captures the tile specification, programme, and scaffolding coordination. When a homeowner calls about three slipped tiles, the AI captures the tile type, leak status, and access."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Emergency Storm Calls',
+    text: "Post-storm call surges happen instantly. Thirty callers in two hours — missing ridges, stripped valleys, leaking bedrooms, and exposed felt. The AI handles every emergency caller simultaneously while you repair the most urgent job."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Roof Enquiries',
+    text: "Homeowners notice roof problems in the evening — a damp patch on the bedroom ceiling after rainfall, blown ridge tiles visible from the garden, or moss-covered tiles concerning the surveyor's report. The AI captures every after-hours roofing call."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Built for Quoting',
+    text: "Each lead specifies the roof type, material preference, property style, problem description, access requirements, insurance status if applicable, and programme timeline — everything you need to arrange the ladder inspection and produce the estimate."
+  },
+  {
+    icon: '🏷️',
+    title: 'NFRC-Standard Professionalism',
+    text: "A roofing company that answers professionally and asks about tile type, roof pitch, and access signals an established, quality-managed operation — the kind of roofer that homeowners trust with their most valuable weatherproofing asset."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their roofing needs?",
+    answer: "Questions adapt to the project. A homeowner calling about a re-roof is asked about the property type and age, the existing tile or slate type, whether the roof is leaking or the concern is cosmetic, the number of roof slopes, whether chimneys, dormers, or Velux windows are present, and whether fascias and soffits also need replacing. A developer calling about a new-build package is asked about the number of plots, the tile specification, the programme and phasing, the scaffold contractor, the building control route, and the anticipated start date."
+  },
+  {
+    question: "Can the AI handle both emergency repairs and re-roof quotes?",
+    answer: "Storm damage generates immediate emergency calls — water pouring through a ceiling at 11pm needs a tarpaulin cover by morning. A planned re-roof is a carefully considered investment. The AI distinguishes between the two, escalating emergencies with damage description and access details for urgent response, while structured re-roof enquiries capture the full material and property specification for your estimating process."
+  },
+  {
+    question: "What about calls during active roofing?",
+    answer: "Every phase of roofing work makes phone calls impractical — stripping old tiles into the skip with both hands, rolling breathable membrane across exposed rafters before rainfall arrives, nailing battens at precise gauge with a nail gun, and loading and laying tiles course by course up the roof slope. The AI manages every call during active roofing with the same professional standard as during a quiet office morning."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `Your Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Roofing firms receive a mix of homeowner re-roof enquiries, emergency storm calls, landlord repair requests, and developer new-build tenders. The majority of roofing companies operate comfortably within the allowance. Seasonal storm surges that generate extra calls are billed at 20p per minute overage with no lock-in or penalty.`
+  },
+  {
+    question: "Can I answer calls during quoting time?",
+    answer: "When you are on the ground — measuring roofs for estimates, ordering materials from the merchant, coordinating scaffold erection, and managing invoices — handle calls directly. Switch to AI answering the moment the ladder goes up and you step onto the scaffold. Toggle from your phone at any point during the working day."
+  },
+  {
+    question: "How is roofing project data secured?",
+    answer: "Roofing enquiries contain property addresses, roof survey details, material specifications, insurance claim references for storm damage, and commercially sensitive pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No job details are shared with competing roofers, disclosed to material suppliers, or sold to lead generation platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Roofing Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK roofing contractors. Captures re-roof quotes, storm damage emergencies, and new-build packages while you tile. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/roofing-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Roofing Contractor"
+  tradeNamePlural="Roofing Contractors"
+  tradeSlug="roofing-contractors"
+  headline="AI Phone Answering for Roofing Contractor Companies"
+  accentWord="Roofing"
+  subhead="A housing developer calls at 9:15am. He is building a thirty-two unit estate on the southern edge of Didcot — plots split across four phases, each house requiring Marley Modern interlocking concrete tiles in Antique Brown, breathable membrane, 25x50 treated battens at 345mm gauge, dry ridge systems with GRP ridge rolls, dry verge units, lead code 4 stepped and apron flashing to every abutment, and Ubbink in-line tile vents for Part F compliance. Phase one is eight plots with brickwork topping out in three weeks. He needs the first gang on scaffold for plot one within four weeks. You are on a re-roof in Botley — your labourer has just finished stripping the last of the old concrete tiles and perished 1F felt off the back slope of a 1960s semi, and you are rolling Tyvek breathable membrane across the exposed rafters, stapling as you go, because dark clouds are building over the Berkshire Downs and rain is thirty minutes away. Both hands on the membrane roll, one eye on the sky. Your phone is in the van. Without AI Phone Answering, the developer hears voicemail and calls the next CompetentRoofer. With it, the AI captures the complete brief — thirty-two plots, Didcot, Marley Modern Antique Brown, 345mm gauge, dry ridge GRP roll, dry verge, code 4 lead, Ubbink vents, four phases, eight plots first phase, four-week start — and your lead waits in the van cab."
+  scenario="It is 2pm on a Friday afternoon in November. Storm Geraint swept through Oxfordshire overnight — wind gusting to 65mph, rain horizontal, temperatures at 4°C. Your phone has not stopped since 7am but you have been on an emergency job since dawn — tarping a stripped valley on a bungalow in Witney where the storm ripped the lead valley, lifted six courses of tiles either side, and exposed the felt to driving rain. The bedroom below is sodden. Between 7am and 2pm, seventeen calls came in. Without AI Phone Answering, you managed four voicemails between tarp runs. Thirteen callers heard voicemail and moved on. With AI Phone Answering, all seventeen were answered. The AI identified eight emergency storm damage calls — missing ridges in Eynsham, a fallen branch through tiles in Woodstock, stripped verge tiles in Charlbury, exposed felt in Abingdon, and four leaking bedroom ceilings across east Oxford — and flagged them by severity. The remaining nine were standard enquiries: three re-roof quotes, two fascia and soffit quotes, two gutter replacements, a landlord needing a roof survey, and a builder wanting a dormer roof for a loft conversion. By Saturday morning you have a prioritised list — emergencies first, then re-roof quotes for Monday inspections."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/roofing-contractors/ai-receptionist/"
+  ctaHeadline="Capture Seventeen Storm Calls While You Tarp the Witney Valley"
+  ctaSubhead={`Storm Geraint generated seventeen calls in seven hours. The AI answered every one, triaged eight emergencies, and queued nine standard enquiries. From £${pricing.tiers.core.price}/month.`}
+/>

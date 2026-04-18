@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Contractor and Builder Texts',
+    text: "Builders text roofers constantly — 'extension roof ready for tiling next Wednesday, can you start?' A rapid confirmation secures the programme slot. Silence means the builder texts the next firm on his list."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Roof Briefs from Short Texts',
+    text: "A text like 're-roof, 1930s semi, concrete tiles, two slopes, chimney, Headington, need quote' gives the AI enough scope. It asks about the felt condition and fascia state. Your lead arrives ready for the ladder inspection."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Neighbour Referral Texts',
+    text: "When you re-roof a house on a street, neighbours notice the transformation. The referred neighbour texts about their own worn roof. The AI captures the referral while the visual impact of your scaffold and new tiles is still fresh next door."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Scaffold Hours',
+    text: "Homeowners text about roof concerns after work. Landlords confirm repair requests in the evening. Builders finalise next week's roofing schedule at 9pm. The AI captures every after-hours text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Roof Jobs',
+    text: "Messages arrive in fragments — 'need a roofer' then 'back slope leaking' then '1970s tiles' then 'three ridges loose' then 'OX2.' The AI assembles one cohesive roof repair lead from every piece."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS operates on your business number. Roof specifications, material discussions, and client scheduling stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound roofing text?",
+    answer: "Every incoming text receives a branded reply in your company name within seconds. A builder's precise text — 'extension ready for roofing Wednesday, 40sqm, Marley Edgemere Smooth Grey, dry verge both sides, lead apron to existing wall, scaffold up, Summertown' — is acknowledged with every specification retained. A homeowner's worried text — 'tiles look bad on our roof, should we get it looked at?' — prompts questions about the tile type, whether any tiles are missing or cracked, and whether water is entering the property."
+  },
+  {
+    question: "Will the homeowner know it is the AI?",
+    answer: "The reply reads like a roofer checking messages on the scaffold during a material delivery wait — specification-aware, practical, and direct. It uses your company name and references tile types and roof features. Homeowners texting roofers about their most important weatherproofing asset expect a knowledgeable reply that shows you understand the difference between a repointed ridge and a dry ridge system."
+  },
+  {
+    question: "How does it handle material change texts from builders?",
+    answer: "Current builder clients text about material changes, start date shifts, and additional scope. The AI captures these and flags them separately from new enquiries. Your dashboard differentiates a new homeowner's re-roof request from an existing builder client switching from Redland 49 to Marley Modern on the same extension project."
+  },
+  {
+    question: "What does AI SMS cost for roofing firms?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A standard domestic re-roof generates £4,000 to £12,000 in revenue. Capturing one re-roof through a rapid text — while you nailed battens on another property — produces revenue that exceeds the annual channel cost from one project.`
+  },
+  {
+    question: "Can I text back myself when I want?",
+    answer: "Send a reply in any thread and the AI yields control to you on the spot. During estimating and material ordering — manage texts directly. During active roofing shifts — stripping, felting, battening, and tiling — let the AI handle all commercial messages while your hands stay on the roof."
+  },
+  {
+    question: "How is text data from roofing enquiries stored?",
+    answer: "Text messages containing property addresses, roof specifications, damage descriptions, insurance references, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing roofers or repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Roofing Contractors | Rapid Receptionist"
+  description={`AI SMS for UK roofing contractors. Responds to re-roof quote requests, builder scheduling texts, and storm damage messages while you tile. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/roofing-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Roofing Contractor"
+  tradeNamePlural="Roofing Contractors"
+  tradeSlug="roofing-contractors"
+  headline="AI SMS for Roofing Contractor Companies"
+  accentWord="Roofing"
+  subhead="You are on the scaffold at 7:15am, unwrapping plastic from the tile packs and loading the hoist for the first courses of the day — a full re-roof on a three-bedroom Victorian terrace in Marston. The old natural slates were stripped yesterday, new Tyvek membrane and treated battens are in place, and today the Cupa R12 Spanish natural slates go on. At 7:30am a builder texts: 'Morning mate — extension roof in Headington ready for tiling Thursday. Rear flat-to-pitch conversion. About 28 square metres. Owner wants Redland Fenland pantile in Breckland Brown. One abutment to existing tile, needs lead stepped flashing code 4. Scaffold is up. Can you do this Thursday and Friday? My plasterer starts inside Monday.' Your hands are lifting tile packs onto the hoist platform. Without AI SMS, the text waits until the tea break at 9:30. He texts two other roofers; one confirms by 8am. With it, the AI responds at 7:31am, confirms your Redland Fenland capability, and asks whether the abutment requires a lead soaker as well as stepped flashing. The builder confirms soakers needed. At 9:30 you review: Headington extension, 28 sqm, Redland Fenland Breckland Brown, lead code 4 stepped and soakers, scaffold up, Thursday/Friday, plasterer Monday."
+  scenario="It is 8:45pm on a Wednesday in December. A landlord in Kidlington owns a 1970s ex-council semi that his tenant has complained about — dampness in the upstairs front bedroom, mould on the wall beneath the window, and a drip from the ceiling during heavy rain. The landlord suspects the roof but has not inspected it. He texts three roofers: 'Hi — tenant complaining about damp and dripping in upstairs front bedroom. 1970s semi, concrete tiles, Kidlington. Think it is the roof. Can you have a look and tell me what needs doing? Happy for you to just go round — tenant knows to expect someone. Need it sorted before Christmas if possible. What would a roof survey cost?' Without AI SMS, you see the text Thursday morning. One competitor replied at 9pm. With AI SMS, the response arrives at 8:46pm: 'Thank you — the dripping combined with front bedroom damp suggests either failed flashing at the abutment, cracked or slipped tiles on the front slope, or perished felt allowing wind-driven rain through. Could you confirm whether the property has a chimney stack on the front elevation? Chimney flashing is the most common point of failure on 1970s semis.' He confirms there is a chimney. Thursday you call: 1970s semi, Kidlington, tenant damp/drip, concrete tiles, chimney, pre-Christmas repair, survey requested."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/roofing-contractors/ai-receptionist/"
+  ctaHeadline="Catch the Headington Pantile Text While You Load the Marston Hoist"
+  ctaSubhead={`A builder confirms a Redland Fenland extension at 7:30am while you load Spanish slate onto the hoist. The AI replies from the scaffold. Add-on at £${pricing.addOn.price}/month.`}
+/>

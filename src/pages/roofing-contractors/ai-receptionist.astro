@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A housing developer calls about a new-build roofing package — fourteen detached houses on a phased site in Bicester, each requiring Marley Edgemere interlocking concrete tiles in Smooth Grey, dry ridge systems, dry verge units, lead flashing to the abutments, breathable membrane, 25x50 treated battens at 343mm gauge, and Ubbink tile vents for ventilation compliance. The programme requires two plots stripped, felted, battened, and tiled per week for seven weeks, coordinating with the scaffolding contractor's advance around the site. He needs a fixed price per plot and a confirmed start date. You are on a re-roof in Headington — stripping Victorian slates off a terraced house, your labourer loading the skip from the scaffold, the old 1F felt tearing away with the battens, and you assessing the rafter condition before the new breathable membrane goes on. Both hands occupied on the scaffold lift, harness clipped to the ridge anchor. Your phone is in the van. The developer calls three NFRC roofers. One answers and books a Monday site meeting.",
+    with: "Your AI receptionist answers on the second ring. It captures the complete brief — fourteen plots, Bicester, Marley Edgemere Smooth Grey, dry ridge, dry verge, lead flashing, breathable membrane, 25x50 battens at 343mm gauge, tile vents, two plots per week, seven-week programme, scaffolding coordination — and confirms you will call back. At the tea break you review and phone the developer."
+  },
+  {
+    without: "A homeowner emails on Thursday about a re-roof for their 1930s semi in Summertown — the existing concrete tiles are cracked and porous, several ridge tiles have blown off in the wind, and the felt beneath is perished. He wants a full strip and re-roof with new breathable membrane, treated battens, Redland 49 smooth tiles, dry ridge system, new lead soakers and stepped flashing to the party wall, and replacement UPVC fascias and soffits. He needs a price before his insurance renewal in three weeks. The email sits until Sunday.",
+    with: "Your AI acknowledges the homeowner's email within sixty seconds, referencing the 1930s semi, cracked concrete tiles, blown ridges, perished felt, Redland 49, dry ridge, party wall flashing, and fascia replacement. Sunday evening you schedule a Monday ladder inspection."
+  },
+  {
+    without: "A landlord WhatsApps on Saturday with photos of water pouring through a bedroom ceiling — missing ridge tiles visible from the street, and the tenant reporting a bucket under the drip since last night's storm. He messages three roofers. You are at home. By Monday, two have replied with emergency availability.",
+    with: "The AI responds within seconds, asks how many ridge tiles are missing, whether the roof is accessible from the front or rear, and the property postcode. Monday at 8am you have a structured emergency roof repair lead with photos and access details."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Pitched Roofing",
+    items: ["Full strip and re-roof with slate or tile", "New-build roofing packages for housing developments", "Natural slate roofing — Welsh, Spanish, and reclaimed", "Concrete interlocking tiles — Marley, Redland, Russell", "Plain tile and clay tile roofing for period properties", "Dry ridge, dry verge, and mechanical fixing systems"]
+  },
+  {
+    category: "Repair & Maintenance",
+    items: ["Storm damage emergency repair and tarpaulin cover", "Ridge and hip tile replacement — mortar or dry system", "Valley repair and replacement — lead, GRP, fibreglass", "Lead flashing — stepped, apron, soaker, and chimney", "Fascia, soffit, and bargeboard replacement", "Gutter and downpipe renewal"]
+  },
+  {
+    category: "Specialist Roofing",
+    items: ["Loft conversion dormer roofing", "Extension roof tying-in to existing", "Heritage and conservation roofing for listed buildings", "Roof ventilation — tile vents, ridge vents, soffit vents", "Scaffolding coordination and access management", "Building control compliance and NFRC certification"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Developers & Main Contractors",
+    description: "Housing developers subcontracting roofing packages on phased new-build sites. Programme-critical work — a delay to the roofing pushes the internal trades backwards by weeks. The roofing firm that answers and locks in a plot-by-plot programme keeps the entire development on schedule."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners needing re-roofs, repairs, and storm damage remediation. Often dealing with insurance claims for wind damage, seeking quotes for ageing roofs, or planning loft conversions that require dormer construction. They appreciate clear communication about materials, timelines, and scaffolding requirements."
+  },
+  {
+    icon: "🏘️",
+    title: "Landlords & Property Managers",
+    description: "Landlords managing rental portfolios with ageing roofs — leaked ceilings, missing tiles, blocked gutters, and tenant complaints. They need rapid response for emergency repairs and planned re-roofing during void periods."
+  },
+  {
+    icon: "🏛️",
+    title: "Heritage & Conservation Projects",
+    description: "Architects, conservation officers, and homeowners with listed buildings requiring specialist roofing — natural slate to match existing, handmade clay tiles, traditional lime mortar bedding, and lead detailing to heritage standards."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand roofing terminology?",
+    answer: "Every aspect of pitched roofing vocabulary is built in — natural slate (Welsh, Spanish, Brazilian), artificial slate, concrete interlocking tile (Marley Edgemere, Redland 49, Russell Grampian), plain tile, clay tile (handmade, machine-made), ridge tile (dry ridge, mortar bedded), hip tile, valley (lead-lined, GRP, fibreglass), flashing (lead code 4, code 5, stepped, apron, soaker, chimney back gutter), breathable membrane (Tyvek, Roofshield), 1F felt, batten (25x50, 25x38), gauge, soffit, fascia, bargeboard, verge (dry verge, mortar), eaves, sarking board, counter-batten, tile vent, ridge vent, and soffit vent. When a developer describes 'fourteen plots — Marley Edgemere at 343mm gauge, dry ridge, dry verge, breathable membrane, lead code 4 stepped flashing,' the AI captures every material and specification."
+  },
+  {
+    question: "Can the AI distinguish a missing tile from a full re-roof?",
+    answer: "A homeowner calling about 'a couple of tiles slipped after the wind last night' generates a small repair lead — the AI asks about the tile type, roof access, and whether water is entering the property. A developer describing 'roofing packages for twenty-four plots on a phased site — concrete interlocking, dry ridge and verge, ventilation to Part F, three plots per week for eight weeks' generates a commercial contract lead with materials, programme, and coordination requirements. The two produce entirely different lead structures."
+  },
+  {
+    question: "What about emergency storm damage calls?",
+    answer: "High winds, heavy rain, and fallen trees generate urgent roofing calls — missing ridges, stripped valleys, displaced tiles exposing the felt, and water penetration into living spaces. The AI identifies the emergency, captures the damage description, property type, insurance status, and access details, and escalates for same-day or next-morning response."
+  },
+  {
+    question: "How much does this cost for a roofing company?",
+    answer: `Roofing contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a two-person domestic re-roofing team or an NFRC-member firm running new-build site programmes with multiple gangs, the talk-time allowance accommodates your enquiry volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a small roofing firm?",
+    answer: "Small roofing teams — a roofer and a labourer on a scaffold — benefit enormously. When you are straddling a ridge line at 8 metres, nailing dry ridge units in January wind, your hands numb on the fixing gun and your balance dependent on the ridge board beneath you, answering a phone is physically impossible. The AI captures every re-roof enquiry, storm damage call, and developer lead while your boots stay on the battens."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Coverage adapts to roofing schedules from your dashboard. During active roofing — stripping, felting, battening, and tiling on the scaffold — route all calls to the AI. During estimating, material ordering, and office administration — take calls yourself. Override instantly from your phone whenever the weather changes your plans."
+  },
+  {
+    question: "How is roofing project data protected?",
+    answer: "Roofing enquiries contain property addresses, roof survey details, material specifications, insurance claim references, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project information is disclosed to competing roofing firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Roofing Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK roofing contractors — re-roofs, new-build packages, storm damage, slate and tile, lead flashing, and dormer roofing. Never miss a developer call from the ridge. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/roofing-contractors/ai-receptionist/"
+  tradeName="Roofing Contractor"
+  tradeNamePlural="Roofing Contractors"
+  tradeSlug="roofing-contractors"
+  headline="The AI Receptionist Built for Roofing Contractors"
+  accentWord="Roofing"
+  subhead={`You cannot answer the phone when you are straddling a ridge line in January wind, fixing dry ridge units with a cordless nail gun, your labourer feeding tiles up the scaffold hoist below. Your AI receptionist captures every call, every message, and every tender — from developers commissioning fourteen-plot new-build packages to homeowners with storm-damaged ridges leaking into the bedroom. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Fourteen-Plot New-Build Package Calls While You Lay the Final Ridge"
+  ctaSubhead={`A developer with scaffolding booked and bricklayers finishing needs his roofing programme confirmed this week. If voicemail answers, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>
