@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Developer Programme Texts',
+    text: "Developers text rendering gangs when blockwork is progressing — 'plots 12-15 ready, need render gang next Monday.' The first renderer to confirm holds the programme slot. A delayed text costs the booking."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Render Briefs from Short Messages',
+    text: "A text like 'silicone render, detached house, about 150 sqm, Witney, Silver Grey' gives the AI the essentials. It asks about the substrate, existing finish, and whether scaffold is needed. Your lead arrives ready for a site survey."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Word-of-Mouth Referral Texts',
+    text: "When a satisfied customer recommends your rendering to a neighbour, that neighbour texts about their own house. The AI captures the referral while the endorsement is freshest."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Rendering Hours',
+    text: "Developers confirm next-week render phases in the evening. Builders text extension render requests after site hours. Homeowners text render colour questions after dark. The AI captures every after-hours text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Render Details',
+    text: "Messages arrive in fragments — 're-render needed' then 'front and side only' then 'about 90 sqm' then 'K Rend' then 'any grey.' The AI constructs one complete render lead from every piece."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Developer programmes, colour codes, and render manufacturer orders remain separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound rendering text?",
+    answer: "Each text generates a branded reply in your company name within seconds. A developer's programme text — 'Weber monocouche, plots 8 to 11, Ivory, bellcasts and stops, blockwork complete, gang needed week after next' — is acknowledged with the system, colour, plots, beads, and programme preserved. A homeowner's enquiry — 'our render is cracking, can you come and look?' — prompts questions about the wall area, the render type, and whether sections sound hollow."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "The response reads like a rendering specialist reviewing messages between scaffold lifts — system-specific, colour-literate, and programme-aware. It references monocouche, silicone, lime, colour codes, and bead types. Developers texting programme confirmations expect a knowledgeable reply that confirms system capability and gang availability."
+  },
+  {
+    question: "How does it handle existing developer texts?",
+    answer: "Regular developer clients text programme updates — 'plots 12-15 delayed one week, blockwork not ready' or 'add the garage gable to the render package.' The AI captures these messages and separates them from new enquiries on your dashboard, distinguishing existing programme amendments from fresh leads."
+  },
+  {
+    question: "What does AI SMS cost for rendering specialists?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A domestic whole-house render generates £4,000 to £12,000. Confirming two developer programme slots in a single week — while you finished a topcoat across the estate — produces contract revenue that far exceeds the annual channel cost.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Post one reply and the AI withdraws from that thread. During measurement days and colour consultation visits — manage texts directly. During active scaffold rendering — when the hawk is loaded and the topcoat demands continuous floating — let the AI manage the commercial pipeline until you step off the boards."
+  },
+  {
+    question: "How is text data from rendering enquiries stored?",
+    answer: "Text messages containing property addresses, render system preferences, colour codes, developer programme schedules, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing renderers or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Rendering Specialists | Rapid Receptionist"
+  description={`AI SMS for UK rendering specialists. Responds to developer programme texts, colour match requests, and re-render enquiries while you apply topcoat. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/rendering-specialists/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Rendering Specialist"
+  tradeNamePlural="Rendering Specialists"
+  tradeSlug="rendering-specialists"
+  headline="AI SMS for Rendering Specialist Companies"
+  accentWord="Rendering"
+  subhead="You are at 8:15am on a Monday, dubbing out a blockwork wall on a new-build in Bicester with a sand-and-cement scratch coat — the mortar thrown onto the blocks, the float levelling the high spots, each pass building the wall to a flat plane before the topcoat can follow. At 8:40am a developer texts: 'Morning — got a new site starting in Banbury. Eighteen semi-detached houses, three-bed type. Renders are Weber Pral M, colour Buttermilk 013. Bellcast at DPC, stops at all reveals, corners throughout. Blockwork starting next week — first render-ready plots in about five weeks. Need a price per plot and confirmation you can sustain three plots per week. Can you measure the show home elevations on Thursday?' Your hands are caked in mortar, the float moving continuously. Without AI SMS, the text waits until 10am. He texts two other rendering firms. With it, the AI responds at 8:41am, confirms your Weber accreditation, and asks whether the houses have integral garages or separate rendered garages. The developer confirms integral. At 10am you review: Banbury 18 semis, Weber Pral M Buttermilk 013, bellcast/stop/corner beads, blockwork week, first render 5 weeks, three plots per week, measure show home Thursday."
+  scenario="It is 6:45pm on a Wednesday. A homeowner in Woodstock texts about their detached 1970s house — the existing Tyrolean render has been deteriorating for years, with large sections crumbling off the south-facing gable and hairline cracks across the front elevation. She texts: 'Hi — our 1970s detached house in Woodstock has old Tyrolean render. The south gable is the worst — big patches falling off. Front elevation has lots of fine cracks. We want to strip everything and start again with a modern render — something self-cleaning that does not need painting. About 200 square metres total including all four elevations and the chimney. What system would you recommend and roughly how much? We could start anytime.' Without AI SMS, the text waits until Thursday morning. With AI SMS, the reply arrives at 6:46pm: 'Thank you — stripping Tyrolean render and replacing with a self-cleaning silicone system is a significant upgrade. Could you confirm the wall construction — blockwork or cavity brick — and whether any sections have visible damp or mould growth?' She confirms cavity brick, damp on the south gable. Thursday you call: Woodstock 1970s detached, 200 sqm, Tyrolean strip all elevations, south gable damp, cavity brick, self-cleaning silicone, chimney included."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/rendering-specialists/ai-receptionist/"
+  ctaHeadline="Confirm the 18-House Weber Programme While You Dub Out in Bicester"
+  ctaSubhead={`A developer needs Weber Pral M Buttermilk on eighteen semis at three plots per week. The AI confirmed your accreditation while the float levelled the scratch coat. Add-on at £${pricing.addOn.price}/month.`}
+/>

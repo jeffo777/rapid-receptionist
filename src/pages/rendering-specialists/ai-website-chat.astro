@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Comparing Render Systems',
+    text: "Homeowners spend hours comparing monocouche versus silicone thin-coat, studying colour palettes, and reading about self-cleaning versus standard finishes. Chat captures them during their deepest research moment."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies Render Project Scope',
+    text: "Through conversation, the AI identifies whether the visitor needs a full house re-render, a gable repair, an extension colour match, or an EWI energy upgrade. You receive a categorised lead with the render system, area, and substrate."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Colour Research',
+    text: "Homeowners browse K Rend and Weber colour charts at 10pm — Pewter Grey, Silver Grey, Portland, Sandstone — picturing their house transformed. Chat captures their colour intent and project scope while they imagine the finished elevation."
+  },
+  {
+    icon: '📊',
+    title: 'Explains Render System Differences',
+    text: "Visitors ask comparison questions — 'what is monocouche?', 'how long does silicone render last?', 'is lime render better for old houses?' The AI responds from your profile to guide their decision while gathering their property details."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Before/After Galleries',
+    text: "Rendering before-and-after photos are transformational — cracked pebbledash replaced with smooth silicone in a contemporary grey, or weathered cement finished in crisp white monocouche. Chat converts impressed visitors into booked surveys."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat comes with phone answering at £${pricing.tiers.core.price}/month. Unlimited conversations about render systems, colour options, and EWI specifications.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my rendering website?",
+    answer: "A single JavaScript snippet is provided during onboarding. Drop it into your website header through WordPress, Squarespace, or direct HTML. The branded chat widget appears across every page. Rendering firms with before-and-after galleries find that visitors engage with chat directly from transformation photos — a cracked 1960s pebbledash replaced with smooth K Rend silicone prompts immediate project enquiries."
+  },
+  {
+    question: "Can the AI advise on render colours?",
+    answer: "Your company profile includes your supported render systems and colour ranges. When a visitor asks 'what colours does K Rend come in?' or 'do you recommend Silver Grey or Pewter?' the AI responds from your profile context and captures their property type, existing finish, and preferred tones for your colour consultation."
+  },
+  {
+    question: "What does chat capture from rendering visitors?",
+    answer: "The AI gathers the render intent (new render, re-render, repair, or EWI), the system preference if known (monocouche, silicone, lime, or sand-and-cement), the approximate wall area, the existing wall finish, the wall construction type, colour preference, and visitor contact information."
+  },
+  {
+    question: "Does chat slow my rendering website?",
+    answer: "Page content loads in its entirety before the chat interface activates — before-and-after photography, colour palette displays, project galleries, and manufacturer accreditation logos render at full speed. No detectable delay on any connection or device."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Chat is bundled with phone answering in the Core plan at £${pricing.tiers.core.price}/month. For rendering specialists, both channels serve complementary enquiry sources: daytime calls from developers confirming monocouche programmes and builders needing extension colour matches, and evening website conversations from homeowners studying colour charts and comparing silicone to monocouche finishes.`
+  },
+  {
+    question: "How is visitor data from rendering queries handled?",
+    answer: "Chat conversations containing property addresses, render system preferences, colour choices, wall area estimates, and visitor contact information are encrypted and stored on UK and EU servers under UK GDPR. Lead summaries go exclusively to you. No project details reach competing renderers or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Rendering Specialists | Rapid Receptionist"
+  description={`AI website chat for UK rendering specialists. Engages homeowners comparing silicone and monocouche colours and developers planning estate renders. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/rendering-specialists/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Rendering Specialist"
+  tradeNamePlural="Rendering Specialists"
+  tradeSlug="rendering-specialists"
+  headline="AI Website Chat for Rendering Specialist Companies"
+  accentWord="Rendering"
+  subhead="A homeowner finds your website at 8:45pm on a Tuesday. She has spent the past month researching rendering options for her 1930s semi-detached house in Summertown — the existing sand-and-cement render is cracked, stained, and patches are delaminating from the brickwork. She has narrowed her choice to K Rend silicone thin-coat in either Silver Grey or Pewter Grey but cannot decide between the two finishes. She types: 'Good evening — we want to re-render our 1930s semi in Summertown. The existing sand-and-cement render is cracking and falling off in places. We have been looking at K Rend silicone — either Silver Grey or Pewter Grey. The house has bay windows at the front and a side return. Approximately 120 square metres including the bays and chimney stacks. Do you apply K Rend? Can you help us decide between the two colours? How long does silicone render last versus traditional? We would like a site visit to discuss options.' Without chat, she bookmarks. With AI Website Chat, the AI confirms your K Rend accreditation, explains that silicone thin-coat typically outlasts sand-and-cement by decades, and asks whether the bays are angular or curved. She confirms angular bays. Wednesday you call: 1930s semi, Summertown, 120 sqm, K Rend silicone Silver Grey/Pewter Grey, cracked S&C strip, angular bays, chimney stacks, site visit."
+  scenario="It is 11:30pm on a Thursday. A self-builder near Stow-on-the-Wold is designing a contemporary Cotswold house — the planning condition requires a render finish sympathetic to the local stone vernacular. He types: 'Hi — self-build in the Cotswolds. Planning condition says render must be sympathetic to Cotswold stone. Thinking a warm limestone-coloured monocouche or a lime render. House is approximately 240 square metres of external wall. Blockwork construction. Which system would you recommend for a Cotswold stone look? Do you do both monocouche and lime? Need the render to be maintenance-free if possible. Build schedule has the blockwork ready in 12 weeks.' Without chat, he researches further. With AI Website Chat, the AI responds that monocouche in a warm stone tone delivers low maintenance while lime render provides authentic breathability, asks whether the planning officer has specified a particular finish type, and captures: self-build Stow, Cotswolds, 240 sqm, blockwork, planning condition, stone-sympathetic, monocouche or lime, 12-week blockwork."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/rendering-specialists/ai-receptionist/"
+  ctaHeadline="Win the Summertown K Rend Quote While She Compares Silver Grey at 8:45pm"
+  ctaSubhead={`A homeowner needs 120 square metres of K Rend silicone on her 1930s semi. Chat confirms your accreditation and captures the colour shortlist. Included at £${pricing.tiers.core.price}/month.`}
+/>

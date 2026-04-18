@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A property developer calls about rendering a new-build housing development on the edge of Didcot — fourteen detached houses across three phases, all requiring a Weber monocouche one-coat through-colour render in Ivory 062 on blockwork walls, with bellcast beads at DPC level, stop beads at window and door reveals, corner beads on all external angles, and expansion joints at the architect's specified centres. The developer needs a site visit, a measured price per house, and a programme that integrates with the bricklayer's blockwork schedule. You are on a scaffold in Summertown — applying K Rend silicone thin-coat render to the front elevation of a Victorian end-terrace, the hawk loaded with render, the trowel spreading the topcoat in long sweeping strokes while the afternoon sun accelerates the drying time. Both hands occupied, the scaffold board underfoot, the render setting before you finish the bay. Your phone is in your coat pocket behind the mixer. The developer calls three rendering firms. One answers and books a Thursday walkover.",
+    with: "Your AI receptionist answers on the second ring. It captures the complete brief — fourteen detached houses, Didcot, Weber monocouche Ivory 062, bellcast beads, stop beads, corner beads, expansion joints, three phases, programme to follow blockwork, measured price per plot — and confirms you will call back. At the tea break you review and schedule a Thursday walkover."
+  },
+  {
+    without: "An architect emails on Wednesday with a specification for an external wall insulation system on a 1960s council estate retrofit — EPS insulation boards adhesive-fixed and mechanically fastened to the existing cavity walls, fibreglass mesh embedded in a basecoat render, and a silicone topcoat finish in a RAL colour to the council's approved palette. Approximately 2,400 square metres across twelve properties. The email sits until Sunday.",
+    with: "Your AI acknowledges within sixty seconds, referencing the EWI system, EPS boards, fibreglass mesh, silicone topcoat, and the 2,400 sqm scope across twelve properties. Sunday evening you schedule the Monday measurement."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday with photos of cracked render on their house — long diagonal cracks running from the window corners, hollow areas where the render has delaminated from the blockwork, and damp patches visible through the paint. They message three rendering firms. You are at home. By Monday, two have replied.",
+    with: "The AI responds within seconds, asks whether the existing render is traditional sand-and-cement or a modern through-colour system, the wall construction (blockwork, brick, or stone), and the approximate area affected. Monday at 8am you have a structured repair lead."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Through-Colour & Thin-Coat Systems",
+    items: ["Monocouche one-coat render — Weber, K Rend, Parex, Baumit", "Silicone thin-coat render — self-cleaning, hydrophobic, breathable", "Acrylic render — flexible, impact-resistant finishes", "Mineral render — cement-based, natural mineral finishes", "Manufacturer-accredited application — Weber, K Rend certified", "Scratch-and-topcoat two-coat coloured systems"]
+  },
+  {
+    category: "Traditional & Specialist Rendering",
+    items: ["Sand and cement render — scratch, float, and set three-coat systems", "Lime render — NHL 3.5 and NHL 5 for period and listed buildings", "Tyrolean and pebbledash finishes", "Roughcast and textured decorative render", "Render repair — crack stitching, patch repair, and re-rendering", "Heritage and conservation area sympathetic finishes"]
+  },
+  {
+    category: "External Wall Insulation (EWI)",
+    items: ["EPS (expanded polystyrene) insulation board systems", "Mineral wool external insulation for fire-rated build-ups", "Phenolic insulation board systems for enhanced U-values", "Fibreglass mesh and basecoat key coat application", "Silicone, acrylic, and mineral topcoat finishes over EWI", "ECO4 and local authority retrofit programme installations"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Developers & Builders",
+    description: "Housebuilders and developers requiring monocouche or thin-coat render on new-build estates — programme-critical facade finishing that follows the bricklayer's blockwork and precedes landscaping and handover. They need reliable gangs, consistent colour matching, and strict programme adherence."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners wanting to render their house for the first time, re-render a cracked or weathered finish, or upgrade to a modern self-cleaning silicone system. They value guidance on colour selection, system longevity, and the difference between traditional sand-and-cement and through-colour render."
+  },
+  {
+    icon: "🏛️",
+    title: "Architects & Conservation Officers",
+    description: "Architects specifying render finishes for contemporary new-builds and heritage renovations. Conservation officers requiring sympathetic lime render on listed buildings. Both need rendering specialists who understand material breathability, substrate compatibility, and visual precision."
+  },
+  {
+    icon: "🏢",
+    title: "Housing Associations & Local Authorities",
+    description: "Social housing providers commissioning EWI retrofit programmes under ECO4 funding — external wall insulation and render across housing estates. Large-scale programmes requiring manufacturer accreditation, energy performance certification, and phased programme management."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand rendering terminology?",
+    answer: "The complete rendering vocabulary is programmed in — monocouche (Weber, K Rend, Parex, Baumit), silicone render (thin-coat, self-cleaning, hydrophobic), acrylic render, mineral render, lime render (NHL 3.5/5), sand and cement (scratch coat, float coat, topcoat, dubbing out), EWI (external wall insulation, EPS, mineral wool, phenolic), basecoat, key coat, fibreglass mesh, bellcast bead, stop bead, corner bead, drip bead, expansion joint, float, sponge float, hawk, trowel, colour render (RAL, NCS, manufacturer palettes), crazing, cracking, delamination, pebbledash, Tyrolean, and roughcast. When a developer describes 'K Rend silicone thin-coat in Pewter Grey on blockwork, bellcast beads at DPC, stops at reveals, corners on all external angles,' the AI captures every specification element."
+  },
+  {
+    question: "Can the AI differentiate a domestic re-render from an EWI retrofit programme?",
+    answer: "A homeowner asking about 're-rendering our house — the old sand and cement is cracking' generates a domestic repair lead. The AI asks about the wall area, the existing render condition, whether it has delaminated, and their colour preference. A housing association describing 'EWI retrofit across twenty-four properties — EPS 90mm, fibreglass mesh in basecoat, silicone topcoat, ECO4 funded, PAS 2035 compliant' generates a commercial retrofit tender with system specification, property count, programme, and funding body. The profiles are fundamentally different."
+  },
+  {
+    question: "What about urgent render failure calls?",
+    answer: "Render delamination exposes masonry to moisture penetration — a section falling away from a gable end during high winds, damp tracking through failed render into the internal plaster, or large crack networks allowing rain to saturate the wall build-up. The AI captures the failure type, location, severity, and wall construction for priority assessment."
+  },
+  {
+    question: "How much does this cost for a rendering specialist?",
+    answer: `Rendering specialists pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sole-trader rendering domestic properties or a multi-gang firm delivering EWI programmes for housing associations under ECO4, the talk-time allowance accommodates your enquiry volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a sole-trader renderer?",
+    answer: "Solo renderers gain disproportionate advantage. When you are on the scaffold applying topcoat — both hands managing hawk and trowel, the render setting in real time, the weather window closing — answering a phone is physically impossible without ruining the section. The AI captures every developer's estate tender, every homeowner's re-render quote, and every architect's lime specification while you finish the bay."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Set coverage through your dashboard to match rendering workflows. During active rendering — when the mix is on the hawk and the topcoat must be completed before the suction pulls — route all calls to the AI. During measurement and quoting days — take calls yourself. Switch from your phone whenever conditions change."
+  },
+  {
+    question: "How is rendering project data protected?",
+    answer: "Rendering enquiries contain property addresses, colour specifications, system details, developer programme schedules, and EWI grant references. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing renderers or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Rendering Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK rendering specialists — monocouche, silicone thin-coat, sand & cement, lime render, and EWI. Never miss a developer call from the scaffold. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/rendering-specialists/ai-receptionist/"
+  tradeName="Rendering Specialist"
+  tradeNamePlural="Rendering Specialists"
+  tradeSlug="rendering-specialists"
+  headline="The AI Receptionist Built for Rendering Specialists"
+  accentWord="Rendering"
+  subhead={`You cannot answer the phone when both hands grip the hawk and trowel, the monocouche is setting on the wall, and the afternoon sun is drying the topcoat faster than you can flatten it. Your AI receptionist captures every call, every message, and every tender — from developers commissioning fourteen-house monocouche programmes to homeowners wanting their cracked sand-and-cement replaced with self-cleaning silicone. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Fourteen-House Monocouche Programme Calls While You Trowel the Gable"
+  ctaSubhead={`A developer with three phases and a blockwork schedule needs a renderer who answers. If voicemail picks up, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

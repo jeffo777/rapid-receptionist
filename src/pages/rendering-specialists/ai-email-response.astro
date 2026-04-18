@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Developer Render Tenders',
+    text: "Developers and QSs email rendering subcontract packages with system specifications, colour schedules, bead details, and programme milestones. The renderer that acknowledges first — referencing the manufacturer, colour, and plot count — stays on the programme shortlist."
+  },
+  {
+    icon: '📐',
+    title: 'References Render Specifications',
+    text: "When a QS emails specifying 'K Rend Silicone TC30 in Pewter Grey, scratch coat on blockwork, bellcast beads at DPC, stops at all reveals, corners on externals, 30 houses across 4 phases,' the AI acknowledgement references the system, colour, beads, plots, and phases."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Scaffold Hours',
+    text: "Rendering days run from first light to last workable hour — every minute on the scaffold applying topcoat before the temperature drops. A developer's estate render tender arriving at 9am sits unread until the scaffold pack-down. Your sixty-second acknowledgement maintains your tender position."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Render Orders',
+    text: "Your inbox mixes developer tenders, render manufacturer delivery notes, bead supplier invoices, scaffold hire confirmations, mixer service receipts, and Weber or K Rend training correspondence. The AI identifies genuine project tenders from operational emails."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Developer Loyalty',
+    text: "Developers with multi-phase estates need reliable rendering gangs. Consistent instant acknowledgements across estate phases build the trust that programmes you into every plot from phase one through completion."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Render tenders include elevation drawings, colour schedules, bead positions, expansion joint layouts, and programme Gantt charts. The AI notes these attachments in the acknowledgement and your lead."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce rendering quotes from tenders?",
+    answer: "The system generates no pricing — only a professional receipt referencing the render system, colour, and project scope. Your rendering quotation — render material costs, bead quantities, mesh and basecoat for EWI, scaffold hire, mixer hire, labour, and programme — is calculated by you from the measured elevation areas and the manufacturer's specification documents."
+  },
+  {
+    question: "Will it respond to render supplier and scaffold hire emails?",
+    answer: "Onboarding configuration excludes operational emails. Weber or K Rend delivery confirmations, bead supplier dispatch notes, scaffold erection booking receipts, mixer hire invoices, and manufacturer training updates are filtered. Only genuine project tenders and client enquiries trigger the professional acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner rendering enquiries by email?",
+    answer: "Homeowner emails from your contact form — 'our render is cracking and we need someone to come and quote for re-rendering' — receive a professional response asking about the existing render type, the approximate wall area, whether sections have delaminated, and their preferred finish (colour render, textured, or smooth)."
+  },
+  {
+    question: "What does email response cost for rendering specialists?",
+    answer: `Email response is £${pricing.addOn.price}/month as an add-on. A developer's thirty-house monocouche programme generates £60,000 to £150,000 in subcontract value. Acknowledging the tender within sixty seconds — while your gang applied topcoat across the estate road — frequently determines whether your firm receives the formal invitation to tender and the measured drawings.`
+  },
+  {
+    question: "Can all follow-up tender correspondence come from me?",
+    answer: "Beyond the initial receipt, every communication is authored by you. Your measured elevation survey, material schedule, bead layout, colour confirmation, programme bar chart, method statement, and manufacturer warranty documentation are prepared and submitted entirely by your estimating team."
+  },
+  {
+    question: "How is rendering tender data secured?",
+    answer: "Rendering tenders contain site addresses, developer programme schedules, colour and system specifications, bead layouts, and commercially sensitive pricing. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender details reach competing rendering firms or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Rendering Specialists | Rapid Receptionist"
+  description={`AI email response for UK rendering specialists. Acknowledges developer monocouche tenders, EWI programme enquiries, and re-render requests within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/rendering-specialists/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Rendering Specialist"
+  tradeNamePlural="Rendering Specialists"
+  tradeSlug="rendering-specialists"
+  headline="AI Email Response for Rendering Specialist Companies"
+  accentWord="Rendering"
+  subhead="A QS emails a rendering subcontract tender for a new-build primary school on the eastern edge of Abingdon — a two-storey teaching block with approximately 1,200 square metres of external render. The specification calls for Baumit StarTop silicone render in RAL 9003 Signal White on the main elevations, with a contrasting feature band in RAL 5014 Pigeon Blue around the entrance canopy. The system requires a Baumit StarContact adhesive basecoat with fibreglass mesh, applied over 100mm Baumit Resolve mineral wool insulation boards adhesive-fixed and mechanically fastened to the blockwork substrate. Bellcast beads at DPC, stop beads at every window and door reveal, and corner beads on all external angles. The school build programme has the structural frame and blockwork completing in eight weeks, with rendering scheduled to follow four weeks later. Tender return in three weeks. You are on a scaffold at a housing estate in Wantage — your gang of four applying Weber monocouche to plot seventeen, the mixer churning the Sand Beige topcoat on the ground below, the hawk-and-trowel rhythm consistent across the two-storey elevation. Every person is on the boards. Without AI Email Response, the 1,200 sqm school tender sits in your inbox until 5pm. Two competing firms acknowledged within the hour. With it, your acknowledgement arrives within sixty seconds, referencing the two-storey school, Baumit StarTop, RAL 9003/5014, mineral wool 100mm, mesh/basecoat, full bead set, 1,200 sqm, eight-week blockwork, three-week tender."
+  scenario="It is 7am on a Monday. Your inbox accumulated over the weekend: a developer requesting monocouche on a new cul-de-sac of eight detached houses in Witney — 'K Rend silicone, colour TBC, bellcasts and stops, blockwork starting in 3 weeks, need price per plot,' a conservation architect requesting lime render on a Grade II listed farmhouse near Chipping Norton — 'NHL 3.5 lime render on Cotswold stone, approximately 160 square metres, conservation area, lime mortar pointing simultaneously, Heritage Lottery Fund part-funded,' a homeowner requesting a re-render on a 1980s semi in Marston — 'existing sand-and-cement is blown in places and the paint keeps peeling, about 95 square metres, want a coloured render that does not need painting,' and a render supplier confirming Thursday's delivery of K Rend TC30 pallets. Without AI Email Response, the developer and conservation tenders sit until Tuesday evening. With AI Email Response, the K Rend Witney estate is acknowledged with system and plot count noted, the Chipping Norton lime render references NHL 3.5 and HLF funding, the Marston re-render notes the blown S&C and painting-free preference, and the supplier email is filtered."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/rendering-specialists/ai-receptionist/"
+  ctaHeadline="Acknowledge the Abingdon School Tender While Your Gang Renders in Wantage"
+  ctaSubhead={`A QS's three-week tender for 1,200 sqm of Baumit StarTop across a two-storey teaching block needs your system accreditation and programme. Your sixty-second acknowledgement secures the tender pack. Add-on at £${pricing.addOn.price}/month.`}
+/>

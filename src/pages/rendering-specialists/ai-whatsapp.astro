@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Render Failure Photos',
+    text: "Homeowners and builders WhatsApp photos of cracked render, delaminated patches, blown areas, and damp staining. The AI responds within seconds, asks about the render type and wall construction, and attaches every photo to your assessment lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Developer Programme Slots',
+    text: "Developers WhatsApp render requirements mid-programme — 'blockwork on plots 7-10 ready, need your gang next week.' The first renderer to confirm maintains their position in the build programme."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Builder Extension Requests',
+    text: "Builders WhatsApp render requirements from site — 'extension blockwork done, need render to match the house, about 35 sqm, can you come and look at the colour?' The AI captures the scope while you float a topcoat elsewhere."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Trowelling Hours',
+    text: "Developers confirm next-week programme slots in the evening. Architects send EWI specifications after meetings. Homeowners photograph render cracks after work. The AI captures every after-hours rendering message."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Render Briefs',
+    text: "A WhatsApp saying 'monocouche, new-build, 6 plots, Ivory, bellcast beads, Bicester, start in 3 weeks' becomes a structured developer lead with system, colour, plot count, beads, and programme."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. Developer programmes, colour specifications, and render manufacturer orders stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess render condition from photos?",
+    answer: "Render condition requires hands-on evaluation — tapping for hollow areas, checking crack depth, and assessing substrate adhesion. The AI does not perform visual diagnosis. It does respond productively — acknowledging the visible deterioration, asking whether the cracks are hairline crazing or structural, whether sections sound hollow when tapped, and how old the existing render is. Every photograph attaches to your lead for professional inspection during the site visit."
+  },
+  {
+    question: "What about multi-message render threads?",
+    answer: "Rendering conversations develop in stages — a homeowner sends a photo of cracks, then confirms the wall area, then asks about colour options, then books a survey. The AI maintains the entire thread history and compiles every message into one consolidated render lead with system, area, substrate, condition, colour preference, and scheduling."
+  },
+  {
+    question: "How much does AI WhatsApp cost for rendering specialists?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. A domestic whole-house render generates £4,000 to £12,000. A developer estate programme generates £40,000 to £200,000. Securing one developer's four-plot weekly programme through a rapid WhatsApp reply — while you applied topcoat on another estate — produces revenue that covers the channel cost from a single day's confirmation.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Send a single reply in any thread and the AI transfers control to you permanently for that conversation. Most renderers let the AI gather the initial scope — system, colour, area, substrate, and programme — then engage directly to discuss colour samples, system selection, and survey scheduling."
+  },
+  {
+    question: "How is WhatsApp data from rendering enquiries protected?",
+    answer: "Every WhatsApp message — render condition photographs, property addresses, colour specifications, developer programme details, and sender contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively with you. No project details reach competing renderers or are used for any other purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Rendering Specialists | Rapid Receptionist"
+  description={`AI WhatsApp for UK rendering specialists. Responds to developer programme messages, render failure photos, and colour consultations while you trowel. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/rendering-specialists/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Rendering Specialist"
+  tradeNamePlural="Rendering Specialists"
+  tradeSlug="rendering-specialists"
+  headline="AI WhatsApp for Rendering Specialist Companies"
+  accentWord="Rendering"
+  subhead="A builder WhatsApps at 7am on a Tuesday with two photos. He has completed a two-storey rear extension on a 1990s detached house in Kidlington — the blockwork is finished, the scaffolding is still up, and the roof is on. The existing house has Parex monocouche render in a warm sandstone colour. His message: 'Morning — extension done in Kidlington. Two-storey rear, about 55 square metres of new render needed. Existing house is monocouche — looks like Parex in some kind of sandstone colour. Need the extension rendered to match. Scaffold still up for another two weeks. Can you come and colour match? Photos showing the new blockwork and the existing house render.' You are mixing K Rend Silicone TC30 for a gable in Headington — the mixer churning the Pewter Grey topcoat, water measured precisely for the silicone binder, the consistency approaching the firm creamy texture needed for sponge floating. Without AI WhatsApp, the message waits until 8:30 when you stop mixing. He texts two other renderers; one confirms by 7:30. With it, the AI responds at 7:01am, confirms your monocouche and colour-matching capability, and asks whether the existing Parex render has a smooth or textured finish. The builder confirms smooth. At 8am you review: Kidlington two-storey extension, 55 sqm, Parex sandstone colour match, smooth, scaffold two weeks, photos attached."
+  scenario="It is 8pm on a Thursday. A housing association's energy retrofit manager WhatsApps about a pilot EWI programme — six 1960s terraced houses in east Oxford selected for external wall insulation under ECO4 funding. His message: 'Evening — six terraced houses on [street name], east Oxford. 1960s solid-wall construction. Selected for EWI under ECO4. Need EPS 90mm, fibreglass mesh in basecoat, silicone topcoat. Council wants a neutral grey — thinking RAL 7035 Light Grey. Each house is approximately 65 square metres of render. We need a PAS 2035 compliant installer. Can you handle six properties as a pilot? If successful, there are another forty-two on the adjacent streets. Budget approved. Need a site survey within two weeks.' Without AI WhatsApp, the EWI pilot sits until Friday morning. With AI WhatsApp, the reply arrives at 8:01pm: 'Thank you — six properties as an ECO4 EWI pilot is an ideal programme structure. Could you confirm the existing wall construction — solid brick or concrete block — and whether the properties have any features that would complicate EWI application, such as bay windows or decorative brickwork?' He confirms solid brick, no bays. Friday you call: six terraces east Oxford, 1960s solid wall, EPS 90mm, mesh/basecoat, silicone RAL 7035, 65 sqm each, PAS 2035, ECO4, pilot for 42 additional, survey two weeks."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/rendering-specialists/ai-receptionist/"
+  ctaHeadline="Confirm the Kidlington Extension Colour Match While You Mix in Headington"
+  ctaSubhead={`A builder needs 55 square metres of Parex monocouche colour-matched to a 1990s house. The AI confirmed your capability while the mixer churned the Pewter Grey. Add-on at £${pricing.addOn.price}/month.`}
+/>
