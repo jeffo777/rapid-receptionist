@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Contractors Researching Steel Firms',
+    text: "Builders and developers visit steelwork websites to check fabrication capabilities — workshop equipment, crane fleet, portal frame experience, and RSJ installation portfolios. The chat responds from your profile with relevant information while capturing the structural brief."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Project Scale',
+    text: "Through conversation, the AI identifies whether the visitor needs a single domestic RSJ, a mezzanine floor, or a 300-tonne commercial steel frame. You receive a lead pre-categorised by steelwork complexity and programme urgency."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Programme Planning',
+    text: "Project managers finalise steelwork programmes in the evening. At 9pm a main contractor types: 'need a fabricator-erector for a portal frame warehouse in Witney — 20m span, 7m eaves, 6 bays, about 80 tonnes. Can you price and programme?' The chat captures the tender before the browser closes."
+  },
+  {
+    icon: '📊',
+    title: 'Discusses Steelwork Capabilities',
+    text: "Visitors ask about capabilities — 'do you fabricate to EXC3?', 'what is your maximum lift capacity?', 'can you supply intumescent coated steel?' The AI responds from your profile while capturing project requirements."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Project Portfolios',
+    text: "Steelwork websites showcase completed frames — portal frame warehouses, multi-storey offices, feature exposed steel, and mezzanine floors. The chat converts impressed visitors into steelwork tender conversations."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat is bundled with phone answering at £${pricing.tiers.core.price}/month. A single code snippet, unlimited steelwork enquiry conversations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my steelwork website?",
+    answer: "You receive a compact JavaScript code snippet during onboarding. Paste it into your website header — through WordPress, a custom HTML site, or your web builder's admin panel. The branded chat widget appears across all pages of your structural steelwork website within moments. Setup on any platform takes under five minutes without needing a web developer."
+  },
+  {
+    question: "Can the AI discuss beam specifications and frame types?",
+    answer: "Your profile informs the AI about your fabrication capabilities, equipment, and project range. When a visitor asks 'can you fabricate and erect a portal frame for a warehouse — about twenty-metre clear span?' the AI responds from your profile — confirming your portal frame capability — and captures the span, eaves height, bay centres, tonnage estimate, and programme timeline."
+  },
+  {
+    question: "What project details does chat capture for steelwork?",
+    answer: "The AI gathers the steelwork application (portal frame, braced frame, RSJ, mezzanine, feature steel), the building dimensions or beam specification, the estimated tonnage, the execution class and CE marking requirements, the erection method, crane requirements, the programme coordination with follow-on trades, and the visitor's role and contact details."
+  },
+  {
+    question: "Does chat affect my website performance?",
+    answer: "The chat widget loads after your existing content has fully rendered — portfolio images, project galleries, and capability pages display at their normal speed before the widget initialises. The script footprint is minimal and creates no visible delay to any page on your steelwork company website."
+  },
+  {
+    question: "Is website chat an additional charge?",
+    answer: `Chat is included in the same Core plan as phone answering at £${pricing.tiers.core.price}/month. For structural steelwork firms, these channels cover the two primary routes: daytime phone calls from main contractors confirming erection dates and evening website conversations from developers and architects planning steel frame projects.`
+  },
+  {
+    question: "How is visitor data from steelwork queries handled?",
+    answer: "Chat conversations containing structural specifications, fabrication requirements, tonnage estimates, programme details, and visitor contact information are encrypted and stored on UK and EU servers under UK GDPR. Lead summaries are shared exclusively with you. No project details reach competing fabricators or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Structural Steelworkers | Rapid Receptionist"
+  description={`AI website chat for UK structural steelworkers. Engages developers and builders researching portal frames, RSJ installation, and mezzanine steelwork. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/structural-steelworkers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Structural Steelworker"
+  tradeNamePlural="Structural Steelworkers"
+  tradeSlug="structural-steelworkers"
+  headline="AI Website Chat for Structural Steelwork Companies"
+  accentWord="Steelwork"
+  subhead="A logistics developer finds your website at 7:45pm. He is planning a 6,000-square-metre distribution warehouse on a greenfield site outside Didcot — the planning decision expected in four weeks and the steel frame is the critical-path item. The structural engineer has specified a multi-bay portal frame — 30-metre clear span, 10-metre eaves, haunched rafters at every frame line, a full purlin and cladding rail system, and wind bracing in the gable and longitudinal walls. Estimated fabrication weight: 180 tonnes. CE marking to Execution Class 2. He types: 'Good evening — we are building a large distribution warehouse near Didcot. 30m clear span portal frame, 10m eaves, about 180 tonnes of steelwork, CE marked EXC2. We need fabrication drawings, a realistic programme, and competitive pricing. Planning due in 4 weeks — steel needs to be on site 12 weeks after that. Can your workshop handle 180 tonnes in that programme? What crane capacity do you work with for frames this size?' Without chat, he emails a question and waits. With AI Website Chat, the AI confirms your portal frame fabrication capacity, asks about the foundation contractor's programme and loading bay requirements, and captures every specification — distribution warehouse, Didcot, 30m span, 10m eaves, 180 tonnes, EXC2, 12-week fabrication. He finishes his planning session with a steel frame tender conversation already underway."
+  scenario="It is 11pm on a Sunday. A builder in Woodstock is preparing a tender for a barn-to-house conversion — the existing agricultural building has a steel portal frame in reasonable condition, but the structural engineer wants two RSJs added to support a new first-floor insertion. The beams span 7 metres and 5 metres respectively, both specified as 305x165x40 UBs with welded end plates and bolted connections to new steel columns. He finds your website through a Google search and types: 'Hi — doing a barn conversion and need two RSJs installed. 305x165x40 UB beams — one at 7m span and one at 5m span. They bolt to new steel columns on padstones. The structural engineer has done the calculations. Existing portal frame stays, we are just adding the floor beams. Can you supply, fabricate end plates, and install both beams? Site near Woodstock, crane access fine through the barn entrance. Need them in about 4 weeks.' Without chat, he bookmarks the site. With AI Website Chat, the AI asks about the end plate connection detail, the column base plate specification, and whether the existing portal frame requires any strengthening. The builder provides details. Monday you call with full context — two UBs, Woodstock barn, spans and sizes, connection details, crane access confirmed, four-week programme."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/structural-steelworkers/ai-receptionist/"
+  ctaHeadline="Capture the 180-Tonne Portal Frame Tender While the Developer Plans at 7:45pm"
+  ctaSubhead={`A logistics developer needs a 30-metre span warehouse fabricated in 12 weeks. Your chat captures the tonnage, span, and execution class before the browser tab closes. Included at £${pricing.tiers.core.price}/month.`}
+/>

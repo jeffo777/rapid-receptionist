@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Contractor Steel Texts',
+    text: "Builders text RSJ orders and beam specification changes constantly — 'can you get me a 203x133x25 UB, 2.8m, end plates welded, delivered Monday?' A fast confirmation keeps the builder's programme on track. Silence and they text the next fabricator."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Steelwork Briefs from Short Messages',
+    text: "A text like 'portal frame, 15m span, 5m eaves, 4 bays, agricultural, need pricing' provides enough. The AI asks about the foundation type and crane access. Your lead arrives with a structured portal frame specification."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Builder Referral Texts',
+    text: "When a builder whose RSJ you installed recommends you to a colleague, the referred builder texts about their own structural steel requirement. The AI captures the specification while the referral is fresh."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Workshop Hours',
+    text: "Builders confirm beam requirements after site hours. Main contractors text tender invitations in the evening. Project managers confirm crane dates at 9pm. The AI captures every after-hours steelwork message."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Orders',
+    text: "Messages arrive in pieces — 'need a steel beam' then '305x165x40' then '5.2m long' then 'end plates both ends' then 'next Thursday.' The AI assembles one cohesive fabrication order from every fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Beam specifications, fabrication schedules, and erection confirmations stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound steelwork text?",
+    answer: "It reads the message and responds in your company name within seconds. A precise text — 'need 2x 254x146x31 UBs, 6m long, welded end plates 200x200x15, prime coated, delivered to Eynsham next Wednesday' — is acknowledged with every beam specification preserved. A less precise text — 'how much for some steels for a wall removal?' — prompts questions about the structural engineer's specification, the property type, and the required installation date."
+  },
+  {
+    question: "Will the builder recognise it as AI?",
+    answer: "The reply reads like a steel fabricator checking messages between workshop runs — specification-aware, programme-focused, and practically worded. It uses your company name and references beam sizes and connection types. Builders texting steel firms expect a quick, technically competent reply that shows you know the difference between a fin plate and an end plate connection."
+  },
+  {
+    question: "How does it handle specification change texts from existing clients?",
+    answer: "Current clients text about beam size changes, connection modifications, delivery date shifts, and additional items. The AI captures these and flags them separately from new enquiries. Your dashboard differentiates a new builder's RSJ request from an existing client upgrading their beam from a 203x133 to a 254x146 for the same extension."
+  },
+  {
+    question: "What does AI SMS cost for steelwork firms?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. Structural steelwork values range from £800 domestic RSJ installations to £200,000 commercial frame packages. Capturing a main contractor's portal frame tender through a rapid text — while you cut sections on the bandsaw — generates revenue that exceeds the annual channel cost from a single project.`
+  },
+  {
+    question: "Can I text back personally when I want to?",
+    answer: "Send a reply in any thread and the AI hands control to you on the spot. During drawing and pricing time — manage texts yourself. During workshop fabrication — bandsaw running, Magdrill boring, welder sparking — let the AI handle commercial messages while you keep producing steel."
+  },
+  {
+    question: "How is text data from steelwork enquiries stored?",
+    answer: "Text messages featuring beam specifications, site addresses, fabrication schedules, structural drawings, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing fabricators or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Structural Steelworkers | Rapid Receptionist"
+  description={`AI SMS for UK structural steelworkers. Responds to RSJ orders, beam specification changes, and portal frame tender texts while you fabricate. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/structural-steelworkers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Structural Steelworker"
+  tradeNamePlural="Structural Steelworkers"
+  tradeSlug="structural-steelworkers"
+  headline="AI SMS for Structural Steelwork Companies"
+  accentWord="Steelwork"
+  subhead="You are in the workshop at 7am, setting up the first cut of the day — a 356x171x51 UB marked for a crane beam in a factory extension. The bandsaw blade is tensioned, the beam is clamped in the roller table, and coolant is flowing. At 7:15am a builder texts: 'Morning mate — I need 2 RSJs for a loft conversion in Summertown. Engineer says 152x89x16 UB at 3.2m and 203x133x25 UB at 4.1m. Both need welded end plates — 150x150x12. Primed. Can you fabricate and deliver in about 10 days? The carpenter does the installation.' Your hands are adjusting the bandsaw guides and the blade is about to start cutting. Without AI SMS, the text sits until the tea break at 9:30. He texts two other fabricators; one confirms by 8am. With it, the AI responds at 7:16am, confirms your fabrication capability and typical turnaround, and asks whether the engineer has specified any specific bolt pattern on the end plates. The builder confirms 4x M16 per plate. At the break you review: loft conversion, Summertown, two UBs with sizes and spans, end plates specified, primed, 10-day delivery, carpenter installs. You confirm by 10am and add the beams to next week's cutting list."
+  scenario="It is 8:30pm on a Thursday. A commercial property developer in Abingdon has let the ground floor of a warehouse unit to a gym franchise and needs a 350-square-metre mezzanine floor installed at the rear of a second unit for office space. The structural design is complete — steel frame with composite metal decking, edge protection, a feature staircase, and fire-rated enclosure to the underside. He texts three structural steelwork firms: 'Hi — need a mezzanine floor in a warehouse in Abingdon. About 350 sqm, composite deck, staircase, fire rated underneath. Structural design done. Steel frame, columns on base plates to the existing slab. Good height — 7m to the underside of the portal rafter. We need the mezzanine operational in 10 weeks. Can you fabricate and install the steelwork package? What is your lead time on mezzanines currently?' Without AI SMS, you see the text Friday morning. One competitor confirmed availability Thursday night. With AI SMS, the response arrives at 8:32pm: 'Thank you — mezzanine floor installations are a core service. Could you confirm the anticipated floor loading and whether the existing portal frame columns need checking for the additional mezzanine loads? We will programme fabrication and erection accordingly.' He confirms 5 kN/m² office loading and the SE has checked the existing frame. Friday you open the lead: mezzanine, Abingdon warehouse, 350 sqm, composite deck, staircase, fire-rated, 7m eaves, 10-week programme, SE-verified loading."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/structural-steelworkers/ai-receptionist/"
+  ctaHeadline="Catch the Loft Conversion RSJ Text While the Bandsaw Cuts the Crane Beam"
+  ctaSubhead={`A builder texts two UB specifications with end plate details while you set up the bandsaw. The AI replies from the workshop. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Erect the Steel',
+    text: "Steel erection demands total concentration — crane lifts, beam alignment, bolt tightening at height, and constant communication with the crane operator. The AI answers every call in your company name while you build the frame."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Diverse Steelwork Briefs',
+    text: "When a developer calls about a 200-tonne portal frame warehouse, the AI captures the span, eaves height, bay centres, and fabrication programme. When a builder calls about a domestic RSJ, the AI captures the beam specification, property type, and installation date."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Urgent Structural Calls',
+    text: "A corroded beam discovered during renovation, an undersized lintel failing under load, or an emergency propping requirement — these generate urgent calls needing immediate steelwork assessment. The AI identifies the urgency and escalates for priority response."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Tender Calls',
+    text: "Developers review structural programmes in the evening. Builders call after work about RSJ quotes. Project managers confirm steel erection dates after site hours. The AI captures every out-of-hours steelwork call."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Built for Pricing',
+    text: "Each lead specifies the steelwork type, structural specification, tonnage estimate, fabrication requirements, erection method, crane requirements, and programme timeline — everything you need to price the job and order the steel."
+  },
+  {
+    icon: '🏷️',
+    title: 'BCSA-Standard Professionalism',
+    text: "A structural steelwork company that answers professionally and asks about span, eaves height, and execution class signals an organised, quality-managed operation — the kind of fabricator-erector that main contractors trust with their primary structure."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their steelwork needs?",
+    answer: "Questions adapt to the project scale. A developer commissioning a commercial steel frame is asked about the building type and use, the span and eaves height, the number of bays, the frame type (portal, braced, moment), the estimated tonnage, CE marking requirements, the fabrication and erection programme, and the crane access. A builder ordering a domestic RSJ is asked about the structural engineer's beam specification, the opening width, the property type, whether temporary propping is needed, the installation date, and building control requirements."
+  },
+  {
+    question: "Can the AI handle both domestic RSJs and commercial frames?",
+    answer: "Structural steelwork firms service the full spectrum — from a single 203x133 UB installed in a terraced house kitchen, through to a 300-tonne multi-bay portal frame for a logistics warehouse with haunched rafters spanning 30 metres. The AI calibrates its questioning accordingly. Domestic RSJ leads capture beam sizes, property details, and installation dates; commercial frame leads capture spans, heights, tonnage, execution class, and programme coordination with cladding and concrete trades."
+  },
+  {
+    question: "What about calls during workshop fabrication?",
+    answer: "Bandsaws cutting steel sections, Magdrills boring bolt holes, MIG welders running beads on end plates, angle grinders dressing welds — workshop fabrication creates constant noise that makes phone calls impractical even during breaks. The AI handles every call during fabrication shifts as effectively as during quiet office hours."
+  },
+  {
+    question: "How many minutes are included in the plan?",
+    answer: `Your Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Steelwork firms receive a blend of developer portal frame tenders, main contractor subcontract calls, builder RSJ orders, and occasional emergency structural calls. The majority of structural steelwork companies operate comfortably within the allowance. If a large commercial project generates a surge of coordination calls, overage is billed at 20p per minute with no lock-in.`
+  },
+  {
+    question: "Can I answer calls during office and drawing time?",
+    answer: "When you are at your desk — producing fabrication drawings in Tekla or StruCad, pricing steelwork tenders from structural calculations, coordinating crane hire and erection programmes — take calls directly. Switch to AI answering when the bandsaw starts cutting or the crane arrives on site. Toggle from your phone instantly."
+  },
+  {
+    question: "How is steelwork project data secured?",
+    answer: "Steelwork tenders contain structural drawings, fabrication details, connection schedules, tonnage reports, and commercially sensitive pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details are shared with competing fabricators, disclosed to other site trades, or sold to lead generation services."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Structural Steelworkers | Rapid Receptionist"
+  description={`AI phone answering for UK structural steelworkers. Captures portal frame tenders, RSJ orders, and mezzanine bookings while you bolt the beam. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/structural-steelworkers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Structural Steelworker"
+  tradeNamePlural="Structural Steelworkers"
+  tradeSlug="structural-steelworkers"
+  headline="AI Phone Answering for Structural Steelwork Companies"
+  accentWord="Steelwork"
+  subhead="A main contractor calls at 9:30am. He is building a new car dealership showroom on the ring road outside Abingdon — a 24-metre clear span portal frame with full-height glazing to the front elevation, a first-floor mezzanine office over the service reception area, and a two-storey braced frame to the rear housing workshop bays with 5-tonne overhead crane beams. The structural engineer's specification requires CE marked steelwork to Execution Class 2, intumescent paint fire protection, and a sixteen-week fabrication and erection programme coordinated with the cladding contractor's start date. You are on another erection site in Headington — your mobile crane is lifting 8-metre universal columns onto their holding-down bolts, your erector is aligning the base plates with the setting-out marks, and you are checking plumb with the theodolite while the crane holds the column steady. Both hands occupied, hard hat on, harness attached. Your phone is in the van cab. Without AI Phone Answering, the main contractor hears voicemail and tries the next BCSA member. With it, the AI captures the complete showroom brief — car dealership, Abingdon, 24-metre portal, full-height glazing, mezzanine office, two-storey braced frame, crane beams, EXC2, intumescent, sixteen-week programme — and your lead waits in the cab."
+  scenario="It is 2:15pm on a Wednesday. You are in the workshop fabricating steelwork for a farm building — cutting 254x146 UBs on the bandsaw, drilling bolt holes through the end plates on your Magdrill, and welding cleats to the column flanges. Ear defenders on, welding mask up between runs, grinding sparks intermittent. Three calls come in between 1pm and 4pm. Without AI Phone Answering, one voicemail — 'need a couple of steels putting in' — two hang up. By Thursday, two have booked other steel firms. With AI Phone Answering, all three are answered. Lead one: architect in Charlbury designing a contemporary house extension with an exposed structural steel frame — three feature RSJs spanning 6 metres with shot-blasted and lacquered finish, bolted connections left visible. Lead two: builder in Cowley needing two RSJs installed in a Victorian terrace for a rear extension — 254x102x22 UB and 203x133x25 UB specified by the structural engineer, padstones, temporary propping, installation next Friday. Lead three: commercial landlord in Banbury wanting a 200-square-metre mezzanine floor installed in a warehouse for additional office and storage space — steel frame with composite decking, staircase, and handrails. At 4:30pm you check three leads — a feature steel extension, a double RSJ installation, and a warehouse mezzanine — and schedule quotes."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/structural-steelworkers/ai-receptionist/"
+  ctaHeadline="Showroom Portal Frame, Double RSJ, and Warehouse Mezzanine — All in Three Hours"
+  ctaSubhead={`While you fabricated the farm building steel, three opportunities called. The AI captured every beam specification, span, and programme. From £${pricing.tiers.core.price}/month.`}
+/>

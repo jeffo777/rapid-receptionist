@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls from the Crane Lift',
+    text: "Guiding a 6-tonne beam onto column end plates, directing the crane operator with hand signals, tightening M24 bolts at height — both hands occupied, harness on. Missed Call Text Back sends a branded text to every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Programme-Critical Contractors',
+    text: "A main contractor needing the steel frame programme confirmed gets voicemail from two fabricators and a text from yours: 'Thanks for calling — we are on a steel erection site and will return your call this afternoon.' The contractor holds your slot on the tender list."
+  },
+  {
+    icon: '🏷️',
+    title: 'BCSA-Standard Professionalism',
+    text: "An instant branded text from a structural steelwork firm projects a quality-managed, safety-conscious operation — the kind of fabricator-erector that developers and main contractors trust with their primary structure."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Erection Days',
+    text: "Steel erection days consume the entire crew — crane operating, beams lifted, columns aligned, bolts torqued. Every person is focused on the frame. Missed Call Text Back captures every commercial opportunity during your most physically demanding work."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Steelwork Details',
+    text: "Callers reply with scope — 'portal frame warehouse, 18m span, 6m eaves, 4 bays, Witney, need pricing.' Replies arrive on your dashboard with frame type, span, and location before you climb down from the steel."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering conducts full steelwork conversations and builds detailed frame tenders. Missed Call Text Back catches edge cases — a call during a critical crane lift, a signal lost inside a steel frame, or a one-ring hang-up. Together, no steelwork lead disappears."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "Within seconds of the unanswered call ending — before the main contractor searches for the next BCSA member. During full-day erection shifts where your phone sits in the crane cab or the site office from dawn until pack-up, this automatic text keeps your fabrication business commercially visible without interrupting any lift."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "The wording is entirely yours — drafted during setup and editable at any time. An effective steelwork message reads: 'Thank you for calling [company name]. We are currently on a steel erection site. We will return your call at the earliest opportunity. Reply with your steelwork requirements for a faster response.' This conveys active on-site capability and technical credibility."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They function as complementary safeguards. Phone Answering conducts detailed conversations — identifying the frame type, span, eaves height, tonnage, execution class, and programme timing. Missed Call Text Back covers rare bypass scenarios — a call during a critical crane lift when the system is busy, a mobile signal fading inside a steel structural frame, or a caller disconnecting before the AI picks up. Both running simultaneously means no steel enquiry vanishes permanently."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Structural steel projects span from £800 RSJ installations to £200,000 commercial frame contracts. Recovering one missed call from a developer — who needed a 120-tonne portal frame warehouse confirmed for their programme — through a timely branded text delivers a return that dwarfs the channel cost for years.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Main contractors and developers under programme deadlines reply readily. Typical replies include the frame type, approximate tonnage, building use, programme timeline, and site postcode. These project specifics arrive on your dashboard while the crane is still lifting, giving you full context for a priority callback after the last bolt is torqued."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing site addresses, frame specifications, tonnage estimates, programme deadlines, and contact details are encrypted and held on UK and EU servers under UK GDPR. Only you access the data. Nothing reaches competing steel fabricators or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Structural Steelworkers | Rapid Receptionist"
+  description={`Missed Call Text Back for UK structural steelworkers. Automatically texts callers while you erect the frame — keeps portal frame tenders and RSJ bookings warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/structural-steelworkers/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Structural Steelworker"
+  tradeNamePlural="Structural Steelworkers"
+  tradeSlug="structural-steelworkers"
+  headline="Missed Call Text Back for Structural Steelwork Companies"
+  accentWord="Steelwork"
+  subhead="It is 8:30am on a Thursday. Your crew has started erecting a portal frame for an agricultural storage building near Faringdon — the 50-tonne crane lifting the first 8-metre column from the flatbed, your erector guiding it over the holding-down bolts, you checking the base plate alignment while the crane holds the column plumb. Three calls come in between 8:30 and noon. Your phone is in the van cab behind the crane. Without Missed Call Text Back, two voicemails — 'need some steelwork quoting' and 'calling about an RSJ' — and one hang-up. With it, all three receive texts within seconds. The first replies at 9am: 'Main contractor here — got a new-build secondary school outside Didcot. 3-storey braced frame, about 220 tonnes, EXC2 with intumescent paint throughout. Structural design complete, need a fabrication and erection tender by month end. Can you price it?' At the tea break you read the reply. You phone the main contractor at noon and confirm your tender submission by month end."
+  scenario="It is 2pm on a Friday in February. Your team has been erecting a mezzanine frame in a Banbury warehouse since 7am — 6 columns bolted to base plates on the existing slab, 12 primary beams connected at the column heads, secondary beams at 1.2-metre centres supporting composite decking, and the staircase frame bolted to the mezzanine edge beam. By 2pm the last secondary beam is being craned into position. Five missed calls between 10am and 2pm. Without Missed Call Text Back, you check at 3pm: five unknowns, one voicemail — 'call me about some steelwork' — four permanently lost. With Missed Call Text Back, all five received texts. Reply one: 'developer — new warehouse portal frame, 20m span, 7m eaves, 5 bays, Witney, 75 tonnes, need pricing in 2 weeks.' Reply two: 'builder in Headington — pair of RSJs for a rear extension, engineer's spec attached.' Reply three: 'architect — exposed steel canopy for a restaurant entrance, feature finish, about 3 tonnes.' Reply four: 'farm manager near Woodstock — replacement purlin system for a cattle building, 15 purlins rusted through.' Reply five: 'commercial landlord — loading bay canopy, 8m span, galvanised, Abingdon.' Five leads. Five distinct steelwork projects from a 75-tonne warehouse to fifteen replacement purlins. Saturday morning you prioritise the warehouse developer and the restaurant architect."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/structural-steelworkers/ai-receptionist/"
+  ctaHeadline="Recover Five Steelwork Leads from One February Mezzanine Friday"
+  ctaSubhead={`While your crew bolted the mezzanine secondaries, five callers missed you. Five texts went out. Five replied. A warehouse frame, paired RSJs, an exposed canopy, rusted purlins, and a loading bay. Add-on at £${pricing.addOn.price}/month.`}
+/>

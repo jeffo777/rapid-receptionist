@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A developer calls about a steel frame for a new three-storey commercial building in Bicester — portal frame ground floor for open-plan retail, braced frame upper floors for office space, with a mezzanine level in the retail unit. The structural engineer has specified universal columns at 6-metre centres, haunched rafters spanning 18 metres across the ground-floor portal, cellular beams on the upper floors for service integration, and the entire frame CE marked to Execution Class 2. He needs fabrication drawings, a programme, and pricing within two weeks. You are on a steel erection site in Witney — your crane is lifting a 4-tonne universal beam into position at second-floor level, your erector is guiding it onto the column end plates, and you are tightening the M24 grade 8.8 bolts with a torque wrench. Both hands occupied, safety harness on, fifteen metres up. Your phone is in the van cab. The developer calls three BCSA members. One answers and books a Thursday site survey.",
+    with: "Your AI receptionist answers on the second ring. It captures the complete brief — three-storey commercial, Bicester, portal frame ground floor, braced frame upper floors, mezzanine, 18-metre haunched rafters, cellular beams, CE marking EXC2, two-week tender return — and confirms you will call back. At the tea break you review the lead and phone."
+  },
+  {
+    without: "A builder emails on Wednesday about an RSJ installation for a structural opening in a Victorian terraced house — removing a load-bearing wall between the kitchen and dining room, the structural engineer has specified a 203x133x25 UB with concrete padstones and temporary Acrow props during the installation. He needs the beam supplied and installed next Friday before the plasterer starts Monday. You are fabricating steelwork in the workshop — cutting, drilling, and welding end plates onto beams for a portal frame job. The email sits until Sunday.",
+    with: "Your AI acknowledges the builder's email within sixty seconds, referencing the Victorian terrace, load-bearing wall removal, 203x133x25 UB specification, padstones, and temporary propping. Sunday evening you confirm the beam is in stock and schedule Friday installation."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday with photos of a cracked lintel above a rear window and a sagging first-floor beam visible in the cellar. He messages three structural steelwork firms. You are at home. By Monday, two have replied with availability.",
+    with: "The AI responds within seconds, asks whether a structural engineer has assessed the beams, whether the property is terraced or detached, and the postcode. Monday at 8am you have a structured domestic steelwork lead with photos and engineering context."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Fabrication & Supply",
+    items: ["Portal frame fabrication for industrial and commercial buildings", "Universal beams and columns cut, drilled, and welded to specification", "Mezzanine floor steelwork with staircase and handrail fabrication", "Cellular and castellated beam fabrication for service integration", "CE marked steelwork to Execution Class 2 and 3", "Bespoke steelwork for architectural and feature designs"]
+  },
+  {
+    category: "Erection & Installation",
+    items: ["Multi-storey steel frame erection with mobile cranes", "RSJ and beam installation in domestic properties", "Portal frame erection for warehouses and distribution centres", "Mezzanine floor installation in retail and industrial units", "Structural beam replacement and strengthening", "Temporary propping and structural support during installation"]
+  },
+  {
+    category: "Design & Compliance",
+    items: ["Fabrication drawings from structural engineer specifications", "Connection design — end plates, fin plates, cleats, and haunches", "Structural calculations and engineer liaison", "Fire protection — intumescent paint and board encasement", "Bolt torque verification and snag remediation", "BCSA-standard quality management and inspection"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Developers",
+    description: "Main contractors subcontracting steel frame packages on commercial developments, industrial warehouses, and multi-storey buildings. Programme-critical work where a delay to the steel frame pushes cladding, roofing, concrete, and every follow-on trade backwards. The steelwork firm that responds fast and confirms a fabrication programme keeps the project on track."
+  },
+  {
+    icon: "🏠",
+    title: "Builders & Domestic Contractors",
+    description: "House builders and renovation contractors ordering RSJs for load-bearing wall removals, loft conversions, and structural openings. They coordinate between the structural engineer's specification, the steelwork supplier, and the follow-on trades. A steel firm that confirms beam supply and installation by Thursday keeps the plasterer on schedule."
+  },
+  {
+    icon: "🏭",
+    title: "Industrial & Commercial Clients",
+    description: "Warehouse operators, logistics companies, and factory owners commissioning portal frames, mezzanine floors, and structural extensions. They want a fabricator-erector that understands clear spans, eaves heights, loading requirements, and programme coordination with cladding and concrete contractors."
+  },
+  {
+    icon: "🏡",
+    title: "Homeowners",
+    description: "Homeowners needing RSJs for kitchen extensions, structural wall removals, and loft conversions. Often working from a structural engineer's beam schedule for the first time — they appreciate clear communication about beam sizes, propping requirements, building control, and installation timelines."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand structural steelwork terminology?",
+    answer: "The full vocabulary of fabrication and erection is built into the system — RSJ, universal beam (UB), universal column (UC), portal frame, braced frame, haunched rafter, purlin, eaves beam, valley beam, crane beam, cellular beam, castellated beam, mezzanine, base plate, holding-down bolt, end plate, fin plate, cleat, apex tie, knee brace, wind bracing, cross bracing, gable frame, bolted and welded connections, M20/M24 grade 8.8, torque wrench, intumescent paint, CE marking, Execution Class (EXC2/EXC3), and BCSA membership. When a developer describes 'an eighteen-metre clear span portal frame with haunched rafters, cellular purlins, and CE marking to EXC2,' the AI captures every specification."
+  },
+  {
+    question: "Can the AI distinguish a domestic RSJ from a commercial steel frame?",
+    answer: "A builder calling about 'fitting an RSJ in a terraced house — the engineer says it is a 203x133x25 UB with padstones' generates an entirely different lead from a developer describing 'a 5,000 square metre portal frame warehouse — 24-metre clear span, 8-metre eaves, haunched rafters, full cladding rail system, and a 160-tonne fabrication package.' The AI scales its questioning — domestic RSJ leads capture the beam specification, property type, and installation date, while commercial frames capture span, eaves height, loading, fabrication tonnage, and programme milestones."
+  },
+  {
+    question: "What about urgent beam replacement calls?",
+    answer: "A corroded lintel discovered during renovation, a cracked beam identified by a surveyor, or a structural defect requiring emergency propping and beam replacement — these generate urgent steelwork calls. The AI identifies the structural urgency, captures the beam location, the engineer's specification if available, and the access constraints, and escalates for priority scheduling."
+  },
+  {
+    question: "How much does this cost for a steelwork company?",
+    answer: `Structural steelworkers pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sole trader fitting domestic RSJs or a BCSA-member fabricator-erector running multi-storey steel frame programmes, the talk-time allowance accommodates your enquiry volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a small fabrication workshop?",
+    answer: "Smaller steelwork firms — a fabricator-erector with a welder and a workshop — benefit enormously. When the owner is in the workshop cutting beams on the bandsaw, drilling bolt holes on the Magdrill, and welding end plates with the MIG, the workshop noise and the physical demands make phone calls impossible. The AI captures every commercial tender and domestic RSJ booking while the sparks fly."
+  },
+  {
+    question: "Can I choose when calls go to the AI?",
+    answer: "Your coverage schedule is configured from the dashboard. During fabrication — workshop noise, welding, cutting, and drilling — route all calls to the AI. During office hours — producing fabrication drawings, pricing steelwork tenders, and coordinating crane hire — take calls yourself. Switch between modes from your phone at any point during the day."
+  },
+  {
+    question: "How is steelwork project data protected?",
+    answer: "Steelwork tenders contain structural drawings, fabrication schedules, connection details, tonnage calculations, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No tender details are disclosed to competing fabricators or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Structural Steelworkers | Rapid Receptionist"
+  description={`AI receptionist for UK structural steelworkers — steel fabrication, portal frames, RSJ installation, mezzanines, and erection. Never miss a tender while you bolt the beam. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/structural-steelworkers/ai-receptionist/"
+  tradeName="Structural Steelworker"
+  tradeNamePlural="Structural Steelworkers"
+  tradeSlug="structural-steelworkers"
+  headline="The AI Receptionist Built for Structural Steelworkers"
+  accentWord="Steelwork"
+  subhead={`You cannot answer the phone when you are fifteen metres up bolting a universal beam onto a column end plate, the crane holding four tonnes above your head, your erector guiding the beam into position. Your AI receptionist captures every call, every message, and every tender — from developers commissioning 200-tonne portal frame warehouses to builders needing a domestic RSJ for a kitchen wall removal. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Portal Frame Tender Arrives While You Torque the M24 Bolts"
+  ctaSubhead={`A developer with cladding contractors waiting needs the steel frame programme confirmed this week. If voicemail answers, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>
