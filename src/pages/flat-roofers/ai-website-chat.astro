@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Researching Flat Roof Options',
+    text: "Homeowners with leaking flat roofs research solutions obsessively — comparing GRP fibreglass, EPDM rubber, and torch-on felt refurbishment. When they land on your website, chat engages them during their most decisive research phase."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies Flat Roof System Needs',
+    text: "Through conversation, the AI identifies whether the visitor needs an emergency patch, a full GRP overlay, an EPDM replacement, or a commercial single-ply installation. You receive a pre-categorised lead aligned with your system specialisms."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Leak Panic',
+    text: "Rain starts after dark. A homeowner notices a damp patch spreading on the kitchen extension ceiling. At 10pm they type: 'Water is coming through our flat roof on the extension. It only leaks in heavy rain. The roof is about 15 years old — I think it is felt. Can you fix it or does it need replacing?' The chat captures the lead while the rain drums."
+  },
+  {
+    icon: '📊',
+    title: 'Explains Flat Roof Systems',
+    text: "Visitors ask endless questions — 'what is the difference between GRP and EPDM?', 'what is a warm roof?', 'how long does a fibreglass roof last?' The AI responds from your profile with helpful guidance while capturing their flat roof details."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Completed Project Photos',
+    text: "Flat roofing websites showcase completed fibreglass roofs — smooth grey topcoat, clean pre-formed trims, and simulated lead roll details. Chat converts visitors studying your finish quality into booked site measurements."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat comes with phone answering at £${pricing.tiers.core.price}/month. Unlimited flat roofing enquiry conversations — from bubbling GRP repairs to commercial membrane consultations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my flat roofing website?",
+    answer: "You receive a lightweight JavaScript snippet during onboarding. Paste it into your website header through WordPress, Wix, Squarespace, or any site builder's code injection feature. The branded chat widget appears site-wide within moments. Flat roofers installing it on portfolio sites with case study galleries report that visitors browsing completed GRP and EPDM photos engage with chat directly from the gallery page."
+  },
+  {
+    question: "Can the AI explain the difference between GRP and EPDM?",
+    answer: "Your company profile tells the AI which flat roofing systems you install and recommend. When a visitor asks 'we have been quoted for fibreglass and EPDM — what is better for our extension?' the AI responds using your profile context — explaining your recommended system and its advantages — and captures the extension dimensions, deck construction, and insulation requirements."
+  },
+  {
+    question: "What does chat capture from flat roofing visitors?",
+    answer: "The AI gathers the flat roof location (extension, garage, dormer, bay, porch, commercial), the current roof system and age, the problem (leak, ponding, blistering, delamination, or new build), the approximate area, whether insulation is required for building regulations, and contact details for your follow-up measurement visit."
+  },
+  {
+    question: "Does chat slow my flat roofing website?",
+    answer: "The widget loads after your page content has fully rendered — before-and-after GRP photos, simulated lead roll close-ups, EPDM case studies, and guarantee information display at their standard speed before the chat interface appears. Zero perceptible delay on any device."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Website chat is included in phone answering at £${pricing.tiers.core.price}/month under the Core plan. Flat roofers benefit from both channels working together: phone calls from builders needing urgent waterproofing, and evening website conversations from homeowners comparing GRP fibreglass, EPDM rubber, and torch-on felt options for their extension roof.`
+  },
+  {
+    question: "How is visitor data from flat roofing queries handled?",
+    answer: "Chat conversations containing property addresses, flat roof measurements, system specifications, leak descriptions, and visitor contact information are encrypted and stored on UK and EU servers under UK GDPR. Lead summaries go exclusively to you. No roof details reach competing flat roofers or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Flat Roofers & GRP Specialists | Rapid Receptionist"
+  description={`AI website chat for UK flat roofers and GRP specialists. Engages homeowners researching GRP, EPDM, and single-ply flat roof solutions. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/flat-roofers/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Flat Roofer"
+  tradeNamePlural="Flat Roofers & GRP Specialists"
+  tradeSlug="flat-roofers"
+  headline="AI Website Chat for Flat Roofer & GRP Specialist Companies"
+  accentWord="Flat Roofing"
+  subhead="A homeowner finds your website at 9pm on a Thursday. Her kitchen extension flat roof has been leaking intermittently for two years — patch repairs twice by different roofers, both using bitumen-based sealant that has cracked within months. The existing system is old three-layer built-up felt, visibly sagging in the centre where water ponds after every rainfall. She has been researching GRP fibreglass for six months and wants a permanent solution. She types: 'Good evening — our kitchen extension flat roof has been leaking on and off for two years. Two roofers have patched it with sealant and it keeps failing. The existing roof is old felt and water ponds in the middle after rain. We want to replace it with GRP fibreglass with proper drainage falls. The extension is about 5 metres by 3 metres. There is an upstand against the house wall at the back and sides, and a gutter along the front. Do you strip the old felt off or go over it? How long does a GRP roof last? How long would the work take?' Without chat, she bookmarks your site and revisits next weekend. With AI Website Chat, the AI explains that GRP is typically installed over a new plywood deck with falls built in using firring strips, asks whether the existing joists are accessible from below for insulation, and captures the lead — kitchen extension, 5x3m, old felt, ponding, two failed patches, GRP replacement, upstand three sides, gutter front. Friday you call with full context and book Monday's measurement."
+  scenario="It is midnight on a Saturday. A builder in Eynsham is pricing a large garden room project for a client — a 40 square metre timber-framed structure with floor-to-ceiling glazing, a flat roof, and underfloor heating. The architect's drawings specify a warm roof construction: vapour control layer, 120mm Kingspan Therma PIR insulation, 18mm plywood deck, and a GRP fibreglass waterproofing system with simulated lead roll details along the parapet edges. He needs a flat roof price to complete his tender by Tuesday. He types: 'Hi — I am pricing a garden room build and need a flat roof price. 40 square metres, timber frame. Architect specifies warm roof — VCL, 120mm Kingspan, ply deck, GRP fibreglass, simulated lead rolls on three parapet edges. I can have the frame and deck ready in 4 weeks. Eynsham, OX29. Can you give me a supply-and-fix price? Also — what thickness topcoat do you use? The architect is particular about finish quality.' Without chat, he emails Monday and waits. With AI Website Chat, the AI asks about the parapet height, whether the gutter is internal or external, and the fall direction for drainage. He provides details. Monday you call: 40 sqm garden room, Eynsham, warm roof, 120mm Kingspan, GRP with simulated lead rolls, parapet three sides, quality-conscious architect, 4-week start."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/flat-roofers/ai-receptionist/"
+  ctaHeadline="Win the 5x3 GRP Extension While She Compares Patch Repairs at 9pm"
+  ctaSubhead={`A homeowner with two failed felt patches wants permanent GRP with proper falls. Your chat explains the solution and books the measurement. Included at £${pricing.tiers.core.price}/month.`}
+/>

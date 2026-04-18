@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While the Resin Sets',
+    text: "GRP laminating is time-critical — once the catalyst is mixed, you have minutes to roll the CSM mat into the wet resin before gelation. Torch-on work demands a live flame and constant concentration. The AI answers every call in your company name while you finish the layup or weld the next seam."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Flat Roof Briefs at Every Scale',
+    text: "When a developer calls about single-ply membrane across a 1,200 square metre commercial roof deck, the AI captures the membrane specification, insulation build-up, and programme. When a homeowner calls about a dripping bay window, the AI captures the roof type, leak location, and urgency."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Emergency Flat Roof Leaks',
+    text: "Flat roof leaks penetrate directly into the room below — no loft buffer, no attic space, just immediate ceiling damage. A kitchen extension dripping onto the worktops during rainfall demands same-day response. The AI captures the leak severity, roof system, and access details for emergency scheduling."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Extension Enquiries',
+    text: "Homeowners planning kitchen extensions, garden rooms, and orangeries research flat roofing options after work — GRP versus EPDM, warm roof versus cold roof, and guarantee comparisons. The AI captures every evening flat roofing call while you relax."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Built for Specification',
+    text: "Each lead specifies the flat roof type, area, current system if existing, the problem or project scope, insulation requirements, and programme — everything needed to measure the deck and calculate your resin, mat, and topcoat quantities."
+  },
+  {
+    icon: '🏷️',
+    title: 'Specialist Flat Roof Professionalism',
+    text: "A flat roofing company that answers professionally and asks about the roof system, warm roof requirement, and drainage falls signals certified expertise — the specialist that builders trust to waterproof their extension deck without callbacks."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their flat roof?",
+    answer: "Questions adapt to the project context. A homeowner with a leak is asked about the flat roof location (extension, garage, bay, porch, dormer), the current waterproofing system (felt, GRP, rubber, or unknown), the leak behaviour (constant drip, rain-dependent, or wind-driven), the roof age, and whether water is actively entering the property. A builder needing an extension waterproofed is asked about the deck construction (timber or concrete), the intended system (GRP, single-ply, or EPDM), the area in square metres, the insulation requirement, and the programme."
+  },
+  {
+    question: "Can the AI handle both repair calls and new installation tenders?",
+    answer: "Emergency leak repairs require immediate triage — active water ingress, ceiling damage, and same-day tarp-and-patch scheduling. New installation tenders need methodical specification — warm roof build-up layers, membrane selection, tapered insulation design, and programme coordination with the main contractor. The AI generates fundamentally different lead structures for each, ensuring your repair queue and your tender pipeline remain distinct."
+  },
+  {
+    question: "What about calls during active laminating?",
+    answer: "GRP laminating is the single most time-sensitive trade operation in construction — the catalysed resin begins to gel within minutes, and any interruption risks adhesion failure, bridging, and a compromised waterproof seal. The AI handles every call during the layup process identically to an office-hours response, ensuring no builder's extension enquiry or developer's commercial tender is lost to a twelve-minute chemical window."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `Your Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Flat roofing firms receive a blend of homeowner leak calls, builder extension waterproofing requests, commercial re-roofing tenders, and insurance repair claims. The majority of GRP specialists and single-ply installers operate within the allowance comfortably. Overage is 20p per minute with no lock-in.`
+  },
+  {
+    question: "Can I take calls during office time?",
+    answer: "When you are at the desk — calculating resin-to-catalyst ratios, ordering CSM mat from the supplier, designing tapered insulation layouts, and invoicing completed jobs — handle calls yourself. Redirect to the AI the moment the primer goes on the deck and the laminating begins. Switch modes from your phone whenever circumstances change."
+  },
+  {
+    question: "How is flat roofing project data secured?",
+    answer: "Flat roofing enquiries contain property addresses, roof area measurements, membrane specifications, insulation details, and commercially sensitive pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details reach competing flat roofers, are shared with membrane suppliers, or are sold to lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Flat Roofers & GRP Specialists | Rapid Receptionist"
+  description={`AI phone answering for UK flat roofers and GRP specialists. Captures extension waterproofing, commercial membrane tenders, and emergency leak calls while you laminate. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/flat-roofers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Flat Roofer"
+  tradeNamePlural="Flat Roofers & GRP Specialists"
+  tradeSlug="flat-roofers"
+  headline="AI Phone Answering for Flat Roofer & GRP Specialist Companies"
+  accentWord="Flat Roofing"
+  subhead="A builder calls at 10:30am. He is finishing a single-storey rear extension on a Victorian terrace in Jericho — the structural opening is in, the steels are bolted, the studwork and roof joists are complete, and his joiner has laid the 18mm WBP plywood deck across the flat roof. He needs a GRP specialist to install a warm roof build-up — 100mm Celotex PIR insulation bonded to the deck, a vapour control layer beneath, and a full GRP fibreglass system on top with pre-formed edge trims on three sides, an upstand and lead flashing cover against the existing house wall, and a simulated lead roll detail along the parapet. Total area: twenty-eight square metres. His plasterer starts Monday — he needs the GRP weathertight by Friday. You are on another GRP job in Botley — the primer coat is drying on the plywood deck of a garden room, the resin is mixed, the catalyst measured at 2% MEKP, and your first sheet of CSM 450g is positioned ready to roll. In ninety seconds the resin will be workable and you must lay, roll, and consolidate the mat before gelation. Your phone is in the van. Without AI Phone Answering, the builder hears voicemail and calls the next GRP installer. With it, the AI captures the complete brief — Jericho Victorian terrace extension, 28 sqm, Celotex 100mm warm roof, VCL, GRP fibreglass, pre-formed trims, upstand with lead cover, simulated lead roll, weathertight by Friday — and your lead waits."
+  scenario="It is 3pm on a Tuesday in February. Heavy rain arrived at noon and three flat roof leak calls come in between 1pm and 3pm. Without AI Phone Answering, you took one call on the scaffold — struggling to hear over the rain on your hard hat while inspecting a failed torch-on overlay on a commercial unit in Cowley — and two went to voicemail. With AI Phone Answering, all three are answered. Lead one: a homeowner in Abingdon with an EPDM rubber roof on their kitchen extension — the adhesive has failed at the upstand and water is tracking down the inside of the wall during rainfall, visible damp patch growing hourly. Lead two: a landlord in Kidlington with a 1960s flat-roofed house — the original built-up felt has reached end of life, water ponding in the centre, and the tenant reporting ceiling staining in two rooms. He wants a full strip and GRP overlay with proper falls. Lead three: a facilities manager at a school in Witney — a section of single-ply membrane on the flat-roofed sports hall has been punctured by maintenance access foot traffic on a route to plant equipment. Approximately fifteen square metres of membrane damage. Each lead has the roof system, damage description, and urgency. At 4pm you schedule the Abingdon emergency for Wednesday morning and quote the Kidlington GRP re-roof for next week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/flat-roofers/ai-receptionist/"
+  ctaHeadline="Capture the Jericho Extension Brief While the CSM Rolls into Wet Resin"
+  ctaSubhead={`A builder needs his 28 sqm extension deck waterproofed by Friday. The plasterer starts Monday. The AI captured the full warm roof specification while you laminated in Botley. From £${pricing.tiers.core.price}/month.`}
+/>

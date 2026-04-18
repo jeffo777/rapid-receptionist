@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Flat Roof Damage Photos',
+    text: "Homeowners and builders WhatsApp photos of blistered GRP, split felt seams, ponding water, and delaminated EPDM edges. The AI responds within seconds, asks about the leak behaviour and roof age, and attaches every photo to your repair lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Extension Waterproofing Jobs',
+    text: "Builders completing extension decks need GRP specialists fast — the plasterer is booked, the kitchen fitter scheduled, and the flat roof must be weathertight before either can start. The first GRP firm to reply books the laminating slot."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Builder Subcontract Messages',
+    text: "Builders WhatsApp GRP requests mid-project — 'extension deck is down, 22 sqm, can you GRP it next week?' The AI confirms your capability and asks about the deck material, insulation requirement, and fall direction while you cure topcoat on another roof."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Laminating Hours',
+    text: "Homeowners notice flat roof problems in the evening — standing water visible from an upstairs window, a damp patch appearing during rain, or bubbled topcoat peeling at the edges. The AI captures every after-hours flat roofing concern."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Flat Roof Briefs',
+    text: "A WhatsApp saying 'extension GRP roof leaking at the upstand, about 4 years old, 3x4m, Headington' becomes a structured repair lead with system type, failure location, age, area, and postcode."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp operates on your business number. Roof specifications, damage documentation, and client correspondence stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI diagnose flat roof failure from photos?",
+    answer: "Structural diagnosis is beyond the AI's scope — only a qualified flat roofer on the roof can assess delamination depth, substrate condition, and insulation saturation. However, the AI responds constructively to every photograph — acknowledging the visible damage, asking whether water enters the building during rain, the roof system age, and whether previous repairs have been attempted. Every image attaches to your lead for professional assessment during your site visit."
+  },
+  {
+    question: "What about multi-message flat roof threads?",
+    answer: "Flat roof conversations evolve naturally — a homeowner sends a photo of standing water, then a close-up of cracked topcoat, then asks about GRP versus replacing the whole roof, then confirms the extension dimensions. The AI maintains the complete thread history and compiles every piece into one consolidated flat roofing lead with system, condition, area, and project scope."
+  },
+  {
+    question: "How much does AI WhatsApp cost for flat roofing firms?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. A domestic GRP flat roof typically generates £1,500 to £4,000 in revenue. A commercial single-ply re-roof generates £15,000 to £80,000. Securing one builder's extension waterproofing job through a rapid WhatsApp reply — while you consolidated CSM mat on another deck — covers the channel cost immediately.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Post one reply in any thread and the AI hands control to you permanently. It detects your message and withdraws. Most flat roofers let the AI gather the initial specification — roof system, failure mode, area, insulation requirement, and programme urgency — then engage to discuss the measurement visit, system recommendation, and quotation."
+  },
+  {
+    question: "How is WhatsApp data from flat roofing enquiries protected?",
+    answer: "Every WhatsApp message — flat roof photographs, property locations, membrane specifications, insulation details, and sender contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively with you. No roof details reach competing flat roofers or are used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Flat Roofers & GRP Specialists | Rapid Receptionist"
+  description={`AI WhatsApp for UK flat roofers and GRP specialists. Responds to ponding photos, builder extension requests, and EPDM repair enquiries while you laminate. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/flat-roofers/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Flat Roofer"
+  tradeNamePlural="Flat Roofers & GRP Specialists"
+  tradeSlug="flat-roofers"
+  headline="AI WhatsApp for Flat Roofer & GRP Specialist Companies"
+  accentWord="Flat Roofing"
+  subhead="A builder WhatsApps at 7am on a Wednesday with two photos. He has just completed the timber frame and plywood deck for a single-storey side return extension on a terraced house in Cowley — the photos show 18mm WBP plywood screwed across the joists, the wall plate trimmed neatly, and the existing house wall exposed on one side for the upstand. His message: 'Morning — side return extension in Cowley. Deck is down, plywood, about 16 square metres. Need GRP fibreglass with a warm roof build-up. Architect wants 80mm Celotex, VCL, GRP topcoated in dark grey. Upstand against the house wall on the left side and back. Drip edge trim at the front into the gutter. Can you measure and price today? My window fitter is in next Monday and needs a weathertight roof above him. Photos attached.' You are loading the van with resin drums, CSM rolls, and acetone for today's bay window GRP job in Marston. Both hands on the resin containers. Without AI WhatsApp, the text waits until the first tea break at 9:30. He messages two other GRP installers; one confirms by 7:45. With it, the AI responds at 7:01am, asks whether the joists run parallel or perpendicular to the fall direction, and captures the lead — Cowley side return, 16 sqm, plywood deck, 80mm Celotex warm roof, VCL, GRP dark grey topcoat, upstand left and rear, drip edge front, window fitter Monday."
+  scenario="It is 9pm on a Sunday. A homeowner in Charlbury has been watching a blister on her GRP flat roof grow over three months. Tonight she photographed it from the landing window — a raised area about 300mm across on the topcoat surface, the grey finish cracked around the edge. She also photographed the inside — a corresponding damp patch on the ceiling below, lighter brown but clearly moisture. She WhatsApps three GRP firms: 'Hi — we have a GRP fibreglass roof on our kitchen extension that is about 7 years old. There is a blister forming on the surface — about the size of a dinner plate — and the topcoat is cracking around it. Inside, there is a damp mark on the ceiling directly below. Is this something you can repair or does the whole roof need redoing? The extension is about 4 metres by 3 metres. It was done by the builder who did the extension but I do not think he was a specialist. Photos attached. Charlbury, OX7.' Without AI WhatsApp, you see the message Monday morning. One firm replied at 9:20pm. With AI WhatsApp, the reply arrives at 9:01pm: 'Thank you for the photos — blistering with cracked topcoat after seven years can indicate trapped moisture between the laminate layers, often from the original installation. Could you confirm whether the blister feels soft or hard when pressed, and whether the roof has any areas where water sits after rain?' She confirms soft blister and ponding at the back. Monday you call: GRP extension, Charlbury OX7, 7 years old, 4x3m, blistering with cracked topcoat, soft blister, damp underneath, ponding rear, non-specialist original installation."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/flat-roofers/ai-receptionist/"
+  ctaHeadline="Confirm the Cowley Side Return While You Load the Resin Drums"
+  ctaSubhead={`A builder's deck is down and the window fitter arrives Monday. The AI captured the warm roof specification while you loaded the van. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Commercial Membrane Tenders',
+    text: "Facilities managers and developers email flat roofing tenders with membrane specifications, insulation schedules, and programme requirements. The flat roofer that acknowledges first — referencing the membrane system, area, and build-up — stays on the tender shortlist."
+  },
+  {
+    icon: '📐',
+    title: 'References System Specifications',
+    text: "When a developer emails specifying 'Sika Sarnafil S327 single-ply, 1.5mm, mechanically fixed, over 150mm tapered Kingspan PIR, VCL to concrete deck, aluminium perimeter trim, 650 square metres,' the AI acknowledgement references the membrane, insulation, fixing method, and area."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Laminating Hours',
+    text: "Flat roofers spend entire days on decks — laminating GRP, welding single-ply seams, and torching felt. A developer's specification arriving at 9am sits unread until 5pm. The instant acknowledgement positions your firm ahead of every competing flat roofing specialist."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Suppliers',
+    text: "Your inbox mixes developer tenders, resin supplier invoices, insulation delivery confirmations, membrane manufacturer training updates, and NFRC correspondence. The AI identifies genuine project tenders and client enquiries."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Specifier Confidence',
+    text: "Architects and developers specifying flat roof systems need reliable installers with manufacturer accreditation. Consistent instant acknowledgements referencing membrane systems and insulation build-ups establish your firm as the flat roofing specialist they specify into every project."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Flat roofing tenders include roof plans, drainage layouts, insulation schedules, upstand details, and outlet positions. The AI notes these attachments in the acknowledgement and your lead summary."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce flat roofing quotes from tenders?",
+    answer: "The AI never generates pricing — it sends a professional receipt acknowledgement referencing the membrane system, insulation specification, and project scope. Your flat roofing quotation — membrane material, insulation boards, VCL, adhesives, trims, outlets, labour, access equipment, and programme — is calculated by you from the measured roof survey and the specification drawings."
+  },
+  {
+    question: "Will it respond to resin supplier and merchant emails?",
+    answer: "You configure during onboarding which email categories trigger the acknowledgement. Resin delivery confirmations, CSM mat supplier invoices, insulation board delivery notes, membrane manufacturer technical bulletins, and NFRC accreditation correspondence are excluded. Only genuine tenders and project enquiries receive the professional response."
+  },
+  {
+    question: "How does it handle homeowner contact form enquiries?",
+    answer: "Homeowner emails through your website contact form — 'our flat roof keeps leaking and we have had enough of patches, can you come and look?' — receive a professional reply asking about the existing roof system, the flat roof location (extension, garage, bay, porch), the approximate area, and whether they have a preference for the replacement system."
+  },
+  {
+    question: "What does email response cost for flat roofing firms?",
+    answer: `Email response is £${pricing.addOn.price}/month as an add-on. A commercial single-ply installation generates £15,000 to £80,000 in revenue. Acknowledging a facilities manager's membrane tender within sixty seconds — while you consolidated GRP laminate on a domestic extension — frequently determines whether your firm receives the full specification pack and site visit invitation.`
+  },
+  {
+    question: "Can all follow-up tender correspondence come from me?",
+    answer: "Once the receipt acknowledgement is issued, every subsequent communication comes from you. Your measured survey, membrane calculation, insulation schedule, tapered scheme layout, quotation, method statement, and warranty documentation are authored and submitted by you and your estimating team."
+  },
+  {
+    question: "How is flat roofing tender data secured?",
+    answer: "Flat roofing tenders contain roof plans, drainage layouts, membrane specifications, insulation schedules, and commercially sensitive pricing. All email content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender information reaches competing flat roofers or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Flat Roofers & GRP Specialists | Rapid Receptionist"
+  description={`AI email response for UK flat roofers and GRP specialists. Acknowledges commercial membrane tenders, builder extension requests, and leak repair enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/flat-roofers/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Flat Roofer"
+  tradeNamePlural="Flat Roofers & GRP Specialists"
+  tradeSlug="flat-roofers"
+  headline="AI Email Response for Flat Roofer & GRP Specialist Companies"
+  accentWord="Flat Roofing"
+  subhead="A facilities manager emails a comprehensive flat roof refurbishment tender for a two-storey office building in Oxford Business Park — the existing three-layer built-up felt roof has failed after twenty-five years, with widespread ponding across the 480 square metre deck, multiple patch repairs using liquid bitumen that have cracked and failed, and water ingress into the offices below requiring bucket management during rainfall. The specification calls for a complete strip back to the concrete deck, new Sika Sarnafil S327-18 single-ply membrane mechanically fixed, 120mm tapered Kingspan PIR insulation creating Falls to eight new aluminium rainwater outlets, a VCL bonded to the concrete, aluminium perimeter trim with welded upstand corners at every parapet, and lightning conductor through-roof penetration detailing. Tender return in three weeks. Site access available Monday to Friday only. You are on a GRP domestic job in Woodstock — laminating the second coat of CSM 600g mat into catalysed resin on a dormer cheek, the flowcoat brush loaded, the bandage strip cut for the upstand detail. Your phone is inside the client's house. Without AI Email Response, the 480 sqm office refurbishment tender sits until the evening. Two competing single-ply firms acknowledged within the hour. With it, your acknowledgement arrives within sixty seconds, referencing the 480 sqm office, Sarnafil S327-18, mechanical fixing, 120mm tapered Kingspan, eight outlets, VCL to concrete, aluminium perimeter, lightning conductor detail, and the three-week tender return."
+  scenario="It is 7am on a Monday. Your inbox accumulated over the weekend: a builder requesting a GRP flat roof price for a porch canopy in Summertown — 'the joiner has built the frame, deck is plywood, about 6 square metres, needs GRP with a drip edge and upstand against the brickwork,' a property developer requesting an EPDM price for six individual flat roofs on a new-build mews development in Abingdon — 'Firestone RubberCover, warm roof build-up, 80mm Celotex, tapered for falls, approximately 15 sqm each,' an architect specifying a liquid-applied system for a complex roof with many penetrations on a school extension in Witney — 'Kemper system recommended due to multiple rooflights and service penetrations, about 120 square metres,' and a membrane supplier confirming next week's Sarnafil delivery. Without AI Email Response, you prioritise while driving. The office refurbishment and mews development tenders sit until Tuesday. Two competitors responded Monday morning. With AI Email Response, the office tender gets an immediate acknowledgement referencing Sarnafil and tapered Kingspan, the mews EPDM specification is acknowledged with Firestone and Celotex noted, the school Kemper enquiry is handled, and the supplier email is filtered. At the yard you prioritise the 480 sqm office — estimated value £45,000."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/flat-roofers/ai-receptionist/"
+  ctaHeadline="Acknowledge the 480 sqm Sarnafil Tender While You Laminate the Woodstock Dormer"
+  ctaSubhead={`A facilities manager's three-week tender return for a mechanically-fixed single-ply refurbishment starts when the email lands. Your sixty-second acknowledgement captures the shortlist position. Add-on at £${pricing.addOn.price}/month.`}
+/>

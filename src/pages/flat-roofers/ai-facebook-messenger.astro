@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts GRP Before-and-After Content',
+    text: "Flat roof transformations are visually dramatic — a tired, ponding felt roof replaced with a smooth, grey-topcoated GRP surface with clean pre-formed trims and simulated lead roll details. When a homeowner messages about their own leaking felt, the AI captures the replacement lead."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Roof Condition Photo Messages',
+    text: "Homeowners message with photos of ponding water, blistered topcoat, cracked felt seams, and delaminated EPDM edges — 'is this fixable or does it need replacing?' The AI asks about the leak severity, roof age, and previous repairs, converting anxious messages into structured leads."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Extension Builder Interest',
+    text: "Builders browsing your Facebook page for GRP portfolio examples message from site — 'extension deck going down this week, can you price the GRP?' The AI captures the enquiry while the builder's programme clock is ticking."
+  },
+  {
+    icon: '🕐',
+    title: 'Active During Evening Rainfall',
+    text: "Flat roof leaks become visible during rain — drips appear, ceiling stains spread, and urgency rises. Messages at 9pm about 'water coming through the extension ceiling right now' represent the most action-ready homeowners."
+  },
+  {
+    icon: '📋',
+    title: 'Qualifies System Replacement Scope',
+    text: "Messenger conversations start broadly — 'how much for a new flat roof?' The AI asks about the roof location, current system, area, whether insulation is needed, and the drainage situation — building a quotable replacement specification."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Topcoat Close-Up',
+    text: "Every smooth GRP finish, crisp drip edge detail, and simulated lead roll photo generates potential replacement leads from homeowners comparing their cracked felt to your pristine fibreglass."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my flat roofing firm?",
+    answer: "A Facebook Business page is required for the Messenger integration — personal profiles cannot connect. Flat roofers posting GRP transformation galleries, EPDM installation sequences, and topcoat close-up shots attract engagement from homeowners actively comparing their leaking felt to your professionally finished fibreglass."
+  },
+  {
+    question: "What flat roofing enquiries come through Messenger?",
+    answer: "Predominantly homeowners frustrated with leaking repairs and builders needing extension waterproofing. Homeowners message about persistent felt leaks, ponding, and GRP blister repairs. Builders message about deck-ready extension roofs needing GRP, EPDM, or single-ply installation. Each sender has reviewed your flat roof portfolio and identified your firm as capable of the waterproofing quality they require."
+  },
+  {
+    question: "How fast does the AI reply to flat roof messages?",
+    answer: "Replies reach the sender within seconds of the message landing. Facebook's active indicator shows your flat roofing firm is immediately available. Homeowners messaging about rainfall dripping through their extension ceiling during a storm need an instant response that acknowledges the urgency and asks the right diagnostic questions about system type and leak location."
+  },
+  {
+    question: "What does Messenger cost for flat roofing firms?",
+    answer: `Messenger is £${pricing.addOn.price}/month as a channel add-on. A domestic GRP flat roof generates £1,500 to £4,000 in revenue. One homeowner's complete GRP replacement — captured through a prompt Messenger reply to a rainy evening leak panic while competing firms' messages accumulated — covers the channel cost for the foreseeable future.`
+  },
+  {
+    question: "Can I continue Messenger conversations personally?",
+    answer: "Post one reply in any Messenger thread and the AI steps aside for good. Most flat roofers let the AI capture the initial details — roof system, failure type, area, insulation needs, and programme — then follow up to arrange the site measurement, discuss system options, and provide the quotation."
+  },
+  {
+    question: "How is Messenger data from flat roofing queries protected?",
+    answer: "All Messenger conversations, roof condition photographs, property locations, system specifications, and sender contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. No roof specifications reach competing flat roofers, are shared with membrane suppliers, or are available to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Flat Roofers & GRP Specialists | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK flat roofers and GRP specialists. Converts GRP and EPDM transformation galleries into flat roof replacement bookings. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/flat-roofers/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Flat Roofer"
+  tradeNamePlural="Flat Roofers & GRP Specialists"
+  tradeSlug="flat-roofers"
+  headline="AI Facebook Messenger for Flat Roofer & GRP Specialist Companies"
+  accentWord="Flat Roofing"
+  subhead="You post three photos of a completed GRP flat roof on a kitchen extension in Botley — the first shows the old roof: sagging felt, standing water in the centre, and cracked bitumen patches at the upstand. The second shows the new build-up: 80mm Celotex PIR insulation with firring strips creating a 1:60 fall toward the outlet, VCL beneath, and fresh 18mm plywood screwed across the firring. The third shows the finished GRP — smooth dark grey topcoat, pre-formed angle trims tight against the house wall, a neat drip edge into the aluminium gutter, and a simulated lead roll along the garden-facing parapet. One hundred and twelve likes, thirty-eight shares. A homeowner in Headington messages: 'Our extension roof looks exactly like your before photo — felt, water sitting in the middle, damp patches inside. It is about 4 metres by 4 metres. How much would a GRP replacement like yours cost? We want the same dark grey finish and the proper edge detail. Do you remove the old felt first? Would we need insulation added?' You are on another GRP job. Without AI Messenger, the message waits until the topcoat cures. With it, the AI explains that old felt is stripped, proper falls are created with firring strips, and insulation is added to meet building regulations. It asks whether the extension has a parapet, a drip edge to a gutter, or both. She confirms parapet on one side and gutter on two sides. Tuesday you call: Headington extension, 4x4m, felt replacement, GRP dark grey, wants your Botley finish, parapet one side, gutter two sides."
+  scenario="It is 11pm on a Thursday. A landlord in Witney manages six rental properties and two have flat roof issues. Property one has an EPDM rubber roof on a single-storey rear extension — installed five years ago but the adhesive has lifted at the perimeter, allowing wind-driven rain under the membrane. Property two has original 1970s three-layer felt on a flat-roofed garage — the felt has completely perished, water enters freely, and the garage ceiling is stained black with mould. He messages: 'Hi — got two properties in Witney both needing flat roofs. One is EPDM that the wind keeps lifting — about 12 sqm extension. One is 1970s felt on a garage, totally knackered — about 18 sqm. Want both done in GRP so I never have to think about them again. Both currently empty between tenants. Can you do both in the same week to save me a trip? What would a package price for both look like?' Without AI Messenger, the message waits until Friday morning. One competitor replied at 11:20pm. With AI Messenger, the reply arrives at 11:01pm: 'Thank you — combining both properties in the same week is efficient and we regularly package multi-property flat roof work for landlords. Could you confirm whether either property needs insulation added for building regulations, and what type of deck is beneath each roof?' He confirms timber decks on both. Friday you call: two Witney rentals, EPDM lifting 12 sqm, 1970s felt 18 sqm, both GRP, both void, same week package."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/flat-roofers/ai-receptionist/"
+  ctaHeadline="Turn a 112-Like Botley GRP Transformation into a Headington Extension Booking"
+  ctaSubhead={`Three photos of smooth dark grey topcoat earn one hundred and twelve likes. AI Messenger converts every homeowner message into a flat roof replacement with insulation and edge details. Add-on at £${pricing.addOn.price}/month.`}
+/>

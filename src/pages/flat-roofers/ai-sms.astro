@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Builder Deck-Ready Texts',
+    text: "Builders text flat roofers when the deck is finished — 'plywood down, need GRP Wednesday, 18 sqm, warm roof.' The first GRP specialist to confirm takes the booking. A delayed reply means the builder books a competitor."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Flat Roof Briefs from Fragments',
+    text: "A text like 'leaking flat roof, old felt, garage, about 15 sqm, Botley, need quote' gives the AI enough to work with. It asks about the insulation requirement and drainage. Your lead arrives ready for measurement."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Referral Texts Instantly',
+    text: "When a builder recommends your GRP work to a homeowner, that homeowner texts about their leaking extension. The AI captures the referral while the builder's endorsement is freshest in the homeowner's mind."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Curing Hours',
+    text: "Homeowners text about flat roof concerns after work. Builders confirm extension schedules in the evening. Property managers send repair requests after hours. The AI captures every after-hours flat roofing text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Specifications',
+    text: "Messages arrive in pieces — 'need GRP' then 'kitchen extension' then 'warm roof' then '80mm insulation' then 'about 20 sqm.' The AI builds one cohesive flat roofing specification from every fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS operates on your business number. Roof specifications, resin orders, and client scheduling stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound flat roofing text?",
+    answer: "Each inbound text triggers a branded reply in your company name within seconds. A builder's precise specification — 'extension deck ready, 22 sqm, warm roof, Celotex 100mm, GRP fibreglass, upstand three sides, drip trim front, OX2, can you do Thursday?' — is acknowledged with every detail preserved. A homeowner's concerned message — 'flat roof on our garage is leaking again' — prompts questions about the roof system, age, and whether any previous repairs have lasted."
+  },
+  {
+    question: "Will homeowners recognise the AI?",
+    answer: "The reply reads like a flat roofing specialist checking messages between catalyst mixes — specification-aware, practical, and technically competent. It references roof systems, insulation types, and drainage features. Homeowners texting about persistent flat roof leaks expect a knowledgeable reply that demonstrates the difference between a quick-fix patch and a proper GRP or EPDM solution."
+  },
+  {
+    question: "How does it handle existing project texts from builders?",
+    answer: "Current builder clients text about programme changes, material confirmations, and additional scope. The AI captures these and separates them from new enquiries. Your dashboard distinguishes a new homeowner's leak call from an existing builder confirming that the firring strips are cut and the deck is ready for your warm roof build-up."
+  },
+  {
+    question: "What does AI SMS cost for flat roofing firms?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A domestic GRP flat roof generates £1,500 to £4,000 in revenue. Capturing one builder's extension waterproofing through a rapid text reply — while you applied topcoat on another roof — produces revenue that exceeds the annual channel cost from a single project.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send a reply in any thread and the AI yields immediately. During quoting and material ordering — manage texts directly. During active laminating and torch-on work — when both hands are occupied and concentration is critical — let the AI handle commercial messages while the resin cures."
+  },
+  {
+    question: "How is text data from flat roofing enquiries stored?",
+    answer: "Text messages containing property addresses, flat roof specifications, system details, damage descriptions, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing flat roofers or repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Flat Roofers & GRP Specialists | Rapid Receptionist"
+  description={`AI SMS for UK flat roofers and GRP specialists. Responds to builder deck-ready texts, leak reports, and extension waterproofing requests while you laminate. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/flat-roofers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Flat Roofer"
+  tradeNamePlural="Flat Roofers & GRP Specialists"
+  tradeSlug="flat-roofers"
+  headline="AI SMS for Flat Roofer & GRP Specialist Companies"
+  accentWord="Flat Roofing"
+  subhead="You are at 8am on a Monday, spreading dark grey GRP topcoat across a completed laminate on a garage roof in Marston — the roller loaded with pigmented flowcoat, the surface smooth from consolidation, and the final finish going on in even strokes before the morning dew threatens adhesion. At 8:15am a builder texts: 'Morning — orangery extension deck ready in Headington. 32 square metres, plywood on firring strips for falls. Client wants warm roof — 100mm Kingspan, VCL underneath, full GRP system, dark grey topcoat matching the main house extension I did last year. Need simulated lead roll along the front parapet and both return walls. Pre-formed angle trims throughout. Glazing contractor arrives Thursday — need it weathertight by Wednesday evening. Can you start tomorrow?' Your hands are coated in topcoat and the roller is mid-stroke. Without AI SMS, the text waits until the topcoat is cured and you clean up at 10am. He texts two other GRP firms; one confirms by 8:30. With it, the AI responds at 8:16am, confirms your warm roof GRP capability, and asks whether the parapet has a coping or requires a fibreglass upstand detail. The builder confirms aluminium coping installed. At 10am you review: orangery Headington, 32 sqm, firring falls, Kingspan 100mm, VCL, GRP dark grey, simulated lead roll three parapets, pre-formed trims, glazier Thursday, start tomorrow."
+  scenario="It is 7:30pm on a Wednesday. A landlord in Kidlington has received a tenant complaint — persistent damp in the ground-floor bedroom of a flat-roofed 1960s maisonette. The felt roof above has been patched twice in two years and the tenant reports mould growing on the bedroom wall. The landlord wants to strip the old built-up felt entirely, insulate to current building regulations, and install a new GRP fibreglass system that he never has to think about again. He texts three flat roofers: 'Hi — rental property in Kidlington, 1960s maisonette with flat felt roof. Tenant complains of damp and mould in the bedroom below. Felt has been patched twice, still leaks. I want to strip the lot and go GRP or EPDM — whichever lasts longest. About 35 square metres. Need insulation added too — probably needs to meet building regs now. Current void period starts in 2 weeks so want it done then. Can you price?' Without AI SMS, you see the text Thursday morning. One competitor replied at 8pm. With AI SMS, the response arrives at 7:31pm: 'Thank you — stripping built-up felt and installing a warm roof GRP system with PIR insulation is the permanent solution for a flat roof of that age. Could you confirm whether the existing deck is timber or concrete, and whether there is any visible deflection or sagging in the ceiling below?' He confirms timber deck with slight sag. Thursday you call: 1960s maisonette, Kidlington, 35 sqm, built-up felt strip, warm roof GRP, insulation upgrade, building regs, timber deck with sag, void period 2 weeks."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/flat-roofers/ai-receptionist/"
+  ctaHeadline="Confirm the 32 sqm Orangery While the Topcoat Cures in Marston"
+  ctaSubhead={`A builder's orangery deck is ready and the glazier arrives Thursday. The AI confirmed your warm roof GRP specification while you rolled topcoat. Add-on at £${pricing.addOn.price}/month.`}
+/>

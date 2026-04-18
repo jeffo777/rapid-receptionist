@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Laminating',
+    text: "Catalysed resin and CSM mat going into wet layup, topcoat rolling across a cured surface, torch-on felt being heated with a propane burner — every flat roofing process demands total hand and eye commitment. Missed Call Text Back sends a branded text to every unanswered caller instantly."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Builder Programme Callers',
+    text: "A builder with a deck ready and a plasterer booked calls his preferred GRP specialist. Voicemail? He calls the next firm. A branded text — 'Thanks for calling — we are currently laminating and will return your call when the topcoat cures' — keeps your booking priority while the resin sets."
+  },
+  {
+    icon: '🏷️',
+    title: 'Specialist Professional Image',
+    text: "An instant branded text from a flat roofing specialist projects capability and precision — the kind of GRP or single-ply installer that builders trust to waterproof their extension deck without a single callback."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Full-Day Installations',
+    text: "GRP and EPDM installations consume entire days — sanding, priming, laminating, consolidating, and topcoating in sequence. Every step is time-sensitive. Missed Call Text Back captures every commercial enquiry during your most technically demanding work."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Flat Roof Details',
+    text: "Callers reply with specifications — 'extension GRP, about 20 sqm, warm roof needed, Summertown, deck going down Friday.' Replies arrive on your dashboard with system type, area, and programme before the topcoat cures."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering conducts detailed flat roofing conversations. Missed Call Text Back catches edge cases — a call during a critical laminating phase, a mobile signal blocked by a parapet wall, or a one-ring disconnect. Both running together means no flat roofing lead is lost."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "Within seconds of the unanswered call ending — before the builder calls his second-choice GRP specialist. During full-day installations where your phone sits in the van from morning primer to afternoon topcoat, this automatic text maintains your commercial presence without a single interruption to the laminating process."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "The wording is entirely yours — crafted during setup and editable whenever you choose. An effective flat roofing message reads: 'Thank you for calling [company name]. We are currently on a flat roof installation. We will return your call at the earliest opportunity. Reply with your flat roofing requirements for a faster response.' The message communicates active specialist capability and invites immediate detail sharing."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They function as complementary layers for your flat roofing business. Phone Answering conducts full conversations — identifying the roof system, area, problem, insulation requirement, and programme. Missed Call Text Back catches infrequent bypass scenarios — a call during a critical consolidation pass when the resin is mid-gel, a mobile phone out of signal behind the parapet, or a caller disconnecting before the system connects. Running both guarantees zero flat roofing enquiries vanish."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. A single domestic GRP flat roof generates £1,500 to £4,000 in revenue. Recovering one missed call from a builder — whose 30 sqm extension deck was ready for laminating tomorrow — through a timely branded text delivers a return that dwarfs the channel cost for the entire year.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Builders with programme deadlines reply without hesitation — 'deck ready Thursday, 24 sqm, warm roof, GRP, Witney, glazier coming Monday.' Homeowners with active leaks reply urgently — 'flat roof leaking into kitchen, old felt, 1970s extension, OX4.' These flat roof specifications arrive on your dashboard while the topcoat cures, giving you complete callback context for the afternoon."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing property addresses, flat roof specifications, membrane details, leak descriptions, and contact information are encrypted and held on UK and EU servers under UK GDPR. Only you access the data. Nothing reaches competing flat roofers or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Flat Roofers & GRP Specialists | Rapid Receptionist"
+  description={`Missed Call Text Back for UK flat roofers and GRP specialists. Automatically texts callers while you laminate — keeps builder extension and homeowner leak leads warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/flat-roofers/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Flat Roofer"
+  tradeNamePlural="Flat Roofers & GRP Specialists"
+  tradeSlug="flat-roofers"
+  headline="Missed Call Text Back for Flat Roofer & GRP Specialist Companies"
+  accentWord="Flat Roofing"
+  subhead="It is 10am on a Thursday. You are mid-laminate on a 20 square metre kitchen extension GRP roof in Summertown — the second batch of catalysed resin has been poured onto the primed plywood deck, the CSM 450g mat is positioned, and your paddle roller is working the mat into the wet resin, pressing out air pockets and ensuring full saturation before the gelation window closes. You have about eight minutes of workable time remaining. Three calls come in between 10am and 10:45am. Your phone is in the van under the scaffold tower below the extension. Without Missed Call Text Back, two voicemails — 'need a flat roof quote' and 'can you call about our extension?' — one hang-up. With it, all three receive texts within seconds. The first replies at 10:10am: 'Hi — builder in Eynsham. Got a rear extension deck going down tomorrow — 26 square metres, plywood. Client wants GRP warm roof, 100mm Celotex, VCL, dark grey topcoat. Upstand against the house on two sides, drip edge into gutter on the other two. Electrician starts inside Thursday next week — need it weathertight by Wednesday. Can you do Monday to Wednesday?' At the lunch break you read the reply. Friday you confirm the Eynsham extension: Monday start, three-day GRP warm roof, 26 sqm, 100mm Celotex, dark grey."
+  scenario="It is 2pm on a rainy Monday in October. Your team has been GRP-ing a dormer cheek and flat top for a loft conversion in Headington since 8am — the dormer face is laminated and curing, and you are mid-topcoat on the flat section when the rain starts spattering. You rush to cover the uncured topcoat with a tarpaulin before the rainwater contaminates the finish. Five missed calls between noon and 2pm. Without Missed Call Text Back, you check at 3pm: five unknowns, zero voicemails — five permanently lost. With Missed Call Text Back, all five received texts. Reply one: 'homeowner Botley — garage flat roof leaking, old felt, about 20 sqm, want GRP or EPDM quote.' Reply two: 'builder Witney — orangery deck ready next week, 18 sqm, architect wants warm roof GRP, simulated lead rolls along the parapet.' Reply three: 'landlord Cowley — three flat-roofed garage roofs across rental properties, all old felt, all leaking, wants one contractor to do all three back to back.' Reply four: 'commercial — office flat roof in Kidlington ponding badly, about 200 sqm, wants survey and options.' Reply five: 'homeowner Abingdon — GRP porch roof done 3 years ago by another firm is blistering, wants it repaired properly.' Five flat roofing leads. Five distinct jobs. Tuesday morning you have a prioritised list ordered by value — the office roof survey first at 200 sqm."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/flat-roofers/ai-receptionist/"
+  ctaHeadline="Recover Five Flat Roof Leads from One Rainy October Monday"
+  ctaSubhead={`While you tarped the dormer topcoat in Headington, five callers missed you. Five texts went out. Five replied — a garage, an orangery, three rental garages, a 200 sqm office, and a blister repair. Add-on at £${pricing.addOn.price}/month.`}
+/>

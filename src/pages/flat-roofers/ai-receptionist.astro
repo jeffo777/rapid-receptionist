@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A property developer calls about a flat roofing package for a new-build apartment block in Didcot — sixteen individual flat roofs across balconies, entrance canopies, and the main roof deck, all requiring warm roof construction with Kingspan PIR insulation to achieve Part L U-values, tapered insulation boards for falls to outlets, a single-ply Sika Sarnafil membrane mechanically fixed, and aluminium-trimmed perimeter details with welded seams. The programme requires the waterproofing to follow structural steel erection by three weeks. He needs a fixed price and confirmed gang start date. You are on a domestic GRP job in Headington — the resin is catalysed, the first layer of CSM 450g mat is being rolled into the wet resin across a bay window roof, and you have approximately twelve minutes before the gelation kicks off and the mat goes rigid. Both hands laminating, head down, acetone on your gloves. Your phone is in the van below. The developer calls three flat roofing firms. One answers and books a Tuesday site meeting.",
+    with: "Your AI receptionist answers on the second ring. It captures the complete brief — sixteen flat roofs, Didcot apartments, Kingspan PIR, Part L compliance, tapered falls, Sika Sarnafil single-ply, mechanical fixing, aluminium perimeter, welded seams, three-week follow on from steelwork — and confirms you will call back. At the tea break you review and phone the developer."
+  },
+  {
+    without: "A builder emails on Wednesday about a garage roof in Summertown — the existing torch-on felt has split along the seams, water is ponding in the centre because the original falls were inadequate, and the homeowner wants a GRP fibreglass system with proper falls to a new outlet, an upstand against the house wall with a lead flashing cover, and a simulated lead roll detail along the front edge. He needs a price for materials and labour by Friday. The email sits until Sunday.",
+    with: "Your AI acknowledges the builder's email within sixty seconds, referencing the split felt, ponding, GRP fibreglass, proper falls, upstand with lead flashing, and simulated lead roll. Sunday evening you schedule a Monday morning measurement."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday with a video of water dripping through a flat roof into their kitchen extension — the ceiling stain spreading visibly in real time. He messages three flat roofers. You are at home. By Monday, two have replied with emergency tarp availability.",
+    with: "The AI responds within seconds, asks whether the flat roof is felt, GRP, or rubber, the approximate area, and the property postcode. Monday at 8am you have a structured emergency flat roof lead with the video and access details."
+  }
+];
+
+const specialisms = [
+  {
+    category: "GRP Fibreglass Systems",
+    items: ["Full GRP flat roof installation — resin, CSM mat, and topcoat", "GRP bay window and porch roofs", "GRP balcony and walkway decking", "Simulated lead rolls and drip edge detailing", "Pre-laminate trims, upstands, and angle details", "Manufacturer-backed guarantee systems (20-25 year)"]
+  },
+  {
+    category: "Single-Ply & EPDM",
+    items: ["Sika Sarnafil and Protan single-ply membrane installation", "Firestone RubberCover and ClassicBond EPDM systems", "Mechanically fixed, adhered, and ballasted applications", "Hot-air welded seams and perimeter detailing", "Warm roof build-ups with PIR insulation", "Tapered insulation schemes for positive drainage"]
+  },
+  {
+    category: "Torch-On & Liquid Applied",
+    items: ["Modified bitumen torch-on felt — underlay and cap sheet", "Liquid-applied systems — Kemper, Triflex, Sikalastic", "Cold-applied bitumen repair and overlay", "Parapet upstand and coping waterproofing", "Outlet installation and rainwater management", "Building Regulations Part L insulation compliance"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Developers & Main Contractors",
+    description: "Developers requiring flat roofing packages on apartment blocks, mixed-use schemes, and commercial buildings — single-ply membranes on warm roof build-ups with tapered insulation for positive falls. Programme-critical waterproofing that must follow the structural frame and precede the internal fit-out."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners with leaking flat roofs on extensions, garages, dormers, bay windows, and porches. Often frustrated by repeated patch repairs on old felt and ready to invest in a permanent GRP or EPDM solution. They value explanations about why their roof ponds, what warm roof construction means, and how long the guarantee lasts."
+  },
+  {
+    icon: "🔨",
+    title: "Builders & Joiners",
+    description: "Builders constructing kitchen extensions, garden rooms, and orangeries who need a specialist flat roofer to waterproof the deck they have built. Joiners installing bay windows and porches who need a GRP fibreglass roof to complete the structure. They subcontract the flat roofing to guarantee the waterproofing integrity."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial & Industrial",
+    description: "Commercial property managers and facilities teams with flat-roofed offices, warehouses, and retail units. Large-area single-ply installations, torch-on overlays, and liquid-applied repairs to ageing built-up felt roofs that have exceeded their service life."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand flat roofing terminology?",
+    answer: "The complete vocabulary of flat roofing systems is built in — GRP (glass-reinforced polyester), fibreglass, resin, catalyst (MEKP), chopped strand mat (CSM 450g, 600g), topcoat, flowcoat, pre-laminate trim, drip edge, upstand, kick detail, internal and external angle, bandage strip, simulated lead roll, single-ply (Sika Sarnafil, Protan, Bauder), EPDM (Firestone RubberCover, ClassicBond), torch-on felt (modified bitumen, cap sheet, underlay), liquid-applied (Kemper, Triflex, Sikalastic), warm roof, cold roof, VCL (vapour control layer), PIR insulation (Celotex, Kingspan), tapered insulation, falls, ponding, outlets, and parapet. When a developer describes 'warm roof build-up — Kingspan TP10 insulation, tapered scheme to three outlets, Sarnafil S327 mechanically fixed, aluminium edge trims,' the AI captures every layer."
+  },
+  {
+    question: "Can the AI differentiate a GRP repair from a single-ply installation?",
+    answer: "A homeowner calling about 'a leak on our fibreglass extension roof — it is bubbling and lifting at the edge' generates a GRP repair lead — the AI asks about the roof age, the edge trim condition, and whether the topcoat is delaminating. A developer describing 'single-ply membrane across 800 square metres of warm roof on a three-storey apartment block, tapered insulation to twelve outlets, Sarnafil TG 66-18' generates a commercial membrane installation lead. The two produce entirely different specifications."
+  },
+  {
+    question: "What about urgent flat roof leak calls?",
+    answer: "Flat roof leaks are among the most urgent roofing emergencies — water penetrating directly into living spaces below with no loft buffer. A kitchen extension ceiling dripping during rain needs immediate attention. The AI identifies the flat roof system if known, the leak location, the area affected, and the property access, and escalates for priority response."
+  },
+  {
+    question: "How much does this cost for a flat roofing firm?",
+    answer: `Flat roofers and GRP specialists pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sole-trader GRP installer working on domestic extensions or a multi-gang single-ply firm covering commercial flat roofs across the region, the talk-time allowance fits your enquiry volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a one-person GRP operation?",
+    answer: "Solo GRP installers benefit enormously. When your catalyst is mixed and the CSM mat is going into wet resin on a bay window roof, you have a twelve-minute window before gelation. Zero possibility of answering a phone. The AI captures every builder's extension enquiry, every homeowner's leak call, and every developer's commercial tender while you laminate cleanly and without interruption."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Configure coverage from your dashboard to match flat roofing workflows. During active laminating — when the resin is catalysed and the clock is running — route every call to the AI. During measuring, quoting, and material ordering at the office — take calls directly. Toggle modes from your phone at any moment."
+  },
+  {
+    question: "How is flat roofing project data protected?",
+    answer: "Flat roofing enquiries contain property addresses, roof specifications, membrane system details, insurance claim references, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project information is disclosed to competing flat roofers or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Flat Roofers & GRP Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK flat roofers and GRP specialists — fibreglass, single-ply, EPDM, torch-on felt, and liquid-applied systems. Never miss a developer call while the resin cures. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/flat-roofers/ai-receptionist/"
+  tradeName="Flat Roofer"
+  tradeNamePlural="Flat Roofers & GRP Specialists"
+  tradeSlug="flat-roofers"
+  headline="The AI Receptionist Built for Flat Roofers & GRP Specialists"
+  accentWord="Flat Roofing"
+  subhead={`You cannot answer the phone when the resin is catalysed, the CSM mat is going into the wet layup, and you have twelve minutes before gelation turns your bay window roof into an irreversible fibreglass shell. Your AI receptionist captures every call, every message, and every tender — from developers commissioning sixteen-unit apartment waterproofing packages to homeowners watching their kitchen ceiling drip. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Apartment Block Waterproofing Package Calls While the Resin Cures"
+  ctaSubhead={`A developer with sixteen flat roofs and a three-week steel follow-on needs his Sarnafil programme confirmed. If voicemail answers, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>
