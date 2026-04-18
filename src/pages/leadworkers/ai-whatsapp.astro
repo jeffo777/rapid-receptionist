@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Lead Failure Photos',
+    text: "Roofers and homeowners WhatsApp photos of cracked cement fillets, corroded lead valleys, fatigued lead rolls, and water staining below chimney breasts. The AI responds within seconds, asks about the component and leak severity, and attaches every photo to your repair lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Roofer Subcontract Slots',
+    text: "Roofers WhatsApp chimney flashing photos and ask 'can you do this one Friday?' The first leadworker to confirm takes the booking. A delayed reply means the roofer calls his backup."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Architect Heritage Messages',
+    text: "Architects WhatsApp photos of deteriorated church lead with specification notes — 'need LSA firm for code 6 replacement on this south aisle.' The AI captures the building, lead code, and component while you boss a chimney set on another scaffold."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Scaffold Hours',
+    text: "Roofers plan next week's lead requirements in the evening. Architects send specification queries after office hours. Homeowners photograph chimney damage from the garden after work. The AI captures every after-hours leadwork message."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Flashing Briefs',
+    text: "A WhatsApp saying 'chimney flashing, 1960s semi, code 4, stepped both sides, back gutter, Botley, needed Thursday' becomes an actionable subcontract lead with component, code, and programme."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. Heritage specifications, chimney dimensions, and roofer programme confirmations stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess lead condition from photos?",
+    answer: "Lead condition assessment requires hands-on inspection — checking for fatigue cracking, measuring remaining metal thickness, and testing joint integrity. The AI does not perform visual diagnosis. However, it responds constructively to photographs — acknowledging the visible deterioration, asking whether the lead component is original or a previous replacement, the lead code if known, and whether water is entering the building. Every image attaches to your lead for your professional assessment on the scaffold."
+  },
+  {
+    question: "What about multi-message leadwork threads?",
+    answer: "Leadwork conversations develop over multiple messages — a roofer sends a chimney photo, then confirms the stack dimensions, then asks about code weight, then books for next week. The AI maintains the complete thread and compiles every message into one consolidated chimney weathering lead with dimensions, code, components, access, and programme."
+  },
+  {
+    question: "How much does AI WhatsApp cost for leadworkers?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. Chimney weathering sets generate £400 to £1,200, valley linings £800 to £2,500, and heritage church lead roofing £10,000 to £80,000. Securing one roofer's chimney programme through a rapid WhatsApp reply — while you welded a joint on another roof — covers the channel cost many times over.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Reply in any thread and the AI transfers control to you permanently for that conversation. Most leadworkers let the AI gather the initial details — component, code, dimensions, building type, and programme — then engage directly to confirm the booking, discuss bossing versus welding requirements, and arrange scaffold access."
+  },
+  {
+    question: "How is WhatsApp data from leadwork enquiries protected?",
+    answer: "Every WhatsApp message — lead condition photographs, listed building details, heritage specifications, grant references, and sender contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively with you. No project details reach competing leadworkers or are used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Leadworkers | Rapid Receptionist"
+  description={`AI WhatsApp for UK leadworkers. Responds to roofer chimney flashing requests, architect heritage specifications, and lead failure photos while you boss and weld. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/leadworkers/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Leadworker"
+  tradeNamePlural="Leadworkers"
+  tradeSlug="leadworkers"
+  headline="AI WhatsApp for Leadworker Companies"
+  accentWord="Leadwork"
+  subhead="A roofer WhatsApps at 7:15am on a Monday with three photos. He has stripped and re-felted a 1970s detached house in Kidlington over the weekend and needs the chimney lead completed before his tiler starts Wednesday morning. The photos show a bare chimney stack on the ridge — mortar chases cut, the old cement fillet removed, the brickwork cleaned back, and the tile courses stopped short for soaker installation. His message: 'Morning mate — chimney in Kidlington ready for lead. Ridge stack, about 900mm by 700mm. Need full weathering set — stepped both sides, front apron, back gutter, soakers all round. Code 4. Scaffold still up until Wednesday evening. Can you do this tomorrow? My tiler starts Wednesday and needs the lead tucked in. Photos showing the stack and chases.' You are loading the van with code 5 rolls, copper clips, and your bossing kit for a heritage valley job in Woodstock. Without AI WhatsApp, the message waits until you reach the Woodstock site at 8:30. He texts two other leadworkers; one confirms by 7:45. With it, the AI responds at 7:16am, confirms your chimney weathering capability, and asks whether the back gutter needs a code 5 upgrade given the stack width. The roofer confirms code 4 throughout. At 8am you review: Kidlington chimney, ridge stack 900x700, full weathering set, code 4, scaffold until Wednesday evening, tiler Wednesday."
+  scenario="It is 8pm on a Thursday. A heritage building officer WhatsApps about a church tower in a village near Banbury — the lead cappings on the parapet have split along the rolls, admitting rainwater into the medieval stonework beneath. She sends two photos: the cracked lead visible from the internal tower staircase parapet access, and the water staining on the limestone ashlar below. Her message: 'Good evening — St Michael's church, village near Banbury. Lead cappings on the tower parapet have failed — splits along the rolls, water entering the stonework. Original lead, possibly code 6, approximately 12 linear metres around the parapet top. DAC faculty will be needed for replacement. Can you assess and provide a specification for parish council grant application? Need the assessment before the next PCC meeting on the 15th.' Without AI WhatsApp, the message sits until Friday morning. One firm replied at 8:30pm. With AI WhatsApp, the reply arrives at 8:01pm: 'Thank you — parapet lead capping failure on a church tower is a priority to prevent further stonework deterioration. Could you confirm the approximate parapet width and whether the existing rolls are traditional or modern profile? This helps us specify the correct code weight for the replacement capping.' She confirms traditional rolls, parapet about 350mm wide. Friday you call: St Michael's tower, Banbury, parapet capping 12lm, code 6, splits along rolls, stonework damage, DAC faculty, PCC grant, assessment before 15th."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/leadworkers/ai-receptionist/"
+  ctaHeadline="Confirm the Kidlington Chimney Set While You Load the Woodstock Valley Kit"
+  ctaSubhead={`A roofer's tiler starts Wednesday and the chimney needs lead tomorrow. The AI confirmed your code 4 weathering while you loaded the van. Add-on at £${pricing.addOn.price}/month.`}
+/>

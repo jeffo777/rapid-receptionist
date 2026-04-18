@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "An architect calls about a full lead re-roofing project on a Grade I listed medieval church in rural Oxfordshire — the existing sand-cast lead on the nave roof has reached end of life after one hundred and eighty years, with extensive fatigue cracking along the rolls, perforation at the drip edges, and failing lead-burned lap joints. The architect's specification calls for code 7 milled lead sheet from the LSA-approved supplier, traditional rolls and drips at no more than 1.5-metre centres, copper clips at 450mm intervals, lead-welded intersections, and patination oil applied on completion. English Heritage grant funding is conditional on an LSA-accredited contractor completing the work. The DAC faculty has been approved. He needs a site survey within two weeks. You are on a listed Victorian rectory in Charlbury — dressing code 5 lead around a complex chimney junction, the bossing stick working the metal into the tight angle between the stack and the roof slope, the back gutter taking shape against the dressed apron. Both hands on the bossing mallet, the lead creasing precisely at the internal angle. Your phone is in your jacket on the scaffold platform below. The architect calls three LSA-accredited leadworkers. One answers and books a Thursday site meeting.",
+    with: "Your AI receptionist answers on the second ring. It captures the complete brief — Grade I medieval church, nave roof, sand-cast lead end of life, fatigue cracking, code 7 milled, traditional rolls and drips, copper clips, lead-welded joints, patination oil, English Heritage grant, DAC faculty approved, LSA accreditation required, two-week site survey — and confirms you will call back. At the lunch break you review and phone the architect."
+  },
+  {
+    without: "A heritage building consultant emails on Wednesday with a specification for replacement lead valley linings on a Cotswold manor house — four valleys across the main roof, each approximately 3.5 metres long, code 5 milled lead with welted edges, dressed into the tile courses with soakers, and traditional lead-welded joints at Changes of direction. She needs a measured survey and quotation before the Heritage Lottery Fund deadline in six weeks. The email sits until Sunday.",
+    with: "Your AI acknowledges the consultant's email within sixty seconds, referencing the Cotswold manor, four valleys, code 5 milled lead, welted edges, soakers, lead-welded joints, and the HLF deadline. Sunday evening you schedule the measured survey."
+  },
+  {
+    without: "A roofer WhatsApps on Saturday with photos of a failed chimney flashing — the existing cement fillet has cracked away completely, the mortar chase for the stepped flashing has eroded, and water is tracking down the inside of the chimney breast into the living room below. He messages three leadworkers. You are at home. By Monday, two have replied with availability.",
+    with: "The AI responds within seconds, asks whether the roofer needs stepped flashing only or a full chimney weathering set (stepped, front apron, back gutter, and soakers), and the chimney dimensions. Monday at 8am you have a structured chimney lead-weathering subcontract lead."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Lead Roofing",
+    items: ["Full lead roof installation — code 6, 7, and 8 for churches and cathedrals", "Lead flat roof coverings with rolls and drips", "Bay window lead roofs — bossed and welded", "Dormer cheek and flat top lead covering", "Heritage re-roofing to match original sand-cast profiles", "Lead Sheet Association accredited installations"]
+  },
+  {
+    category: "Lead Flashing & Weathering",
+    items: ["Chimney weathering sets — stepped, apron, back gutter, and soakers", "Valley linings — code 4 and 5 with welted edges", "Parapet and box gutter linings", "Abutment flashing — stepped and apron", "Secret gutters and concealed flashings", "Replacement flashing to modern and period properties"]
+  },
+  {
+    category: "Specialist & Ornamental",
+    items: ["Ornamental lead rainwater goods — hoppers, downpipes, and outlets", "Lead finials, ridge cappings, and decorative features", "Sand-cast lead repair and patching", "Lead welding (burning) and soldering", "English Heritage and HLF grant-funded restoration projects", "DAC faculty and Listed Building Consent compliance"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏛️",
+    title: "Architects & Conservation Officers",
+    description: "Architects specifying lead for heritage projects — church re-roofing, listed building flashing, and conservation area detailing. They value LSA accreditation, knowledge of traditional techniques (bossing, lead welding, sand-cast matching), and the ability to work within DAC faculty and English Heritage specifications."
+  },
+  {
+    icon: "🏗️",
+    title: "Roofing Contractors & Builders",
+    description: "Roofers and builders subcontracting leadwork they cannot perform in-house — chimney weathering, valley linings, dormer cheeks, bay tops, and abutment flashing. They need a reliable leadworker who fits into their programme, arrives when booked, and produces flashing that never calls back."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners with leaking chimneys, failed valley linings, and cracked cement fillets that a general roofer has told them need proper lead. They appreciate clear explanations of why lead is the permanent solution and what lead codes and bossing techniques mean for their property."
+  },
+  {
+    icon: "⛪",
+    title: "Church & Cathedral Fabric Committees",
+    description: "PCC members, church wardens, and fabric advisory committees managing lead roofing on ecclesiastical buildings. Grant applications, DAC faculty processes, and phased programmes spanning years — an LSA-accredited leadworker becomes the trusted contractor for every phase."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand leadwork terminology?",
+    answer: "Every aspect of the leadworker's vocabulary is programmed in — lead sheet (milled, cast, sand-cast), code 3 through code 8, bossing, bossing stick, bossing mallet, lead welding (burning), soldering, back gutter, front apron, soakers, stepped flashing, chase, pointed chase, chimney weathering set, valley lining, parapet gutter, box gutter, bay window top, dormer cheek, dormer flat, rolls, drips, welted edge, copper clip, stainless steel clip, patination oil, lead-burned joint, undercloak, overcloak, fixing clip, LSA accreditation, LBM Training, ornamental leadwork, hopper head, and finial. When an architect describes 'code 7 milled lead, traditional rolls at 600mm centres, drips at 1.5 metres, copper clips at 450mm, lead-welded intersections, patination oil finish,' the AI records the complete specification."
+  },
+  {
+    question: "Can the AI distinguish chimney flashing from a church re-roof?",
+    answer: "A roofer calling about 'chimney flashing on a semi in Headington — stepped both sides, front apron, and a back gutter, code 4' generates a domestic subcontract lead with chimney dimensions and lead code. An architect describing 'full nave roof replacement on a Grade I listed twelfth-century church — code 7 sand-cast match, thirty-five square metres across four bays, lead-welded rolls and drips, English Heritage grant condition' generates a heritage restoration tender with accreditation requirements, grant compliance, and faculty details. The two generate entirely different lead profiles."
+  },
+  {
+    question: "What about urgent lead leak calls?",
+    answer: "Lead failures produce persistent leaks — a cracked back gutter channelling water into the chimney breast during every rainfall, a failed valley lining soaking the bedroom ceiling below, or a split roll on a flat lead roof admitting wind-driven rain. The AI captures the failure location, the lead component, the leak severity, and the building type, and escalates for priority attendance."
+  },
+  {
+    question: "How much does this cost for a leadworker?",
+    answer: `Leadworkers pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sole-trader leadworker bossing chimney sets for local roofers or an LSA-accredited firm tendering Grade I church re-roofing programmes funded by English Heritage grants, the talk-time allowance accommodates your enquiry mix. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a sole-trader leadworker?",
+    answer: "Solo leadworkers benefit profoundly. When you are bossing a back gutter around a complex chimney junction at scaffold height, both hands on the mallet, the lead creasing into the internal angle, answering a phone is structurally impossible. The AI captures every roofer's subcontract request, every architect's heritage specification, and every homeowner's chimney leak while you dress the metal cleanly."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Adjust coverage from your dashboard to match leadwork workflows. During active bossing and welding — when concentration is absolute and both hands are occupied — send every call to the AI. During measuring, quoting, and ordering lead from the merchant — take calls yourself. Switch modes from your phone at any point during the day."
+  },
+  {
+    question: "How is leadwork project data protected?",
+    answer: "Leadwork enquiries contain listed building addresses, heritage specifications, grant references, DAC faculty details, architectural drawings, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project information reaches competing leadworkers or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Leadworkers | Rapid Receptionist"
+  description={`AI receptionist for UK leadworkers — lead roofing, chimney flashing, valley linings, bossing, lead welding, and heritage restoration. Never miss an architect's call from the scaffold. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/leadworkers/ai-receptionist/"
+  tradeName="Leadworker"
+  tradeNamePlural="Leadworkers"
+  tradeSlug="leadworkers"
+  headline="The AI Receptionist Built for Leadworkers"
+  accentWord="Leadwork"
+  subhead={`You cannot answer the phone when both hands grip the bossing mallet, the code 5 lead is creasing into the internal angle of a chimney back gutter, and the metal must be dressed precisely before it work-hardens and cracks. Your AI receptionist captures every call, every message, and every tender — from architects commissioning Grade I church re-roofing to roofers needing chimney weathering sets fitted by Friday. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Church Nave Re-Roofing Tender Calls While You Boss the Rectory Gutter"
+  ctaSubhead={`An architect with English Heritage grant funding and a DAC faculty needs an LSA-accredited leadworker for thirty-five square metres of code 7. If voicemail answers, he calls the next firm. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

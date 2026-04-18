@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Roofer Programme Texts',
+    text: "Roofers text leadworkers when chimney stacks are stripped and ready — 'chimney prepped, need lead Thursday, code 4, full set.' The first leadworker to confirm takes the slot. A delayed reply costs the booking."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Leadwork Briefs from Short Messages',
+    text: "A text like 'valley lining needed, slate roof, about 3m, code 5, Charlbury' gives the AI enough to work with. It asks about welted or plain edges, the slate course detail, and your programme. Your lead arrives ready for pricing."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Architect Referral Texts',
+    text: "When an architect recommends your heritage leadwork to a church warden, that warden texts about their aisle roof. The AI captures the referral while the architect's endorsement carries its strongest weight."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Bossing Hours',
+    text: "Roofers confirm next-week chimney bookings after hours. Architects forward heritage queries from evening meetings. Homeowners text chimney leak descriptions after dark. The AI captures every after-hours leadwork text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Chimney Details',
+    text: "Messages arrive in fragments — 'need chimney lead' then 'full set' then 'code 4' then 'Headington semi' then 'Friday morning.' The AI builds one complete chimney weathering lead from every piece."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Heritage specifications, roofer bookings, and lead merchant orders stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound leadwork text?",
+    answer: "Each text receives a branded reply in your company name within seconds. A roofer's concise booking — 'chimney set code 4, 1960s end terrace, Botley, scaffold up, need you Wednesday' — is acknowledged with every detail preserved. A homeowner's uncertain message — 'chimney is leaking, been told we need lead instead of cement' — prompts questions about the chimney position, the existing flashing type, and the leak location."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "The reply reads like a leadwork specialist checking messages between bossing sessions — component-specific, technically fluent, and schedule-aware. It references lead codes, chimney components, and heritage requirements. Roofers texting for chimney bookings expect a knowledgeable reply that confirms code capability and programme availability."
+  },
+  {
+    question: "How does it handle existing roofer client texts?",
+    answer: "Regular roofer clients text programme updates — 'chimney delayed to next Monday, scaffold staying up' or 'second chimney same house, add to the quote.' The AI captures these messages and separates them from new enquiries. Your dashboard distinguishes an existing roofer's programme change from a new architect's heritage specification."
+  },
+  {
+    question: "What does AI SMS cost for leadworkers?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A chimney weathering set generates £400 to £1,200. Securing two roofer chimney bookings in a single week through rapid text replies — while you welded joints on a heritage bay roof — produces revenue far exceeding the annual channel cost.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send one reply and the AI stands down from that thread permanently. During measuring and quoting — manage texts directly. During active bossing on the scaffold — when both hands shape the metal and the phone sits in the toolbag — let the AI manage the commercial messages until you descend."
+  },
+  {
+    question: "How is text data from leadwork enquiries stored?",
+    answer: "Text messages containing listed building addresses, chimney dimensions, heritage specifications, lead code requirements, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing leadworkers or used for any secondary purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Leadworkers | Rapid Receptionist"
+  description={`AI SMS for UK leadworkers. Responds to roofer chimney bookings, architect heritage queries, and flashing enquiries while you boss and weld. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/leadworkers/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Leadworker"
+  tradeNamePlural="Leadworkers"
+  tradeSlug="leadworkers"
+  headline="AI SMS for Leadworker Companies"
+  accentWord="Leadwork"
+  subhead="You are at 8:30am on a Tuesday, applying patination oil to a freshly installed code 5 bay window lead roof in Marston — the oil protecting the new lead from white carbonate staining, the surface darkening to a uniform matte finish as you brush each roll and drip with even strokes. At 8:45am a roofer texts: 'Morning — got two chimney sets needed this week. First one is a bungalow in Cowley, ridge chimney about 750mm square, code 4, full set with soakers, scaffold up, can you do Wednesday? Second is a 1930s semi in Headington, gable chimney, about 900mm by 600mm, code 4, stepped one side only plus front apron and back gutter, scaffold going up Thursday, need lead Friday. Both straightforward domestic sets. Let me know if you can do both.' Your hands are coated in patination oil. Without AI SMS, the text waits until you wash the oil off at 9:30. He texts two other leadworkers. With it, the AI responds at 8:46am, confirms your chimney weathering capability, and asks whether the Headington gable chimney requires soakers on the stepped side. The roofer confirms soakers needed. At 9:30 you review: Cowley bungalow ridge chimney 750mm code 4 full set Wednesday, Headington 1930s semi gable chimney 900x600 code 4 stepped+apron+gutter+soakers Friday."
+  scenario="It is 6:30pm on a Friday. A heritage consultant texts about an urgent assessment — a Cotswold stone cottage under a conservation area order has had its lead valley linings stolen overnight. The theft was reported that morning. The homeowner discovered that the three lead valleys — approximately 3 metres each, code 5; had been stripped from the roof, leaving the exposed timber and membrane beneath. Rain is forecast for Sunday. The consultant texts: 'Lead theft — three valleys stripped from a listed Cotswold cottage overnight. About 9 metres total of code 5. Needs temporary weathering protection ASAP and then permanent replacement valleys. Conservation area — replacement must be lead, same code. Homeowner has reported to police and insurer. Can you assess tomorrow morning and provide emergency cover if needed? Near Burford, OX18.' Without AI SMS, the text waits until Monday. With AI SMS, the response arrives at 6:31pm: 'Thank you — lead theft leaving exposed valleys ahead of forecast rain requires immediate protection. Could you confirm whether the existing membrane beneath the stolen lead is intact, and how accessible the valleys are from ladder or scaffold?' The consultant confirms membrane partially torn, ladder access possible for two valleys but scaffold needed for the third. Saturday morning you attend: three stolen valleys, Burford cottage, listed, conservation area, code 5 replacement, membrane damage, police and insurance reference, emergency cover."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/leadworkers/ai-receptionist/"
+  ctaHeadline="Confirm Two Chimney Sets While the Patination Oil Cures"
+  ctaSubhead={`A roofer needs Cowley on Wednesday and Headington on Friday. The AI confirmed both chimney weathering sets while you oiled the Marston bay roof. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls During Bossing and Welding',
+    text: "Shaping code 5 around a chimney internal angle, welding a back gutter joint at 350°C, dressing soakers beneath stone slates — every leadwork operation demands both hands and total concentration. Missed Call Text Back sends a branded text to every unanswered caller instantly."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Roofer Programme Callers',
+    text: "A roofer with a chimney stripped and the tiler starting Wednesday calls his preferred leadworker. Voicemail? He calls the next firm. A branded text — 'Thanks for calling — we are on the scaffold bossing a chimney set and will call back shortly' — preserves your booking position."
+  },
+  {
+    icon: '🏷️',
+    title: 'LSA-Standard Professional Image',
+    text: "An instant branded text from a leadwork specialist conveys accredited reliability — the kind of craftsman that conservation architects trust with Grade I church nave roofing."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Full Heritage Days',
+    text: "Heritage leadwork days consume twelve hours — measuring, bossing, welding, dressing soakers, and applying patination oil in sequence. Every phase is hand-intensive. Missed Call Text Back captures every architect and roofer enquiry during your longest, most technical working days."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Lead Details',
+    text: "Callers reply with scope — 'chimney weathering, code 4, full set, semi in Kidlington, scaffold up, need you Thursday.' Replies arrive on your dashboard before you descend the scaffold ladder."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering conducts full leadwork conversations. Missed Call Text Back catches rare bypasses — a call during a critical welding moment, a phone out of reach behind the chimney stack, or a one-ring hang-up. Together, no leadwork enquiry is lost."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "Within seconds of the unanswered call ending — before the roofer calls his second-choice leadworker. During heritage church days where your phone sits in the nave below while you boss code 7 on the aisle roof four metres above, this automatic text keeps your firm commercially visible without interrupting a single bossing stroke."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose the exact wording during setup and adjust it whenever you choose. A well-crafted leadwork message reads: 'Thank you for calling [company name]. We are currently on the scaffold carrying out leadwork. We will return your call at the earliest opportunity. Reply with your lead requirements for a faster response.' This communicates active specialist capability and encourages immediate detail sharing."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "They safeguard your leadwork business as complementary layers. Phone Answering conducts detailed conversations — capturing the lead component, code weight, building type, heritage listing, and programme. Missed Call Text Back catches uncommon edge situations — a call during a lead-welding pass requiring absolute torch steadiness, a mobile signal lost behind a stone chimney stack, or a caller disconnecting before the AI connects. Both together mean zero leadwork leads vanish."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. A heritage church lead project generates £10,000 to £80,000 in contract value. Recovering one missed call from a cathedral fabric advisor — who had a thirty-square-metre nave tender ready to issue — through a timely branded text provides a return that eclipses the channel cost for years.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Roofers with programme deadlines reply immediately — 'chimney set code 4, ridge, next Wednesday, scaffold up, OX3.' Architects reply with project outlines — 'Grade II church, code 6 valley linings, four valleys, HLF funded, need survey.' Church wardens reply with concern — 'lead on the tower is cracking, rainwater getting into the stonework.' These leadwork details land on your dashboard before the patination oil dries."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing listed building addresses, chimney specifications, heritage details, lead code requirements, and contact information are encrypted and held on UK and EU servers under UK GDPR. Only you access the data. Nothing reaches competing leadworkers or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Leadworkers | Rapid Receptionist"
+  description={`Missed Call Text Back for UK leadworkers. Automatically texts callers while you boss chimney sets and weld joints on the scaffold. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/leadworkers/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Leadworker"
+  tradeNamePlural="Leadworkers"
+  tradeSlug="leadworkers"
+  headline="Missed Call Text Back for Leadworker Companies"
+  accentWord="Leadwork"
+  subhead="It is 9am on a Wednesday. You are bossing code 5 lead around the internal angle of a chimney back gutter on a listed house in Woodstock — the bossing mallet striking controlled blows, the metal creasing into the junction between the stack face and the roof slope, each strike moving the lead precisely without over-working or thinning the sheet. The apron is dressed, the soakers are set, and the back gutter requires another twenty minutes of concentrated bossing before the joint is ready for welding. Three calls come in between 9am and 10am. Your phone is in the scaffold basket below. Without Missed Call Text Back, one voicemail — 'need a leadworker' — two hang-ups. With it, all three receive texts within seconds. The first replies at 9:15am: 'Morning — roofer in Bicester. Got a semi I am re-roofing next week. Chimney on the party wall — about 700mm by 500mm, shared stack. Need stepped flashing one side, front apron, and soakers. Code 4. Scaffold up Monday, tiler starts Thursday. Can you do the chimney Tuesday?' At the tea break you read the reply. Monday you confirm: Bicester semi, party wall chimney 700x500, code 4, stepped one side, apron, soakers, lead Tuesday."
+  scenario="It is 3pm on a Thursday. You have been lead welding joints on a flat lead bay window roof in Summertown since 8am — the propane torch, filler rod, and steadying hand leaving zero capacity for anything else. Six missed calls between 8am and 3pm. Without Missed Call Text Back, you check at 4pm: six unknowns, one voicemail — 'church roof enquiry' — five permanently lost. With Missed Call Text Back, all six received texts. Reply one: 'church warden — lead on the porch roof splitting, rainwater coming through onto the memorial flagstones, about 6 square metres of code 5.' Reply two: 'roofer Headington — two chimney sets on a pair of semis, both ridge, code 4, full sets, scaffold up next Monday, need lead Monday and Tuesday.' Reply three: 'conservation architect — ornamental lead hopper replacement on a Georgian terrace, Grade II, need like-for-like cast lead match.' Reply four: 'builder Eynsham — extension abutment flashing, code 4, about 5 linear metres stepped, scaffold up now.' Reply five: 'homeowner Abingdon — valley leak between main roof and extension, old lead perished.' Reply six: 'roofer Witney — bay window top needing lead, code 4, about 2 square metres, can you price?' Six leads. Six distinct projects. Friday morning you prioritise — the church porch first, the two chimney sets Monday-Tuesday, the Georgian hopper assessment Wednesday."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/leadworkers/ai-receptionist/"
+  ctaHeadline="Recover Six Specialist Leads from One Welding Day in Summertown"
+  ctaSubhead={`While you torch-welded bay window joints from 8am to 3pm, six callers missed you. Six texts went out. A church porch, two chimney pairs, a Georgian hopper, an extension flashing, a valley, and a bay top. Add-on at £${pricing.addOn.price}/month.`}
+/>

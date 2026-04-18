@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Boss and Weld',
+    text: "Bossing lead around a chimney junction demands absolute concentration — the mallet shaping metal into internal angles, the bossing stick creasing the overcloak, and the lead welding torch fusing joints at 350°C. The AI answers every call in your company name while you dress the metal."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Leadwork Briefs at Every Level',
+    text: "When an architect calls about code 7 nave roofing for a medieval church, the AI captures the lead code, bay dimensions, roll centres, and grant conditions. When a roofer calls about chimney soakers on a semi, the AI captures the chimney size and lead code."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Urgent Lead Failure Calls',
+    text: "A split chimney back gutter directing water into the bedroom wall, a failed parapet gutter flooding a commercial office below, or a cracked valley lining soaking through to the joists — lead failures produce persistent, damaging leaks. The AI captures the failure component, location, and severity for priority response."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Lead Enquiries',
+    text: "Architects finalise heritage specifications in the evening. Roofers plan next week's lead subcontracts after hours. Homeowners research chimney leak solutions online. The AI captures every evening leadwork call."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Built for Specialist Pricing',
+    text: "Each lead specifies the lead component, code weight, area or linear metres, building type and listing status, bossing or welding requirement, and programme — everything you need to calculate your lead sheet and labour quotation."
+  },
+  {
+    icon: '🏷️',
+    title: 'LSA-Grade Professionalism',
+    text: "A leadworking firm that answers professionally and asks about the lead code, joint specification, and building heritage status signals the accredited expertise that architects and conservation officers demand for their most sensitive projects."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their leadwork needs?",
+    answer: "Questions adapt to the enquiry source. A roofer requesting chimney flashing is asked about the chimney dimensions, the lead code required, whether the brief includes a full weathering set (stepped, apron, back gutter, soakers) or individual components, and the programme. An architect specifying heritage lead is asked about the building listing grade, the lead code and sheet type (milled or sand-cast), the detail specification (roll centres, drip spacing, clip type), the grant funding body, and the tender return date."
+  },
+  {
+    question: "Can the AI handle both roofer subcontracts and heritage tenders?",
+    answer: "Roofer subcontracts are programme-driven — 'chimney flashing Thursday, code 4, front and back' — requiring quick confirmation and reliable attendance. Heritage tenders are specification-intensive — DAC faculty, English Heritage grant conditions, sand-cast matching, lead-welded joints, and measured survey reports. The AI generates fundamentally different lead profiles for each source, keeping your domestic subcontract queue and your heritage tender pipeline entirely separate."
+  },
+  {
+    question: "What about calls during active bossing?",
+    answer: "Bossing lead around complex junctions is the most concentration-intensive operation in roofing — over-working the metal causes fatigue cracking, under-working leaves poor weathering, and any distraction risks a mis-hit that punctures the sheet. The AI manages every call during active bossing and welding sessions with the same professional standard as during a quiet office morning, ensuring no architect's heritage specification or roofer's programme slot is lost to a moment of concentration."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `Your Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Leadworkers receive a specialist blend of roofer subcontract calls, architect specifications, homeowner chimney leak enquiries, and ecclesiastical restoration tenders. The specialist nature of leadwork means enquiry volumes are typically moderate but each call carries significant contract value. Overage is 20p per minute with no lock-in.`
+  },
+  {
+    question: "Can I take calls during measuring and quoting?",
+    answer: "When you are at the desk — calculating lead sheet weights from measured dimensions, ordering code 5 from the merchant, writing heritage method statements, and invoicing completed chimney sets — take calls yourself. Redirect to the AI the moment you climb the scaffold and the bossing mallet comes out. Toggle from your phone at any point."
+  },
+  {
+    question: "How is leadwork project data secured?",
+    answer: "Leadwork enquiries contain listed building addresses, heritage grant references, DAC faculty numbers, architectural specifications, and commercially sensitive pricing for specialist materials. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details reach competing leadworkers, are disclosed to lead sheet suppliers, or are sold to lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Leadworkers | Rapid Receptionist"
+  description={`AI phone answering for UK leadworkers. Captures architect specifications, roofer subcontracts, and chimney flashing bookings while you boss and weld. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/leadworkers/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Leadworker"
+  tradeNamePlural="Leadworkers"
+  tradeSlug="leadworkers"
+  headline="AI Phone Answering for Leadworker Companies"
+  accentWord="Leadwork"
+  subhead="An architect calls at 11am. She is specifying lead valley linings and chimney weathering for a Grade II* Jacobean manor house undergoing a comprehensive roof restoration — six valley linings in code 5 milled lead with welted edges and traditional lead-welded joints, four chimney weathering sets comprising stepped flashing, front aprons, back gutters, and soakers in code 4, and a parapet gutter lining along the south elevation in code 6 with copper clips at 450mm centres. The Heritage Lottery Fund has approved the grant. The conservation architect requires an LSA-accredited leadworker. Tender return in four weeks. You are on a scaffold in Witney — dressing code 5 lead around the dormer cheek of a Victorian villa, the bossing stick tucked into the crease where the cheek meets the flat top, dressing the overcloak down the turned edge while the late morning sun warms the metal and softens the temper. Both hands on the detail, the lead creasing against the timber tilting fillet. Your phone is in your toolbag on the scaffold board below. Without AI Phone Answering, the architect hears voicemail and calls the second LSA firm on her list. With it, the AI captures the complete brief — Grade II* Jacobean manor, six valleys code 5, four chimney sets code 4, south parapet code 6, copper clips, lead-welded joints, HLF grant approved, LSA accreditation required, four-week tender."
+  scenario="It is 2pm on a Tuesday. You are lead welding a joint on a flat lead roof for a bay window in Summertown — the torch at 350°C, the filler rod feeding into the molten pool, both hands steady as the weld bead forms along the joint between two sheets of code 5. Three calls come in between 1pm and 3pm. Without AI Phone Answering, two voicemails and a hang-up. With AI Phone Answering, all three are answered. Lead one: a roofer in Eynsham needs chimney weathering on a 1930s semi — full set, code 4, stepped both sides, apron, back gutter, soakers — his tiler finishes Thursday and needs the lead Friday. Lead two: a church warden in a village near Woodstock — the north aisle lead roof has developed a leak at the drip junction, water dripping onto the Victorian tiles below during services, needs a specialist assessment. Lead three: a builder in Abingdon constructing a two-storey extension — needs stepped flashing and a front apron where the new roof abuts the existing house wall, code 4, approximately 8 linear metres. At 3:30pm you check leads — a roofer's Friday chimney set, a church aisle leak assessment, and a builder's abutment flashing — and schedule your week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/leadworkers/ai-receptionist/"
+  ctaHeadline="Capture the Jacobean Manor Tender While You Boss the Witney Dormer"
+  ctaSubhead={`An architect with HLF funding needs six valleys, four chimney sets, and a south parapet — all LSA-accredited. The AI captured the specification while the bossing stick dressed the overcloak. From £${pricing.tiers.core.price}/month.`}
+/>
