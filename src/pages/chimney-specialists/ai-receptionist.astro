@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A homeowner calls about a chimney that has been causing damp problems for three years — brown staining on the bedroom wall below the chimney breast, white salt crystallisation on the internal plaster, and a persistent musty smell when the heating is off. Two general builders have applied silicone sealant to the flashing and painted the stack with waterproofer — neither worked. She has been told she needs a chimney specialist to diagnose whether the damp is rain penetration through failed pointing, condensation in an unlined flue, or a combination of both. You are perched on top of a chimney stack in Jericho — repointing lime mortar joints on a Victorian terrace chimney at ridge height, harness clipped to the scaffold, the pointing trowel pressing NHL 3.5 lime mortar into the eroded bed joints. Both hands occupied, the tool bag at the base of the scaffold, your phone inside it. She calls three chimney specialists. One answers and books a Thursday inspection.",
+    with: "Your AI receptionist answers on the second ring. It captures the problem — three years of damp, brown staining, salt crystallisation, musty smell, two failed repair attempts (silicone flashing, waterproof paint), diagnosis needed (rain penetration versus condensation), unlined flue — and confirms you will call back. At the tea break you review and book an inspection."
+  },
+  {
+    without: "A stove installer emails on Wednesday about a chimney that needs lining before he can fit a wood-burning stove — the existing clay liner in a 1930s semi is cracked and will not pass a smoke test for a solid fuel appliance. He needs a flexible stainless steel 316 liner installed from pot to register plate, insulated with vermiculite or a wrap, and a HETAS-compliant installation certificate. The email sits until Sunday.",
+    with: "Your AI acknowledges within sixty seconds, referencing the cracked clay liner, 316 stainless flex liner, insulation requirement, HETAS certification, and the stove installer's programme. Sunday evening you schedule the Monday flue survey."
+  },
+  {
+    without: "A property developer WhatsApps on Saturday about a breast removal on a ground-floor reception room in a Victorian conversion — the chimney breast projects 350mm into the room and the developer wants it removed to maximise lettable floor space. He needs a structural engineer's design, gallows brackets or an RSJ to support the remaining structure above, and Building Regulations sign-off. He messages three chimney firms. By Monday, two have replied.",
+    with: "The AI responds within seconds, asks whether the breast is being removed on the ground floor only or on multiple floors, whether the stack above is being retained, and the property type. Monday at 8am you have a structural removal lead."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Chimney Repairs & Rebuilds",
+    items: ["Full chimney stack rebuild above roofline", "Partial stack rebuild and structural stabilisation", "Repointing in lime mortar (NHL 3.5/5) and cement mortar", "Chimney pot replacement — crown, roll-top, louvred, Bishop, tall boy", "Cowl fitting — rain cowl, anti-downdraught, bird guard, capping cowl", "Lead flashing repair and replacement — stepped, apron, back gutter, soakers"]
+  },
+  {
+    category: "Flue Lining & Certification",
+    items: ["Flexible stainless steel liner (316/904) for solid fuel, gas, and oil", "Clay and terracotta liner repair and replacement", "Pumice liner systems for new-build and refurbishment", "Vermiculite and wrap insulation around liners", "HETAS-compliant flue installation and certification", "CCTV flue surveys and smoke testing"]
+  },
+  {
+    category: "Breast Removal & Structural Work",
+    items: ["Ground-floor chimney breast removal with gallows brackets", "Multi-floor breast removal with RSJ or Catnic support", "Structural engineer liaison and Building Regulations approval", "Fireplace opening enlargement and rebuilding", "Chimney damp diagnosis and remediation", "Disused flue capping, ventilation, and condensation management"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners with chimney damp, cracked stacks, missing pots, leaking flashing, and smoky fires. They need a specialist who can diagnose the root cause — rain penetration, condensation, structural movement, or failed lining — and deliver a permanent solution rather than another temporary patch."
+  },
+  {
+    icon: "🔥",
+    title: "Stove & Fireplace Installers",
+    description: "HETAS-registered stove installers who need chimneys lined before they can commission solid fuel appliances. They require reliable flue lining partners who arrive on programme, install compliant 316 or 904 stainless liners, insulate correctly, and provide the necessary certificates for the HETAS notification."
+  },
+  {
+    icon: "🏗️",
+    title: "Builders & Developers",
+    description: "Builders and developers converting Victorian and Edwardian properties into flats — removing chimney breasts to maximise lettable space, capping disused stacks, and managing the structural calculations, gallows brackets, and Building Regulations required for each removal."
+  },
+  {
+    icon: "🏛️",
+    title: "Conservation & Heritage Clients",
+    description: "Conservation architects and listed building owners requiring sympathetic chimney repairs — lime mortar repointing matching the original mix, handmade chimney pot replacement, traditional lead flashing, and pargeting restoration on decorative Tudor and Stuart chimneys."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand chimney terminology?",
+    answer: "Every element of chimney vocabulary is built into the AI — stack, breast, pot (roll-top, crown, louvred, tall boy, Bishop), cowl (rain, anti-downdraught, bird guard, capping), flue liner (flexible stainless 316/904, clay, terracotta, pumice), chimney rebuild (full/partial, above/below roofline), repointing (lime mortar NHL 3.5/5, cement, flush, recessed, weather-struck joint profile), lead flashing (stepped, apron, back gutter, soakers, code 4/5), chimney cap (concrete, stone, slate, lead), breast removal (gallows bracket, Catnic, RSJ, Acrow props, Building Regs), pargeting, damp (rain penetration, condensation, salt crystallisation, flue gas condensate), HETAS, NACS, CCTV flue survey, and smoke test. When a stove installer describes 'cracked clay liner, 1930s semi, need 316 flex liner from pot to register plate, vermiculite insulated, HETAS cert,' the AI records every specification."
+  },
+  {
+    question: "Can the AI differentiate chimney damp from a flue lining job?",
+    answer: "A homeowner reporting 'brown stains on the bedroom wall below the chimney, musty smell, been going on for years' generates a chimney damp investigation lead — the AI asks about the staining colour, whether the flue is in use, and whether previous repairs have been attempted. A stove installer requesting 'liner for a wood burner installation — existing clay is cracked, need 316 flex, 6-inch, insulated, HETAS cert' generates a flue lining subcontract lead with liner specification, flue diameter, and certification requirements. Each produces a fundamentally different work profile."
+  },
+  {
+    question: "What about urgent chimney calls?",
+    answer: "Chimney emergencies include stacks leaning away from the roof following storm damage, loose pots at risk of falling onto pedestrians below, carbon monoxide concerns from cracked liners, and fire damage to flue interiors after chimney fires. The AI captures the hazard type, the chimney position, the immediate safety concern, and the property access to enable priority attendance."
+  },
+  {
+    question: "How much does this cost for a chimney specialist?",
+    answer: `Chimney specialists pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a sole-trader chimney specialist diagnosing damp and repointing domestic stacks or a multi-man team delivering breast removals, flue lining programmes, and heritage chimney restorations, the allowance accommodates your enquiry mix. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a sole-trader chimney specialist?",
+    answer: "Solo chimney specialists gain immense value. When you are at ridge height repointing a stack — harness clipped, lime mortar on the hawk, the pointing trowel working the bed joints — descending the scaffold to answer a phone is impractical and dangerous. The AI captures every homeowner's damp investigation, every stove installer's lining request, and every developer's breast removal while you finish the stack."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Adjust coverage through your dashboard. During chimney work — when you are at stack height with no phone access — send every call to the AI. During CCTV flue surveys at ground level, site inspections, and quoting — take calls directly. Switch from your phone as your working position changes throughout the day."
+  },
+  {
+    question: "How is chimney project data protected?",
+    answer: "Chimney enquiries contain property addresses, structural details, flue conditions, HETAS certification references, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing chimney firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Chimney Specialists | Rapid Receptionist"
+  description={`AI receptionist for UK chimney specialists — chimney repairs, rebuilds, flue lining, breast removal, and damp diagnosis. Never miss a call from the stack. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/chimney-specialists/ai-receptionist/"
+  tradeName="Chimney Specialist"
+  tradeNamePlural="Chimney Specialists"
+  tradeSlug="chimney-specialists"
+  headline="The AI Receptionist Built for Chimney Specialists"
+  accentWord="Chimney"
+  subhead={`You cannot answer the phone when you are perched on a chimney stack at ridge height, harness clipped to the scaffold, lime mortar on the hawk, and the pointing trowel working the eroded bed joints of a Victorian chimney. Your AI receptionist captures every call, every message, and every enquiry — from homeowners with persistent chimney damp to stove installers needing HETAS-compliant flue liners. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Chimney Damp Investigation Calls While You Repoint at Ridge Height"
+  ctaSubhead={`A homeowner with three years of brown staining and salt crystallisation needs a specialist diagnosis. If voicemail answers, she books a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

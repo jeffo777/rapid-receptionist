@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Homeowners Researching Chimney Problems',
+    text: "Homeowners search 'chimney damp', 'brown stain on chimney wall', and 'chimney leaking' at night — worried about structural damage and carbon monoxide. Chat captures them during their most anxious research moment."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies Chimney Problem Types',
+    text: "Through conversation, the AI identifies whether the visitor has a damp investigation, a structural repair, a flue lining need, a breast removal project, or a pot and cowl issue. You receive a categorised lead matched to your capability."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Damp Research',
+    text: "Rain starts at 8pm. By 9pm a homeowner spots the brown stain spreading on the bedroom chimney breast. By 10pm she is on your website searching 'chimney damp specialist.' Chat captures her urgency while she stares at the stain."
+  },
+  {
+    icon: '📊',
+    title: 'Explains Chimney Fault Causes',
+    text: "Visitors ask diagnostic questions — 'why is my chimney damp?', 'do I need a chimney liner?', 'can I remove a chimney breast?' The AI responds from your profile knowledge while capturing the property age, chimney position, and fault symptoms."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Chimney Case Studies',
+    text: "Your website shows before-and-after chimney rebuilds, lime mortar repointing close-ups, and flue lining installations. Chat converts visitors studying your completed chimney work into booked inspections."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat is part of phone answering at £${pricing.tiers.core.price}/month. Unlimited chimney conversations — from pot replacement enquiries to multi-chimney breast removal projects.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my chimney website?",
+    answer: "During onboarding you receive a lightweight JavaScript snippet. Drop it into your website header through WordPress, Squarespace, or whichever platform hosts your site. The branded chat widget appears on every page. Chimney specialists with before-and-after rebuild galleries report that visitors engage with chat directly from project pages showing rebuilt stacks, new pots, and fresh lime mortar pointing."
+  },
+  {
+    question: "Can the AI advise on chimney damp causes?",
+    answer: "Your company profile configures the AI with your diagnostic approach. When a visitor types 'we have a brown stain spreading on the chimney wall — what causes this?' the AI responds from your profile context — mentioning common causes like failed pointing, cracked liners, and cement capping that traps moisture — while capturing the staining colour, the building age, and whether the flue is active or disused."
+  },
+  {
+    question: "What does chat capture from chimney visitors?",
+    answer: "The AI gathers the chimney problem type (damp, structural, lining, or removal), the staining description if applicable, the chimney position (ridge, gable, or party wall), the building age and type, whether the flue is active, any previous repair attempts, and the visitor's contact information for your follow-up."
+  },
+  {
+    question: "Does chat slow my chimney website?",
+    answer: "Your chimney project galleries, case study photographs, and accreditation badge graphics load at their normal speed. The chat interface initialises only after all existing page content has rendered. No performance impact on any device or connection."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Website chat comes included with phone answering in the Core plan at £${pricing.tiers.core.price}/month. For chimney specialists, both channels serve distinct enquiry patterns: daytime phone calls from stove installers booking lining jobs and developers ordering breast removals, and evening website conversations from homeowners diagnosing chimney damp while rain drives water through their failed pointing.`
+  },
+  {
+    question: "How is visitor data from chimney queries handled?",
+    answer: "Chat conversations containing property addresses, chimney fault descriptions, structural details about breast removal, flue conditions, and visitor contact information are encrypted and stored on UK and EU servers under UK GDPR. Lead summaries go exclusively to you. No chimney project details reach competitors or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Chimney Specialists | Rapid Receptionist"
+  description={`AI website chat for UK chimney specialists. Engages homeowners researching chimney damp and stove installers planning flue liners. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/chimney-specialists/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Chimney Specialist"
+  tradeNamePlural="Chimney Specialists"
+  tradeSlug="chimney-specialists"
+  headline="AI Website Chat for Chimney Specialist Companies"
+  accentWord="Chimney"
+  subhead="A homeowner finds your website at 9:15pm on a rainy Wednesday. She can hear water dripping inside the chimney breast in the living room — the fireplace is sealed but a faint trickle echoes behind the plasterboard every time it rains heavily. The bedroom above has a yellow-brown stain that has grown from a small shadow into a patch the size of a dinner plate. She types: 'Good evening — our chimney is leaking inside. We can hear dripping behind the sealed-up fireplace in the living room. The bedroom above has a growing brown stain on the chimney breast wall. Victoria terrace, 1890s, the chimney is on the ridge and has four pots — three working for neighbours, one is ours and it is capped with a concrete slab. The general builder who sealed the fireplace said we need a chimney specialist. Can someone come and investigate? We are in Iffley, OX4.' Without chat, she bookmarks. With AI Website Chat, the AI responds that concrete slab capping without ventilation is a common cause of condensation damp in disused flues, asks whether there is a vent in the sealed fireplace, and captures the lead — 1890s Iffley terrace, ridge chimney, four pots (one capped with concrete slab), dripping sound, brown stain growing, no ventilation, sealed fireplace, OX4."
+  scenario="It is 11pm on a Thursday. A stove installer types: 'Hi — I install wood burning stoves and need a chimney specialist to line a flue for me. The property is a thatched cottage near Woodstock, seventeenth-century. The existing flue is an old rubble construction — no liner of any kind. The building is Grade II listed. I am fitting a Clearview Pioneer 400 inset stove. I need a 904 grade liner because the appliance burns wood only, the flue is about 9 metres, and the listing means any external work must be invisible from the ground. Conservation officer requires lime mortar for any repointing. Can you do 904 liners in listed buildings? Need this done week after next.' Without chat, he emails Friday. With AI Website Chat, the AI confirms that 904 stainless is correct for wood-only appliances, asks about the flue route (straight or offset), and captures: thatched cottage Woodstock, 17th century, Grade II, rubble flue, no existing liner, 904 grade, 9m, Clearview Pioneer 400, conservation officer requirement, lime mortar, invisible from ground, week after next."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/chimney-specialists/ai-receptionist/"
+  ctaHeadline="Win the Iffley Chimney Investigation While She Listens to Dripping at 9:15pm"
+  ctaSubhead={`A homeowner hears water dripping behind her sealed fireplace while brown staining spreads above. Chat captures the 1890s terrace, concrete slab cap, and missing ventilation. Included at £${pricing.tiers.core.price}/month.`}
+/>

@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Chimney Damage Photos',
+    text: "Homeowners WhatsApp photos of cracked chimney stacks, leaning pots, crumbling haunching, and the brown stains spreading across their bedroom walls. The AI responds instantly, asks about the chimney position and building age, and attaches every photo to your inspection lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Stove Installer Lining Slots',
+    text: "Stove installers WhatsApp lining requests mid-installation week — 'got a Stovax Vogue Midi going in Wednesday, need your liner team Monday, 316 flex, 7-inch, 8 metres, vermiculite fill.' The first chimney liner to confirm takes the booking."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Developer Structural Requests',
+    text: "Developers WhatsApp breast removal requests from conversion sites — 'removing two chimney breasts in the front reception, need gallows brackets, SE calcs done, can you do the structural work next week?' The AI captures the structural brief while you rebuild a stack elsewhere."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Stack Hours',
+    text: "Stove installers confirm next-week lining slots in the evening. Homeowners photograph chimney cracks after rain. Developers send breast removal specifications after site meetings. The AI captures every after-hours chimney message."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Chimney Briefs',
+    text: "A WhatsApp saying 'chimney leaking, 1930s semi, ridge stack, brown stain in bedroom, Headington, can you inspect?' becomes a structured damp investigation lead with position, age, symptoms, and location."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. Flue liner specifications, structural calculations, and HETAS certificates stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess chimney damage from photos?",
+    answer: "Chimney damage assessment requires physical access — tapping mortar joints, checking pot stability, probing crack depth, and evaluating flue integrity. The AI cannot provide visual diagnosis from photographs. It does respond constructively to every image — acknowledging the visible deterioration, asking about the chimney age, whether the flue is currently serving an appliance, the building height and access, and whether any material has fallen. Every photograph attaches to your lead for inspection at height."
+  },
+  {
+    question: "What about multi-message chimney threads?",
+    answer: "Chimney conversations evolve across multiple messages — a homeowner sends a photo of the brown stain, then explains it appeared two years ago, then mentions the fireplace was sealed, then asks about costs. The AI maintains the entire history and assembles one comprehensive chimney lead with fault type, duration, history, chimney position, and homeowner contact details."
+  },
+  {
+    question: "How much does AI WhatsApp cost for chimney specialists?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. A chimney rebuild generates £1,500 to £5,000. A full flue relining with insulation generates £800 to £2,500. Securing one stove installer's regular lining programme — where a swift WhatsApp confirmation cements a recurring monthly relationship — provides ongoing revenue that eclipses the annual channel cost.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Post one reply in any active thread and control transfers to you permanently. Most chimney specialists allow the AI to extract the initial details — fault type, chimney position, building age, flue status, and urgency — then engage directly to discuss the inspection schedule, structural requirements, or liner specification."
+  },
+  {
+    question: "How is WhatsApp data from chimney enquiries protected?",
+    answer: "Every WhatsApp message — chimney damage photographs, property addresses, structural details, flue condition descriptions, HETAS references, and sender contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively with you. No project details reach competing chimney firms or are repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Chimney Specialists | Rapid Receptionist"
+  description={`AI WhatsApp for UK chimney specialists. Responds to chimney damage photos, stove installer lining requests, and developer breast removal enquiries while you work at stack height. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/chimney-specialists/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Chimney Specialist"
+  tradeNamePlural="Chimney Specialists"
+  tradeSlug="chimney-specialists"
+  headline="AI WhatsApp for Chimney Specialist Companies"
+  accentWord="Chimney"
+  subhead="A stove installer WhatsApps at 7:15am on a Tuesday with a photo of a fireplace opening. He is fitting a Contura 556 freestanding wood burner in a 1920s detached house in North Oxford — the existing clay liner has been CCTV-surveyed and two sections are cracked with mortar joints displaced. The smoke test failed. His message: 'Morning — need a reline for a Contura 556 install in North Oxford. 1920s detached, existing clay liner cracked in two places, smoke test failed. CCTV report attached. Need a 6-inch 316 flex liner, about 10 metres from pot to register plate, insulated with vermiculite backfill. I am fitting the stove Friday — can your team line Wednesday or Thursday? Need HETAS installation cert for the liner.' You are loading the van with scaffolding for a chimney rebuild in Witney — a three-chimney Georgian townhouse with stacks that need repointing above the roofline. Without AI WhatsApp, the lining request waits until midday when you arrive at Witney. Another liner specialist confirms by 8am. With it, the AI responds at 7:16am, confirms your 316 lining capability, and asks whether the existing pot is serviceable or needs replacing when the liner terminates. The installer confirms the pot is sound. At 9am you review: North Oxford 1920s detached, 316 flex 6-inch 10m, vermiculite, Contura 556, clay cracked in two places, smoke test failed, CCTV report attached, line Wednesday or Thursday, HETAS cert, pot okay."
+  scenario="It is 9pm on a Saturday. A homeowner in Abingdon WhatsApps two photos of her chimney stack taken from the garden — a visible lean to the east, mortar joints eroded to a depth of 30mm, and the tallest pot tilted at an alarming angle. Her message: 'Hi — our chimney stack is leaning. You can see it from the garden — it is tilting to the right. The pointing looks really eroded. The big pot on the left is tilting badly and I am worried it will fall. Victorian terraced house, ridge chimney, four pots. Can someone come urgently? We are in Abingdon, OX14. Is this dangerous?' Without AI WhatsApp, the emergency waits until Monday. With AI WhatsApp, the reply at 9:01pm: 'Thank you — a leaning stack with a tilted pot is a potential safety hazard. Could you confirm whether anything has fallen from the chimney yet, whether the lane below the chimney is a public footway, and whether any of the four pots are currently connected to active flues?' She confirms nothing fallen, the lane is public, two pots serve active gas flues. Sunday you prioritise: Abingdon Victorian terrace, OX14, ridge chimney, 4 pots, stack leaning east, tallest pot tilted, pointing eroded 30mm, public footway, 2 active gas flues, urgent."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/chimney-specialists/ai-receptionist/"
+  ctaHeadline="Confirm the Wednesday Flue Lining While You Load the Van for Witney"
+  ctaSubhead={`A stove installer needs a 316 flex liner fitted before his Friday Contura installation. The AI confirmed your capability while you loaded scaffolding for the Georgian repoint. Add-on at £${pricing.addOn.price}/month.`}
+/>

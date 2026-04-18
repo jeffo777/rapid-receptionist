@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Stove Installer Lining Texts',
+    text: "HETAS stove installers text chimney liners between jobs — 'got a Stovax Riva 50 going in Thursday, need 316 flex 5-inch 9m vermiculite, can you do Tuesday?' The first liner team to confirm secures the booking."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Chimney Briefs from Short Messages',
+    text: "A text like 'chimney damp, Victorian semi, ridge stack, brown stain in bedroom, Cowley, can you inspect?' gives the AI the essentials. It asks about the flue status and previous repairs. Your lead arrives ready for scheduling."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Referral Texts',
+    text: "When a sweep recommends your chimney repair work to a customer, that homeowner texts about their own cracked stack or leaking chimney. The AI captures the referral at peak trust."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Stack Work Hours',
+    text: "Stove installers confirm next-week lining programmes in the evening. Homeowners text chimney concern questions after dark. Developers send breast removal queries after site hours. The AI captures every after-hours chimney text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Chimney Details',
+    text: "Messages arrive in stages — 'chimney problem' then 'brown stain' then 'above the fireplace' then '1890s terrace' then 'in Jericho.' The AI constructs one diagnostic lead from every fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. HETAS liner bookings, structural calculations, and chimney damp inspection schedules remain separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound chimney text?",
+    answer: "Each text triggers a branded response in your company name within seconds. A stove installer's lining request — '316 flex 6-inch, 8 metres, vermiculite, Morso Squirrel 1412, register plate, HETAS cert, can you do Wednesday' — is acknowledged with the liner spec, length, insulation, appliance, and schedule preserved. A homeowner's concern — 'chimney pot looks wobbly, worried about it falling' — receives a response asking about the chimney height, the pot position, and whether any material has already fallen."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "The text response reads like a chimney professional checking messages between scaffold climbs — terminology-specific, safety-conscious, and technically aware. It references liner grades, pot types, flue conditions, and mortar specifications. Stove installers texting lining bookings expect a knowledgeable reply confirming liner grade, diameter, and programme availability."
+  },
+  {
+    question: "How does it handle existing client texts?",
+    answer: "Regular stove installer clients text programme updates — 'Thursday Stovax moved to next Monday, same spec' or 'add a second liner for the upstairs bedroom fireplace.' The AI captures every amendment and separates programme changes from new enquiries on your dashboard."
+  },
+  {
+    question: "What does AI SMS cost for chimney specialists?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A chimney rebuild generates £1,500 to £5,000. A flue relining generates £800 to £2,500. Confirming one stove installer's Tuesday lining slot — while you repointed a stack at ridge height on another property — secures revenue that outweighs the annual channel cost from a single job.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send one reply and the AI steps back from that thread permanently. During ground-level CCTV surveys and flue inspections — manage texts directly. During chimney work at height — when the scaffold tower extends above the ridge and every person is clipped in — let the AI handle the incoming bookings."
+  },
+  {
+    question: "How is text data from chimney enquiries stored?",
+    answer: "Text messages containing property addresses, chimney fault descriptions, flue liner specifications, HETAS references, structural details, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing chimney firms or used for any other purpose."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Chimney Specialists | Rapid Receptionist"
+  description={`AI SMS for UK chimney specialists. Responds to stove installer lining texts, chimney damp enquiries, and pot replacement requests while you work at stack height. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/chimney-specialists/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Chimney Specialist"
+  tradeNamePlural="Chimney Specialists"
+  tradeSlug="chimney-specialists"
+  headline="AI SMS for Chimney Specialist Companies"
+  accentWord="Chimney"
+  subhead="You are at 8:30am on a Monday, ascending the scaffold tower on a Victorian terrace in Walton Street — the chimney stack rises four metres above the ridge, five courses of nineteenth-century brickwork with cement joints that have eroded to a depth of 25mm across the exposed north face. You will spend the day raking out the old cement and repointing in NHL 3.5 lime mortar, matching the original joint profile. At 9:10am a stove installer texts: 'Morning — fitting an ACR Ashdale 7kW multi-fuel stove in a cottage near Eynsham on Friday. Existing brick flue, probably original, no liner. Need CCTV survey plus a 6-inch 904 grade flex liner if the flue route is clear. About 7 metres. Wrap insulated. HETAS cert needed. Can you survey and line Wednesday or Thursday?' Your hands grip the scaffold standard, the trowel bag slung across your back. Without AI SMS, the text waits until the lunch break at 1pm. He texts another liner team. With it, the AI responds at 9:11am, confirms your 904 liner capability, and asks whether the cottage has a thatched roof requiring special fire safety measures. The installer confirms slate roof. At 1pm you review: Eynsham cottage, 904 flex 6-inch 7m, wrap insulated, ACR Ashdale 7kW multi-fuel, existing brick no liner, CCTV survey then line, Wednesday or Thursday, HETAS cert, slate roof."
+  scenario="It is 7pm on a Wednesday. A homeowner in Kidlington texts about a ground-floor chimney breast removal — she is renovating the kitchen and the chimney breast protrudes 400mm into the room. Her text: 'Hi — we want to remove the chimney breast in our kitchen. It sticks out about 400mm and wastes a lot of space. 1950s semi, the fireplace was bricked up years ago. The chimney breast goes up through the bedroom above and continues to the stack on the roof. Can you remove just the kitchen section? Do we need a structural engineer? How much roughly? Would like to do this in the next month or so.' Without AI SMS, the text waits until Thursday morning. With AI SMS, the response at 7:01pm: 'Thank you — ground-floor breast removal on a 1950s semi is a common request. Could you confirm whether the bedroom above also has a chimney breast projection, and whether the stack above the roof is shared with a neighbour?' She confirms: bedroom breast present, stack is shared. Thursday you call: Kidlington 1950s semi, ground-floor breast removal only, 400mm projection, bricked-up fireplace, bedroom breast staying, shared stack, SE required, timeframe one month."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/chimney-specialists/ai-receptionist/"
+  ctaHeadline="Confirm the Eynsham Cottage 904 Liner While You Ascend in Walton Street"
+  ctaSubhead={`A stove installer needs CCTV plus a 904 liner fitted before his Friday ACR Ashdale job. The AI confirmed your capability while you climbed the scaffold for the Victorian repoint. Add-on at £${pricing.addOn.price}/month.`}
+/>

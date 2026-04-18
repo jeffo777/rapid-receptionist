@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls at Stack Height',
+    text: "Repointing a Victorian chimney at ridge level, rebuilding a condemned stack above the roofline, fitting new pots on fresh haunching, and dressing lead flashing around the base — chimney work happens at the most inaccessible point of the building. Missed Call Text Back texts every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Stove Installer Callers',
+    text: "A HETAS installer with a stove going in Thursday calls his liner team. Voicemail? He calls the next chimney firm. A branded text — 'Thanks for calling — we are repointing a chimney at height and will return your call shortly' — preserves the lining booking."
+  },
+  {
+    icon: '🏷️',
+    title: 'Specialist Professional Image',
+    text: "An instant branded text from a chimney specialist conveys the height-access expertise and structural knowledge that stove installers and homeowners seek — a professional firm with capability, not a general builder dabbling in chimney work."
+  },
+  {
+    icon: '📊',
+    title: 'Essential During Full-Day Stack Work',
+    text: "A chimney rebuild absorbs the entire day — from scaffold ascent at dawn to the final pot haunching at 4pm. Every minute at the summit with no phone access. Missed Call Text Back captures every enquiry during your most intensive working days."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Chimney Details',
+    text: "Callers reply with scope — 'chimney damp, 1890s terrace, brown stain in bedroom, Jericho, need inspection.' Replies arrive on your dashboard before you descend the scaffold tower."
+  },
+  {
+    icon: '🔄',
+    title: 'Pairs with AI Phone Answering',
+    text: "Phone Answering conducts full chimney conversations. Missed Call Text Back handles edge cases — a call during a critical mortar joint, a phone in the tool bag four floors below, or a one-ring disconnect. Together: zero lost chimney leads."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text send?",
+    answer: "The branded text dispatches within seconds of the unanswered call — before the stove installer reaches the next chimney firm on his contact list. During full-day stack rebuilds where every team member works above the roofline from dawn to dusk, this automatic text maintains your commercial presence across an entire day without a single person descending."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You write the message during onboarding and modify it at any time. A chimney-specific text reads: 'Thank you for calling [company name]. We are currently working on a chimney at height. We will return your call at the earliest opportunity. Reply with your chimney requirements for a faster response.' This communicates active chimney capability and invites specification sharing."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "The two systems operate as complementary chimney protections. Phone Answering holds complete conversations — diagnosing damp, capturing lining specifications, and recording breast removal requirements. Missed Call Text Back covers infrequent edge cases — a call during a critical lime mortar joint that must be completed before the mortar stiffens, a phone signal blocked by the stack itself, or a caller who disconnects before the AI connects. Both running simultaneously means no chimney opportunity vanishes."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. A chimney rebuild generates £1,500 to £5,000. Recovering a single missed call from a stove installer with a recurring monthly lining programme — through an immediate branded text while you built a stack at the summit — establishes a revenue stream that surpasses the annual channel cost from one relationship alone.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Stove installers reply with lining specifications — '316 flex, 6-inch, 9m, vermiculite, Morso 1442, register plate, HETAS cert, Thursday.' Homeowners reply with chimney concerns — 'chimney damp, brown stain in bedroom, 1930s semi, Marston.' Developers reply with structural requirements — 'breast removal, two properties, Cowley.' These chimney leads arrive on your dashboard while you work above the ridge."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Missed caller details, text replies containing property addresses, chimney fault descriptions, flue specifications, structural requirements, and contact information are encrypted and held on UK and EU servers under UK GDPR. Only you can access the data. Nothing reaches competing chimney specialists or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Chimney Specialists | Rapid Receptionist"
+  description={`Missed Call Text Back for UK chimney specialists. Automatically texts callers while you rebuild stacks, repoint at height, and fit liners — keeps damp investigations and lining bookings warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/chimney-specialists/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Chimney Specialist"
+  tradeNamePlural="Chimney Specialists"
+  tradeSlug="chimney-specialists"
+  headline="Missed Call Text Back for Chimney Specialist Companies"
+  accentWord="Chimney"
+  subhead="It is 9am on a Wednesday. You are at the summit of a chimney stack on a Victorian semi in Marston — rebuilding the top four courses that a structural surveyor condemned after the winter storms. The existing brickwork is spalling, the cement pointing has blown away in sheets, and the two pots sit on crumbled haunching. You are bedding reclaimed Staffordshire blues in NHL 3.5 lime mortar, each course built plumb and level from the first sound course below. Three calls come in between 9am and midday. Your phone is in the tool bag at the bottom of the scaffold tower, three scaffold lifts below your feet. Without Missed Call Text Back, two voicemails — 'chimney damp' and 'need a liner' — one hang-up. With it, all three receive texts within seconds. The first replies at 9:30am: 'Hi — HETAS stove installer in Witney. I have three wood burner installations next week and need your liner team for all three. Two are 316 flex 6-inch in existing chimneys, one is 904 5-inch in a thatched property. All need vermiculite. Can we discuss a batch rate? I have recurring work — about four to six liners per month.' At the lunch break you review. Thursday you call: Witney HETAS installer, 3 liners next week (2× 316 6-inch + 1× 904 5-inch thatch), vermiculite, recurring 4-6 liners per month, batch pricing discussion."
+  scenario="It is 4pm on a stormy November Friday. You have been at stack height since 8am repointing a three-chimney Georgian townhouse in the city centre — the wind strengthened through the afternoon and you made the decision to descend at 3pm, securing tools and covering the open mortar joints with hessian. Six calls came in during the day. Without Missed Call Text Back, you check at 4pm: six unknowns, two voicemails — 'bricks fallen from chimney' and 'stove installer needs a liner' — four gone forever. With Missed Call Text Back, all six received texts. Reply one: 'homeowner Botley — chimney pot fell off in the wind, landed in the front garden, Victorian semi, need pot replaced urgently.' Reply two: 'HETAS installer Abingdon — Stovax Stockton 5 going in Monday, need 316 flex 5-inch 7m wrap insulated register plate HETAS cert, can you do Friday or Saturday?' Reply three: 'homeowner Summertown — persistent damp on chimney breast, been told we need a cornice repair, Edwardian semi.' Reply four: 'developer Cowley — breast removal in a ground-floor kitchen, 1950s semi, gallows brackets, SE done.' Reply five: 'conservation architect — four chimneys on a Grade II rectory near Thame, lime mortar repointing, Heritage Lottery.' Reply six: 'homeowner Headington — smell of soot when the fire is not lit, think the liner might be cracked.' Six leads. Saturday you prioritise — the fallen pot first, the Monday liner second."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/chimney-specialists/ai-receptionist/"
+  ctaHeadline="Recover Six Chimney Leads from One Stormy November Friday"
+  ctaSubhead={`While the wind forced you off the Georgian scaffold at 3pm, six callers missed you. Six texts went out. A fallen pot, a Monday liner, damp, a breast removal, a Grade II rectory, and a cracked liner. Add-on at £${pricing.addOn.price}/month.`}
+/>

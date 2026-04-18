@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Stove Installer Lining Orders',
+    text: "HETAS stove installers email batched lining requirements with appliance models, flue diameters, liner grades, and installation dates. The chimney firm that acknowledges first — referencing the liner spec and schedule — secures the recurring referral relationship."
+  },
+  {
+    icon: '📐',
+    title: 'References Chimney Specifications',
+    text: "When a stove installer emails specifying '904 grade flex liner, 7-inch, 11 metres, vermiculite backfill, Clearview Pioneer 400, thatched cottage, HETAS cert required,' the AI acknowledgement references the liner grade, diameter, length, insulation, appliance, and building risk."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your Stack Hours',
+    text: "Chimney days mean sunrise to late afternoon at ridge height — every hour at the summit repointing, rebuilding, or fitting pots. A stove installer's lining email at 9am sits unread until the scaffold descends at 4pm. Your sixty-second acknowledgement preserves the booking."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Orders from Supplier Emails',
+    text: "Your inbox mixes stove installer lining requests, liner supplier dispatch notes, scaffold hire confirmations, HETAS certification renewals, cowl supplier invoices, and lime mortar delivery receipts. The AI identifies genuine project enquiries from operational messages."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Installer Loyalty',
+    text: "HETAS stove installers need reliable lining partners. Consistent instant acknowledgements across months of installations build the trust that makes your firm their default liner team for every stove job."
+  },
+  {
+    icon: '📎',
+    title: 'Notes CCTV Reports and Drawings',
+    text: "Chimney emails include flue CCTV survey reports, structural engineer drawings for breast removals, and HETAS notification forms. The AI notes these attachments in the acknowledgement."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce chimney quotes from emails?",
+    answer: "No pricing is generated — only a professional receipt referencing the chimney specification and project scope. Your quotation — liner cost, insulation, register plate, pot terminal, scaffold access, labour, HETAS certificate, and any structural work — is prepared by you from the flue survey and site inspection."
+  },
+  {
+    question: "Will it respond to liner supplier and scaffold emails?",
+    answer: "During onboarding you configure which email types trigger the acknowledgement. Liner manufacturer dispatch confirmations, cowl supplier invoices, scaffold hire booking receipts, lime mortar delivery notes, and HETAS membership renewal notices are automatically excluded. Only genuine client enquiries and installer lining requests receive the professional response."
+  },
+  {
+    question: "How does it handle homeowner chimney emails?",
+    answer: "Homeowner contact form submissions — 'our chimney leaks every time it rains, can you come and inspect?' — receive a professional response asking about the chimney problem type, the building age, whether the flue is active or disused, and the property postcode for scheduling."
+  },
+  {
+    question: "What does email response cost for chimney specialists?",
+    answer: `Email response is £${pricing.addOn.price}/month as an add-on. A chimney rebuild generates £1,500 to £5,000. Acknowledging a stove installer's lining order within sixty seconds — while your team repointed the stack four floors up — frequently determines whether you receive the Friday installation booking or the installer calls a competing liner firm.`
+  },
+  {
+    question: "Can all subsequent correspondence come from me?",
+    answer: "Beyond the initial acknowledgement, every communication is written by you. Your CCTV flue survey report, liner specification, structural engineer coordination for breast removals, HETAS installation certificate, and warranty documentation are authored and submitted entirely by you."
+  },
+  {
+    question: "How is chimney email data secured?",
+    answer: "Chimney emails contain property addresses, flue CCTV reports, structural drawings for breast removal, HETAS certification details, and commercially sensitive information. All content is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No details reach competing chimney firms or third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Chimney Specialists | Rapid Receptionist"
+  description={`AI email response for UK chimney specialists. Acknowledges stove installer lining orders, chimney damp enquiries, and breast removal requests within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/chimney-specialists/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Chimney Specialist"
+  tradeNamePlural="Chimney Specialists"
+  tradeSlug="chimney-specialists"
+  headline="AI Email Response for Chimney Specialist Companies"
+  accentWord="Chimney"
+  subhead="A HETAS stove installer emails on Monday morning with three lining jobs for the week. Job one: a Jøtul F 373 wood burner in a 1930s semi in Botley — existing clay liner partially collapsed, need 6-inch 316 flex liner, 9 metres, vermiculite backfill, new roll-top chimney pot, register plate, and HETAS certificate — installation Thursday. Job two: a Charnwood Island II in a Victorian terrace in Jericho — single-storey rear extension flue, 5-inch 316 flex, 4 metres, wrap insulated, existing pot serviceable — installation Friday. Job three: a Contura i5 inset in a thatched cottage near Charlbury — rubble flue construction, will need CCTV survey first, likely 904 grade liner because of the thatch risk, approximately 8 metres — stove installation provisionally the following Tuesday. You are at the summit of a three-chimney Georgian townhouse in the High Street — rebuilding the tallest stack which has been condemned by a structural surveyor, the brickwork disintegrating at the top three courses. Without AI Email Response, the three lining jobs sit unread until the scaffold descends. The installer books another liner team for Thursday. With it, your acknowledgement arrives within sixty seconds, referencing all three jobs — the Botley Jøtul with 316/vermiculite/new pot, the Jericho Charnwood with 316/wrap, and the Charlbury Contura requiring CCTV then 904/thatch — with the three installation dates noted."
+  scenario="It is 7am on a Monday. Your inbox accumulated over the weekend: a homeowner in Summertown reporting a chimney stack that shed two bricks during Saturday's storm — 'found two bricks from the chimney in the front garden, worried more will fall, Victorian semi, ridge chimney, four pots,' a conservation architect requesting chimney repointing on a Grade I listed almshouse in the city centre — 'five chimneys, all require lime mortar repointing matching the original seventeenth-century mix, hot lime putty preferred, heritage funding approved,' a developer requesting breast removal in a four-flat conversion in Cowley — 'ground-floor and first-floor breasts in two mid-terrace properties, eight breast removals total, gallows brackets, SE calcs provided, Building Control required,' and a cowl supplier confirming dispatch of the anti-downdraught cowls you ordered. Without AI Email Response, the storm damage, the heritage almshouse, and the eight breast removals wait until Tuesday. With AI Email Response, the storm stack references fallen bricks and the safety concern, the almshouse notes the five chimneys and hot lime putty specification, the eight breast removals reference the SE calcs and Building Control, and the cowl dispatch is filtered."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/chimney-specialists/ai-receptionist/"
+  ctaHeadline="Acknowledge Three Lining Jobs While You Rebuild the High Street Stack"
+  ctaSubhead={`A HETAS installer's Monday email contains a Jøtul, a Charnwood, and a Contura — three liners across three days. Your sixty-second acknowledgement secures the Thursday-to-Tuesday programme. Add-on at £${pricing.addOn.price}/month.`}
+/>

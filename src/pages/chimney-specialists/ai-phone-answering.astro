@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Work at Stack Height',
+    text: "Repointing a Victorian chimney at ridge level, rebuilding a cracked stack above the roofline, fitting a new pot or cowl at the summit, or dressing lead flashing around the base — chimney work happens at the highest, most inaccessible point of the building. The AI answers every call in your company name."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Chimney Briefs at Every Level',
+    text: "When a stove installer calls about a 316 flex liner for a wood burner, the AI captures the flue diameter, liner grade, and HETAS requirements. When a homeowner calls about brown staining below the chimney breast, the AI captures the damp history and previous repair attempts."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Urgent Chimney Safety Calls',
+    text: "A stack leaning after storm damage, a pot rocking on a crumbling haunching, carbon monoxide suspicion from a cracked liner, or fire damage inside the flue after a chimney fire — chimney emergencies endanger occupants and pedestrians. The AI captures the hazard type, location, and severity for priority response."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Chimney Enquiries',
+    text: "Homeowners notice chimney damp when it rains in the evening. They research chimney specialists while the brown stain spreads down the bedroom wall. The AI captures every evening call at peak concern."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for Chimney Pricing',
+    text: "Each lead specifies the chimney problem (damp, structural, lining, or removal), the chimney position (ridge, gable, party wall), the building type and age, whether the flue is active or disused, and access requirements — everything you need to plan the inspection."
+  },
+  {
+    icon: '🏷️',
+    title: 'HETAS-Grade Professionalism',
+    text: "A chimney firm that answers professionally and asks about the flue condition, liner requirement, and HETAS certification signals specialist expertise that stove installers and homeowners trust for their most critical chimney work."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their chimney problem?",
+    answer: "Questions adapt to the nature of the enquiry. A homeowner reporting damp is asked about the staining location relative to the chimney breast, the colour of the staining (brown/yellow suggests rain, white salt suggests condensation), whether the flue is currently in use, and how long the problem has persisted. A stove installer requesting lining is asked about the flue diameter, liner grade (316 or 904), insulation method (vermiculite or wrap), the appliance type (wood, multi-fuel, gas), and the HETAS notification timeline."
+  },
+  {
+    question: "Can the AI distinguish a repair from a breast removal?",
+    answer: "Chimney repairs — repointing, pot replacement, flashing renewal, and damp investigation — are maintenance-focused with the chimney structure retained. Breast removals — gallows brackets, RSJs, structural engineer designs, and Building Regulations — are structural alterations requiring different skills, insurance, and certification. The AI constructs entirely different lead profiles, separating your repair schedule from your structural removal programme."
+  },
+  {
+    question: "What about calls at stack height?",
+    answer: "Chimney work is performed at the most dangerous point of the building — ridge height or above, with harness, scaffold, or specialist chimney access equipment. Descending the scaffold to answer a phone is not a minor inconvenience; it is impractical and hazardous. The AI captures every call while you maintain the physical focus that chimney work at height demands."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `Your Core plan includes ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Chimney specialists receive homeowner damp calls, stove installer lining requests, developer breast removal enquiries, and heritage chimney restoration specifications. The specialist nature of chimney work generates moderate call volumes with high individual job values. Overage is 20p per minute with no lock-in.`
+  },
+  {
+    question: "Can I take calls during ground-level work?",
+    answer: "During CCTV flue surveys, smoke tests, ground-floor breast removals, and quoting — manage calls directly from your phone. The instant you ascend the scaffold to work on the stack — redirect the AI. Toggle from your dashboard whenever your working height changes."
+  },
+  {
+    question: "How is chimney project data secured?",
+    answer: "Chimney enquiries contain property addresses, structural details about breast removal, flue condition reports, HETAS references, and commercially sensitive pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details reach competing chimney firms, are shared with liner suppliers, or are sold to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Chimney Specialists | Rapid Receptionist"
+  description={`AI phone answering for UK chimney specialists. Captures damp investigations, flue lining requests, and breast removal enquiries while you work at stack height. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/chimney-specialists/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Chimney Specialist"
+  tradeNamePlural="Chimney Specialists"
+  tradeSlug="chimney-specialists"
+  headline="AI Phone Answering for Chimney Specialist Companies"
+  accentWord="Chimney"
+  subhead="A homeowner calls at 10:30am. Her Victorian terraced house in East Oxford has a chimney breast in the master bedroom with persistent damp — the staining started two years ago as a faint brown shadow on the wallpaper and has spread steadily across the entire chimney breast wall. The room smells of soot after rain. She has had the lead flashing replaced by a general roofer six months ago — the damp continued. A builder suggested the pointing on the stack looked 'tired.' She needs a specialist to diagnose whether the rain is coming through failed pointing, the pot haunching, a cracked flue liner channelling rainwater internally, or a combination. You are at the summit of a four-storey Edwardian stack in Summertown — repointing the upper courses in NHL 3.5 lime mortar, the scaffold tower extending above the ridge, your harness clipped to the scaffold standard. The wind is gusting across the rooftops and every grain of concentration focuses on the pointing trowel pressing mortar into century-old brickwork. Your phone is in the tool bag at the base of the scaffold tower, four floors below. Without AI Phone Answering, her damp investigation call goes to voicemail. She calls two more chimney firms. With it, the AI captures: East Oxford Victorian terrace, persistent chimney breast damp 2 years, brown staining, soot smell after rain, flashing already replaced, pointing suspect, diagnosis needed — rain v liner v pointing, ridge chimney."
+  scenario="It is 2pm on a Wednesday. Three calls between noon and 2pm. You are rebuilding the top three courses of a crumbling chimney stack on a 1950s semi in Headington — the original brickwork is spalling, the pot haunching has failed, and two of the three pots are cracked. Without AI Phone Answering, one voicemail and two hang-ups. With it, all three are answered. Lead one: a HETAS stove installer in Botley — 'I have a Charnwood C-Five going into a 1930s semi next week, existing clay liner is cracked, need a 6-inch 316 flex liner, vermiculite insulated, from pot to register plate, HETAS cert, can you do Monday?' Lead two: a developer in Cowley converting a Victorian end-terrace into two flats — 'ground-floor chimney breast needs removing in both the front and rear reception rooms, need gallows brackets, structural calcs, and Building Control sign-off.' Lead three: a homeowner in Marston noticing a chimney pot has been wobbling for weeks — 'worried it will fall in the next storm, can someone come and check the haunching?' At 2:30pm you check leads — a Monday liner booking, a double breast removal, and an emergency pot resecuring — and schedule your week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/chimney-specialists/ai-receptionist/"
+  ctaHeadline="Capture the East Oxford Damp Diagnosis While You Repoint in Summertown"
+  ctaSubhead={`A homeowner with two years of persistent chimney breast damp and a failed roofer repair needs a specialist diagnosis. The AI captured the full history while your harness held at the four-storey summit. From £${pricing.tiers.core.price}/month.`}
+/>
