@@ -546,7 +546,7 @@ Each trade hub page must contain these sections in this order:
 
 ### Section 1: Hero
 - **Headline:** Trade-specific, compelling, includes the trade name
-- **Subhead:** 1-2 sentences explaining what Rapid Receptionist does for this specific trade
+- **Subhead:** 2-3 sentences (150-280 characters MAX) — a concise value proposition for this trade. This is NOT a scenario. It should hook the reader with a quick trade-specific situation, show what the AI does, and optionally reference pricing. The detailed immersive narrative belongs in the `scenario` prop, not here.
 - **Trust row:** `✓ 100% done for you` · `Only £49/month` · `🛡 30-day money-back guarantee · No Contracts`
 - **AI Widget:** Interactive chat widget in hero (same concept as DTEAI's HeroJaina)
 
@@ -599,7 +599,7 @@ These are leaner pages focused on one specific channel for one specific trade.
 
 ### Section 1: Hero
 - **Headline:** Channel + trade specific
-- **Subhead:** What this specific channel does for this specific trade
+- **Subhead:** 2-3 sentences (150-280 characters MAX) — a concise hook explaining what this channel does for this trade. Paint a quick scenario in one sentence, show the AI action in one sentence, optionally add pricing. The full immersive narrative belongs in the `scenario` prop further down the page, NOT in the subhead.
 - **Trust row:** Same USP badges as trade hub
 
 ### Section 2: Trade + Channel Scenario
@@ -902,12 +902,41 @@ The AI chat widget will be added via GoHighLevel. The owner will provide a scrip
 
 ## ABSOLUTE REQUIREMENTS
 
-1. **Every single page must contain 100% unique, AI-generated content**
+1. **Every single page must contain 100% unique, custom AI-written content that is specifically relevant to that page's trade AND channel combination**
 2. **No programmatic content generation** — do not use scripts, loops, or templates to mass-produce page content
 3. **No content spinning** — do not take one page's content and swap words to create variants
-4. **No copy-pasting between pages** — each page's headlines, scenarios, steps, and FAQs must be written from scratch
+4. **No copy-pasting between pages** — each page's subheads, headlines, scenarios, steps, benefits, and FAQs must be written from scratch
 5. **No placeholder or Lorem Ipsum text** — every word must be meaningful and final
 6. **No copying from the reference folder** — the `_reference/` folder is for architectural inspiration only, not content
+7. **Every piece of text must be relevant to the specific trade and channel** — a WhatsApp page for a plumber must reference plumbing-specific WhatsApp scenarios, not generic messaging scenarios
+
+## Content Uniqueness Mandate
+
+> **All content on this site must be 100% unique, custom AI-written, and specifically relevant to the page it appears on.**
+
+This applies to EVERY text element on EVERY page:
+- **Subheads** — unique per page, relevant to specific trade + channel
+- **Scenarios** — unique per page, depicting realistic trade + channel situations
+- **FAQ answers** — unique per page, incorporating trade-specific terminology
+- **Benefit descriptions** — unique per page, referencing trade-specific workflows
+- **CTA headlines and subheads** — unique per page, with trade-specific hooks
+
+A reader should never encounter two pages that feel interchangeable. Each page must demonstrate genuine understanding of that specific trade's daily work, challenges, and terminology combined with the specific channel's strengths and use cases.
+
+### Subhead Rules (MANDATORY)
+
+1. **Maximum length: 280 characters** (2-3 sentences)
+2. **Structure:** Quick trade-specific scenario (1 sentence) → AI action (1 sentence) → optional pricing reference
+3. **The subhead is NOT a scenario.** It is a concise hero hook. The detailed immersive narrative belongs in the `scenario` prop further down the page.
+4. **Each subhead must be unique across the entire site** — no two pages should have interchangeable subheads
+5. **Must reference trade-specific terminology** — tools, materials, certifications, or situations unique to that trade
+6. **Must reference channel-specific context** — what makes this channel relevant for this trade
+
+**✅ GOOD subhead (193 chars):**
+> A builder tags your page in a local construction group: 'Best groundwork gang I have used.' Two site managers message you within the hour. Your AI replies to both while you are operating plant.
+
+**❌ BAD subhead (2,574 chars):**
+> [Entire multi-paragraph narrative describing every detail of a pub landlord's CCTV requirements, camera specifications, NVR models, and a secondary commercial scenario...]
 
 ## Quality Bar
 
@@ -947,6 +976,7 @@ These rules exist because previous batches of trade pages developed **structural
 
 Before creating ANY trade page, verify:
 
+- [ ] The subhead is under 280 characters and does NOT contain a full scenario narrative
 - [ ] Every FAQ answer starts with a different opening sentence than any other page on the site
 - [ ] Every FAQ answer contains at least one trade-specific term or scenario
 - [ ] Every benefit text block is unique — not interchangeable with another trade's page
