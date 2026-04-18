@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Contractors Researching Scaffold Access',
+    text: "Contractors visit scaffolding websites to check capabilities — system scaffold options, loading bay configurations, temporary roofs, and design compliance. The chat responds from your profile with relevant information while capturing the project scope."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Project Scale',
+    text: "Through conversation, the AI identifies whether the visitor needs a domestic chimney scaffold, a multi-lift commercial independent, or a specialist birdcage or cantilever. You receive a lead pre-categorised by scaffold type and project complexity."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Programme Planning',
+    text: "Contractors plan next week's scaffold needs after site hours. At 9pm a roofer types: 'need scaffold up by Thursday for a re-tile — 3 bed detached, two elevations, Bicester area.' The chat captures the booking before he finishes his evening planning."
+  },
+  {
+    icon: '📊',
+    title: 'Discusses Scaffold Configurations',
+    text: "Visitors ask about scaffold types — 'what is the difference between independent and putlog?', 'do I need TG20 for a four-storey job?' The AI responds from your profile while capturing their specific project requirements."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Project Photos',
+    text: "Scaffolding websites showcase completed erections — complex structures, temporary roofs, facade retention. The chat converts impressed visitors into scaffold hire enquiries."
+  },
+  {
+    icon: '✅',
+    title: 'Included Free',
+    text: `Website chat is bundled with phone answering at £${pricing.tiers.core.price}/month. A single code snippet, unlimited scaffold enquiry conversations.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my scaffolding website?",
+    answer: "We supply a compact JavaScript snippet at onboarding. Paste it into your website header — directly in the HTML, through WordPress, or your website builder's admin. The branded chat widget appears on every page within minutes. Whichever platform your scaffolding website runs on, the installation takes under five minutes."
+  },
+  {
+    question: "Can the AI discuss scaffold types with visitors?",
+    answer: "Your profile tells the AI about your scaffold inventory, system types, and capabilities. When a visitor asks 'can you do a temporary roof as part of the scaffold?' the AI answers from your profile — explaining your temporary roof capability and capturing the project details including building type, roof area, and hire duration."
+  },
+  {
+    question: "What project details does chat capture?",
+    answer: "The AI gathers the scaffold type and configuration needed, the building type and approximate height, which elevations require scaffold, whether the scaffold goes on private land or the highway, the hire duration, any special requirements (loading bays, temporary roof, pedestrian protection), the requesting contractor's trade, and the visitor's contact details."
+  },
+  {
+    question: "Does the chat slow my scaffold website?",
+    answer: "The chat script loads asynchronously after your existing pages have rendered — project photos, equipment galleries, and accreditation pages display at full speed. The widget appears once your visual content has loaded completely, adding negligible data overhead."
+  },
+  {
+    question: "Is website chat a separate monthly charge?",
+    answer: `Chat and phone answering share the Core plan at £${pricing.tiers.core.price}/month. For scaffolding companies, the two channels cover the main enquiry routes: daytime phone calls from main contractors and trades, and evening website conversations from contractors and homeowners planning upcoming work.`
+  },
+  {
+    question: "How is visitor data from scaffold queries handled?",
+    answer: "Chat conversations containing site addresses, building dimensions, scaffold specifications, hire schedules, and visitor contact information are encrypted and stored on UK and EU servers compliant with UK GDPR. Lead summaries go exclusively to you. No project details are shared with competing scaffolding firms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Scaffolders | Rapid Receptionist"
+  description={`AI website chat for UK scaffolders. Engages main contractors and homeowners researching scaffold hire, access solutions, and temporary roof installations. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/scaffolders/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Scaffolder"
+  tradeNamePlural="Scaffolders"
+  tradeSlug="scaffolders"
+  headline="AI Website Chat for Scaffolding Companies"
+  accentWord="Scaffolders"
+  subhead="A roofing contractor finds your website at 8:45pm. He has a slate re-roofing contract on a detached Victorian house in Summertown — steep pitch, three dormers, and a fragile ridge line. He needs independent scaffold to two elevations with a temporary roof for weather protection during the strip and re-slate. The programme is eight weeks starting in three weeks. He types: 'Hi — I have a Victorian re-roof in Summertown. Steep pitch with dormers. Need scaffold to front and side with a temporary roof over the top so we can strip in all weather. 8 week programme, need the scaffold up in 3 weeks. Can you do temporary roofs? What would you need from me to price it?' Without chat, he sends a brief contact form and waits. With AI Website Chat, the AI confirms your temporary roof capability, asks about the roof dimensions, dormer positions, and ridge height, and captures a detailed lead — Victorian detached, Summertown, steep pitch, three dormers, temp roof, two elevations, eight-week hire, three-week erection deadline — before he closes his laptop."
+  scenario="It is 11pm on a Saturday. A property developer in Witney is planning the external works programme for a conversion of a former pub into four apartments. He needs scaffolding for the full building envelope — all four elevations, a pavement gantry protecting the public footpath on two sides, loading bays at first and second floor, and the scaffold left standing for thirty weeks to allow masonry repair, window installation, rendering, and decoration in sequence. He finds your website and types: 'We are converting a pub into apartments. Need scaffold to the full building — all 4 elevations. 2 sides are on the public footpath so will need gantries. Loading bays at 2 levels. Various trades using it over 30 weeks. Building is 3 storeys. Can you handle the whole scaffolding package? OX28.' Without chat, he moves on. With AI Website Chat, the AI asks about the building footprint, whether a scaffold design will be needed, and the first trade's start date. He provides dimensions. Monday you open the lead: pub conversion, Witney OX28, four apartments, three storeys, all four elevations, pavement gantries on two sides, loading bays at two levels, thirty-week hire, multi-trade sequential use. You call at 8am and schedule a Tuesday site survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/scaffolders/ai-receptionist/"
+  ctaHeadline="Capture the Temporary Roof Enquiry While the Roofer Plans at 9pm"
+  ctaSubhead={`A roofing contractor needs scaffold with a temp roof for a steep Victorian re-roof. Your chat captures the dormer positions and programme before he closes the laptop. Included at £${pricing.tiers.core.price}/month.`}
+/>

@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Contractor Scaffold Tenders',
+    text: "Main contractors email scaffold subcontract tenders with programme deadlines. The scaffolding firm that acknowledges first — referencing the building type, number of elevations, and hire duration — demonstrates the capacity and professionalism that keeps them on the approved subcontractor list."
+  },
+  {
+    icon: '📐',
+    title: 'References Building Specifications',
+    text: "When a contractor emails specifying 'independent scaffold to all elevations of a four-storey residential block, loading bays at two levels, TG20 design required, twenty-week hire,' the AI acknowledgement references the scaffold type, lift count, loading requirements, and design standard."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your On-Site Email Gap',
+    text: "Scaffolders spend entire days at height — erecting, adapting, and dismantling. A main contractor's tender arriving at 9am sits unopened until the evening. The sixty-second acknowledgement ensures your firm responds ahead of every competing scaffolding company."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Operations',
+    text: "Your inbox mixes contractor scaffold tenders, tube and fitting supplier invoices, hire agreement renewals, NASC membership correspondence, and CISRS training notifications. The AI identifies genuine scaffold hire and tender enquiries."
+  },
+  {
+    icon: '🤝',
+    title: 'Builds Contractor Loyalty',
+    text: "Contractors who find a reliable scaffolder use them repeatedly — every new project generates another erection. Consistent instant acknowledgements keep your company as their default scaffold subcontractor on every programme."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Drawing Attachments',
+    text: "Contractor tenders often include elevation drawings, site plans, and programme schedules. The AI references these attachments in the acknowledgement and your lead summary for pre-quote review."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce scaffold quotes?",
+    answer: "The AI generates exclusively the initial acknowledgement — confirming receipt, referencing the scaffold type and building dimensions, and indicating that your detailed quotation will follow. Your scaffold design, tube counts, hire pricing, erection labour, and programme scheduling are calculated by you based on your own assessment of the drawings and your site survey."
+  },
+  {
+    question: "Will it respond to supplier invoices and trade body emails?",
+    answer: "The system learns during setup to distinguish genuine scaffold tenders from operational emails. Tube and fitting supplier invoices, NASC audit notifications, CISRS card renewal reminders, insurance renewal notices, and scaffold inspection form updates are filtered out. Only genuine scaffold hire and subcontract tender enquiries trigger the acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner enquiry emails?",
+    answer: "Homeowner enquiries via your contact form — 'we need scaffolding for a chimney rebuild, the chimney contractor says to arrange scaffold separately' — receive a professional reply confirming your domestic scaffold capability, asking about the property height, chimney position, and the contractor's start date, and categorising the lead distinctly from contractor subcontract tenders."
+  },
+  {
+    question: "What does email response cost for scaffolding companies?",
+    answer: `This channel is £${pricing.addOn.price}/month as an add-on. Scaffold hire contracts range from £300 domestic jobs to £50,000 long-term commercial programmes. Acknowledging a main contractor's four-storey residential block tender within sixty seconds — while you fitted ledgers on a six-lift — keeps your company on the shortlist for a twenty-week hire worth five figures.`
+  },
+  {
+    question: "Can all follow-up correspondence come from me?",
+    answer: "Every email after the acknowledgement is your own work. Your scaffold quote, TG20 design submission, method statement, risk assessment, handover certificate, and hire agreement are composed, priced, and issued by you. The AI's role concludes the moment the initial receipt confirmation reaches the contractor's inbox."
+  },
+  {
+    question: "How is scaffold tender data secured?",
+    answer: "Contractor tenders contain site addresses, building drawings, programme schedules, hire rates, and commercially sensitive subcontract pricing. All email data is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender details are disclosed to competing scaffolding firms or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Scaffolders | Rapid Receptionist"
+  description={`AI email response for UK scaffolders. Acknowledges main contractor scaffold tenders and residential hire enquiries within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/scaffolders/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Scaffolder"
+  tradeNamePlural="Scaffolders"
+  tradeSlug="scaffolders"
+  headline="AI Email Response for Scaffolding Companies"
+  accentWord="Scaffolders"
+  subhead="A main contractor emails a scaffold subcontract tender for a new-build housing development in Bicester — eight detached houses under construction simultaneously. He needs putlog scaffold erected to each plot as the brickwork progresses, adapted at each lift, and dismantled upon completion. The programme runs thirty-six weeks with scaffold required on two to three plots at any given time. TG20 compliance, weekly inspections, and scaffold handover certificates for each erection are required. You are on a scaffold in Abingdon, six lifts up, your labourer passing standards through the lift, you fitting them into Cuplok rosettes and driving wedges. Your phone is in your jacket pocket at ground level. Without AI Email Response, the housing development tender sits until the evening. Two competing NASC firms acknowledged by 2pm. With it, your acknowledgement arrives within sixty seconds, referencing the eight-plot programme, phased putlog erections, TG20 compliance, weekly inspections, and handover certificates."
+  scenario="It is 6:45am on a Monday. Your inbox accumulated over the weekend: a stone masonry contractor requesting scaffold for a church tower restoration — twenty-metre birdcage scaffold internally with a temporary platform and external independent scaffold to access the upper stonework, a commercial landlord needing scaffold for window replacement across a three-storey office building — twelve windows per floor, eight-week programme, a homeowner asking via your contact form about scaffold for rendering a two-storey extension, and a NASC membership renewal reminder. Without AI Email Response, you scan subjects while starting the van. The church tower sits until Tuesday evening. Two competitors acknowledged Monday morning. With AI Email Response, the church tower gets an immediate acknowledgement referencing the twenty-metre internal birdcage, external independent, and stone repair scope, the window replacement programme is acknowledged, the domestic rendering enquiry is handled, and the NASC email is filtered. At lunch you prioritise the church tower — estimated value £15,000 in scaffold hire — and begin sketching the birdcage configuration."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/scaffolders/ai-receptionist/"
+  ctaHeadline="Acknowledge the Eight-Plot Housing Programme While You Fit the Cuplok"
+  ctaSubhead={`A main contractor's thirty-six-week phased scaffold tender starts when the email lands. Your sixty-second acknowledgement secures the subcontract shortlist. Add-on at £${pricing.addOn.price}/month.`}
+/>

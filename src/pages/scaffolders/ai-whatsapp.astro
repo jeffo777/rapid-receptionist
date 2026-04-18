@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Site Photos for Quoting',
+    text: "Contractors and homeowners WhatsApp photos of buildings needing scaffold — elevations, access constraints, obstructions, neighbouring structures. The AI responds within seconds, asks about height and hire duration, and saves every photo to your lead for desktop pricing."
+  },
+  {
+    icon: '📸',
+    title: 'Wins the Urgent Access Race',
+    text: "When a roofer discovers more damage than expected and needs scaffold extended or adapted urgently, the first scaffolder to respond with confirmation of availability keeps the subcontract relationship strong."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Contractor Booking Messages',
+    text: "Building trades WhatsApp scaffold requests daily: 'need scaffold up by Monday, 2-storey semi, back and side, for rendering.' The AI captures the property type, elevations, trade, and start date while you are thirty feet up on another job."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Contractors confirm scaffold requirements in the evening — 'need that scaffold on the Church Street job extended by 2 weeks, can you also add a loading bay?' The AI captures every adaptation and extension request."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Scaffold Requests',
+    text: "A WhatsApp saying 'scaffold for chimney rebuild, end terrace, 2 storey, back garden access only, plasterer starts Weds' becomes a structured lead with property type, access route, trade, and start date."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp uses your business number. Scaffold hire discussions, site access arrangements, and subcontract pricing stay professional and separated from personal messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess scaffold requirements from site photos?",
+    answer: "The AI does not produce scaffold designs or price estimates from photographs, but it responds effectively — acknowledging that the images show the building needing access — and asks the questions you need for pricing: approximate building height in storeys, which elevations need scaffold, whether the ground is level or sloped, whether the scaffold goes on private land or the pavement, the hire duration, and any special requirements like loading bays or temporary roofs. Every photo is attached to your lead for your own visual assessment."
+  },
+  {
+    question: "What about scaffold adaptation and extension messages?",
+    answer: "Scaffold conversations evolve throughout a project — a contractor messages asking for an additional lift, then an extra loading bay, then a two-week hire extension. The AI maintains the full thread and consolidates every adaptation request into one comprehensive update for your scheduling team."
+  },
+  {
+    question: "How much does AI WhatsApp cost for scaffolding firms?",
+    answer: `WhatsApp costs £${pricing.addOn.price}/month as a channel add-on. Scaffold hire ranges from £400 domestic chimney jobs to £50,000 long-term commercial contracts. Securing one main contractor's multi-elevation erection through a rapid WhatsApp response — while you were six lifts up tightening couplers — pays for the entire channel investment many times over.`
+  },
+  {
+    question: "Can I take over a WhatsApp thread?",
+    answer: "Message once in any conversation and the AI transfers control. It recognises your reply and withdraws. Most scaffolders let the AI handle the initial capture — building type, elevations, scaffold configuration, hire duration, and erection date — then follow up personally to discuss access logistics, crew scheduling, and pricing."
+  },
+  {
+    question: "How is WhatsApp data from scaffold enquiries protected?",
+    answer: "All WhatsApp messages — building photographs, site addresses, scaffold specifications, hire durations, and contact details — are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. No site information is shared with competing scaffold firms, sold to lead services, or used for any purpose beyond delivering your leads."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Scaffolders | Rapid Receptionist"
+  description={`AI WhatsApp for UK scaffolders. Responds to building photos, scaffold hire requests, and contractor booking messages while you work at height. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/scaffolders/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Scaffolder"
+  tradeNamePlural="Scaffolders"
+  tradeSlug="scaffolders"
+  headline="AI WhatsApp for Scaffolding Companies"
+  accentWord="Scaffolders"
+  subhead="A rendering contractor WhatsApps at 12:30pm with four photos — front and rear elevations of a three-storey end-of-terrace in Jericho, plus close-ups showing a narrow alley to the side and a small rear garden with a retaining wall at the boundary. His message: 'Mate — got a rendering job on this end terrace in Jericho. Need scaffold to front, rear, and the narrow side return. Side alley is about 900mm wide so might need a special setup. Three storeys. Render crew starts in 2 weeks. Can you scaffold it? How do you handle the narrow alley?' You are on a site in Cowley erecting a six-lift independent — fitting ledgers into Cuplok rosettes, your labourer throwing tubes up to the lift, both of you focused on the structure. Without AI WhatsApp, the rendering contractor's message sits until the drive home. He messages two other scaffolders; one responds in twenty minutes explaining their narrow-access tube-and-fitting solution. With it, the AI responds instantly, asks about the alley length and whether both ends are open, and confirms you will review the photos and call about the narrow-access configuration. At the tea break, you study the photos and call. You quote a combination setup — system scaffold to the front and rear, tube and fitting through the 900mm return — and book erection for the following Monday."
+  scenario="It is Sunday afternoon. A church warden in Charlbury has been told by the diocese that the church tower needs urgent stonework repair — mortar deteriorating at the upper stages, a pinnacle showing signs of movement, and the parapet stones loose. The tower is twenty metres tall, surrounded by a graveyard with listed headstones, and the only vehicle access is through a narrow lychgate. He WhatsApps three scaffolding companies: 'Hello — we need scaffolding around a church tower for stone repairs. The tower is about 20m tall. The churchyard has listed headstones quite close to the base. Only access is through a narrow lychgate. Need the scaffold designed to protect the headstones and fit through the gate. Work starts in 6 weeks. Can you handle church towers?' Without AI WhatsApp, you see the message Monday morning. One scaffolder replied Sunday evening with photos of a similar church tower they scaffolded. With AI WhatsApp, the response arrives within seconds, asks about the tower's plan dimensions, whether the scaffold needs to fully encircle it, and the nearest road access point for the lorry. He sends photos. Monday you open the lead: church tower, Charlbury, 20m, listed headstones, lychgate access, stone repair, 6-week start, photos attached. You call at 9am and book a Wednesday site survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/scaffolders/ai-receptionist/"
+  ctaHeadline="Respond to the Narrow-Alley Rendering Photos While You Clip the Cuplok"
+  ctaSubhead={`A renderer sends four elevation photos showing a 900mm side return. The AI responds while you fit ledgers on the six-lift. Add-on at £${pricing.addOn.price}/month.`}
+/>

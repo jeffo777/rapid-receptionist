@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Build the Scaffold',
+    text: "Erecting scaffold demands total physical engagement — fitting standards, levelling base plates, clipping ledgers, tightening couplers, passing tubes, and working at height. The AI answers every call in your company name while you work on the structure."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Diverse Scaffold Briefs',
+    text: "When a main contractor calls about an eight-lift independent for a new-build block, the AI captures the building height, number of elevations, tie requirements, and programme. When a roofer needs a single-lift scaffold for a terraced house re-roof, the AI captures the property type, roof access points, and the roofer's start date."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Emergency Access Calls',
+    text: "Storm-damaged roofs, dangerous structures needing propping, and urgent edge protection for paused construction sites generate emergency scaffold calls. The AI identifies the urgency, captures the location and the emergency scope, and escalates for you to assess whether an immediate crew deployment is needed."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Booking Calls',
+    text: "Contractors plan the next week's programme in the evening and call scaffolders to confirm availability. Homeowners call after work about chimney scaffold and painting access. The AI captures every out-of-hours booking request."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Built for Scheduling',
+    text: "Each lead specifies the scaffold type, building dimensions, access constraints, hire duration, erection date, the client's trade, and any design or compliance requirements — everything you need to quote and schedule the crew."
+  },
+  {
+    icon: '🏷️',
+    title: 'Professional First Impression',
+    text: "A scaffolding company that answers professionally and asks about building height, scaffold configuration, and hire duration signals an organised NASC-standard operation — not someone who might leave you waiting for a return call that never arrives."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their scaffold needs?",
+    answer: "The questioning adapts to the caller. A main contractor needing commercial scaffold is asked about the building type and height, number of elevations, scaffold configuration (independent, putlog, birdcage), hire duration, loading requirements, tie access, and the erection date. A roofer needing residential access is asked about the property type, whether the scaffold goes on private land or the public highway, the roof contractor's start date, and approximate hire weeks. A homeowner needing chimney access is asked about the chimney location, garden or pavement access, and which contractor will be doing the chimney work."
+  },
+  {
+    question: "Can the AI handle both residential and commercial scaffold enquiries?",
+    answer: "Scaffolding companies serve the full spectrum — from a single-lift putlog on a two-storey semi for a plasterer, through to a phased independent scaffold programme on a multi-storey development with TG20 designs, weekly inspections, and loading bays. The AI adjusts its line of questioning for each. Residential leads capture simple property and access details; commercial leads capture building dimensions, scaffold specifications, programme phasing, and compliance requirements."
+  },
+  {
+    question: "What about calls during noisy yard operations?",
+    answer: "Loading lorries, sorting tubes and fittings in the yard, operating telehandlers, and the general clang of scaffold components make phone conversations impractical even when your hands are free. The AI handles every call during noisy yard loading and preparation phases as effectively as it does during on-site erection."
+  },
+  {
+    question: "How many minutes are included in the plan?",
+    answer: `The Core plan includes ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Scaffolding firms receive a blend of main contractor subcontract calls, roofing and trades contractor access requests, homeowner domestic bookings, and urgent emergency access enquiries. Most scaffolding companies operate comfortably within the allowance. If a large housing development generates a surge of subcontract calls, overage is charged at 20p per minute with no penalties.`
+  },
+  {
+    question: "Can I answer calls during quoting and office time?",
+    answer: "Absolutely. When you are in the office or yard — measuring elevations on drawings, pricing scaffold schedules, chasing hire payments, or coordinating crews — answer calls directly. Toggle to AI answering from your dashboard when the crew leaves for site. Switch back when you return to the office."
+  },
+  {
+    question: "How is scaffold project data secured?",
+    answer: "Scaffold enquiries contain site addresses, building plans, contractor programmes, hire rates, and commercially sensitive subcontract pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details are shared with competing scaffolding companies, disclosed to other site trades, or sold to third parties."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Scaffolders | Rapid Receptionist"
+  description={`AI phone answering for UK scaffolders. Captures main contractor subcontracts, domestic scaffold bookings, and emergency access calls while you build the structure. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/scaffolders/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Scaffolder"
+  tradeNamePlural="Scaffolders"
+  tradeSlug="scaffolders"
+  headline="AI Phone Answering for Scaffolding Companies"
+  accentWord="Scaffolders"
+  subhead="A main contractor calls at 9:15am. He is running a restoration programme on a Grade II listed manor house in Woodstock — the stone facade needs a full independent scaffold to all four elevations for masonry repair, repointing, and window restoration. The scaffold structure needs to bridge two entrance archways using cantilever beams, accommodate a temporary roof to the south parapet where lead replacement is scheduled, and include crash deck protection across the main entrance for the building's occupants. Twenty-four-week hire. TG20 design and weekly inspections required. You are on site in Headington erecting an eight-lift independent on a four-storey block of flats — your labourer passing tubes to the lift, you fitting standards into Cuplok rosettes and clipping ledgers, the whole crew thirty feet up and working. Without AI Phone Answering, the main contractor hears voicemail and tries the next NASC member. With it, the AI captures the manor house brief — Grade II listed, Woodstock, four elevations, cantilever bridges over archways, temporary roof, crash deck, twenty-four-week hire, TG20 design — and your lead waits for the tea break."
+  scenario="It is 2pm on a Thursday. You are dismantling a scaffold on a completed extension project — lowering boards, striking ledgers, unstacking tubes, and loading the lorry. Three calls come in between 1:30 and 3:45. Without AI Phone Answering, one voicemail — 'need scaffold for a chimney' — two hang up. By Friday, two have booked other scaffolders. With AI Phone Answering, all three are answered. Lead one: roofing contractor in Banbury needing residential scaffold for five terraced houses on a re-roofing contract — putlog scaffold to the front elevations, independent to the rears, phased across five houses over six weeks. Lead two: homeowner in Charlbury needing scaffold for external painting and gutter replacement — two-storey detached, scaffold to two elevations, painter starting in three weeks. Lead three: commercial facilities manager needing a birdcage scaffold inside a warehouse for lighting installation — 8 metres to the ceiling, 12 metre by 20 metre working platform, two-week hire. At 4pm you check three leads — a five-house roofing contract, a domestic painting job, and a commercial interior birdcage — and schedule quotes."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/scaffolders/ai-receptionist/"
+  ctaHeadline="Listed Manor House, Five Terraced Re-Roofs, and a Warehouse Birdcage — All in Two Hours"
+  ctaSubhead={`While you dismantled the extension scaffold, three opportunities called. The AI captured every lift count, hire duration, and cantilever requirement. From £${pricing.tiers.core.price}/month.`}
+/>

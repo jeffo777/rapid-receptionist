@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A main contractor calls about scaffolding a four-storey Victorian terrace in East Oxford — full independent scaffold to the front and rear elevations for a stone repair and repointing contract. He needs the scaffold erected by Monday and left standing for twelve weeks with a loading bay at first-floor level for stone deliveries. You are thirty feet up on a scaffold lift on another site, clipping a standard into the ledger, both hands occupied, your phone zipped inside your high-vis jacket. The contractor calls two other NASC firms. One answers and confirms Monday morning erection.",
+    with: "Your AI receptionist answers on the second ring. It captures the full brief — four-storey Victorian terrace, East Oxford, independent scaffold, front and rear elevations, Monday erection, twelve-week hire, first-floor loading bay — and confirms you will call back. At the tea break you read the lead and phone. You book a Friday survey and Monday erection."
+  },
+  {
+    without: "A roofing contractor emails on Wednesday asking for a price on a birdcage scaffold inside a church nave for ceiling restoration — the scaffold structure needs to span the full nave width at twelve metres, reach the vaulted ceiling at fifteen metres, and support a working platform for plasterers, decorators, and stonemasons over a sixteen-week programme. TG20 design calculations are required. You are dismantling a scaffold on a commercial building — boards being lowered through the lifts, fittings being sorted, the lorry being loaded. The email sits until Sunday night.",
+    with: "Your AI acknowledges the roofing contractor's email within sixty seconds, referencing the church nave birdcage, twelve-metre span, fifteen-metre height, multi-trade platform, sixteen-week hire, and TG20 requirement. Sunday evening you begin drawing up the design with full context."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday morning with photos of her chimney — mortar crumbling, pots leaning, and a crack running down the stack. She needs scaffolding for a chimney contractor to rebuild the stack. She messages three scaffolding firms. You are at your daughter's football match. By Monday, two have replied and one has quoted.",
+    with: "The AI responds to the WhatsApp within seconds, asks about the chimney height, whether the scaffold can go on the pavement or needs to be erected in the garden, and the chimney contractor's start date. Monday at 8am you have a structured lead with chimney photos and access details."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Scaffold Types & Configurations",
+    items: ["Independent scaffold (tube and fitting)", "Putlog scaffold for brickwork", "Birdcage and interior access scaffolds", "Cantilever and truss-out scaffolds", "System scaffold (Layher, HAKI, Cuplok)", "Mobile scaffold towers and stair towers"]
+  },
+  {
+    category: "Specialist Access Solutions",
+    items: ["Loading bays and material hoists", "Temporary roofs and weather protection", "Pavement gantries and pedestrian protection", "Chimney scaffold and restricted access", "Facade retention scaffolding", "Crash decks and edge protection"]
+  },
+  {
+    category: "Design, Compliance & Inspection",
+    items: ["TG20 compliant scaffold design", "Bespoke scaffold design by engineer", "Scaffold inspection and handover certificates", "NASC safety audits and documentation", "Tie pattern design and verification", "Method statements and risk assessments"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Builders",
+    description: "Main contractors subcontracting scaffold erection and dismantling for housing developments, commercial builds, and refurbishment projects. Programme-critical work where delays cost thousands per day. A scaffolder who answers, confirms availability, and delivers on time stays on the approved subcontractor list."
+  },
+  {
+    icon: "🏠",
+    title: "Roofing, Chimney & Repair Contractors",
+    description: "Roofers, chimney specialists, stonework contractors, and render firms that subcontract scaffolding for their projects. They need reliable scaffold erected on time and maintained throughout the works programme. Repeat work follows reliable service."
+  },
+  {
+    icon: "🏢",
+    title: "Commercial & Industrial Clients",
+    description: "Facilities managers, factory operators, and commercial landlords needing scaffold access for maintenance, cladding, window replacement, and painting. These clients often have strict H&S requirements and working-at-height compliance expectations."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners & Domestic Clients",
+    description: "Homeowners needing domestic scaffold for roof repairs, chimney rebuilds, external decoration, rendering, and extension work. Often arranging scaffold on behalf of another contractor. They appreciate clear communication and fast booking."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand scaffolding terminology?",
+    answer: "Every scaffold configuration and component is recognised — independent scaffold, putlog, birdcage, cantilever, truss-out, system scaffold (Layher, HAKI, Cuplok), tube and fitting. Components including standards, ledgers, transoms, braces, base plates, sole boards, tie tubes, reveal ties, through ties, loading bays, gin wheels, and boards. Design standards including TG20 compliance and bespoke engineer designs. When a main contractor describes 'a six-lift independent to three elevations of a four-storey block with a 1:1 tie pattern, loading bay to the south elevation, and a temporary roof at parapet level,' the AI captures every specification."
+  },
+  {
+    question: "Can the AI distinguish between a domestic chimney job and a commercial contract?",
+    answer: "A homeowner calling about 'scaffolding for a chimney rebuild on a semi-detached' generates a different lead profile from a main contractor describing 'independent scaffold to a six-storey residential block for a recladding programme, thirty-two-week hire, with TG20 design, phased erection, and weekly inspections.' The AI scales its questions accordingly — domestic work captures the property type, scaffold location, contractor start date, and access constraints, while commercial projects capture the building dimensions, scaffold type, hire duration, design requirements, and programme milestones."
+  },
+  {
+    question: "What about urgent scaffold calls?",
+    answer: "Emergency scaffold requests are common — a building suffers storm damage, a dangerous structure needs propping, a site needs edge protection before work can continue. The AI identifies the urgency from the caller's language, captures the location, the nature of the emergency, access constraints, and any out-of-hours requirements, and escalates the lead for immediate response."
+  },
+  {
+    question: "How much does this cost for a scaffolding company?",
+    answer: `Scaffolders pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. Whether you are a two-man domestic team or a fifty-strong NASC member running commercial contracts, the allowance handles your enquiry volume. Each additional channel is £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a small scaffolding gang?",
+    answer: "Small scaffolding teams — three or four labourers and a scaffolder, all on the structure from 7am to 4pm — are perfectly suited. When everyone in the company is thirty feet up fitting standards and boards, nobody can answer the phone. The AI captures every contractor and homeowner call during your most productive working hours."
+  },
+  {
+    question: "Can I control when calls are routed to the AI?",
+    answer: "Configure your coverage schedule from the dashboard. During active erection, dismantling, and scaffold adaptation on site — direct everything to the AI. During yard time, quoting, and office work — take calls personally. A quick tap from your phone switches between modes instantly at any time."
+  },
+  {
+    question: "How is scaffold project data protected?",
+    answer: "Scaffold enquiries contain site addresses, building dimensions, programme schedules, contractor details, and commercially sensitive tender pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project information is disclosed to competing scaffolders or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Scaffolders | Rapid Receptionist"
+  description={`AI receptionist for UK scaffolders — independent, putlog, birdcage, cantilever, and system scaffold. Never miss a contractor call from height. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/scaffolders/ai-receptionist/"
+  tradeName="Scaffolder"
+  tradeNamePlural="Scaffolders"
+  tradeSlug="scaffolders"
+  headline="The AI Receptionist Built for Scaffolders"
+  accentWord="Scaffolders"
+  subhead={`You cannot answer the phone when you are six lifts up, fitting a standard into the cup, tightening a swivel coupler, or lowering boards through the lifts with the gin wheel spinning above you. Your AI receptionist captures every call, every message, and every enquiry — from main contractors needing thirty-two-week commercial scaffold to homeowners booking a domestic chimney job. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Twelve-Week Victorian Terrace Contract Calls While You Clip the Standards"
+  ctaSubhead={`A main contractor with a Monday erection deadline will call three NASC firms today. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

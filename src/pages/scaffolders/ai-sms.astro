@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Quick Availability Texts',
+    text: "Trades text to check scaffold availability — 'can you get scaffold up by Thursday, 2 bed semi, back elevation?' A fast confirmation holds your slot in their programme. Silence and they text the next scaffolder."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Scaffold Briefs from Fragments',
+    text: "A text like 'scaffold needed, 3 storey, front and side, independent, 8 weeks, OX3' gives the AI enough. It asks about ground conditions and the contractor's trade. Your lead arrives ready for quoting."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Contractor Referral Texts',
+    text: "When a builder recommends you to a colleague by text, the referred contractor texts to check availability. The AI captures the scaffold requirement before the recommendation cools."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Hours',
+    text: "Contractors plan scaffold bookings in the evening, checking who can erect by their start date. Homeowners text after work about chimney and painting scaffold. The AI catches every after-hours message."
+  },
+  {
+    icon: '📋',
+    title: 'Consolidates Fragmented Texts',
+    text: "Messages arrive in pieces — 'need scaffold' then 'terraced house' then 'all round' then 'roofer starting Monday.' The AI assembles one structured booking request from all the fragments."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS operates on your business number. Scaffold hire pricing, site logistics, and subcontract discussions stay professional."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle a scaffold text enquiry?",
+    answer: "It reads the inbound message and replies using your company name within seconds. A detailed text — 'need independent scaffold to front and rear of a 4-storey block in Kidlington, 16-week hire, loading bay at first floor, erection Monday week' — is acknowledged with every specification preserved. A brief text — 'need scaffold for a roof job' — prompts questions about the property type, number of elevations, the roofer's start date, and the postcode."
+  },
+  {
+    question: "Will the contractor know it is AI?",
+    answer: "The response reads like a scaffolder checking messages between lifts — commercially aware, technically relevant, and schedule-focused. It uses your company name and asks appropriate questions about the building, access, and timing. Contractors texting scaffolders expect a prompt, practical response confirming availability — the AI provides exactly that within seconds."
+  },
+  {
+    question: "What about texts from existing hire clients?",
+    answer: "Current clients text about hire extensions, scaffold adaptations, additional loading bays, and dismantling dates. The AI captures these and categorises them separately from new enquiries. Your dashboard distinguishes a new contractor's five-house roofing scaffold from a current client extending their hire by three weeks."
+  },
+  {
+    question: "What does AI SMS cost for scaffolding companies?",
+    answer: `AI SMS costs £${pricing.addOn.price}/month as a channel add-on. Scaffold hire ranges from £300 domestic chimney access to £40,000 long-term commercial erections. Securing one roofer's six-house contract through a timely text — while you loaded the lorry in the yard — generates scaffold hire revenue far exceeding the annual channel cost.`
+  },
+  {
+    question: "Can I text back personally?",
+    answer: "Your reply in any thread transfers the conversation to you on the spot. During office and yard time, handle texts yourself. During on-site erection, dismantling, and adaptation work — let the AI keep your scaffolding company responsive while both hands hold the tube."
+  },
+  {
+    question: "How is text data from scaffold enquiries stored?",
+    answer: "Text messages containing site addresses, building details, scaffold specifications, hire durations, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing scaffolding firms or repurposed."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Scaffolders | Rapid Receptionist"
+  description={`AI SMS for UK scaffolders. Responds to scaffold hire requests, contractor booking texts, and elevation access messages while you work at height. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/scaffolders/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Scaffolder"
+  tradeNamePlural="Scaffolders"
+  tradeSlug="scaffolders"
+  headline="AI SMS for Scaffolding Companies"
+  accentWord="Scaffolders"
+  subhead="You are in the yard at 7am loading the lorry — tube bundles strapped to the flatbed, fitting bags stacked, base plates and sole boards loaded, the Cuplok standards counted and checked against the delivery note. At 7:20am a roofing contractor texts: 'Morning — need scaffold on 4 terraced houses in Headington for a re-roof contract. Putlog to the fronts, independent to the rears. First house needs to be up by Monday. Then one house per week after that. 6-week rolling programme. Can you handle it?' Your phone is in the cab and your hands are strapping the load. Without AI SMS, the text waits until you reach the first site at 8:15. He texts two other scaffolders; one responds at 7:25 and confirms availability. With it, the AI responds at 7:21am, confirms your capacity for phased residential work, and asks about the rear access — gardens or alleyways — and the terrace property height. He confirms back garden access at all four and standard two-storey height. At 8:30 you read the lead and call from site. You quote the phased programme and book Monday erection."
+  scenario="It is 6:30pm on a Wednesday. A painter and decorator in Abingdon has just been awarded a contract to paint the exterior of a large detached house — all four elevations, three storeys including the dormers, two chimney stacks that need attention, and a conservatory that requires edge protection during the soffit and fascia work. He texts three scaffolding companies: 'Hi — need scaffold on a large detached for exterior painting. 3 storeys, all 4 elevations, plus 2 chimney stacks and a conservatory. Need it up for 5 weeks minimum. Painter start date is 3 weeks from now. Can you price it? OX14.' Without AI SMS, you see the text Thursday morning alongside other messages. He has two scaffolding quotes by Wednesday evening. With AI SMS, the response arrives at 6:31pm: 'Thank you — a three-storey detached with four elevations, chimneys, and conservatory is a standard domestic erection for us. Could you confirm whether the scaffold can go on all sides or whether any elevations have restricted access? We will prepare a quote.' He confirms all-round access with hardstanding. Thursday you open the lead: large detached, Abingdon OX14, three storeys, four elevations, two chimneys, conservatory edge protection, five-week hire, painter starting in three weeks, all-round access confirmed. You quote by lunchtime."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/scaffolders/ai-receptionist/"
+  ctaHeadline="Catch the Four-House Phased Roofing Text While You Load the Lorry"
+  ctaSubhead={`A roofer texts about a putlog-and-independent phased programme while you strap the tubes. The AI replies from the cab. Add-on at £${pricing.addOn.price}/month.`}
+/>
