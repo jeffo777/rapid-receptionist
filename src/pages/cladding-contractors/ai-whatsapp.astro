@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Facade Damage Photos',
+    text: "Main contractors and facilities managers WhatsApp photos of cracked panels, dislodged fixings, storm-damaged composite sheets, and delaminating timber boards. The AI responds instantly, asks about the panel system and building height, and attaches every photo to your repair lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Subcontract Cladding Slots',
+    text: "Main contractors WhatsApp cladding requirements mid-programme — 'SFS is up, need your cladding gang week after next, 400 sqm south elevation.' The first cladding firm to confirm takes the booking."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Architect Material Queries',
+    text: "Architects WhatsApp material samples, detail sketches, and specification questions — 'can you match this zinc profile on a curved soffit?' The AI captures the material, detail type, and project context while you fix panels from the MEWP."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Installation Hours',
+    text: "Architects send specification messages after site visits. Main contractors confirm programme changes in the evening. Homeowners research timber cladding options after work. The AI captures every after-hours facade message."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick Cladding Briefs',
+    text: "A WhatsApp saying 'larch cladding, garden room, about 30 sqm, TGV, Headington, need quote' becomes a structured domestic lead with material, profile, area, and location."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. Facade specifications, tender confirmations, and material orders stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess panel damage from photos?",
+    answer: "The AI cannot perform structural or fire assessment from images — only a qualified cladding professional on-site can evaluate panel integrity, fixing condition, and fire classification. It does, however, respond productively to every photograph — acknowledging the visible damage, asking about the panel material (composite, fibre cement, timber, or metal), the building height, and whether any panels are loose and posing a safety risk. Every image attaches to your lead for professional assessment during your site inspection."
+  },
+  {
+    question: "What about evolving programme threads?",
+    answer: "Cladding programmes evolve continuously — a main contractor sends elevation drawings, then confirms the SFS completion date, then adjusts the cladding start by a week, then adds a canopy variation. The AI maintains the complete conversation history and compiles every update into one consolidated facade lead with material, area, programme, and variations."
+  },
+  {
+    question: "How much does AI WhatsApp cost for cladding contractors?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. A domestic timber cladding job generates £2,000 to £8,000. A commercial rainscreen package generates £50,000 to £500,000. Securing one main contractor's facade programme through a rapid WhatsApp reply — while you aligned panels on the MEWP at another site — covers the channel cost immediately.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Post one reply in any thread and the AI transfers control to you for that conversation permanently. Most cladding contractors let the AI gather the initial scope — system type, material, area, building height, fire compliance, and programme — then engage directly to discuss the site measurement, detail solutions, and tender pricing."
+  },
+  {
+    question: "How is WhatsApp data from cladding enquiries protected?",
+    answer: "Every WhatsApp message — facade photographs, building locations, material specifications, fire compliance details, and sender contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data stays exclusively with you. No project specifications reach competing cladding firms or are repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Cladding Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK cladding contractors. Responds to facade damage photos, main contractor programme messages, and architect material queries while you install. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/cladding-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Cladding Contractor"
+  tradeNamePlural="Cladding Contractors"
+  tradeSlug="cladding-contractors"
+  headline="AI WhatsApp for Cladding Contractor Companies"
+  accentWord="Cladding"
+  subhead="A main contractor WhatsApps at 6:45am on a Monday with four photos. He is running a three-storey medical centre build in Banbury — the SFS framing and mineral wool insulation are complete on the east elevation, the cavity barriers are installed, and the aluminium carrier rails are fixed back through the insulation to the SFS studs. His message: 'Morning — east elevation ready for panels. Marley Eternit Vertex fibre cement panels, RAL 7022 Umbra Grey, horizontal lay, concealed fixings. About 380 square metres on this elevation. Carrier rails are in, cavity barriers done, insulation complete. Can your gang start next Monday? We need this elevation weather-tight before the curtain walling goes on the south side. Photos showing the carrier rails and barrier positions.' You are loading the MEWP onto the flatbed for transport to a Witney job. Without AI WhatsApp, the message waits until you unload at Witney. He texts two other cladding firms; one confirms by 7:15. With it, the AI responds at 6:46am, confirms your fibre cement rainscreen capability, and asks whether the horizontal joints require backing strips or are open-drained. The MC confirms open-drained. At 8am you review: Banbury medical centre, east elevation 380 sqm, Marley Eternit Vertex Umbra Grey, concealed fix, carrier rails ready, cavity barriers complete, start next Monday."
+  scenario="It is 9pm on a Thursday. A self-builder in the Cotswolds WhatsApps with a sketch. He is constructing a contemporary timber frame house — the architect has specified three cladding materials: vertical charred timber (Shou Sugi Ban) on the north elevation, natural Siberian larch open-jointed boards on the east and west, and zinc cassette panels on the south. His message: 'Evening — self-build near Stow-on-the-Wold. Architect wants three different cladding materials. Charred timber on the north, larch open-jointed east and west, zinc cassettes south. Total about 220 square metres across all four elevations. Timber frame is going up in March. Need budget costs for the mortgage draw. Can you do all three materials? Sketch attached showing the elevations.' Without AI WhatsApp, the message waits until Friday. One firm replied at 9:20pm. With AI WhatsApp, the reply arrives at 9:01pm: 'Thank you — three-material facades are a speciality. Could you confirm the charred timber specification — is it pre-charred boards or will the charring be done on-site? Also, what zinc system has the architect specified — standing seam cassettes or flat-lock panels?' He confirms pre-charred, flat-lock zinc. Friday you call: self-build Stow-on-the-Wold, 220 sqm, charred timber north, larch open-jointed E/W, zinc flat-lock south, timber frame March, budget for mortgage draw."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/cladding-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the 380 sqm Medical Centre Elevation While You Load the MEWP"
+  ctaSubhead={`A main contractor's east elevation is ready for Marley Eternit Vertex panels next Monday. The AI confirmed your rainscreen capability while you loaded the flatbed. Add-on at £${pricing.addOn.price}/month.`}
+/>

@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A quantity surveyor calls about a rainscreen cladding package for a six-storey residential development in Oxford — the architect has specified a ventilated aluminium rainscreen system with horizontal ribs in RAL 7016 anthracite grey, concealed fixings to aluminium carrier rails fixed back through mineral wool insulation to the SFS framing, cavity barriers at every floor level and compartment line (Siderise open-state cavity barriers to the ventilated void), and a U-value target of 0.18 W/m²K. The facade area covers approximately 2,800 square metres across four elevations. The programme requires the cladding to follow the SFS and insulation by four weeks. Tender return in three weeks. You are on a MEWP forty feet above a retail park in Abingdon — fitting horizontal composite panels to the entrance canopy structure, the panel aligned to the laser level, the drill driving Tek screws through the aluminium substrate into the steel purlins. Both hands occupied, the platform positioned against the facade. Your phone is in the cab below. The QS calls three cladding firms. One answers and books a Thursday site meeting.",
+    with: "Your AI receptionist answers on the second ring. It captures the complete brief — six-storey residential, Oxford, ventilated aluminium rainscreen, RAL 7016, concealed fixings, aluminium carrier rails, SFS, mineral wool, Siderise cavity barriers, 0.18 U-value, 2,800 sqm, four elevations, four-week SFS follow-on, three-week tender — and confirms you will call back."
+  },
+  {
+    without: "An architect emails on Wednesday with a cladding specification for a contemporary new-build house in the Cotswolds — a mix of natural Siberian larch TGV cladding on the upper storey (25x150mm boards, open-jointed on vertical battens over a breather membrane), standing seam zinc on the monopitch roof wrapping down the west gable, and self-coloured through-body fibre cement rainscreen panels on the ground floor. She needs a combined quotation. The email sits until Sunday.",
+    with: "Your AI acknowledges within sixty seconds, referencing the Siberian larch TGV, standing seam zinc gable wrap, and fibre cement rainscreen. Sunday evening you schedule a Monday measurement."
+  },
+  {
+    without: "A facilities manager WhatsApps on Saturday with photos of damaged composite cladding panels on an office building — impact damage at ground level and stress cracking at a window reveal. He messages three cladding firms. You are at home. By Monday, two have replied with assessment availability.",
+    with: "The AI responds within seconds, asks about the panel type (composite, metal, or fibre cement), the damage extent, and the building height, and captures the repair lead."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Rainscreen & Ventilated Facades",
+    items: ["Aluminium rainscreen systems — horizontal and vertical profiles", "Fibre cement rainscreen panels — Equitone, Marley Eternit, Cembrit", "HPL (High Pressure Laminate) — Trespa, Fundermax", "Terracotta and ceramic rainscreen — NBK, Shildan", "Phenolic foam and mineral wool insulation build-ups", "Cavity barrier installation — Siderise, Hilti CFS-BL"]
+  },
+  {
+    category: "Metal & Composite Cladding",
+    items: ["Zinc standing seam and interlocking panel — VM Zinc, Rheinzink", "Aluminium composite panel — ACM, A2 fire-rated cores", "Copper cladding — standing seam and cassette panel", "Steel profiled sheet and composite panel — Kingspan, Tata", "Powder coating and anodising colour specifications", "Secret-fix and exposed-fix systems"]
+  },
+  {
+    category: "Timber & Curtain Walling",
+    items: ["Western red cedar, Siberian larch, Accoya, and thermowood cladding", "TGV, shiplap, open-jointed, and hit-and-miss timber profiles", "Curtain walling systems — structural glazing and spandrel panels", "SFS (light gauge steel framing) and carrier systems", "Fire compliance — BS 8414, BR 135, Approved Document B", "U-value calculations and thermal bridging analysis"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Developers",
+    description: "Main contractors and developers requiring cladding subcontract packages on residential towers, commercial offices, retail units, and mixed-use schemes. Programme-critical facade installation that must follow the structural frame and SFS, and precede the window installation and internal fit-out."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners & Self-Builders",
+    description: "Homeowners adding timber cladding to extensions, garden rooms, and renovations. Self-builders specifying contemporary mixed-material facades — timber, zinc, and render combinations. They value guidance on material durability, maintenance requirements, and colour selection."
+  },
+  {
+    icon: "📐",
+    title: "Architects & Specifiers",
+    description: "Architects specifying cladding systems for design competitions, planning submissions, and working drawings. They need cladding contractors who understand material performance, fire compliance requirements, U-value targets, and the visual precision that their designs demand."
+  },
+  {
+    icon: "🏢",
+    title: "Facilities Managers & Building Owners",
+    description: "Commercial property managers commissioning cladding repairs, panel replacements, and fire compliance upgrades on existing buildings. Post-Grenfell remediation programmes requiring ACM panel replacement with A2-rated alternatives."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand cladding terminology?",
+    answer: "The full vocabulary of cladding systems is built into the AI — rainscreen (ventilated, pressure-equalised, drained-and-ventilated), composite panel (ACM, aluminium composite material, A1/A2 fire-rated core), fibre cement (Equitone, Marley Eternit, Cembrit), HPL (Trespa, Fundermax), terracotta (NBK, Shildan), zinc (VM Zinc, Rheinzink, standing seam, interlocking), aluminium (mill finish, powder-coated, anodised, RAL colour), timber (western red cedar, Siberian larch, Accoya, thermowood, TGV, shiplap, open-jointed), curtain walling, SFS (steel framing system), carrier rail, bracket, cavity barrier (Siderise, Hilti), breather membrane, U-value, thermal bridging, and fire compliance (BS 8414, BR 135, Approved Document B). When a QS describes 'ventilated aluminium rainscreen with Siderise OS cavity barriers at every floor and compartment line, concealed fixings to aluminium carrier rails, mineral wool insulation, 0.18 U-value target,' the AI captures every technical element."
+  },
+  {
+    question: "Can the AI differentiate a domestic timber job from a commercial rainscreen tender?",
+    answer: "A homeowner calling about 'cedar cladding on our garden room extension — about 20 square metres' generates a domestic timber lead — the AI asks about the profile (TGV, shiplap, or open-jointed), the finish (natural silver or oiled), and the substrate. A QS describing 'ventilated aluminium rainscreen across 2,800 square metres on a six-storey residential block with SFS, cavity barriers, and an 0.18 U-value target' generates a commercial facade tender. The two produce entirely different project specifications."
+  },
+  {
+    question: "What about fire compliance enquiries?",
+    answer: "Post-Grenfell fire safety is central to commercial cladding work. The AI recognises enquiries about ACM panel replacement, A1/A2 combustibility classification, BS 8414 fire testing, BR 135 performance criteria, Approved Document B compliance, and building safety remediation programmes. Each fire compliance lead is structured with the building height, existing panel type, the required replacement specification, and the EWS1 or remediation programme context."
+  },
+  {
+    question: "How much does this cost for a cladding contractor?",
+    answer: `Cladding contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a specialist timber cladding installer working on bespoke residential projects or a multi-gang commercial facade contractor covering rainscreen, metal, and curtain walling across the region, the talk-time allowance accommodates your enquiry volume. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a small cladding team?",
+    answer: "Small cladding teams benefit enormously. When your entire crew is on a MEWP forty feet above a commercial facade — every person aligning panels, driving fixings, and installing cavity barriers — no one descends to answer a phone. The AI captures every architect's material enquiry, every QS's tender, and every homeowner's timber extension request while your team completes the elevation."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Configure coverage from your dashboard. During active facade installation — when every team member works from the MEWP or scaffold — route all calls to the AI. During site measurement days and quoting — handle calls directly. Toggle from your phone whenever circumstances change."
+  },
+  {
+    question: "How is cladding project data protected?",
+    answer: "Cladding enquiries contain building addresses, facade specifications, fire compliance details, tender pricing, and architectural drawings references. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing cladding contractors or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Cladding Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK cladding contractors — rainscreen, composite panel, timber, zinc, aluminium, and curtain walling. Never miss a QS call from the MEWP. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/cladding-contractors/ai-receptionist/"
+  tradeName="Cladding Contractor"
+  tradeNamePlural="Cladding Contractors"
+  tradeSlug="cladding-contractors"
+  headline="The AI Receptionist Built for Cladding Contractors"
+  accentWord="Cladding"
+  subhead={`You cannot answer the phone when you are forty feet above a commercial site on a MEWP, aligning a rainscreen panel to the laser level, driving concealed fixings through the carrier rail, and checking the cavity barrier seal at the floor junction. Your AI receptionist captures every call, every message, and every tender — from QSs commissioning 2,800 square metre aluminium rainscreen packages to homeowners wanting cedar cladding on a garden room. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next 2,800 sqm Rainscreen Tender Calls While You Fix Panels from the MEWP"
+  ctaSubhead={`A QS with a six-storey aluminium rainscreen package and a three-week tender return needs a site visit. If voicemail answers, he confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

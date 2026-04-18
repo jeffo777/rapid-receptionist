@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches MC Programme Texts',
+    text: "Main contractors text cladding gangs when the SFS is complete — 'carrier rails up, need panels Monday, south elevation, 500 sqm.' The first cladding crew to confirm takes the programme slot."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Cladding Briefs from Short Messages',
+    text: "A text like 'larch TGV, extension, 25 sqm, Headington, need quote' gives the AI enough detail. It asks about the board width, finish, and substrate. Your lead arrives ready for measurement."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Architect Referral Texts',
+    text: "When an architect recommends your facade work to a self-builder, that homeowner texts about zinc and timber cladding. The AI captures the referral while the architect's endorsement is strongest."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After MEWP Hours',
+    text: "Main contractors confirm next-week programmes in the evening. Architects forward material queries after meetings. Homeowners text timber cladding questions after dark. The AI captures every after-hours facade text."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text Facade Details',
+    text: "Messages arrive in fragments — 'aluminium rainscreen' then '600 sqm' then 'RAL 9005' then 'Cowley retail unit' then 'need sample.' The AI constructs one facade specification from every piece."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. Facade specifications, programme confirmations, and panel orders stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound cladding text?",
+    answer: "Each text triggers a branded reply in your company name within seconds. A main contractor's programme message — 'SFS complete west elevation, 450 sqm Trespa HPL panels, need cladding gang week 23, carrier rails fixed' — is acknowledged with the system, area, material, and programme preserved. A homeowner's exploratory text — 'want cedar boards on our extension, how much per square metre?' — receives a response asking about the property type, extension dimensions, and board profile preference."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "The response reads like a cladding specialist checking messages between MEWP lifts — material-specific, system-aware, and programme-conscious. It references panel types, fixing methods, and cavity barrier requirements. Main contractors texting facade subcontract bookings expect a knowledgeable reply that confirms system capability and gang availability."
+  },
+  {
+    question: "How does it handle existing project texts?",
+    answer: "Current main contractor clients text programme updates — 'south elevation delayed two weeks, SFS not ready' or 'add entrance canopy cladding to the package.' The AI captures these and distinguishes them from new enquiries on your dashboard, keeping your existing project communications separate from fresh tender opportunities."
+  },
+  {
+    question: "What does AI SMS cost for cladding contractors?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A domestic timber cladding job generates £2,000 to £8,000. Securing one main contractor's facade elevation through a rapid text confirmation — while you fitted panels on a MEWP at another site — produces revenue that exceeds the annual channel cost from a single programme slot.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send one reply and the AI withdraws from that thread permanently. During office days — manage texts directly while you calculate facade areas and order panels. During installation days — when the MEWP is raised and every person is at height — let the AI handle the commercial messages until the basket descends."
+  },
+  {
+    question: "How is text data from cladding enquiries stored?",
+    answer: "Text messages containing building addresses, facade material specifications, fire compliance details, programme information, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing cladding contractors or repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Cladding Contractors | Rapid Receptionist"
+  description={`AI SMS for UK cladding contractors. Responds to MC programme texts, timber cladding quotes, and facade repair enquiries while you install from the MEWP. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/cladding-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Cladding Contractor"
+  tradeNamePlural="Cladding Contractors"
+  tradeSlug="cladding-contractors"
+  headline="AI SMS for Cladding Contractor Companies"
+  accentWord="Cladding"
+  subhead="You are at 8am on a Tuesday, bolting aluminium carrier brackets through mineral wool insulation into the SFS studs on the second floor of a student accommodation block in Cowley — the impact driver spinning fixings into the light gauge steel, each bracket positioned to the setting-out marks, the mineral wool compressed around the thermal break pad. At 8:20am a main contractor texts: 'Morning — new warehouse in Bicester. Need profiled steel cladding on three elevations. Kingspan KS1000 RW insulated composite panels, Goosewing Grey outer skin, microrib profile. About 1,800 square metres across three walls plus a personnel door and two roller shutter openings that need flashings. Steel frame goes up in 4 weeks. Can you price and programme? Need your tender back by Friday.' Your hands are on the impact driver, the bracket half-fixed. Without AI SMS, the text waits until the tea break at 10. He texts two other cladding firms. With it, the AI responds at 8:21am, confirms your profiled steel capability, and asks about the eaves height and whether the roller shutter openings are standard or oversized. The MC confirms 8 metres eaves, standard roller shutters. At 10am you review: Bicester warehouse, Kingspan KS1000 RW Goosewing Grey microrib, 1,800 sqm, three elevations, door + two roller shutters, steel frame 4 weeks, tender Friday."
+  scenario="It is 7pm on a Wednesday. A homeowner in Woodstock is renovating a 1970s bungalow and converting the roof space into a first floor with dormers. The architect has specified western red cedar cladding on the new first-floor dormers and the extended gable — approximately 45 square metres. He texts: 'Hi — renovating a bungalow in Woodstock. Adding dormers and a first floor. Architect wants western red cedar cladding on the new dormers and the extended gable wall. About 45 square metres total. TGV profile, horizontal boards. Do I need to treat it or let it go silver? How long does cedar last? Can you come and measure? Build starts in 6 weeks.' Without AI SMS, the text waits until Thursday morning. With AI SMS, the response arrives at 7:01pm: 'Thank you — western red cedar is an excellent choice for dormer and gable cladding. Could you confirm the board width the architect has specified, and whether the dormers have cheeks that also need cladding or just the face panels?' He confirms 150mm boards, dormer cheeks included. Thursday you call: Woodstock bungalow conversion, cedar TGV horizontal, 45 sqm, dormers + gable, 150mm boards, cheeks included, build 6 weeks."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/cladding-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the 1,800 sqm Warehouse Cladding While You Fix Brackets in Cowley"
+  ctaSubhead={`A main contractor needs Kingspan KS1000 RW across three elevations tendered by Friday. The AI confirmed your profiled steel capability while you drove fixings into the SFS. Add-on at £${pricing.addOn.price}/month.`}
+/>

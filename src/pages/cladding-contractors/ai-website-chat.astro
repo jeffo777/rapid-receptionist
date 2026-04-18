@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Architects Researching Facade Materials',
+    text: "Architects compare cladding materials obsessively — zinc versus aluminium, larch versus cedar, fibre cement versus HPL. When they land on your website studying your material portfolio, chat engages them at peak specification intent."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies Cladding System Requirements',
+    text: "Through conversation, the AI identifies whether the visitor needs domestic timber, commercial rainscreen, metal standing seam, or a mixed-material facade. You receive a categorised lead aligned with your installation capabilities."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Self-Build Research',
+    text: "Self-builders research cladding at 11pm — comparing thermowood to cedar, studying U-value build-ups, and examining rainscreen ventilation details. Chat captures their specification intent and project stage while they plan."
+  },
+  {
+    icon: '📊',
+    title: 'Explains Material Differences',
+    text: "Visitors ask comparative questions — 'what lasts longer, cedar or larch?', 'what is a rainscreen?', 'do I need A2 cladding?' The AI responds from your profile with informed guidance while capturing their project area, height, and material preference."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Facade Portfolios',
+    text: "Cladding websites showcase striking facades — zinc-wrapped gables, larch-clad extensions, and aluminium rainscreen on commercial blocks. Chat converts architects and homeowners studying your completed elevations into project consultations."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat is part of phone answering at £${pricing.tiers.core.price}/month. Unlimited cladding conversations — from timber extension boards to A2-rated commercial remediation.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my cladding website?",
+    answer: "You receive a lightweight JavaScript snippet during setup. Paste it into your website header through WordPress, Squarespace, or direct HTML access. The branded chat widget deploys across every page. Cladding firms with facade photography galleries report that architects engage with chat directly from project pages showing zinc standing seam, larch elevations, and rainscreen close-up details."
+  },
+  {
+    question: "Can the AI discuss fire compliance with visitors?",
+    answer: "Your company profile configures the AI with your fire compliance expertise. When a building owner asks 'we have ACM panels and need to know if they are compliant' the AI responds with helpful context from your profile — referencing A1/A2 combustibility, BS 8414 testing, and the Building Safety Act — while capturing the building details for your full assessment."
+  },
+  {
+    question: "What does chat capture from cladding visitors?",
+    answer: "The AI gathers the cladding system type (rainscreen, timber, metal, composite, curtain wall), the material specification if known, the building type and height, the approximate facade area, fire compliance requirements if applicable, the project stage (planning, tender, or construction), and visitor contact information for your follow-up."
+  },
+  {
+    question: "Does chat slow my cladding website?",
+    answer: "The chat interface initialises only after your page content has fully loaded — facade photography, material specification sheets, project case studies, and accreditation badges all render at their natural speed. Zero performance impact on any device."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Chat comes bundled with phone answering under the Core plan at £${pricing.tiers.core.price}/month. For cladding contractors, both channels address distinct enquiry sources: daytime phone calls from main contractors with programme-critical facade tenders, and evening website conversations from architects comparing material options and self-builders planning mixed-material facades.`
+  },
+  {
+    question: "How is visitor data from cladding queries handled?",
+    answer: "Chat conversations containing building addresses, facade specifications, fire compliance details, material preferences, and visitor contact information are encrypted and stored on UK and EU servers under UK GDPR. Lead summaries go exclusively to you. No facade details reach competing cladding firms or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Cladding Contractors | Rapid Receptionist"
+  description={`AI website chat for UK cladding contractors. Engages architects comparing facade materials and self-builders planning timber cladding. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/cladding-contractors/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Cladding Contractor"
+  tradeNamePlural="Cladding Contractors"
+  tradeSlug="cladding-contractors"
+  headline="AI Website Chat for Cladding Contractor Companies"
+  accentWord="Cladding"
+  subhead="An architect finds your website at 9pm on a Thursday. She is preparing a planning application for a contemporary new-build dwelling in rural Oxfordshire — the design features a two-storey volume clad in natural Accoya timber with a vertical open-jointed profile on stainless steel clips over a vapour-permeable membrane, a single-storey wing wrapped in pre-patinated VM Zinc Quartz Plus standing seam, and a rendered ground floor with an insulated render system. She needs a cladding contractor who can deliver all three materials to architectural precision. She types: 'Good evening — researching cladding contractors for a new-build house. Mixed facade: Accoya vertical open-jointed cladding on the two-storey element, VM Zinc Quartz Plus standing seam wrapping the single-storey wing and its mono-pitch roof, and an EWI render system on the ground floor. Total cladding area approximately 280 square metres. Can you handle all three systems? We need a budget cost for the planning cost estimate and then firm pricing at tender stage. Rural Oxfordshire, near Chipping Norton.' Without chat, she bookmarks and moves on. With AI Website Chat, the AI confirms your multi-material capability, asks about the zinc panel orientation (vertical or horizontal standing seam) and the Accoya board width, and captures the lead — new-build, Chipping Norton, 280 sqm, Accoya open-jointed, VM Zinc Quartz Plus, EWI render, budget then tender pricing."
+  scenario="It is midnight on a Saturday. A facilities manager for a tech company has been researching cladding remediation for their headquarters — a four-storey office building built in 2008 with ACM composite cladding panels that have never been fire tested. The Building Safety Act has prompted their insurer to demand an EWS1 assessment. He types: 'Hi — we have a four-storey office in Oxford Business Park with ACM cladding panels installed 2008. Our insurer is demanding we confirm the fire rating — we think they might be PE core rather than A2. We need someone to assess, advise, and if necessary strip and replace with compliant panels. About 1,200 square metres of cladding across four elevations. No idea where to start with this — can you help?' Without chat, he emails Monday. With AI Website Chat, the AI explains that PE-core ACM panels require replacement with A2-rated alternatives, asks whether the building has an existing EWS1 form, and captures the lead — Oxford Business Park, four-storey office, 1,200 sqm ACM, suspected PE core, insurer demand, EWS1 required, full remediation scope."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/cladding-contractors/ai-receptionist/"
+  ctaHeadline="Win the Chipping Norton Mixed-Material Facade While She Compares at 9pm"
+  ctaSubhead={`An architect needs Accoya, VM Zinc, and EWI render on a 280 sqm new-build. Chat confirms your multi-material capability and captures the budget brief. Included at £${pricing.tiers.core.price}/month.`}
+/>

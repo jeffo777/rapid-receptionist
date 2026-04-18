@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Install from the MEWP',
+    text: "Aligning rainscreen panels at height, driving Tek screws through carrier rails, sealing cavity barriers at floor junctions, and dressing zinc standing seam around window reveals — every cladding operation demands both hands and aerial concentration. The AI answers every call in your company name."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Facade Briefs at Every Scale',
+    text: "When a QS calls about 3,500 square metres of ventilated aluminium rainscreen on a commercial tower, the AI captures the material, system, area, and programme. When a homeowner calls about larch cladding on a garden room, the AI captures the profile, area, and finish preference."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles Storm Damage Facade Calls',
+    text: "High winds dislodge cladding panels — composite sheets peeling from fixings, timber boards splitting at the clips, and loose panels endangering pedestrians below. The AI captures the panel type, damage extent, building height, and safety situation for priority attendance."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Specification Enquiries',
+    text: "Architects finalise cladding specifications in the evening. QSs prepare tender packages after site hours. Homeowners research timber and zinc options for their self-build. The AI captures every after-hours cladding call."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Built for Facade Pricing',
+    text: "Each lead specifies the cladding system, material, area, building height, substrate type, insulation and cavity barrier requirements, fire compliance class, and programme — everything you need to prepare the facade quotation."
+  },
+  {
+    icon: '🏷️',
+    title: 'CWCT-Grade Professionalism',
+    text: "A cladding firm that answers professionally and asks about the rainscreen system, cavity barrier specification, and fire compliance classification signals the technical competence that main contractors demand for their most prominent facade packages."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their cladding project?",
+    answer: "Questions adapt to the caller's context. A main contractor is asked about the cladding system (rainscreen, composite, timber, metal, curtain wall), the material specification, the facade area in square metres, the building height and number of storeys, the insulation and cavity barrier requirements, fire compliance classification, and the programme. A homeowner is asked about the cladding material (timber, composite, render board), the area, the property type, and their aesthetic preference."
+  },
+  {
+    question: "Can the AI handle both domestic timber and commercial rainscreen calls?",
+    answer: "Domestic timber cladding — cedar shiplap on a garden room, larch TGV on an extension — requires concise scope and finish specification. Commercial rainscreen — ventilated aluminium across four thousand square metres with SFS, cavity barriers, and A2 fire compliance — requires specification-level detail, programme coordination, and tender management. The AI constructs fundamentally different lead profiles ensuring your domestic schedule and commercial pipeline remain distinct."
+  },
+  {
+    question: "What about calls while the crew is on the MEWP?",
+    answer: "Commercial cladding installation means entire teams working at height — every person on a MEWP, scaffold, or mast climber with zero access to phones below. An architect's facade variation call arriving at 10am goes unanswered until scaffold pack-down. The AI handles every call during height work with full specification capture, ensuring no facade tender or damage repair is lost to an inaccessible phone."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `Your Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Cladding contractors receive a blend of main contractor tender calls, architect specification enquiries, facilities manager repair requests, and homeowner timber cladding quotes. The allowance accommodates the typical range of cladding enquiry patterns. Overage is 20p per minute with no lock-in.`
+  },
+  {
+    question: "Can I take calls during off-site days?",
+    answer: "When you are in the office — calculating facade areas from elevation drawings, ordering aluminium profiles from the supplier, preparing CWCT documentation, and pricing tender packages — take calls yourself. Redirect to the AI the moment the MEWP basket rises and the facade installation begins. Switch from your phone whenever your circumstances change."
+  },
+  {
+    question: "How is cladding project data secured?",
+    answer: "Cladding enquiries contain building addresses, facade elevations, material specifications, fire compliance classifications, and commercially sensitive tender pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No project details reach competing cladding firms, are shared with panel manufacturers, or are sold to any lead aggregator."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Cladding Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK cladding contractors. Captures rainscreen tenders, timber cladding quotes, and facade repair calls while you install from the MEWP. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/cladding-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Cladding Contractor"
+  tradeNamePlural="Cladding Contractors"
+  tradeSlug="cladding-contractors"
+  headline="AI Phone Answering for Cladding Contractor Companies"
+  accentWord="Cladding"
+  subhead="A main contractor calls at 10:30am. He is running a new-build secondary school on the western edge of Didcot — the steel frame is complete, the SFS substrate is being installed across the three-storey teaching block, and he needs the cladding subcontract confirmed within two weeks. The specification calls for a ventilated rainscreen system using Equitone Tectiva fibre cement panels in a bespoke grey-brown shade, concealed fixings on aluminium carrier rails, 120mm Rockwool mineral wool insulation behind the ventilated cavity, Siderise open-state cavity barriers at every floor slab line and compartment boundary, and an overall facade U-value of 0.20 W/m²K. The teaching block presents approximately 1,600 square metres of cladding across three elevations. A separate entrance canopy requires standing seam zinc wrapping around a curved steel structure — approximately 85 square metres. Programme: cladding to follow SFS completion in six weeks. You are on a MEWP at a retail park in Bicester — fitting horizontal aluminium composite panels to the entrance elevation, the panel aligned to the string line, the drill driving self-tapping fixings through the aluminium into the steel purlins. Both hands occupied, the platform thirty feet above the car park. Without AI Phone Answering, the school tender goes to voicemail. The MC calls two more cladding firms. With it, the AI captures: Didcot secondary school, Equitone Tectiva, 1,600 sqm rainscreen, mineral wool 120mm, Siderise cavity barriers, 0.20 U-value, SFS substrate, zinc entrance canopy 85 sqm, programme six weeks."
+  scenario="It is 2pm on a Tuesday in January. Strong winds have been gusting across Oxfordshire since dawn. Three calls come in between noon and 2pm. Without AI Phone Answering, you are on a MEWP at a commercial office in Cowley — the wind has paused cladding installation above the second floor (company safety policy: no MEWP work above 35mph), and your crew is installing cavity barriers at the first-floor junction instead. You took one call on the ground during a material check and two went to voicemail. With AI Phone Answering, all three are answered. Lead one: a facilities manager at a Headington office park — a section of composite cladding panels on the east elevation has been damaged by storm debris, approximately twelve panels affected across two storeys, some panels cracked and one dislodged completely. Lead two: an architect in Summertown specifying larch timber cladding for a residential extension — Siberian larch, open-jointed vertical boards on horizontal battens, natural silver finish, approximately 40 square metres. Lead three: a housing association's building safety manager — their three six-storey residential blocks in east Oxford require EWS1 assessments and potential cladding remediation under the Building Safety Act — existing ACM panels need fire testing classification confirmation."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/cladding-contractors/ai-receptionist/"
+  ctaHeadline="Capture the Didcot School Tender While You Fit Panels in Bicester"
+  ctaSubhead={`A main contractor needs 1,600 sqm of Equitone rainscreen and a zinc entrance canopy confirmed in two weeks. The AI captured the specification while your MEWP worked the retail park. From £${pricing.tiers.core.price}/month.`}
+/>
