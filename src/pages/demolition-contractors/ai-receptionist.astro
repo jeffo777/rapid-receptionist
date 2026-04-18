@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A property developer calls about demolishing a 1960s three-storey office block on a central Oxford site to make way for a thirty-unit residential development. He needs a demolition survey, an R&D asbestos survey, a Section 80 notice submitted to the local authority, a full method statement with exclusion zones and traffic management, soft strip of the interior, hard demolition of the reinforced concrete frame, basement infill, crushing and recycling of the arisings, and site clearance to formation level — all within a fourteen-week programme before the new-build groundworks begin. You are on another demolition site managing a high-reach excavator taking down a former retail unit — the 360 operator working the long boom above the exclusion zone, the banksman directing haulage lorries, dust suppression running. Your phone is in the site cabin. The developer calls three NFDC firms. One answers and schedules a Tuesday site inspection.",
+    with: "Your AI receptionist answers on the second ring. It captures the complete brief — 1960s office block, central Oxford, thirty-unit residential, demolition survey, R&D asbestos, Section 80, method statement, soft strip, hard demo of RC frame, basement infill, crushing, site clearance to formation, fourteen-week programme — and confirms you will call back. At the site cabin you review the lead and phone. You book a Friday survey."
+  },
+  {
+    without: "A main contractor emails on Wednesday asking for a price on soft strip and internal demolition of a former department store in Banbury — four floors of retail fit-out, suspended ceilings, shopfront glazing, escalators, service risers, mechanical and electrical installations, and partition walls, all to be stripped back to the structural frame before a refurbishment contractor begins the conversion to residential apartments. Pre-demolition asbestos survey already completed with ACMs identified in floor tiles, pipe lagging, and textured coatings. You are at a pre-start meeting on another site, discussing the demolition sequence with the principal contractor's site manager. The email sits until Sunday.",
+    with: "Your AI acknowledges the main contractor's email within sixty seconds, referencing the Banbury department store, four-floor soft strip, escalator removal, M&E strip-out, identified ACMs, and residential conversion scope. Sunday evening you begin assembling the tender with full project context already captured."
+  },
+  {
+    without: "A homeowner WhatsApps on Saturday afternoon with photos of a large detached double garage she wants demolished — block construction with an asbestos cement roof, a concrete apron in front, and a boundary wall that must be retained. She messages three demolition firms. You are at home. By Monday, two have replied and one has offered a site visit.",
+    with: "The AI responds to the WhatsApp within seconds, asks whether the garage is attached or detached, whether there are any services running through it (gas, water, electric), the approximate footprint, and the postcode. Monday at 8am you have a structured domestic demolition lead with photos and service information."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Demolition Methods",
+    items: ["Soft strip and internal demolition", "Hard demolition of structural frames", "High-reach demolition with long-boom excavators", "Controlled dismantling in confined spaces", "Facade retention and structural propping", "Remote demolition with Brokk machines"]
+  },
+  {
+    category: "Site Processing & Clearance",
+    items: ["On-site crushing and screening of arisings", "Concrete, brick, and aggregate recycling", "Basement backfill and compaction", "Site clearance to formation level", "Waste segregation and licensed disposal", "Hazardous material removal coordination"]
+  },
+  {
+    category: "Compliance & Documentation",
+    items: ["Section 80/81 demolition notices", "CDM 2015 principal contractor duties", "Pre-demolition structural surveys", "Method statements and risk assessments", "Exclusion zone design and management", "Traffic management and haulage logistics"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏗️",
+    title: "Property Developers",
+    description: "Developers commissioning full site demolition to clear land for new-build residential, commercial, and mixed-use developments. Programme-critical work where demolition delays push foundation starts, steel deliveries, and sales completions back by weeks. The demolition firm that responds fast and demonstrates NFDC-standard professionalism secures the tender."
+  },
+  {
+    icon: "🏢",
+    title: "Main Contractors & Principal Contractors",
+    description: "Principal contractors subcontracting soft strip, internal demolition, and structural demolition packages. CDM 2015 compliance requires detailed method statements and competent demolition contractors. Repeat subcontract relationships depend on reliable, responsive communication."
+  },
+  {
+    icon: "🏭",
+    title: "Commercial & Industrial Property Owners",
+    description: "Factory owners, warehouse operators, and commercial landlords needing redundant structures demolished. Projects range from single-storey portal frame warehouse clearances to multi-storey reinforced concrete industrial complexes with hazardous material complications."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners & Domestic Clients",
+    description: "Homeowners wanting garages, outbuildings, conservatories, and boundary walls demolished before extensions or garden projects. Often their first experience of demolition — they appreciate clear communication about noise, dust, skip logistics, and timelines."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand demolition terminology?",
+    answer: "The full vocabulary of commercial and residential demolition is built into the system — soft strip, hard demolition, structural demolition, high-reach, controlled dismantling, facade retention, propping, shoring, temporary works, Brokk remote demolition, Section 80 and Section 81 notices, CDM 2015 principal contractor and principal designer roles, pre-demolition surveys, R&D asbestos surveys, method statements, risk assessments, exclusion zones, traffic management plans, crushing and screening, aggregate recycling, formation level, and waste consignment notes. When a developer describes 'a full demolition of a reinforced concrete frame to basement level with on-site crushing, retained facade to the High Street elevation, and a fourteen-week programme,' the AI captures every technical detail."
+  },
+  {
+    question: "Can the AI distinguish between a garage demolition and a commercial site clearance?",
+    answer: "A homeowner calling about 'knocking down a single garage with a concrete base' generates an entirely different lead profile from a developer describing 'demolition of a 6,000 square metre former industrial complex — four interconnected buildings, RC frame, steel portal annexe, suspected ACMs in the roof sheets and lagging, Section 80 notice required, crushing and recycling target of 95 percent, and a twenty-week demolition programme.' The AI scales its questioning — domestic projects capture the structure type, construction, services, and access, while commercial tenders capture the building dimensions, frame type, asbestos status, notice requirements, recycling targets, and programme milestones."
+  },
+  {
+    question: "What about urgent demolition or dangerous structure calls?",
+    answer: "Storm damage, structural collapse, fire-damaged buildings, and local authority dangerous structure notices generate emergency demolition calls demanding immediate mobilisation. The AI identifies the emergency context, captures the structure condition, location, access for machinery, and any public safety concerns, and escalates the lead for priority dispatch."
+  },
+  {
+    question: "How much does this cost for a demolition company?",
+    answer: `Demolition contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering and unlimited website chat. Whether you are a small domestic demolition team or a large NFDC-member firm running multi-million-pound structural demolitions, the allowance fits your call patterns. Each additional channel is £${pricing.addOn.price}/month. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a small demolition firm?",
+    answer: "Smaller demolition teams — an excavator operator, a labourer, and a site manager who is also the company director — benefit enormously. When the owner is in the cab of the 360, operating the breaker attachment on a concrete floor slab, the AI handles every call. Commercial tenders, domestic garage enquiries, and dangerous structure emergencies are all captured while the bucket swings."
+  },
+  {
+    question: "Can I choose when calls go to the AI?",
+    answer: "Your coverage schedule is set from the dashboard and adjusts to your working rhythm. During active demolition — plant operations, dust suppression management, and exclusion zone supervision — direct all calls to the AI. During office time — writing method statements, pricing tenders, and coordinating haulage — answer calls yourself. Override from your phone instantly."
+  },
+  {
+    question: "How is demolition project data protected?",
+    answer: "Demolition tenders contain site addresses, building surveys, structural drawings, asbestos reports, programme schedules, and commercially sensitive pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No tender information is disclosed to competing demolition firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for Demolition Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK demolition contractors — soft strip, structural demolition, high-reach, controlled dismantling, and site clearance. Never miss a developer call from the cab. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/demolition-contractors/ai-receptionist/"
+  tradeName="Demolition Contractor"
+  tradeNamePlural="Demolition Contractors"
+  tradeSlug="demolition-contractors"
+  headline="The AI Receptionist Built for Demolition Contractors"
+  accentWord="Demolition"
+  subhead={`You cannot answer the phone when you are in the cab of a high-reach excavator, running the long boom above an exclusion zone, the dust suppression system spraying, and a banksman directing haulage lorries away from the collapsing structure. Your AI receptionist captures every call, every message, and every tender — from developers commissioning full site demolitions to homeowners wanting a garage knocked down. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next Office Block Demolition Tender Lands While You Swing the Long Boom"
+  ctaSubhead={`A developer with a fourteen-week programme will call three NFDC firms today. If voicemail answers, you finish third. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

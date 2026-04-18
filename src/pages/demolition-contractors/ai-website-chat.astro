@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Developers Researching Demolition',
+    text: "Developers visit demolition websites to assess capability — previous projects, plant fleet, recycling rates, and accreditations. The chat responds from your profile with relevant experience while capturing the project scope and programme."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies by Demolition Type',
+    text: "Through conversation, the AI identifies whether the visitor needs a domestic garage demolition, a commercial soft strip, a full structural demolition, or a site clearance for new development. You receive a lead pre-categorised by project scale."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening Tender Research',
+    text: "Developers and project managers research demolition contractors after hours — reviewing portfolios, checking NFDC membership, and comparing capabilities. At 10pm a project manager types: 'We have a six-storey RC frame in central Oxford — can you demolish to basement level?' The chat captures the tender before the browser closes."
+  },
+  {
+    icon: '📊',
+    title: 'Discusses Demolition Methods',
+    text: "Visitors ask about demolition approaches — 'do you do high-reach or floor-by-floor?', 'can you crush on site?', 'what about facade retention?' The AI responds from your profile while capturing their project specifics."
+  },
+  {
+    icon: '🔗',
+    title: 'Works With Project Portfolios',
+    text: "Demolition websites showcase dramatic before-and-after transformations, high-reach sequences, and crushing operations. The chat converts impressed visitors into tender conversations."
+  },
+  {
+    icon: '✅',
+    title: 'No Extra Cost',
+    text: `Website chat is included with phone answering at £${pricing.tiers.core.price}/month. One JavaScript snippet covers every page — from your project gallery to your plant fleet page.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I add chat to my demolition company website?",
+    answer: "A small JavaScript code snippet is provided during your onboarding. Insert it into your website header — through direct HTML editing, WordPress dashboard, or your CMS admin. The branded chat widget deploys across every page of your demolition company website immediately. Whether your site runs on WordPress, Squarespace, or a custom-built platform, installation takes under five minutes."
+  },
+  {
+    question: "Can the AI discuss demolition methods with visitors?",
+    answer: "Your profile informs the AI about your capabilities, plant fleet, and accreditations. When a visitor asks 'do you offer facade retention?' the AI responds from your profile — confirming your facade retention capability and asking about the building type, the retained elevation, and the proposed new structure. The conversation moves organically from capability enquiry to project brief."
+  },
+  {
+    question: "What project details does chat capture from demolition enquiries?",
+    answer: "The AI gathers the demolition scope (soft strip, structural, site clearance), the building type and frame construction, the number of storeys and approximate floor area, the asbestos survey status, programme constraints, recycling targets, the required post-demolition site condition, and the visitor's role (developer, contractor, property owner, homeowner)."
+  },
+  {
+    question: "Does the chat widget affect my site performance?",
+    answer: "The script loads asynchronously after all existing page content has rendered. Demolition websites featuring high-resolution project photos, drone footage stills, and plant fleet galleries display at full speed. The chat widget appears only after your visual showcase has loaded completely."
+  },
+  {
+    question: "Is website chat charged separately from phone answering?",
+    answer: `Both operate under the same Core plan at £${pricing.tiers.core.price}/month — no separate charge. For demolition companies, these two channels address the primary enquiry patterns: daytime phone calls from developers and contractors on programme deadlines, and evening website conversations from developers researching demolition firms for upcoming tenders.`
+  },
+  {
+    question: "How is visitor data from demolition enquiries handled?",
+    answer: "Chat conversations containing site addresses, building specifications, structural surveys, programme schedules, and visitor contact details are encrypted and stored on UK and EU servers compliant with UK GDPR. Lead summaries go exclusively to you. No tender information is shared with competing demolition firms or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for Demolition Contractors | Rapid Receptionist"
+  description={`AI website chat for UK demolition contractors. Engages developers and main contractors researching structural demolition, soft strip, and site clearance. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/demolition-contractors/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="Demolition Contractor"
+  tradeNamePlural="Demolition Contractors"
+  tradeSlug="demolition-contractors"
+  headline="AI Website Chat for Demolition Contractor Companies"
+  accentWord="Demolition"
+  subhead="A project manager finds your website at 9pm. He is coordinating a residential development on a brownfield site in Abingdon — a former industrial estate with six buildings including a three-storey brick-and-concrete office block, two steel portal frame warehouses, a single-storey workshop, a substation building, and a concrete yard with underground fuel storage tanks. He needs the entire estate demolished, the fuel tanks decommissioned and removed, all hardstanding broken out, contaminated ground identified, and the site cleared to formation level for the new development's piling contractor. He types: 'Hi — we have a brownfield industrial estate in Abingdon with 6 buildings to demolish. Mix of concrete, steel frame, and brick. There are underground fuel tanks. Need full site demolition and clearance to formation level for piling. About 8,000 sqm total. Programme needs to start in 8 weeks. Can you handle a site of this size? Do you deal with fuel tank removal and contaminated ground?' Without chat, he sends a contact form. With AI Website Chat, the AI asks about the structural condition of each building, whether asbestos surveys have been completed, and the anticipated piling start date. He provides further details. Monday you call with a comprehensive lead — six-building industrial estate, Abingdon, 8,000 sqm, mixed construction, fuel tanks, contamination risk, formation level, eight-week start — and schedule a Thursday site walkover."
+  scenario="It is 11:30pm on a Saturday. An architect in Witney is finalising plans for a barn-to-residential conversion on a farm in the Cotswolds. The existing project includes demolishing three derelict stone farm buildings adjacent to the retained barn — a former milking parlour, a machinery store with an asbestos cement roof, and a collapsed stone hay barn. The stone from the demolished buildings is to be salvaged for reuse in the conversion's boundary walls and landscaping. She types: 'Hello — I am an architect planning a barn conversion. We need 3 adjacent farm buildings demolished — stone construction, various states of disrepair, one has an asbestos cement roof. The client wants the natural stone salvaged for reuse. Rural Cotswold site with limited access. Can you demolish carefully enough to salvage the stone? And can you deal with the asbestos cement roof?' Without chat, she bookmarks your site and forgets. With AI Website Chat, the AI confirms your controlled dismantling capability, asks about the stone type and wall thickness, and captures the site access constraints. Monday you contact the architect with a clear understanding of the salvage and ACM requirements."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/demolition-contractors/ai-receptionist/"
+  ctaHeadline="Capture the Brownfield Industrial Estate Tender at 9pm"
+  ctaSubhead={`A project manager needs six buildings demolished, fuel tanks removed, and contaminated ground cleared. Your chat captures the 8,000 sqm scope before the browser closes. Included at £${pricing.tiers.core.price}/month.`}
+/>

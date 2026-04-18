@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Run the Demolition',
+    text: "Active demolition — operating the excavator, managing the exclusion zone, directing haulage, supervising dust suppression — demands total concentration. The AI answers every call in your company name while you manage the demolition site."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures Varied Demolition Briefs',
+    text: "When a developer calls about demolishing a multi-storey RC frame, the AI captures the building type, frame material, floor area, asbestos status, and programme. When a homeowner asks about knocking down a conservatory, the AI captures the structure type, construction, services, and access route for the mini-digger."
+  },
+  {
+    icon: '🚨',
+    title: 'Escalates Dangerous Structure Calls',
+    text: "A partial building collapse after a storm, a fire-damaged structure declared unsafe, or a local authority dangerous structure notice commanding immediate demolition — the AI identifies the emergency, captures the location, building condition, and public safety risk, and escalates for priority mobilisation."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches After-Hours Developer Calls',
+    text: "Developers review planning approvals and demolition timelines in the evening. Project managers programme demolition phases after site hours. The AI captures every out-of-hours tender call and site clearance enquiry."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Built for Tendering',
+    text: "Each lead specifies the structure type, frame construction, floor area, the demolition scope (soft strip, hard demo, site clearance), asbestos status, programme timeline, recycling requirements, and the client's role — everything you need to price the tender."
+  },
+  {
+    icon: '🏷️',
+    title: 'NFDC-Standard Professionalism',
+    text: "Developers awarding six-figure demolition contracts expect professional communication from day one. An AI greeting that asks about the frame type, floor area, and programme signals a competent NFDC-standard operator."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their demolition needs?",
+    answer: "Questions scale to the project. A developer commissioning a full structural demolition is asked about the building type and frame construction, the number of storeys, the approximate floor area, whether a pre-demolition asbestos survey has been completed, the programme timeline, the recycling target, and the post-demolition site level required. A homeowner wanting a garage demolished is asked about the construction (brick, block, timber), the roof material, whether services (gas, water, electric) run through it, and vehicle access for machinery to reach the structure."
+  },
+  {
+    question: "Can the AI handle both soft strip and structural demolition enquiries?",
+    answer: "Most demolition contractors deliver both. A call requesting 'soft strip of a four-floor former department store back to the structural frame' generates a lead capturing the fit-out scope, M&E installations, escalator removal, and identified ACMs. A call requesting 'total structural demolition of a reinforced concrete warehouse to formation level' generates a lead capturing the frame type, floor slab thickness, crushing requirements, and backfill specification. The AI adjusts its questioning to match the demolition phase."
+  },
+  {
+    question: "What about calls during noisy demolition operations?",
+    answer: "Breakers hammering concrete, crushers processing arisings, excavators loading lorries, water bowsers spraying dust suppression — demolition sites are among the loudest construction environments. The AI handles every call during peak demolition noise with the same clarity as a quiet office conversation."
+  },
+  {
+    question: "How many call minutes are included?",
+    answer: `The Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. Demolition firms receive a mix of developer tender calls, main contractor subcontract enquiries, homeowner domestic demolition requests, and occasional emergency dangerous structure notifications. Most firms operate within the allowance. Overage during large tender periods is billed at 20p per minute without penalties or lock-in.`
+  },
+  {
+    question: "Can I take calls during office and tendering time?",
+    answer: "When you are at your desk — writing method statements, pricing demolition tenders, submitting Section 80 notices, or coordinating plant hire and haulage — take calls yourself. Switch to AI answering from the dashboard when you head to site. Toggle between modes from your phone at any time throughout the day."
+  },
+  {
+    question: "How is demolition tender data secured?",
+    answer: "Demolition tenders contain site addresses, structural surveys, asbestos reports, programme schedules, waste management plans, and commercially sensitive pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No tender details are shared with competing demolition firms, disclosed to other site contractors, or sold to lead generation services."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for Demolition Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK demolition contractors. Captures developer tenders, soft strip subcontracts, and dangerous structure emergencies while you operate the plant. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/demolition-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="Demolition Contractor"
+  tradeNamePlural="Demolition Contractors"
+  tradeSlug="demolition-contractors"
+  headline="AI Phone Answering for Demolition Contractor Companies"
+  accentWord="Demolition"
+  subhead="A developer calls at 10am. He has secured planning permission to demolish a 1970s concrete-framed former telephone exchange in Kidlington and replace it with a mixed-use development — sixty-two residential units over ground-floor commercial space. He needs a demolition contractor to conduct the pre-demolition survey, coordinate the R&D asbestos survey, submit the Section 80 notice, prepare the method statement with phased exclusion zones, complete the soft strip of all internal M&E installations and asbestos removal, execute the structural demolition of the reinforced concrete frame down to basement slab level, crush and screen the concrete arisings on site, and leave a clean formation for the piling contractor. Sixteen-week programme with the piling rig booked. You are on another demolition site in Bicester — supervising a high-reach excavator bringing down a three-storey steel-framed industrial unit, the long boom working above the exclusion zone, the banksman controlling lorry movements through the traffic management zone. Your phone is in the site cabin across the compound. Without AI Phone Answering, the developer hears voicemail and tries the next NFDC member. With it, the AI captures the entire telephone exchange brief — RC frame, Kidlington, sixty-two units, Section 80, asbestos coordination, soft strip, structural demo to basement, crushing, sixteen-week programme — and your lead waits in the cabin."
+  scenario="It is 2:30pm on a Wednesday. You are operating the excavator yourself — a twenty-tonne 360 with a hydraulic breaker attached, breaking out a ground-floor concrete slab on a partially demolished commercial building. Dust suppression running, ear defenders on, visor down, both hands on the controls. Three calls come in between 1pm and 4pm. Without AI Phone Answering, one voicemail — 'need a price on some demolition' — two hang up. By Thursday, two have contacted other firms. With AI Phone Answering, all three are answered. Lead one: a main contractor needing soft strip on a former pub — three floors of bar fittings, commercial kitchen, cellar equipment, M&E installations, and asbestos floor tiles, all stripped before refurbishment begins. Lead two: a homeowner in Summertown wanting two brick garages demolished, concrete bases broken out, and the site levelled for a garden redesign. Lead three: a commercial landlord needing a derelict single-storey portal frame workshop demolished and the site cleared for a car park — 400 square metres, profiled metal cladding, concrete floor slab, no basement. At 4:30pm you check three leads — a pub soft strip, domestic double garage demo, and a workshop clearance — and prioritise the pub tender."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/demolition-contractors/ai-receptionist/"
+  ctaHeadline="Telephone Exchange, Pub Soft Strip, and Double Garage — All in Three Hours"
+  ctaSubhead={`While you broke out the concrete slab, three demolition opportunities called. The AI captured every frame type, programme, and asbestos status. From £${pricing.tiers.core.price}/month.`}
+/>

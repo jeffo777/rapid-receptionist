@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Catches Calls from the Cab',
+    text: "Operating a twenty-tonne excavator, running the breaker, supervising the exclusion zone — both hands occupied, ear defenders on, visor down. Missed Call Text Back sends a branded text to every unanswered caller within seconds."
+  },
+  {
+    icon: '⏱️',
+    title: 'Holds Developer Tender Callers',
+    text: "A developer calling about a demolition tender with a three-week return deadline gets voicemail from two firms and a text from yours: 'Thanks for calling — we are on an active demolition site and will return your call this afternoon.' The developer holds your slot on the tender list."
+  },
+  {
+    icon: '🏷️',
+    title: 'NFDC-Standard Professionalism',
+    text: "An instant branded text from a demolition contractor projects an organised, safety-conscious operation — the kind of demolition firm that developers and principal contractors trust with multi-million-pound site clearance programmes."
+  },
+  {
+    icon: '📊',
+    title: 'Vital During Active Demolition',
+    text: "Full demolition days — plant operating continuously, lorries cycling through the traffic management zone, the crusher processing arisings — keep everyone on site from dawn to dusk. Missed Call Text Back ensures no developer or contractor call is lost."
+  },
+  {
+    icon: '📋',
+    title: 'Captures Reply Tender Details',
+    text: "Callers reply with scope — 'demo of a 2-storey warehouse, steel frame, 800 sqm, site clearance to formation, need prices by Friday, OX4.' These replies arrive in your lead summary with structure type, programme, and tender deadline."
+  },
+  {
+    icon: '🔄',
+    title: 'Works Alongside Phone Answering',
+    text: "AI Phone Answering conducts full demolition conversations and builds comprehensive tender leads. Missed Call Text Back catches edge cases — signal lost in a basement soft strip, a one-ring disconnect, or a call during system handover. Together, every demolition lead is secured."
+  }
+];
+
+const faqs = [
+  {
+    question: "When does the missed call text go out?",
+    answer: "The branded message reaches the caller's phone within seconds of the unanswered call ending. Before they search for the next NFDC demolition firm on Google, before they try the next number on the tender list, your text has landed and your company name is on their screen."
+  },
+  {
+    question: "What does the text message say?",
+    answer: "You compose it during setup and revise whenever needed. An effective demolition message reads: 'Thank you for calling [company name]. We are currently managing a demolition site. We will return your call at the earliest opportunity. Reply with your demolition requirements for a faster response.' The wording conveys your on-site commitment and technical capability."
+  },
+  {
+    question: "Does this replace AI Phone Answering?",
+    answer: "The two complement each other as layered safety nets. Phone Answering conducts full conversations — identifying the building type, frame construction, floor area, demolition scope, asbestos status, programme timeline, and tender deadline. Missed Call Text Back catches uncommon bypass scenarios — a call dropping during plant noise, a mobile signal fading in a basement soft strip, or a caller hanging up before the AI connects. Both active simultaneously means no demolition enquiry disappears permanently."
+  },
+  {
+    question: "How much does Missed Call Text Back cost?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Demolition project values range from £1,500 garden clearances to £500,000 multi-building structural demolitions. Recovering one missed call from a developer — who needed a twelve-week site demolition for a housing development — and converting it through a timely text reply delivers returns that dwarf the annual channel cost.`
+  },
+  {
+    question: "Do callers reply to the text?",
+    answer: "Developers and contractors under tender pressure reply readily. Replies typically include the building type, construction material, approximate floor area, programme deadline, and postcode. These details arrive on your dashboard while the crusher still runs, giving you complete context for a priority callback at the next operational pause."
+  },
+  {
+    question: "How is missed call data stored?",
+    answer: "Phone numbers, text replies containing site addresses, building specifications, programme deadlines, and contact information are encrypted and held on UK and EU servers under UK GDPR. Only you access the data. Nothing is shared with competing demolition contractors or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="Missed Call Text Back for Demolition Contractors | Rapid Receptionist"
+  description={`Missed Call Text Back for UK demolition contractors. Automatically texts callers while you operate the plant — keeps developer tenders and contractor subcontracts warm. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/demolition-contractors/missed-call-text-back/"
+  channelName="Missed Call Text Back"
+  tradeName="Demolition Contractor"
+  tradeNamePlural="Demolition Contractors"
+  tradeSlug="demolition-contractors"
+  headline="Missed Call Text Back for Demolition Contractor Companies"
+  accentWord="Demolition"
+  subhead="It is 10am on a Wednesday. Your crew is halfway through a soft strip on a former NatWest bank branch — two floors of banking hall fit-out being stripped back to the structural frame. Your labourers are pulling down suspended ceilings, removing the security counter glazing, disconnecting the redundant alarm system, and bagging the asbestos-containing floor tiles that the licensed contractor has left in situ. The noise of battery drills, reciprocating saws, and the constant thud of materials landing in the skip makes phone conversation impossible even if your hands were free. Three calls come in at 10:20, 10:45, and 11:10. Your phone is in your jacket on the first floor. Without Missed Call Text Back, two voicemails — 'can you price a demolition' and 'checking scaffold availability' — and one hang up. With it, all three receive texts. The first replies: 'Developer here — need a 4-storey 1960s office block demolished in Kidlington, RC frame, about 3,000 sqm, site clearance for housing, programme 12 weeks. Can you submit a tender by month end?' At the lunch break you read the reply and phone. You book a Friday walkover."
+  scenario="It is 3:30pm on a Friday in November. Your team has been on a domestic demolition since 8am — demolishing a pair of large concrete garages, breaking out the 150mm concrete apron, loading the skip with masonry and concrete rubble, and levelling the subgrade for the homeowner's garden landscaper. Four missed calls between 12pm and 3:30pm. Without Missed Call Text Back, you check in the van: four unknowns, one voicemail — 'call me about some demolition' — three lost. With Missed Call Text Back, all four received texts. Reply one: 'main contractor — need soft strip on a 5-storey hotel conversion, Abingdon, 22 rooms per floor, full M&E strip, 6-week programme.' Reply two: 'homeowner in Summertown — want a large conservatory and patio demolished and cleared before Christmas.' Reply three: 'commercial landlord — derelict 1970s workshop, 350 sqm, need the site cleared for car parking, steel frame with block walls.' Reply four: 'architect — former pub needs demolishing for housing, listed building constraints on the boundary wall, 2 storey, brick, 400 sqm, OX2.' Friday evening you review: a 110-room hotel soft strip, a domestic conservatory job, a workshop clearance, and an architect's pub demolition with listed wall constraints. Four leads from one Friday afternoon."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/missed-call-text-back/"
+  tradePageUrl="/demolition-contractors/ai-receptionist/"
+  ctaHeadline="Recover Four Demolition Leads from One November Garage Friday"
+  ctaSubhead={`While your crew broke out the concrete apron, four callers missed you. Four texts went out. Four replied. A hotel soft strip, a pub demolition, a workshop clearance, and a Christmas conservatory. Add-on at £${pricing.addOn.price}/month.`}
+/>

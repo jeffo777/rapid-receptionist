@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📧',
+    title: 'Acknowledges Developer Demolition Tenders',
+    text: "Developers email demolition tenders with programme deadlines and tender return dates. The demolition firm that acknowledges first — referencing the building type, scope, and programme — demonstrates capacity and professionalism from the first interaction."
+  },
+  {
+    icon: '📐',
+    title: 'References Structural Specifications',
+    text: "When a developer emails specifying 'structural demolition of a five-storey RC frame to basement level, 3,200 sqm, estimated 12,000 tonnes of arisings, on-site crushing required, sixteen-week programme,' the AI acknowledgement references the frame type, tonnage, crushing scope, and timeline."
+  },
+  {
+    icon: '🕒',
+    title: 'Covers Your On-Site Email Gap',
+    text: "Demolition contractors spend entire days operating plant, managing exclusion zones, and supervising crushing operations. A developer's tender email arriving at 9am goes unread until evening. The sixty-second acknowledgement ensures your firm responds before every competing NFDC member."
+  },
+  {
+    icon: '🗂️',
+    title: 'Separates Tenders from Operations',
+    text: "Your inbox mixes developer tenders, plant hire invoices, scrap metal receipts, skip company confirmations, waste transfer notes, and NFDC audit correspondence. The AI identifies genuine demolition tender and project enquiries."
+  },
+  {
+    icon: '🤝',
+    title: 'Secures Developer Repeat Business',
+    text: "Developers with rolling portfolios commission demolition repeatedly — a reliable demolition firm that responds fast becomes their standing subcontractor. Consistent rapid acknowledgements cement your position as the go-to demolition partner."
+  },
+  {
+    icon: '📎',
+    title: 'Notes Survey and Drawing Attachments',
+    text: "Developer tenders frequently include structural surveys, asbestos reports, site plans, and programme bar charts. The AI references these attachments in both the acknowledgement and your lead summary for pre-tender review."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI produce demolition quotes from email tenders?",
+    answer: "The AI produces only the initial receipt acknowledgement — confirming you have received the tender, referencing the building type and demolition scope, and indicating your quotation will follow. Your demolition pricing — plant costs, labour, crushing, haulage, disposal, recycling credits, and programme scheduling — is calculated by you from your own site survey and assessment of the structural drawings."
+  },
+  {
+    question: "Will it respond to skip company and plant hire emails?",
+    answer: "During setup you define which email types trigger the acknowledgement and which are operational noise. Skip hire confirmations, scrap metal collection receipts, waste transfer notes, plant hire invoices, fuel delivery schedules, NFDC membership communications, and CITB training course updates are excluded from the auto-reply. Only genuine developer demolition tenders and project enquiries receive the professional acknowledgement."
+  },
+  {
+    question: "How does it handle homeowner contact-form demolition enquiries?",
+    answer: "Domestic submissions via your contact form — 'we need a concrete garage demolished and the base broken out, the builder said to arrange demolition separately' — receive a professional reply confirming your domestic demolition capability, asking about the structure type, construction material, approximate size, and whether any services (gas, water, electricity) connect to the building."
+  },
+  {
+    question: "What does email response cost for demolition companies?",
+    answer: `Email response is £${pricing.addOn.price}/month as an add-on. Demolition contracts range from £1,500 domestic clearances to half a million pounds for complex structural demolitions. Acknowledging a developer's five-storey RC frame tender within sixty seconds — while you supervised the high-reach on Wesiey Road — often determines whether your firm makes the tender shortlist for a six-figure contract.`
+  },
+  {
+    question: "Can all follow-up tender correspondence come from me?",
+    answer: "Every document after the initial acknowledgement is your own. Your demolition tender submission, method statement, risk assessment, Section 80 notice application, programme schedule, plant schedule, and contract correspondence are authored, costed, and issued exclusively by you and your team."
+  },
+  {
+    question: "How is demolition tender data secured?",
+    answer: "Developer tenders contain site plans, structural surveys, asbestos reports, programme schedules, and commercially confidential pricing. All email data is encrypted, stored on UK and EU servers under UK GDPR, and shared only with you. No tender details are disclosed to competing demolition firms, neighbouring site occupants, or any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Email Response for Demolition Contractors | Rapid Receptionist"
+  description={`AI email response for UK demolition contractors. Acknowledges developer tenders and main contractor soft strip instructions within sixty seconds. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/demolition-contractors/ai-email-response/"
+  channelName="AI Email Response"
+  tradeName="Demolition Contractor"
+  tradeNamePlural="Demolition Contractors"
+  tradeSlug="demolition-contractors"
+  headline="AI Email Response for Demolition Contractor Companies"
+  accentWord="Demolition"
+  subhead="A developer emails a comprehensive demolition tender for a disused Victorian brewery in central Oxford — a complex of eight interconnected buildings spanning 5,500 square metres across three storeys, with a mix of loadbearing masonry walls, cast iron columns, timber floor structures, and a later steel-framed extension. The pre-demolition R&D asbestos survey identified pipe lagging, boiler insulation, and floor tiles. The retained brewery chimney is locally listed and must remain standing with structural protection throughout the demolition. The developer needs the full tender submission — method statement, programme, plant schedule, traffic management plan, and pricing — returned within three weeks. You are supervising a crushing operation on a cleared site — the jaw crusher processing 400 tonnes of concrete arisings into 6F2 recycled aggregate while the screener separates the fines. Dust, noise, and constant machine oversight. Your phone is in the site office portakabin. Without AI Email Response, the Victorian brewery tender sits until the evening. Two competing NFDC firms acknowledged by noon. With it, your acknowledgement arrives within sixty seconds, referencing the Victorian brewery complex, eight buildings, 5,500 sqm, masonry and cast iron frame, timber floors, identified ACMs, retained listed chimney, and the three-week tender return."
+  scenario="It is 7am on a Monday. Your inbox accumulated over the weekend: a principal contractor requesting prices for demolition of a 1980s retail park — three large units, steel portal frames with profiled metal cladding, approximately 4,000 sqm total, site to be cleared for a residential development, a local authority commissioning emergency demolition of a fire-damaged community centre — two-storey brick structure with partial roof collapse and a dangerous structure notice served, a homeowner asking through your contact form about demolishing a large conservatory and patio to extend the garden, and a waste carrier licence renewal reminder from the EA. Without AI Email Response, you scan subjects while driving to site. The retail park tender sits until Tuesday. Two competitors responded Monday morning. With AI Email Response, the retail park tender receives an immediate acknowledgement referencing the three units, steel frames, 4,000 sqm, and residential clearance, the fire-damaged community centre is acknowledged with the dangerous structure urgency flagged, the conservatory enquiry is handled professionally, and the EA email is filtered. At lunch you prioritise the retail park — estimated value £180,000 — and begin assembling your tender."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-email-response/"
+  tradePageUrl="/demolition-contractors/ai-receptionist/"
+  ctaHeadline="Acknowledge the Victorian Brewery Complex Tender While You Crush the Aggregate"
+  ctaSubhead={`A developer's three-week tender return starts when the email lands. Your sixty-second acknowledgement secures the shortlist for a 5,500 sqm brewery demolition. Add-on at £${pricing.addOn.price}/month.`}
+/>

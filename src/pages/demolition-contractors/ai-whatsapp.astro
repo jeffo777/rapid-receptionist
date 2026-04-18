@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives Demolition Site Photos',
+    text: "Developers and contractors WhatsApp photos of buildings to be demolished — elevation shots, structural close-ups, aerial perspectives, and access route images. The AI responds immediately, asks about the frame type and programme, and attaches every photo to your lead."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Urgent Clearance Contracts',
+    text: "When a developer needs a derelict structure cleared before planning conditions expire, the first demolition firm to respond with availability gets the emergency commission. Speed of response directly impacts contract award."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Contractor Soft Strip Requests',
+    text: "Main contractors WhatsApp soft strip requests with programme urgency: 'soft strip starting Monday on a 3-floor office block — can you confirm your crew is available?' The AI captures the scope and mobilisation date while you operate the 360."
+  },
+  {
+    icon: '🌙',
+    title: 'Active During Evening Planning',
+    text: "Developers finalise demolition programmes after hours. Project managers coordinate subcontract packages in the evening. The AI catches every after-hours demolition WhatsApp."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Complex Demolition Messages',
+    text: "A WhatsApp saying 'got a demo job — old factory, 3 buildings, need prices by Friday' becomes a structured lead with building types, construction materials, approximate areas, and the tender deadline."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Tender Channel',
+    text: "AI WhatsApp uses your business number. Demolition tender discussions, site logistics, and subcontract negotiations stay professional and separated from personal messages."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI assess a building from photos?",
+    answer: "The AI does not produce demolition quotes or structural assessments from photographs. It responds effectively — acknowledging the images — and asks the questions you need for tendering: approximate floor area, number of storeys, the frame type (steel, concrete, masonry), whether an asbestos survey has been completed, the programme timeline, the required post-demolition condition, and any access or neighbour constraints. Every photo is saved to your lead for your own pre-visit assessment."
+  },
+  {
+    question: "What about multi-message demolition threads?",
+    answer: "Demolition conversations evolve — a developer sends a building photo, then forwards the planning approval, then asks about crushing on site, then queries the programme. The AI maintains the full thread and consolidates every message, photo, and document reference into one comprehensive tender lead."
+  },
+  {
+    question: "How much does AI WhatsApp cost for demolition firms?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. Demolition projects range from £2,000 domestic garage clearances to £500,000 complex structural demolitions. Capturing a developer's office block demolition tender through a prompt WhatsApp response — while you managed the exclusion zone on another site — often secures a six-figure contract from a thirty-second AI interaction.`
+  },
+  {
+    question: "Can I continue the WhatsApp conversation?",
+    answer: "Send one message in any thread and the AI hands the conversation to you. It detects your reply and withdraws. Most demolition firms let the AI capture the initial scope — building type, frame construction, floor area, asbestos status, programme, and tender deadline — then take over personally to discuss site logistics, plant requirements, and pricing."
+  },
+  {
+    question: "How is WhatsApp data from demolition enquiries protected?",
+    answer: "Every WhatsApp message — building photographs, site locations, structural assessments, demolition programme details, and sender contact information — is encrypted and stored on UK and EU servers under UK GDPR. Your data goes only to you. No tender information is shared with competing demolition firms, disclosed to neighbouring property occupants, or repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for Demolition Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK demolition contractors. Responds to building photos, demolition tenders, and emergency dangerous structure messages while you run the plant. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/demolition-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="Demolition Contractor"
+  tradeNamePlural="Demolition Contractors"
+  tradeSlug="demolition-contractors"
+  headline="AI WhatsApp for Demolition Contractor Companies"
+  accentWord="Demolition"
+  subhead="A developer WhatsApps at 11am with six photos — a disused 1950s brick-and-concrete social club in Headington. The photos show the front elevation with boarded windows, the rear with a flat-roof kitchen extension, an interior showing a suspended ceiling void and commercial bar fit-out, and the yard with concrete hardstanding and a brick boundary wall. His message: 'This social club needs demolishing. 2 storeys, about 600 sqm footprint. Brick walls, concrete floor slabs, flat roofs. Still has the full bar and kitchen fit-out inside — stainless steel counters, commercial equipment, the lot. Need soft strip first then full demolition. Site needs clearing to formation for housing. My programme has piling starting in 10 weeks. R&D asbestos survey done — ACMs found in the floor tiles and pipe lagging. Can you tender? Need prices by next Wednesday.' You are on a demolition site in Witney — supervising a 360 excavator with a concrete pulveriser attached, systematically crunching through reinforced concrete beams. The exclusion zone is active, the banksman managing lorry movements. Your phone is in the site office portakabin. Without AI WhatsApp, the social club tender sits until the afternoon tea break. With it, the AI responds instantly, asks about vehicle access width, whether the boundary wall is retained, and the required formation level, and your lead — 1950s social club, Headington, 600 sqm, two-storey, brick/concrete, full bar and kitchen soft strip, ACMs identified, housing development, ten-week programme, prices by Wednesday — is captured with six photos attached."
+  scenario="It is Saturday evening. A commercial landlord in Bicester owns a derelict row of three single-storey retail units with a shared concrete yard and underground drainage. The units have been vacant for four years. Vandals have stripped the copper and smashed the shopfronts. The landlord wants all three units demolished, the yard concrete broken out, the underground drainage grubbed up, and the site cleared and levelled for sale as a development plot. He WhatsApps three demolition firms: 'Hi — I own 3 derelict shop units in Bicester. Single storey, steel frame with blockwork infill, flat roofs. About 250 sqm total. They are in bad shape — vandalised, stripped. Need everything demolished and cleared including the yard concrete and underground drainage. Want the site clean for sale. What would you charge? No rush on the programme but I want to crack on soon.' Without AI WhatsApp, you see the message Sunday evening. One firm replied Saturday with a rough price range. With AI WhatsApp, the response arrives within seconds, asks about the roof material, whether the flat roofs might contain asbestos, and the site access for plant. He confirms profiled metal roofs with no known asbestos. Monday you open the lead: three derelict retail units, Bicester, 250 sqm, steel/blockwork, flat metal roofs, vandalised, yard breakout, drainage removal, development plot clearance—and send a fixed-price quote by lunchtime."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/demolition-contractors/ai-receptionist/"
+  ctaHeadline="Respond to the Social Club Demolition Photos While You Pulverise the RC Beams"
+  ctaSubhead={`A developer sends six photos of a 600 sqm social club with a ten-week piling deadline. The AI responds while you crunch the concrete. Add-on at £${pricing.addOn.price}/month.`}
+/>

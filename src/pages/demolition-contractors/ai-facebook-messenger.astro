@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Converts Demolition Video Posts',
+    text: "Demolition content is inherently dramatic on Facebook — high-reach excavators taking down buildings, controlled collapses, crushing vast concrete slabs, and dramatic before-and-after reveals. When a developer messages about their own site clearance, the AI captures the project."
+  },
+  {
+    icon: '📸',
+    title: 'Handles Building Photo Messages',
+    text: "Developers and property owners message with photos of buildings they want demolished — 'what would it cost to clear this site?' The AI asks about the frame type, floor area, asbestos status, and programme, converting a casual photo into a tender-ready demolition brief."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Neighbourhood Clearance Enquiries',
+    text: "When you demolish a prominent local building, neighbours and adjacent property owners become aware of demolition services. They message: 'you just demolished the old factory — can you quote for our derelict outbuilding?' The AI converts proximity interest into domestic leads."
+  },
+  {
+    icon: '🕐',
+    title: 'Active Beyond Site Hours',
+    text: "Property investors assess demolition requirements during evening research. Developers browse demolition portfolios after supper. Messages at 9pm about 'clearing an old industrial unit for redevelopment' carry genuine commercial intent."
+  },
+  {
+    icon: '📋',
+    title: 'Qualifies Casual Demolition Enquiries',
+    text: "Messenger conversations about demolition start loose — 'how much to knock down a garage?' The AI asks about construction material, roof type, base, services, and access — producing a quotable domestic demolition brief."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Dramatic Content',
+    text: "Every high-reach takedown video, before-and-after site reveal, and crushing plant sequence generates views that can convert into demolition tenders when followed by effective message handling."
+  }
+];
+
+const faqs = [
+  {
+    question: "Do I need a Facebook Business page for my demolition company?",
+    answer: "Messenger integration requires a Business page. Demolition companies posting dramatic project footage — high-reach sequences, controlled collapses, crushing operations, and cleared site reveals — attract significant engagement from developers, property investors, and commercial landlords. The AI adds instant message handling to convert video views into demolition tender conversations."
+  },
+  {
+    question: "What demolition enquiries come through Messenger?",
+    answer: "A combination of property investors, small developers, and homeowners. Property investors message about redundant commercial buildings they want cleared for redevelopment. Small developers enquire about site clearance costs for residential projects. Homeowners ask about garage, outhouse, and conservatory demolition. All are pre-engaged leads — they have already reviewed your project content and decided you can handle their work."
+  },
+  {
+    question: "How fast does the AI reply to demolition messages?",
+    answer: "The response arrives within seconds. Facebook's active status indicator shows your demolition company is engaging immediately. Developers comparing demolition firms for a tender — all of whom post impressive takedown footage — typically award the tender to the company that responds first with relevant technical questions about the project scope."
+  },
+  {
+    question: "What does Messenger cost for demolition companies?",
+    answer: `This add-on is £${pricing.addOn.price}/month. Demolition contracts span from £1,500 domestic garage clearances to £500,000 structural projects. One developer tender, secured through a rapid Messenger response while competing firms' messages sat overnight, pays for the channel cost for the foreseeable future.`
+  },
+  {
+    question: "Can I continue the Messenger conversation personally?",
+    answer: "Drop your own response into any thread and the AI steps aside permanently. It detects your reply and relinquishes control. Most demolition contractors let the AI capture the initial project scope — building type, frame construction, floor area, programme timeline, and asbestos status — then take over to discuss access logistics, plant deployment, and tender pricing."
+  },
+  {
+    question: "How is Messenger data from demolition queries protected?",
+    answer: "All Messenger conversations, building images, site addresses, structural details, programme timelines, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. No project details are disclosed to competing demolition firms, shared with adjacent site occupants, or sold to any third party."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Facebook Messenger for Demolition Contractors | Rapid Receptionist"
+  description={`AI Facebook Messenger for UK demolition contractors. Converts high-reach takedown videos and site clearance showcases into developer tenders. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/demolition-contractors/ai-facebook-messenger/"
+  channelName="AI Facebook Messenger"
+  tradeName="Demolition Contractor"
+  tradeNamePlural="Demolition Contractors"
+  tradeSlug="demolition-contractors"
+  headline="AI Facebook Messenger for Demolition Contractor Companies"
+  accentWord="Demolition"
+  subhead="You post a twelve-second reel filmed from a drone — a high-reach excavator systematically demolishing a five-storey former council office building in Cowley. The long boom reaches across the exclusion zone, the concrete pulveriser bites into the reinforced concrete parapet wall, rubble cascades down the face of the building into the catch net, and dust suppression creates a mist around the demolition zone. Two hundred and forty likes, ninety-one shares. A property investor in Headington messages: 'Impressive work — I have just bought a former care home in Headington. 3 storeys, brick construction, about 900 sqm. Need it demolished for residential development. Asbestos report done — some ACMs in the boiler room. Would need the whole site cleared and levelled. Can you give me a ballpark?' You are on site. Without AI Messenger, the message waits until the portakabin. With it, the AI asks about the basement (if any), whether the boundary walls are retained, and the anticipated development start date. The investor confirms no basement, retain the front boundary wall, and development starts in twelve weeks. Your lead is captured — former care home, Headington, 3 storeys, 900 sqm, brick, ACMs in boiler room, residential development, boundary wall retention, twelve-week start."
+  scenario="It is 10pm on a Wednesday. A farmer near Charlbury has three derelict agricultural buildings — a former dairy with a collapsing corrugated asbestos cement roof, a Dutch barn with a rusting steel frame, and a concrete block silage clamp that has not been used in twenty years. The farm wants the structures demolished and the area cleared for a new agricultural storage building under permitted development. He finds your Facebook page through a Cotswold farming group and messages: 'Hello — got 3 old farm buildings that need taking down. An old dairy with a dodgy roof (might be asbestos), a Dutch barn with a steel frame, and a concrete silage clamp. All derelict. We want the area cleared for a new agricultural building. Can you handle all 3? Rural access but we can get a lorry down the track. Charlbury area.' Without AI Messenger, you see the message Thursday morning. One competitor replied at 10:30pm with a helpful rural demolition explanation. With AI Messenger, the reply arrives at 10:01pm: 'Thank you — we handle agricultural demolition regularly. The dairy roof will need testing for asbestos before demolition. Could you confirm the approximate sizes of each building and whether you want the concrete bases broken out or left in place? We will plan the sequence around the asbestos removal.' He provides approximate dimensions. Thursday you open the lead and call at 8am."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-facebook-messenger/"
+  tradePageUrl="/demolition-contractors/ai-receptionist/"
+  ctaHeadline="Turn High-Reach Drone Footage into Care Home Demolition Tenders"
+  ctaSubhead={`A drone reel earns two hundred and forty likes. AI Messenger converts every property investor message into a demolition tender with floor area, ACM status, and development timeline. Add-on at £${pricing.addOn.price}/month.`}
+/>

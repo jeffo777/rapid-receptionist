@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Contractor Availability Texts',
+    text: "Main contractors text to confirm demolition availability — 'soft strip crew needed Monday, 3 floors, former office, Bicester, 2-week programme.' A fast confirmation secures the subcontract. Silence and they text the next NFDC firm."
+  },
+  {
+    icon: '📐',
+    title: 'Builds Demolition Briefs from Short Texts',
+    text: "A text like 'demo needed, RC frame, 4 storey, OX1, programme 8 weeks, need prices Friday' gives the AI enough context. It asks about the floor area and asbestos status. Your lead arrives with tender-ready detail."
+  },
+  {
+    icon: '🔔',
+    title: 'Secures Developer Referral Texts',
+    text: "Developers recommend reliable demolition firms to colleagues. When the referred developer texts about their own project, the AI captures the demolition scope while the recommendation is fresh."
+  },
+  {
+    icon: '🌙',
+    title: 'Active After Site Hours',
+    text: "Project managers programme demolition phases in the evening. Developers text about site clearance timelines after hours. The AI catches every after-hours demolition message."
+  },
+  {
+    icon: '📋',
+    title: 'Consolidates Multi-Text Briefs',
+    text: "Texts arrive in pieces — 'got a demo job' then 'warehouse in Abingdon' then 'steel frame' then 'need site cleared for new build.' The AI assembles one consolidated demolition tender brief."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Line',
+    text: "AI SMS operates on your business number. Demolition tender pricing, programme discussions, and site logistics remain professional and separated."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI manage an inbound demolition text?",
+    answer: "It reads the message and responds using your company name within seconds. A comprehensive text — 'need full demolition of a 3-storey brick office in Witney, about 1,500 sqm, R&D survey done, crushing on site, formation level for piling, 12-week programme' — receives an acknowledgement preserving every specification. A brief text — 'how much to knock down a garage?' — triggers follow-up questions about the construction, roof material, base, and access."
+  },
+  {
+    question: "Will the sender realise it is AI-generated?",
+    answer: "The response reads like a demolition contractor replying between site activities — commercially informed, technically accurate, and programme-aware. It uses your company name and asks about frame type, floor area, and programme. Developers and main contractors texting demolition firms expect a concise, knowledgeable response that demonstrates understanding of their project scope — the AI delivers exactly that tone."
+  },
+  {
+    question: "What about texts from existing project clients?",
+    answer: "Current clients text about programme changes, additional scope, plant requirements, and completion dates. The AI captures these and flags them separately from new tender enquiries. Your dashboard clearly distinguishes a new developer's structural demolition tender from a current client confirming Thursday's crushing schedule."
+  },
+  {
+    question: "What does AI SMS cost for demolition companies?",
+    answer: `This channel is £${pricing.addOn.price}/month as an add-on. Demolition values range from £1,500 domestic clearances to £500,000 major structural projects. Securing one developer's multi-storey demolition through a prompt text — while you ran the long boom on a different site — pays for the channel investment hundreds of times over.`
+  },
+  {
+    question: "Can I text back personally?",
+    answer: "Send a message in any thread and the conversation switches to you on the spot. During tendering, pricing, and office-based work — manage texts yourself. During active demolition — plant running, exclusion zones enforced, crushing operations supervised — let the AI keep your demolition company commercially responsive while you manage the site."
+  },
+  {
+    question: "How is text data from demolition enquiries stored?",
+    answer: "Text messages containing site addresses, building specifications, programme schedules, asbestos survey references, and contact details are encrypted and stored on UK and EU servers under UK GDPR. Data goes only to you. Nothing is shared with competing demolition firms or repurposed for any secondary use."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for Demolition Contractors | Rapid Receptionist"
+  description={`AI SMS for UK demolition contractors. Responds to developer tenders, soft strip confirmations, and site clearance texts while you run the plant. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/demolition-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="Demolition Contractor"
+  tradeNamePlural="Demolition Contractors"
+  tradeSlug="demolition-contractors"
+  headline="AI SMS for Demolition Contractor Companies"
+  accentWord="Demolition"
+  subhead="You are in the cab of a twenty-tonne excavator at 8:30am, fitting the selector grab attachment for sorting steel reinforcement from the concrete pile — the morning's crusher run has produced 200 tonnes of recycled aggregate and the steel rebar needs separating before the next load goes to the scrap yard. At 8:45am a main contractor texts: 'Hi — we are starting a school refurbishment in Cowley. Need soft strip of the entire building — 2 floors, about 1,800 sqm. Suspended ceilings, M&E first fix, partition walls, floor coverings, sanitaryware. Asbestos survey completed — textured coatings identified in 6 rooms. Soft strip needs completing in 4 weeks before our fit-out starts. Can your crew do it? Need confirmation today.' Your phone is in the cup holder, your hands on the control levers. Without AI SMS, the text waits until the lunch break. He texts two other firms; one confirms crew availability at 9am. With it, the AI responds at 8:46am, confirms your soft strip capability, and asks whether the school is fully vacant and whether the asbestos removal is included in the soft strip scope or has been contracted separately. He confirms vacant with asbestos licensed separately. At lunch you review the lead and call. You confirm a Monday start."
+  scenario="It is 7pm on a Sunday. A property investor in Charlbury has just completed the purchase of a derelict Victorian chapel — the structure is listed Grade II but the two attached ancillary buildings (a vestry and a church hall, both 1960s additions) are not listed and must be demolished as a condition of the planning consent for residential conversion. The investor texts three demolition contractors: 'Evening — just bought a derelict chapel in Charlbury. The chapel itself is listed but the 2 attached buildings from the 1960s need demolishing as a planning condition. They are connected to the listed structure so demolition needs to be careful to avoid damage. One is brick, one is block with a flat concrete roof. About 180 sqm combined. Can you do careful demolition next to a listed building? Need to start within 6 weeks.' Without AI SMS, you see the text Monday morning alongside other messages. He has two responses by Sunday evening. With AI SMS, the AI responds at 7:02pm: 'Thank you — demolition adjacent to listed buildings requires controlled dismantling with vibration monitoring and structural protection to the retained structure. Could you confirm whether the 1960s additions share party walls with the chapel, and whether a structural engineer has assessed the connection points? We will plan the dismantling sequence accordingly.' He confirms shared party walls. Monday you open the lead: derelict chapel conversion, Charlbury, Grade II listed, two 1960s additions, brick and block, 180 sqm, planning condition demolition, adjacent to listed structure, shared party walls, six-week start. You call at 8am and book a Wednesday site survey."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/demolition-contractors/ai-receptionist/"
+  ctaHeadline="Catch the School Soft Strip Text While You Sort the Rebar"
+  ctaSubhead={`A main contractor texts about 1,800 sqm of soft strip with a four-week completion. The AI confirms availability while you operate the selector grab. Add-on at £${pricing.addOn.price}/month.`}
+/>
