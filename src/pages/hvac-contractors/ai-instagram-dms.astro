@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📷',
+    title: 'Converts Outdoor Unit Reels',
+    text: "HVAC installation reels are mesmerising — outdoor units lifted onto roof plant decks, copper lines brazed with glowing joints, ceiling cassettes recessed flush with the grid. When followers DM about their overheating office or cold bedrooms, the AI captures a system lead."
+  },
+  {
+    icon: '🎯',
+    title: 'Reaches Decision-Makers at Research Peak',
+    text: "Instagram draws facilities managers comparing HVAC portfolios, architects reviewing cassette aesthetics, and homeowners studying heat pump installations. A DM from a building manager whose VRF is fifteen years old represents serious replacement intent."
+  },
+  {
+    icon: '📱',
+    title: 'Handles Cooling Emergency DMs',
+    text: "Facilities managers DM photos of error-code panels, compressor ice build-up, and overheating plant rooms — urgent and seeking an F-Gas certified team. The AI responds with system awareness and builds a priority attendance lead."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Late System Failures',
+    text: "Cooling systems fail overnight. Server rooms overheat at 2am. Heat pumps lock out in sub-zero temperatures. Building duty managers and homeowners DM HVAC engineers after dark. The AI captures every late-night system emergency."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Installation DMs',
+    text: "DMs begin with 'how much for air conditioning?' or 'can you install a heat pump?' The AI asks about the building type, the room count, the current heating or cooling system, and the preferred manufacturer — building a survey-ready specification."
+  },
+  {
+    icon: '🔗',
+    title: 'Monetises Every Brazed Joint Close-Up',
+    text: "Every cherry-red braze, every neat Armaflex-lagged pipework run, and every flush cassette installation generates enquiries from building managers who compare their own ceiling-void chaos with your organised workmanship."
+  }
+];
+
+const faqs = [
+  {
+    question: "What Instagram account type do I need?",
+    answer: "Convert to a Business or Creator profile through your Instagram settings — a free, instant switch. HVAC firms posting VRF installation time-lapses, heat pump outdoor unit lift sequences, and ceiling cassette flush-mount close-ups earn exceptional engagement — the transformation from portable fans and window units to concealed climate control is inherently satisfying visual content."
+  },
+  {
+    question: "What HVAC DMs arrive through Instagram?",
+    answer: "Office managers with ageing split systems that cannot keep up during heatwaves. Architects comparing cassette manufacturers for commercial fit-out specifications. Homeowners wanting air source heat pumps after studying your domestic installations. Data centre managers needing precision cooling upgrades. Each follower has pre-screened your F-Gas certified installation portfolio."
+  },
+  {
+    question: "How quickly does the AI respond to HVAC DMs?",
+    answer: "Every DM produces a response within seconds. Instagram's read indicator confirms your HVAC firm monitors actively. A server room manager whose Airedale precision cooling has tripped at 1am — watching rack intake temperatures climb past 30°C — requires an immediate, knowledgeable F-Gas response rather than an Instagram account that appears dormant."
+  },
+  {
+    question: "What do Instagram DMs cost for HVAC contractors?",
+    answer: `Instagram DMs are £${pricing.addOn.price}/month as an add-on. A commercial multi-split installation generates £6,000 to £15,000. A residential ASHP installation generates £8,000 to £14,000. One building manager's VRF replacement — catalysed by a DM after watching your roof-mounted outdoor unit installation reel — repays the annual channel cost from a single project.`
+  },
+  {
+    question: "Can I reply to DMs myself?",
+    answer: "Post one message in any thread and the AI yields permanently. Most HVAC engineers let the AI collect the initial specification — building type, current system, manufacturer preference, cooling or heating requirement, and timeline — then take over to discuss system design, energy modelling, and survey scheduling."
+  },
+  {
+    question: "Is DM data from HVAC queries private?",
+    answer: "Instagram DMs — system fault photographs, building addresses, F-Gas records, refrigerant system specifications, and sender contact information — are encrypted and stored on UK and EU servers under UK GDPR. Nothing reaches competing HVAC contractors, refrigerant suppliers, or third-party lead platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Instagram DMs for HVAC Contractors | Rapid Receptionist"
+  description={`AI Instagram DMs for UK HVAC contractors. Converts VRF installation reels and heat pump content into commercial tenders and BUS grant consultations. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/hvac-contractors/ai-instagram-dms/"
+  channelName="AI Instagram DMs"
+  tradeName="HVAC Contractor"
+  tradeNamePlural="HVAC Contractors"
+  tradeSlug="hvac-contractors"
+  headline="AI Instagram DMs for HVAC Contractor Companies"
+  accentWord="HVAC"
+  subhead="Your latest reel is a sixty-second time-lapse of a complete residential air source heat pump installation on a stone cottage near Burford. The Cotswold stone exterior, the careful placement of a Vaillant Arotherm plus 7kW monobloc on an anti-vibration plinth at the side of the property — screened by a rendered wall to satisfy conservation area planning — the 32mm copper flow and return pipes entering through the stone wall with neatly sealed penetrations, the buffer tank and low-loss header in the utility room, the Vaillant sensoCOMFORT VRC 720 controller on the kitchen wall. The original oil tank — rusted and unsightly — is removed by a specialist and the concrete base broken up. The cottage has been converted from a 2,000-litre-per-year oil dependency to a silent heat pump drawing 4kW of electricity. The final frame shows the MCS certificate, the BUS grant confirmation letter, and the Vaillant VRC 720 displaying a flow temperature of 40°C to the underfloor heating with the outside temperature at 4°C. Twelve thousand views. A homeowner in Great Tew DMs: 'Beautiful work — exactly what we need. We have a similar Cotswold stone cottage, currently on oil, 3 bedrooms, thick stone walls, single-glazed windows being replaced next year with timber double-glazed. Our oil tank is leaking and needs replacing — or could we skip that and go straight to a heat pump? We are in a conservation area so the outdoor unit needs to be discreet. Underfloor heating in the kitchen extension, radiators everywhere else. Can you visit?' You are commissioning a VRF system. Without AI DMs, the Great Tew cottage waits. With it, the AI confirms your MCS certification and conservation area experience, asks about the current oil consumption and the radiator sizes, and captures: Great Tew Cotswold cottage 3-bed, oil heating, leaking oil tank, conservation area, new DG windows next year, UFH kitchen extension + radiators, Vaillant/similar ASHP, MCS/BUS, survey request."
+  scenario="It is 3am on a Saturday in July. A university estates manager DMs after studying your commercial HVAC portfolio: 'Impressive commercial work. We manage fourteen buildings across a university campus in Oxford. Current HVAC is a mix of ageing Daikin VRV III and Toshiba SMMS systems, all R410A, most 12-15 years old. University has committed to net zero by 2035 and we need a phased VRF replacement programme to R32 heat recovery systems across all fourteen buildings — estimated 400+ indoor units total. Also need dedicated cooling for six server rooms and two research laboratories with controlled environments. Looking for an F-Gas contractor to partner as framework contractor for a five-year rolling programme. Can you handle this scale? Budget is allocated. Happy to discuss Monday.' Without AI DMs, the 400-unit university framework waits until Saturday afternoon. With AI DMs, the reply at 3:01am: 'Thank you — a fourteen-building VRF replacement programme with R32 heat recovery is a framework scale we can deliver. Could you confirm whether the university has a preferred manufacturer and whether the existing Trend or Siemens BMS infrastructure should integrate with the new systems?' He confirms Siemens Desigo, no manufacturer preference. Monday you call: Oxford uni 14 buildings, Daikin VRV III + Toshiba SMMS R410A 12-15yr, net zero 2035, R32 heat recovery replacement, 400+ indoor units, 6 server rooms, 2 research labs, 5-year framework, Siemens Desigo BMS, budget allocated."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-instagram-dms/"
+  tradePageUrl="/hvac-contractors/ai-receptionist/"
+  ctaHeadline="Turn 12,000 Views on a Burford Heat Pump into a Great Tew Survey"
+  ctaSubhead={`Sixty seconds of a leaking oil tank replaced by a Vaillant Arotherm on a Cotswold plinth earns twelve thousand views. AI Instagram DMs converts the next-village neighbour's identical oil problem into an MCS-certified heat pump survey. Add-on at £${pricing.addOn.price}/month.`}
+/>

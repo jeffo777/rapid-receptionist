@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Engages Visitors Researching Heat Pumps',
+    text: "Homeowners spend weeks comparing ASHP brands, reading SCOP ratings, and calculating whether the BUS grant makes conversion affordable. Chat captures them on your website — ready to commit but needing clarity on sizing, noise, and running costs."
+  },
+  {
+    icon: '📐',
+    title: 'Qualifies HVAC Project Scope Online',
+    text: "Through conversation, the AI determines whether the visitor needs a domestic heat pump, commercial VRF system, chiller replacement, MVHR installation, or emergency cooling repair. You receive a categorised lead with the correct HVAC scope."
+  },
+  {
+    icon: '🕐',
+    title: 'Converts Evening AC Failures',
+    text: "Office air conditioning fails after the facilities team leaves. Server room temperatures climb. The duty manager finds your website and types 'air conditioning stopped working, server room 28 degrees and rising.' Chat captures the system type and business impact instantly."
+  },
+  {
+    icon: '📊',
+    title: 'Explains Heat Pump Options to Visitors',
+    text: "Visitors ask 'air source or ground source?', 'what SCOP should I expect?', 'will I need bigger radiators?' The AI responds from your MCS profile — comparative running costs, radiator compatibility, and noise data — while capturing the property and insulation level."
+  },
+  {
+    icon: '🔗',
+    title: 'Works Alongside Installation Galleries',
+    text: "Your website displays installed outdoor units, neat pipework runs, and commissioned plant rooms. Chat converts visitors admiring your F-Gas certified workmanship into booked surveys."
+  },
+  {
+    icon: '✅',
+    title: 'Included at No Extra Cost',
+    text: `Website chat is bundled with phone answering at £${pricing.tiers.core.price}/month. Unlimited HVAC conversations — from BUS grant consultations to chiller replacement tenders.`
+  }
+];
+
+const faqs = [
+  {
+    question: "How do I install chat on my HVAC website?",
+    answer: "Onboarding provides a single JavaScript snippet for your website header — compatible with WordPress, Wix, Squarespace, or custom HTML. The branded chat widget displays across every page instantly. HVAC firms with outdoor unit installation galleries and MCS or F-Gas accreditation prominently displayed see strong chat engagement from visitors who have already assessed your installation standard."
+  },
+  {
+    question: "Can the AI advise on heat pump sizing?",
+    answer: "Your MCS-certified company profile configures the AI with your sizing methodology and brand preferences. When a visitor types 'is a 12kW ASHP enough for a 4-bed detached house?' the AI references your typical approach — heat loss calculations, insulation assessment, and existing emitter evaluation — while collecting the property construction decade, the wall insulation type, the glazing standard, and the current heating fuel."
+  },
+  {
+    question: "What does chat capture from HVAC visitors?",
+    answer: "The AI records the HVAC requirement category (heat pump, air conditioning, ventilation, chiller, or maintenance), the property or building type and size, the current system manufacturer and age, the heating or cooling concern, the energy source, any grant awareness, and the visitor's contact details for your follow-up."
+  },
+  {
+    question: "Does chat slow my HVAC contractor website?",
+    answer: "MCS certification badges, heat pump installation photography, manufacturer partner logos, and Trustpilot review feeds load at their full speed before the chat widget initialises. The lightweight component loads asynchronously entirely after existing page content renders. No measurable impact on page speed or search ranking."
+  },
+  {
+    question: "Is website chat a separate charge?",
+    answer: `Website chat comes bundled with phone answering at £${pricing.tiers.core.price}/month — no additional fee. HVAC contractors gain dual coverage: weekday phone calls from facilities managers tendering VRF replacements and developers specifying MVHR systems, combined with evening and weekend chats from homeowners whose oil bills have prompted serious heat pump research.`
+  },
+  {
+    question: "How is visitor data from HVAC queries handled?",
+    answer: "Chat conversations containing building addresses, refrigerant system details, F-Gas logbook references, BMS credentials, and visitor contact information are encrypted and stored on UK and EU servers under UK GDPR. Leads are delivered exclusively to you. No HVAC project details reach competitors or third-party aggregators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Website Chat for HVAC Contractors | Rapid Receptionist"
+  description={`AI website chat for UK HVAC contractors. Engages homeowners researching heat pumps and facilities managers comparing VRF systems. Included at £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/hvac-contractors/ai-website-chat/"
+  channelName="AI Website Chat"
+  tradeName="HVAC Contractor"
+  tradeNamePlural="HVAC Contractors"
+  tradeSlug="hvac-contractors"
+  headline="AI Website Chat for HVAC Contractor Companies"
+  accentWord="HVAC"
+  subhead="A homeowner finds your website at 10pm on a September Tuesday. She lives in a 1930s semi-detached house in Summertown with solid brick walls, single-glazed sash windows being replaced next month with double-glazed timber frames, and an ageing oil boiler in the garage. Her oil bill last winter was £2,800. She has read about air source heat pumps and the £7,500 BUS grant but is confused about whether her house is suitable — the solid walls worry her, the radiators are original cast iron, and she has heard heat pumps need underfloor heating. She types: 'Evening — we have a 1930s semi with solid brick walls, currently on oil heating. Oil bill was £2,800 last year. Thinking about an air source heat pump but worried our house is too old. We are getting new double-glazed windows next month. Radiators are old cast iron — do they need replacing? Do we qualify for the £7,500 grant? How much would a heat pump cost installed after the grant? The oil tank is in the back garden — we would love to get rid of it. We are in Summertown, four bedrooms, one bathroom.' Without chat, she bookmarks and calls during the week. With AI Website Chat, the AI explains that solid-wall properties can be suitable for heat pumps especially after glazing upgrades and that cast iron radiators often have sufficient surface area for low-temperature operation, then asks about the cavity status and loft insulation. She confirms 100mm loft insulation and no cavity. Wednesday you call: Summertown 1930s 4-bed semi, solid brick, cast iron radiators, oil boiler, £2,800 oil bill, new DG windows next month, BUS grant query, 100mm loft insulation, no cavity, oil tank removal."
+  scenario="It is midnight on a Friday. A property developer types: 'Hi — we are building a development of twenty-four zero-carbon homes in Bicester. Need HVAC package: Mitsubishi Ecodan monobloc ASHPs for each property, MVHR by Zehnder ComfoAir Q450, underfloor heating throughout, no radiators, smart controls via Mitsubishi MELCloud app. Part L 2025 compliance mandatory. Also need three show homes completed two months ahead of the main programme for marketing. Can you deliver MCS-certified ASHP installations at this scale, and do you handle the BUS grant applications on behalf of the homebuyers? Programme kicks off in fourteen weeks.' Without chat, he emails Monday. With AI Website Chat, the AI confirms your MCS certification and multi-unit capability, asks about the ground conditions for pipework routing and the DNO supply capacity, and captures: Bicester 24 zero-carbon homes, Mitsubishi Ecodan monobloc, Zehnder ComfoAir Q450 MVHR, UFH throughout, MELCloud controls, Part L 2025, 3 show homes early, BUS grant applications, MCS certified, 14 weeks."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-website-chat/"
+  tradePageUrl="/hvac-contractors/ai-receptionist/"
+  ctaHeadline="Win the Summertown Heat Pump Conversion While She Calculates Oil Savings"
+  ctaSubhead={`A homeowner with £2,800 oil bills, new windows arriving next month, and cast iron radiators perfect for low-temperature heating needs MCS guidance at 10pm. Chat captures the BUS grant query. Included at £${pricing.tiers.core.price}/month.`}
+/>

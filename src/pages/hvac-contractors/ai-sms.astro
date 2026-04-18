@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '💬',
+    title: 'Catches Facilities Manager Programme Texts',
+    text: "Facilities managers text HVAC firms mid-week — 'seasonal AC service needed on all systems before summer, twenty-two split units across two buildings, need scheduling.' The first F-Gas firm confirming holds the annual maintenance contract."
+  },
+  {
+    icon: '📐',
+    title: 'Builds HVAC Briefs from Short Messages',
+    text: "A text like 'heat pump not heating, Samsung outdoor unit iced up, Woodstock, baby in house, need someone tomorrow' gives the AI the emergency context. It asks about the defrost cycle behaviour and the flow temperature."
+  },
+  {
+    icon: '🔔',
+    title: 'Captures Architect Specification Texts',
+    text: "Architects text HVAC contractors when specifying systems — 'need ASHP sizing for a 6-bed new build near Bampton, underfloor heating throughout, zero carbon target.' The AI captures the design brief while you commission elsewhere."
+  },
+  {
+    icon: '🌙',
+    title: 'Active When Cooling Fails',
+    text: "Server room temperatures breach thresholds overnight. Office VRF systems trip in heatwaves. Residential heat pumps lock out in freezing weather. Duty managers and homeowners text HVAC engineers at all hours. The AI captures every after-hours message."
+  },
+  {
+    icon: '📋',
+    title: 'Assembles Multi-Text HVAC Details',
+    text: "Messages arrive in stages — 'AC not working' then 'it is a Fujitsu wall unit' then 'about 5 years old' then 'office in Witney' then 'gets really hot by 2pm.' The AI constructs one complete service lead from every fragment."
+  },
+  {
+    icon: '📱',
+    title: 'Professional Business Number',
+    text: "AI SMS runs on your business number. VRF tender scheduling, F-Gas compliance discussions, and refrigerant supplier orders stay separated from personal texts."
+  }
+];
+
+const faqs = [
+  {
+    question: "How does the AI handle an inbound HVAC text?",
+    answer: "Every inbound text produces a branded response within seconds under your company name. A facilities manager's service text — 'pre-summer maintenance on thirty Daikin wall splits across four floors, filter changes, refrigerant checks, drain clean, need completing by end of April' — is confirmed with the unit count, manufacturer, service scope, and deadline preserved. A homeowner's concern — 'heat pump making a grinding noise from the outdoor unit when it starts up' — receives a response asking whether the noise is constant or intermittent and whether the unit vibrates excessively."
+  },
+  {
+    question: "Will callers recognise the AI?",
+    answer: "Texts read like an HVAC engineer reviewing messages between commissioning steps — refrigerant-aware, manufacturer-fluent, and F-Gas compliant. References to Daikin, Mitsubishi, Toshiba, Fujitsu, Samsung models, R32 and R410A refrigerants, VRF configurations, and heat pump operating parameters convey certified HVAC expertise."
+  },
+  {
+    question: "How does it handle existing client texts?",
+    answer: "Repeat facilities management clients text maintenance updates — 'conference room cassette on the third floor leaking condensate onto the boardroom table again' or 'server room temperature climbing, standalone AC unit showing E3.' The AI distinguishes existing client updates from prospective enquiries on your dashboard."
+  },
+  {
+    question: "What does AI SMS cost for HVAC contractors?",
+    answer: `AI SMS is £${pricing.addOn.price}/month as a channel add-on. A commercial split system maintenance contract generates £3,000 to £8,000 annually. Confirming one facilities manager's thirty-unit pre-summer service — while you verified refrigerant charge on another system — secures an annual contract worth many multiples of the channel cost.`
+  },
+  {
+    question: "Can I text back myself when I choose?",
+    answer: "Send one reply and the AI withdraws from that thread entirely. During site surveys, quotation preparation, and BMS programming — manage texts directly. During active refrigerant work — when nitrogen purge flows, when the vacuum gauge holds at 500 microns, or when you braze a fitting — let the AI handle commercial communications."
+  },
+  {
+    question: "How is text data from HVAC enquiries stored?",
+    answer: "Text messages containing building addresses, refrigerant system specifications, F-Gas logbook references, BMS access details, and contact information are encrypted and stored on UK and EU servers under UK GDPR. Data goes exclusively to you. Nothing reaches competing HVAC firms or third-party platforms."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI SMS for HVAC Contractors | Rapid Receptionist"
+  description={`AI SMS for UK HVAC contractors. Responds to facilities manager service texts, heat pump fault notifications, and VRF maintenance scheduling while you commission systems. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/hvac-contractors/ai-sms/"
+  channelName="AI SMS"
+  tradeName="HVAC Contractor"
+  tradeNamePlural="HVAC Contractors"
+  tradeSlug="hvac-contractors"
+  headline="AI SMS for HVAC Contractor Companies"
+  accentWord="HVAC"
+  subhead="You are at 8:45am on a Wednesday, in a plant room on the roof of a commercial building in Banbury — charging R32 refrigerant into a newly installed Toshiba SMMS-e VRF system. The digital manifold gauges are connected to the service ports, the refrigerant cylinder sits on the charging scale, and you are adding liquid-phase R32 in precise increments — watching the subcooling value at the outdoor unit condenser approach the manufacturer's target of 10°C while the system runs in cooling mode. The charge weight must match the calculated total for 127 metres of refrigerant pipework across three floors. At 9:10am a facilities manager texts: 'Morning — our office complex in Bicester has twenty-six Mitsubishi Electric ceiling cassettes on a City Multi VRF system. Annual F-Gas leak check is overdue by two months — our compliance officer is concerned. Also, six cassettes in the west wing have poor airflow and two are displaying an E6 error code (comms fault). Need leak check, filter replacement, and fault investigation on all twenty-six units. Can you quote and schedule before the end of the month? Also interested in adding four new cassettes to the east wing extension — currently no cooling there.' Your hands manage the manifold valves and charging scale. Without AI SMS, the twenty-six-unit maintenance and extension waits until charging finishes. With it, the AI responds at 9:11am, asks about the current F-Gas logbook status and whether the outdoor units are accessible via the roof, and captures: Bicester office 26 Mitsubishi cassettes City Multi VRF, F-Gas leak check 2 months overdue, 6 poor airflow west wing, 2 E6 codes, filter change, fault investigation, quote by month end, 4 new cassettes east wing extension."
+  scenario="It is 6pm on a Sunday in August. A restaurant owner in Wallingford texts about the cooling in his dining room — 'Hi — our air conditioning has stopped working during the hottest week of the year. System is a Fujitsu ducted unit serving the main dining area — about 60 covers. Kitchen extract is working but the dining room is 32 degrees. We have a fully booked Saturday service and cannot operate without cooling. The system is about 7 years old and uses R410A. Can someone come Monday morning? If it needs replacing we want a quote for a new R32 system — the landlord will cover it. Also need a separate wall-mounted unit for the private dining room which has no cooling at all.' Without AI SMS, the boiling restaurant waits until Monday morning calls. With AI SMS, the reply at 6:01pm: 'Thank you — a complete cooling loss on a ducted system can indicate a compressor issue, a refrigerant loss, or a control board fault. Could you confirm whether the outdoor unit fan is running and whether there is any ice on the pipework?' He confirms fan running but unit vibrating, no ice. Monday you attend: Wallingford restaurant 60 covers, Fujitsu ducted R410A 7yr, no cooling 32°C, outdoor fan running with vibration, replacement quote R32, private dining room wall unit addition."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-sms/"
+  tradePageUrl="/hvac-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the 26-Cassette F-Gas Check While You Charge R32 in Banbury"
+  ctaSubhead={`A facilities manager with overdue F-Gas compliance, six underperforming cassettes, and a four-unit extension needs an HVAC contractor who responds. The AI confirmed while the subcooling approached target. Add-on at £${pricing.addOn.price}/month.`}
+/>

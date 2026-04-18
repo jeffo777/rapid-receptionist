@@ -1,0 +1,106 @@
+---
+import TradeHubLayout from '../../layouts/TradeHubLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const withoutWithScenarios = [
+  {
+    without: "A facilities manager calls about replacing the ageing VRF system across a four-storey office building in Oxford Business Park — the existing Daikin VRV III is fifteen years old, refrigerant R410A, with compressor failures on two of the three outdoor units and multiple indoor cassettes producing warm air instead of cooling. She needs a full replacement design: new Mitsubishi Electric City Multi VRF with R32 refrigerant, forty-eight ceiling cassette indoor units across four floors, three outdoor units on the roof plant deck, new refrigerant pipework (the existing runs are corroded), branch controllers at each floor, and integration into the existing Trend BMS for centralised scheduling and setpoint control. Tender return in four weeks with a site survey next Tuesday. You are in the ceiling void of a retail unit in Didcot — brazing 15.88mm copper refrigerant lines to a VRF branch controller, the nitrogen purge flowing through the pipes at 2 PSI to prevent oxide formation during the braze, the oxy-acetylene torch heating the joint to cherry red. Both hands occupied. She calls three HVAC firms. One answers and books the Tuesday survey.",
+    with: "Your AI receptionist answers on the second ring. It captures the entire scope — Oxford Business Park four storeys, Daikin VRV III replacement, Mitsubishi Electric City Multi R32, forty-eight ceiling cassettes, three outdoor units, new refrigerant pipework, branch controllers per floor, Trend BMS integration, four-week tender, Tuesday survey — and confirms you will call back. At the break you review and schedule Tuesday."
+  },
+  {
+    without: "A homeowner emails on Wednesday about installing an air source heat pump to replace their oil boiler — a 1970s detached house in a rural village with no mains gas. They have heard about the Boiler Upgrade Scheme grant and want to know whether their property is suitable for an ASHP. The email sits until the weekend.",
+    with: "Your AI acknowledges within sixty seconds, referencing the oil-to-ASHP conversion, the 1970s detached property, the off-gas-grid location, and the BUS grant eligibility question. Weekend you schedule the Monday heat loss survey."
+  },
+  {
+    without: "A restaurant owner WhatsApps on Saturday about the kitchen extract and fresh air system — the DX cooling in the dining area has failed mid-summer, the kitchen extract hood is not pulling sufficient airflow, and diners are complaining about heat and cooking smells. He messages three HVAC firms. By Monday, two have responded.",
+    with: "The AI responds within seconds, asks about the DX system manufacturer and the kitchen extract fan make, and captures the cooling failure and extract deficiency. Monday at 8am you have a structured commercial HVAC lead."
+  }
+];
+
+const specialisms = [
+  {
+    category: "Commercial Air Conditioning",
+    items: ["VRF/VRV systems — Daikin, Mitsubishi Electric, Toshiba, Fujitsu, Samsung", "Split systems — wall-mounted, ceiling cassette, floor-standing, and ducted", "Chiller systems — air-cooled and water-cooled, scroll, screw, and centrifugal", "Fan coil units (FCU) — two-pipe, four-pipe, and chilled water", "Ducted supply and return air systems with grilles, diffusers, and fire dampers", "F-Gas compliant refrigerant handling — R32, R410A, R407C"]
+  },
+  {
+    category: "Heat Pumps & Renewable Heating",
+    items: ["Air source heat pumps (ASHP) — monobloc and split configurations", "Ground source heat pumps (GSHP) — horizontal and vertical borehole", "MCS certified installation for Boiler Upgrade Scheme (BUS) grant eligibility", "Hybrid heat pump systems with existing gas boiler backup", "Domestic and commercial heat pump sizing and heat loss calculations", "Underfloor heating and low-temperature radiator integration"]
+  },
+  {
+    category: "Ventilation & Air Handling",
+    items: ["AHU (air handling unit) installation and commissioning", "MVHR (mechanical ventilation with heat recovery) for new builds and retrofits", "Commercial kitchen extract and fresh air systems", "Heat recovery — enthalpy wheel, plate exchanger, and run-around coil", "Building Regulations Part F and Part L ventilation compliance", "BMS integration — Trend, Honeywell, Siemens controls and scheduling"]
+  }
+];
+
+const clientTypes = [
+  {
+    icon: "🏢",
+    title: "Facilities Managers & Commercial Clients",
+    description: "Facilities managers commissioning VRF replacements, chiller upgrades, AHU installations, and BMS integration across office buildings, retail units, healthcare facilities, and educational institutions. They need F-Gas certified engineers, minimal operational disruption, and commissioning documentation for building compliance."
+  },
+  {
+    icon: "🏠",
+    title: "Homeowners",
+    description: "Homeowners seeking air source heat pumps to replace oil or gas boilers, comfort cooling for bedrooms and home offices, and MVHR systems for energy-efficient new builds. They value clear guidance on BUS grant eligibility, running costs, noise levels, and the visual impact of outdoor units."
+  },
+  {
+    icon: "🏗️",
+    title: "Main Contractors & Developers",
+    description: "Main contractors requiring HVAC packages for commercial fit-outs and residential developments — VRF systems for offices, split systems for apartments, MVHR for new-build houses, and heat pumps to meet Part L carbon targets. Programme-critical M&E coordination."
+  },
+  {
+    icon: "🍽️",
+    title: "Hospitality & Retail",
+    description: "Restaurant owners, hotel managers, and retail operators needing comfort cooling for customer areas, kitchen extract ventilation, server room cooling, and seasonal maintenance contracts. Operational HVAC failures directly impact customer experience and revenue."
+  }
+];
+
+const faqs = [
+  {
+    question: "Does the AI understand HVAC terminology?",
+    answer: "The complete HVAC vocabulary is embedded — split system (wall-mounted, ceiling cassette, floor-standing, ducted, multi-split), VRF/VRV (variable refrigerant flow, Daikin VRV, Mitsubishi Electric City Multi, Toshiba SMMS, Fujitsu Airstage, Samsung DVM, outdoor unit, branch controller, refnet joint, Y-joint), ducted (supply ductwork, return ductwork, flexible duct, rigid galvanised, plenum box, grille, diffuser, fire damper, volume control damper), refrigerant (R32, R410A, R407C, charge weight, vacuum pump, standing vacuum test, nitrogen purge, brazing, flare connection), heat pump (ASHP air source, GSHP ground source, monobloc, split, MCS, BUS grant, SCOP, COP, defrost cycle, buffer tank), AHU (air handling unit, supply fan, return fan, HEPA filter, G4/F7 filters, heat recovery, enthalpy wheel, plate exchanger, run-around coil), commissioning (airflow measurement, refrigerant charge, superheat, subcooling, approach temperature, air-on/air-off differential), F-Gas (certification, logbook, annual leak check, recovery, reclaim), BMS (building management system, Trend, Honeywell, Siemens, setpoint, schedule, sensor, actuator), chiller (air-cooled, water-cooled, scroll compressor, screw compressor, centrifugal, glycol, primary/secondary pumping), ventilation (MVHR, extract fan, Part F, Part L), cooling (DX direct expansion, chilled water, fan coil unit FCU), BESA, and REFCOM. When a facilities manager describes 'Mitsubishi City Multi VRF, R32, forty-eight ceiling cassettes, three outdoor units, branch controllers per floor, Trend BMS integration,' the AI records every element."
+  },
+  {
+    question: "Can the AI distinguish a domestic heat pump from a commercial VRF replacement?",
+    answer: "A homeowner saying 'want an air source heat pump to replace our oil boiler, 1970s detached, no mains gas' generates a domestic renewable heating lead with property type, current fuel, insulation level, and BUS grant eligibility. A facilities manager describing 'VRF replacement across four floors, forty-eight cassettes, R32, BMS integration, Trend IQ4' generates a commercial programme lead with unit count, refrigerant type, controls platform, and tender timeline. The lead formats share no structural similarity."
+  },
+  {
+    question: "What about emergency HVAC calls?",
+    answer: "Server room cooling failure threatening IT infrastructure, restaurant kitchen extract shutdown during service, chiller compressor trip causing building-wide temperature rise, and split system refrigerant leak with oil staining — HVAC emergencies create immediate operational and financial damage. The AI captures the system type, the failure symptoms, the affected area, the business impact, and the access arrangements for priority F-Gas certified attendance."
+  },
+  {
+    question: "How much does this cost for an HVAC contractor?",
+    answer: `HVAC contractors pay £${pricing.tiers.core.price}/month for the Core plan — ${pricing.tiers.core.minutes} minutes of AI phone answering plus unlimited website chat. Whether you are a domestic heat pump installer or a multi-team firm delivering VRF systems, chillers, and AHU installations across commercial buildings, the allowance covers your enquiry blend. Additional channels are £${pricing.addOn.price}/month each. Setup is £${pricing.setup.price} with a 30-day money-back guarantee.`
+  },
+  {
+    question: "Is this suitable for a specialist heat pump installer?",
+    answer: "MCS-certified heat pump installers benefit enormously. When you are connecting refrigerant lines on a split ASHP, commissioning the defrost cycle parameters, or running glycol through a ground source manifold — answering the phone risks the vacuum hold, the commissioning sequence, or the pressure test. The AI captures every BUS grant enquiry, every oil-to-ASHP conversion request, and every architect's specification query while you complete the installation safely."
+  },
+  {
+    question: "Can I control when calls go to the AI?",
+    answer: "Configure coverage from your dashboard to match your HVAC schedule. During refrigerant line brazing — when the nitrogen purge runs and the torch heats the joint — route every call to the AI. During site surveys, BMS programming sessions, and quotation preparation — take calls directly. Toggle from your phone as your task changes."
+  },
+  {
+    question: "How is HVAC project data protected?",
+    answer: "HVAC enquiries contain building addresses, refrigerant charge records, F-Gas logbook details, BMS access credentials, and commercially sensitive tender pricing. All data captured by the AI is encrypted in transit and at rest, stored on UK and EU servers governed by UK GDPR, and shared exclusively with you. No project details reach competing HVAC firms or third parties."
+  }
+];
+---
+
+<TradeHubLayout
+  title="AI Receptionist for HVAC Contractors | Rapid Receptionist"
+  description={`AI receptionist for UK HVAC contractors — VRF systems, heat pumps, chillers, AHUs, and commercial air conditioning. Never miss a call while you braze refrigerant lines. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/hvac-contractors/ai-receptionist/"
+  tradeName="HVAC Contractor"
+  tradeNamePlural="HVAC Contractors"
+  tradeSlug="hvac-contractors"
+  headline="The AI Receptionist Built for HVAC Contractors"
+  accentWord="HVAC"
+  subhead={`You cannot answer the phone when the oxy-acetylene torch heats a refrigerant line braze, when the vacuum pump holds at 500 microns on a newly installed VRF system, or when you are programming commissioning parameters into a Trend BMS controller in a plant room. Your AI receptionist captures every call, every message, and every tender — from facilities managers commissioning forty-eight-cassette VRF replacements to homeowners wanting air source heat pumps for their off-grid homes. From £${pricing.tiers.core.price}/month.`}
+  withoutWithScenarios={withoutWithScenarios}
+  specialisms={specialisms}
+  clientTypes={clientTypes}
+  faqs={faqs}
+  ctaHeadline="The Next 48-Cassette VRF Replacement Calls While You Braze in Didcot"
+  ctaSubhead={`A facilities manager with Mitsubishi City Multi across four floors and Trend BMS integration needs an HVAC contractor who answers. If voicemail picks up, she confirms a competitor. From £${pricing.tiers.core.price}/month — no contracts, 30-day money-back guarantee.`}
+/>

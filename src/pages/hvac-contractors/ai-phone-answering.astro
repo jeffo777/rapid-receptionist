@@ -1,0 +1,84 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📞',
+    title: 'Answers While You Braze and Commission',
+    text: "Brazing copper refrigerant lines with the oxy-acetylene torch, holding a standing vacuum at 500 microns, charging R32 into a newly installed split system, or programming airflow setpoints into a BMS controller — HVAC work demands unbroken concentration. The AI answers every call in your company name."
+  },
+  {
+    icon: '🏗️',
+    title: 'Captures HVAC Briefs at Every Scale',
+    text: "When a facilities manager calls about a forty-eight-unit VRF replacement across four floors, the AI captures the system manufacturer, refrigerant type, cassette count, and BMS requirements. When a homeowner calls about a noisy wall-mounted split system, the AI captures the brand, the noise type, and the unit age."
+  },
+  {
+    icon: '🚨',
+    title: 'Handles HVAC Emergency Calls',
+    text: "Server room cooling failure at 35°C ambient, chiller compressor trip shutting down an entire office building, restaurant kitchen extract fan seized during Saturday service, and a heat pump defrost cycle stuck in continuous run — HVAC emergencies demand immediate F-Gas certified response. The AI captures the system, the failure, and the operational impact."
+  },
+  {
+    icon: '🌙',
+    title: 'Catches Evening Heat Pump Enquiries',
+    text: "Homeowners research heat pumps in the evening — comparing ASHP brands, reading MCS installer reviews, and calculating BUS grant savings against oil costs. The AI captures every evening enquiry at peak research momentum."
+  },
+  {
+    icon: '📋',
+    title: 'Leads Structured for HVAC Pricing',
+    text: "Each lead identifies the HVAC scope (new install, replacement, maintenance, or emergency), the system type, the building size, the cooling or heating load indicators, and access constraints — everything required for accurate HVAC tendering."
+  },
+  {
+    icon: '🏷️',
+    title: 'F-Gas Certified Professionalism',
+    text: "An HVAC firm that answers professionally and asks about the refrigerant type, the system configuration, and the F-Gas logbook status signals the certified expertise that facilities managers and developers trust with their most critical building systems."
+  }
+];
+
+const faqs = [
+  {
+    question: "What does the AI ask callers about their HVAC project?",
+    answer: "Questioning adapts to the enquiry type with precision. A homeowner wanting a heat pump hears questions about the current heating system, the property age and insulation level, the number of bedrooms and bathrooms, whether they have underfloor heating or radiators, and their awareness of the BUS grant. A facilities manager requesting a VRF replacement is asked about the building floor count and area, the existing system manufacturer and age, the indoor unit types and quantity, the BMS platform, and the tender programme relative to building occupation."
+  },
+  {
+    question: "Can the AI handle both residential and commercial HVAC calls?",
+    answer: "Domestic heat pump installations — sizing an ASHP to a heat loss calculation, integrating with underfloor heating, and registering for the BUS grant — involve entirely different conversations than commercial VRF replacements with forty-eight indoor units, three outdoor units, branch controllers, and Trend BMS integration. The AI generates fundamentally different lead structures for each, ensuring a homeowner's Vaillant Arotherm enquiry never merges with a facilities manager's Daikin VRV tender."
+  },
+  {
+    question: "What about calls during refrigerant work?",
+    answer: "Refrigerant handling is governed by F-Gas regulations and demands absolute focus — pulling a vacuum to 500 microns and holding for thirty minutes to verify system integrity, charging R32 in liquid phase to the manufacturer's specified weight, brazing joints with nitrogen purge flowing to prevent copper oxide contamination, and pressure testing at 38 bar on the high side. Interrupting any step compromises the system seal, wastes refrigerant, and risks regulatory non-compliance. The AI handles every call while you maintain the procedure that valid F-Gas certification requires."
+  },
+  {
+    question: "How many minutes are included?",
+    answer: `Your Core plan provides ${pricing.tiers.core.minutes} minutes at £${pricing.tiers.core.price}/month. HVAC contractors receive a varied call blend — homeowner heat pump consultations, facilities manager VRF tenders, commercial maintenance contract renewals, chiller emergency callouts, and architect specification discussions. The combination of brief maintenance calls and extended commercial tender conversations sits within the allowance comfortably. Overage at 20p per minute with no contract lock-in.`
+  },
+  {
+    question: "Can I take calls during certain work?",
+    answer: "During BMS programming sessions, quotation preparation, and site surveys where your hands are free — manage calls directly. The moment refrigerant work begins — brazing, vacuum testing, charging, or leak checking with an electronic detector — route calls to the AI. Switch from your dashboard whenever your F-Gas activity changes."
+  },
+  {
+    question: "How is HVAC project data secured?",
+    answer: "HVAC enquiries contain building addresses, refrigerant charge records, F-Gas logbook entries, BMS access credentials, chiller plant schedules, and commercially sensitive tender pricing. All data is encrypted, stored on UK and EU servers under UK GDPR, and accessible exclusively to you. No details reach competing HVAC firms or third-party intermediaries."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI Phone Answering for HVAC Contractors | Rapid Receptionist"
+  description={`AI phone answering for UK HVAC contractors. Captures VRF tenders, heat pump consultations, and chiller emergency callouts while you braze refrigerant lines. From £${pricing.tiers.core.price}/month.`}
+  canonicalUrl="/hvac-contractors/ai-phone-answering/"
+  channelName="AI Phone Answering"
+  tradeName="HVAC Contractor"
+  tradeNamePlural="HVAC Contractors"
+  tradeSlug="hvac-contractors"
+  headline="AI Phone Answering for HVAC Contractor Companies"
+  accentWord="HVAC"
+  subhead="A facilities manager calls at 10:15am on a Thursday. Her office building on the outskirts of Abingdon — three storeys, approximately 2,500 square metres — has a Toshiba SMMS VRF system that is twelve years old. The outdoor units on the roof are running continuously but barely producing cooling on the second floor. Indoor ceiling cassettes in the boardroom and the MD's office are blowing warm air. She suspects a refrigerant leak — the F-Gas logbook shows the system was topped up with R410A six months ago. She needs an F-Gas certified HVAC contractor to leak-test the system, assess whether the outdoor units can be repaired or need replacing, and if replacement is necessary, design a new VRF system with R32 refrigerant and integration into their Honeywell BMS. You are in a suspended ceiling in a retail unit in Witney — brazing a 12.7mm copper suction line to a Daikin VRV branch controller with the oxy-acetylene torch, the nitrogen purge at 2 PSI flowing through the pipe, the joint heating to cherry red while solder flows into the capillary gap. Both hands occupied, the torch steady, your phone in the van. Without AI Phone Answering, the Abingdon VRF replacement goes to voicemail. She calls two more F-Gas firms. With it, the AI captures: Abingdon 3-storey 2,500m² office, Toshiba SMMS 12yr, R410A topped up 6 months ago, suspected refrigerant leak, second-floor cassettes warm, roof outdoor units running continuously, repair or replace assessment, new VRF R32 if replacing, Honeywell BMS integration."
+  scenario="It is 2pm on a Monday. Three calls between noon and 2pm. You are commissioning a Samsung DVM S2 VRF system in a newly fitted dental practice in Headington — verifying refrigerant charge against the calculated pipe length, checking superheat at each indoor cassette evaporator, measuring subcooling at the outdoor unit condenser, and recording air-on and air-off temperatures across every zone. Without AI Phone Answering, one voicemail and two hang-ups. With it, all three are answered. Lead one: a homeowner in Eynsham — 'want an air source heat pump to replace our oil boiler, 4-bed detached, 1980s, no mains gas, want to apply for the BUS grant, have underfloor heating downstairs and radiators upstairs.' Lead two: a hotel manager in Woodstock — 'air conditioning in twelve guest rooms not cooling properly, Mitsubishi split systems about 8 years old, guests complaining, peak season starts in three weeks.' Lead three: a developer in Carterton — 'twelve new-build houses need MVHR systems, Vent-Axia Sentinel Kinetic, each house four bedrooms, Part F and Part L compliance, programme starts in six weeks.' At 3pm you check leads — a BUS grant heat pump, a twelve-room hotel AC service, and a twelve-house MVHR programme — and plan the week."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-phone-answering/"
+  tradePageUrl="/hvac-contractors/ai-receptionist/"
+  ctaHeadline="Capture the Abingdon VRF Leak Assessment While You Braze in Witney"
+  ctaSubhead={`A facilities manager with a Toshiba SMMS leaking R410A on the second floor needs an F-Gas certified HVAC firm now. The AI captured the twelve-year system, the topped-up charge, and the Honeywell BMS requirement while the nitrogen purge ran. From £${pricing.tiers.core.price}/month.`}
+/>

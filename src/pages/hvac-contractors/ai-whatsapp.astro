@@ -1,0 +1,80 @@
+---
+import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
+import pricing from '../../data/pricing.json';
+
+const benefits = [
+  {
+    icon: '📱',
+    title: 'Receives System Fault Photos',
+    text: "Facilities managers WhatsApp photos of flashing error codes on outdoor units, ice build-up on evaporator coils, and oil stains below compressors — 'what does this mean?' The AI responds instantly, references your F-Gas capability, and captures the manufacturer, system type, and fault for diagnostic preparation."
+  },
+  {
+    icon: '📸',
+    title: 'Wins Commercial Maintenance Slots',
+    text: "Facilities managers WhatsApp seasonal maintenance requirements mid-week — 'need pre-summer AC service on all fourteen split systems across three floors by end of April.' The first F-Gas firm responding secures the annual contract."
+  },
+  {
+    icon: '⚡',
+    title: 'Captures Heat Pump Enquiries',
+    text: "Homeowners WhatsApp after researching heat pumps — 'saw your installations, want an ASHP to replace our oil boiler, can you visit?' The AI captures the property type, current fuel, and grant awareness while you commission elsewhere."
+  },
+  {
+    icon: '🌙',
+    title: 'Active When Systems Fail',
+    text: "Air conditioning fails on the hottest day. Server rooms overheat at midnight. Heat pumps lock out in January. Facilities managers and homeowners WhatsApp emergency details in panic. The AI captures every after-hours HVAC emergency."
+  },
+  {
+    icon: '📋',
+    title: 'Structures Quick HVAC Briefs',
+    text: "A WhatsApp saying 'AC not cooling, Daikin wall unit, about 6 years old, office in Abingdon, can you come this week?' becomes a structured service lead with manufacturer, unit type, age, location, and urgency timeline."
+  },
+  {
+    icon: '🔒',
+    title: 'Professional Business Channel',
+    text: "AI WhatsApp runs on your business number. VRF tender discussions, F-Gas compliance scheduling, and refrigerant supplier communications stay separated from personal messaging."
+  }
+];
+
+const faqs = [
+  {
+    question: "Can the AI diagnose HVAC faults from photos?",
+    answer: "On-site diagnosis with calibrated instruments — manifold gauges, electronic leak detectors, and anemometers — is the only way to determine refrigerant charge, airflow balance, or component failure. The AI does respond constructively: identifying the manufacturer from the unit styling, noting error code characters, asking whether the outdoor unit fan is running, whether there is ice on the pipework, and building a pre-diagnostic lead so you arrive with the correct service manual, refrigerant type, and likely replacement components."
+  },
+  {
+    question: "What about multi-message HVAC threads?",
+    answer: "HVAC conversations build progressively — a facilities manager sends a photo of an error code, then explains the system has been cycling on and off since Tuesday, then confirms that only the east-facing zones are affected, then asks whether the refrigerant charge could be low after a pipe repair six months ago. The AI compiles every fragment into one structured lead with the error code, cycling pattern, affected zones, repair history, and refrigerant concern flagged."
+  },
+  {
+    question: "How much does AI WhatsApp cost for HVAC contractors?",
+    answer: `WhatsApp is £${pricing.addOn.price}/month as a channel add-on. A commercial VRF replacement generates £30,000 to £150,000. A domestic ASHP installation generates £8,000 to £14,000. Capturing a single facilities manager's seasonal maintenance contract through a rapid WhatsApp reply — while you held a standing vacuum on another installation — secures recurring revenue that surpasses the channel cost for years.`
+  },
+  {
+    question: "Can I take over a WhatsApp conversation?",
+    answer: "Reply once in any active thread and the AI relinquishes control permanently. Most HVAC engineers let the AI gather the initial brief — system manufacturer, unit type, refrigerant, symptoms, and building impact — then step in to discuss the likely diagnosis, the parts lead time, and the attendance schedule."
+  },
+  {
+    question: "How is WhatsApp data from HVAC enquiries protected?",
+    answer: "Every WhatsApp message — system fault photographs, building addresses, refrigerant charge records, F-Gas logbook references, and sender contact details — is encrypted and stored on UK and EU servers under UK GDPR. Your data remains exclusively yours. No HVAC project details reach competing firms or third-party aggregators."
+  }
+];
+---
+
+<ChannelTradeLayout
+  title="AI WhatsApp for HVAC Contractors | Rapid Receptionist"
+  description={`AI WhatsApp for UK HVAC contractors. Responds to system fault photos, VRF maintenance requests, and heat pump enquiries while you commission refrigerant systems. Add-on at £${pricing.addOn.price}/month.`}
+  canonicalUrl="/hvac-contractors/ai-whatsapp/"
+  channelName="AI WhatsApp"
+  tradeName="HVAC Contractor"
+  tradeNamePlural="HVAC Contractors"
+  tradeSlug="hvac-contractors"
+  headline="AI WhatsApp for HVAC Contractor Companies"
+  accentWord="HVAC"
+  subhead="A facilities manager WhatsApps at 9am on a scorching July Monday with a photo of the control panel on a Daikin VRV IV outdoor unit showing an error code U4 — communication fault between outdoor and indoor units. The system serves a three-storey law firm in central Oxford — twenty-four ceiling cassettes across six zones, R410A refrigerant, and the indoor units on the second and third floors are not responding. Thirty partners and associates are arriving for the week in an office that is already 27°C and climbing. Her message: 'Morning — Daikin VRV showing U4 error. Photo attached. Second and third floor cassettes not responding. Ground floor still cooling but struggling. Building is getting hot — 27 degrees already. We have a partners' meeting at 10am in the boardroom on the third floor. Can someone attend urgently? This system is about 9 years old and this is the third callout this summer. If it needs replacing rather than repairing again, we want a quotation for a new system — Daikin or Mitsubishi, R32. Also we want to add cooling to the server room which currently has no dedicated AC.' You are in a plant room in Didcot commissioning a Mitsubishi Electric City Multi VRF — verifying subcooling temperatures at the outdoor unit condenser. Without AI WhatsApp, the overheating law firm waits until commissioning finishes. With it, the AI responds at 9:01am, asks whether the system has a central controller and whether the indoor PCBs have been power-cycled, and captures: central Oxford law firm 3-storey, Daikin VRV IV U4 comms error, 24 cassettes 6 zones R410A 9yr, 2nd/3rd floor down, 27°C partners meeting 10am, 3rd callout this summer, replacement quote Daikin/Mitsubishi R32, server room AC addition."
+  scenario="It is 11pm on a Thursday in February. A homeowner in Charlbury WhatsApps: 'Hi — our heat pump has stopped heating. It is a Samsung EHS monobloc ASHP installed two years ago. The outdoor unit is completely iced over — the defrost cycle does not seem to be running. No heating, no hot water. Outside temperature is minus 3. We have a baby. The installer who fitted it has gone out of business. Can someone come tomorrow to diagnose? Also — our electricity bills have been much higher than the installer predicted, about £180/month, and I wonder if the system has ever been commissioned properly. The flow temperature seems too high — it is set to 55 degrees but I thought heat pumps should run lower. We have underfloor heating downstairs and radiators upstairs.' Without AI WhatsApp, the frozen heat pump waits until Friday morning. With AI WhatsApp, the reply at 11:01pm: 'Thank you — continuous ice build-up without defrost typically indicates either a defrost sensor fault or an incorrect defrost parameter setting. A flow temperature of 55°C is significantly higher than optimal for ASHP efficiency. Could you confirm whether the outdoor unit fan is rotating and whether there is water flow noise from the indoor unit?' He confirms fan not spinning, no water noise. Friday 8am you attend: Charlbury Samsung EHS monobloc 2yr, defrost not running, iced over, -3°C, baby, no heating/hot water, £180/month bills, flow temp 55°C, UFH+rads, fan not rotating, no water flow, installer gone bust, commissioning assessment."
+  benefits={benefits}
+  faqs={faqs}
+  channelPageUrl="/construction-trades/ai-whatsapp/"
+  tradePageUrl="/hvac-contractors/ai-receptionist/"
+  ctaHeadline="Confirm the Law Firm VRF Emergency While You Commission in Didcot"
+  ctaSubhead={`A facilities manager with thirty partners arriving at a 27°C office and a Daikin VRV showing U4 needs an F-Gas engineer now. The AI captured the system, the server room addition, and the replacement quote while subcooling readings stabilised. Add-on at £${pricing.addOn.price}/month.`}
+/>
