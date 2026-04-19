@@ -8,7 +8,12 @@ import trades from '../data/trades.json';
       <!-- Brand Column -->
       <div class="footer__brand">
         <a href="/" class="footer__logo" aria-label="Rapid Receptionist — Home">
-          <span class="footer__logo-rapid">Rapid</span><span class="footer__logo-rest"> Receptionist</span>
+          <svg class="footer__logo-icon" width="24" height="24" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <circle cx="13" cy="13" r="2.5" fill="var(--color-accent)"/>
+            <path class="footer__logo-wave footer__logo-wave--1" d="M8.5 17.5a6.4 6.4 0 0 1 0-9 M17.5 8.5a6.4 6.4 0 0 1 0 9" stroke="var(--color-accent)" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+            <path class="footer__logo-wave footer__logo-wave--2" d="M5 21a11.3 11.3 0 0 1 0-16 M21 5a11.3 11.3 0 0 1 0 16" stroke="var(--color-accent)" stroke-width="2.3" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="footer__logo-text"><span class="footer__logo-rapid">Rapid</span> Receptionist</span>
         </a>
         <p class="footer__tagline">Respond first. Win the job.</p>
         <p class="footer__desc">
@@ -86,6 +91,7 @@ import trades from '../data/trades.json';
   .footer__logo {
     display: inline-flex;
     align-items: center;
+    gap: var(--space-3);
     font-size: var(--text-xl);
     font-weight: var(--font-bold);
     color: var(--color-text-primary);
@@ -98,6 +104,27 @@ import trades from '../data/trades.json';
   .footer__logo-rapid {
     color: var(--color-accent);
     font-weight: var(--font-extrabold);
+    letter-spacing: -0.01em;
+    display: inline-block;
+    transform: skewX(-8deg);
+  }
+
+  .footer__logo-icon {
+    flex-shrink: 0;
+    display: block;
+  }
+
+  .footer__logo-wave--1 {
+    animation: footerPulse 2.4s ease-in-out infinite;
+  }
+
+  .footer__logo-wave--2 {
+    animation: footerPulse 2.4s ease-in-out 0.4s infinite;
+  }
+
+  @keyframes footerPulse {
+    0%, 100% { opacity: 0.25; }
+    50% { opacity: 1; }
   }
 
   .footer__tagline {
