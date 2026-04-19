@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://rapidreceptionist.co.uk/sitemap-index.xml
+
+# Crawl-delay (optional, polite throttle)
+Crawl-delay: 1
+
+# Block internal/admin paths
+Disallow: /api/
+Disallow: /_astro/
