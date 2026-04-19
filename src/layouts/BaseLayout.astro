@@ -11,6 +11,7 @@ const siteUrl = 'https://rapidreceptionist.co.uk';
 const fullCanonical = canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl;
 
 import '../styles/global.css';
+import FloatingWidget from '../components/FloatingWidget.astro';
 ---
 
 <!DOCTYPE html>
@@ -85,6 +86,9 @@ import '../styles/global.css';
     <slot />
   </main>
   <slot name="footer" />
+
+  <!-- Floating AI Receptionist Widget -->
+  <FloatingWidget />
 
   <!-- Fade-in animation observer -->
   <script>
