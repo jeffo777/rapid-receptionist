@@ -1,14 +1,14 @@
 # Rapid Receptionist
 
-> Rapid Receptionist is an AI-powered receptionist service built exclusively for UK tradesmen. It answers calls, messages, and enquiries across up to 8 communication channels — 24/7/365 — so tradesmen never lose a job to a missed call. The service is trained with trade-specific vocabulary across 13 UK trades and operates a 3-tier capability framework for different channel types.
+> Rapid Receptionist is an AI-powered receptionist service built exclusively for 46 UK construction trades. It answers calls, messages, and enquiries across up to 8 communication channels — 24/7/365 — so tradesmen never lose a job to a missed call. The service is trained with trade-specific vocabulary across 46 UK construction trades and operates a 3-tier capability framework for different channel types.
 
 ## About Rapid Receptionist
 
-Rapid Receptionist is a standalone AI receptionist service targeting UK tradesmen who lose work because they physically cannot answer the phone while on a job. The core problem: 62% of calls to small trade businesses go unanswered, and 85% of callers who reach voicemail will not call back. The average UK tradesperson loses approximately £24,000 per year from missed calls.
+Rapid Receptionist is a standalone AI receptionist service targeting UK construction tradesmen who lose work because they physically cannot answer the phone while on a job. The core problem: 62% of calls to small trade businesses go unanswered, and 85% of callers who reach voicemail will not call back. The average UK tradesperson loses approximately £24,000 per year from missed calls.
 
 The service is NOT a lead generation company, website builder, marketing agency, CRM platform, or appointment scheduling tool. It does one thing: answers enquiries instantly across multiple channels so tradesmen never lose a job to a missed call.
 
-**Brand identity:** "Built by Tradesmen, for Tradesmen" — the service is built by people who understand the trades and know what it costs to miss a call while working.
+**Brand identity:** UK-owned and run by tradesmen. "Built by Tradesmen, for Tradesmen" — the service is built by people who understand the trades and know what it costs to miss a call while working.
 
 **Data protection:** Fully compliant with UK GDPR and the Data Protection Act 2018. All customer data is encrypted in transit and at rest, stored on UK/EU-based servers, and shared only with the tradesman (data controller). Rapid Receptionist acts as data processor.
 
@@ -20,6 +20,7 @@ The service is NOT a lead generation company, website builder, marketing agency,
 - Human emergency escalation
 - Trade-specific AI training
 - Full "done for you" setup
+- Free business info updates (prices, services, hours, contact details)
 - Ideal for sole traders and smaller businesses
 
 ### Add-On Channels — £23/month each
@@ -42,6 +43,12 @@ The service is NOT a lead generation company, website builder, marketing agency,
 ### Guarantee & Contracts
 - 30-day full money-back guarantee (monthly fee + setup fee refunded)
 - No contracts — cancel anytime, takes effect at end of billing cycle
+
+### Free Business Info Updates
+- Routine business information changes are updated for free as part of the done-for-you service
+- Covers: pricing changes, new service additions/removals, updated opening hours, revised contact details
+- Handled by the Rapid Receptionist team, typically within one working day
+- Does NOT include full knowledge base rewrites or fundamental AI retraining
 
 ## Channel Capability Framework
 
@@ -101,43 +108,105 @@ These verified statistics underpin the service's value proposition:
 
 ## Core Pages
 
-- [Homepage](https://rapidreceptionist.co.uk/): Overview of the AI receptionist service for UK tradesmen — features all 8 channels, speed-to-lead statistics, testimonials, and FAQ
+- [Homepage](https://rapidreceptionist.co.uk/): Overview of the AI receptionist service for UK construction trades — features all 8 channels, speed-to-lead statistics, testimonials, and FAQ
 - [Pricing](https://rapidreceptionist.co.uk/pricing/): Single-plan pricing — Core £49/mo, add-on channels £23/mo each, £295 setup fee
 - [About](https://rapidreceptionist.co.uk/about/): The "Built by Tradesmen, for Tradesmen" origin story — why the service was built, core values, pricing philosophy
 - [Get Started](https://rapidreceptionist.co.uk/get-started/): Sign-up flow and onboarding — trade selection, channel selection, business details
 - [Contact](https://rapidreceptionist.co.uk/contact/): Contact form, email (hello@rapidreceptionist.co.uk), response within 2 working hours
 - [Privacy Policy](https://rapidreceptionist.co.uk/privacy/): UK GDPR-compliant data handling, data processor role, deletion rights
+- [Construction Trades Hub](https://rapidreceptionist.co.uk/construction-trades/): Master index of all 46 construction trades with links to every trade-specific page
 
 ## Communication Channels
 
-- [AI Phone Answering](https://rapidreceptionist.co.uk/ai-phone-answering-for-tradesmen/): Tier 1 conversational — answers calls 24/7 with the tradesman's business name, captures lead details, assesses urgency, escalates emergencies. 120 minutes included in Core plan.
-- [AI Website Chat](https://rapidreceptionist.co.uk/ai-website-chat-for-tradesmen/): Tier 1 conversational — live chat widget for tradesman's website, converts visitors to leads without human monitoring. Unlimited messages in Core plan.
-- [AI WhatsApp](https://rapidreceptionist.co.uk/ai-whatsapp-for-tradesmen/): Tier 2 one-reply — responds to WhatsApp messages instantly. Popular with UK customers who send photos of problems. £23/month add-on.
-- [AI SMS](https://rapidreceptionist.co.uk/ai-sms-for-tradesmen/): Tier 2 one-reply — professional text message responses to enquiries. £23/month add-on.
-- [AI Email](https://rapidreceptionist.co.uk/ai-email-response-for-tradesmen/): Tier 2 one-reply — instant professional acknowledgement of email enquiries. £23/month add-on.
-- [AI Facebook Messenger](https://rapidreceptionist.co.uk/ai-facebook-messenger-for-tradesmen/): Tier 2 one-reply — captures leads from Facebook business page messages. £23/month add-on.
-- [AI Instagram DMs](https://rapidreceptionist.co.uk/ai-instagram-dms-for-tradesmen/): Tier 2 one-reply — responds to Instagram direct messages from potential customers. £23/month add-on.
-- [Missed Call Text-Back](https://rapidreceptionist.co.uk/ai-missed-call-text-back-for-tradesmen/): Tier 3 fallback — sends an automatic text when a call is missed, preventing the caller from ringing a competitor. £23/month add-on.
+- [AI Phone Answering](https://rapidreceptionist.co.uk/construction-trades/ai-phone-answering/): Tier 1 conversational — answers calls 24/7 with the tradesman's business name, captures lead details, assesses urgency, escalates emergencies. 120 minutes included in Core plan.
+- [AI Website Chat](https://rapidreceptionist.co.uk/construction-trades/ai-website-chat/): Tier 1 conversational — live chat widget for tradesman's website, converts visitors to leads without human monitoring. Unlimited messages in Core plan.
+- [AI WhatsApp](https://rapidreceptionist.co.uk/construction-trades/ai-whatsapp/): Tier 2 one-reply — responds to WhatsApp messages instantly. Popular with UK customers who send photos of problems. £23/month add-on.
+- [AI SMS](https://rapidreceptionist.co.uk/construction-trades/ai-sms/): Tier 2 one-reply — professional text message responses to enquiries. £23/month add-on.
+- [AI Email](https://rapidreceptionist.co.uk/construction-trades/ai-email-response/): Tier 2 one-reply — instant professional acknowledgement of email enquiries. £23/month add-on.
+- [AI Facebook Messenger](https://rapidreceptionist.co.uk/construction-trades/ai-facebook-messenger/): Tier 2 one-reply — captures leads from Facebook business page messages. £23/month add-on.
+- [AI Instagram DMs](https://rapidreceptionist.co.uk/construction-trades/ai-instagram-dms/): Tier 2 one-reply — responds to Instagram direct messages from potential customers. £23/month add-on.
+- [Missed Call Text-Back](https://rapidreceptionist.co.uk/construction-trades/missed-call-text-back/): Tier 3 fallback — sends an automatic text when a call is missed, preventing the caller from ringing a competitor. £23/month add-on.
 
-## Trades Served (13)
+## Trades Served (46)
 
-Each trade gets a custom-configured AI receptionist trained with trade-specific vocabulary, emergency triggers, and customer scenarios.
+Each trade gets a custom-configured AI receptionist trained with trade-specific vocabulary, emergency triggers, and customer scenarios. Every trade has a dedicated hub page plus up to 9 individual channel pages (AI Receptionist, AI Phone Answering, AI Website Chat, AI WhatsApp, AI SMS, AI Email, AI Facebook Messenger, AI Instagram DMs, Missed Call Text-Back).
 
-- [Plumbers](https://rapidreceptionist.co.uk/ai-receptionist-for-plumbers/): Emergency rating ★★★★★. Vocabulary: stopcocks, PRV, cylinder, unvented, combi boiler, immersion heater, soil pipe, waste trap. Certifications: Gas Safe, CIPHE, WaterSafe.
-- [Electricians](https://rapidreceptionist.co.uk/ai-receptionist-for-electricians/): Emergency rating ★★★★★. Vocabulary: consumer unit, RCDs, MCBs, EICRs, Part P, BS 7671, fuseboard, ring main. Certifications: NICEIC, NAPIT, Part P, ELECSA.
-- [Locksmiths](https://rapidreceptionist.co.uk/ai-receptionist-for-locksmiths/): Emergency rating ★★★★★. Vocabulary: euro cylinder, anti-snap locks, Mul-T-Lock, Ultion, multipoint locks, deadlock. Certifications: MLA, ALOA, DBS checked.
-- [Gas Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-gas-engineers/): Emergency rating ★★★★★. Vocabulary: Gas Safe registered, flue, condensate, LPG, CP12, landlord certificate. Certifications: Gas Safe Register, OFTEC, LPG certified.
-- [Drainage Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-drainage-engineers/): Emergency rating ★★★★☆. Vocabulary: CCTV survey, jetting, root ingress, collapsed drain, soakaway, patch lining. Certifications: NADC, WRc approved.
-- [Glaziers](https://rapidreceptionist.co.uk/ai-receptionist-for-glaziers/): Emergency rating ★★★★☆. Vocabulary: double glazing, sealed unit, toughened glass, laminated, boarding up. Certifications: FENSA, GGF, Certass.
-- [Roofers](https://rapidreceptionist.co.uk/ai-receptionist-for-roofers/): Emergency rating ★★★★☆. Vocabulary: ridge tiles, flashing, felt, batten, soffit, fascia, valley gutter, GRP fibreglass. Certifications: NFRC, CompetentRoofer, TrustMark.
-- [HVAC Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-hvac-engineers/): Emergency rating ★★★★☆. Vocabulary: split system, VRF, refrigerant, R410a, R32, heat pump, F-gas. Certifications: F-Gas certified, BESA, REFCOM.
-- [Alarm & Security Installers](https://rapidreceptionist.co.uk/ai-receptionist-for-alarm-security-installers/): Emergency rating ★★★☆☆. Vocabulary: intruder alarm, CCTV, PIR, door contact, bell box, Grade 2, NSI/SSAIB. Certifications: NSI, SSAIB, BSIA.
-- [Pest Control](https://rapidreceptionist.co.uk/ai-receptionist-for-pest-control/): Emergency rating ★★★☆☆. Vocabulary: bait station, fumigation, BPCA, COSHH, rodenticide, infestation, exclusion. Certifications: BPCA, RSPH Level 2.
-- [Garage Door Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-garage-door-engineers/): Emergency rating ★★★☆☆. Vocabulary: roller, sectional, up-and-over, torsion spring, cable drum, motor, safety edge. Certifications: DHF, GGF.
-- [Builders](https://rapidreceptionist.co.uk/ai-receptionist-for-builders/): Emergency rating ★★☆☆☆. Vocabulary: extension, loft conversion, structural, RSJ, building regs, planning permission, foundations. Certifications: FMB, NHBC, TrustMark.
-- [Appliance Repair Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-appliance-repair-engineers/): Emergency rating ★★★☆☆. Vocabulary: PCB, element, thermostat, bearing, drum, door seal, motor, error code. Certifications: Gas Safe, D-TEC, manufacturer accredited.
+### Groundwork & Structure (7 trades)
+- [Groundworkers](https://rapidreceptionist.co.uk/groundworkers/ai-receptionist/): Vocabulary: foundations, drainage runs, trenching, reduced level dig, piling, sub-base, formation level. Certifications: CITB, CPCS, CSCS, SSSTS/SMSTS.
+- [Bricklayers](https://rapidreceptionist.co.uk/bricklayers/ai-receptionist/): Vocabulary: stretcher bond, Flemish bond, cavity wall, DPC, weep holes, blockwork, lintels, wall ties. Certifications: CITB, NVQ Level 2/3, CSCS.
+- [Scaffolders](https://rapidreceptionist.co.uk/scaffolders/ai-receptionist/): Vocabulary: independent scaffold, putlog, birdcage, cantilever, system scaffold, Layher, TG20. Certifications: CISRS, NASC member.
+- [Demolition Contractors](https://rapidreceptionist.co.uk/demolition-contractors/ai-receptionist/): Vocabulary: soft strip, hard demolition, structural demolition, asbestos survey, method statement, exclusion zone, CDM. Certifications: NFDC, CITB.
+- [Concrete Specialists](https://rapidreceptionist.co.uk/concrete-specialists/ai-receptionist/): Vocabulary: ready-mix, screed, power float, rebar, shuttering, formwork, curing, slump test. Certifications: CITB, CSCS.
+- [Structural Steelworkers](https://rapidreceptionist.co.uk/structural-steelworkers/ai-receptionist/): Vocabulary: RSJ, universal beam, portal frame, purlin, fabrication, erection, bolted connection, mezzanine. Certifications: BCSA member.
+- [Underpinning Specialists](https://rapidreceptionist.co.uk/underpinning-specialists/ai-receptionist/): Vocabulary: mass concrete underpinning, mini piles, beam and base, subsidence, settlement, party wall, crack stitching. Certifications: CITB, CSCS.
+
+### Roofing & Weatherproofing (6 trades)
+- [Roofing Contractors](https://rapidreceptionist.co.uk/roofing-contractors/ai-receptionist/): Vocabulary: slate, tile, ridge, hip, valley, flashing, felt, batten, soffit, fascia, dry ridge system. Certifications: NFRC, CompetentRoofer, TrustMark.
+- [Flat Roofers & GRP Specialists](https://rapidreceptionist.co.uk/flat-roofers/ai-receptionist/): Vocabulary: GRP fibreglass, torch-on felt, single ply, EPDM, liquid applied, warm roof. Certifications: CompetentRoofer, NFRC.
+- [Leadworkers](https://rapidreceptionist.co.uk/leadworkers/ai-receptionist/): Vocabulary: lead flashing, code 4, code 5, bossing, lead welding, back gutter, soakers, patination oil. Certifications: Lead Sheet Association (LSA).
+- [Cladding Contractors](https://rapidreceptionist.co.uk/cladding-contractors/ai-receptionist/): Vocabulary: rainscreen, composite panel, timber cladding, zinc, aluminium, curtain wall, ventilated facade, cavity barrier. Certifications: CWCT, CSCS.
+- [Rendering Specialists](https://rapidreceptionist.co.uk/rendering-specialists/ai-receptionist/): Vocabulary: monocouche, silicone render, acrylic render, sand and cement, EWI, mesh, bellcast bead. Certifications: Weber/K Rend accredited.
+- [Chimney Specialists](https://rapidreceptionist.co.uk/chimney-specialists/ai-receptionist/): Vocabulary: chimney rebuild, repointing, flue liner, chimney pot, cowl, breast removal, pargeting. Certifications: HETAS, NACS.
+
+### Mechanical & Electrical (8 trades)
+- [Plumbing Contractors](https://rapidreceptionist.co.uk/plumbing-contractors/ai-receptionist/): Vocabulary: first fix, second fix, soil stack, SVP, mains connection, manifold, unvented cylinder, TMV. Certifications: CIPHE, WaterSafe.
+- [Electrical Contractors](https://rapidreceptionist.co.uk/electrical-contractors/ai-receptionist/): Vocabulary: consumer unit, RCDs, MCBs, EICRs, Part P, BS 7671, containment, SWA. Certifications: NICEIC, NAPIT, Part P, ELECSA.
+- [Gas Installation Engineers](https://rapidreceptionist.co.uk/gas-installation-engineers/ai-receptionist/): Vocabulary: Gas Safe, boiler installation, flue, condensate, LPG, CP12, landlord certificate. Certifications: Gas Safe Register, OFTEC.
+- [HVAC Contractors](https://rapidreceptionist.co.uk/hvac-contractors/ai-receptionist/): Vocabulary: split system, VRF, refrigerant, R32, heat pump, AHU, F-gas, BMS, chiller. Certifications: F-Gas certified, BESA, REFCOM.
+- [Drainage Contractors](https://rapidreceptionist.co.uk/drainage-contractors/ai-receptionist/): Vocabulary: CCTV survey, jetting, root ingress, collapsed drain, soakaway, manhole, patch lining. Certifications: NADC, WRc approved.
+- [Security System Contractors](https://rapidreceptionist.co.uk/security-system-contractors/ai-receptionist/): Vocabulary: intruder alarm, CCTV, access control, intercom, Grade 2, NSI, SSAIB, IP cameras, NVR. Certifications: NSI, SSAIB, BSIA.
+- [Solar Panel Installers](https://rapidreceptionist.co.uk/solar-panel-installers/ai-receptionist/): Vocabulary: PV panels, inverter, MCS, G98/G99, battery storage, string design. Certifications: MCS certified, Part P.
+- [EV Charger Installers](https://rapidreceptionist.co.uk/ev-charger-installers/ai-receptionist/): Vocabulary: OZEV, EVHS, Type 2, tethered, smart charger, load balancing, DNO notification. Certifications: OZEV approved, Part P.
+
+### Finishing Trades (12 trades)
+- [Plasterers](https://rapidreceptionist.co.uk/plasterers/ai-receptionist/): Vocabulary: skim coat, bonding, browning, multi-finish, one-coat, PVA, scrim tape, artex removal. Certifications: NVQ Level 2/3 Plastering, CITB.
+- [Dry Liners](https://rapidreceptionist.co.uk/dry-liners/ai-receptionist/): Vocabulary: metal stud, MF ceiling, plasterboard, dot and dab, acoustic board, fire rated board, resilient bar, shadow gap. Certifications: NVQ Dry Lining.
+- [Tilers](https://rapidreceptionist.co.uk/tilers/ai-receptionist/): Vocabulary: porcelain, ceramic, natural stone, large format, adhesive, grout, tanking, Schluter, wet room. Certifications: TTA member, NVQ Wall & Floor Tiling.
+- [Painters & Decorators](https://rapidreceptionist.co.uk/painters-decorators/ai-receptionist/): Vocabulary: emulsion, eggshell, gloss, satinwood, primer, wallpapering, spray painting, cutting in. Certifications: NVQ Painting & Decorating, PDA member.
+- [Flooring Specialists](https://rapidreceptionist.co.uk/flooring-specialists/ai-receptionist/): Vocabulary: LVT, engineered wood, laminate, carpet, vinyl, Amtico, Karndean, herringbone. Certifications: NICF member.
+- [Joiners & Carpenters](https://rapidreceptionist.co.uk/joiners-carpenters/ai-receptionist/): Vocabulary: first fix, second fix, stud work, door hanging, skirting, architrave, staircase, bespoke joinery. Certifications: NVQ Carpentry & Joinery, BWF member.
+- [Kitchen Fitters](https://rapidreceptionist.co.uk/kitchen-fitters/ai-receptionist/): Vocabulary: base units, wall units, worktop, cornice, pelmet, plinth, soft close, integrated appliances, templating. Certifications: FIRA member.
+- [Bathroom Fitters](https://rapidreceptionist.co.uk/bathroom-fitters/ai-receptionist/): Vocabulary: wet room, tanking, wall hung, concealed cistern, thermostatic shower, vanity unit, underfloor heating. Certifications: CIPHE.
+- [Window & Door Installers](https://rapidreceptionist.co.uk/window-door-installers/ai-receptionist/): Vocabulary: UPVC, aluminium, timber, composite door, bi-fold, sliding patio, bay window, sealed unit. Certifications: FENSA, Certass, GGF member.
+- [Suspended Ceiling Installers](https://rapidreceptionist.co.uk/suspended-ceiling-installers/ai-receptionist/): Vocabulary: grid system, mineral fibre, metal pan, bulkhead, perimeter trim, hanger wire, tegular, fire rated. Certifications: ARCA member.
+- [Insulation Installers](https://rapidreceptionist.co.uk/insulation-installers/ai-receptionist/): Vocabulary: cavity wall, loft insulation, spray foam, PIR board, Kingspan, Celotex, EWI, U-value, Part L. Certifications: CIGA, NIA member, BBA approved.
+
+### External & Landscaping (5 trades)
+- [Landscapers](https://rapidreceptionist.co.uk/landscapers/ai-receptionist/): Vocabulary: hard landscaping, soft landscaping, retaining wall, sleepers, turf, planting, decking, pergola, irrigation. Certifications: BALI member, Lantra.
+- [Fencing Contractors](https://rapidreceptionist.co.uk/fencing-contractors/ai-receptionist/): Vocabulary: close board, panel, post and rail, palisade, security fencing, acoustic fencing, gate automation. Certifications: FCA member.
+- [Driveway & Paving Contractors](https://rapidreceptionist.co.uk/driveway-paving/ai-receptionist/): Vocabulary: block paving, resin bound, tarmac, pattern imprinted concrete, natural stone, permeable paving, SuDS. Certifications: Marshalls accredited.
+- [Stonemasons](https://rapidreceptionist.co.uk/stonemasons/ai-receptionist/): Vocabulary: limestone, sandstone, granite, York stone, carved stone, restoration, lime mortar, quoins, copings, mullions. Certifications: NVQ Stonemasonry, SPAB.
+- [Tree Surgeons](https://rapidreceptionist.co.uk/tree-surgeons/ai-receptionist/): Vocabulary: crown reduction, crown thin, felling, sectional dismantling, pollarding, stump grinding, TPO, rigging. Certifications: NPTC, Arboricultural Association.
+
+### Building Services (5 trades)
+- [Building Contractors](https://rapidreceptionist.co.uk/building-contractors/ai-receptionist/): Vocabulary: main contractor, programme, preliminaries, retention, valuation, JCT, subcontractors, CDM. Certifications: FMB, NHBC, TrustMark.
+- [Extension Specialists](https://rapidreceptionist.co.uk/extension-specialists/ai-receptionist/): Vocabulary: single storey, double storey, wrap-around, side return, planning permission, permitted development, RSJ. Certifications: FMB, TrustMark.
+- [Loft Conversion Specialists](https://rapidreceptionist.co.uk/loft-conversion-specialists/ai-receptionist/): Vocabulary: dormer, mansard, hip-to-gable, Velux, rooflight, staircase, fire regulations, purlin, steel. Certifications: FMB, TrustMark.
+- [Shopfitters](https://rapidreceptionist.co.uk/shopfitters/ai-receptionist/): Vocabulary: retail fit-out, display units, counters, fascia signage, back-of-house, cash desk, brand guidelines. Certifications: NIC approved.
+- [Glazing Contractors](https://rapidreceptionist.co.uk/glazing-contractors/ai-receptionist/): Vocabulary: double glazing, sealed unit, toughened glass, laminated, structural glazing, frameless glass, balustrade, shopfront. Certifications: FENSA, GGF member, Certass.
+
+### Specialist (4 trades)
+- [Fire Protection & Sprinkler Contractors](https://rapidreceptionist.co.uk/fire-protection/ai-receptionist/): Vocabulary: sprinkler system, fire alarm, passive fire protection, fire stopping, intumescent paint, compartmentation, BS 9251. Certifications: BAFSA, FIA, FIRAS, IFC certified.
+- [Damp Proofing Specialists](https://rapidreceptionist.co.uk/damp-proofing/ai-receptionist/): Vocabulary: DPC injection, damp survey, tanking, membrane, rising damp, penetrating damp, salt analysis, structural waterproofing. Certifications: PCA member, CSRT, CSSW.
+- [Welders & Fabricators](https://rapidreceptionist.co.uk/welders-fabricators/ai-receptionist/): Vocabulary: MIG, TIG, MMA, stainless steel, aluminium, fabrication, railings, gates, coded welder, CE marking. Certifications: BS EN ISO 9606, CSWIP.
+- [Asbestos Removal Specialists](https://rapidreceptionist.co.uk/asbestos-removal/ai-receptionist/): Vocabulary: licensed removal, non-licensed, notifiable, enclosure, decontamination, air monitoring, waste consignment, R&D survey. Certifications: HSE licensed, UKATA, ARCA member.
+
+## Site Architecture
+
+Every trade has up to 10 dedicated pages:
+1. **Trade Hub** — `/{trade-slug}/ai-receptionist/` — overview of all channels for that trade
+2. **AI Phone Answering** — `/{trade-slug}/ai-phone-answering/`
+3. **AI Website Chat** — `/{trade-slug}/ai-website-chat/`
+4. **AI WhatsApp** — `/{trade-slug}/ai-whatsapp/`
+5. **AI SMS** — `/{trade-slug}/ai-sms/`
+6. **AI Email** — `/{trade-slug}/ai-email-response/`
+7. **AI Facebook Messenger** — `/{trade-slug}/ai-facebook-messenger/`
+8. **AI Instagram DMs** — `/{trade-slug}/ai-instagram-dms/`
+9. **Missed Call Text-Back** — `/{trade-slug}/missed-call-text-back/`
+
+Total pages: 428+ (46 trades × up to 9 channel pages + core pages + channel hub pages)
 
 ## Optional
 
-- [AI Receptionist for Tradesmen (Hub)](https://rapidreceptionist.co.uk/ai-receptionist-for-tradesmen/): Master overview page covering AI receptionist capabilities across all 13 trades
+- [AI Receptionist for Construction Trades (Hub)](https://rapidreceptionist.co.uk/construction-trades/): Master overview page covering AI receptionist capabilities across all 46 trades
 - [Terms of Service](https://rapidreceptionist.co.uk/terms/): Legal terms and conditions

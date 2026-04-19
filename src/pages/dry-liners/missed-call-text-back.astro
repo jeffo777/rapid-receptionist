@@ -1,4 +1,4 @@
-﻿---
+---
 import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
 import pricing from '../../data/pricing.json';
 
@@ -12,10 +12,10 @@ const benefits = [
 ];
 
 const faqs = [
-  { question: "How does missed call text-back work?", answer: "When a call goes unanswered, the system sends a text within five seconds, personalised with your business name, inviting them to share what they need." },
-  { question: "How much does it cost?", answer: `Missed call text-back is an add-on at £${pricing.addOn.price}/month. Add it to the Core plan (£${pricing.tiers.core.price}/month).` },
-  { question: "Does it work with my existing number?", answer: "Yes. It integrates with your existing business number." },
-  { question: "How is data protected?", answer: "All data is managed under UK GDPR. Encrypted and stored on UK and EU servers, shared only with you." }
+  { question: "How does missed call text-back work?", answer: "When a call to your business number goes unanswered, the system sends a branded text message within five seconds. The text is personalised with your dry lining business name and invites the caller to share what they need. Most contractors reply immediately with the project details, turning a lost call into an active text conversation you can pick up at your next break." },
+  { question: "How much does it cost?", answer: `Missed call text-back is an add-on channel at £${pricing.addOn.price}/month on top of the Core plan at £${pricing.tiers.core.price}/month. For dry lining contractors who miss calls while boarding, fixing stud work, or running ceiling grids, this channel recovers leads that would otherwise disappear. One recovered commercial partition enquiry covers the add-on cost for the entire year.` },
+  { question: "Does it work with my existing number?", answer: "Yes. It integrates with your existing business phone number with nothing to change on your end. Customers and contractors continue calling the same number they always have. The only difference is that missed calls now trigger an automatic text rather than silence." },
+  { question: "How is data protected?", answer: "All data from missed call text-back is managed under UK GDPR and the Data Protection Act 2018. Phone numbers, text messages, and caller details are encrypted during transmission and storage, held on UK and EU servers, and shared only with you. We never access or repurpose your missed call data." }
 ];
 ---
 

@@ -1,4 +1,4 @@
-﻿---
+---
 import ChannelTradeLayout from '../../layouts/ChannelTradeLayout.astro';
 import pricing from '../../data/pricing.json';
 
@@ -12,11 +12,11 @@ const benefits = [
 ];
 
 const faqs = [
-  { question: "How does missed call text-back work?", answer: "When a call goes unanswered, the system sends a text within five seconds. It is personalised with your business name and invites them to describe what they need." },
-  { question: "What does the text say?", answer: "Something like: 'Hi, this is [Your Window Company]. Sorry I missed your call — I am on a job. Let me know what you need and I will get back to you today.' The wording is set during onboarding." },
-  { question: "How much does it cost?", answer: `Missed call text-back is an add-on at £${pricing.addOn.price}/month on top of the Core plan (£${pricing.tiers.core.price}/month with ${pricing.tiers.core.minutes} minutes of talk time). Setup is £${pricing.setup.price} one-time, refundable within 30 days.` },
-  { question: "Does it work with my existing number?", answer: "Yes. It integrates with your existing business number. Nothing changes for customers." },
-  { question: "How is data protected?", answer: "All data is managed under UK GDPR. Phone numbers and messages are encrypted and stored on UK and EU servers, shared only with you." }
+  { question: "How does missed call text-back work?", answer: "When a call to your business number goes unanswered, the system sends a branded text within five seconds. It is personalised with your glazing business name and invites the caller to describe what they need — window replacements, a new door, a broken sealed unit. Most callers reply immediately with the job details, turning a missed call into an active lead." },
+  { question: "What does the text say?", answer: "Something like: 'Hi, this is [Your Window Company]. Sorry I missed your call — I am on a job. Let me know what you need and I will get back to you today.' The wording is set during onboarding to match your brand voice. You can adjust the message at any time to reflect seasonal offers or specific availability." },
+  { question: "How much does it cost?", answer: `Missed call text-back is an add-on channel at £${pricing.addOn.price}/month on top of the Core plan at £${pricing.tiers.core.price}/month with ${pricing.tiers.core.minutes} minutes of talk time. Setup is £${pricing.setup.price} one-time, refundable within 30 days. One recovered whole-house re-glaze enquiry covers the add-on cost for the entire year.` },
+  { question: "Does it work with my existing number?", answer: "Yes. It integrates with your existing business phone number with nothing to change on your end. Customers continue calling the same number they always have. The only difference is that missed calls now trigger an automatic text rather than silence." },
+  { question: "How is data protected?", answer: "All data from missed call text-back is managed under UK GDPR and the Data Protection Act 2018. Phone numbers, text messages, and caller details are encrypted during transmission and storage, held on UK and EU servers, and shared only with you. We never access or repurpose your missed call data." }
 ];
 ---
 

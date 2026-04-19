@@ -13,11 +13,11 @@
   --color-surface: #1C2235;
   --color-surface-hover: #242b42;
 
-  /* Accent — Royal Blue */
-  --color-accent: #2563EB;
-  --color-accent-hover: #1D4ED8;
-  --color-accent-subtle: rgba(37, 99, 235, 0.12);
-  --color-accent-glow: rgba(37, 99, 235, 0.25);
+  /* Accent — Vivid Electric Blue */
+  --color-accent: #1E90FF;
+  --color-accent-hover: #1A7DE0;
+  --color-accent-subtle: rgba(30, 144, 255, 0.12);
+  --color-accent-glow: rgba(30, 144, 255, 0.25);
 
   /* Text */
   --color-text-primary: #FFFFFF;
@@ -26,7 +26,7 @@
 
   /* Border */
   --color-border-subtle: #1E293B;
-  --color-border-accent: rgba(37, 99, 235, 0.3);
+  --color-border-accent: rgba(30, 144, 255, 0.3);
 
   /* Trust */
   --color-trust: #22C55E;
@@ -95,8 +95,8 @@
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
   --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.5);
-  --shadow-accent: 0 4px 20px rgba(37, 99, 235, 0.3);
-  --shadow-accent-lg: 0 8px 32px rgba(37, 99, 235, 0.35);
+  --shadow-accent: 0 4px 20px rgba(30, 144, 255, 0.3);
+  --shadow-accent-lg: 0 8px 32px rgba(30, 144, 255, 0.35);
 
   /* Transitions */
   --transition-fast: 150ms ease;
@@ -269,7 +269,7 @@ strong {
 
 .card--accent {
   border-color: var(--color-border-accent);
-  background: linear-gradient(135deg, var(--color-surface) 0%, rgba(37, 99, 235, 0.06) 100%);
+  background: linear-gradient(135deg, var(--color-surface) 0%, rgba(30, 144, 255, 0.06) 100%);
 }
 
 /* ---------- Badge System ---------- */

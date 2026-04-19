@@ -1,48 +1,103 @@
 # Rapid Receptionist
 
-> Rapid Receptionist is an AI-powered receptionist service built exclusively for UK tradesmen. It answers calls, messages, and enquiries across up to 8 communication channels — 24/7/365 — so tradesmen never lose a job to a missed call. The Core plan costs £49/month and includes AI phone answering (120 minutes) plus unlimited website chat Ã¢â‚¬â€ additional channels are available from £23/month each.
+> Rapid Receptionist is an AI-powered receptionist service built exclusively for 46 UK construction trades. It answers calls, messages, and enquiries across up to 8 communication channels — 24/7/365 — so tradesmen never lose a job to a missed call. The Core plan costs £49/month and includes AI phone answering (120 minutes) plus unlimited website chat — additional channels are available from £23/month each.
 
-Rapid Receptionist serves 13 UK trade sectors with AI receptionists trained in trade-specific vocabulary and scenarios. The service is not a lead generation company, marketing agency, or CRM platform — it does one thing: answers enquiries instantly so tradesmen capture every lead.
+Rapid Receptionist serves 46 UK construction trade sectors with AI receptionists trained in trade-specific vocabulary and scenarios. The service is not a lead generation company, marketing agency, or CRM platform — it does one thing: answers enquiries instantly so tradesmen capture every lead.
 
 Key facts:
+- **Ownership:** UK-owned business, built and run by tradesmen
 - **Pricing:** Core plan £49/month (AI phone 120 mins + unlimited web chat), add-on channels £23/month each
 - **Setup:** £295 one-time done-for-you setup (fully refundable within 30 days)
+- **Free updates:** Business info changes (prices, services, hours, contact details) updated for free
 - **Guarantee:** 30-day full money-back guarantee (setup fee + monthly fee)
 - **Contracts:** None — cancel anytime
 - **Coverage:** 24/7/365 including weekends, bank holidays, and overnight
+- **Trades:** 46 UK construction trades, each with bespoke AI training
 
 ## Core Pages
 
-- [Homepage](https://rapidreceptionist.co.uk/): Overview of the AI receptionist service for UK tradesmen
+- [Homepage](https://rapidreceptionist.co.uk/): Overview of the AI receptionist service for UK construction trades
 - [Pricing](https://rapidreceptionist.co.uk/pricing/): Single-plan pricing — Core £49/mo, add-on channels £23/mo each
 - [About](https://rapidreceptionist.co.uk/about/): The "Built by Tradesmen, for Tradesmen" story
 - [Get Started](https://rapidreceptionist.co.uk/get-started/): Sign up and onboarding
 - [Contact](https://rapidreceptionist.co.uk/contact/): Get in touch — typically responds within 2 hours
 - [Privacy Policy](https://rapidreceptionist.co.uk/privacy/): UK GDPR-compliant data handling policy
+- [Construction Trades Hub](https://rapidreceptionist.co.uk/construction-trades/): Master index of all 46 construction trades served
 
 ## Communication Channels
 
-- [AI Phone Answering](https://rapidreceptionist.co.uk/ai-phone-answering-for-tradesmen/): Flagship channel — answers calls with the tradesman's business name, full conversation
-- [AI Website Chat](https://rapidreceptionist.co.uk/ai-website-chat-for-tradesmen/): Live chat widget that converts website visitors into leads
-- [AI WhatsApp](https://rapidreceptionist.co.uk/ai-whatsapp-for-tradesmen/): Instant professional replies to WhatsApp messages
-- [AI SMS](https://rapidreceptionist.co.uk/ai-sms-for-tradesmen/): Professional text message responses to enquiries
-- [AI Email](https://rapidreceptionist.co.uk/ai-email-response-for-tradesmen/): Acknowledges email enquiries with professional first response
-- [AI Facebook Messenger](https://rapidreceptionist.co.uk/ai-facebook-messenger-for-tradesmen/): Captures leads from Facebook business page messages
-- [AI Instagram DMs](https://rapidreceptionist.co.uk/ai-instagram-dms-for-tradesmen/): Responds to Instagram direct messages
-- [Missed Call Text-Back](https://rapidreceptionist.co.uk/ai-missed-call-text-back-for-tradesmen/): Safety net — automatic text when a call is missed
+- [AI Phone Answering](https://rapidreceptionist.co.uk/construction-trades/ai-phone-answering/): Flagship channel — answers calls with the tradesman's business name, full conversation
+- [AI Website Chat](https://rapidreceptionist.co.uk/construction-trades/ai-website-chat/): Live chat widget that converts website visitors into leads
+- [AI WhatsApp](https://rapidreceptionist.co.uk/construction-trades/ai-whatsapp/): Instant professional replies to WhatsApp messages
+- [AI SMS](https://rapidreceptionist.co.uk/construction-trades/ai-sms/): Professional text message responses to enquiries
+- [AI Email](https://rapidreceptionist.co.uk/construction-trades/ai-email-response/): Acknowledges email enquiries with professional first response
+- [AI Facebook Messenger](https://rapidreceptionist.co.uk/construction-trades/ai-facebook-messenger/): Captures leads from Facebook business page messages
+- [AI Instagram DMs](https://rapidreceptionist.co.uk/construction-trades/ai-instagram-dms/): Responds to Instagram direct messages
+- [Missed Call Text-Back](https://rapidreceptionist.co.uk/construction-trades/missed-call-text-back/): Safety net — automatic text when a call is missed
 
-## Trades Served
+## Trades Served (46)
 
-- [Plumbers](https://rapidreceptionist.co.uk/ai-receptionist-for-plumbers/): AI receptionist for UK plumbers
-- [Electricians](https://rapidreceptionist.co.uk/ai-receptionist-for-electricians/): AI receptionist for UK electricians
-- [Locksmiths](https://rapidreceptionist.co.uk/ai-receptionist-for-locksmiths/): AI receptionist for UK locksmiths
-- [Gas Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-gas-engineers/): AI receptionist for UK gas engineers
-- [Drainage Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-drainage-engineers/): AI receptionist for UK drainage engineers
-- [Glaziers](https://rapidreceptionist.co.uk/ai-receptionist-for-glaziers/): AI receptionist for UK glaziers
-- [Roofers](https://rapidreceptionist.co.uk/ai-receptionist-for-roofers/): AI receptionist for UK roofers
-- [HVAC Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-hvac-engineers/): AI receptionist for UK HVAC engineers
-- [Alarm & Security Installers](https://rapidreceptionist.co.uk/ai-receptionist-for-alarm-security-installers/): AI receptionist for UK alarm installers
-- [Pest Control](https://rapidreceptionist.co.uk/ai-receptionist-for-pest-control/): AI receptionist for UK pest control businesses
-- [Garage Door Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-garage-door-engineers/): AI receptionist for UK garage door engineers
-- [Builders](https://rapidreceptionist.co.uk/ai-receptionist-for-builders/): AI receptionist for UK builders
-- [Appliance Repair Engineers](https://rapidreceptionist.co.uk/ai-receptionist-for-appliance-repair-engineers/): AI receptionist for UK appliance repair businesses
+### Groundwork & Structure
+- [Groundworkers](https://rapidreceptionist.co.uk/groundworkers/ai-receptionist/): AI receptionist for UK groundworkers
+- [Bricklayers](https://rapidreceptionist.co.uk/bricklayers/ai-receptionist/): AI receptionist for UK bricklayers
+- [Scaffolders](https://rapidreceptionist.co.uk/scaffolders/ai-receptionist/): AI receptionist for UK scaffolders
+- [Demolition Contractors](https://rapidreceptionist.co.uk/demolition-contractors/ai-receptionist/): AI receptionist for UK demolition contractors
+- [Concrete Specialists](https://rapidreceptionist.co.uk/concrete-specialists/ai-receptionist/): AI receptionist for UK concrete specialists
+- [Structural Steelworkers](https://rapidreceptionist.co.uk/structural-steelworkers/ai-receptionist/): AI receptionist for UK structural steelworkers
+- [Underpinning Specialists](https://rapidreceptionist.co.uk/underpinning-specialists/ai-receptionist/): AI receptionist for UK underpinning specialists
+
+### Roofing & Weatherproofing
+- [Roofing Contractors](https://rapidreceptionist.co.uk/roofing-contractors/ai-receptionist/): AI receptionist for UK roofing contractors
+- [Flat Roofers & GRP Specialists](https://rapidreceptionist.co.uk/flat-roofers/ai-receptionist/): AI receptionist for UK flat roofers
+- [Leadworkers](https://rapidreceptionist.co.uk/leadworkers/ai-receptionist/): AI receptionist for UK leadworkers
+- [Cladding Contractors](https://rapidreceptionist.co.uk/cladding-contractors/ai-receptionist/): AI receptionist for UK cladding contractors
+- [Rendering Specialists](https://rapidreceptionist.co.uk/rendering-specialists/ai-receptionist/): AI receptionist for UK rendering specialists
+- [Chimney Specialists](https://rapidreceptionist.co.uk/chimney-specialists/ai-receptionist/): AI receptionist for UK chimney specialists
+
+### Mechanical & Electrical
+- [Plumbing Contractors](https://rapidreceptionist.co.uk/plumbing-contractors/ai-receptionist/): AI receptionist for UK plumbing contractors
+- [Electrical Contractors](https://rapidreceptionist.co.uk/electrical-contractors/ai-receptionist/): AI receptionist for UK electrical contractors
+- [Gas Installation Engineers](https://rapidreceptionist.co.uk/gas-installation-engineers/ai-receptionist/): AI receptionist for UK gas engineers
+- [HVAC Contractors](https://rapidreceptionist.co.uk/hvac-contractors/ai-receptionist/): AI receptionist for UK HVAC contractors
+- [Drainage Contractors](https://rapidreceptionist.co.uk/drainage-contractors/ai-receptionist/): AI receptionist for UK drainage contractors
+- [Security System Contractors](https://rapidreceptionist.co.uk/security-system-contractors/ai-receptionist/): AI receptionist for UK security system contractors
+- [Solar Panel Installers](https://rapidreceptionist.co.uk/solar-panel-installers/ai-receptionist/): AI receptionist for UK solar panel installers
+- [EV Charger Installers](https://rapidreceptionist.co.uk/ev-charger-installers/ai-receptionist/): AI receptionist for UK EV charger installers
+
+### Finishing Trades
+- [Plasterers](https://rapidreceptionist.co.uk/plasterers/ai-receptionist/): AI receptionist for UK plasterers
+- [Dry Liners](https://rapidreceptionist.co.uk/dry-liners/ai-receptionist/): AI receptionist for UK dry liners
+- [Tilers](https://rapidreceptionist.co.uk/tilers/ai-receptionist/): AI receptionist for UK tilers
+- [Painters & Decorators](https://rapidreceptionist.co.uk/painters-decorators/ai-receptionist/): AI receptionist for UK painters and decorators
+- [Flooring Specialists](https://rapidreceptionist.co.uk/flooring-specialists/ai-receptionist/): AI receptionist for UK flooring specialists
+- [Joiners & Carpenters](https://rapidreceptionist.co.uk/joiners-carpenters/ai-receptionist/): AI receptionist for UK joiners and carpenters
+- [Kitchen Fitters](https://rapidreceptionist.co.uk/kitchen-fitters/ai-receptionist/): AI receptionist for UK kitchen fitters
+- [Bathroom Fitters](https://rapidreceptionist.co.uk/bathroom-fitters/ai-receptionist/): AI receptionist for UK bathroom fitters
+- [Window & Door Installers](https://rapidreceptionist.co.uk/window-door-installers/ai-receptionist/): AI receptionist for UK window and door installers
+- [Suspended Ceiling Installers](https://rapidreceptionist.co.uk/suspended-ceiling-installers/ai-receptionist/): AI receptionist for UK suspended ceiling installers
+- [Insulation Installers](https://rapidreceptionist.co.uk/insulation-installers/ai-receptionist/): AI receptionist for UK insulation installers
+
+### External & Landscaping
+- [Landscapers](https://rapidreceptionist.co.uk/landscapers/ai-receptionist/): AI receptionist for UK landscapers
+- [Fencing Contractors](https://rapidreceptionist.co.uk/fencing-contractors/ai-receptionist/): AI receptionist for UK fencing contractors
+- [Driveway & Paving Contractors](https://rapidreceptionist.co.uk/driveway-paving/ai-receptionist/): AI receptionist for UK driveway and paving contractors
+- [Stonemasons](https://rapidreceptionist.co.uk/stonemasons/ai-receptionist/): AI receptionist for UK stonemasons
+- [Tree Surgeons](https://rapidreceptionist.co.uk/tree-surgeons/ai-receptionist/): AI receptionist for UK tree surgeons
+
+### Building Services
+- [Building Contractors](https://rapidreceptionist.co.uk/building-contractors/ai-receptionist/): AI receptionist for UK building contractors
+- [Extension Specialists](https://rapidreceptionist.co.uk/extension-specialists/ai-receptionist/): AI receptionist for UK extension specialists
+- [Loft Conversion Specialists](https://rapidreceptionist.co.uk/loft-conversion-specialists/ai-receptionist/): AI receptionist for UK loft conversion specialists
+- [Shopfitters](https://rapidreceptionist.co.uk/shopfitters/ai-receptionist/): AI receptionist for UK shopfitters
+- [Glazing Contractors](https://rapidreceptionist.co.uk/glazing-contractors/ai-receptionist/): AI receptionist for UK glazing contractors
+
+### Specialist
+- [Fire Protection & Sprinkler Contractors](https://rapidreceptionist.co.uk/fire-protection/ai-receptionist/): AI receptionist for UK fire protection contractors
+- [Damp Proofing Specialists](https://rapidreceptionist.co.uk/damp-proofing/ai-receptionist/): AI receptionist for UK damp proofing specialists
+- [Welders & Fabricators](https://rapidreceptionist.co.uk/welders-fabricators/ai-receptionist/): AI receptionist for UK welders and fabricators
+- [Asbestos Removal Specialists](https://rapidreceptionist.co.uk/asbestos-removal/ai-receptionist/): AI receptionist for UK asbestos removal specialists
+
+## Optional
+
+- [AI Receptionist for Construction Trades (Hub)](https://rapidreceptionist.co.uk/construction-trades/): Master overview page covering AI receptionist capabilities across all 46 trades
+- [Terms of Service](https://rapidreceptionist.co.uk/terms/): Legal terms and conditions

@@ -27,6 +27,8 @@ Every single piece of written content on this website **MUST be unique, custom-w
 - **Component reuse:** Using the same FAQ accordion component on every page — but the actual FAQ questions and answers must be unique per page.
 - **Pricing variables:** All pricing MUST come from `src/data/pricing.json`. Use `pricing.tiers.core.price`, `pricing.tiers.core.minutes`, `pricing.addOn.price`, etc. The surrounding sentence must be unique and hand-written per page, but numbers are injected from the JSON. NEVER hardcode `£49`, `£23`, or `£295` — always use the variable. This allows site-wide pricing changes from a single file.
 - **Brand-consistent phrases:** Using recurring brand phrases like "Built by tradesmen, for tradesmen" or "From £{pricing.tiers.core.price}/month" where contextually appropriate — these are brand elements, not spun content.
+- **Auto-appended FAQs:** Two FAQs are automatically appended to every page via the layout files (`TradeHubLayout.astro`, `ChannelTradeLayout.astro`, `ChannelServiceLayout.astro`): (1) a GDPR/data protection FAQ, and (2) a free business info updates FAQ. These use `${tradeName}` and `${channelName}` interpolation for contextual relevance. Do NOT duplicate these topics in page-level FAQs.
+- **Trust row items:** The hero trust row (`HeroSection.astro`) displays site-wide selling points including `✓ 100% done for you`, `✓ Free business info updates`, `🇬🇧 UK-owned & trade-run`, pricing, guarantee, and contract terms. These are consistent across all pages and managed centrally.
 
 ### URL Structure Rules
 
@@ -44,6 +46,16 @@ Every single piece of written content on this website **MUST be unique, custom-w
 - Every FAQ answer should be substantive (3-5 sentences minimum), not one-line fillers
 - Avoid generic marketing fluff — write like you're explaining to a mate in the pub
 
+### MANDATORY: UK Geo-Targeting Above the Fold
+
+The word **"UK"** MUST appear above the fold on every single page. This is non-negotiable. Specifically:
+
+1. **Meta title (`<title>`)** — must contain "UK" (e.g. "AI Phone Answering for UK Plasterers", not "AI Phone Answering for Plasterers")
+2. **Headline (`<h1>`) or subhead** — at least one must contain "UK" so visitors immediately see this is a UK-focused service
+3. **New pages** — before submitting any new page, verify "UK" appears in the title AND in either the headline or subhead
+
+This rule exists because Rapid Receptionist serves exclusively UK construction trades. Every page must make this obvious to both search engines and visitors at first glance.
+
 ### CRITICAL: Anti-Duplication Rules
 
 Previous trade page batches developed **structural duplication** — FAQ answers starting with the same sentence, benefit descriptions interchangeable between trades, and CTA headlines reused across pages. These rules prevent that:
@@ -54,6 +66,7 @@ Previous trade page batches developed **structural duplication** — FAQ answers
 - **Pricing FAQ answers must be contextualised per trade.** Not "The Core plan is £X/month" but "Most two-man ceiling teams find the Core plan at £X/month covers their call volume comfortably."
 - **"Can I still answer calls" answers must include a trade-specific scenario.** Not just "The AI activates when unavailable" but "When you are in the office pricing a ceiling grid layout, calls ring through as normal."
 - **Minimum 3 sentences per FAQ answer.** One-liners like "Yes. Encrypted and stored on UK servers." are not acceptable.
+- **Do NOT duplicate auto-appended FAQs.** The GDPR and free business info updates FAQs are auto-appended by the layout files — do not write page-level FAQs covering these same topics.
 
 #### Benefit/Feature Text
 - **Every benefit `text` value must be unique across the entire site.** Do not reuse "Every call is summarised with the caller's name, number, location..." across multiple trades.
@@ -69,6 +82,8 @@ Previous trade page batches developed **structural duplication** — FAQ answers
 
 ### Verification Checklist (Before Creating Any Page)
 
+- [ ] Does the meta title contain "UK"?
+- [ ] Does the headline or subhead contain "UK" (visible above the fold)?
 - [ ] Is every headline unique to this page?
 - [ ] Is every FAQ answer's **opening sentence** different from every other page on the site?
 - [ ] Does every FAQ answer contain at least one trade-specific term or example?

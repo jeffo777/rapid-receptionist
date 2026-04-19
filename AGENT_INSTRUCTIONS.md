@@ -12,7 +12,7 @@
 3. [Brand Voice & Tone](#3-brand-voice--tone)
 4. [USPs — Unique Selling Points](#4-usps--unique-selling-points)
 5. [Pricing & Commercial Model](#5-pricing--commercial-model)
-6. [Target Market — The 13 Trades](#6-target-market--the-13-trades)
+6. [Target Market — The 46 Trades](#6-target-market--the-46-trades)
 7. [Service Channels — The 9-Channel System](#7-service-channels--the-9-channel-system)
 8. [Content Rules — What The AI Can & Cannot Do](#8-content-rules--what-the-ai-can--cannot-do)
 9. [Human Escalation Protocol](#9-human-escalation-protocol)
@@ -33,7 +33,7 @@
 
 ## What Is Rapid Receptionist?
 
-Rapid Receptionist is a standalone AI receptionist service built exclusively for UK tradesmen. It provides 24/7 AI-powered answering across 9 communication channels — phone, SMS, WhatsApp, email, website chat, Facebook Messenger, Instagram DMs, Google Business Profile messages, and missed call text-back.
+Rapid Receptionist is a standalone AI receptionist service built exclusively for 46 UK construction trades. It provides 24/7 AI-powered answering across 8 communication channels — phone, website chat, WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back.
 
 ## The Mission
 
@@ -49,7 +49,7 @@ Tradesmen physically cannot answer the phone while they're working — up ladder
 - ❌ Not a CRM platform
 - ❌ Not an appointment scheduling tool
 
-We do ONE thing: **answer enquiries instantly across 9 channels so tradesmen never lose a job to a missed call.**
+We do ONE thing: **answer enquiries instantly across 8 channels so tradesmen never lose a job to a missed call.**
 
 ---
 
@@ -156,7 +156,8 @@ These must be prominently featured across the website. Group and deploy them str
 | USP | Short Form | Where to Use |
 |---|---|---|
 | **100% done for you** | "✓ 100% done for you" | Hero trust row, every page |
-| **9-channel coverage** | "9 channels, zero missed leads" | Feature grid, hero, homepage |
+| **Free business info updates** | "✓ Free business info updates" | Hero trust row, every page |
+| **8-channel coverage** | "8 channels, zero missed leads" | Feature grid, hero, homepage |
 | **24/7/365** | "Always on. Christmas Day, 2am, bank holidays" | Feature descriptions, hero |
 | **Human escalation** | "Real human backup when you need it" | Feature section, FAQs |
 | **Trade-specific AI** | "Speaks your trade's language" | Trade pages, feature descriptions |
@@ -167,6 +168,7 @@ These must be prominently featured across the website. Group and deploy them str
 | USP | Short Form | Where to Use |
 |---|---|---|
 | **Built by tradesmen, for tradesmen** | "Built by tradesmen, for tradesmen" | Trust section, about page, footer |
+| **UK-owned & trade-run** | "🇬🇧 UK-owned & trade-run" | Hero trust row (every page) |
 | **Speaks your trade's language** | "Knows the difference between a full rewire and a socket addition" | Trade pages, feature descriptions |
 | **No voicemail, no missed leads** | "Your callers never hear voicemail again" | Hero, problem sections |
 
@@ -222,6 +224,7 @@ The layout files (`TradeHubLayout.astro`, `ChannelTradeLayout.astro`) already im
 - ✅ Human Escalation (business owner + Rapid Receptionist operators)
 - ✅ Trade-specific AI training
 - ✅ Full "done for you" setup
+- ✅ Free business info updates (prices, services, opening hours, contact details)
 - ✅ 24/7/365 availability
 - ✅ Real-time lead notifications
 
@@ -254,38 +257,34 @@ The £295 setup fee:
 
 ---
 
-# 6. Target Market — The 13 Trades
+# 6. Target Market — The 46 Trades
 
-These are the 13 trades Rapid Receptionist serves. Each trade requires unique content that demonstrates genuine understanding of their work, terminology, and challenges.
+Rapid Receptionist serves **46 UK construction trades**, organised into 7 categories. The full trade list, slugs, keywords, and certifications are maintained in `src/data/trades.json` — always reference that file for the canonical list.
 
-| Trade | Slug | Emergency Rating | Key Vocabulary |
-|---|---|---|---|
-| **Plumbers** | `plumbers` | ★★★★★ | Stopcocks, PRV, cylinder, unvented, combi boiler, immersion heater, soil pipe, waste trap, ball valve, overflow, radiator bleed |
-| **Electricians** | `electricians` | ★★★★★ | Consumer unit, RCDs, MCBs, EICRs, Part P, BS 7671, fuseboard, ring main, radial circuit, bonding, earthing, emergency isolation |
-| **Locksmiths** | `locksmiths` | ★★★★★ | Euro cylinder, anti-snap locks, Mul-T-Lock, Ultion, thumbturn, multipoint locks, deadlock, mortice, Yale, UPVC mechanism, lockout |
-| **Gas Engineers** | `gas-engineers` | ★★★★★ | Gas Safe registered, flue, condensate, LPG, CP12, landlord certificate, boiler service, gas leak, carbon monoxide, ventilation, fault codes |
-| **Drainage Engineers** | `drainage-engineers` | ★★★★☆ | CCTV survey, jetting, root ingress, collapsed drain, soakaway, manhole, interceptor, back-inlet gully, rodding, patch lining |
-| **Glaziers** | `glaziers` | ★★★★☆ | Double glazing, sealed unit, toughened glass, laminated, Georgian bar, lead came, secondary glazing, boarding up, FENSA |
-| **Roofers** | `roofers` | ★★★★☆ | Ridge tiles, flashing, felt, batten, soffit, fascia, valley gutter, hip, verge, slate, concrete tile, GRP fibreglass, torch-on |
-| **HVAC Engineers** | `hvac-engineers` | ★★★★☆ | Split system, VRF, ducted, refrigerant, R410a, R32, heat pump, air handling unit, commissioning, F-gas, pressure test |
-| **Alarm & Security Installers** | `alarm-installers` | ★★★☆☆ | Intruder alarm, CCTV, PIR, door contact, bell box, key holder, monitoring, Grade 2, NSI/SSAIB, access control, intercom |
-| **Pest Control** | `pest-control` | ★★★☆☆ | Treatment, survey, proofing, bait station, fumigation, BPCA, COSHH, rodenticide, insecticide, infestation, exclusion |
-| **Garage Door Engineers** | `garage-door-engineers` | ★★★☆☆ | Roller, sectional, up-and-over, canopy gear, retractable, torsion spring, cable drum, motor, remote, safety edge, auto-lock |
-| **Builders** | `builders` | ★★☆☆☆ | Extension, loft conversion, structural, RSJ, building regs, planning permission, foundations, brickwork, blockwork, rendering |
-| **Appliance Repair Engineers** | `appliance-repair-engineers` | ★★★☆☆ | PCB, element, thermostat, bearing, drum, door seal, motor, pump, filter, error code, gas ignition, oven element |
+### Categories
+
+| Category | Trades |
+|---|---|
+| **Groundwork & Structure** | Groundworkers, Bricklayers, Scaffolders, Demolition Contractors, Concrete Specialists, Structural Steelworkers, Underpinning Specialists |
+| **Roofing & Weatherproofing** | Roofing Contractors, Flat Roofers & GRP Specialists, Leadworkers, Cladding Contractors, Rendering Specialists, Chimney Specialists |
+| **Mechanical & Electrical** | Plumbing Contractors, Electrical Contractors, Gas Installation Engineers, HVAC Contractors, Drainage Contractors, Security System Contractors, Solar Panel Installers, EV Charger Installers |
+| **Finishing Trades** | Plasterers, Dry Liners, Tilers, Painters & Decorators, Flooring Specialists, Joiners & Carpenters, Kitchen Fitters, Bathroom Fitters, Window & Door Installers, Suspended Ceiling Installers, Insulation Installers |
+| **External & Landscaping** | Landscapers, Fencing Contractors, Driveway & Paving Contractors, Stonemasons, Tree Surgeons |
+| **Building Services** | Building Contractors, Extension Specialists, Loft Conversion Specialists, Shopfitters, Glazing Contractors |
+| **Specialist** | Fire Protection & Sprinkler Contractors, Damp Proofing Specialists, Welders & Fabricators, Asbestos Removal Specialists |
 
 ### Content Rules Per Trade
 
 For each trade, the content MUST:
-- Use genuine, specific trade vocabulary (see table above — but research deeper)
+- Use genuine, specific trade vocabulary (see `trades.json` for keywords per trade — but research deeper)
 - Reference real UK regulations, certifications, and industry bodies
 - Describe realistic scenarios from that trade's daily work
 - Avoid generic "if you're a tradesman" language — everything must be trade-specific
-- Understand the urgency profile (★★★★★ trades have more emergency content, ★★☆☆☆ trades focus more on volume/scheduling)
+- Understand the urgency profile (emergency-heavy trades like plumbers and gas engineers need more emergency content; volume trades like painters and tilers focus more on scheduling)
 
 ---
 
-# 7. Service Channels — The 9-Channel System
+# 7. Service Channels — The 8-Channel System
 
 ## The 3-Tier Capability Framework
 
@@ -300,7 +299,7 @@ Every channel operates under one of three tiers. **Never claim capabilities beyo
 - If urgent → offers escalation to business owner or Rapid Receptionist human operators
 - If not urgent → explains the business owner will call back when free
 
-### Tier 2: ONE REPLY — WhatsApp, Facebook, Instagram, GBP, Email, SMS
+### Tier 2: ONE REPLY — WhatsApp, Facebook, Instagram, Email, SMS
 - Captures lead details and nature of work from the customer's message
 - Sends ONE professional reply acknowledging the enquiry
 - Assesses urgency from message content
@@ -324,7 +323,6 @@ Every channel operates under one of three tiers. **Never claim capabilities beyo
 | **AI Email** | 2 | Acknowledges email enquiries with a professional first response |
 | **AI Facebook Messenger** | 2 | Handles Facebook business page messages — captures leads from social |
 | **AI Instagram DMs** | 2 | Responds to Instagram direct messages — captures leads from trades showing their work |
-| **AI GBP Messages** | 2 | Google Business Profile message responses |
 | **AI Missed Call Text-Back** | 3 | Automatic safety net text when a call is missed |
 
 ## What The AI NEVER Does (Any Channel)
@@ -335,6 +333,20 @@ Every channel operates under one of three tiers. **Never claim capabilities beyo
 - ❌ Diagnoses faults remotely
 - ❌ Discusses product specifications or recommendations
 - ❌ Has extended multi-message conversations (Tier 2/3 channels)
+
+## Free Business Info Updates
+
+Rapid Receptionist includes **free updates to business information** as part of the done-for-you service. This covers:
+- Pricing changes
+- New service additions or removals
+- Updated opening hours or availability
+- Revised contact details
+
+Updates are handled by the Rapid Receptionist team, typically within one working day. This does NOT include full knowledge base rewrites or fundamental AI retraining — it covers routine business information changes.
+
+**Where this appears on the site:**
+- **Hero trust row** — `✓ Free business info updates` (on every page via `HeroSection.astro`)
+- **Auto-appended FAQ** — A contextual FAQ about free updates is added to every page via the 3 layout files (`TradeHubLayout.astro`, `ChannelTradeLayout.astro`, `ChannelServiceLayout.astro`)
 
 ---
 
@@ -354,7 +366,8 @@ This section governs ALL content on the website. **Never overclaim.** The integr
 - "Speaks your trade's language"
 - "Triages urgent vs routine enquiries"
 - "Escalates emergencies to you or our human operators"
-- "Responds instantly across 9 channels"
+- "Responds instantly across 8 channels"
+- "Free business info updates — just tell us and we handle it"
 - "Prevents missed calls and lost leads"
 
 ### What You MUST NOT Say
@@ -492,49 +505,46 @@ rapidreceptionist.co.uk/
 ├── about.astro                          — "Built by tradesmen" story
 ├── get-started.astro                    — Signup / lead capture
 ├── contact.astro                        — Contact form
-├── terms.astro                          — Terms of service
-├── privacy.astro                        — Privacy policy
 │
-├── [13 Trade Hub Pages]
-│   ├── ai-receptionist-for-plumbers.astro
-│   ├── ai-receptionist-for-electricians.astro
-│   ├── ai-receptionist-for-locksmiths.astro
-│   ├── ai-receptionist-for-gas-engineers.astro
-│   ├── ai-receptionist-for-drainage-engineers.astro
-│   ├── ai-receptionist-for-glaziers.astro
-│   ├── ai-receptionist-for-roofers.astro
-│   ├── ai-receptionist-for-hvac-engineers.astro
-│   ├── ai-receptionist-for-alarm-installers.astro
-│   ├── ai-receptionist-for-pest-control.astro
-│   ├── ai-receptionist-for-garage-door-engineers.astro
-│   ├── ai-receptionist-for-builders.astro
-│   └── ai-receptionist-for-appliance-repair-engineers.astro
+├── construction-trades/                 — Master construction trades hub
+│   ├── index.astro                      — All 46 trades directory
+│   ├── ai-phone-answering.astro         — Channel hub: AI Phone
+│   ├── ai-website-chat.astro            — Channel hub: Website Chat
+│   ├── ai-whatsapp.astro                — Channel hub: WhatsApp
+│   ├── ai-sms.astro                     — Channel hub: SMS
+│   ├── ai-email-response.astro          — Channel hub: Email
+│   ├── ai-facebook-messenger.astro      — Channel hub: Facebook
+│   ├── ai-instagram-dms.astro           — Channel hub: Instagram
+│   └── missed-call-text-back.astro      — Channel hub: Missed Call
 │
-├── [9 × 13 = 117 Channel × Trade Pages]
-│   ├── ai-phone-answering-for-plumbers.astro
-│   ├── ai-phone-answering-for-electricians.astro
-│   ├── ... (every combination of channel × trade)
-│   ├── ai-whatsapp-for-plumbers.astro
-│   ├── ai-sms-for-plumbers.astro
-│   ├── ai-email-for-plumbers.astro
-│   ├── ai-website-chat-for-plumbers.astro
-│   ├── ai-facebook-messenger-for-plumbers.astro
-│   ├── ai-instagram-dm-for-plumbers.astro
-│   ├── ai-missed-call-text-back-for-plumbers.astro
-│   └── ai-gbp-messages-for-plumbers.astro
-│
-└── [Generic Channel Hub Pages (optional — if time permits)]
-    ├── ai-phone-answering-for-tradesmen.astro
-    ├── ai-whatsapp-for-tradesmen.astro
-    └── ... (one per channel, generic/no specific trade)
+├── [46 Trade Directories — flat URLs]
+│   ├── plumbing-contractors/
+│   │   ├── ai-receptionist.astro        — Trade hub page
+│   │   ├── ai-phone-answering.astro     — Channel × trade page
+│   │   ├── ai-website-chat.astro
+│   │   ├── ai-whatsapp.astro
+│   │   ├── ai-sms.astro
+│   │   ├── ai-email-response.astro
+│   │   ├── ai-facebook-messenger.astro
+│   │   ├── ai-instagram-dms.astro
+│   │   └── missed-call-text-back.astro
+│   ├── electrical-contractors/
+│   │   └── ... (same 9 pages per trade)
+│   └── ... (46 trade directories total)
 ```
 
+### URL Structure
+- Trade pages use **flat URLs**: `/{trade-slug}/ai-receptionist/`, `/{trade-slug}/ai-phone-answering/`, etc.
+- DO NOT use `/construction-trades/{trade-slug}/` — that prefix was removed
+- Channel overview pages remain at `/construction-trades/ai-phone-answering/`
+
 ### Total Page Count
-- 7 core pages (home, pricing, about, get-started, contact, terms, privacy)
-- 13 trade hub pages
-- 117 channel × trade pages (9 channels × 13 trades)
-- 9 generic channel hub pages (optional)
-- **Total: ~146 pages**
+- 5 core pages (home, pricing, about, get-started, contact)
+- 1 construction trades hub
+- 8 channel hub pages
+- 46 trade hub pages
+- ~370 channel × trade pages (8 channels × 46 trades)
+- **Total: 428+ pages**
 
 ---
 
@@ -545,9 +555,9 @@ rapidreceptionist.co.uk/
 Each trade hub page must contain these sections in this order:
 
 ### Section 1: Hero
-- **Headline:** Trade-specific, compelling, includes the trade name
-- **Subhead:** 2-3 sentences (150-280 characters MAX) — a concise value proposition for this trade. This is NOT a scenario. It should hook the reader with a quick trade-specific situation, show what the AI does, and optionally reference pricing. The detailed immersive narrative belongs in the `scenario` prop, not here.
-- **Trust row:** `✓ 100% done for you` · `Only £49/month` · `🛡 30-day money-back guarantee · No Contracts`
+- **Headline:** Trade-specific, compelling, includes the trade name. **MUST contain "UK"** (e.g. "AI Receptionist for UK Plumbing Contractors") — this ensures UK geo-targeting is visible above the fold.
+- **Subhead:** 2-3 sentences (150-280 characters MAX) — a concise value proposition for this trade. This is NOT a scenario. It should hook the reader with a quick trade-specific situation, show what the AI does, and optionally reference pricing. The detailed immersive narrative belongs in the `scenario` prop, not here. Should also contain "UK" if the headline doesn't.
+- **Trust row:** `✓ 100% done for you` · `✓ Free business info updates` · `🇬🇧 UK-owned & trade-run` · `From £49/month` · `🛡 30-day money-back guarantee` · `No Contracts`
 - **AI Widget:** Interactive chat widget in hero (same concept as DTEAI's HeroJaina)
 
 ### Section 2: Speed-to-Lead Banner
@@ -640,6 +650,15 @@ FAQs serve two functions simultaneously:
 | Trade Hub Pages | **10** | 150-300 |
 | Channel × Trade Pages | **8** | 150-300 |
 
+## Auto-Appended FAQs (Layout-Level)
+
+Two FAQs are **automatically appended to every page** via the layout files. These do NOT need to be written per-page:
+
+1. **GDPR / Data Protection FAQ** — Auto-appended by `TradeHubLayout.astro`, `ChannelTradeLayout.astro`, and `ChannelServiceLayout.astro`. Interpolated with `${tradeName}` and `${channelName}` for contextual relevance.
+2. **Free Business Info Updates FAQ** — Auto-appended by the same 3 layouts. Explains that pricing, services, hours, and contact detail changes are updated for free as part of the done-for-you service.
+
+These FAQs are included in the FAQ schema automatically and appear after the page-specific FAQs.
+
 ## Rules
 
 ### CRITICAL — Content Quality
@@ -682,9 +701,11 @@ FAQs serve two functions simultaneously:
 - How does [channel] compare to voicemail / not having it?
 - Can I see what was said on [channel]?
 
+**Note:** Do NOT duplicate the GDPR or free updates FAQs in page-level content — these are handled automatically by the layouts.
+
 ### FAQ Schema Markup
 
-Every FAQ section MUST include JSON-LD structured data for Google FAQ rich snippets:
+Every FAQ section MUST include JSON-LD structured data for Google FAQ rich snippets. This is auto-generated by the layout files from the `faqs` + `allFaqs` arrays:
 
 ```json
 {
@@ -716,7 +737,8 @@ Examples:
 - `AI Phone Answering for UK Electricians — 24/7 Coverage | Rapid Receptionist`
 
 Rules:
-- Include "UK" before the trade name
+- **MUST include "UK"** — every meta title must contain the word "UK" (e.g. "for UK Plumbing Contractors", not "for Plumbing Contractors")
+- Include "UK" before the trade name where possible
 - Keep under 60 characters where possible
 - Include primary keyword
 - Always end with `| Rapid Receptionist`
@@ -976,6 +998,8 @@ These rules exist because previous batches of trade pages developed **structural
 
 Before creating ANY trade page, verify:
 
+- [ ] The meta title contains "UK" (e.g. "AI Phone Answering for UK Plasterers")
+- [ ] The headline or subhead contains "UK" — visible above the fold
 - [ ] The subhead is under 280 characters and does NOT contain a full scenario narrative
 - [ ] Every FAQ answer starts with a different opening sentence than any other page on the site
 - [ ] Every FAQ answer contains at least one trade-specific term or scenario
@@ -1028,9 +1052,9 @@ Build the website in this order:
 4. **Homepage** — The flagship page that sets the tone
 5. **Pricing page** — Simple, single-tier, compelling
 6. **First trade hub page** (Plumbers) — Use as the template/quality benchmark
-7. **First set of channel × trade pages** (all 9 channels for Plumbers) — Validate the channel page quality
-8. **Remaining trade hub pages** (12 more trades)
-9. **Remaining channel × trade pages** (108 more pages)
+7. **First set of channel × trade pages** (all 8 channels for Plumbers) — Validate the channel page quality
+8. **Remaining trade hub pages** (45 more trades)
+9. **Remaining channel × trade pages** (~360 more pages)
 10. **Core pages** — About, Get Started, Contact
 11. **Legal pages** — Terms, Privacy
 12. **Polish** — Cross-page links, final SEO review, performance optimisation
