@@ -233,6 +233,17 @@ if (accentWord) {
     animation: ai-glow-pulse 3s ease-in-out infinite;
   }
 
+  .hero-ai__avatar-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 2px solid var(--color-accent);
+    z-index: 3;
+    animation: ai-ring-pulse 2.8s ease-in-out infinite;
+    pointer-events: none;
+  }
+
   @keyframes ai-head-turn {
     0% {
       transform: rotateY(35deg) scale(0.95);
@@ -251,6 +262,11 @@ if (accentWord) {
   @keyframes ai-glow-pulse {
     0%, 100% { opacity: 0.5; transform: scale(1); }
     50% { opacity: 0.85; transform: scale(1.04); }
+  }
+
+  @keyframes ai-ring-pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.06); }
   }
 
   /* CTA Area */
