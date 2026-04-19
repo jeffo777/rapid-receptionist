@@ -135,6 +135,16 @@ Do NOT reference:
 - Down To Earth AI
 - Any personal founder story
 
+### MANDATORY: No Gendered Pronouns for the AI
+
+The AI receptionist must **never** be referred to with gendered pronouns (she/her/he/him). Always use:
+- **"it"** — "It captures the lead details", "It answers on the second ring"
+- **"the AI"** — "The AI responds within seconds"
+- **"Rapid Receptionist"** or **"your AI receptionist"** — "Rapid Receptionist answers 24/7"
+- **"the system"** or **"the service"** — when referring to the platform
+
+This rule applies to ALL content: page copy, FAQs, scenarios, CTAs, docs, and llms.txt files. Gendered pronouns for fictional **customer** characters in scenarios (e.g. "A homeowner calls — she needs...") are fine — the rule applies only to the AI itself.
+
 ---
 
 # 4. USPs — Unique Selling Points

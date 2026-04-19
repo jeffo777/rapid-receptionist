@@ -46,6 +46,16 @@ Every single piece of written content on this website **MUST be unique, custom-w
 - Every FAQ answer should be substantive (3-5 sentences minimum), not one-line fillers
 - Avoid generic marketing fluff — write like you're explaining to a mate in the pub
 
+### MANDATORY: No Gendered Pronouns for the AI
+
+The AI receptionist must **never** be referred to with gendered pronouns (she/her/he/him). Always use:
+- **"it"** — "It captures the lead details", "It answers on the second ring"
+- **"the AI"** — "The AI responds within seconds"
+- **"Rapid Receptionist"** or **"your AI receptionist"** — "Rapid Receptionist answers 24/7"
+- **"the system"** or **"the service"** — when referring to the platform
+
+Gendered pronouns for fictional **customer** characters in scenarios (e.g. "A homeowner calls — she needs...") are acceptable — the rule applies only to the AI itself.
+
 ### MANDATORY: UK Geo-Targeting Above the Fold
 
 The word **"UK"** MUST appear above the fold on every single page. This is non-negotiable. Specifically:
