@@ -38,7 +38,7 @@ if (accentWord) {
       <p class="hero__subhead">{subhead}</p>
 
       {showTrustRow && (
-        <div class="trust-row hero__trust-row">
+        <div class="trust-row hero__trust-row hero__trust-row--desktop-only">
           <span class="trust-row__item">
             <span class="check">✓</span> 100% done for you
           </span>
@@ -102,6 +102,34 @@ if (accentWord) {
               Call me
             </button>
           </div>
+
+          {showTrustRow && (
+            <div class="trust-row hero__trust-row hero__trust-row--under-cta">
+              <span class="trust-row__item">
+                <span class="check">✓</span> 100% done for you
+              </span>
+              <span class="trust-row__divider" aria-hidden="true"></span>
+              <span class="trust-row__item">
+                <span class="check">✓</span> Free business info updates
+              </span>
+              <span class="trust-row__divider" aria-hidden="true"></span>
+              <span class="trust-row__item">
+                🇬🇧 UK-owned & trade-run
+              </span>
+              <span class="trust-row__divider" aria-hidden="true"></span>
+              <span class="trust-row__item">
+                From <strong>£{pricing.tiers.core.price}/month</strong>
+              </span>
+              <span class="trust-row__divider" aria-hidden="true"></span>
+              <span class="trust-row__item">
+                <span class="shield">🛡</span> 30-day money-back guarantee
+              </span>
+              <span class="trust-row__divider" aria-hidden="true"></span>
+              <span class="trust-row__item">
+                No contracts
+              </span>
+            </div>
+          )}
         </div>
       </div>
     )}
@@ -192,6 +220,15 @@ if (accentWord) {
     margin-top: var(--space-8);
   }
 
+  /* Hide the top trust row when AI section exists (it's duplicated under the CTA) */
+  .hero__trust-row--desktop-only {
+    display: none;
+  }
+
+  .hero__trust-row--under-cta {
+    margin-top: var(--space-6);
+  }
+
   /* -- AI Receptionist CTA (Primary) -- */
   .hero-ai {
     display: flex;
@@ -207,8 +244,8 @@ if (accentWord) {
 
   .hero-ai__avatar-wrap {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 210px;
+    height: 210px;
     perspective: 800px;
   }
 
