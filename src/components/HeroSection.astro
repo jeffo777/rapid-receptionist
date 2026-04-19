@@ -171,8 +171,8 @@ if (accentWord) {
 <style>
   .hero {
     position: relative;
-    padding-top: calc(var(--header-height) + var(--space-10));
-    padding-bottom: var(--space-16);
+    padding-top: calc(var(--header-height) + var(--space-6));
+    padding-bottom: var(--space-12);
     background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     overflow: hidden;
   }
@@ -196,7 +196,7 @@ if (accentWord) {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: var(--space-10);
+    gap: var(--space-6);
   }
 
   /* Text Content */
@@ -209,11 +209,11 @@ if (accentWord) {
   }
 
   .hero__subhead {
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     color: var(--color-text-secondary);
     max-width: 620px;
     margin-inline: auto;
-    line-height: var(--leading-relaxed);
+    line-height: var(--leading-normal);
   }
 
   .hero__trust-row {
@@ -502,8 +502,8 @@ if (accentWord) {
 
   @media (min-width: 1024px) {
     .hero {
-      padding-top: calc(var(--header-height) + var(--space-12));
-      padding-bottom: var(--space-16);
+      padding-top: calc(var(--header-height) + var(--space-8));
+      padding-bottom: var(--space-12);
     }
 
     .hero-ai__avatar-wrap {
