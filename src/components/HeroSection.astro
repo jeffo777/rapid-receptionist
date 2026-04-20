@@ -73,7 +73,7 @@ if (accentWord) {
           <div class="hero-ai__avatar-wrap">
             <img
               src="/assets/images/ai-receptionist.webp"
-              alt="Your AI receptionist — always on, always ready"
+              alt="Rapid Receptionist AI receptionist for UK construction trades — answers calls, chats, and messages 24/7 across 8 channels"
               class="hero-ai__avatar-img"
               loading="eager"
               decoding="async"
@@ -81,12 +81,11 @@ if (accentWord) {
               height="320"
             />
             <div class="hero-ai__avatar-glow" aria-hidden="true"></div>
-            <span class="hero-ai__online-badge" aria-hidden="true">online</span>
+            <span class="hero-ai__online-badge" aria-hidden="true">ready to chat</span>
           </div>
         </div>
 
         <div class="hero-ai__cta-area">
-          <p class="hero-ai__greeting">{greeting}</p>
           <div class="hero-ai__buttons">
             <button type="button" class="hero-ai__btn hero-ai__btn--chat" id="hero-ai-chat-btn">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -243,8 +242,8 @@ if (accentWord) {
 
   .hero-ai__avatar-wrap {
     position: relative;
-    width: 260px;
-    height: 260px;
+    width: 220px;
+    height: 220px;
     perspective: 800px;
   }
 
@@ -282,21 +281,26 @@ if (accentWord) {
 
   .hero-ai__online-badge {
     position: absolute;
-    bottom: 6px;
+    bottom: -6px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
-    background: var(--color-primary);
+    background: var(--color-secondary);
     color: var(--color-accent);
     font-size: 11px;
     font-weight: var(--font-bold);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding: 2px 10px;
+    padding: 3px 12px;
     border-radius: var(--radius-full);
-    border: 1.5px solid var(--color-accent);
-    animation: ai-ring-pulse 2.8s ease-in-out infinite;
+    border: 1.5px solid transparent;
+    animation: ai-badge-pulse 2.8s ease-in-out infinite;
     pointer-events: none;
+  }
+
+  @keyframes ai-badge-pulse {
+    0%, 100% { color: rgba(30, 144, 255, 0.4); border-color: rgba(30, 144, 255, 0.15); }
+    50% { color: rgba(30, 144, 255, 1); border-color: rgba(30, 144, 255, 0.6); }
   }
 
   @keyframes ai-head-turn {
@@ -494,8 +498,8 @@ if (accentWord) {
   /* Responsive */
   @media (min-width: 768px) {
     .hero-ai__avatar-wrap {
-      width: 280px;
-      height: 280px;
+      width: 240px;
+      height: 240px;
     }
   }
 
@@ -506,8 +510,8 @@ if (accentWord) {
     }
 
     .hero-ai__avatar-wrap {
-      width: 320px;
-      height: 320px;
+      width: 270px;
+      height: 270px;
     }
   }
 </style>

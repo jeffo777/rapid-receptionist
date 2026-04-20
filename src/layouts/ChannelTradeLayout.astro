@@ -75,14 +75,14 @@ const siteUrl = 'https://rapidreceptionist.co.uk';
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  "@id": `${siteUrl}${canonicalUrl}#service`,
   "serviceType": `${channelName} for ${tradeNamePlural}`,
   "name": `${channelName} for ${tradeNamePlural}`,
   "description": description,
   "url": `${siteUrl}${canonicalUrl}`,
+  "inLanguage": "en-GB",
   "provider": {
-    "@type": "Organization",
-    "name": "Rapid Receptionist",
-    "url": siteUrl
+    "@id": "https://rapidreceptionist.co.uk/#organization"
   },
   "areaServed": {
     "@type": "Country",

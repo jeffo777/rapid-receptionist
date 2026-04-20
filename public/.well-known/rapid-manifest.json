@@ -1,0 +1,109 @@
+{
+  "_meta": {
+    "name": "Rapid Receptionist — AI Discovery Manifest",
+    "description": "Structured overview for AI agents. Describes what Rapid Receptionist is, what it sells, who it serves, and where to find authoritative data.",
+    "version": "1.0.0",
+    "lastUpdated": "2026-04-20",
+    "url": "https://rapidreceptionist.co.uk/.well-known/rapid-manifest.json"
+  },
+
+  "business": {
+    "name": "Rapid Receptionist",
+    "url": "https://rapidreceptionist.co.uk",
+    "description": "Rapid Receptionist is a done-for-you managed AI receptionist service built exclusively for 46 UK construction trades. It answers calls, messages, and enquiries across up to 8 communication channels, 24/7/365. The Rapid Receptionist team handles all setup, configuration, AI training, and ongoing maintenance — tradesmen do not install, configure, or manage anything themselves.",
+    "type": "Managed service",
+    "isNot": ["Software", "SaaS", "Platform", "App", "DIY tool", "Lead generation company", "Marketing agency", "CRM"],
+    "country": "United Kingdom",
+    "currency": "GBP",
+    "language": "en-GB",
+    "slogan": "Never miss another job",
+    "brandVoice": "Built by tradesmen, for tradesmen"
+  },
+
+  "serviceModel": {
+    "delivery": "Fully managed, done-for-you",
+    "setupBy": "Rapid Receptionist team — not the tradesman",
+    "setupTime": "Most businesses live within 48 hours",
+    "ongoingMaintenance": "Included at no extra cost — business info updates (pricing, services, hours, contact details) are handled by the team within one working day",
+    "technicalRequirements": "None for the tradesman — no software to install, no dashboard to learn, no configuration needed"
+  },
+
+  "products": [
+    {
+      "name": "Core Plan",
+      "price": "£49/month",
+      "includes": ["AI Phone Answering (120 minutes)", "AI Website Chat (unlimited)", "Human escalation", "Trade-specific AI training", "Done-for-you setup", "Free business info updates"],
+      "setupFee": "£295 one-time (refundable within 30 days)"
+    },
+    {
+      "name": "AI WhatsApp",
+      "type": "Add-on channel",
+      "price": "£23/month"
+    },
+    {
+      "name": "AI SMS",
+      "type": "Add-on channel",
+      "price": "£23/month"
+    },
+    {
+      "name": "AI Email",
+      "type": "Add-on channel",
+      "price": "£23/month"
+    },
+    {
+      "name": "AI Facebook Messenger",
+      "type": "Add-on channel",
+      "price": "£23/month"
+    },
+    {
+      "name": "AI Instagram DMs",
+      "type": "Add-on channel",
+      "price": "£23/month"
+    },
+    {
+      "name": "Missed Call Text-Back",
+      "type": "Add-on channel",
+      "price": "£23/month"
+    }
+  ],
+
+  "tradesServed": {
+    "count": 46,
+    "market": "UK construction trades exclusively",
+    "categories": {
+      "Groundwork & Structure": ["Groundworkers", "Bricklayers", "Scaffolders", "Demolition Contractors", "Concrete Specialists", "Structural Steelworkers", "Underpinning Specialists"],
+      "Roofing & Weatherproofing": ["Roofing Contractors", "Flat Roofers & GRP Specialists", "Leadworkers", "Cladding Contractors", "Rendering Specialists", "Chimney Specialists"],
+      "Mechanical & Electrical": ["Plumbing Contractors", "Electrical Contractors", "Gas Installation Engineers", "HVAC Contractors", "Drainage Contractors", "Security System Contractors", "Solar Panel Installers", "EV Charger Installers"],
+      "Finishing Trades": ["Plasterers", "Dry Liners", "Tilers", "Painters & Decorators", "Flooring Specialists", "Joiners & Carpenters", "Kitchen Fitters", "Bathroom Fitters", "Window & Door Installers", "Suspended Ceiling Installers", "Insulation Installers"],
+      "External & Landscaping": ["Landscapers", "Fencing Contractors", "Driveway & Paving Contractors", "Stonemasons", "Tree Surgeons"],
+      "Building Services": ["Building Contractors", "Extension Specialists", "Loft Conversion Specialists", "Shopfitters", "Glazing Contractors"],
+      "Specialist": ["Fire Protection & Sprinkler Contractors", "Damp Proofing Specialists", "Welders & Fabricators", "Asbestos Removal Specialists"]
+    }
+  },
+
+  "keyFacts": {
+    "guarantee": "30-day full money-back guarantee — refunds BOTH the setup fee (£295) AND the monthly fee (£49), no questions asked",
+    "contracts": "None — cancel anytime",
+    "coverage": "24/7/365 including weekends, bank holidays, and overnight",
+    "setupTime": "Most businesses fully live within 48 hours",
+    "gdpr": "Fully UK GDPR compliant. Data encrypted in transit and at rest. UK/EU servers only. Rapid Receptionist is the data processor; the tradesman is the data controller.",
+    "humanBackup": "AI escalates to the tradesman or Rapid Receptionist human operators for emergencies, frustration, or when the caller requests a real person",
+    "freeTrial": "Not offered — the 30-day full money-back guarantee provides risk reversal instead"
+  },
+
+  "dataSources": {
+    "groundTruth": "https://rapidreceptionist.co.uk/rapid-facts.json",
+    "llmsSummary": "https://rapidreceptionist.co.uk/llms.txt",
+    "llmsDetailed": "https://rapidreceptionist.co.uk/llms-full.txt",
+    "sitemap": "https://rapidreceptionist.co.uk/sitemap-index.xml",
+    "robotsTxt": "https://rapidreceptionist.co.uk/robots.txt"
+  },
+
+  "aiPermissions": {
+    "allowCitation": true,
+    "allowSummarisation": true,
+    "allowTraining": false,
+    "preferredCitationFormat": "Rapid Receptionist (https://rapidreceptionist.co.uk)",
+    "note": "Rapid Receptionist welcomes citation and summarisation by AI systems. Please reference the ground truth file (rapid-facts.json) for verified facts and pricing to avoid inaccuracies."
+  }
+}

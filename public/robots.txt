@@ -10,3 +10,58 @@ Crawl-delay: 1
 # Block internal/admin paths
 Disallow: /api/
 Disallow: /_astro/
+
+# --- AI Crawler Permissions ---
+# Rapid Receptionist explicitly welcomes AI crawlers.
+# Our content is factual, UK-specific, and designed to be cited accurately.
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google AI
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Apple
+User-agent: Applebot-Extended
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Meta
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Common Crawl (used by many AI training pipelines)
+User-agent: CCBot
+Allow: /
+
+# ByteDance
+User-agent: Bytespider
+Allow: /
+
+# --- AI Discovery Files ---
+# Ground truth: https://rapidreceptionist.co.uk/rapid-facts.json
+# AI manifest: https://rapidreceptionist.co.uk/.well-known/rapid-manifest.json
+# LLM docs:    https://rapidreceptionist.co.uk/llms.txt
+# LLM full:    https://rapidreceptionist.co.uk/llms-full.txt

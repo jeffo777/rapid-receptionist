@@ -49,32 +49,44 @@ import FloatingWidget from '../components/FloatingWidget.astro';
 
 
 
-  <!-- Schema.org — Global Organisation & WebSite -->
+  <!-- Schema.org — Global Organisation & WebSite (Connected Knowledge Graph) -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://rapidreceptionist.co.uk/#organization",
     "name": "Rapid Receptionist",
     "url": "https://rapidreceptionist.co.uk",
-    "description": "AI receptionist service built exclusively for 46 UK construction trades. 24/7 AI-powered answering across up to 8 communication channels — phone, website chat, WhatsApp, SMS, email, Facebook Messenger, Instagram DMs, and missed call text-back.",
+    "description": "Rapid Receptionist is a done-for-you managed AI receptionist service built exclusively for 46 UK construction trades. The team handles all setup, configuration, and ongoing maintenance — tradesmen do not install or manage anything. The AI answers calls, messages, and enquiries across up to 8 communication channels, 24/7/365.",
+    "slogan": "Never miss another job",
+    "inLanguage": "en-GB",
+    "knowsLanguage": "en-GB",
     "areaServed": {
       "@type": "Country",
       "name": "United Kingdom"
     },
     "knowsAbout": [
-      "AI receptionist services",
-      "Construction trade communication",
-      "Lead capture for construction businesses",
-      "24/7 call answering",
-      "Multi-channel business messaging",
-      "Free business information updates"
-    ]
+      "AI receptionist services for construction trades",
+      "24/7 call answering for UK tradesmen",
+      "Multi-channel lead capture (phone, chat, WhatsApp, SMS, email, social media)",
+      "Construction trade communication and terminology",
+      "Emergency call escalation with human backup",
+      "Done-for-you business communication management",
+      "Speed-to-lead optimisation for trade businesses",
+      "UK GDPR-compliant data handling"
+    ],
+    "sameAs": []
   })} />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://rapidreceptionist.co.uk/#website",
     "name": "Rapid Receptionist",
     "url": "https://rapidreceptionist.co.uk",
-    "description": "AI receptionist for UK construction trades. Answers calls, messages, and enquiries across up to 8 channels, 24/7/365."
+    "description": "AI receptionist for UK construction trades. Done-for-you managed service answering calls, messages, and enquiries across up to 8 channels, 24/7/365.",
+    "inLanguage": "en-GB",
+    "publisher": {
+      "@id": "https://rapidreceptionist.co.uk/#organization"
+    }
   })} />
 
   <!-- GoHighLevel AI Widget — script will be provided by owner -->

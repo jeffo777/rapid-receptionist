@@ -104,3 +104,70 @@ Previous trade page batches developed **structural duplication** — FAQ answers
 - [ ] Is every FAQ answer at least 3 sentences long?
 - [ ] Would a reader notice if two pages' content was swapped? (They should — if not, the content isn't unique enough)
 - [ ] Are all pricing values pulled from `pricing.json` variables (never hardcoded)?
+
+---
+
+## Data Sync Checklists
+
+When source-of-truth data changes, multiple files must be updated. Use these checklists to ensure nothing is missed. See `.agent/workflows/seo-and-geo-reference.md` for full file inventory and data flow.
+
+### Pricing Changes
+
+When any pricing value changes (monthly fee, add-on price, setup fee, minutes, overage rate):
+
+1. [ ] Update `src/data/pricing.json` (source of truth — all page templates auto-pull from this)
+2. [ ] Update `public/rapid-facts.json` → `pricing` section (all values)
+3. [ ] Update `public/.well-known/rapid-manifest.json` → `products` array and `keyFacts.guarantee`
+4. [ ] Update `public/llms.txt` → pricing references in intro and key facts
+5. [ ] Update `public/llms-full.txt` → "Pricing & Commercial Model" section
+6. [ ] Run `npx astro build` to verify 0 errors (page templates auto-update from pricing.json)
+
+### Adding or Removing Trades
+
+When a trade is added to or removed from `trades.json`:
+
+1. [ ] Update `src/data/trades.json` — add/remove trade entry
+2. [ ] Create/delete the trade's page directory and all channel page files
+3. [ ] Update `public/rapid-facts.json` → `tradesServed.count` and categories
+4. [ ] Update `public/.well-known/rapid-manifest.json` → `tradesServed.count` and category arrays
+5. [ ] Update `public/llms.txt` → trades list and count in intro
+6. [ ] Update `public/llms-full.txt` → trades list with vocabulary
+7. [ ] Update `src/layouts/BaseLayout.astro` → Organization description (trade count "46")
+8. [ ] Run `npx astro build` to verify (sitemap auto-updates)
+
+### Business Fact Changes
+
+When core business facts change (guarantee terms, contract terms, setup time, brand positioning):
+
+1. [ ] Update `AGENT_INSTRUCTIONS.md` — master source of truth for business facts
+2. [ ] Update `public/rapid-facts.json` → relevant sections
+3. [ ] Update `public/.well-known/rapid-manifest.json` → `keyFacts` and relevant sections
+4. [ ] Update `public/llms.txt` → key facts list
+5. [ ] Update `public/llms-full.txt` → relevant sections
+6. [ ] Update `src/layouts/BaseLayout.astro` → Organization schema description if affected
+7. [ ] Check `src/components/HeroSection.astro` → trust row items if affected
+
+### AI Capability Changes
+
+When AI capabilities change (new features, removed features, tier changes):
+
+1. [ ] Update `AGENT_INSTRUCTIONS.md` → capabilities section
+2. [ ] Update `public/rapid-facts.json` → `capabilities.doesDo` and `capabilities.doesNOTDo`
+3. [ ] Update `public/rapid-facts.json` → `commonHallucinations.corrections` if affected
+4. [ ] Update `public/llms-full.txt` → "Channel Capability Framework" and "What The AI Never Does"
+5. [ ] Update `public/.well-known/rapid-manifest.json` if product descriptions affected
+6. [ ] Update affected page content (FAQs, benefits, scenarios)
+
+### Channel Changes
+
+When channels are added, removed, or tier assignments change:
+
+1. [ ] Update `src/data/channels.json` — add/remove/modify channel
+2. [ ] Create/delete channel service page and all trade × channel pages
+3. [ ] Update `public/rapid-facts.json` → `channels` section (tiers and channel lists)
+4. [ ] Update `public/.well-known/rapid-manifest.json` → `products` array
+5. [ ] Update `public/llms.txt` → communication channels list
+6. [ ] Update `public/llms-full.txt` → channel capability framework
+7. [ ] Update `src/layouts/BaseLayout.astro` → Organization description (channel count)
+8. [ ] Run `npx astro build` to verify (sitemap auto-updates)
+

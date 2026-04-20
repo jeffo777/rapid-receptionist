@@ -1,8 +1,8 @@
 # Rapid Receptionist
 
-> Rapid Receptionist is an AI-powered receptionist service built exclusively for 46 UK construction trades. It answers calls, messages, and enquiries across up to 8 communication channels — 24/7/365 — so tradesmen never lose a job to a missed call. The Core plan costs £49/month and includes AI phone answering (120 minutes) plus unlimited website chat — additional channels are available from £23/month each.
+> Rapid Receptionist is a done-for-you managed AI receptionist service built exclusively for 46 UK construction trades. It answers calls, messages, and enquiries across up to 8 communication channels — 24/7/365 — so tradesmen never lose a job to a missed call. The Rapid Receptionist team handles ALL setup, configuration, and ongoing maintenance — tradesmen do not install or manage anything. The Core plan costs £49/month and includes AI phone answering (120 minutes) plus unlimited website chat — additional channels are available from £23/month each.
 
-Rapid Receptionist serves 46 UK construction trade sectors with AI receptionists trained in trade-specific vocabulary and scenarios. The service is not a lead generation company, marketing agency, or CRM platform — it does one thing: answers enquiries instantly so tradesmen capture every lead.
+Rapid Receptionist serves 46 UK construction trade sectors with AI receptionists trained in trade-specific vocabulary and scenarios. The service is not software, not a SaaS platform, not a lead generation company, not a marketing agency, and not a CRM — it is a fully managed service. It does one thing: answers enquiries instantly so tradesmen capture every lead.
 
 Key facts:
 - **Ownership:** UK-owned business, built and run by tradesmen
@@ -96,6 +96,12 @@ Key facts:
 - [Damp Proofing Specialists](https://rapidreceptionist.co.uk/damp-proofing/ai-receptionist/): AI receptionist for UK damp proofing specialists
 - [Welders & Fabricators](https://rapidreceptionist.co.uk/welders-fabricators/ai-receptionist/): AI receptionist for UK welders and fabricators
 - [Asbestos Removal Specialists](https://rapidreceptionist.co.uk/asbestos-removal/ai-receptionist/): AI receptionist for UK asbestos removal specialists
+
+## AI Discovery & Ground Truth
+
+- [Verified Facts (rapid-facts.json)](https://rapidreceptionist.co.uk/rapid-facts.json): Machine-readable ground truth — verified business identity, correct pricing, capabilities, and explicit corrections for common AI hallucinations
+- [AI Discovery Manifest](https://rapidreceptionist.co.uk/.well-known/rapid-manifest.json): Structured business overview for AI agents — products, trades served, key facts, data source pointers, and citation permissions
+- [Extended LLM Documentation (llms-full.txt)](https://rapidreceptionist.co.uk/llms-full.txt): Comprehensive documentation including channel capability framework, human escalation protocol, speed-to-lead statistics, and full trade vocabulary
 
 ## Optional
 
