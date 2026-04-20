@@ -65,6 +65,36 @@ const faqs = [
     showAIReceptionist={false}
   />
 
+  <!-- Done-For-You Banner -->
+  <section class="section section--alt" id="done-for-you-banner">
+    <div class="container container--narrow">
+      <div class="dfy-banner">
+        <div class="dfy-banner__header">
+          <span class="badge badge--trust">100% Done For You</span>
+          <h2 class="dfy-banner__title">We Handle <span class="text-accent">Everything</span> — You Just Work</h2>
+          <p class="dfy-banner__subtitle">Rapid Receptionist is a fully managed service. You don't install anything, configure anything, or maintain anything. Our team does it all.</p>
+        </div>
+        <div class="dfy-banner__grid">
+          <div class="dfy-banner__item">
+            <span class="dfy-banner__icon">🔧</span>
+            <h3 class="dfy-banner__item-title">We Set It Up</h3>
+            <p class="dfy-banner__item-text">Tell us your trade, your services, your area, and how you want calls handled. We configure everything — AI training, channel connections, greetings, escalation rules — and test it before going live. Most businesses are fully set up within 48 hours.</p>
+          </div>
+          <div class="dfy-banner__item">
+            <span class="dfy-banner__icon">🔄</span>
+            <h3 class="dfy-banner__item-title">We Keep It Updated</h3>
+            <p class="dfy-banner__item-text">Changed your pricing? Updated your hours or contact details? Just tell us and we update your AI for free — typically within one working day. No dashboard to find, no settings to change. We handle it.</p>
+          </div>
+          <div class="dfy-banner__item">
+            <span class="dfy-banner__icon">🛡️</span>
+            <h3 class="dfy-banner__item-title">We Manage It Ongoing</h3>
+            <p class="dfy-banner__item-text">Your AI receptionist is monitored and maintained by our team. If anything needs adjusting — a new common question, a seasonal service, or a change in how you want emergencies handled — we take care of it. Nothing technical ever lands on your plate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Pricing Card + Add-Ons -->
   <section class="section" id="pricing-section">
     <div class="container">
@@ -84,3 +114,77 @@ const faqs = [
   <CookieConsent />
   <Footer slot="footer" />
 </BaseLayout>
+
+<style>
+  .dfy-banner {
+    text-align: center;
+  }
+
+  .dfy-banner__header {
+    margin-bottom: var(--space-10);
+  }
+
+  .dfy-banner__title {
+    font-size: var(--text-3xl);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-3);
+  }
+
+  .dfy-banner__subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin-inline: auto;
+    line-height: var(--leading-relaxed);
+  }
+
+  .dfy-banner__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-5);
+    text-align: left;
+  }
+
+  .dfy-banner__item {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: border-color var(--transition-base), transform var(--transition-base);
+  }
+
+  .dfy-banner__item:hover {
+    border-color: var(--color-trust);
+    transform: translateY(-2px);
+  }
+
+  .dfy-banner__icon {
+    font-size: var(--text-2xl);
+    display: block;
+    margin-bottom: var(--space-3);
+  }
+
+  .dfy-banner__item-title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-2);
+  }
+
+  .dfy-banner__item-text {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+  }
+
+  @media (max-width: 768px) {
+    .dfy-banner__grid {
+      grid-template-columns: 1fr;
+      max-width: 480px;
+      margin-inline: auto;
+    }
+
+    .dfy-banner__title {
+      font-size: var(--text-2xl);
+    }
+  }
+</style>
