@@ -70,6 +70,11 @@ import trades from '../data/trades.json';
         The rapid response AI receptionist for UK construction trades. 🏗️
       </p>
     </div>
+
+    <!-- Credit Line -->
+    <div class="footer__credit">
+      <p>Need a website like this? <a href="/contact/">Get in touch</a></p>
+    </div>
   </div>
 </footer>
 
@@ -182,6 +187,35 @@ import trades from '../data/trades.json';
     font-size: var(--text-sm);
     color: var(--color-text-muted);
     margin: 0;
+  }
+
+  /* Credit */
+  .footer__credit {
+    text-align: center;
+    padding-top: var(--space-6);
+    margin-top: var(--space-6);
+    border-top: 1px solid var(--color-border-subtle);
+  }
+
+  .footer__credit p {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    opacity: 0.5;
+    margin: 0;
+    transition: opacity var(--transition-fast);
+  }
+
+  .footer__credit:hover p {
+    opacity: 0.8;
+  }
+
+  .footer__credit a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+
+  .footer__credit a:hover {
+    text-decoration: underline;
   }
 
   /* Responsive */
