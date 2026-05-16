@@ -6,8 +6,7 @@ export interface Props {
   accentWord?: string;
   showTrustRow?: boolean;
   showAIReceptionist?: boolean;
-  greeting?: string;
-  promptText?: string;
+  tradeName?: string;
 }
 
 const {
@@ -16,8 +15,7 @@ const {
   accentWord,
   showTrustRow = true,
   showAIReceptionist = true,
-  greeting = 'Questions? Chat with me 👋',
-  promptText = "Tell me about your business and I'll show you how I handle your calls",
+  tradeName = '',
 } = Astro.props;
 
 // If accentWord provided, wrap it in a span
@@ -87,17 +85,14 @@ if (accentWord) {
 
         <div class="hero-ai__cta-area">
           <div class="hero-ai__buttons">
-            <button type="button" class="hero-ai__btn hero-ai__btn--chat" id="hero-ai-chat-btn">
+            <button type="button" class="hero-ai__btn hero-ai__btn--try" id="hero-try-btn" data-trade={tradeName}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                <line x1="12" y1="19" x2="12" y2="23"/>
+                <line x1="8" y1="23" x2="16" y2="23"/>
               </svg>
-              Chat with me
-            </button>
-            <button type="button" class="hero-ai__btn hero-ai__btn--call" id="hero-ai-call-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              Call me
+              Try Me Now
             </button>
           </div>
 
@@ -131,38 +126,6 @@ if (accentWord) {
         </div>
       </div>
     )}
-  </div>
-
-  <!-- Chat Popup (fallback until GoHighLevel connected) -->
-  <div class="ai-popup" id="ai-chat-popup" aria-hidden="true">
-    <div class="ai-popup__overlay" data-close-popup></div>
-    <div class="ai-popup__content">
-      <button class="ai-popup__close" data-close-popup aria-label="Close">&times;</button>
-      <div class="ai-popup__icon">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-        </svg>
-      </div>
-      <p class="ai-popup__title">Chat Coming Soon</p>
-      <p class="ai-popup__text">Our AI chat is being finalised and will be live shortly. In the meantime, get started now — no obligation, no hard sell.</p>
-      <a href="/get-started/" class="ai-popup__btn">Get Started →</a>
-    </div>
-  </div>
-
-  <!-- Call Popup (fallback until GoHighLevel connected) -->
-  <div class="ai-popup" id="ai-call-popup" aria-hidden="true">
-    <div class="ai-popup__overlay" data-close-popup></div>
-    <div class="ai-popup__content">
-      <button class="ai-popup__close" data-close-popup aria-label="Close">&times;</button>
-      <div class="ai-popup__icon">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-        </svg>
-      </div>
-      <p class="ai-popup__title">Voice AI Coming Soon</p>
-      <p class="ai-popup__text">Our voice AI receptionist is being configured and will be live shortly. Get started now to secure your spot.</p>
-      <a href="/get-started/" class="ai-popup__btn">Get Started →</a>
-    </div>
   </div>
 </section>
 
@@ -333,22 +296,6 @@ if (accentWord) {
     text-align: center;
   }
 
-  .hero-ai__greeting {
-    font-size: var(--text-xl);
-    font-weight: var(--font-bold);
-    color: var(--color-text-primary);
-    margin-bottom: var(--space-1);
-  }
-
-  .hero-ai__prompt {
-    font-size: var(--text-base);
-    color: var(--color-text-secondary);
-    margin-bottom: var(--space-5);
-    max-width: 360px;
-    margin-inline: auto;
-    line-height: var(--leading-normal);
-  }
-
   .hero-ai__buttons {
     display: flex;
     gap: var(--space-3);
@@ -370,129 +317,19 @@ if (accentWord) {
     min-height: 48px;
   }
 
-  .hero-ai__btn--chat {
+  .hero-ai__btn--try {
     background: var(--color-accent);
     color: #fff;
     border: none;
     box-shadow: var(--shadow-accent);
+    padding: var(--space-3) var(--space-8);
+    font-size: var(--text-lg);
   }
 
-  .hero-ai__btn--chat:hover {
+  .hero-ai__btn--try:hover {
     background: var(--color-accent-hover);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-accent-lg);
-  }
-
-  .hero-ai__btn--call {
-    background: transparent;
-    color: var(--color-text-secondary);
-    border: 1px solid var(--color-border-subtle);
-  }
-
-  .hero-ai__btn--call:hover {
-    border-color: var(--color-accent);
-    color: var(--color-text-primary);
-    background: var(--color-accent-subtle);
-  }
-
-  /* -- Popups -- */
-  .ai-popup {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 2000;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ai-popup.active {
-    display: flex;
-  }
-
-  .ai-popup__overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
-  }
-
-  .ai-popup__content {
-    position: relative;
-    background: var(--color-surface);
-    border: 1px solid var(--color-border-subtle);
-    border-radius: var(--radius-2xl);
-    padding: var(--space-10) var(--space-8);
-    max-width: 400px;
-    width: 90%;
-    text-align: center;
-    box-shadow: var(--shadow-xl);
-  }
-
-  .ai-popup__close {
-    position: absolute;
-    top: var(--space-3);
-    right: var(--space-3);
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-text-muted);
-    font-size: 1.5rem;
-    border-radius: var(--radius-md);
-    transition: color var(--transition-fast), background var(--transition-fast);
-  }
-
-  .ai-popup__close:hover {
-    color: var(--color-text-primary);
-    background: rgba(255, 255, 255, 0.05);
-  }
-
-  .ai-popup__icon {
-    width: 56px;
-    height: 56px;
-    border-radius: var(--radius-full);
-    background: var(--color-accent-subtle);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-accent);
-    margin: 0 auto var(--space-4);
-  }
-
-  .ai-popup__title {
-    font-size: var(--text-xl);
-    font-weight: var(--font-bold);
-    color: var(--color-text-primary);
-    margin-bottom: var(--space-2);
-  }
-
-  .ai-popup__text {
-    font-size: var(--text-sm);
-    color: var(--color-text-secondary);
-    line-height: var(--leading-relaxed);
-    margin-bottom: var(--space-6);
-  }
-
-  .ai-popup__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space-3) var(--space-6);
-    background: var(--color-accent);
-    color: #fff;
-    font-weight: var(--font-bold);
-    font-size: var(--text-base);
-    border-radius: var(--radius-lg);
-    text-decoration: none;
-    transition: background var(--transition-fast), transform var(--transition-fast);
-    min-width: 160px;
-  }
-
-  .ai-popup__btn:hover {
-    background: var(--color-accent-hover);
-    color: #fff;
-    transform: scale(1.02);
   }
 
   /* Responsive */
@@ -517,41 +354,41 @@ if (accentWord) {
 </style>
 
 <script>
-  // Chat popup
-  const chatBtn = document.getElementById('hero-ai-chat-btn');
-  const chatPopup = document.getElementById('ai-chat-popup');
-  // Call popup
-  const callBtn = document.getElementById('hero-ai-call-btn');
-  const callPopup = document.getElementById('ai-call-popup');
+  // ── Voice Agent Lazy Loader ──
+  // Loads voice-agent.js + CSS on first click, then starts the agent.
+  let _vaLoaded = false;
 
-  function openPopup(popup: HTMLElement | null) {
-    popup?.classList.add('active');
-    popup?.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closePopup(popup: HTMLElement | null) {
-    popup?.classList.remove('active');
-    popup?.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  }
-
-  chatBtn?.addEventListener('click', () => openPopup(chatPopup));
-  callBtn?.addEventListener('click', () => openPopup(callPopup));
-
-  // Close buttons & overlays
-  document.querySelectorAll('[data-close-popup]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const popup = (e.currentTarget as HTMLElement).closest('.ai-popup');
-      closePopup(popup as HTMLElement);
-    });
-  });
-
-  // Escape closes all popups
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      closePopup(chatPopup);
-      closePopup(callPopup);
+  function launchVoiceAgent(tradeName) {
+    if (_vaLoaded) {
+      window.RapidVoiceAgent?.start(tradeName || '');
+      return;
     }
+
+    // Load CSS
+    const css = document.createElement('link');
+    css.rel = 'stylesheet';
+    // ⚠️ CACHE-BUST: bump this version when voice-agent-ui.css changes
+    css.href = '/assets/css/voice-agent-ui.css?v=20260516a';
+    document.head.appendChild(css);
+
+    // Load JS
+    const script = document.createElement('script');
+    // ⚠️ CACHE-BUST: bump this version when voice-agent.js changes
+    script.src = '/assets/js/voice-agent.js?v=20260516a';
+    script.onload = () => {
+      _vaLoaded = true;
+      window.RapidVoiceAgent?.start(tradeName || '');
+    };
+    document.head.appendChild(script);
+  }
+
+  // Expose globally so FloatingWidget can use it too
+  (window as any).launchVoiceAgent = launchVoiceAgent;
+
+  // Hero "Try Me Now" button
+  const heroTryBtn = document.getElementById('hero-try-btn');
+  heroTryBtn?.addEventListener('click', () => {
+    const trade = heroTryBtn.getAttribute('data-trade') || '';
+    launchVoiceAgent(trade);
   });
 </script>
