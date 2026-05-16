@@ -9,7 +9,7 @@ import CookieConsent from '../components/CookieConsent.astro';
 const faqs = [
   {
     question: "What happens after I submit this form?",
-    answer: "Within 2 working hours, one of our team reviews your submission and sends you a setup confirmation email. We schedule a brief onboarding call — usually fifteen minutes — where we go through your business details, configure your AI receptionist, and test every channel before switching it on. Most businesses are fully live within 48 hours of signing up."
+    answer: "Within 1 working day, one of our team reviews your submission and sends you a setup confirmation email. We schedule a brief onboarding call — usually fifteen minutes — where we go through your business details, configure your AI receptionist, and test every channel before switching it on. Most businesses are fully live within 48 hours of signing up."
   },
   {
     question: "Do I need to prepare anything before signing up?",
@@ -106,7 +106,7 @@ const faqs = [
             </div>
 
             <button type="submit" class="btn btn--primary btn--lg gs-submit" id="gs-submit">
-              Get Started — We'll Be in Touch Within 2 Hours
+              Get Started — We'll Be in Touch Within 1 Working Day
             </button>
 
             <div id="gs-result" class="form-result" style="display:none"></div>
@@ -142,7 +142,7 @@ const faqs = [
               <span class="gs-process-step__num">1</span>
               <div>
                 <strong>We Review Your Details</strong>
-                <p>Within 2 working hours, our team reviews your submission and prepares your onboarding.</p>
+                <p>Within 1 working day, our team reviews your submission and prepares your onboarding.</p>
               </div>
             </div>
             <div class="gs-process-step">
@@ -494,7 +494,7 @@ const faqs = [
       if (data.success) {
         result.style.display = 'block';
         result.className = 'form-result form-result--success';
-        result.textContent = 'Thank you! We\'ll review your details and be in touch within 2 working hours.';
+        result.textContent = 'Thank you! We\'ll review your details and be in touch within 1 working day.';
         form.reset();
       } else {
         throw new Error(data.message || 'Something went wrong');

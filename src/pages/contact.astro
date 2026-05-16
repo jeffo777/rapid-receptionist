@@ -8,7 +8,7 @@ import CookieConsent from '../components/CookieConsent.astro';
 const faqs = [
   {
     question: "How quickly will someone get back to me?",
-    answer: "We aim to respond to every enquiry within 2 working hours on weekdays. Most enquiries get a reply much faster than that. If you call and we can't pick up, we'll call you back the same day. Weekend and evening enquiries are answered the next working morning."
+    answer: "We aim to respond to every enquiry within 1 working day. Most enquiries get a reply much faster than that. Weekend and evening enquiries are answered the next working morning."
   },
   {
     question: "I'm not sure which plan I need. Can you help?",
@@ -31,7 +31,7 @@ const faqs = [
 
 <BaseLayout
   title="Contact Rapid Receptionist — Get in Touch | UK Construction Trades"
-  description="Questions about Rapid Receptionist for your construction trade? Get in touch. Email, phone, or contact form. We typically respond within 2 hours on working days."
+  description="Questions about Rapid Receptionist for your construction trade? Get in touch. Email, phone, or contact form. We typically respond within 1 working day."
   canonicalUrl="/contact/"
 >
   <Header slot="header" />
@@ -53,7 +53,7 @@ const faqs = [
         <!-- Contact Form -->
         <div class="contact-form-wrap">
           <h2>Send Us a Message</h2>
-          <p class="contact-form-intro">Fill in the form and we'll get back to you within 2 working hours. If it's urgent, call us directly.</p>
+          <p class="contact-form-intro">Fill in the form and we'll get back to you within 1 working day. If it's urgent, call us directly.</p>
 
           <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="cdff8e5c-8299-4373-bf8c-96506118b438">
@@ -109,7 +109,7 @@ const faqs = [
           <div class="contact-info-card">
             <div class="contact-info-card__icon">⏱️</div>
             <h3>Response Time</h3>
-            <p>We aim to respond to every enquiry within 2 working hours. Most get a reply much faster.</p>
+            <p>We aim to respond to every enquiry within 1 working day. Most get a reply much faster.</p>
           </div>
 
           <div class="contact-info-card">
@@ -346,7 +346,7 @@ const faqs = [
       if (data.success) {
         result.style.display = 'block';
         result.className = 'form-result form-result--success';
-        result.textContent = 'Message sent successfully! We\'ll get back to you within 2 working hours.';
+        result.textContent = 'Message sent successfully! We\'ll get back to you within 1 working day.';
         form.reset();
       } else {
         throw new Error(data.message || 'Something went wrong');
